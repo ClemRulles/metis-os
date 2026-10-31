@@ -7,17 +7,21 @@ export const FOURNISSEURS_PAR_DEFAUT = [
     id: "openrouter",
     url: "https://openrouter.ai/api/v1/chat/completions",
     cle: "OPENROUTER_API_KEY",
-    tokensParJour: 4_000_000,
+    tokensParJour: 3_000_000, // plafond de sécurité : environ 0,50 $ par jour au pire
     requetesParMinute: 20,
     modeles: {
-      deepseek: "deepseek/deepseek-chat-v3-0324:free",
-      qwen: "qwen/qwen3-235b-a22b:free",
-      glm: "z-ai/glm-4.5-air:free",
-      llama: "meta-llama/llama-3.3-70b-instruct:free",
-      gemma: "google/gemma-3-27b-it:free",
-      mistral: "mistralai/mistral-small-3.2-24b-instruct:free",
-      kimi: "moonshotai/kimi-k2:free",
-      minimax: "minimax/minimax-m1:free",
+      // Gratuits (limités à environ 1 000 requêtes par jour au total).
+      gemma: "google/gemma-4-31b-it:free",
+      nemotron: "nvidia/nemotron-3.5-lightning:free",
+      inkling: "thinkingmachines/inkling-small:free",
+      // Quasi gratuits : environ 0,00002 $ par prédiction (prix relevés le 1er novembre 2026).
+      deepseek: "deepseek/deepseek-v4-flash",
+      qwen: "qwen/qwen3.7-flash",
+      glm: "z-ai/glm-5.3-flash",
+      mistral: "mistralai/mistral-small-24b-instruct-2501",
+      llama: "meta-llama/llama-3.1-8b-instruct",
+      minimax: "minimax/minimax-m3.1-flash",
+      mimo: "xiaomi/mimo-v2.6-flash",
     },
   },
   {
@@ -51,6 +55,9 @@ export function creerRouteur({
   seuilCoupeCircuit = 3,
   pauseCoupeCircuitMs = 10 * 60 * 1000,
   arretGlobal = () => false,
+  tentativesMax = 4,
+  attente429Ms = 8_000,
+  dormir = (ms) => new Promise((r) => setTimeout(r, ms)),
 } = {}) {
   const etat = new Map(); // id -> { jour, tokens, echecs, coupeJusqua, fenetre: [] }
   const jourDe = (t) => new Date(t).toISOString().slice(0, 10);
@@ -76,14 +83,41 @@ export function creerRouteur({
     return null;
   }
 
-  async function appeler({ cerveau, messages, temperature = 0.5, maxTokens = 800, tokensEstimes }) {
+  // Attente avant de pouvoir réessayer un fournisseur limité par minute.
+  function attentePourFenetre(f) {
+    const e = etatDe(f.id);
+    if (e.fenetre.length < f.requetesParMinute) return 0;
+    return Math.max(0, 60_000 - (maintenant() - e.fenetre[0])) + 250;
+  }
+
+  // Une limite de débit (par minute ou HTTP 429) n'est pas une panne : on attend et on réessaie.
+  async function appeler(options) {
+    let derniere;
+    for (let tentative = 0; tentative <= tentativesMax; tentative++) {
+      try {
+        return await essayer(options);
+      } catch (err) {
+        derniere = err;
+        if (!(err instanceof ErreurRouteur) || !err.details.attenteMs || tentative === tentativesMax) throw err;
+        await dormir(Math.min(err.details.attenteMs * (tentative + 1), 65_000));
+      }
+    }
+    throw derniere;
+  }
+
+  async function essayer({ cerveau, messages, temperature = 0.5, maxTokens = 800, tokensEstimes }) {
     if (arretGlobal()) throw new ErreurRouteur("interrupteur d'arrêt activé");
     const estimation = tokensEstimes ?? Math.ceil(JSON.stringify(messages).length / 3.5) + maxTokens;
     const refus = [];
+    let attenteMs = 0;
+    const noterAttente = (ms) => {
+      if (ms > 0) attenteMs = attenteMs === 0 ? ms : Math.min(attenteMs, ms);
+    };
     for (const f of fournisseurs) {
       const raison = disponible(f, cerveau, estimation);
       if (raison) {
         refus.push(`${f.id} : ${raison}`);
+        if (raison === "limite par minute") noterAttente(attentePourFenetre(f));
         continue;
       }
       const e = etatDe(f.id);
@@ -94,6 +128,11 @@ export function creerRouteur({
           headers: { "content-type": "application/json", authorization: `Bearer ${env[f.cle]}` },
           body: JSON.stringify({ model: f.modeles[cerveau], messages, temperature, max_tokens: maxTokens }),
         });
+        if (rep.status === 429) {
+          refus.push(`${f.id} : HTTP 429`);
+          noterAttente(attente429Ms);
+          continue;
+        }
         if (!rep.ok) throw new Error(`HTTP ${rep.status}`);
         const json = await rep.json();
         const texte = json?.choices?.[0]?.message?.content;
@@ -111,7 +150,7 @@ export function creerRouteur({
         refus.push(`${f.id} : ${err.message}`);
       }
     }
-    throw new ErreurRouteur(`aucun fournisseur pour ${cerveau}`, { refus });
+    throw new ErreurRouteur(`aucun fournisseur pour ${cerveau}`, { refus, attenteMs });
   }
 
   function rapport() {

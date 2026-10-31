@@ -68,7 +68,7 @@ test("routeur : repli, budget et coupe-circuit", async () => {
     { id: "b", url: "https://b", cle: "KB", tokensParJour: 1000, requetesParMinute: 10, modeles: { qwen: "qb" } },
   ];
   const fetchImpl = fauxFetch([
-    { ok: false, status: 429 },
+    { ok: false, status: 500 },
     { json: { choices: [{ message: { content: '{"p":0.3}' } }], usage: { total_tokens: 900 } } },
   ]);
   const r = creerRouteur({ fournisseurs, env: { KA: "x", KB: "y" }, fetchImpl, seuilCoupeCircuit: 1 });
@@ -164,4 +164,25 @@ test("banc complet avec un routeur simulé", async () => {
   assert.equal(r.echecs, 1);
   assert.equal(r.parConfiguration[0].id, configurations[0].id, "la configuration juste est classée première");
   assert.ok(r.carteDesGenes.cerveau[configurations[0].cerveau].apportMoyen > 0);
+});
+
+test("routeur : attend et réessaie quand la limite par minute ou un 429 est atteint", async () => {
+  let t = Date.parse("2026-11-01T00:00:00Z");
+  const attentes = [];
+  const fournisseurs = [{ id: "a", url: "https://a", cle: "KA", tokensParJour: 1e9, requetesParMinute: 2, modeles: { qwen: "qa" } }];
+  const ok = { json: { choices: [{ message: { content: '{"p":0.4}' } }], usage: { total_tokens: 10 } } };
+  const fetchImpl = fauxFetch([ok, ok, { ok: false, status: 429 }, ok]);
+  const r = creerRouteur({
+    fournisseurs, env: { KA: "x" }, fetchImpl,
+    maintenant: () => t,
+    dormir: async (ms) => { attentes.push(ms); t += ms; },
+  });
+  const appel = () => r.appeler({ cerveau: "qwen", messages: [], tokensEstimes: 1 });
+  await appel();
+  await appel();
+  const rep = await appel(); // limite par minute, puis 429, puis succès
+  assert.equal(rep.texte, '{"p":0.4}');
+  assert.ok(attentes.length >= 2, "au moins deux attentes");
+  assert.ok(attentes[0] >= 59_000, "attend que la fenêtre d'une minute se libère");
+  assert.equal(r.rapport()[0].coupe, false, "un 429 ne déclenche pas le coupe-circuit");
 });
