@@ -1,0 +1,178 @@
+{
+ "configurations": [
+  {
+   "id": "predicteur-01",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "cimetiere",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "europe-est",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "totale",
+   "outils": "code",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-02",
+   "cerveau": "llama",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "lancements-produits",
+   "zone": "chine",
+   "risque": "equilibre",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-03",
+   "cerveau": "mistral",
+   "role": "predicteur",
+   "lentille": "luxe-democratise",
+   "raisonnement": "intuitif",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "usa",
+   "risque": "prudent",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-04",
+   "cerveau": "minimax",
+   "role": "predicteur",
+   "lentille": "inversion",
+   "raisonnement": "statistique",
+   "persona": "aucune",
+   "territoire": "aucun",
+   "zone": "europe-est",
+   "risque": "kamikaze",
+   "horizon": "18-36",
+   "memoire": "totale",
+   "outils": "redaction",
+   "temperature": 0.5
+  },
+  {
+   "id": "predicteur-05",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "super-pouvoir-agent",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "bresil",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "aucun",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-06",
+   "cerveau": "llama",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "analogie",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "monde",
+   "risque": "prudent",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "code",
+   "temperature": 0.2
+  }
+ ],
+ "resultat": {
+  "parConfiguration": [
+   {
+    "id": "predicteur-01",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-02",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-03",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-04",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-05",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-06",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   }
+  ],
+  "marche": {
+   "n": 0,
+   "brier": null,
+   "logScore": null,
+   "apport": null
+  },
+  "carteDesGenes": {
+   "cerveau": {},
+   "role": {},
+   "lentille": {},
+   "raisonnement": {},
+   "persona": {},
+   "territoire": {},
+   "zone": {},
+   "risque": {},
+   "horizon": {},
+   "memoire": {},
+   "outils": {},
+   "temperature": {}
+  },
+  "predictions": 180,
+  "echecs": 180
+ },
+ "routeur": [
+  {
+   "fournisseur": "openrouter",
+   "tokensUtilises": 0,
+   "tokensRestants": 4000000,
+   "coupe": true,
+   "cle": true
+  },
+  {
+   "fournisseur": "groq",
+   "tokensUtilises": 0,
+   "tokensRestants": 200000,
+   "coupe": false,
+   "cle": false
+  }
+ ]
+}
