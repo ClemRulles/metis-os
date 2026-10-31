@@ -1,0 +1,40 @@
+name: Banc du passé
+
+# Fait tourner le banc du passé sur GitHub, avec les clés rangées dans les secrets du dépôt.
+# Personne ne voit les clés : ni le code, ni Métis, ni les journaux.
+on:
+  workflow_dispatch:
+    inputs:
+      nb_cas:
+        description: "Nombre de cas à faire prédire"
+        default: "30"
+  schedule:
+    - cron: "17 2 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  banc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Tests
+        run: npm test
+      - name: Collecte des cas résolus
+        run: node scripts/collecter.js 60
+      - name: Prédictions et notation
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: node scripts/lancer-banc.js "$(ls data/cas-show-hn-*.json | head -1)" "${{ github.event.inputs.nb_cas || '30' }}"
+      - name: Résultats
+        uses: actions/upload-artifact@v4
+        with:
+          name: banc-${{ github.run_id }}
+          path: data/banc-*.json
+          retention-days: 30
