@@ -8,7 +8,8 @@ export const FOURNISSEURS_PAR_DEFAUT = [
     url: "https://openrouter.ai/api/v1/chat/completions",
     cle: "OPENROUTER_API_KEY",
     tokensParJour: 3_000_000, // plafond de sécurité : environ 0,50 $ par jour au pire
-    requetesParMinute: 20,
+    requetesParMinute: 200, // modèles payants
+    requetesParMinuteGratuits: 18, // limite d'OpenRouter pour les modèles « :free », partagée par tout le compte
     modeles: {
       // Gratuits (limités à environ 1 000 requêtes par jour au total).
       gemma: "google/gemma-4-31b-it:free",
@@ -72,10 +73,11 @@ export function creerRouteur({
     const t = maintenant();
     let e = etat.get(id);
     if (!e || e.jour !== jourDe(t)) {
-      e = { jour: jourDe(t), tokens: 0, fenetre: [] };
+      e = { jour: jourDe(t), tokens: 0, fenetre: [], fenetreGratuits: [] };
       etat.set(id, e);
     }
     e.fenetre = e.fenetre.filter((x) => t - x < 60_000);
+    e.fenetreGratuits = (e.fenetreGratuits ?? []).filter((x) => t - x < 60_000);
     return e;
   }
 
@@ -86,14 +88,20 @@ export function creerRouteur({
     if (circuitDe(f.id, cerveau).coupeJusqua > maintenant()) return "coupe-circuit";
     if (e.tokens + tokensEstimes > f.tokensParJour) return "budget épuisé";
     if (e.fenetre.length >= f.requetesParMinute) return "limite par minute";
+    if (estGratuit(f, cerveau) && e.fenetreGratuits.length >= (f.requetesParMinuteGratuits ?? f.requetesParMinute)) return "limite par minute";
     return null;
   }
 
   // Attente avant de pouvoir réessayer un fournisseur limité par minute.
-  function attentePourFenetre(f) {
+  const estGratuit = (f, cerveau) => String(f.modeles[cerveau] ?? "").endsWith(":free");
+
+  function attentePourFenetre(f, cerveau) {
     const e = etatDe(f.id);
-    if (e.fenetre.length < f.requetesParMinute) return 0;
-    return Math.max(0, 60_000 - (maintenant() - e.fenetre[0])) + 250;
+    const pleine = (liste, max) => (liste.length >= max ? Math.max(0, 60_000 - (maintenant() - liste[0])) + 250 : 0);
+    return Math.max(
+      pleine(e.fenetre, f.requetesParMinute),
+      estGratuit(f, cerveau) ? pleine(e.fenetreGratuits, f.requetesParMinuteGratuits ?? f.requetesParMinute) : 0
+    );
   }
 
   // Une limite de débit (par minute ou HTTP 429) n'est pas une panne : on attend et on réessaie.
@@ -123,11 +131,12 @@ export function creerRouteur({
       const raison = disponible(f, cerveau, estimation);
       if (raison) {
         refus.push(`${f.id} : ${raison}`);
-        if (raison === "limite par minute") noterAttente(attentePourFenetre(f));
+        if (raison === "limite par minute") noterAttente(attentePourFenetre(f, cerveau));
         continue;
       }
       const e = etatDe(f.id);
       e.fenetre.push(maintenant());
+      if (estGratuit(f, cerveau)) e.fenetreGratuits.push(maintenant());
       try {
         const rep = await fetchImpl(f.url, {
           method: "POST",

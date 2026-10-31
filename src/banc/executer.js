@@ -8,22 +8,28 @@ import { NOMS_GENES } from "../genome.js";
 export async function executerBanc({ configurations, cas, routeur, tauxDeBase = null, seuilPoints = 10, surProgres = () => {} }) {
   const predictions = []; // { cas, config, p, fournisseur, erreur? }
   let fait = 0;
+  // Pour chaque cas, toutes les configurations prédisent en parallèle : chacune utilise un modèle différent,
+  // et le routeur gère seul les limites de débit.
   for (const c of cas) {
-    for (const config of configurations) {
-      try {
-        const r = await routeur.appeler({
-          cerveau: config.cerveau,
-          temperature: config.temperature,
-          maxTokens: 200,
-          messages: messagesPrediction(config, c, { tauxDeBase, seuilPoints }),
-        });
-        const p = lireProbabilite(r.texte);
-        predictions.push({ cas: c.id, config: config.id, p, fournisseur: r.fournisseur, erreur: p == null ? "illisible" : null });
-      } catch (err) {
-        predictions.push({ cas: c.id, config: config.id, p: null, erreur: err.message });
-      }
-      surProgres(++fait, cas.length * configurations.length);
-    }
+    const lot = await Promise.all(
+      configurations.map(async (config) => {
+        try {
+          const r = await routeur.appeler({
+            cerveau: config.cerveau,
+            temperature: config.temperature,
+            maxTokens: 200,
+            messages: messagesPrediction(config, c, { tauxDeBase, seuilPoints }),
+          });
+          const p = lireProbabilite(r.texte);
+          return { cas: c.id, config: config.id, p, fournisseur: r.fournisseur, erreur: p == null ? "illisible" : null };
+        } catch (err) {
+          return { cas: c.id, config: config.id, p: null, erreur: err.message };
+        } finally {
+          surProgres(++fait, cas.length * configurations.length);
+        }
+      })
+    );
+    predictions.push(...lot);
   }
   return noter({ configurations, cas, predictions });
 }
