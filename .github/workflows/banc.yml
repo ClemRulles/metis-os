@@ -12,7 +12,7 @@ on:
     - cron: "17 2 * * *"
 
 permissions:
-  contents: read
+  contents: write # pour déposer les résultats sur la branche « resultats », lue par Métis
 
 jobs:
   banc:
@@ -38,3 +38,18 @@ jobs:
           name: banc-${{ github.run_id }}
           path: data/banc-*.json
           retention-days: 30
+      - name: Dépôt des résultats pour Métis
+        run: |
+          mkdir -p /tmp/resultats && cp data/banc-*.json /tmp/resultats/
+          git config user.name "metis-os"
+          git config user.email "noreply@github.com"
+          git fetch origin resultats || true
+          if git rev-parse --verify -q origin/resultats >/dev/null; then
+            git checkout -B resultats origin/resultats
+          else
+            git checkout --orphan resultats && git rm -rq --cached . && git clean -fdq -e /tmp
+          fi
+          mkdir -p resultats && cp /tmp/resultats/*.json resultats/
+          git add resultats
+          git commit -qm "Banc du passé : passage ${{ github.run_id }}" || exit 0
+          git push origin resultats
