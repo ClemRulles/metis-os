@@ -1,0 +1,13 @@
+{
+  "name": "metis-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Métis OS v2 : machine d'agents sur modèles ouverts, pilotée par Métis.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "banc:collecter": "node scripts/collecter.js",
+    "banc:lancer": "node scripts/lancer-banc.js"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "note": "Les gènes sont des données : on en ajoute, on en retire ou on change leurs valeurs ici, sans toucher au code.",
+  "genes": {
+    "cerveau": ["deepseek", "qwen", "glm", "llama", "gemma", "mistral", "kimi", "minimax"],
+    "role": ["eclaireur", "inventeur", "critique", "concepteur", "batisseur", "predicteur"],
+    "lentille": ["cimetiere", "luxe-democratise", "travail-abandonne", "super-pouvoir-agent", "inversion", "transplant", "gratuit-instantane-unite", "futur-a-rebours"],
+    "raisonnement": ["premiers-principes", "analogie", "contrarien", "statistique", "intuitif"],
+    "persona": ["aucune", "trader-quant", "artisan", "vendeur-ecommerce-shenzhen", "parent-presse", "investisseur-sceptique", "client-exigeant"],
+    "territoire": ["rss-tech", "api-officielles", "donnees-ouvertes", "lancements-produits", "marches-de-prevision", "aucun"],
+    "zone": ["usa", "chine", "bresil", "europe-est", "be-lu", "monde"],
+    "risque": ["prudent", "equilibre", "kamikaze"],
+    "horizon": ["0-6", "6-18", "18-36"],
+    "memoire": ["totale", "partielle", "aucune"],
+    "outils": ["redaction", "code", "aucun"],
+    "temperature": [0.2, 0.5, 0.8, 1.1]
+  },
+  "regles": {
+    "distanceMinimale": 4,
+    "partFolle": 0.15,
+    "personaInterditePourRoles": ["critique", "predicteur"]
+  }
+}
