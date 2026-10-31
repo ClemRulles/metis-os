@@ -77,7 +77,7 @@ test("routeur : repli, budget et coupe-circuit", async () => {
   // a est coupé, b a presque épuisé son budget : plus aucun fournisseur.
   await assert.rejects(() => r.appeler({ cerveau: "qwen", messages: [], tokensEstimes: 200 }), /aucun fournisseur/);
   const rapport = r.rapport();
-  assert.equal(rapport.find((x) => x.fournisseur === "a").coupe, true);
+  assert.deepEqual(rapport.find((x) => x.fournisseur === "a").modelesCoupes, ["qwen"]);
   assert.equal(rapport.find((x) => x.fournisseur === "b").tokensUtilises, 900);
 });
 
@@ -184,5 +184,16 @@ test("routeur : attend et réessaie quand la limite par minute ou un 429 est att
   assert.equal(rep.texte, '{"p":0.4}');
   assert.ok(attentes.length >= 2, "au moins deux attentes");
   assert.ok(attentes[0] >= 59_000, "attend que la fenêtre d'une minute se libère");
-  assert.equal(r.rapport()[0].coupe, false, "un 429 ne déclenche pas le coupe-circuit");
+  assert.deepEqual(r.rapport()[0].modelesCoupes, [], "un 429 ne déclenche pas le coupe-circuit");
+});
+
+test("routeur : un modèle en panne ne coupe pas les autres modèles du même fournisseur", async () => {
+  const fournisseurs = [{ id: "a", url: "https://a", cle: "KA", tokensParJour: 1e9, requetesParMinute: 100, modeles: { qwen: "qa", glm: "ga" } }];
+  const ok = { json: { choices: [{ message: { content: '{"p":0.2}' } }], usage: { total_tokens: 5 } } };
+  const fetchImpl = fauxFetch([{ ok: false, status: 404 }, ok]);
+  const r = creerRouteur({ fournisseurs, env: { KA: "x" }, fetchImpl, seuilCoupeCircuit: 1 });
+  await assert.rejects(() => r.appeler({ cerveau: "qwen", messages: [], tokensEstimes: 1 }), /aucun fournisseur/);
+  const rep = await r.appeler({ cerveau: "glm", messages: [], tokensEstimes: 1 });
+  assert.equal(rep.modele, "ga");
+  assert.deepEqual(r.rapport()[0].modelesCoupes, ["qwen"]);
 });

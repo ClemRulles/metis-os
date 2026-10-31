@@ -59,14 +59,20 @@ export function creerRouteur({
   attente429Ms = 8_000,
   dormir = (ms) => new Promise((r) => setTimeout(r, ms)),
 } = {}) {
-  const etat = new Map(); // id -> { jour, tokens, echecs, coupeJusqua, fenetre: [] }
+  const etat = new Map(); // fournisseur -> { jour, tokens, fenetre: [] }
+  const circuits = new Map(); // "fournisseur|cerveau" -> { echecs, coupeJusqua } : un modèle en panne ne coupe pas les autres
+  const circuitDe = (id, cerveau) => {
+    const cle = `${id}|${cerveau}`;
+    if (!circuits.has(cle)) circuits.set(cle, { echecs: 0, coupeJusqua: 0 });
+    return circuits.get(cle);
+  };
   const jourDe = (t) => new Date(t).toISOString().slice(0, 10);
 
   function etatDe(id) {
     const t = maintenant();
     let e = etat.get(id);
     if (!e || e.jour !== jourDe(t)) {
-      e = { jour: jourDe(t), tokens: 0, echecs: e?.echecs ?? 0, coupeJusqua: e?.coupeJusqua ?? 0, fenetre: [] };
+      e = { jour: jourDe(t), tokens: 0, fenetre: [] };
       etat.set(id, e);
     }
     e.fenetre = e.fenetre.filter((x) => t - x < 60_000);
@@ -77,7 +83,7 @@ export function creerRouteur({
     if (!env[f.cle]) return "clé absente";
     if (!f.modeles[cerveau]) return "modèle absent";
     const e = etatDe(f.id);
-    if (e.coupeJusqua > maintenant()) return "coupe-circuit";
+    if (circuitDe(f.id, cerveau).coupeJusqua > maintenant()) return "coupe-circuit";
     if (e.tokens + tokensEstimes > f.tokensParJour) return "budget épuisé";
     if (e.fenetre.length >= f.requetesParMinute) return "limite par minute";
     return null;
@@ -139,13 +145,14 @@ export function creerRouteur({
         if (typeof texte !== "string") throw new Error("réponse sans texte");
         const consommes = json?.usage?.total_tokens ?? estimation;
         e.tokens += consommes;
-        e.echecs = 0;
+        circuitDe(f.id, cerveau).echecs = 0;
         return { texte, fournisseur: f.id, modele: f.modeles[cerveau], tokens: consommes };
       } catch (err) {
-        e.echecs += 1;
-        if (e.echecs >= seuilCoupeCircuit) {
-          e.coupeJusqua = maintenant() + pauseCoupeCircuitMs;
-          e.echecs = 0;
+        const c = circuitDe(f.id, cerveau);
+        c.echecs += 1;
+        if (c.echecs >= seuilCoupeCircuit) {
+          c.coupeJusqua = maintenant() + pauseCoupeCircuitMs;
+          c.echecs = 0;
         }
         refus.push(`${f.id} : ${err.message}`);
       }
@@ -160,7 +167,7 @@ export function creerRouteur({
         fournisseur: f.id,
         tokensUtilises: e.tokens,
         tokensRestants: Math.max(0, f.tokensParJour - e.tokens),
-        coupe: e.coupeJusqua > maintenant(),
+        modelesCoupes: [...circuits.entries()].filter(([k, c]) => k.startsWith(`${f.id}|`) && c.coupeJusqua > maintenant()).map(([k]) => k.split("|")[1]),
         cle: Boolean(env[f.cle]),
       };
     });
