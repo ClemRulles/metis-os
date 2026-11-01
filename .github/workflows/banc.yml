@@ -36,6 +36,11 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node scripts/lancer-banc.js "$(ls data/cas-show-hn-*.json | head -1)" "${{ github.event.inputs.nb_cas }}"
+      - name: Éclaireur de modèles (nouveaux modèles contre modèles en place)
+        continue-on-error: true
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: node scripts/eclaireur-modeles.js sortie
       - name: Résultats
         uses: actions/upload-artifact@v4
         with:
@@ -45,6 +50,7 @@ jobs:
       - name: Dépôt des résultats pour Métis
         run: |
           mkdir -p /tmp/resultats && cp data/banc-*.json /tmp/resultats/
+          [ -d sortie/labo ] && mkdir -p /tmp/labo && cp sortie/labo/* /tmp/labo/ || true
           git config user.name "metis-os"
           git config user.email "noreply@github.com"
           git fetch origin resultats || true
@@ -54,6 +60,7 @@ jobs:
             git checkout --orphan resultats && git rm -rq --cached . && git clean -fdq -e /tmp
           fi
           mkdir -p resultats && cp /tmp/resultats/*.json resultats/
+          [ -d /tmp/labo ] && mkdir -p resultats/labo && cp /tmp/labo/* resultats/labo/ || true
           git add resultats
           git commit -qm "Banc du passé : passage ${{ github.run_id }}" || exit 0
           for i in 1 2 3; do git push origin resultats && break; git pull --rebase -q origin resultats; done
