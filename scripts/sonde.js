@@ -53,7 +53,7 @@ async function appel(modele, corps) {
   try { ok = Array.isArray(JSON.parse(String(msg.content ?? "").replace(/```json|```/g, "")).idees); } catch {}
   return `${r.status} ${Date.now() - t}ms fin=${j?.choices?.[0]?.finish_reason} json=${ok} cout=${j?.usage?.cost} tokens=${j?.usage?.total_tokens} raisonnement=${String(msg.reasoning ?? "").length} contenu=${String(msg.content ?? "").length}${r.ok ? "" : " corps=" + txt.slice(0, 200)}`;
 }
-for (const [nom, id] of Object.entries(modeles)) {
+for (const [nom, id] of Object.entries(process.env.SONDE_MODELES ? modeles : {})) {
   for (const [variante, corps] of Object.entries({
     none_json: { reasoning: { effort: "none" }, response_format: { type: "json_object" } },
     exclude_low: { reasoning: { effort: "low", exclude: true }, response_format: { type: "json_object" } },
@@ -61,25 +61,25 @@ for (const [nom, id] of Object.entries(modeles)) {
     try { console.log(`MODELE ${nom} ${variante} ${await appel(id, corps)}`); } catch (e) { console.log(`MODELE ${nom} ${variante} ERREUR ${e.message}`); }
   }
 }
-for (const engine of ["parallel", "exa"]) {
+for (const [engine, modele] of [["parallel", "deepseek/deepseek-v4-flash"], ["exa", "deepseek/deepseek-v4-flash"], ["parallel", "z-ai/glm-5.3-flash"]]) {
   try {
     const t = Date.now();
     const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${process.env.OPENROUTER_API_KEY}` },
       body: JSON.stringify({
-        model: "z-ai/glm-5.3-flash",
+        model: modele,
         plugins: [{ id: "web", engine, max_results: 5 }],
-        reasoning: { effort: "none" },
+        reasoning: { effort: "low", exclude: true },
         usage: { include: true },
-        max_tokens: 1200,
+        max_tokens: 1500,
         messages: [{ role: "user", content: "Quels services en ligne existent déjà en France pour envoyer un journal audio quotidien personnalisé aux personnes âgées ? Cite noms, URL et prix." }],
       }),
       signal: AbortSignal.timeout(120000),
     });
     const j = await r.json();
     const ann = j?.choices?.[0]?.message?.annotations ?? [];
-    console.log(`WEB ${engine} ${r.status} ${Date.now() - t}ms cout=${j?.usage?.cost} citations=${ann.length} ${ann.slice(0, 3).map((a) => a.url_citation?.url).join(" ")} :: ${String(j?.choices?.[0]?.message?.content ?? JSON.stringify(j?.error ?? "")).slice(0, 300).replace(/\s+/g, " ")}`);
+    console.log(`WEB ${engine} ${modele} ${r.status} ${Date.now() - t}ms cout=${j?.usage?.cost} citations=${ann.length} ${ann.slice(0, 4).map((a) => a.url_citation?.url).join(" ")} :: ${String(j?.choices?.[0]?.message?.content ?? JSON.stringify(j?.error ?? "")).slice(0, 400).replace(/\s+/g, " ")}`);
   } catch (e) {
     console.log(`WEB ${engine} ERREUR ${e.message}`);
   }

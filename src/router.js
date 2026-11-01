@@ -10,6 +10,7 @@ export const FOURNISSEURS_PAR_DEFAUT = [
     tokensParJour: 3_000_000, // plafond de sécurité : environ 0,50 $ par jour au pire
     requetesParMinute: 200, // modèles payants
     requetesParMinuteGratuits: 18, // limite d'OpenRouter pour les modèles « :free », partagée par tout le compte
+    reflexionObligatoire: ["glm", "minimax"], // ces modèles refusent effort "none" (sonde du 1er nov.)
     modeles: {
       // Gratuits (limités à environ 1 000 requêtes par jour au total).
       gemma: "google/gemma-4-31b-it:free",
@@ -60,7 +61,10 @@ export function creerRouteur({
   attente429Ms = 5_000,
   delaiRequeteMs = 45_000, // une requête qui ne répond pas en 45 s est abandonnée
   dormir = (ms) => new Promise((r) => setTimeout(r, ms)),
+  plafondCoutUsd = Infinity, // coût maximal d'un passage : au-delà, plus aucun appel ne part
 } = {}) {
+  let coutUsd = 0;
+  let appels = 0;
   const etat = new Map(); // fournisseur -> { jour, tokens, fenetre: [] }
   const circuits = new Map(); // "fournisseur|cerveau" -> { echecs, coupeJusqua } : un modèle en panne ne coupe pas les autres
   const circuitDe = (id, cerveau) => {
@@ -120,8 +124,11 @@ export function creerRouteur({
     throw derniere;
   }
 
-  async function essayer({ cerveau, messages, temperature = 0.5, maxTokens = 800, tokensEstimes }) {
+  // json : demande un objet JSON (response_format) ; raisonnement : "none" coupe la réflexion pour les tâches
+  // structurées, "low" la garde courte ; web : { engine, max_results } branche la recherche web d'OpenRouter.
+  async function essayer({ cerveau, messages, temperature = 0.5, maxTokens = 800, tokensEstimes, json = false, raisonnement = "low", web = null }) {
     if (arretGlobal()) throw new ErreurRouteur("interrupteur d'arrêt activé");
+    if (coutUsd >= plafondCoutUsd) throw new ErreurRouteur(`plafond de coût atteint (${coutUsd.toFixed(3)} $)`);
     const estimation = tokensEstimes ?? Math.ceil(JSON.stringify(messages).length / 3.5) + maxTokens;
     const refus = [];
     let attenteMs = 0;
@@ -139,28 +146,51 @@ export function creerRouteur({
       e.fenetre.push(maintenant());
       if (estGratuit(f, cerveau)) e.fenetreGratuits.push(maintenant());
       try {
-        const rep = await fetchImpl(f.url, {
-          signal: typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(delaiRequeteMs) : undefined,
-          method: "POST",
-          headers: { "content-type": "application/json", authorization: `Bearer ${env[f.cle]}` },
-          body: JSON.stringify({ model: f.modeles[cerveau], messages, temperature, max_tokens: maxTokens, reasoning: { effort: "low" } }),
-        });
+        const corps = { model: f.modeles[cerveau], messages, temperature, max_tokens: maxTokens };
+        if (f.id === "openrouter") {
+          corps.usage = { include: true };
+          // En mode JSON, la réflexion n'est jamais renvoyée (exclude) : seule la réponse compte.
+          const obligatoire = (f.reflexionObligatoire ?? []).includes(cerveau);
+          corps.reasoning = raisonnement === "none" && !obligatoire ? { effort: "none" } : json ? { effort: "low", exclude: true } : { effort: "low" };
+          if (json) corps.response_format = { type: "json_object" };
+          if (web) corps.plugins = [{ id: "web", engine: web.engine ?? "parallel", max_results: web.max_results ?? 5 }];
+        } else if (json) corps.response_format = { type: "json_object" };
+        const envoyer = (b) =>
+          fetchImpl(f.url, {
+            signal: typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(delaiRequeteMs) : undefined,
+            method: "POST",
+            headers: { "content-type": "application/json", authorization: `Bearer ${env[f.cle]}` },
+            body: JSON.stringify(b),
+          });
+        appels += 1;
+        let rep = await envoyer(corps);
+        // Certains modèles refusent de couper leur réflexion, ou le mode JSON : on réessaie une fois sans ces options.
+        if (rep.status === 400 && (corps.reasoning?.effort === "none" || corps.response_format)) {
+          const repli = { ...corps, reasoning: { effort: "low", exclude: Boolean(json) } };
+          delete repli.response_format;
+          appels += 1;
+          rep = await envoyer(repli);
+        }
         if (rep.status === 429) {
           refus.push(`${f.id} : HTTP 429`);
           noterAttente(attente429Ms);
           continue;
         }
         if (!rep.ok) throw new Error(`HTTP ${rep.status}`);
-        const json = await rep.json();
+        const reponse = await rep.json();
         // Les modèles qui « réfléchissent » peuvent renvoyer un contenu vide et leur réponse dans le champ
         // reasoning : on lit le contenu d'abord, puis la réflexion en secours.
-        const msg = json?.choices?.[0]?.message ?? {};
-        const texte = typeof msg.content === "string" && msg.content.trim() ? msg.content : typeof msg.reasoning === "string" && msg.reasoning.trim() ? msg.reasoning : null;
-        if (texte == null) throw new Error(`réponse vide (fin : ${json?.choices?.[0]?.finish_reason ?? "inconnue"})`);
-        const consommes = json?.usage?.total_tokens ?? estimation;
+        const msg = reponse?.choices?.[0]?.message ?? {};
+        const contenu = typeof msg.content === "string" && msg.content.trim() ? msg.content : null;
+        const texte = contenu ?? (!json && typeof msg.reasoning === "string" && msg.reasoning.trim() ? msg.reasoning : null);
+        if (texte == null) throw new Error(`réponse vide (fin : ${reponse?.choices?.[0]?.finish_reason ?? "inconnue"})`);
+        const consommes = reponse?.usage?.total_tokens ?? estimation;
         e.tokens += consommes;
+        const cout = Number(reponse?.usage?.cost);
+        if (Number.isFinite(cout)) coutUsd += cout;
         circuitDe(f.id, cerveau).echecs = 0;
-        return { texte, fournisseur: f.id, modele: f.modeles[cerveau], tokens: consommes };
+        const citations = (msg.annotations ?? []).map((a) => a?.url_citation).filter(Boolean).map((c) => ({ url: c.url, titre: c.title ?? null }));
+        return { texte, fournisseur: f.id, modele: f.modeles[cerveau], tokens: consommes, cout: Number.isFinite(cout) ? cout : null, finDeReponse: reponse?.choices?.[0]?.finish_reason ?? null, citations };
       } catch (err) {
         const c = circuitDe(f.id, cerveau);
         c.echecs += 1;
@@ -173,6 +203,8 @@ export function creerRouteur({
     }
     throw new ErreurRouteur(`aucun fournisseur pour ${cerveau} (${refus.join(" ; ")})`, { refus, attenteMs });
   }
+
+  const cout = () => ({ usd: +coutUsd.toFixed(4), appels });
 
   function rapport() {
     return fournisseurs.map((f) => {
@@ -187,5 +219,5 @@ export function creerRouteur({
     });
   }
 
-  return { appeler, rapport };
+  return { appeler, rapport, cout };
 }
