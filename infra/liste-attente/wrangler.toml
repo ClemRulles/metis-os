@@ -1,0 +1,10 @@
+# Worker de liste d'attente. L'identifiant de la base D1 est renseigné au premier déploiement
+# (workflow « Expérience »), jamais à la main dans le code.
+name = "metis-liste-attente"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "metis-experiences"
+database_id = "A_RENSEIGNER"

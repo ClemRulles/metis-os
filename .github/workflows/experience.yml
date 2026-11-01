@@ -1,0 +1,48 @@
+name: Expérience
+
+# Met en ligne une page de test, seulement après le oui de Clément (lancement manuel).
+# Prérequis (secrets du dépôt) : CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, STATS_TOKEN.
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Dossier de l'expérience (experiences/<slug>)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  deployer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Secrets présents
+        run: |
+          [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ] || { echo "Ajoute CLOUDFLARE_API_TOKEN et CLOUDFLARE_ACCOUNT_ID dans les secrets du dépôt."; exit 1; }
+      - name: Base et Worker de liste d'attente
+        working-directory: infra/liste-attente
+        run: |
+          npx --yes wrangler@3 d1 create metis-experiences --location weur 2>/dev/null || true
+          id=$(npx --yes wrangler@3 d1 list --json | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{const b=JSON.parse(s).find(x=>x.name==="metis-experiences");process.stdout.write(b?b.uuid:"")})')
+          [ -n "$id" ] || { echo "Base D1 introuvable"; exit 1; }
+          sed -i "s/A_RENSEIGNER/$id/" wrangler.toml
+          npx --yes wrangler@3 d1 execute metis-experiences --remote --file=schema.sql
+          npx --yes wrangler@3 deploy | tee /tmp/deploy.txt
+          echo "${{ secrets.STATS_TOKEN }}" | npx --yes wrangler@3 secret put STATS_TOKEN
+          url=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' /tmp/deploy.txt | head -1)
+          echo "API_URL=$url" >> "$GITHUB_ENV"
+      - name: Page et porte de crédibilité
+        run: node scripts/preparer-experience.js "experiences/${{ github.event.inputs.slug }}/fiche.json"
+      - name: Mise en ligne de la page
+        run: |
+          npx --yes wrangler@3 pages project create metis-tests --production-branch main 2>/dev/null || true
+          mkdir -p /tmp/site && cp "experiences/${{ github.event.inputs.slug }}/index.html" /tmp/site/index.html
+          npx --yes wrangler@3 pages deploy /tmp/site --project-name metis-tests --branch "${{ github.event.inputs.slug }}" --commit-dirty=true
