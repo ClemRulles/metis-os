@@ -1,0 +1,16 @@
+[
+ {
+  "numero": 1,
+  "date": "2026-11-01",
+  "titre": "Métis, le matin — Épisode 1 : ce qu'est vraiment un modèle de langage",
+  "resume": "Premier épisode du podcast : Métis et Léa présentent la machine et décortiquent ce qu'est vraiment un modèle de langage, du mot suivant aux jetons. L'opportunité du jour est l'assistant de révision vocale pour le code de la route, et Clément reçoit une question à trancher dans le Cockpit.",
+  "question_du_jour": "Pour l'assistant de révision vocale du code de la route, préfères-tu démarrer par un bot WhatsApp avec cinq amis testeurs, ou par une landing page ciblée sur la révision mobile, comme le suggère la mutation proposée ?",
+  "lecon": "Ce qu'est vraiment un modèle de langage",
+  "duree": 527,
+  "taille": 3162621,
+  "audio": "https://github.com/ClemRulles/metis-os/releases/download/podcast-001/metis-matin-001.mp3",
+  "auteur_script": "glm",
+  "mots": 1586,
+  "cout_usd": 0.0021
+ }
+]

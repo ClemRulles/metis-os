@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>Métis, le matin</title>
+<link>https://github.com/ClemRulles/metis-os</link>
+<language>fr</language>
+<description>Chaque matin, 8 à 10 minutes pour comprendre l'IA en construisant une vraie machine : ce que les agents ont fait la nuit, une leçon tirée de ce qu'ils ont vécu, et une question pour Clément.</description>
+<itunes:author>Métis</itunes:author>
+<itunes:explicit>false</itunes:explicit>
+<item>
+<title>1. Métis, le matin — Épisode 1 : ce qu'est vraiment un modèle de langage</title>
+<description>Premier épisode du podcast : Métis et Léa présentent la machine et décortiquent ce qu'est vraiment un modèle de langage, du mot suivant aux jetons. L'opportunité du jour est l'assistant de révision vocale pour le code de la route, et Clément reçoit une question à trancher dans le Cockpit. Question du jour : Pour l'assistant de révision vocale du code de la route, préfères-tu démarrer par un bot WhatsApp avec cinq amis testeurs, ou par une landing page ciblée sur la révision mobile, comme le suggère la mutation proposée ?</description>
+<pubDate>Sun, 01 Nov 2026 05:30:00 GMT</pubDate>
+<guid isPermaLink="false">metis-matin-1</guid>
+<enclosure url="https://github.com/ClemRulles/metis-os/releases/download/podcast-001/metis-matin-001.mp3" length="3162621" type="audio/mpeg"/>
+<itunes:duration>527</itunes:duration>
+</item>
+</channel>
+</rss>
