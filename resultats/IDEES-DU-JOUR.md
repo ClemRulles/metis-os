@@ -1,163 +1,170 @@
 # Usine à idées — 2026-11-01
-156 idées générées, 108 notées, 48 duels. Appels : 394 (144 échecs).
+204 idées générées, 174 notées, 48 duels. Appels : 379 (70 échecs).
 
-## 1. Détective de fraude aux données ouvertes
-Elo 1564 · score 6.6 / 10 · lentille luxe-democratise · inventé par glm
+## 1. La Bande du Matin : un journal sonore de 7 minutes pour les aînés, commandé et payé par leurs enfants
+Elo 1564 · score 7.6 / 10 · lentille bien-commun · inventé par mimo
 
-- **Problème :** Quand une entreprise voisine brûle illégalement des déchets ou exploite sans autorisation, les citoyens n'ont ni outil ni méthode pour le détecter avant l'accident.
-- **Pour qui :** Collectivités de petite taille, associations, citoyens alertés qui n'ont pas les moyens d'un bureau d'investigation.
-- **Valeur pour la société :** Met la capacité de contre-expertise publique, réservée aux ONG établies, dans les mains de n'importe qui.
-- **Comment :** Agent qui recoupe en continu détections thermiques NASA FIRMS, registres ouverts et historiques Wikidata des sites pour signaler des incohérences suspectes avec un score de signalement argumenté.
-- **Pourquoi maintenant :** Les données thermiques satellite sont désormais de qualité journalistique et accessibles gratuitement ; le légal demandé explose.
-- **Revenu :** Abonnement 4 euros/mois par site surveillé, dossier de signalement documenté à 29 euros.
-- **Premier test :** Produire gratuitement un dossier documenté pour une association environnementale connue, lui proposer ensuite un abonnement mensuel de surveillance à 4 euros.
-- **Faille :** Le besoin réel des collectivités et associations pour ce service est incertain ; elles peuvent manquer de compétences pour utiliser les signalements ou de budget pour un abonnement même à 4 €. De plus, la confiance en un agent automatisé pour des décisions critiques (pollution) est faible sans validation humaine coûteuse.
-- **Mutation proposée :** Cibler d'abord les médias locaux et journalistes d'investigation comme clients payants (dossier vendu 50-100 €), et offrir une version gratuite aux associations avec alertes simples mais limitées, créant ainsi un effet de réputation qui attire les abonnés payants.
+- **Problème :** Isolement des personnes âgées et information locale de sécurité (feux actifs, canicule, prix de l'énergie) noyées dans des flux numériques qu'elles ne savent pas lire.
+- **Pour qui :** Adultes de 40 à 60 ans inquiets pour un parent seul, qui cherchent un cadeau utile plutôt qu'un objet, et les aînés concernés.
+- **Valeur pour la société :** Maintient un lien intergénérationnel régulier et livre l'alerte locale critique dans un format audible, sans smartphone ni application à installer.
+- **Comment :** Chaque matin, des agents compilent ENTSO-E (prix et heures), NASA FIRMS (feux actifs près du domicile) et l'agenda local en un MP3 narré, envoyé par e-mail et écoutable sur un simple haut-parleur ou téléphone.
+- **Pourquoi maintenant :** Les API sont ouvertes et gratuites et la génération audio narrée est devenue crédible : un journal hyperlocal quotidien à coût marginal est enfin possible, alors que la fracture numérique des aînés est un sujet de politique publique.
+- **Revenu :** Abonnement familial à 12 €/mois réglé par l'enfant, jamais par l'aîné démarché ; pas d'appel, tout se passe sur la page de commande.
+- **Premier test :** Prototype audio livré à la main sur 3 villes pilotes, puis page de commande : 20 abonnements prépayés en 14 jours via les réseaux familiaux et les communautés de seniors.
+- **Faille :** L'aîné doit posséder une adresse e-mail et un moyen d'écouter un fichier audio, ce qui est une barrière pour les moins connectés ; la qualité de la narration synthétique peut rebuter certains auditeurs.
+- **Mutation proposée :** Ajouter un petit boîtier audio dédié (coût <20€) fourni avec l'abonnement, qui se connecte au wifi et lit le journal automatiquement chaque matin, supprimant toute manipulation pour l'aîné.
 
-## 2. Douanoscope : le détecteur d'impossibilités commerciales
-Elo 1563 · score 7.3 / 10 · lentille evolution · inventé par glm
+## 2. Caducée 2.0 : la bourse des rappels produits, du signalement à la mise hors ligne automatique
+Elo 1563 · score 7.5 / 10 · lentille evolution · inventé par mimo
 
-- **Problème :** Les fraudes alimentaires (miel, huile d'olive) se cachent dans des volumes exportés impossibles : personne ne croise systématiquement les statistiques douanières Eurostat/Comtrade avec les surfaces cultivées réellement observables par satellite.
-- **Pour qui :** Journalistes d'investigation alimentaire, ONG, acheteurs de distributeurs spécialisés, et consommateurs exigeants.
-- **Valeur pour la société :** Rendre la fraude agroalimentaire visible par des preuves chiffrées publiques, et pousser les filières vers une traçabilité honnête.
-- **Comment :** Des agents IA maintiennent 24h/24 une matrice pays×produit (flux déclarés vs capacité agricole satellitaire vs bases d'authentification ADN publiées) et publient un « indice d'incohérence » sourcé, avec historique vérifiable de chaque alerte passée et son issue.
-- **Pourquoi maintenant :** Les scandales miel/huile de 2023-2024 ont créé une demande médiatique forte et les données Copernicus + Comtrade sont libres et fraîches.
-- **Revenu :** Rapports pays×produit individuels à 19 € pour journalistes et ONG, puis abonnement flux d'alertes à 29 €/mois pour rédactions et acheteurs.
-- **Premier test :** Publier gratuitement l'indice sur le miel pour 10 pays, vendre à 19 € le rapport détaillé « preuves et sources » via un lien partagé dans les communautés de journalistes data sur Slack/Discord.
-- **Faille :** Les sources de données (douanes, satellite, ADN) sont imparfaites et peuvent générer des faux positifs ; le marché des journalistes et ONG est restreint et souvent avide de données gratuites, ce qui rend la monétisation fragile.
-- **Mutation proposée :** Créer un tableau de bord public gratuit avec l'indice d'incohérence, puis monétiser via des sponsors de filières honnêtes (labels, producteurs) ou un service d'alerte premium pour les acheteurs et certificateurs, en capitalisant sur la crédibilité accumulée par les alertes vérifiées.
+- **Problème :** Les e-commerçants de compléments alimentaires et cosmétiques découvrent un rappel ou un signalement réglementaire des jours après la mise en ligne, pendant que leurs fiches vendent encore — un risque sanitaire et juridique silencieux.
+- **Pour qui :** Petits e-commerçants et marketplaces de produits à forte rotation (compléments, cosmétiques, jouets), ainsi que les marques elles-mêmes.
+- **Valeur pour la société :** Fermer la fenêtre entre l'alerte publique d'une autorité et le retrait du produit du marché, en transformant un signal public inexploité en action automatique et traçable.
+- **Comment :** Des agents surveillent en continu les signaux publics de rappel et de non-conformité (RASFF, affichages nationaux), les associent aux références produits, et livrent une clé API qui désactive automatiquement la fiche produit concernée sur le CMS du marchand, avec journal public de chaque intervention.
+- **Pourquoi maintenant :** Les API de CMS (Shopify, WooCommerce, PrestaShop) sont standardisées, les registres de signalement européens sont ouverts, et la sensibilité des consommateurs à la traçabilité n'a jamais été aussi élevée.
+- **Revenu :** Abonnement SaaS à partir de 39 €/mois par boutique, plus un forfait d'intégration technique unique vendu en self-service sur le site (aucun appel, tout se branche en vidéo-guidé et e-mail).
+- **Premier test :** En deux semaines : brancher la démo publique sur trois boutiques Shopify réelles, les faire signer à 39 €/mois après une alerte réelle survenue pendant l'essai, avec paiement en ligne immédiat.
+- **Faille :** Risque juridique majeur lié aux faux positifs : si l'agent désactive une fiche par erreur de matching (référence SKU vs dénomination réglementaire), le vendeur subit une perte de CA immédiate et peut vous réclamer des dommages-intérêts. Les registres publics utilisent des codes ou noms génériques, rarement les références exactes des CMS, ce qui rend l'automatisation totale dangereuse sans base de correspondances validée.
+- **Mutation proposée :** Remplacer le déclenchement automatique par un workflow à seuil de confiance : l'agent classe chaque alerte par probabilité et ne propose la mise hors ligne qu'au-delà d'un seuil configurable, avec validation en un clic côté marchand. Construire progressivement un jeu de données propriétaire de mapping marque/référence/CODES_UE pour verrouiller la defensibilité, et inclure une clause de limitation de responsabilité ainsi qu'un crédit de remboursement garanti en cas de faux positif avéré.
 
-## 3. Atlas vivant des chantiers et transformations du territoire
-Elo 1532 · score 7.5 / 10 · lentille travail-invisible · inventé par glm
+## 3. Terminus : l'observatoire citoyen des transformations du territoire, validé par la foule
+Elo 1532 · score 7.5 / 10 · lentille evolution · inventé par mimo
 
-- **Problème :** Les changements du territoire (nouvelles constructions, zones inondées, forêts qui dépérissent, champs laissés à l'abandon) sont visibles dans les images Sentinel gratuites, mais personne ne les compile pour le grand public.
-- **Pour qui :** Journalistes locaux, associations environnementales, chercheurs citoyens et curieux de leur région qui veulent voir et documenter ce qui change chez eux.
-- **Valeur pour la société :** Démocratise la transparence territoriale : expose les chantiers non déclarés, la déforestation, les zones bâties inondables, autrefois réservés aux experts.
-- **Comment :** Des agents IA comparent les images satellites Sentinel de chaque commune mois par mois, détectent les changements significatifs et publient un atlas web gratuit où chacun reçoit par e-mail les changements détectés sur sa zone choisie.
-- **Pourquoi maintenant :** Copernicus fournit des images quasi hebdomadaires gratuites et les modèles de vision sont devenus assez bons pour détecter automatiquement les changements à coût quasi nul.
-- **Revenu :** Zone de surveillance gratuite (1 commune), abonnement 5 €/mois par région surveillée ; rapports d'évolution d'une zone vendus à l'unité 20 € aux journalistes et associations.
-- **Premier test :** Publier l'atlas des 10 plus grandes transformations détectées dans une grande métropole française sur 12 mois, avec option de payer 5 € pour surveiller sa propre commune.
-- **Faille :** La détection automatique des changements par satellite est sujette à des faux positifs (nuages, variations saisonnières) et manque de validation terrain, ce qui peut nuire à la crédibilité de l'atlas et créer des conflits (chantiers déclarés vs. non déclarés).
-- **Mutation proposée :** Ajouter un système de validation citoyenne (crowdsourcing) où les utilisateurs peuvent confirmer ou infirmer les changements détectés, et nouer des partenariats avec des observatoires locaux pour fiabiliser les données et renforcer la confiance.
+- **Problème :** Les changements du territoire (défrichement, chantier sauvage, étendue urbaine) sont visibles sur les satellites mais illisibles pour les habitants et les collectivités, qui découvrent les faits accomplis trop tard.
+- **Pour qui :** Collectivités et associations de riverains, plus tout citoyen abonné gratuitement à sa commune — les collectivités paient, les citoyens créent la masse.
+- **Valeur pour la société :** Rendre la transformation physique du territoire lisible, contestable et archivée en temps réel par ceux qui l'habitent, avec une trace publique de ce qui a été observé et quand.
+- **Comment :** Des agents comparent chaque mois les images Sentinel de chaque commune, isolent les changements significatifs, et publient une fiche horodatée que les internautes confirment ou infirment en un clic ; le taux de validation citoyenne devient le score de fiabilité visible de chaque détection.
+- **Pourquoi maintenant :** Les archives Sentinel et Copernicus sont gratuites et régulières, les API d'observation de la Terre de l'UE sont ouvertes, et les modèles de détection de changement d'image suffisent pour industrialiser la surveillance de 35 000 communes.
+- **Revenu :** Abonnement communal type 150–400 €/an pour les collectivités (accès à l'historique complet, export, alerte réglementaire de chantier non déclaré), le service citoyen restant gratuit et ouvert.
+- **Premier test :** En deux semaines : prendre trois communes pilotes, diffuser les 20 premiers changements détés, lancer la validation citoyenne par e-mail, et vendre l'accès annuel complet à l'une des trois communes via un e-mail de présentation chiffré.
+- **Faille :** La validation citoyenne dépend d'une masse critique d'utilisateurs actifs, difficile à atteindre en zone rurale et risquant de biaiser la fiabilité ; sans elle, la promesse de crédibilité s'effondre.
+- **Mutation proposée :** Remplacer la validation par un clic citoyen par un croisement automatique avec les données ouvertes des permis de construire et du cadastre, ce qui rend le service fiable sans dépendre de la foule tout en conservant une interface de signalement pour les riverains.
 
-## 4. Cartes de citation inverse : qui cite les médias locaux
-Elo 1532 · score 7.3 / 10 · lentille inversion · inventé par glm
+## 4. Le registre des disparitions de transport public
+Elo 1532 · score 7.4 / 10 · lentille evolution · inventé par glm
 
-- **Problème :** Les journaux locaux et médias indépendants nourrissent les grandes plateformes d'information sans jamais savoir combien ni où leur travail est repris, alors qu'une étude récente montre la concentration massive de la citation dans quelques acteurs.
-- **Pour qui :** Médias locaux, rédactions indépendantes et chercheurs en économie des médias.
-- **Valeur pour la société :** Redonne du pouvoir de négociation aux petits médias, éclaire le débat sur la concentration médiatique et aide à financer un pluralisme fragilisé.
-- **Comment :** Inversion : le média qui cite devient le client fourni — nos agents tracent chaque semaine quels textes du média sont repris ou cités en ligne et génèrent un « registre de citation » factuel, sans aucun conseil.
-- **Pourquoi maintenant :** L'explosion des contenus générés par IA aggrave la dilution des sources originales et le sujet de la citation des médias fait débat public (droit voisin, IA).
-- **Revenu :** Registre mensuel de citation à 29 €/média, vendu par e-mail et site ; export public trimestriel offert pour la visibilité.
-- **Premier test :** Produire gratuitement un registre d'un mois pour 10 médias locaux contactés par e-mail, puis leur proposer l'abonnement à 29 €/mois.
-- **Faille :** Les médias locaux ont peu de budget et ne voient pas forcément l'intérêt de payer pour un registre de citations, surtout si un outil gratuit peut l'approcher.
-- **Mutation proposée :** Proposer un consortium de médias locaux qui partagent les données de citation pour créer un indice public de référence, monétisé via des abonnements aux données agrégées pour les chercheurs ou les grandes plateformes.
+- **Problème :** Quand une ligne de bus ou de train disparaît ou se dégrade dans une petite ville, personne ne le documente : les données GTFS changent en silence et les habitants découvrent à leurs dépens.
+- **Pour qui :** Élus locaux, associations d'usagers, médias territoriaux, collectifs de mobilité.
+- **Valeur pour la société :** Rendre visible et datable l'érosion du service public de transport dans les territoires, commune par commune, avec preuve historique incontestable.
+- **Comment :** Des agents surveillent les archives GTFS de milliers de réseaux, détectent suppressions et dégradations de lignes, et publient un atlas public gratuit où chaque commune peut recevoir par e-mail son historique de service.
+- **Pourquoi maintenant :** Les GTFS sont publiés en open data par la plupart des réseaux européens et le débat sur la désertification des transports est au sommet de l'agenda politique local.
+- **Revenu :** Atlas gratuit + abonnement 20 €/mois pour collectifs et médias (alertes ciblées, archives complètes) ; rapports territoriaux imprimables à 40 €.
+- **Premier test :** Produire en une semaine un rapport gratuit sur 10 agglomérations moyennes, l'envoyer aux associations d'usagers locales, et vendre la version complète France entière à 39 € en ligne.
+- **Faille :** La version gratuite risque de cannibaliser les abonnements payants, car la valeur perçue par les associations et médias locaux est insuffisante pour justifier 20 €/mois – ils préféreront consulter l'atlas gratuit ou attendre qu'un bénévole fasse le travail.
+- **Mutation proposée :** Remplacer le modèle d'abonnement par un service de « certification » payante pour les collectivités : un rapport annuel officiel de l'évolution du service sur leur territoire, utilisable dans les débats publics et les dossiers de subvention – combiné à une API gratuite pour les médias et associations, mais un tarif pour les collectivités (200 €/an) qui ont un vrai besoin de preuve chiffrée.
 
-## 5. L'indice Caducée public : la bourse des rappels produits
-Elo 1532 · score 7.0 / 10 · lentille evolution · inventé par glm
+## 5. Observatoire des citations : quels médias et quelles sources nourrissent réellement les IA du monde
+Elo 1532 · score 7.0 / 10 · lentille travail-invisible · inventé par mimo
 
-- **Problème :** Les signaux précoces de rappels (dossiers openFDA, EMA, Safety Gate) sont publics mais dispersés et illisibles ; distributeurs et pharmaciens en ligne découvrent les rappels trop tard.
-- **Pour qui :** Distributeurs et parapharmacies en ligne qui perdent de l'argent sur chaque lot rappelé découvert tard.
-- **Valeur pour la société :** Retirer plus vite les produits dangereux de la vente et créer un précédent de transparence publique avec historique vérifiable des prédictions.
-- **Comment :** Agents qui publient un « indice d'attention réglementaire » factuel et sourcé par produit (comptage de signaux publics, jamais de jugement), avec track record public : chaque alerte passée confrontée à son issue réelle.
-- **Pourquoi maintenant :** Les bases EMA/openFDA s'ouvrent davantage et un track record de quelques mois devient une barrière copiable.
-- **Revenu :** Widget de veille gratuit pour pharmaciens (via groupes pro), puis abonnement API/webhook d'alertes anticipées à 99 €/mois pour distributeurs en ligne.
-- **Premier test :** Publier l'indice public sur 200 produits, contacter par e-mail 30 parapharmacies en ligne avec le track record et vendre un pilote webhook à 99 €/mois.
-- **Faille :** La monétisation est fragile car les distributeurs peuvent accéder gratuitement aux alertes officielles (Safety Gate, FDA) ; l'indice public ne crée pas une valeur suffisante pour justifier un abonnement récurrent, et le cycle de vente B2B dépasse souvent 30 jours.
-- **Mutation proposée :** Cibler un segment à forte rotation et faible marge (ex: compléments alimentaires en ligne) avec un service qui non seulement alerte mais déclenche automatiquement la mise hors ligne des fiches produits via une intégration API CMS, augmentant la valeur perçue et la rétention.
+- **Problème :** Personne ne mesure en continu quelles sources (médias, encyclopédies, blogs) sont citées par les grands modèles, alors que cette visibilité décide déjà de la survie économique de milliers de rédactions indépendantes.
+- **Pour qui :** Journalistes indépendants, rédactions en ligne, chercheurs en sciences de l'information et médias alternatifs qui veulent comprendre leur présence ou leur absence dans les réponses des IA.
+- **Valeur pour la société :** Rendre visible la concentration cachée de l'information derrière les IA, pour que le débat public ne repose pas sur cinq sources invisibles sélectionnées par des modèles opaques.
+- **Comment :** Une armée d'agents interroge en boucle plusieurs systèmes d'IA publics, compare les réponses, extrait et normalise toutes les sources citées, puis croise le tout avec les bases de médias de 77 pays publiées quotidiennement.
+- **Pourquoi maintenant :** Les IA génératives sont devenues le premier point d'entrée de l'information pour des centaines de millions de personnes, mais aucun référentiel public de leurs citations n'existe encore.
+- **Revenu :** Abonnement mensuel aux données brutes et aux classements (à partir de 29 €/mois) plus API payante pour rédactions et chercheurs, facturation 100 % en ligne, aucun appel.
+- **Premier test :** En deux semaines : mesurer les citations d'un panel de 500 questions d'actualité sur 3 modèles d'IA, publier un premier classement « qui est cité en France » en accès gratuit partiel, et vendre 10 abonnements early-bird à 29 € aux rédactions contactées par e-mail.
+- **Faille :** Les clients visés (rédactions indépendantes, chercheurs) sont les moins solvables et n'achètent pas un classement : ils achètent un changement. Sans preuve qu'être cité ou non dans les IA modifie leur trafic ou leurs revenus, l'abonnement à 29 € reste un gadget de curiosité. De plus, les réponses des modèles varient énormément d'une requête à l'autre : sans méthodologie statistique solide et documentée, les données sont contestables et la valeur perçue s'effondre.
+- **Mutation proposée :** Transformer l'observatoire en produit d'action, pas de constat : pour chaque média abonné, un rapport mensuel « votre visibilité IA vs vos concurrents » avec les questions exactes où vous apparaissez ou disparaissez, et des recommandations techniques (structure, sitemap, licensing LLM) pour devenir citable. Ajouter un classement public gratuit et viral (communiqués de presse, relais chez les chercheurs) comme aimant, et vendre l'accès API à des acteurs solvables : agences de presse, plateformes de vérification, fonds qui parient sur l'écosystème média. C'est la preuve d'impact, pas la donnée brute, qui déclenche le paiement.
 
-## 6. École d'advocatie par simulation pour jeunes barreaux
-Elo 1532 · score 6.8 / 10 · lentille transplant · inventé par glm
+## 6. Obsolète.io — alerter les développeurs sur leurs dépendances abandonnées
+Elo 1532 · score 7.0 / 10 · lentille signal-faible · inventé par glm
 
-- **Problème :** Les jeunes avocats francophones apprennent la plaidoirie sur le dos de vrais clients, car les mises en situation réalistes sont rares et chères.
-- **Pour qui :** Jeunes avocats au stage et étudiants en droit francophones préparant les plaidoiries.
-- **Valeur pour la société :** Meilleure représentation des justiciables : des professionnels mieux entraînés avant de plaider pour de vrai, accessibles à tous les budgets.
-- **Comment :** Simulateur d'audience où un agent IA joue le juge, l'adversaire et le client, avec injection de pièces imprévues, et débriefe la plaidoirie ; inspiré des simulateurs de formation américains, transplanté en français.
-- **Pourquoi maintenant :** Les LLM tiennent enfin un rôle d'adversaire crédible et l'affaire du prompt injection brésilien montre que le marché juridique se méfie des robots écrivains, pas des robots entraîneurs.
-- **Revenu :** Abonnement étudiant 15-25 euros/mois, packs de préparation à une audience à 30 euros.
-- **Premier test :** Session de plaidoirie simulée payante à 10 euros, vendue via Discord et mailing d'écoles du barreau à 40 stagiaires, en 2 semaines.
-- **Faille :** La simulation IA peine à reproduire la pression émotionnelle et les imprévus d'une vraie audience, ce qui peut donner un faux sentiment de préparation.
-- **Mutation proposée :** Intégrer des sessions de débriefing avec un avocat mentor (payé à la tâche) et proposer des scénarios certifiés par les écoles du barreau pour crédibiliser l'offre.
+- **Problème :** Des milliers de projets open source critiques sont maintenus par une seule personne épuisée ou plus du tout : les utilisateurs ne le découvrent qu'au moment de la faille.
+- **Pour qui :** Mainteneurs de projets open source et développeurs solo qui veulent savoir quelles briques de leur stack risquent de mourir sous leurs pieds.
+- **Valeur pour la société :** Renforcer la santé de l'infrastructure logicielle mondiale, bien commun invisible dont dépend l'économie entière.
+- **Comment :** Des agents IA croisent npm, PyPI et GitHub pour calculer un « score de fragilité » de chaque dépendance (activité du mainteneur, dette, bus factor) et envoient une veille hebdomadaire claire.
+- **Pourquoi maintenant :** Les failles via dépendances (xz, log4shell) ont rendu la question brûlante, mais aucun service grand public n'explique la vulnérabilité humaine des dépendances.
+- **Revenu :** Abonnement 5 €/mois pour la veille personnalisée sur ses propres dépôts ; version gratuite sur les projets publics.
+- **Premier test :** Publier des scores de fragilité gratuits pour 500 projets populaires, avec lien de paiement « surveillez vos dépôts » ; viser 10 payeurs en 2 semaines.
+- **Faille :** Le score de fragilité repose sur des données publiques et un algorithme facilement reproductible ; les développeurs peuvent déjà évaluer eux-mêmes l'activité des mainteneurs, ce qui limite la valeur perçue et la disposition à payer.
+- **Mutation proposée :** Ajouter un réseau de confiance où les mainteneurs s'inscrivent volontairement et où les utilisateurs peuvent souscrire à un engagement de reprise (fork garanti) en cas d'abandon, créant ainsi une barrière d'entrée par la communauté et la confiance.
 
-## 7. CroiseurStat : interrogations inversées sur les données publiques
-Elo 1532 · score 6.8 / 10 · lentille signal-faible · inventé par glm
+## 7. Le Traducteur — chaque courrier d'administration en plan d'action de 5 points
+Elo 1532 · score 6.9 / 10 · lentille luxe-democratise · inventé par mimo
 
-- **Problème :** Eurostat, OCDE et Banque mondiale publient des océans de données, mais personne n'achète les croisements avant qu'une question existe — la valeur dort dans les requêtes non formulées.
-- **Pour qui :** Créateurs de contenu économie/démographie, collectivités locales, cabinets de politique publique (hors conseil : livraison de jeux de données sur mesure).
-- **Valeur pour la société :** Rendre les statistiques publiques interrogeables en langage naturel, désanctuariser la donnée institutionnelle pour le citoyen.
-- **Comment :** Moteur web gratuit en front (« pose ta question, l'agent croise INSEE+Eurostat+Banque mondiale ») avec export PDF/données premium payant : l'IA génère la requête, le graphique et les sources vérifiées.
-- **Pourquoi maintenant :** La fiabilité des LLM sur les codes de séries statistiques vient de devenir suffisante ; fenêtre de 12-24 mois avant que les instituts publics le fassent eux-mêmes.
-- **Revenu :** Freemium : interrogation gratuite avec watermark, export haute qualité et API à 19 €/mois ou 5 € l'export.
-- **Premier test :** Lancer le produit en 1 semaine, publier 3 croisements »surprenants » (ex : densité x communautaire) sur les réseaux sociaux avec lien payant, mesurer les exports payants en 14 jours.
-- **Faille :** La fiabilité des réponses statistiques générées par LLM reste incertaine ; les utilisateurs peuvent se méfier et préférer vérifier manuellement, ce qui réduit la valeur perçue et la disposition à payer.
-- **Mutation proposée :** Ajouter un système de vérification transparent qui affiche les appels API exacts et les données brutes, et cibler un segment spécifique (ex. collectivités locales) avec des exports standardisés prêts à l'emploi, accompagnés d'une curation humaine pour garantir la fiabilité.
+- **Problème :** Un courrier de la CAF, de l'administration fiscale ou d'une préfecture déclenche anxiété, erreurs de réponse et délais perdus, faute d'accès à l'interprète que les aisés engagent pour eux.
+- **Pour qui :** Les 12 millions de Français peu familiers du langage administratif, les nouveaux arrivants et les personnes âgéesaidées par leurs enfants.
+- **Valeur pour la société :** Transforme un accès aux droits obstrué par la langue administrative en autonomie réelle, sans remplacer ni contredire le service public.
+- **Comment :** L'utilisateur photographie son courrier ; l'agent en extrait le sens, le renvoie en français simple : ce qu'on me demande, la date limite, où cliquer ou écrire, et les textes publics correspondants, avec suppression automatique du document après 24 h.
+- **Pourquoi maintenant :** La qualité des modèles multimodaux rend la lecture de documents administratifs fiable en 2024, alors que les listes d'attente des assistants sociaux n'ont jamais été plus longues.
+- **Revenu :** 4 € par document, ou pack 10 documents à 29 € ; base légale du traitement : consentement explicite + minimisation, purge automatique, aucune donnée conservée.
+- **Premier test :** Compte TikTok/Reels publiant 10 traductions de courriers types réels (anonymisés) + lien de paiement direct : viser 25 documents traduits payés en 14 jours.
+- **Faille :** La défense est faible : n'importe quel assistant IA gratuit (ChatGPT, Claude) peut déjà lire et simplifier un document administratif, sans frais, ce qui rend difficile de justifier 4 € par traduction, surtout sans données propriétaires ou réseau verrouillé.
+- **Mutation proposée :** Ajouter une couche de vérification humaine par des bénévoles ou retraités (ex‑fonctionnaires) pour garantir l'exactitude des plans d'action, et créer une base de modèles de courriers anonymisés qui améliore l'agent au fil du temps, transformant le service en référence fiable que les outils gratuits ne peuvent pas égaler.
 
-## 8. Rediffuseur de promesses publiques
-Elo 1501 · score 6.6 / 10 · lentille travail-invisible · inventé par glm
+## 8.  Veille des « cygnes faibles » ASX-liée ESEF
+Elo 1501 · score 7.1 / 10 · lentille travail-invisible · inventé par glm
 
-- **Problème :** Les collectivités et institutions publient des plans, budgets et engagements sur des milliers de pages PDF que personne ne relit ; les promesses non tenues disparaissent dans l'oubli.
-- **Pour qui :** Citoyens, journalistes et associations qui veulent savoir ce qui a réellement été promis et fait dans leur ville ou leur région.
-- **Valeur pour la société :** Renforce la démocratie en rendant traçables les engagements publics : ce qui était annoncé en 2021 versus ce qui existe en 2025.
-- **Comment :** Des agents IA extraient automatiquement les engagements chiffrés des documents publics d'une collectivité, les replient sur les réalisations publiées ensuite, et publient un tableau public « promis vs. fait » mis à jour chaque semaine.
-- **Pourquoi maintenant :** Les documents publics sont de plus en plus numérisés et les LLM savent enfin extraire des engagements structurés de PDF arides à grande échelle.
-- **Revenu :** Gratuit pour 10 collectivités pilotes ; e-mail hebdomadaire de suivi à 4 €/mois par collectivité pour les citoyens, dossiers complets à 49 € pour les rédactions.
-- **Premier test :** Produire le tableau « promis vs. fait » d'une grande ville française pilote, le publier librement et vendre le dossier complet aux journalistes locaux à 49 € via la page web.
-- **Faille :** La donnée source est 100 % publique et le tableau « promis vs. fait » est recopiable en un clic : un média, une association ou un assistant IA gratuit peut refaire le même travail demain, et la moindre erreur d'interprétation (qualifier à tort un engagement de « non tenu ») détruit la crédibilité et expose à un risque de contestation.
-- **Mutation proposée :** Ne pas vendre le tableau lui-même (gratuit et viral), mais construire la base de données structurée propriétaire la plus complète des engagements publics français, avec historique, sources citées page par page et API/flux RSS — et monétiser l'accès prioritaire aux rédactions, aux candidats et aux observatoires locaux, en commençant par un dossier premium à 49 € sur une ville pilote pour valider la demande.
+- **Problème :** L'ESEF impose depuis 2021 des comptes annuels lisibles par machine pour toutes les sociétés européennes, mais ce trésor n'est exploité par personne en dehors des banques : déclassifications de risques, impairements, gestions douteuses restent enfouies pendant des semaines.
+- **Pour qui :** Les rédacteurs financiers indépendants, les podcasters économie FR, les investisseurs individuels européens (hors conseil personnalisé : information factuelle source-documentée).
+- **Valeur pour la société :** Transparence renforcée : signale des signaux de faiblesse financiers des entreprises européennes bien avant les groupes média aux incentifs publicitaires, servant la surveillance citoyenne du tissu économique.
+- **Comment :** Des agents ingèrent chaque nouveau rapport ESEF publié, comparent ses wordings, comptes et notes par rapport aux années N-1/N-2, et sortent chaque vendredi « les 10 signaux les plus faibles de la semaine » avec les extraits sources (paragraphes pédisation, changements d'auditeur, glissements de trésorerie).
+- **Pourquoi maintenant :** Le rapport ESEF récent dernier descend un rapport suffisant de qualité, tandis que les scenarii de crise européenne (veille rate, révision fraude) rendent le temps réel aux signaux précieux en attendant.
+- **Revenu :** Bulletin hebdo à 12 €/mois, top-3 gratuit pour propulser le vis sur Reddit r/europe et les lecteurs finance FR ; bloc « sources » cliquables comme preuve de travail réel.
+- **Premier test :** Une page produit + 3 numéros gratuits programmés avant tout paiement, bouton Stripe actif dès le jour 1, signal depuis HN/Reddit « j'ai lu 400 rapports annuels cette semaine pour vous » — les 30 premiers payeurs valident le prix.
+- **Faille :** ...
+- **Mutation proposée :** ...
 
-## 9. Cote de confiance des engagements climatiques locaux
-Elo 1500 · score 7.6 / 10 · lentille collision-api · inventé par glm
+## 9. Veille des Frontières de Feu
+Elo 1500 · score 7.4 / 10 · lentille futur-a-rebours · inventé par minimax
 
-- **Problème :** Les communes et entreprises affichent des engagements de réduction d'émissions, mais personne ne vérifie publiquement si les capteurs du terrain montrent une amélioration réelle.
-- **Pour qui :** Habitants, journalistes locaux et élus qui veulent suivre les promesses de leur commune.
-- **Valeur pour la société :** Crée une pression transparente et factuelle sur les engagements environnementaux, sans accusation mais avec des données mesurées.
-- **Comment :** Agents qui croisent les mesures OpenAQ/Sensor.Community par commune avec les engagements publics déclarés, et publient un « thermomètre » de suivi annuel par commune, en accès libre avec syndication payante.
-- **Pourquoi maintenant :** Les données de capteurs deviennent suffisamment denses pour des comparaisons annuelles crédibles à l'échelle communale.
-- **Revenu :** Syndication payante du thermomètre pour médias locaux et widgets intégrables (49 €/an par commune suivie).
-- **Premier test :** Publier gratuitement le thermomètre de 20 grandes villes, puis proposer aux journaux locaux en ligne un widget syndiqué payant ; 3 souscriptions visées.
-- **Faille :** La couverture et la fiabilité des données OpenAQ/Sensor.Community restent très inégales selon les communes, risquant de produire un thermomètre non représentatif, voire trompeur. De plus, les engagements publics sont souvent formulés de manière vague, rendant la comparaison directe avec des mesures de capteurs contestable.
-- **Mutation proposée :** Ajouter un module de signalement collaboratif où les citoyens et associations peuvent remonter des données locales (photos de compteurs, relevés officiels) et commenter le thermomètre, transformant l'outil en plateforme ouverte de vigilance citoyenne. Cela renforce la crédibilité et crée un réseau de contributeurs difficiles à reproduire.
+- **Problème :** Pendant les incendies, lesirst? habitants et serenity gestionnaires de zones deMaker$: manque une anticipation locale lisible des fumées et des déplacements possibles.
+- **Pour qui :** Habitants des zones rurales, voyageurs, Blackjack? collectives deorski? Parish.
+- **Valeur pour la société :** Améliorer la preparedness? preparedness et la coordination locale en diffusant une informationEnvironmental environmental claire, sans simuler une authority.
+- **Comment :** Un tableau de bord combine detections FIRMS, prévisions de vent et données publiques pour signaler les zones fumeuses, avec des liens vers les consignes officielles.
+- **Pourquoi maintenant :** Les detections satellitaires sont quasi temps réel et les événements récents montrent un besoin concret de coordination à l’échelle locale.
+- **Revenu :** Abonnement à 4,99 euros par mois pour les alertes par courriel et la carte hors ligne, complété par un sponsoring transparent d’associations locales.
+- **Premier test :** Publier gratuitement une carte pour une région et vendre 15 abonnements d’alerte avant abonnement à un tarif fondateur.
+- **Faille :** La dépendance à des données satellitaires publiques (FIRMS) entraîne des délais et des faux positifs (brûlis agricoles), ce qui réduit la fiabilité perçue et peut dissuader l'abonnement face à des alternatives gratuites comme Watch Duty.
+- **Mutation proposée :** Ajouter un mécanisme de validation communautaire où les abonnés signalent et confirment les fumées visibles, couplé à un croisement multi-sources (satellites, capteurs locaux, rapports citoyens) via agents IA pour filtrer les fausses alertes, puis proposer une version freemium avec un abonnement premium pour les alertes ultra-locales et la carte hors ligne sans publicité.
 
-## 10. Traçabilité contractuelle : chaque marché public européen traduit en alertes d'opportunité
-Elo 1500 · score 7.5 / 10 · lentille super-pouvoir-agent · inventé par glm
+## 10. Registry-Motion Index : l'indice « activité réelle vs activité déclarée » à l'usage ponctuel
+Elo 1500 · score 7.2 / 10 · lentille collision-api · inventé par mimo
 
-- **Problème :** Les appels d'offres européens sont dispersés sur des dizaines de portails publiés à toute heure ; les PME manquent 80 % des marchés qui les concernent.
-- **Pour qui :** PME innovantes européennes qui veulent vendre aux acheteurs publics mais n'ont pas de cellule veille.
-- **Valeur pour la société :** Ouvre la commande publique aux petits acteurs au lieu des seuls cabinets spécialisés, rendant la dépense publique plus concurrentielle et diversifiée.
-- **Comment :** Des agents scrutent jour et nuit TED, BOAMP et les portaux nationaux, filtrent par métier déclaré de l'abonné et rédigent un résumé exploitable de chaque appel pertinent avec échéances.
-- **Pourquoi maintenant :** Les nouveaux seuils et la numérisation complète de la commande publique européenne (2024-2025) rendent le flux integral et lisible par machine.
-- **Revenu :** Abonnement 25-50 euros/mois selon fineness du filtrage, avec paiement en ligne ; option « pack premier dépôt » documentaire.
-- **Premier test :** Offrir le filtrage manuel-agent à 10 PME d'un seul secteur pendant 2 semaines à 40 euros, recrutées via un post dans une communauté sectorielle en ligne.
-- **Faille :** Les données de marchés publics sont ouvertes et gratuites ; un assistant IA concurrent peut offrir le même service sans abonnement, et les PME hésitent à payer pour une information qu'elles perçoivent comme accessible ailleurs.
-- **Mutation proposée :** Se spécialiser sur un segment à forte valeur ajoutée (ex. marchés verts, innovation) et ajouter une analyse prédictive du taux de succès basée sur l'historique des attributions, ce qui créerait une couche propriétaire difficile à reproduire.
+- **Problème :** Journalistes, chercheurs et investisseurs particuliers paient cher des bases propriétaires alors que le signal le plus honnête — une entreprise bouge-t-elle physiquement ? — reste enfoui dans deux silos non connectés.
+- **Pour qui :** Journalistes indépendants, doctorants en économie, analystes en fonds propres et citoyens enquêteurs, acheteurs à la requête.
+- **Valeur pour la société :** Rend enfin mesurable et vérifiable l'écart déclarations/physique pour des dizaines de milliers d'entreprises, ce qui renforce le débat public sur la transparence des comptes.
+- **Comment :** Un score par entité (événements registre + dynamique des actifs liés) publié en API et en fiches publiques, livré comme données brutes avec la méthode et les sources, sans interprétation ni conseil.
+- **Pourquoi maintenant :** Les modèles de fondations cartographiques (cf. états spatiaux) rendent soudain automatisable le recollement image/trajet/regardé — capacité inexistable il y a 18 mois.
+- **Revenu :** Marketplace d'API : 200 crédits offerts, puis 0,05 €/requête et pack chercheur à 29 €/mois, encaissement instantané par paiement en ligne.
+- **Premier test :** Publier 50 fiches publiques très virales (les 50 plus grands écarts du trimestre), poster les liens sur data-twitter et 2 Slack data, viser 3 acheteurs de crédits et 29 €/mois de pack avant le jour 14.
+- **Faille :** La corrélation entre activité physique (images satellite, trajectoires) et activité déclarée est intrinsèquement bruitée et peut produire des faux positifs embarrassants, surtout si la méthode de score n'est pas validée. L'accès aux sources (registres payants, OpenSky avec limites) n'est pas garanti gratuitement, et leur croisement peut violer des conditions d'utilisation.
+- **Mutation proposée :** Spécialiser l'indice sur un secteur à haute valeur probante (logistique, transport) où le lien physique/déclaré est plus direct. Ajouter un mécanisme de validation communautaire pour réduire les faux positifs et créer un réseau de confiance, rendant la donnée plus défendable et précieuse.
 
 ## Santé des cerveaux
-- glm : 69 ok, 6 échecs (JSON illisible : ```json
+- minimax : 11 ok, 9 échecs (JSON illisible : [
+  {
+    "titre": "L’Archive Vivante",
+    "probleme": "Des millions d’ouvrages, cartes et archives libres de droits do)
+- glm : 73 ok, 2 échecs (JSON illisible : ```json
 [
   {
-    "titre": "WakeUpLeads : sirene de dépendances abandonnées",
-    "probleme": "Des milliers de paquets n)
-- minimax : 7 ok, 9 échecs (JSON illisible : [
+    "titre": "Verdis-je ? Le Dr Drop de la toiture solaire",
+    "probleme": "Les propriétaires se font dé)
+- deepseek : 93 ok, 7 échecs (JSON illisible : ```json
+[
   {
-    "titre": "Mines antipas : un vigie communautaire des dépendances qui meurent",
-    "probleme": "Des applicatio)
-- mimo : 88 ok, 24 échecs (JSON illisible : The user wants 4 radically different ideas in a JSON table format, following the "cimetière" method (ideas attempted bef)
-- deepseek : 46 ok, 44 échecs (JSON illisible : Thinking. 1.  **Analyze the Request:**
-    *   Role: A visionary inventor in a young, ambitious, cheeky AI agent organiz)
-- qwen : 40 ok, 61 échecs (JSON illisible : Here's a thinking process:
+    "titre": "Boutique Fantôme (GhostDuty Detector)",
+    "probleme": "Un cosmétique ou aliment change de )
+- mimo : 77 ok, 9 échecs (JSON illisible : ```json
+[
+  {
+    "titre": "Quartier Clair : la fiche environnementale d'une adresse, achetée en 1 clic",
+    "probleme")
+- qwen : 55 ok, 43 échecs (JSON illisible : Here's a thinking process:
 
 1.  **Analyze User Input:**
-   - **Role:** Visionary inventor in a young, ambitious, cheeky )
+   - **Role:** Visionary inventor in a young, ambitious, and aud)
 
 ## Lentilles
-- cimetiere : 12 idées, score moyen 5.88, 1 finalistes
-- travail-invisible : 12 idées, score moyen 6.1, 4 finalistes
-- luxe-democratise : 20 idées, score moyen 6.07, 3 finalistes
-- signal-faible : 12 idées, score moyen 5.88, 3 finalistes
-- transplant : 16 idées, score moyen 6.29, 3 finalistes
-- inversion : 11 idées, score moyen 6.22, 2 finalistes
-- super-pouvoir-agent : 16 idées, score moyen 6.29, 3 finalistes
-- bien-commun : 17 idées, score moyen 6.09, 2 finalistes
-- collision-api : 20 idées, score moyen 5.96, 1 finalistes
-- evolution : 12 idées, score moyen 6.31, 2 finalistes
-- futur-a-rebours : 8 idées, score moyen 5.61, 0 finalistes
+- futur-a-rebours : 20 idées, score moyen 5.31, 2 finalistes
+- collision-api : 24 idées, score moyen 6.35, 3 finalistes
+- cimetiere : 20 idées, score moyen 6.1, 2 finalistes
+- travail-invisible : 20 idées, score moyen 6.25, 4 finalistes
+- signal-faible : 19 idées, score moyen 5.75, 1 finalistes
+- transplant : 16 idées, score moyen 5.69, 1 finalistes
+- inversion : 16 idées, score moyen 6.15, 0 finalistes
+- super-pouvoir-agent : 16 idées, score moyen 6.15, 2 finalistes
+- bien-commun : 17 idées, score moyen 6.17, 1 finalistes
+- luxe-democratise : 20 idées, score moyen 6.11, 3 finalistes
+- evolution : 16 idées, score moyen 6.32, 5 finalistes
