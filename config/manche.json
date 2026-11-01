@@ -1,9 +1,16 @@
 {
   "note": "Plan de la prochaine manche. Métis le réécrit après chaque analyse : une manche sans hypothèse ne sert à rien. Champs lus par scripts/lancer-banc.js et recopiés dans le fichier de résultats.",
   "phase": "idee",
-  "numero": 4,
-  "hypothese": "Avec 1 200 tokens et reasoning low, qwen, gemma et inkling répondent enfin (moins de 10 % d'échecs par modèle).",
-  "critere_succes": "Chaque cerveau a au moins 40 réponses lisibles sur 50 ; sinon, il est retiré ou remplacé à la manche suivante.",
-  "question_suivante": "Si tous répondent : la moyenne recalibrée vers le taux de base bat-elle le taux de base ?",
-  "nb_cas": 50
+  "numero": 5,
+  "hypothese": "Avec seulement des modèles fiables (6 cerveaux payants quasi gratuits, sans llama), le prix collectif bat le taux de base (Brier marché < Brier taux de base).",
+  "critere_succes": "Brier du marché inférieur au Brier du taux de base sur les mêmes 100 cas, et au moins 90 réponses lisibles sur 100 par modèle.",
+  "question_suivante": "Si oui : le recalibrage vers le taux de base et l'ajout du modèle maison au marché améliorent-ils encore le score ? Si non : les modèles n'ajoutent rien au taux de base, on passe au modèle maison comme juge principal.",
+  "historique": [
+    {
+      "numero": 4,
+      "verdict": "partiellement confirmée",
+      "detail": "qwen répond 100/100 (correctif efficace) ; gemma 0/50 (HTTP 429, file gratuite saturée), inkling 0/50 (HTTP 403). Marché 0,0796 contre 0,0736 pour le taux de base : pire, à cause de llama (probabilité moyenne 57 % pour un vrai taux de 7,5 %). qwen et mimo sont au niveau du taux de base."
+    }
+  ],
+  "nb_cas": 100
 }

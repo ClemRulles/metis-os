@@ -1,16 +1,12 @@
 {
   "version": 1,
-  "note": "Les gènes sont des données : on en ajoute, on en retire ou on change leurs valeurs ici, sans toucher au code. Catalogue des cerveaux vérifié sur OpenRouter le 1er novembre 2026.",
+  "note": "Les gènes sont des données : on en ajoute, on en retire ou on change leurs valeurs ici, sans toucher au code. Catalogue des cerveaux vérifié sur OpenRouter le 1er novembre 2026. Manche 4 (1er nov.) : gemma (429, gratuit saturé), inkling (403) et llama (surconfiant, Brier 0,36) retirés ; nemotron gratuit mis de côté pour la même raison que gemma.",
   "genes": {
     "cerveau": [
       "deepseek",
       "qwen",
       "glm",
-      "gemma",
-      "nemotron",
-      "inkling",
       "mistral",
-      "llama",
       "minimax",
       "mimo"
     ],
