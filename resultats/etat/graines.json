@@ -1,32 +1,32 @@
 [
  {
-  "titre": "Veille Salaire Frontalier : comparateur de rémunérations transfrontalières",
-  "solution": "Un site qui croise les offres Indeed (API) avec les données salariales publiques des conventions collectives et des statistiques nationales pour afficher des fourchettes réalistes par métier et zone frontalière.",
-  "angle_libre": "Croiser les fourchettes de conventions collectives luxembourgeoises/belges avec les offres d'emploi réelles par zone frontalière — aucun des résultats trouvés (statistiques publiques, rapports ADEM/LISER) n'offre un comparateur interactif par métier et par zone.",
-  "objection": "La dépendance aux scrapings de données (Indeed) est fragile et potentiellement contraire aux conditions d'utilisation des plateformes. De plus, la valeur repose entièrement sur la qualité de la corrélation entre données de marché (Indeed) et données légales (conventions), un travail de curation extrêmement complexe et risqué."
+  "titre": "Le Contrôleur de Compatibilité API",
+  "solution": "Un agent IA qui surveille 24h/24 les changements de structure (schema) et les temps de réponse des APIs critiques, alertant avant que le bug n'arrive chez l'utilisateur final.",
+  "angle_libre": "Personne ne combine encore surveillance continue du schéma + latence avec une alerte prédictive orientée devs indés à prix fixe bas (19 €/mois pour 5 APIs) : les concurrents font soit du uptime/diagnostic (Canary Ops, PulseAPI), soit du diff ponctuel à l'usage (x402), soit de la réparation de code (agents), mais pas de rapport prédictif « avant que le bug n'arrive chez l'utilisateur » packagé pour un public non-enterprise.",
+  "objection": "Le marché des outils de monitoring est saturé. Le défi est de prouver la valeur critique (le 'pain') de l'alerte de changement de schéma avant que le développeur ne soit exposé à un bug réel, ce qui rend la conversion du test gratuit difficile."
  },
  {
-  "titre": "Lettre de libération — générateur légal de résiliation conforme",
-  "solution": "Un service en ligne où l'utilisateur entre le nom du service, son contrat, et la raison de la résiliation ; l'agent génère une lettre recommandée électronique conforme au droit belge/français, l'envoie au service client, et archive la preuve d'envoi.",
-  "angle_libre": "Se concentrer sur les abonnements SaaS B2B (facturation, comptabilité) avec vérification des conditions contractuelles spécifiques belges et françaises, et l'archivage de la preuve d'envoi comme dossier de litige — aucun concurrent trouvé ne cible spécifiquement les indépendants et leurs outils SaaS en Belgique.",
-  "objection": "Le risque juridique est élevé car le service est positionné comme 'légal' et 'conforme'. Si l'IA commet une erreur d'interprétation d'une clause contractuelle ou d'une loi locale (FR/BE), l'utilisateur pourrait subir des conséquences financières ou légales, exposant le service à des risques de responsabilité, même avec des disclaimers. Le service est perçu comme un conseil juridique automatisé."
+  "titre": "APIPrixFinal",
+  "solution": "Une API qui renvoie le prix final toutes frais inclus (service, livraison, taxes) pour un produit et une destination donnés, agrégé depuis des dizaines de sources.",
+  "angle_libre": "Aucun acteur trouvé n'expose une API développeur qui renvoie le prix final toutes frais inclus (livraison, taxes, frais de service) pour un produit et une destination donnés : les outils existants font de la veille tarifaire B2B pour marchands, pas de l'agrégation 'landed cost' orientée apps de comparaison.",
+  "objection": "Le modèle repose entièrement sur le scraping de données de prix et de frais, ce qui contrevient très probablement aux Conditions Générales de Vente (CGV) de la majorité des marchands e-commerce. Ce risque juridique est majeur et peut entraîner le blocage des sources de données et des poursuites."
  },
  {
-  "titre": "Anti-Piège Emploi : détecteur d'arnaques sur les offres Indeed",
-  "solution": "Un service en ligne où l'utilisateur colle l'URL d'une offre Indeed, et un agent analyse le texte, le nom de l'entreprise et les signaux suspects pour donner un verdict en quelques secondes.",
-  "angle_libre": "Aucun acteur ne propose une vérification automatisée offre-par-offre avec verdict instantané : tous donnent des listes de signaux à vérifier manuellement ; un agent qui analyse une URL précise comblerait ce vide.",
-  "objection": "La défensibilité est faible : un assistant IA gratuit (ex. ChatGPT avec navigation) peut déjà analyser une offre en collant l'URL, ce qui rend le service payant difficile à justifier."
+  "titre": "Preuve avant mise à jour",
+  "solution": "Un outil en libre-service qui, avant chaque publication, fait tester automatiquement la nouvelle version par des scénarios d'usage réels générés par les agents (parcours client, temps de chargement, flux critique) et produit un rapport « prêt ou pas » avec simulation du coût d'une mise à jour bloquante.",
+  "angle_libre": "Les résultats de recherche fournis ne contiennent rien sur ce besoin (CRM, bornes de commande, Shopify, témoignages clients, Slack) : impossible de vérifier la concurrence ni la demande. Un angle possible serait la simulation chiffrée du coût d'une mise à jour bloquante, mais elle reste non validée par les sources.",
+  "objection": "La défensibilité est faible : un outil open source ou un agent IA gratuit pourrait rapidement reproduire la même fonctionnalité, et les créateurs pourraient préférer une solution gratuite."
  },
  {
-  "titre": "DeepLink Forge : SDK d'appairage anti-boucle open core",
-  "solution": "Un SDK open core (gratuit pour l'essentiel) avec des composants testés d'appairage TV : détection d'app installée, fallback web, QR code intelligent qui ouvre l'app au lieu du store, et suite de tests automatiques sur émulateurs.",
-  "angle_libre": "Personne ne traite le cas spécifique du compagnon TV : détection d'app installée côté TV, QR code qui ouvre l'app au lieu du store, suite de tests automatiques d'appairage sur émulateurs — les concurrents couvrent le deferred deep linking publicitaire, pas le pairing second screen testé.",
-  "objection": "Le SDK open core est facile à copier ; la valeur payante (tests automatiques, support multi-fabricants) est difficile à défendre face à un concurrent qui reprendrait le code gratuit et proposerait un service similaire à moindre coût."
+  "titre": "Alt-Text Forge",
+  "solution": "Une API qui prend un lot d'URLs d'images et retourne un alt-text conforme aux normes WCAG, multilingue, avec niveau de détail paramétrable et contrôle qualité automatique par un second agent vérificateur.",
+  "angle_libre": "Une API générique (hors WordPress) avec contrôle qualité par second agent vérificateur, niveau de détail paramétrable et sortie multilingue normalisée pour pipelines d'agents IA et scrapers — les concurrents trouvés sont des plugins WordPress intégrés à la médiathèque, pas des API batch.",
+  "objection": "La défensibilité est faible : un modèle de vision multimodal (ex. GPT-4o) peut générer un alt-text acceptable gratuitement ou à coût marginal, et des API concurrentes (AWS, Google) proposent déjà la description d'image. Sans données propriétaires ou réseau de confiance, l'offre est facilement copiée."
  },
  {
-  "titre": "Code de sortie — le standard ouvert pour une résiliation en un clic",
-  "solution": "Une API ouverte et un standard de données (un schema JSON) que les entreprises peuvent adopter pour déclarer leurs procédures de résiliation ; les agents peuvent interroger cette API pour automatiser la résiliation, et un annuaire public recense les services conformes.",
-  "angle_libre": "Aucun acteur trouvé ne propose un standard ouvert interopérable (schema JSON + API publique) que les entreprises déclarent volontairement pour que des agents tiers automatisent la résiliation côté consommateur ; les concurrents existants sont tous côté entreprise (rétention, support, gestion interne) et fermés.",
-  "objection": "Le succès dépend entièrement de l'adoption par les fournisseurs de services (Netflix, Spotify, etc.). Si ces entreprises ne sont pas incitées à intégrer le standard, l'API reste une curiosité technique sans valeur marchande."
+  "titre": "PreuveEnMain : terminal de preuve de livraison payé à la pièce chez les commerçants locaux",
+  "solution": "Une borne QR posée en caisse où le client signe numériquement et photographie sa réception, archivée automatiquement et consultable en cas de litige ou de contestation.",
+  "angle_libre": "Un ePOD payé à la pièce et ultra-simple (borne QR en caisse) pour le livreur-commerçant local, alors que les solutions existantes visent les flottes et TMS B2B, pas l'épicerie du quartier.",
+  "objection": "Le modèle est trop réactif et repose sur une adoption volontaire (le client doit accepter de signer numériquement). La friction d'ajouter une étape matérielle (la borne) au processus de livraison est un frein majeur à l'adoption par les petits commerçants."
  }
 ]

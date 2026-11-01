@@ -1,28 +1,32 @@
 {
  "date": "2026-11-01",
- "dureeSecondes": 1254,
- "coutUsd": 0.3766,
- "appelsModeles": 983,
+ "dureeSecondes": 1235,
+ "coutUsd": 0.3619,
+ "appelsModeles": 977,
  "etapes": {
   "radar": {
-   "secondes": 325,
-   "coutCumuleUsd": 0.0393
+   "secondes": 346,
+   "coutCumuleUsd": 0.0385
   },
   "marche": {
-   "secondes": 6,
-   "coutCumuleUsd": 0.0393
+   "secondes": 8,
+   "coutCumuleUsd": 0.0385
+  },
+  "atlas": {
+   "secondes": 24,
+   "coutCumuleUsd": 0.0385
   },
   "usine": {
-   "secondes": 764,
-   "coutCumuleUsd": 0.2929
+   "secondes": 746,
+   "coutCumuleUsd": 0.2764
   },
   "enquete": {
-   "secondes": 29,
-   "coutCumuleUsd": 0.3766
+   "secondes": 24,
+   "coutCumuleUsd": 0.3619
   },
   "elan": {
-   "secondes": 130,
-   "coutCumuleUsd": 0.3766
+   "secondes": 88,
+   "coutCumuleUsd": 0.3619
   }
  },
  "sources": {
@@ -30,7 +34,7 @@
    "n": 53
   },
   "hn_achat": {
-   "n": 58
+   "n": 59
   },
   "appstore": {
    "n": 1219,
@@ -49,71 +53,75 @@
    "n": 150
   },
   "apify": {
-   "n": 1027
+   "n": 1023
   },
   "mcp": {
    "n": 8000,
    "complet": false
+  },
+  "atlas": {
+   "vivantes": 26,
+   "total": 36
   }
  },
  "cerveaux": {
   "mercury": {
-   "ok": 44,
+   "ok": 41,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 5276,
+   "msMoyen": 5247,
+   "exempleErreur": null
+  },
+  "mimo": {
+   "ok": 239,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 9705,
    "exempleErreur": null
   },
   "qwen": {
-   "ok": 226,
-   "echecs": 1,
-   "tauxEchec": 0,
-   "msMoyen": 7911,
-   "exempleErreur": "réponse illisible (fin : length) : {\n  \"valeur_societale\": 6,\n  \"originalite\": 5,\n  \"avantage_agents\": 8,\n  \"defensibilite\": 3,\n  \"argent_rapide\": 2,\n  \"di"
-  },
-  "mimo": {
-   "ok": 248,
+   "ok": 216,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 10587,
-   "exempleErreur": null
-  },
-  "mistral": {
-   "ok": 13,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 11519,
+   "msMoyen": 9460,
    "exempleErreur": null
   },
   "deepseek": {
-   "ok": 217,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 12001,
-   "exempleErreur": null
+   "ok": 241,
+   "echecs": 2,
+   "tauxEchec": 0.01,
+   "msMoyen": 10564,
+   "exempleErreur": "aucun fournisseur pour deepseek (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+  },
+  "mistral": {
+   "ok": 12,
+   "echecs": 1,
+   "tauxEchec": 0.08,
+   "msMoyen": 12681,
+   "exempleErreur": "réponse illisible (fin : stop) : []"
   },
   "glm": {
-   "ok": 229,
-   "echecs": 5,
-   "tauxEchec": 0.02,
-   "msMoyen": 6664,
-   "exempleErreur": "réponse illisible (fin : stop) : {\"idees\": [{\"\": \"Analyse de Faisabilité Transfrontalière de Poste\", \"arene\": \"travail-et-carrieres\", \"probleme\": \"Les tr"
+   "ok": 217,
+   "echecs": 7,
+   "tauxEchec": 0.03,
+   "msMoyen": 6352,
+   "exempleErreur": "réponse illisible (fin : stop) : {\"} }$্ট। ेேகཟンемаяান্ত্টा , здо วา ォ<unused2130>ाની,емаяníkaးा้น ঁ1।วา}! $,    \": 1, \"},ッシемая.्याемаяวา।ा}وري\": \"}وري\""
   }
  },
  "stats": {
-  "brut": 761,
-  "douleurs": 446,
-  "gisements": 607,
+  "brut": 762,
+  "douleurs": 457,
+  "gisements": 787,
   "gisementsMarche": 12,
-  "generees": 677,
+  "generees": 670,
   "parasites": 6,
-  "idees": 670,
-  "notees": 493,
-  "nonConformes": 177,
+  "idees": 658,
+  "notees": 518,
+  "nonConformes": 140,
   "finalistes": 32,
   "duels": 80,
   "enquetes": 15,
   "prixLus": 2,
-  "elanMesure": 7
+  "elanMesure": 13
  }
 }

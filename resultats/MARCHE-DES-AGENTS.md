@@ -1,6 +1,6 @@
 # Marché des agents — 2026-11-01
 
-1027 outils lus sur Apify Store, dont 958 payants et 820 ouverts au paiement par des agents. Registre MCP : 8000 serveurs publiés ou mis à jour en 7 jours (5534 hébergés), dont 7797 nouveaux.
+1023 outils lus sur Apify Store, dont 955 payants et 816 ouverts au paiement par des agents. Registre MCP : 8000 serveurs publiés ou mis à jour en 7 jours (5529 hébergés), dont 7795 nouveaux.
 Premier relevé du panel : la croissance réelle sera mesurée à partir de J+6 ; en attendant, le classement utilise la part des utilisateurs du mois actifs cette semaine.
 
 ⚠ = outil sur des données personnelles ou des réseaux sociaux : montré pour lire le marché, exclu de l'usine.
@@ -46,31 +46,31 @@ Premier relevé du panel : la croissance réelle sera mesurée à partir de J+6 
 
 ## Demande par outil, par catégorie
 - OPEN_SOURCE : 16 outils, 2685 utilisateurs par outil, prix médian 0.01 $, note médiane 4.71
-- TRAVEL : 46 outils, 1407 utilisateurs par outil, prix médian 0.004 $, note médiane 4.79
+- TRAVEL : 45 outils, 1438 utilisateurs par outil, prix médian 0.004 $, note médiane 4.79
 - VIDEOS : 108 outils, 1255 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.88
-- AI : 86 outils, 1229 utilisateurs par outil, prix médian 0.0045 $, note médiane 4.73
-- SOCIAL_MEDIA : 449 outils, 1210 utilisateurs par outil, prix médian 0.0029 $, note médiane 4.74
+- AI : 85 outils, 1244 utilisateurs par outil, prix médian 0.004 $, note médiane 4.73
+- SOCIAL_MEDIA : 446 outils, 1218 utilisateurs par outil, prix médian 0.0029 $, note médiane 4.74
 - LEAD_GENERATION : 472 outils, 790 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.75
 - JOBS : 98 outils, 598 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.63
-- SEO_TOOLS : 88 outils, 511 utilisateurs par outil, prix médian 0.0039 $, note médiane 4.7
-- AUTOMATION : 376 outils, 468 utilisateurs par outil, prix médian 0.003 $, note médiane 4.84
-- NEWS : 36 outils, 450 utilisateurs par outil, prix médian 0.002 $, note médiane 4.9
-- ECOMMERCE : 90 outils, 447 utilisateurs par outil, prix médian 0.0035 $, note médiane 4.79
-- AGENTS : 40 outils, 366 utilisateurs par outil, prix médian 0.003 $, note médiane 4.84
-- DEVELOPER_TOOLS : 181 outils, 361 utilisateurs par outil, prix médian 0.003 $, note médiane 4.87
-- MARKETING : 16 outils, 274 utilisateurs par outil, prix médian 0.00125 $, note médiane 4.83
-- INTEGRATIONS : 27 outils, 205 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.89
+- SEO_TOOLS : 87 outils, 517 utilisateurs par outil, prix médian 0.0035 $, note médiane 4.7
+- AUTOMATION : 375 outils, 469 utilisateurs par outil, prix médian 0.003 $, note médiane 4.84
+- ECOMMERCE : 86 outils, 468 utilisateurs par outil, prix médian 0.00399 $, note médiane 4.79
+- NEWS : 37 outils, 437 utilisateurs par outil, prix médian 0.0028 $, note médiane 4.9
+- AGENTS : 39 outils, 375 utilisateurs par outil, prix médian 0.0035 $, note médiane 4.84
+- DEVELOPER_TOOLS : 179 outils, 365 utilisateurs par outil, prix médian 0.0033 $, note médiane 4.87
+- MARKETING : 15 outils, 292 utilisateurs par outil, prix médian 0.001 $, note médiane 4.83
+- INTEGRATIONS : 26 outils, 213 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.89
 
 ## Nouveaux serveurs MCP
-- Reelsaw : Drive a self-hosted Reelsaw: turn long videos into vertical clips, edit, re-render and exp
-- Purgatorium (p9m) : Self-hosted Docker sandboxes for agents: create one, deploy a compose stack, read its file
-- io.github.fullread/deepadb : Full-featured ADB MCP server — 209 tools across 49 modules, from UI to baseband.
-- PredictionScan : Derived prediction-market flow, price changes, trader research and news. 11 read-only tool
-- Notes Vault : Indexed search, schema-checked writes and session hooks for a markdown notes vault
-- Repowise : Codebase intelligence for AI coding agents — graph, git history, docs, decisions, code hea
-- Research Connect : Legitimate full-text access to scholarly articles for your AI, by DOI, with provenance.
-- DepTime : What changed in a Python library, in which release, and what replaces it. Answered locally
-- WireCat Memo : People's context across messengers, notes and mail, from a local store. Set up the memo CL
-- iPhone Use : Drive a real iPhone from a Mac: read the screen as text, tap, type, scroll, replay saved f
-- Proximo — the governed client for Proxmox : The governed client for Proxmox (PVE, PBS, PMG, PDM): plans, keeps the receipts, puts thin
-- Tares : Always-on AI agents: a software factory for Claude Code, or an AI SRE that watches your sy
+- Reel Estate MCP : Turn real-estate listing photos into property videos from your AI assistant.
+- cuttingfloor : Hosted video editing for AI agents: cut, caption, mix and export real video. Sign in with 
+- CardBreakCalculator : Sports card break odds, checklists and sales-backed card values. Pro or Breaker plan.
+- PayperWork : Index of PayperWork's pay-per-call services for agents over x402: lists and describes them
+- PayperAnswer : Pay-per-call chat on GPT-6.1, Claude, Gemini and Grok over x402. No API key; a failed call
+- PayperDrop : Temporary key-value drops and hand-off channels between agents, paid per call over x402. R
+- goblingains : Conditioning workouts from a coached library: suggest, vary or invent one for your kit and
+- Myndock Observatory : Read Myndock service metadata, aggregate origin activity, and agent message delivery stati
+- io.github.CloudCorpRecords/greenlight : Pre-flight checks for open-source contributions: is this GitHub issue actually landable?
+- Flisk : Run your whole app on your computer with one command: build, start, check and fix a local 
+- io.github.CloudCorpRecords/dashmetrics : Grafana dashboards, datasources, Prometheus, Loki, and alerts from your MCP client.
+- dev.mcphost/mcphost : Hosted MCP runtime where your agent publishes its own tools by tool call and keeps working

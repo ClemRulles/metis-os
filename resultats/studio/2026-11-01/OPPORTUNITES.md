@@ -1,159 +1,163 @@
 # Opportunités du 2026-11-01
 
-761 textes réels lus → 446 douleurs → 607 gisements, plus 12 gisements du marché des agents (958 outils payants observés). 670 idées générées, 493 critiquées, 80 duels, 15 enquêtes web. Coût : 0.377 $ en 983 appels, 21 min.
+762 textes réels lus → 457 douleurs → 787 gisements, plus 12 gisements du marché des agents (955 outils payants observés). 658 idées générées, 518 critiquées, 80 duels, 15 enquêtes web. Coût : 0.362 $ en 977 appels, 21 min.
 
 Classement fondé sur les preuves (douleur réelle, prix lu sur la page ou paiement observé sur le marché, espace libre, élan sur 90 jours, risque) ; l'avis des IA pèse environ 30 %.
 
-## 1. Veille Salaire Frontalier : comparateur de rémunérations transfrontalières
-**Score 7.16 / 10** · douleur 7.0 · paiement 9 · espace 7.0 · élan 5.0 · critique 7.9 · tournoi 6.0 · risque 5 — travail-et-carrieres, née du marché des agents (besoin-final)
+## 1. Le Contrôleur de Compatibilité API
+**Score 7.46 / 10** · douleur 7.3 · paiement 10 · espace 4.0 · élan 4.8 · critique 7.5 · tournoi 8.0 · risque 10 — donnees-et-api, née d'une douleur réelle
 
-- **Problème :** Les scrapers Indeed donnent des salaires rarement, et les frontaliers ignorent combien ils devraient demander.
-- **Pour qui :** Travailleurs frontaliers Belgique-Luxembourg et employeurs locaux qui veulent rester compétitifs.
-- **Solution :** Un site qui croise les offres Indeed (API) avec les données salariales publiques des conventions collectives et des statistiques nationales pour afficher des fourchettes réalistes par métier et zone frontalière.
-- **Valeur pour la société :** Favorise la transparence salariale et réduit les inégalités entre pays voisins.
-- **Canal :** seo-programmatique — premiers clients : Dans les groupes LinkedIn de frontaliers et via les associations locales de travailleurs frontaliers.
-- **Revenu :** Accès premium aux rapports détaillés par entreprise (téléchargement PDF). (5.99)
-- **Premier test :** Générer 100 pages SEO pour 20 métiers × 5 zones, puis offrir un rapport premium à 10 frontaliers qui contactent le site via un formulaire.
-- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 1 outils payants utilisés sur le marché des agents ; 2062 personnes disent payer déjà
-  - Marché des agents : [Indeed Scraper](https://apify.com/misceres/indeed-scraper) — 2062 utilisateurs/30 j, 0.006 $ par Job listing
-- **Élan :** pas assez de signal — « cross border salary comparison » HN 0 contre 0, GitHub 0 contre 0 ; « frontalier salary Luxembourg » HN 0 contre 0
-- **Preuve de terrain :** Marché des agents : Indeed Scraper — outil payé par 2062 utilisateurs en 30 jours
-- **Enquête :** verdict creuser — Demande forte et public massif (47 % de l'emploi luxembourgeois est frontalier), mais aucun concurrent ni offre payante trouvé dans la recherche : il faut valider la volonté de payer à 5,99 € et la faisabilité légale du scraping Indeed avant de foncer.
-  - Concurrents : aucun trouvé
-  - Qui paie déjà : Aucune offre payante identifiée dans les résultats de recherche pour ce besoin précis ; les frontaliers consultent gratuitement les statistiques Insee/ADEM et les sites d'emploi.
-  - Angle libre : Croiser les fourchettes de conventions collectives luxembourgeoises/belges avec les offres d'emploi réelles par zone frontalière — aucun des résultats trouvés (statistiques publiques, rapports ADEM/LISER) n'offre un comparateur interactif par métier et par zone.
-  - Risque juridique : moyen — Scraping de l'API Indeed et réutilisation de données salariales : conditions d'utilisation d'Indeed et RGPD à vérifier ; les données publiques statistiques sont réutilisables mais le scraping d'offres est une zone grise.
-- **Faille :** La dépendance aux scrapings de données (Indeed) est fragile et potentiellement contraire aux conditions d'utilisation des plateformes. De plus, la valeur repose entièrement sur la qualité de la corrélation entre données de marché (Indeed) et données légales (conventions), un travail de curation extrêmement complexe et risqué.
-- **Mutation proposée :** Ne pas se contenter de croiser les données, mais créer un 'Score de compétitivité salariale' par métier. L'agent IA doit non seulement comparer, mais aussi évaluer le risque de sous-rémunération par rapport aux standards légaux et aux moyennes sectorielles, transformant le comparateur passif en un outil d'aide à la négociation proactif.
-
-## 2. Lettre de libération — générateur légal de résiliation conforme
-**Score 6.86 / 10** · douleur 7.9 · paiement 9 · espace 3.0 · élan 5.0 · critique 7.6 · tournoi 8.0 · risque 5 — petits-vendeurs, née d'une douleur réelle
-
-- **Problème :** Les indépendants et petits commerçants sont souvent engagés dans des abonnements logiciels ou services qu'ils ne peuvent pas résilier facilement, et perdent de l'argent.
-- **Pour qui :** Les indépendants belges et français qui utilisent des outils SaaS (facturation, comptabilité, marketing) et veulent changer de fournisseur sans litige.
-- **Solution :** Un service en ligne où l'utilisateur entre le nom du service, son contrat, et la raison de la résiliation ; l'agent génère une lettre recommandée électronique conforme au droit belge/français, l'envoie au service client, et archive la preuve d'envoi.
-- **Valeur pour la société :** Protège les petits entrepreneurs contre les clauses abusives et leur permet de mieux gérer leurs coûts fixes.
-- **Canal :** place-de-marche-numerique — premiers clients : 10 indépendants qui publient sur des groupes Facebook « Indépendants Belgique » ou « Freelance France » et qui cherchent à résilier des abonnements à des outils comme Canva ou Adobe.
-- **Revenu :** Paiement à l'unité : 9,99 € par lettre de résiliation envoyée et suivie. (9.99)
-- **Premier test :** Créer une page Gumroad avec un formulaire simple ; contacter 10 indépendants via des groupes et leur offrir la première lettre gratuite en échange d'un avis ; ensuite leur demander de payer 9,99 € pour une deuxième lettre.
-- **Preuve de paiement :** 1 prix lus sur la page, 1 offres payantes du même besoin ; 24 personnes disent payer déjà
-- **Élan :** pas assez de signal — « cancel subscription letter » HN 0 contre 0, GitHub 3 contre 0 ; « resiliation abonnement » HN 0 contre 0
-- **Preuve de terrain :** gisement « Résiliation d'abonnement impossible », 27 mentions (App Store be, App Store us, App Store fr)
-  - « Heb alles geprobeerd om het het abonnement op te zeggen maar geraak er niet vanaf. » — [App Store be](https://apps.apple.com/be/app/kobo-books-audiobooks/id301259483?uo=2)
-  - « You can only cancel your subscription through a desktop computer, not through the mobile app. » — [App Store be](https://apps.apple.com/be/app/audible-audiobooks-podcasts/id379693831?uo=2)
-  - « ils font des spисания sans préavis du notificationnement! A dans l'application c'est difficile à faire. À cause de cela il est impossible d'obtenir un remboursement » — [App Store be](https://apps.apple.com/be/app/dramawave-dramas-reels/id6670430706?uo=2)
-- **Enquête :** verdict creuser — Le besoin est réel et prouvé, mais le marché est déjà occupé par des acteurs européens gratuits ou à ~10 € : seul un angle SaaS B2B belge différencié peut se justifier, à vérifier avant de foncer.
-  - Concurrents : [sepastop.eu](https://www.sepastop.eu/fr-fr) (lettres générées gratuitement, envoi payant (prix non affiché dans la source), ressemblance 8/10) ; [resilierabonnement.com](https://resilierabonnement.com/) (10 € par lettre rédigée, ressemblance 7/10) ; [resilier.com (guides + service d'envoi)](https://www.resilier.com/guides/media/resiliation-lindependant) (non affiché dans la source, ressemblance 7/10) ; [JeResilieMonContrat.com (JRMC)](https://www.jeresiliemoncontrat.com/a-propos) (non affiché (B2B, professionnels de l'assurance), ressemblance 5/10)
-  - Qui paie déjà : Les consommateurs français paient déjà ~10 € par lettre de résiliation rédigée (resilierabonnement.com) ; sepastop.eu capte le marché européen avec un modèle gratuit/génération + envoi payant. ([preuve](https://resilierabonnement.com/))
-  - Angle libre : Se concentrer sur les abonnements SaaS B2B (facturation, comptabilité) avec vérification des conditions contractuelles spécifiques belges et françaises, et l'archivage de la preuve d'envoi comme dossier de litige — aucun concurrent trouvé ne cible spécifiquement les indépendants et leurs outils SaaS en Belgique.
-  - Risque juridique : moyen — Concurrents établis depuis 2015 et gratuité croissante (bouton légal de résiliation en 3 clics en France depuis 2023) ; en Belgique, aucune ressource confirmée dans les résultats.
-- **Faille :** Le risque juridique est élevé car le service est positionné comme 'légal' et 'conforme'. Si l'IA commet une erreur d'interprétation d'une clause contractuelle ou d'une loi locale (FR/BE), l'utilisateur pourrait subir des conséquences financières ou légales, exposant le service à des risques de responsabilité, même avec des disclaimers. Le service est perçu comme un conseil juridique automatisé.
-- **Mutation proposée :** Transformer le service d'un simple 'générateur de lettre' à un 'Analyse de Risque de Résiliation'. L'agent IA doit d'abord analyser le contrat pour fournir un 'Score de Risque' et identifier les clauses pièges (pénalités, préavis abusif, clauses de renouvellement tacite) avant de générer la lettre. Cela passe d'un outil transactionnel à un outil stratégique, augmentant la valeur perçue et justifiant un prix plus élevé.
-
-## 3. Anti-Piège Emploi : détecteur d'arnaques sur les offres Indeed
-**Score 6.68 / 10** · douleur 7.0 · paiement 9 · espace 5.0 · élan 7.0 · critique 6.9 · tournoi 10.0 · risque 0 — travail-et-carrieres, née du marché des agents (besoin-final)
-
-- **Problème :** Beaucoup d'offres Indeed sont des arnaques (faux recruteurs, phishing, travail illégal).
-- **Pour qui :** Demandeurs d'emploi vulnérables, notamment les jeunes et les personnes âgées en reconversion.
-- **Solution :** Un service en ligne où l'utilisateur colle l'URL d'une offre Indeed, et un agent analyse le texte, le nom de l'entreprise et les signaux suspects pour donner un verdict en quelques secondes.
-- **Valeur pour la société :** Protège les personnes fragiles contre la fraude et l'exploitation professionnelle.
-- **Canal :** communautes — premiers clients : Sur les forums d'entraide (Reddit, groupes Facebook de chômeurs) en proposant l'outil gratuit pour les 10 premiers tests, puis payant.
-- **Revenu :** Paiement à l'utilisation : 0,50 € par vérification, forfait illimité pour les centres de formation. (0.5)
-- **Premier test :** Tester sur 50 offres suspectes identifiées sur des forums, puis vendre un pack de 20 vérifications à 10 utilisateurs via Gumroad.
-- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 1 outils payants utilisés sur le marché des agents ; 2062 personnes disent payer déjà
-  - Marché des agents : [Indeed Scraper](https://apify.com/misceres/indeed-scraper) — 2062 utilisateurs/30 j, 0.006 $ par Job listing
-- **Élan :** ×1.76 sur 90 jours — « job scam detector » HN 0 contre 0, GitHub 108 contre 60 ; « fake job posting check » HN 0 contre 0
-- **Preuve de terrain :** Marché des agents : Indeed Scraper — outil payé par 2062 utilisateurs en 30 jours
-- **Enquête :** verdict creuser — Le problème est réel et documenté, mais le public cible (demandeurs d'emploi vulnérables) est peu enclin à payer 0,50 € quand Indeed et les institutions offrent déjà gratuitement des outils, et le risque juridique (diffamation, marque Indeed, responsabilité) impose un repositionnement prudent avant de foncer.
-  - Concurrents : [Indeed (signalement et détection intégrée)](https://support.indeed.com/hc/en-us/articles/360028156452) (gratuit (bouton Signaler, pages d'aide anti-arnaque), ressemblance 6/10) ; [France Travail + cybermalveillance.gouv.fr (guide et signalement)](https://www.francetravail.fr/candidat/soyez-vigilants/fausses-offres-d-emploi.html) (gratuit, ressemblance 5/10) ; [Norton (guide des 17 escroqueries à l'emploi)](https://fr.norton.com/blog/online-scams/job-scams) (gratuit, ressemblance 3/10)
-  - Qui paie déjà : Personne ne paie pour ce besoin : les plateformes (Indeed, France Travail) et éditeurs d'antivirus offrent gratuitement conseils et outils de signalement ; aucune offre payante directe trouvée dans les résultats.
-  - Angle libre : Aucun acteur ne propose une vérification automatisée offre-par-offre avec verdict instantané : tous donnent des listes de signaux à vérifier manuellement ; un agent qui analyse une URL précise comblerait ce vide.
-  - Risque juridique : eleve — Accuser des offres ou entreprises d'être des arnaques expose à la diffamation ; utiliser la marque et le contenu d'Indeed (scraping de leurs URLs, nom dans le produit) pose des problèmes de propriété intellectuelle et de conditions d'utilisation ; responsabilité si un faux négatif fait une victime.
-- **Faille :** La défensibilité est faible : un assistant IA gratuit (ex. ChatGPT avec navigation) peut déjà analyser une offre en collant l'URL, ce qui rend le service payant difficile à justifier.
-- **Mutation proposée :** Ajouter une base de données privée d'offres frauduleuses vérifiées (crowdsourcing + vérification humaine) et un historique de fiabilité des recruteurs, ce qui crée une barrière par la donnée propriétaire et la confiance accumulée.
-
-## 4. DeepLink Forge : SDK d'appairage anti-boucle open core
-**Score 6.58 / 10** · douleur 7.0 · paiement 5 · espace 7.0 · élan 4.7 · critique 6.9 · tournoi 6.0 · risque 10 — petits-vendeurs, née d'une douleur réelle
-
-- **Problème :** Les petits studios qui publient des apps avec compagnon TV réimplémentent mal les deep links et livrent des boucles App Store ; les SDK existants sont chers ou inexistants.
-- **Pour qui :** Développeurs indépendants et petits studios qui ajoutent un mode compagnon TV ou second screen à leur app.
-- **Solution :** Un SDK open core (gratuit pour l'essentiel) avec des composants testés d'appairage TV : détection d'app installée, fallback web, QR code intelligent qui ouvre l'app au lieu du store, et suite de tests automatiques sur émulateurs.
-- **Valeur pour la société :** Moins d'apps défectueuses pour le grand public ; diffuse des standards d'appairage accessibles et testés plutôt que chacun réinvente (et rate) le sien.
-- **Canal :** place-de-marche-numerique — premiers clients : Gumroad et Lemon Squeezy pour le pack Pro, plus Show HN et communautés dev (r/androiddev, Discord Flutter) ; les 10 premiers clients sont des indie devs qui viennent de livrer une app TV cassée.
-- **Revenu :** Open core : licence Pro payante avec tests automatiques et support de 20 fabricants TV. (79 € la licence Pro à vie, 199 €/an avec mises à jour et tests cloud.)
-- **Premier test :** Publier le SDK open source sur GitHub, montrer un avant/après vidéo d'une boucle corrigée sur Show HN et Gumroad ; viser 10 licences en 14 jours.
-- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 10 personnes disent payer déjà ; l'enquête dit ne pas avoir trouvé de paiement
-- **Élan :** ×0.93 sur 90 jours — « deferred deep linking » HN 3 contre 0, GitHub 10 contre 11 ; « TV companion app » HN 0 contre 0
-- **Preuve de terrain :** gisement « Boucles de connexion application-TV », 13 mentions (App Store fr, App Store be)
-  - « impossible d'utiliser la télécommande, à chaque fois ça me renvoi vers l’app store alors que j’ai déjà l’appli » — [App Store fr](https://apps.apple.com/fr/app/netflix-game-controller/id6447582581?uo=2)
-  - « ce que je fais en boucle et ça ne marche pas » — [App Store fr](https://apps.apple.com/fr/app/netflix-game-controller/id6447582581?uo=2)
-  - « Le QR code ramène quoiqu’il arrive sur l’app store donc impossible d’utiliser l’application » — [App Store fr](https://apps.apple.com/fr/app/netflix-game-controller/id6447582581?uo=2)
-- **Enquête :** verdict creuser — L'angle compagnon TV avec tests d'appairage est réel et non couvert, mais la demande payante reste à prouver face à des alternatives open source gratuites et au stigma des SDK de deep linking « bricolables » en quelques jours.
-  - Concurrents : [DeferLink](https://github.com/Vlad-tdk/deferlink) (prix ?, ressemblance 5/10) ; [LinkForty](https://github.com/LinkForty/core) (prix ?, ressemblance 4/10) ; [Software Mansion Detour (Android)](https://github.com/software-mansion-labs/android-detour) (prix ?, ressemblance 3/10) ; [Dynalinks](https://github.com/dynalinks/dynalinks-flutter-sdk) (prix ?, ressemblance 3/10)
-  - Qui paie déjà : Les studios et éditeurs d'app paient aujourd'hui des abonnements élevés à Branch, AppsFlyer ou Adjust pour le deep linking et l'attribution (référence ~$30k MRR citée dans le projet DeferLink) ; les indés bricolent des solutions open source gratuites. Aucun paiement prouvé spécifiquement pour l'appairage TV/second screen.
-  - Angle libre : Personne ne traite le cas spécifique du compagnon TV : détection d'app installée côté TV, QR code qui ouvre l'app au lieu du store, suite de tests automatiques d'appairage sur émulateurs — les concurrents couvrent le deferred deep linking publicitaire, pas le pairing second screen testé.
-  - Risque juridique : faible — Outil développeur sans données personnelles ; attention seulement aux marques déposées (App Store, QR Code) et aux règles Apple/Google sur les schemes.
-- **Faille :** Le SDK open core est facile à copier ; la valeur payante (tests automatiques, support multi-fabricants) est difficile à défendre face à un concurrent qui reprendrait le code gratuit et proposerait un service similaire à moindre coût.
-- **Mutation proposée :** Ajouter un service cloud de monitoring et de détection de régressions en continu (ex : alerte quand une mise à jour d'OS TV casse l'appairage) qui nécessite un abonnement et des données propriétaires (logs anonymisés, matrices de compatibilité) pour créer un verrou technique et data.
-
-## 5. Code de sortie — le standard ouvert pour une résiliation en un clic
-**Score 6.49 / 10** · douleur 7.9 · paiement 5 · espace 7.0 · élan 2.0 · critique 8.0 · tournoi 8.0 · risque 5 — donnees-et-api, née d'une douleur réelle
-
-- **Problème :** Chaque service a sa propre procédure de résiliation, rendant la tâche impossible à automatiser de manière générique.
-- **Pour qui :** Les développeurs d'agents IA, d'apps de gestion financière et de plateformes de consommation qui veulent offrir une résiliation universelle à leurs utilisateurs.
-- **Solution :** Une API ouverte et un standard de données (un schema JSON) que les entreprises peuvent adopter pour déclarer leurs procédures de résiliation ; les agents peuvent interroger cette API pour automatiser la résiliation, et un annuaire public recense les services conformes.
-- **Valeur pour la société :** Établit une norme technique qui force la transparence et facilite la mobilité des consommateurs entre services.
-- **Canal :** place-de-marche-api — premiers clients : 10 développeurs qui créent des agents IA ou des apps de gestion de budget, contactés via GitHub ou des forums de développeurs (HN, r/artificial), et qui veulent intégrer une résiliation automatique dans leurs produits.
-- **Revenu :** Accès gratuit à l'API pour les 1000 premiers appels ; ensuite 0,01 € par appel ou abonnement développeur à 29 €/mois. (29)
-- **Premier test :** Créer un endpoint API simple qui retourne les instructions de résiliation pour 5 services populaires (Netflix, Spotify, etc.) ; contacter 10 développeurs et leur demander de payer 29 € pour un accès illimité pendant un mois en échange d'un SDK prêt à l'emploi.
-- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 24 personnes disent payer déjà ; l'enquête dit ne pas avoir trouvé de paiement
+- **Problème :** Les développeurs intègrent des APIs qui changent ou tombent en panne, rendant leurs applications inutilisables sans qu'ils le sachent immédiatement.
+- **Pour qui :** Développeurs indépendants et petites startups SaaS qui dépendent de données externes.
+- **Solution :** Un agent IA qui surveille 24h/24 les changements de structure (schema) et les temps de réponse des APIs critiques, alertant avant que le bug n'arrive chez l'utilisateur final.
+- **Valeur pour la société :** Stabilise l'écosystème numérique en empêchant la propagation de services défectueux basés sur des sources fiables.
+- **Canal :** place-de-marche-api — premiers clients : Communautés Discord de développeurs No-Code/Low-Code (Bubble, Make).
+- **Revenu :** Abonnement mensuel par API surveillée (SaaS B2B). (19€/mois pour 5 APIs.)
+- **Premier test :** Proposer une surveillance gratuite pendant 7 jours pour 3 APIs populaires du domaine public, avec rapport d'alerte prédictif.
+- **Preuve de paiement :** 2 prix lus sur la page, 2 offres payantes du même besoin ; 3 outils payants utilisés sur le marché des agents ; 11 personnes disent payer déjà
+  - Marché des agents : [Google Flights API](https://apify.com/johnvc/google-flights-data-scraper-flight-and-price-search) — 356 utilisateurs/30 j, 0.03 $ par Page Processed
+  - Marché des agents : [Shopee Scraper](https://apify.com/gio21/shopee-scraper) — 329 utilisateurs/30 j, 0.0085 $ par Product scraped
+  - Marché des agents : [✨ Google Shopping Scraper](https://apify.com/damilo/google-shopping-apify) — 273 utilisateurs/30 j, 0.0035 $ par result
   - Serveurs MCP déjà publiés sur ce besoin : 0
-- **Élan :** ×0.44 sur 90 jours — « cancel subscription API » HN 0 contre 0, GitHub 4 contre 13 ; « one-click unsubscribe standard » HN 0 contre 0
-- **Preuve de terrain :** gisement « Résiliation d'abonnement impossible », 27 mentions (App Store be, App Store us, App Store fr)
-  - « Heb alles geprobeerd om het het abonnement op te zeggen maar geraak er niet vanaf. » — [App Store be](https://apps.apple.com/be/app/kobo-books-audiobooks/id301259483?uo=2)
-  - « You can only cancel your subscription through a desktop computer, not through the mobile app. » — [App Store be](https://apps.apple.com/be/app/audible-audiobooks-podcasts/id379693831?uo=2)
-  - « ils font des spисания sans préavis du notificationnement! A dans l'application c'est difficile à faire. À cause de cela il est impossible d'obtenir un remboursement » — [App Store be](https://apps.apple.com/be/app/dramawave-dramas-reels/id6670430706?uo=2)
-- **Enquête :** verdict creuser — Le problème est réel et documenté (loi française de 2023, outils de rétention florissants) mais les résultats ne montrent aucun concurrent direct sur un standard ouvert, et surtout aucun acheteur identifié : les entreprises paient pour retenir, pas pour faciliter le départ, donc la validation du premier test (10 développeurs à 29 €) est indispensable avant d'aller plus loin.
-  - Concurrents : [Stripe (gestion des résiliations d'abonnement)](https://stripe.com/fr/resources/more/subscription-cancellations-italy) (prix ?, ressemblance 3/10) ; [Yuma AI (intégration Skio)](https://yuma.ai/fr/integrations/skio) (prix ?, ressemblance 4/10) ; [Xplor Deciplus (historique des résiliations)](https://xplordeciplus.zendesk.com/hc/fr/articles/29217257222812-A-la-d%C3%A9couverte-de-l-historique-des-r%C3%A9siliations) (prix ?, ressemblance 2/10) ; [Automation Anywhere (agents IA gestion de contrats)](https://www.automationanywhere.com/fr/solutions/ai-solution-accelerators/contract-management) (prix ?, ressemblance 3/10)
-  - Qui paie déjà : Les entreprises e-commerce et SaaS paient déjà des outils (Yuma AI, Sequenzy, plateformes de gestion d'abonnements comme Skio via Stripe) pour gérer et automatiser le moment de la résiliation — mais elles paient pour RETENIR leurs clients, pas pour aider les consommateurs à partir. Aucune preuve dans les résultats que des développeurs d'agents IA ou d'apps grand public paient pour un standard de résiliation universelle.
-  - Angle libre : Aucun acteur trouvé ne propose un standard ouvert interopérable (schema JSON + API publique) que les entreprises déclarent volontairement pour que des agents tiers automatisent la résiliation côté consommateur ; les concurrents existants sont tous côté entreprise (rétention, support, gestion interne) et fermés.
-  - Risque juridique : moyen — Le projet repose sur des entreprises qui acceptent de déclarer leurs procédures de résiliation ; sans adoption volontaire, scraper ou documenter leurs procédures soulève des questions de responsabilité et de conformité (données personnelles du compte client, art. L.215-1-1 en France qui impose déjà le trois-clics, ce qui réduit d'autant la valeur du standard dans les zones couvertes par ce type de loi).
-- **Faille :** Le succès dépend entièrement de l'adoption par les fournisseurs de services (Netflix, Spotify, etc.). Si ces entreprises ne sont pas incitées à intégrer le standard, l'API reste une curiosité technique sans valeur marchande.
-- **Mutation proposée :** Transformer le modèle de revenus en ciblant les entreprises elles-mêmes. Proposer un service 'Compliance-as-a-Service' où l'adoption du standard est présentée comme une obligation réglementaire (DMA/interopérabilité) et un avantage marketing pour améliorer l'expérience client et réduire les coûts de support.
+- **Élan :** ×0.93 sur 90 jours — « api monitoring » HN 0 contre 2, GitHub 4304 contre 5012 ; « breaking changes » HN 178 contre 176
+- **Preuve de terrain :** gisement « Fonctionnalités défaillantes dans les applications payantes », 26 mentions (App Store fr, App Store be, App Store us)
+  - « les offres souvent ne marche pas et impossible de payer les commandes. L’application a que des bugs en ce moment. » — [App Store fr](https://apps.apple.com/fr/app/burger-king-france/id924879230?uo=2)
+  - « Ou on vend de la formation ou on fait une application pratique et utile ! Il faut choisir ! » — [App Store fr](https://apps.apple.com/fr/app/premiers-secours-ifrc/id1312876691?uo=2)
+  - « Bouton appareil photo ne fonctionne pas. Arnaque le bouton Appareil photo pour prendre les champignons en photo ne fonctionne pas. J’ai payé en plus 😭😭 » — [App Store fr](https://apps.apple.com/fr/app/picture-mushroom-champignon/id1474578078?uo=2)
+- **Enquête :** verdict creuser — Le besoin est réel et prouvé, mais l'espace est déjà encombré (Canary Ops, PulseAPI, x402, open source) avec des plans gratuits : il faut valider que les devs indés paieront 19 €/mois pour de la surveillance prédictive de schéma plutôt que d'utiliser ces alternatives gratuites ou à l'usage.
+  - Concurrents : [Canary Ops](https://canaryops.dev/) (Gratuit jusqu'à 10 moniteurs (plan payant non affiché sur la page), ressemblance 7/10) ; [PulseAPI](https://pulseapi.io/) (Plan gratuit disponible, plans payants avec diagnostic IA (prix exact non affiché sur la page), ressemblance 8/10) ; [x402 openapi-diff (API à l'usage)](https://dev.to/hal_gobvan_16a285d49bda97/two-new-x402-apis-for-ai-agents-openapi-breaking-change-diff-rate-limit-policy-inference-4afj) (0,0005 $ par appel (USDC sur Base), ressemblance 6/10) ; [API Contract Monitoring Platform (open source)](https://github.com/Reddy9063/API-Contract-Monitoring-Platform) (prix ?, ressemblance 7/10)
+  - Qui paie déjà : Des développeurs indés et équipes d'intégration paient déjà au usage pour de la détection de breaking changes (x402 à 0,0005 $/appel) et des plans payants de monitoring d'APIs avec diagnostic IA (PulseAPI) ; les outils open source (oasdiff, plateformes GitHub) montrent que la communauté bricole déjà ce besoin gratuitement. ([preuve](https://dev.to/hal_gobvan_16a285d49bda97/two-new-x402-apis-for-ai-agents-openapi-breaking-change-diff-rate-limit-policy-inference-4afj))
+  - Angle libre : Personne ne combine encore surveillance continue du schéma + latence avec une alerte prédictive orientée devs indés à prix fixe bas (19 €/mois pour 5 APIs) : les concurrents font soit du uptime/diagnostic (Canary Ops, PulseAPI), soit du diff ponctuel à l'usage (x402), soit de la réparation de code (agents), mais pas de rapport prédictif « avant que le bug n'arrive chez l'utilisateur » packagé pour un public non-enterprise.
+  - Risque juridique : faible — Le service interroge des endpoints publics ou autorisés et alerte le client ; pas de traitement de données personnelles sensibles, mais attention aux CGU des APIs surveillées (scraping de specs) et à la RGPD si les payloads contiennent des données utilisateurs.
+- **Faille :** Le marché des outils de monitoring est saturé. Le défi est de prouver la valeur critique (le 'pain') de l'alerte de changement de schéma avant que le développeur ne soit exposé à un bug réel, ce qui rend la conversion du test gratuit difficile.
+- **Mutation proposée :** Ne pas se limiter à l'alerte de panne, mais fournir un 'Indice de Volatilité' ou un 'Score de Santé' pour chaque API, permettant aux développeurs de prioriser la refonte ou le remplacement des dépendances les plus risquées.
+
+## 2. APIPrixFinal
+**Score 7.42 / 10** · douleur 7.4 · paiement 9 · espace 7.0 · élan 8.0 · critique 7.6 · tournoi 6.0 · risque 5 — donnees-et-api, née d'une douleur réelle
+
+- **Problème :** Les développeurs d'apps de e-commerce ne savent pas calculer le prix final réel d'un produit car les frais varient selon les plateformes.
+- **Pour qui :** Les développeurs d'applications mobiles de comparaison de prix et d'agrégateurs e-commerce.
+- **Solution :** Une API qui renvoie le prix final toutes frais inclus (service, livraison, taxes) pour un produit et une destination donnés, agrégé depuis des dizaines de sources.
+- **Valeur pour la société :** Rend possible une génération d'outils grand-public qui affichent enfin le vrai prix, profitant à tous les consommateurs.
+- **Canal :** place-de-marche-api — premiers clients : Les développeurs présents sur RapidAPI et les catalogues MCP cherchant des sources de données prix fiables.
+- **Revenu :** Paiement à l'usage par requête, avec palier mensuel pour les gros volumes. (0,005€ par requête API)
+- **Premier test :** Publier sur RapidAPI et enregistrer 1000 requêtes payantes dès la première semaine grâce à un lancement ciblé auprès des développeurs.
+- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 1 outils payants utilisés sur le marché des agents ; 9 personnes disent payer déjà
+  - Marché des agents : [Google Flights API](https://apify.com/johnvc/google-flights-data-scraper-flight-and-price-search) — 356 utilisateurs/30 j, 0.03 $ par Page Processed
+  - Marché des agents : [FuelPrices | Pay Per Result, Easy to Use, No Cookies](https://apify.com/johnvc/fuelprices) — 58 utilisateurs/30 j, 0.001 $ par result
+  - Serveurs MCP déjà publiés sur ce besoin : 0
+- **Élan :** ×2.26 sur 90 jours — « landed cost » HN 2 contre 0, GitHub 194 contre 84 ; « price comparison API » HN 0 contre 0
+- **Preuve de terrain :** gisement « Frais de services cachés et perçus comme abusifs », 16 mentions (App Store fr, App Store be, App Store us, Lemmy lemmy.world)
+  - « When you get to the register, the item rings up for $6, so with tax, you pay $6.60. » — [Lemmy lemmy.world](https://lemmy.today/comment/27558083)
+  - « Aucune réduction. Pas de réduction et des frais de traitement et livraison » — [App Store fr](https://apps.apple.com/fr/app/uber-eats-livraison-de-repas/id1058959277?uo=2)
+  - « Frais de services indécent. Il faut arrêter de prendre les gens pour des cons. Frais de services de quoi exactement ? » — [App Store fr](https://apps.apple.com/fr/app/uber-eats-livraison-de-repas/id1058959277?uo=2)
+- **Enquête :** verdict creuser — Le besoin est réel et l'angle API développeur inoccupé, mais aucune preuve directe que des développeurs paient pour ce service précis et le modèle d'agrégation soulève des risques juridiques et techniques à valider avant de foncer.
+  - Concurrents : [Prisync](https://www.lafabriquedunet.fr/logiciels/marketing-digital/veille-tarifaire) (99 €/mois, ressemblance 4/10) ; [Paarly](https://www.lafabriquedunet.fr/logiciels/marketing-digital/veille-tarifaire) (prix ?, ressemblance 4/10) ; [Price2Spy](https://www.lafabriquedunet.fr/logiciels/marketing-digital/veille-tarifaire) (prix ?, ressemblance 4/10)
+  - Qui paie déjà : Les e-commerçants et responsables pricing paient déjà des outils de veille tarifaire (Prisync 99 €/mois, Paarly, Price2Spy) pour surveiller les prix concurrents, mais ce sont des SaaS pour marchands, pas des API de prix final consommateur pour développeurs : personne ne paie encore exactement pour ce besoin.
+  - Angle libre : Aucun acteur trouvé n'expose une API développeur qui renvoie le prix final toutes frais inclus (livraison, taxes, frais de service) pour un produit et une destination donnés : les outils existants font de la veille tarifaire B2B pour marchands, pas de l'agrégation 'landed cost' orientée apps de comparaison.
+  - Risque juridique : moyen — Agréger des prix depuis des dizaines de sources implique du scraping ou des accords avec les plateformes : conditions d'utilisation restrictives, blocages techniques et risque de contestation sur la réutilisation des données de tiers.
+- **Faille :** Le modèle repose entièrement sur le scraping de données de prix et de frais, ce qui contrevient très probablement aux Conditions Générales de Vente (CGV) de la majorité des marchands e-commerce. Ce risque juridique est majeur et peut entraîner le blocage des sources de données et des poursuites.
+- **Mutation proposée :** Diversifier la source de données en privilégiant les API de partenaires (si disponibles) ou en se concentrant sur des niches où les données sont semi-structurées (ex: marketplaces ayant des flux de données ou des règles de calcul de frais standardisées), réduisant ainsi la dépendance au scraping illégal.
+
+## 3. Preuve avant mise à jour
+**Score 6.87 / 10** · douleur 6.7 · paiement 3 · espace 8.0 · élan 8.4 · critique 6.9 · tournoi 10.0 · risque 10 — createurs, née d'une douleur réelle
+
+- **Problème :** Les créateurs qui vivent de leurs apps d'e-commerce ou de leur app communautaire perdent des clients quand une mise à jour obligatoire bloque l'accès au moment critique (comme les codes promo fast-food en boutique).
+- **Pour qui :** Les créateurs et petits vendeurs qui ont une app ou une webapp mobile utilisée sur place par leurs clients.
+- **Solution :** Un outil en libre-service qui, avant chaque publication, fait tester automatiquement la nouvelle version par des scénarios d'usage réels générés par les agents (parcours client, temps de chargement, flux critique) et produit un rapport « prêt ou pas » avec simulation du coût d'une mise à jour bloquante.
+- **Valeur pour la société :** Moins d'outils dégradés pour les clients finaux ; les petits vendeurs apprennent à ne pas casser l'expérience au pire moment.
+- **Canal :** place-de-marche-numerique — premiers clients : Sur Gumroad et les communautés de makers (Indie Hackers, X des indie devs), en vendant un audit de pré-publication à l'unité.
+- **Revenu :** Vente à l'unité par audit, puis abonnement pour les tests à chaque publication. (19 euros par audit de version, 39 euros par mois en illimité.)
+- **Premier test :** En 2 semaines : mettre en vente l'audit unitaire sur Gumroad, poster le rapport d'une app réelle sur Indie Hackers, et mesurer 10 achats à 19 euros.
+- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 2 personnes disent payer déjà ; l'enquête dit ne pas avoir trouvé de paiement
+- **Élan :** ×2.58 sur 90 jours — « pre-release testing » HN 4 contre 3, GitHub 77 contre 28 ; « critical user flows » HN 0 contre 1
+- **Preuve de terrain :** gisement « Mises à jour dégradant l'expérience utilisateur », 18 mentions (App Store be, App Store us, App Store fr)
+  - « À chaque fois que j’arrive au BK, il y a une mise à jour à faire. Et la dernière plus de deux minutes » — [App Store fr](https://apps.apple.com/fr/app/burger-king-france/id924879230?uo=2)
+  - « J’ai vraiment préférée la version initiale, celle qui y était avant puisque vraiment tout était détaillé » — [App Store fr](https://apps.apple.com/fr/app/premiers-secours-ifrc/id1312876691?uo=2)
+  - « Fonctionnait bien, puis sans explication ne fonctionne plus depuis quelques semaines. » — [App Store fr](https://apps.apple.com/fr/app/pronote/id1138223804?uo=2)
+- **Enquête :** verdict creuser — Les résultats de recherche fournis ne documentent ni concurrents ni demande pour ce produit précis : il faut refaire une recherche ciblée (tests automatisés mobiles, release blockers, app store rejection) avant tout lancement.
+  - Concurrents : aucun trouvé
+  - Qui paie déjà : Non identifiable dans les résultats fournis : aucune preuve que des créateurs d'apps e-commerce paient déjà pour un audit pré-publication de ce type.
+  - Angle libre : Les résultats de recherche fournis ne contiennent rien sur ce besoin (CRM, bornes de commande, Shopify, témoignages clients, Slack) : impossible de vérifier la concurrence ni la demande. Un angle possible serait la simulation chiffrée du coût d'une mise à jour bloquante, mais elle reste non validée par les sources.
+  - Risque juridique : faible — Outil d'audit logiciel sans traitement de données personnelles particulières ni enjeu réglementaire identifié.
+- **Faille :** La défensibilité est faible : un outil open source ou un agent IA gratuit pourrait rapidement reproduire la même fonctionnalité, et les créateurs pourraient préférer une solution gratuite.
+- **Mutation proposée :** Proposer une intégration profonde avec les plateformes d'e-commerce (Shopify, WooCommerce) et un service de surveillance continue des performances après mise à jour, avec alertes en temps réel et un historique des impacts, créant ainsi une barrière à la copie par les données et l'intégration.
+
+## 4. Alt-Text Forge
+**Score 6.81 / 10** · douleur 6.0 · paiement 8 · espace 4.0 · élan 5.8 · critique 7.0 · tournoi 8.0 · risque 10 — donnees-et-api, née du marché des agents (agent-client)
+
+- **Problème :** Des millions d'images en ligne n'ont pas de texte alternatif, et les scrapers d'images comme Google Images retournent des descriptions vides ou de mauvaise qualité qui plombent les agents et l'accessibilité.
+- **Pour qui :** Agences web, plateformes e-commerce et agents IA qui ingèrent des catalogues d'images et ont besoin de descriptions fiables et normalisées.
+- **Solution :** Une API qui prend un lot d'URLs d'images et retourne un alt-text conforme aux normes WCAG, multilingue, avec niveau de détail paramétrable et contrôle qualité automatique par un second agent vérificateur.
+- **Valeur pour la société :** Améliorer massivement l'accessibilité du web pour les utilisateurs de lecteurs d'écran, à l'échelle programmatique.
+- **Canal :** place-de-marche-api — premiers clients : Les vendeurs d'actors Apify qui scrapent des catalogues e-commerce, contactés sur le hub communautaire Apify, plus un Show HN.
+- **Revenu :** Pay-per-use (0,01 € par image décrite, gratuit jusqu'à 500 images)
+- **Premier test :** En 14 jours : offrire 1 000 descriptions gratuites aux 10 premiers développeurs qui répondent sur le forum Apify, puis leur proposer un pack payant.
+- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 1 outils payants utilisés sur le marché des agents
+  - Marché des agents : [Google Images Scraper](https://apify.com/hooli/google-images-scraper) — 534 utilisateurs/30 j, 0.0035 $ par Scraped image
+  - Serveurs MCP déjà publiés sur ce besoin : 0
+- **Élan :** ×1.27 sur 90 jours — « alt text » HN 33 contre 22, GitHub 595 contre 535 ; « image accessibility » HN 0 contre 0
+- **Preuve de terrain :** Marché des agents : Google Images Scraper — outil payé par 534 utilisateurs en 30 jours
+- **Enquête :** verdict creuser — Le besoin est bien documenté et l'angle API multilingue avec double vérification n'est pas couvert par les plugins WordPress trouvés, mais aucune offre payante avec prix vérifié n'a été trouvée dans les sources : le prix de 0,01 €/image reste à valider face à des concurrents non listés (AltText.ai, etc.).
+  - Concurrents : [neo Alt (neo-wp)](https://neo-wp.com/fr/wp-how-to/wordpress-bulk-alt-text-generator-ai) (prix ?, ressemblance 7/10)
+  - Qui paie déjà : Les équipes web et e-commerce paient déjà des agences/rédacteurs pour l'accessibilité et le SEO d'images, mais aucun concurrent avec prix affiché n'apparaît dans les résultats : impossible de prouver un flux payant direct avec ces sources.
+  - Angle libre : Une API générique (hors WordPress) avec contrôle qualité par second agent vérificateur, niveau de détail paramétrable et sortie multilingue normalisée pour pipelines d'agents IA et scrapers — les concurrents trouvés sont des plugins WordPress intégrés à la médiathèque, pas des API batch.
+  - Risque juridique : faible — Génération de descriptions d'images : pas de données personnelles ni de contenu protégé copié, conformité WCAG plutôt un argument commercial.
+- **Faille :** La défensibilité est faible : un modèle de vision multimodal (ex. GPT-4o) peut générer un alt-text acceptable gratuitement ou à coût marginal, et des API concurrentes (AWS, Google) proposent déjà la description d'image. Sans données propriétaires ou réseau de confiance, l'offre est facilement copiée.
+- **Mutation proposée :** Au lieu d'une simple API de description, créer un registre public et vérifié d'alt-texts (via signature de hachage d'image) où chaque description est notée et auditable, et où les utilisateurs peuvent réclamer des corrections. Le réseau de confiance et l'historique des vérifications deviennent alors un actif défendable.
+
+## 5. PreuveEnMain : terminal de preuve de livraison payé à la pièce chez les commerçants locaux
+**Score 6.8 / 10** · douleur 7.3 · paiement 5 · espace 6.0 · élan 8.6 · critique 6.9 · tournoi 6.0 · risque 10 — local-et-territoire, née d'une douleur réelle
+
+- **Problème :** Les commerçants locaux livrant eux-mêmes n'ont aucun moyen de prouver la bonne remise et se font acheter à faux par des clients malhonnêtes, tandis que des clients sont spoliés par des livreurs véreux.
+- **Pour qui :** Commerçants de proximité, épiceries de quartier, bouchers, fleuristes qui livrent en ville et associations de commerçants.
+- **Solution :** Une borne QR posée en caisse où le client signe numériquement et photographie sa réception, archivée automatiquement et consultable en cas de litige ou de contestation.
+- **Valeur pour la société :** Protège le commerce de proximité, acteur économique et social des quartiers, contre la fraude et le vol.
+- **Canal :** communautes — premiers clients : Chambres de commerce locales, forums de commerçants, groupes WhatsApp de commerçants de centre-ville.
+- **Revenu :** Abonnement mensuel par borne + option dossier illimité. (29 €/mois par borne)
+- **Premier test :** Placer 3 bornes chez 3 commerçants d'un quartier test et encaisser 3 abonnements sous 14 jours.
+- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 6 personnes disent payer déjà
+- **Élan :** ×2.73 sur 90 jours — « proof of delivery » HN 3 contre 4, GitHub 196 contre 70 ; « ePOD » HN 0 contre 0
+- **Preuve de terrain :** gisement « Non-remboursement en cas de vol par le livreur », 7 mentions (App Store fr, App Store be, App Store us)
+  - « Me sont volé plus de 30€ que le livreur a livré mais jamais sont venu » — [App Store fr](https://apps.apple.com/fr/app/deliveroo-faites-vous-livrer/id1001501844?uo=2)
+  - « Me sont volé plus de 30€ que le livreur a livré mais jamais sont venu » — [App Store fr](https://apps.apple.com/fr/app/deliveroo-faites-vous-livrer/id1001501844?uo=2)
+  - « on m’explique tout simplement que je n’ai pas de preuve. » — [App Store fr](https://apps.apple.com/fr/app/uber-eats-livraison-de-repas/id1058959277?uo=2)
+- **Enquête :** verdict creuser — Le besoin de preuve de livraison est documenté et les solutions ePOD existent mais ciblent les flottes B2B ; il faut valider que les commerçants locaux livrant eux-mêmes sont assez nombreux et prêts à payer 29 €/mois.
+  - Concurrents : [Dashdoc (ePOD / preuve de livraison numérique)](https://www.dashdoc.com/fr/blog/preuve-de-livraison) (prix ?, ressemblance 7/10) ; [Solutions ePOD génériques (signature + photo géolocalisée + horodatage)](https://innovia-transport.com/preuve-livraison-pod) (prix ?, ressemblance 8/10) ; [Bopizy (Click & Collect pour commerçants, avec preuve de retrait en magasin)](https://www.bopizy.com/) (49,90 € HT/mois, ressemblance 4/10)
+  - Qui paie déjà : Les transporteurs et flottes paient déjà des TMS/ePOD (Dashdoc) ; les commerçants paient des solutions de vente en ligne (Bopizy), mais aucun payeur identifié pour un ePOD dédié aux livreurs-commerçants de quartier.
+  - Angle libre : Un ePOD payé à la pièce et ultra-simple (borne QR en caisse) pour le livreur-commerçant local, alors que les solutions existantes visent les flottes et TMS B2B, pas l'épicerie du quartier.
+  - Risque juridique : faible — Archiver des photos et signatures de réception est un traitement standard ; il faut simplement un consentement RGPD clair du client livré et une durée de conservation définie.
+- **Faille :** Le modèle est trop réactif et repose sur une adoption volontaire (le client doit accepter de signer numériquement). La friction d'ajouter une étape matérielle (la borne) au processus de livraison est un frein majeur à l'adoption par les petits commerçants.
+- **Mutation proposée :** Transformer la borne de simple 'terminal de signature' en 'terminal de contrôle de qualité et de livraison'. L'agent IA devrait analyser non seulement la signature, mais aussi les photos prises (ex: état du produit, température, conformité de l'emballage) pour fournir au commerçant un rapport de qualité immédiat, transformant la preuve de livraison en preuve de service.
 
 ## Suivantes
-6. **LitigeAPI** (6.33) — Les développeurs d'app e-commerce, fintech ou assurance n'ont aucune API pour vérifier si une réclamation client de livraison est légitime et conforme au droit UE.
-7. **AinéCodeVoisin** (6) — Les apps de révision sont conçues pour des jeunes nés avec le tactile : typographie petite, jargon, pression d'abonnement — les personnes âgées qui repassent un code (permis retiré, contrôle médical) sont totalement ignorées.
-8. **Médiateur IA pour Apps Défectueuses** (5.84) — Impossible de contacter l'éditeur pour obtenir un remboursement après achat d'une app qui ne marche pas.
-9. **Vengez-Vous En Don** (5.75) — Quand une plateforme refuse un remboursement légitime, le client se sent impuissant et n'a aucun levier public.
-10. **Rembourseur Automatique d'Apps** (5.62) — Les utilisateurs d'apps défectueuses ne peuvent pas contacter l'éditeur pour obtenir un remboursement.
+6. **Place de marché de datasets de prix aériens pour analystes et médias** (6.5) — Chaque acteur du voyage repaie le même scraping ; il manque un dataset commun, propre et auditable.
+7. **CodePermisAI : Le Tuteur qui Ne Sature Pas** (6.38) — Les candidats abandonnent la théorie parce que les QCM classiques sont répétitifs et ne ciblent pas leurs lacunes spécifiques, contrairement aux promesses des apps qui disent 'progresser vite'.
+8. **Vérificateur d'agences d'immigration** (6.28) — Les candidats à l'immigration paient des « agences » frauduleuses sans aucun moyen de vérifier leur légitimité avant de payer des milliers d'euros.
+9. **ModeNormal** (6.2) — Les apps éducatives surchargent l'utilisateur de notifications, récompenses et distractions qui brisent la concentration et l'envie d'apprendre.
+10. **CacheCast : Buffer Prédictif Vidéo Mobile** (6.11) — Dans les régions à connectivité instable ou chère, les plateformes de streaming coupent la lecture après quelques minutes, empêchant le téléchargement intégral ou la visualisation continue de contenus éducatifs ou divertissants.
 
 ## Gisements les plus forts
-- **Abus des abonnements mobiles** — 51 mentions (6 aujourd'hui), 3 sources, force 14.662
-- **Tarification abusive des contenus numériques** — 59 mentions (13 aujourd'hui), 4 sources, force 13.583
-- **Résiliation d'abonnement impossible** — 27 mentions (16 aujourd'hui), 3 sources, force 11.475
-- **Remboursements et compensations de livraison non honorés** — 18 mentions (5 aujourd'hui), 3 sources, force 10.706
-- **Service client défaillant après paiement** — 10 mentions (4 aujourd'hui), 4 sources, force 10.57
-- **Problèmes de performance des applications mobiles** — 39 mentions (11 aujourd'hui), 4 sources, force 10.543
-- **Support client inaccessible en cas de bug applicatif** — 21 mentions (2 aujourd'hui), 4 sources, force 9.289
-- **Publicité intrusive dans les applications gratuites** — 31 mentions (4 aujourd'hui), 3 sources, force 7.67
-- **Accès payant verrouillé aux services numériques** — 19 mentions (2 aujourd'hui), 4 sources, force 7.612
-- **Violations de confidentialité et spam dans les apps de santé** — 12 mentions (3 aujourd'hui), 4 sources, force 7.479
-- **Retards de livraison imprévisibles** — 12 mentions (3 aujourd'hui), 3 sources, force 7.442
-- **Non-remboursement en cas de vol par le livreur** — 6 mentions (2 aujourd'hui), 3 sources, force 7.351
+- **Abus des abonnements mobiles** — 60 mentions (9 aujourd'hui), 4 sources, force 18.011
+- **Service client défaillant après paiement** — 17 mentions (7 aujourd'hui), 5 sources, force 14.204
+- **Tarification abusive des contenus numériques** — 74 mentions (15 aujourd'hui), 4 sources, force 14.118
+- **Résiliation d'abonnement impossible** — 35 mentions (8 aujourd'hui), 3 sources, force 12.643
+- **Remboursements et compensations de livraison non honorés** — 23 mentions (5 aujourd'hui), 3 sources, force 11.305
+- **Problèmes de performance des applications mobiles** — 48 mentions (9 aujourd'hui), 4 sources, force 10.769
+- **Support client inaccessible en cas de bug applicatif** — 22 mentions (1 aujourd'hui), 4 sources, force 9.443
+- **Retards de livraison imprévisibles** — 17 mentions (5 aujourd'hui), 3 sources, force 8.718
+- **Frais de services cachés et perçus comme abusifs** — 16 mentions (4 aujourd'hui), 4 sources, force 8.345
+- **Violations de confidentialité et spam dans les apps de santé** — 17 mentions (5 aujourd'hui), 4 sources, force 8.218
+- **Publicité intrusive dans les applications gratuites** — 36 mentions (5 aujourd'hui), 3 sources, force 8.016
+- **Fonctionnalités défaillantes dans les applications payantes** — 26 mentions (5 aujourd'hui), 3 sources, force 7.943
 
 ## Santé
-- Sources : hn 53 ; hn_achat 58 ; appstore 1219 ; stackexchange 180 ; lemmy 150
-- mercury : 44 ok, 0 échecs (0 %), 5276 ms
-- qwen : 226 ok, 1 échecs (0 %), 7911 ms — réponse illisible (fin : length) : {
-  "valeur_societale": 6,
-  "originalite": 5,
-  "avantage_agents": 8,
-  "defensibilite": 3,
-  "argent_rapide": 2,
-  "di
-- mimo : 248 ok, 0 échecs (0 %), 10587 ms
-- mistral : 13 ok, 0 échecs (0 %), 11519 ms
-- deepseek : 217 ok, 0 échecs (0 %), 12001 ms
-- glm : 229 ok, 5 échecs (2 %), 6664 ms — réponse illisible (fin : stop) : {"idees": [{"": "Analyse de Faisabilité Transfrontalière de Poste", "arene": "travail-et-carrieres", "probleme": "Les tr
-- Étapes : radar 325 s (cumul 0.0393 $) ; marche 6 s (cumul 0.0393 $) ; usine 764 s (cumul 0.2929 $) ; enquete 29 s (cumul 0.3766 $) ; elan 130 s (cumul 0.3766 $)
+- Sources : hn 53 ; hn_achat 59 ; appstore 1219 ; stackexchange 180 ; lemmy 150
+- mercury : 41 ok, 0 échecs (0 %), 5247 ms
+- mimo : 239 ok, 0 échecs (0 %), 9705 ms
+- qwen : 216 ok, 0 échecs (0 %), 9460 ms
+- deepseek : 241 ok, 2 échecs (1 %), 10564 ms — aucun fournisseur pour deepseek (openrouter : réponse vide (fin : length) ; groq : clé absente)
+- mistral : 12 ok, 1 échecs (8 %), 12681 ms — réponse illisible (fin : stop) : []
+- glm : 217 ok, 7 échecs (3 %), 6352 ms — réponse illisible (fin : stop) : {"} }$্ট। ेேகཟンемаяান্ত্টा , здо วา ォ<unused2130>ाની,емаяníkaးा้น ঁ1।วา}! $,    ": 1, "},ッシемая.्याемаяวา।ा}وري": "}وري"
+- Atlas vivant : 26/36 API répondent (muettes : seismes, eonet, essais-cliniques, openfda, osm, gdelt, solaire, gutendex, openverse, nasa-apod)
+- Étapes : radar 346 s (cumul 0.0385 $) ; marche 8 s (cumul 0.0385 $) ; atlas 24 s (cumul 0.0385 $) ; usine 746 s (cumul 0.2764 $) ; enquete 24 s (cumul 0.3619 $) ; elan 88 s (cumul 0.3619 $)
