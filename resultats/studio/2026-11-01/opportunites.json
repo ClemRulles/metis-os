@@ -1,0 +1,3296 @@
+{
+ "date": "2026-11-01",
+ "opportunites": [
+  {
+   "titre": "OpenSubs — l'index ouvert et comparable des conditions d'abonnement",
+   "arene": "donnees-et-api",
+   "probleme": "Personne ne sait vraiment ce que coûte un abonnement : durée d'engagement, clauses de reconduction, frais de résiliation, conditions de remboursement, où cliquer pour partir. Les griefsportent sur l'opacité, pas sur le prix affiché.",
+   "pour_qui": "Les développeurs d'agents, les fintechs, les associations de consommateurs, les médias qui veulent comparer et informer ; et in fine tout consommateur qui compare sur données而非 ndarraycpy.",
+   "valeur_societale": "Transformer des conditionswold illisibles en données ouvertes réutilisables : la transparence exigée par le droit devient un actif collectif, réduction de l'asymétrie d'information et facilitation des actions de groupe.",
+   "solution": "Un index public et une API des conditions réelles d'abonnement : engagement minimum, reconduction automatique, délai de remboursement, frais de résiliation, prérequis de clics, note de « friction de résiliation » mesurée et vérifiée. Alimenté par extraction automatique des CGU, déclaration juridique_pad-in pad des stores, versements de，提前半个月 de_usersconsentis (opt-in), et des signalements d'utilisateurs.",
+   "pourquoi_agents": "Les agents relevent, classent et normalisent des milliers de conditions qui changent chaque mois et rédigent les synthèses ; ils特有的 identifient les patterns déloyaux (frais conditionnels, bouton de résiliation absent) et alertent en temps réel lesas associations et les trustworthiness des apps.",
+   "pourquoi_maintenant": "Le DMA, la directive sur les prix affichés et les nouvelles règles de facturation des stores créent une年报 informative ; les agents IA rendent le coût du relevé.batikPMC imbriquée ≠1 € par abonnement. Il y a une fenêtre avant que les Nonprofit data deficiency se referme.",
+   "canal": "place-de-marche-api",
+   "premier_client": "Apify Store et RapidAPI (catégorie « subscription »), plus les 5 premiers intégrateurs : apps de suivi-budget (Bankable, YNAB-like FR),ด assos Test-Achats/Which?, 2 médias Subscription-without-sourire la liste d'attente. Objectif : 3 abonnements API payants en 14 jours.",
+   "modele_revenu": "API freemium (100 appels/mois gratuits) puis 39 €/mois par accès aux données premium (table des conditions, signaux de fraude, historique des changements) ; licence association 199 €/an.",
+   "prix": "39 €/mois par compte API ; 199 €/an pour une association",
+   "premier_test": "2 semaines : publier l'index brut de 100 applications les plus souscrites + la métrique « friction de résiliation », garder un waitlist de 50 BIN démo accès API. Vendre 3 accès API à 39 € dès que les données de 2 semaines sont jugées fiables.",
+   "audace": 7,
+   "origine": "ancree",
+   "lentille": "renverser-la-plainte",
+   "cerveau": "minimax",
+   "gisement": {
+    "id": "g23",
+    "nom": "Abus des abonnements mobiles",
+    "n": 34,
+    "force": 13.022
+   },
+   "sources": [],
+   "id": "i0093",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 5,
+    "distribution": 6,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le premier paiement sous 30 jours est fragile : les clients API (fintechs, médias) exigent une fiabilité et une couverture critique avant d'acheter, et 100 apps en 2 semaines ne suffiront pas à convaincre. Le freemium attire des curieux mais pas des payeurs immédiats.",
+    "amelioration": "Cibler d'abord un segment très motivé et peu exigeant en couverture : les associations de consommateurs et les médias, avec un rapport PDF payant (49 €) sur les 10 apps les plus frauduleuses du mois, vendu via leur newsletter. Cela génère un premier revenu en 7 jours sans API.",
+    "juge": "deepseek"
+   },
+   "score": 7.1000000000000005,
+   "elo": 1580,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Ideel (fiches résiliation par service)",
+      "url": "https://ideel.io/resilier-abonnement/salle-de-sport",
+      "prix": "Gratuit pour le consommateur (service de résiliation sans surcoût)",
+      "zone": "France",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "OpenSubs — Paid memberships (infra d'abonnements, pas d'index)",
+      "url": "https://www.opensubs.com/platform/paid-memberships",
+      "prix": "0% sur les renouvellements (modèle à préciser)",
+      "zone": "International",
+      "ressemblance": 2,
+      "verifie": true
+     },
+     {
+      "nom": "2pay (blog/conseil conformité abonnements)",
+      "url": "https://blog.2pay.fr/2025/12/abonnement-et-reconduction-tacite.html",
+      "prix": null,
+      "zone": "France",
+      "ressemblance": 1,
+      "verifie": true
+     },
+     {
+      "nom": "Mediationconsommateur.be (guides abonnements)",
+      "url": "https://mediationconsommateur.be/abonnements-comment-eviter-les-mauvaises-surprises",
+      "prix": null,
+      "zone": "Belgique",
+      "ressemblance": 1,
+      "verifie": true
+     },
+     {
+      "nom": "Centre Européen de la Consommation (guides France/Allemagne)",
+      "url": "https://www.cec-zev.eu/thematiques/vie-quotidienne/achats-services/abonnement-resiliation",
+      "prix": null,
+      "zone": "Europe",
+      "ressemblance": 1,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.victorisavocat.com/blog/abonnement-consommateur-reconduction-tacite-resiliation-trois-clics",
+      "resume": "Loi française impose résiliation en trois clics ; signalements SignalConso et sanctions démontrent que l'opacité des conditions est un problème réel et contrôlé.",
+      "verifie": true
+     },
+     {
+      "url": "https://ideel.io/resilier-abonnement/salle-de-sport",
+      "resume": "69 fiches dédiées à la résiliation de salles de sport et un service qui gère les résiliations : preuve que les consommateurs cherchent activement ces informations et payent pour s'en décharger.",
+      "verifie": true
+     },
+     {
+      "url": "https://blog.2pay.fr/2025/12/abonnement-et-reconduction-tacite.html",
+      "resume": "Article détaillé sur les litiges liés à la reconduction tacite (facturation sans préavis, clauses noyées dans les CGV) : problème récurrent documenté par un acteur du paiement.",
+      "verifie": true
+     },
+     {
+      "url": "https://mediationconsommateur.be/abonnements-comment-eviter-les-mauvaises-surprises",
+      "resume": "La médiation belge consacre des ressources aux 'mauvaises surprises' d'abonnement : flux de réclamations confirmé en Belgique.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les associations de consommateurs et les médias paient (abonnements, licences) pour produire des comparatifs ; les consommateurs paient indirectement des services de résiliation ; mais aucune preuve dans les résultats d'un marché payant pour une API de données de conditions d'abonnement.",
+    "preuve_paiement_url": null,
+    "nouveaute": 7,
+    "angle_libre": "Aucun des résultats ne propose une base de données structurée et comparable (API) des conditions d'abonnement avec une métrique mesurée de 'friction de résiliation' ; les concurrents sont des guides éditoriaux ou des services de résiliation, pas des fournisseurs de données.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Publiciser les conditions extraites des CGU et une note de friction expose à des pressions juridiques des marques (diffamation, reprise de contenu contractuel), et la collecte de données utilisateurs (signalements, consentement) doit respecter RGPD et le cadre renforcé de la loi 'résiliation en trois clics'.",
+    "verdict": "creuser",
+    "raison": "Le besoin est documenté et l'angle API données est inoccupé, mais aucune preuve de willingness-to-pay pour l'API en elle-même n'émerge des résultats : valider d'abord les 3 ventes pilotes avant d'investir.",
+    "preuve_paiement_verifiee": false,
+    "citations": [
+     {
+      "url": "https://www.opensubs.com/platform/paid-memberships",
+      "titre": "Paid memberships | The 0% Platform | OpenSubs"
+     },
+     {
+      "url": "https://blog.2pay.fr/2025/12/abonnement-et-reconduction-tacite.html",
+      "titre": "Abonnement et reconduction tacite : comment éviter les pratiques abusives ?"
+     },
+     {
+      "url": "https://mediationconsommateur.be/abonnements-comment-eviter-les-mauvaises-surprises",
+      "titre": "Abonnements : comment éviter les mauvaises surprises ?"
+     },
+     {
+      "url": "https://www.victorisavocat.com/blog/abonnement-consommateur-reconduction-tacite-resiliation-trois-clics",
+      "titre": "Abonnements aux consommateurs : reconduction tacite, information annuelle et résiliation en trois clics - Victoris Avocat"
+     },
+     {
+      "url": "https://www.cec-zev.eu/thematiques/vie-quotidienne/achats-services/abonnement-resiliation",
+      "titre": "Abonnement en ligne et résiliation en France et en Allemagne"
+     },
+     {
+      "url": "https://ideel.io/resilier-abonnement/salle-de-sport",
+      "titre": "Résilier un abonnement de salle de sport — Ideel"
+     },
+     {
+      "url": "https://www.efl.fr/actualite/nouveau-droit-retractation-consommateur-moment-reconduction-contrat_fe043e511-f179-493f-bbf5-f6949dec3c9b",
+      "titre": "Pas de nouveau droit de rétractation du consommateur au moment de la reconduction du contrat < Contrat de consommation < Affaires -  Éditions Francis Lefebvre"
+     },
+     {
+      "url": "https://www.juridica.fr/blog/consommation/votre-abonnement-a-votre-salle-de-sport-vous-pese-que-faire-pour-sen-debarrasser",
+      "titre": "Un abonnement à une salle de sport vous tente ? Juridica vous explique tout pour éviter les déceptions ? - Juridica"
+     }
+    ],
+    "liens_verifies": 9,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.96,
+    "composantes": {
+     "douleur_prouvee": 10,
+     "paiement_prouve": 8,
+     "espace_libre": 7,
+     "critique": 7.1000000000000005,
+     "tournoi": 10,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Recours / Calibration",
+   "arene": "grand-public",
+   "probleme": "Les victimes de livraisons perdues, erronées ou annoncées « livrées » abandonnent leur remboursement parce que le support automatisé les circule en boucle et beaucoup paient encore le fournisseur ensuite.",
+   "pour_qui": "Les particuliers qui commandent régulièrement repas et courses en ligne en Belgique, France et Luxembourg.",
+   "valeur_societale": "Restituer aux consommateurs des montants qui leur sont légitimement dus rééquilibre le rapport de force avec les plateformes.",
+   "solution": "Une application mobile où l'utilisateur importe son justificatif de commande, les agents génèrent un dossier de réclamation solide (photos, reçu, chronologie) et des lettres ou formulaires pré-remplis pour chaque plateforme, avec suivi du dossier jusqu'au paiement.",
+   "pourquoi_agents": "Les agents rédigent et adaptent chaque réclamation 24 h/24 en compliance avec les conditions de chaque plateforme, pour un coût marginal quasi nul contre un service juridique à 150 € l'heure.",
+   "pourquoi_maintenant": "Les plateformes durcissent leur support automatisé en même temps que les tribunaux de proximité et la protection consommateur creusent des voies précises que des agents peuvent systématiser.",
+   "canal": "contenu-court",
+   "premier_client": "Discord et groupes Facebook belges et français de consommateurs de livraison, où les gens publient déjà leurs commandes perdues, réponses honnêtes, jamais de publis multicanaux.",
+   "modele_revenu": "Freemium : la réclamation 1 est payante, le pack mensuel du chasse régulier.",
+   "prix": "9 € par dossier préparé, 4,99 €/mois pour les réclamations illimitées.",
+   "premier_test": "Deux semaines pour préparer gratuitement 20 dossiers de beware-dossiers pour des volunteers recrutés sur r/belgium, r/fooddelivery et Discord francais, on demande ensuite 9 € aux suivants et mesure conversion.",
+   "audace": 7,
+   "origine": "ancree",
+   "lentille": "dix-fois-moins-cher",
+   "cerveau": "glm",
+   "gisement": {
+    "id": "g77",
+    "nom": "Remboursements et compensations de livraison non honorés",
+    "n": 10,
+    "force": 8.697
+   },
+   "sources": [],
+   "id": "i0024",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 6,
+    "avantage_agents": 7,
+    "defensibilite": 4,
+    "argent_rapide": 6,
+    "distribution": 7,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "La faille : préparer des réclamations pour des particuliers face à des plateformes peut basculer vers du conseil juridique non réglementé si les agents produisent des arguments juridiques personnalisés (droit de la consommation, mise en demeure), et la valeur défendable est faible — un simple GPT gratuit avec les CGV de la plateforme fait à peu près pareil demain, sans données propriétaires ni réseau qui barrent la route.",
+    "amelioration": "Mutation pour la rendre forte : (1) se cantonner strictement à de la préparation documentaire et logistique (assemblage des preuves, chronologie, formulaire officiel de la plateforme) sans jamais rédiger d'argumentation juridique ni citer de fondement légal, avec avertissement clair 'nous ne sommes pas avocats' ; (2) construire la défendabilité sur une base de données propriétaire des CGV/procédures de remboursement de 50+ plateformes, mise à jour en continu par les agents + taux de succès réels par plateforme, donnant un résultat chiffré ('87% de remboursement obtenu chez X en 6j') qu'aucun assistant gratuit ne peut produire ; (3) ajouter un agrégateur communautaire de dossiers gagnés qui crée l'effet réseau et la preuve sociale.",
+    "juge": "mimo"
+   },
+   "score": 6.6,
+   "elo": 1548,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Signal Conso (incarnation / DGCCRF)",
+      "url": "https://signal.conso.gouv.fr/fr/dysfonctionnements-commandes-nourriture",
+      "prix": "gratuit",
+      "zone": "France",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "Testachats / Test-Achats (service plaintes)",
+      "url": "https://www.test-achats.be/plainte/plaintes-publiques/probleme-avec-le-remboursement/fc15a31647f8527a57",
+      "prix": "abonnement Test-Achats (~60-100 €/an, non confirmé dans les résultats)",
+      "zone": "Belgique",
+      "ressemblance": 6,
+      "verifie": true
+     },
+     {
+      "nom": "Plateformes de livraison (Uber Eats, Deliveroo, Wolt) - service client interne",
+      "url": "https://press.wolt.com/fr-LU/269020-les-luxembourgeois-emmenent-wolt-avec-eux-en-vacances",
+      "prix": "gratuit (inclus dans la commande)",
+      "zone": "Europe",
+      "ressemblance": 4,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.test-achats.be/plainte/plaintes-publiques/probleme-avec-le-remboursement/fc15a31647f8527a57",
+      "resume": "Plainte publique détaillée d'une cliente belge : commande Uber Eats jamais livrée, remboursement refusé après des réponses automatisées (IA) en boucle — exactement le problème ciblé.",
+      "verifie": true
+     },
+     {
+      "url": "https://signal.conso.gouv.fr/fr/dysfonctionnements-commandes-nourriture",
+      "resume": "La DGCCRF documente les dysfonctionnements courants (retards, commandes incomplètes, refus de remboursement) et rappelle les droits des consommateurs — preuve que le problème est assez fréquent pour justifier une page officielle.",
+      "verifie": true
+     },
+     {
+      "url": "https://millenaire3.grandlyon.com/content/download/45315/560447",
+      "resume": "Étude : 22 % de la population a accru son recours à la livraison de repas ; les inquiétudes sur le paiement, la sécurité et le remboursement sont des freins cités à l'achat en ligne (Eurostat 2021).",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les consommateurs paient déjà des associations de protection (Test-Achats en Belgique, UFC-Que Choisir en France) pour du soutien en réclamation, et les plateformes paient des équipes de support/remboursement ; aucun chiffre de prix précis pour un service de réclamation dédié n'apparaît dans les résultats.",
+    "preuve_paiement_url": "https://www.test-achats.be/plainte/plaintes-publiques/probleme-avec-le-remboursement/fc15a31647f8527a57",
+    "nouveaute": 6,
+    "angle_libre": "Aucun acteur des résultats ne propose un dossier de réclamation automatisé, pré-rempli par plateforme (Uber Eats, Deliveroo, Wolt) avec suivi jusqu'au paiement effectif — les associations sont généralistes et lentes, le Signal Conso ne suit pas le dossier individuellement.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Représenter des consommateurs contre des plateformes peut toucher au démarchage/mandat (règles d'intermédiation, RGPD sur les justificatifs importés) et les plateformes interdisent parfois les tiers dans leurs CGU ; pas illégal mais à cadrer.",
+    "verdict": "creuser",
+    "raison": "Le problème est bien documenté (plaintes publiques, page DGCCRF) et aucun acteur des résultats ne fait exactement ce service, mais il faut valider que les victimes paieront 9 € pour des montants souvent < 30 € et vérifier la faisabilité juridique du mandat de réclamation.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://signal.conso.gouv.fr/fr/dysfonctionnements-commandes-nourriture",
+      "titre": "Problème de commande en ligne de nourriture - Vos droits et solutions"
+     },
+     {
+      "url": "https://millenaire3.grandlyon.com/content/download/45315/560447",
+      "titre": "La livraison aux particuliers : pour qui ? pourquoi ?"
+     },
+     {
+      "url": "https://www.bpifrance.fr/nos-actualites/case-study-comment-nestor-rentabilise-la-livraison-de-repas-en-entreprise",
+      "titre": "Case study : comment Nestor rentabilise la livraison de repas en entreprise"
+     },
+     {
+      "url": "https://www.test-achats.be/plainte/plaintes-publiques/probleme-avec-le-remboursement/fc15a31647f8527a57",
+      "titre": "Probleme avec le remboursement : plainte et avis sur UBER Eats | Testachats.be"
+     },
+     {
+      "url": "https://press.wolt.com/fr-LU/269020-les-luxembourgeois-emmenent-wolt-avec-eux-en-vacances",
+      "titre": "Les Luxembourgeois emmènent Wolt avec eux en vacances | Espace presse Wolt"
+     },
+     {
+      "url": "https://www.edenred.fr/magazine/notre-actualite/ticket-restaurant/les-cantines-connectees-pour-dejeuner-au-travail",
+      "titre": "Les cantines connectées pour déjeuner au travail - Edenred France"
+     },
+     {
+      "url": "https://sweetch.club/cgu",
+      "titre": "Conditions générales d'utilisation - Sweetch"
+     },
+     {
+      "url": "https://slack.com/intl/fr-fr/customer-stories/deliveroo-food-delivery-data-driven-enterprise",
+      "titre": "Grâce à Slack, Deliveroo utilise les données pour optimiser la livraison des repas | Slack"
+     }
+    ],
+    "liens_verifies": 6,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.84,
+    "composantes": {
+     "douleur_prouvee": 10,
+     "paiement_prouve": 10,
+     "espace_libre": 6,
+     "critique": 6.6,
+     "tournoi": 8,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Veille conformité produits : le nœud que le vendeur ne voit pas",
+   "arene": "petits-vendeurs",
+   "probleme": "Les vendeurs en ligne ignorent les rappels de produits, les notices de sécurité et les obligations d'étiquetage, et découvrent le problème quand la plateforme suspend leur compte.",
+   "pour_qui": "Petits e-commerçants de cosmétique, jouets, électronique et alimentation dans l'UE.",
+   "valeur_societale": "Sécurise les consommateurs (jouets dangereux, cosmétiques non conformes) et évite desFermetures de boutique aux petits acteurs.",
+   "solution": "Un agent alerte en continu le vendeur des rappels de lots et seuils réglementaires (cosmétique, REACH, toys) dans sa catégorie, traduits et adaptés, avec un lien vers la source officielle et la liste exacte des références concernées à retirer de l'inventaire.",
+   "pourquoi_agents": "Il faut croiser des bases officielles (openFDA, base européenne, rappels Customs) avec les references produits de chaque boutique : des milliers de combinaisons à surveiller, en continu, à coût quasi nul.",
+   "pourquoi_maintenant": "Les régulations européennes montent en puissance (Digital Product Passport, rappels rappels) et la konstruktion Distribution API est de plus en plus accessible.",
+   "canal": "seo-programmatique",
+   "premier_client": "Communautés de vendeurs Shopify/Amazon sur Facebook/Discord et newsletters e-commerce (Shopify FR, Klaviyo) qui présentent l'outil ; also France : blogs spécialisés cosmeticIEN.",
+   "modele_revenu": "Abonnement 29 €/mois par boutique (toutes catégories) + rappel prioritaire ponctuel à 9 € par alerte critique.",
+   "prix": "29 €/mois par boutique",
+   "premier_test": "14 jours :.generate un rapport « rappels + non-conformités potentielles » pour 30 boutiques cosmetics/jouets sélectionnées via leurs pages contact, envoyé par e-mail avec un bouton « Activer les alertes ».",
+   "audace": 7,
+   "origine": "visionnaire",
+   "lentille": "travail-invisible",
+   "cerveau": "minimax",
+   "gisement": null,
+   "sources": [
+    "eurostat",
+    "openfda"
+   ],
+   "id": "i0500",
+   "critique": {
+    "valeur_societale": 9,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 7,
+    "argent_rapide": 8,
+    "distribution": 6,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le principal obstacle est l'acquisition des données d'inventaire du vendeur. Pour croiser les rappels avec les références, l'outil doit connaître les SKUs, les numéros de lot et les catégories des produits. Exiger une intégration API complète ou un accès profond au back-office est trop lourd et risque de violer la contrainte de 'pas de conseil/audit'. Si le vendeur doit fournir manuellement ses données, la friction est trop élevée pour un premier achat.",
+    "amelioration": "Ne pas demander l'accès au back-office. Proposer un 'Check de Conformité par Lot/SKU' : le vendeur télécharge un fichier CSV de ses produits (nom, catégorie, numéro de lot, pays de fabrication) et l'agent effectue la veille et l'alerte en temps réel. Cela réduit la friction, maintient la simplicité de l'outil et permet de valider la valeur avant de demander un abonnement.",
+    "juge": "glm"
+   },
+   "score": 7.95,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Safety Gate (Commission européenne, portail officiel des rappels)",
+      "url": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/conformite-des-produits-vendus-en-marketplaces",
+      "prix": "gratuit",
+      "zone": "UE",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "RappelConso (site gouvernemental français de rappels produits)",
+      "url": "https://www.economie.gouv.fr/places-marche-ligne-produits-dangereux-dgccrf",
+      "prix": "gratuit",
+      "zone": "France",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Aucun service commercial de veille conformité/rappels pour petits e-commerçants identifié dans les résultats de recherche",
+      "url": null,
+      "prix": null,
+      "zone": null,
+      "ressemblance": 0,
+      "verifie": false
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/conformite-des-produits-vendus-en-marketplaces",
+      "resume": "Étude DGCCRF 2020 : sur 129 produits testés sur des marketplaces, plus de 60 % en anomalie (28 % non-conformes, 32 % non-conformes ET dangereux) — les vendeurs n'ont « pas nécessairement la capacité ou la volonté de maîtriser les réglementations » applicables.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.economie.gouv.fr/places-marche-ligne-produits-dangereux-dgccrf",
+      "resume": "Sur ~450 produits analysés en 3 ans, 63 % non conformes dont 28 % dangereux ; jouets : 25 % de produits dangereux (suffocation, strangulation).",
+      "verifie": true
+     },
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/dossier_de_presse/dossier-de-presse-dgccrf-e-commerce.pdf",
+      "resume": "Bilan 2022 DGCCRF : le dropshipping génère de nombreux plaintes ; les vendeurs identifiés « ne se mettent pas spontanément totalement en conformité » ; 88 réquisitions numériques adressées à des sites.",
+      "verifie": true
+     },
+     {
+      "url": "https://api.tech.ec.europa.eu/justools-content/buckets/saga/folder/obligationsForBusinesses/filename/Presentation_GPSR%20obligations%20OMPs.pdf",
+      "resume": "Le règlement GPSR (UE 2023/988) impose aux marketplaces des obligations strictes (retrait sous 2 jours ouvrés, traitement des alertes sous 3 jours, sanctions, suspension de vendeurs récidivistes) — pression réglementaire directe qui rend le risque de suspension de compte réel.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/consommation-ce-qui-change-en-2024",
+      "resume": "Depuis février 2024 (DSA), les marketplaces doivent avertir les consommateurs ayant acheté un produit signalé dangereux et mieux identifier les vendeurs — les vendeurs non conformes sont plus traçables et plus exposés.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Aucun paiement direct par des petits e-commerçants pour ce service n'est prouvé dans les résultats de recherche. Les marketplaces elles-mêmes supportent des coûts de conformité (obligations GPSR/DSA), et les vendeurs paient indirectement via suspensions de compte et retraits d'annonces, mais aucune preuve de dépense pour un outil de veille type SaaS n'a été trouvée.",
+    "preuve_paiement_url": null,
+    "nouveaute": 7,
+    "angle_libre": "Personne ne traduit, filtre par catégorie et croise les rappels Safety Gate/RappelConso avec l'inventaire exact d'un petit vendeur pour lui dire précisément quelles références retirer — les sources existantes sont gratuites mais brutes, non personnalisées et en anglais pour Safety Gate.",
+    "risque_juridique": "faible",
+    "raison_risque": "Le service agrège et relaie des informations publiques officielles (Safety Gate, RappelConso) avec lien vers la source ; attention simplement à ne pas se porter garant de l'exhaustivité des alertes (disclaimers nécessaires).",
+    "verdict": "creuser",
+    "raison": "Le problème est massivement documenté (60-63 % de non-conformités, pression GPSR/DSA) et aucun concurrent commercial direct n'apparaît, mais la demande de paiement par de petits e-commerçants reste non prouvée et la source d'information est gratuite — le test de 30 boutiques est la bonne prochaine étape pour valider la volonté de payer à 29 €/mois.",
+    "preuve_paiement_verifiee": false,
+    "citations": [
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/media-document/dgccrf_presse_cp-1531-securite-conform-produits-vendus-places-marche-en-ligne.pdf",
+      "titre": "COMMUNIQUÉ DE PRESSE Sécurité et conformité des produits vendus sur les places de marché en ligne Alain Griset et Cédric"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/dgccrf/actualites-dgccrf/consommation-ce-qui-change-en-2024",
+      "titre": "Consommation : ce qui change en 2024 | economie.gouv.fr"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/dossier_de_presse/dossier-de-presse-dgccrf-e-commerce.pdf",
+      "titre": "[PDF] Les abus du e-commerce dans la ligne de mire de la DGCCRF"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/conformite-des-produits-vendus-en-marketplaces",
+      "titre": "Conformité des produits vendus en marketplaces | economie.gouv.fr"
+     },
+     {
+      "url": "https://api.tech.ec.europa.eu/justools-content/buckets/saga/folder/obligationsForBusinesses/filename/Presentation_GPSR%20obligations%20OMPs.pdf",
+      "titre": "https://api.tech.ec.europa.eu/justools-content/buckets/saga/folder/obligationsForBusinesses/filename/Presentation_GPSR%20obligations%20OMPs.pdf"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/publications_externes/Guide-gestion-alertes-non-alimentaires.pdf",
+      "titre": "Guide de gestion des alertes non alimentaires"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/dgccrf/laction-de-la-dgccrf/les-enquetes-et-les-controles/places-de-marche-trop-de-produits-non-conformes-et-dangereux",
+      "titre": "Places de marché, trop de produits non-conformes et dangereux | economie.gouv.fr"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/places-marche-ligne-produits-dangereux-dgccrf",
+      "titre": "Places de marché en ligne : trop de produits dangereux selon la DGCCRF | economie.gouv.fr"
+     }
+    ],
+    "liens_verifies": 7,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.6,
+    "composantes": {
+     "douleur_prouvee": 7,
+     "paiement_prouve": 8,
+     "espace_libre": 7,
+     "critique": 7.95,
+     "tournoi": 6,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "SearchFix : Le Moteur de Recherche Sémantique pour Apps Métier",
+   "arene": "petits-vendeurs",
+   "probleme": "Les ERP et CRM mobiles limitent la recherche aux préfixes, forçant les utilisateurs à deviner exactement ce qu'ils tapent pour trouver une facture ou un client.",
+   "pour_qui": "Gérants de petites entreprises utilisant des outils comme Dynamics 365, Salesforce Mobile ou Odoo sur tablette/téléphone.",
+   "valeur_societale": "Réduction du temps perdu en opérations administratives répétitives et augmentation de l'efficacité économique des TPE.",
+   "solution": "Une couche logicielle (widget ou extension API) qui intercepte les requêtes de recherche natives et applique une recherche sémantique « contains » ou floue en arrière-plan.",
+   "pourquoi_agents": "L'IA peut transformer une requête brute en logique de recherche optimisée pour chaque schéma de base de données spécifique de l'application cible.",
+   "pourquoi_maintenant": "La migration massive vers le mobile pour les logiciels bureautiques a créé un goulot d'étrangrement UX que les éditeurs n'ont pas encore corrigé.",
+   "canal": "place-de-marche-api",
+   "premier_client": "Développeurs Shopify ou experts Commercials Cloud cherchant à ajouter de la valeur à leurs implémentations.",
+   "modele_revenu": "Licence API à l'usage (par requête de recherche enrichie).",
+   "prix": "0.05 € par recherche enrichie",
+   "premier_test": "Lister l'API sur RapidAPI avec un plan gratuit limité, et contacter 10 intégrateurs indépendants sur LinkedIn pour tester l'interface.",
+   "audace": 8,
+   "origine": "ancree",
+   "lentille": "renverser-la-plainte",
+   "cerveau": "qwen",
+   "gisement": {
+    "id": "g29",
+    "nom": "Problèmes de performance des applications mobiles",
+    "n": 20,
+    "force": 8.568
+   },
+   "sources": [],
+   "id": "i0015",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 7,
+    "argent_rapide": 8,
+    "distribution": 7,
+    "faisabilite": 6,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "La complexité d'intégration avec les schémas propriétaires (Salesforce, Dynamics) est le goulot d'étranglement. L'IA doit pouvoir 'comprendre' la structure de données sans accès direct et exhaustif, ce qui est souvent impossible sans API d'introspection coûteuses.",
+    "amelioration": "Commencer par se spécialiser sur un écosystème ouvert et bien documenté (comme Odoo ou un CRM open-source) pour valider le modèle de mapping sémantique avant d'attaquer les géants propriétaires.",
+    "juge": "glm"
+   },
+   "score": 7.699999999999999,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Algolia",
+      "url": "https://www.algolia.com/de/industries/startups?refinementList%5Buse_cases%5D%5B0%5D=eCommerce",
+      "prix": "facturation à l'usage (plans par requêtes, à partir d'un plan gratuit puis payant)",
+      "zone": "Mondial",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "Advance Partner Search by Phone/Mobile (DevIntelle)",
+      "url": "https://apps.odoo.com/apps/modules/17.0/dev_advance_search_partner",
+      "prix": "$19.34 (achat unique)",
+      "zone": "Mondial (place de marché Odoo)",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Advance Partner Search by Phone/Mobile (INKERP)",
+      "url": "https://apps.odoo.com/apps/modules/19.0/eg_advance_search_partner",
+      "prix": "$11.38 (achat unique)",
+      "zone": "Mondial (place de marché Odoo)",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Advance Search sidebar for every odoo App (app_web_superbar)",
+      "url": "https://apps.odoo.com/apps/modules/15.0/app_web_superbar_pro",
+      "prix": "gratuit/variable",
+      "zone": "Mondial (place de marché Odoo)",
+      "ressemblance": 3,
+      "verifie": true
+     },
+     {
+      "nom": "Dataverse Search suggest (Microsoft)",
+      "url": "https://learn.microsoft.com/zh-tw/power-apps/developer/data-platform/search/suggest",
+      "prix": "inclus dans Dataverse",
+      "zone": "Mondial",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Semantic Similarity Search (Microsoft Business Central / Copilot)",
+      "url": "https://learn.microsoft.com/fr-ca/dynamics365/business-central/dev-itpro/developer/semantic-search-feature-key",
+      "prix": "inclus (préversion)",
+      "zone": "Mondial",
+      "ressemblance": 6,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://apps.odoo.com/apps/modules/17.0/dev_advance_search_partner",
+      "resume": "Un module Odoo de recherche par numéro de téléphone (recherche partielle/fuzzy sur contacts) est vendu sur la place de marché, preuve que des utilisateurs veulent une recherche au-delà du préfixe natif.",
+      "verifie": true
+     },
+     {
+      "url": "https://apps.odoo.com/apps/modules/15.0/app_web_superbar_pro",
+      "resume": "Un module de recherche avancée générique pour Odoo avec de nombreux champs/filtres et support multi-apps, montrant une demande pour améliorer la recherche native.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Des PME/utilisateurs Odoo paient 11 à 20 $ en achat unique pour des modules de recherche avancée/partielle sur la place de marché Odoo ; les entreprises paient des abonnements à l'usage pour des moteurs comme Algolia.",
+    "preuve_paiement_url": "https://apps.odoo.com/apps/modules/17.0/dev_advance_search_partner",
+    "nouveaute": 4,
+    "angle_libre": "Une couche cross-ERP (Dynamics 365, Salesforce Mobile, Odoo) exposée comme API par requête, indépendante de l'éditeur — aucun des concurrents trouvés n'offre un widget universel de recherche sémantique « contains » facturé à la recherche sur mobile.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Intercepter et réécrire les requêtes natives d'ERP/CRM tiers peut violer les conditions d'utilisation des plateformes (Salesforce, Microsoft) et poser des questions RGPD si les données clients transitent par un service externe.",
+    "verdict": "creuser",
+    "raison": "La demande existe (modules payants de recherche avancée sur Odoo) mais les grands éditeurs intègrent déjà la recherche sémantique en natif (Business Central Copilot) et le modèle d'interception API tierce présente des risques de conformité plateforme à valider avant d'investir.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://learn.microsoft.com/zh-tw/power-apps/developer/data-platform/search/suggest",
+      "titre": "Dataverse Search suggest (Microsoft Dataverse) - Power Apps | Microsoft Learn"
+     },
+     {
+      "url": "https://learn.microsoft.com/it-it/power-apps/developer/data-platform/search/suggest",
+      "titre": "Dataverse Search suggest (Microsoft Dataverse) - Power Apps | Microsoft Learn"
+     },
+     {
+      "url": "https://apps.odoo.com/apps/modules/17.0/dev_advance_search_partner",
+      "titre": "Advance Partner Search by Phone/Mobile, Odoo Advance Partner Search | Odoo Apps Store"
+     },
+     {
+      "url": "https://www.algolia.com/de/industries/startups?refinementList%5Buse_cases%5D%5B0%5D=eCommerce",
+      "titre": "Entwickeln Sie Such- und Entdeckungsfunktionen für Ihr Startup | Algolia"
+     },
+     {
+      "url": "https://apps.odoo.com/apps/modules/19.0/eg_advance_search_partner",
+      "titre": "Advance Partner Search by Phone/Mobile, Odoo Advance Partner Search | Odoo Apps Store"
+     },
+     {
+      "url": "https://apps.odoo.com/apps/modules/15.0/app_web_superbar_pro",
+      "titre": "Advance Search sidebar for every odoo App | Odoo Apps Store"
+     },
+     {
+      "url": "https://apps.odoo.com/apps/modules/20.0/eg_crm_lead_search_restriction",
+      "titre": "CRM Lead Custom Search Restriction | Odoo Apps Store"
+     },
+     {
+      "url": "https://learn.microsoft.com/fr-ca/dynamics365/business-central/dev-itpro/developer/semantic-search-feature-key",
+      "titre": "Use Semantic Similarity Search Feature Key - Business Central | Microsoft Learn"
+     }
+    ],
+    "liens_verifies": 8,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.55,
+    "composantes": {
+     "douleur_prouvee": 10,
+     "paiement_prouve": 10,
+     "espace_libre": 4,
+     "critique": 7.699999999999999,
+     "tournoi": 6,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Kiosk-as-a-Service : la borne devient logicielle, plus physique",
+   "arene": "petits-vendeurs",
+   "probleme": "Les petits restaurateurs etRGBCwant une borne interactive mais laCommander costs de 5 000 à 15 000 euros, plus l'installation et la maintenance, ce qui les décourage et les pousse à garder des files d'attente.",
+   "pour_qui": "Sandwicheries, bakeries, kebabs de quartier et cafés de bureau, en Belgique et au Luxembourg, qui ont un flux de 30 à 150 clients par jour.",
+   "valeur_societale": "Permettre aux petits commerces de garde-corner, d'embaucher et de servir sans files d'attente ni postes de caisse sous-traités à 2 500 euros.",
+   "solution": "Un boîtier ou un mode « borne » sur une tablette Android/Linux avec un écran tactile sur pied loué 49 €/mois : commande en 4 gestes, paiement sans contact, impression de ticket, et surtout un mode « Commande depuis la table » où le client scanne un QR code du comptoir pour commander et payer sans se lever.",
+   "pourquoi_agents": "Des agents configurent automatiquement le menu depuis une simple photo du menu existant ou d'un lien PDF, génèrent les fiches produits, traduisent NL/FR/DE/LU, et règlent les suggestions upsell en fonction des ventes réelles chaque semaine.",
+   "pourquoi_maintenant": "Les wxflow terminaux Android à écran tactile coûtent moins de 150 euros, le paiement sans contact est devenu une norme, et les locations de matériel restaurant sont entrées dans leur phase de location plutôt que de vente.",
+   "canal": "communautes",
+   "premier_client": "Dix sandwicheries et bakeries de quartier dans les pôles de Bruxelles et Luxembourg, trouvées sur les annuaires deскориfood business et via les groupes Facebook « entrepreneurs Bruxelles » et « restaurateurs BXL ».",
+   "modele_revenu": null,
+   "prix": "49 €/mois, matériel fourni, sans engagement au-delà de 12 mois.",
+   "premier_test": "Deux semaines avec 3 sandwicheries : une borne physique en prêt et un QR code sur le comptoir, mesurer le temps de service et l'atteinte de 20 commandes par jour, encaisser la première facture d'abonnement à la fin du mois.",
+   "audace": 7,
+   "origine": "ancree",
+   "lentille": "renverser-la-plainte",
+   "cerveau": "minimax",
+   "gisement": {
+    "id": "g69",
+    "nom": "Application de restauration rapide inefficace contraignant au bornage",
+    "n": 3,
+    "force": 2.403
+   },
+   "sources": [],
+   "id": "i0228",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 8,
+    "distribution": 6,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le modèle est trop dépendant du matériel (boîtier Android standard) et du faible prix de l'abonnement (49€/mois), ce qui le rend extrêmement vulnérable à la concurrence des solutions POS grand public ou des solutions open-source qui pourraient copier la fonctionnalité de base sans le coût de développement initial. La défense repose uniquement sur l'intégration AI, qui n'est pas encore assez profonde.",
+    "amelioration": "Transformer le service de 'location de borne' en une 'Plateforme d'Optimisation de Flux de Revenus' pour le petit commerce. L'agent IA doit aller au-delà de la simple gestion de menu/upsell pour fournir des insights actionnables : prédiction de pics de demande, optimisation dynamique des prix (micro-ajustements basés sur le temps réel), et suggestions d'optimisation du personnel en fonction des données de commande par borne. Vendre l'intelligence, pas seulement le boîtier.",
+    "juge": "glm"
+   },
+   "score": 7.3999999999999995,
+   "elo": 1548,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Lightspeed Self-Order Menu",
+      "url": "https://fr.lightspeedhq.com/blog/self-order-menu-commande-libre-service/",
+      "prix": "inclus avec abonnement Lightspeed Restaurant (non précisé)",
+      "zone": "France/Europe",
+      "ressemblance": 7,
+      "verifie": true
+     },
+     {
+      "nom": "CLYO Systems",
+      "url": "https://www.clyosystems.com/plateforme-commande-repas-ligne-restaurant",
+      "prix": "moins de 4 €/jour (~120 €/mois), borne, click&collect, commande à table",
+      "zone": "France",
+      "ressemblance": 8,
+      "verifie": true
+     },
+     {
+      "nom": "Tabesto (borne self-order)",
+      "url": "https://www.tabesto.com/en/articles/what-is-the-roi-of-a-self-order-kiosk",
+      "prix": "~2 500 € 1re borne + 1 300 €/an + ~0,8% du CA",
+      "zone": "France/Europe",
+      "ressemblance": 6,
+      "verifie": true
+     },
+     {
+      "nom": "LivePepper (borne de commande)",
+      "url": "https://www.livepepper.fr/blog/la-borne-de-commande-pour-restaurant-une-autre-expertise-livepepper",
+      "prix": "« investissement modéré » non chiffré",
+      "zone": "France",
+      "ressemblance": 7,
+      "verifie": true
+     },
+     {
+      "nom": "Biborne (vendeur de bornes)",
+      "url": "https://biborne.com/fr-blog/bornes-de-commande-a-paris",
+      "prix": "non précisé (vente de matériel)",
+      "zone": "France",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "AirKitchen",
+      "url": "https://www.airkitchen.fr/blog/borne-de-commande-pour-restaurant-pourquoi-et-comment-les-integrer",
+      "prix": "non précisé",
+      "zone": "France",
+      "ressemblance": 6,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.tabesto.com/en/articles/what-is-the-roi-of-a-self-order-kiosk",
+      "resume": "Chiffres ROI réels : une borne coûte ~2 500 € + 1 300 €/an + 0,8% du CA, mais peut générer 17 000 à 200 000 € de CA additionnel sur 3 ans via upselling et trafic — la demande existe et le marché connaît les prix élevés.",
+      "verifie": true
+     },
+     {
+      "url": "https://fr.lightspeedhq.com/blog/self-order-menu-commande-libre-service/",
+      "resume": "Lightspeed reconnaît explicitement que les bornes « n'étaient auparavant pas abordables pour les petits et moyens commerces » et lance une solution logiciel/tablette pour eux — preuve directe du problème de coût chez les petits restaurants.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.clyosystems.com/plateforme-commande-repas-ligne-restaurant",
+      "resume": "CLYO communique sur un prix « moins de 4 €/jour » pour bornes + commande en ligne, ciblant aussi les petits établissements — signe que le marché descend en prix.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.airkitchen.fr/blog/borne-de-commande-pour-restaurant-pourquoi-et-comment-les-integrer",
+      "resume": "Article marketing affirmant que la borne est devenue « incontournable » pour fluidifier service et augmenter le panier moyen, adaptée à « tous les concepts » — demande forte côté restaurateurs.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les restaurateurs paient déjà pour ce problème : ~2 500 € de matériel + 1 300 €/an d'abonnement par borne (Tabesto), ~120 €/mois chez CLYO, ou via des suites comme Lightspeed qui vendent le libre-service en add-on à leur caisse.",
+    "preuve_paiement_url": "https://www.tabesto.com/en/articles/what-is-the-roi-of-a-self-order-kiosk",
+    "nouveaute": 4,
+    "angle_libre": "Personne dans les résultats ne propose un vrai Kiosk-as-a-Service à 49 €/mois tout inclus (matériel loué, sans engagement lourd) ciblé spécifiquement la Belgique/Luxembourg et les micro-commerces (sandwicheries, boulangeries, kebabs) avec le duo borne + QR commande à table — Lightspeed et CLYO s'en approchent mais restent plus chers et liés à des écosystèmes.",
+    "risque_juridique": "faible",
+    "raison_risque": "Encaissement de paiements (besoin d'un partenariat/acquisition PSP type Stripe) et conformité TVA/fiscalisation belge et luxembourgeoise des tickets, mais rien d'insurmontable ni de spécifiquement réglementé.",
+    "verdict": "creuser",
+    "raison": "La demande est prouvée et le problème de prix réel, mais l'entrée de Lightspeed et CLYO sur le segment des petits restaurants à bas coût impose de valider vite que 49 €/mois tout inclus en Belgique/Luxembourg suffit à se différencier durablement.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://www.airkitchen.fr/blog/borne-de-commande-pour-restaurant-pourquoi-et-comment-les-integrer",
+      "titre": "Borne de commande pour restaurant : pourquoi les intégrer ? - AirKitchen"
+     },
+     {
+      "url": "https://www.tabesto.com/en/articles/what-is-the-roi-of-a-self-order-kiosk",
+      "titre": "What is the ROI of a kiosk"
+     },
+     {
+      "url": "https://fr.lightspeedhq.com/blog/self-order-menu-commande-libre-service/",
+      "titre": "Un système de commande libre-service pour tous les restaurants"
+     },
+     {
+      "url": "https://www.clyosystems.com/plateforme-commande-repas-ligne-restaurant",
+      "titre": "Plateforme de commande de repas en ligne pour restaurant"
+     },
+     {
+      "url": "https://www.livepepper.fr/blog/la-borne-de-commande-pour-restaurant-une-autre-expertise-livepepper",
+      "titre": "La borne de commande de LivePepper"
+     },
+     {
+      "url": "https://biborne.com/fr-blog/bornes-de-commande-a-paris",
+      "titre": "bornes de Commande à Paris : Les 3 Meilleurs Choix"
+     },
+     {
+      "url": "https://www.gimmyfood.com/a-propos",
+      "titre": "Remplir les cuisines et les assiettes - Gimmy"
+     },
+     {
+      "url": "https://biborne.com/fr-blog/bornes-de-commande-a-besancon",
+      "titre": "Bornes de commande à Besançon : Les 3 Meilleurs Choix"
+     }
+    ],
+    "liens_verifies": 10,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.52,
+    "composantes": {
+     "douleur_prouvee": 7,
+     "paiement_prouve": 10,
+     "espace_libre": 4,
+     "critique": 7.3999999999999995,
+     "tournoi": 8,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Simulateur de情景 climatique pour leaciones behavio- decisions des communes",
+   "arene": "local-et-territoire",
+   "probleme": "Les communes belges et luxembourgeoises doivent planifier canicule, inondation et sécheresse sans savoir combien coûte réellement chaque scénario, ni comment il impacte les écoles, les seniors et les PCS. Les projections existent mais ne sont pas traduites en décisions budgétaires.",
+   "pour_qui": "Responsables environnement et urbanisme des communes, intercommunales, bureaux d'études.",
+   "valeur_societale": "Rend la planification d'adaptation climatique accessible aux petites communes qui n'ont ni équipe climat ni budget d'étude.",
+   "solution": "Un moteur de simulation qui, à partir d'un point GPS, combine historique et scénarios Open-Meteo pour estimer les canicules, journées de chaleur extrêmes et épisodes pluvieux, puis chiffre en euros les impacts sur des périmètres précis (établissements scolaires, EHPAD, voirie) et produit une note de priorisation des travaux.",
+   "pourquoi_agents": "Les agents génèrent les études locales, les courbes de coût par typologie de travaux et les synthèses pour comités, avec une relecture humaine limitée à la validation.",
+   "pourquoi_maintenant": "Les plans d'adaptation deviennent obligatoires dans plusieurs pays et les communes cherchent des comparateurs chiffrés.",
+   "canal": "seo-programmatique",
+   "premier_client": "Les 10 premiers : 10 communes frontalières sélectionnées via les кругизы Intercommunales, contact par e-mail avec un rapport gratuit sur leur propre commune.",
+   "modele_revenu": "Abonnement annuel par commune, avec rapport ponctuel en option.",
+   "prix": "1 490 €/an par commune, 290 € pour un rapport ponctuel",
+   "premier_test": "Deux semaines : générer gratuitement le rapport canicule de 3 communes frontalières et en faire la une d'un post ciblé ; viser 290 € dès la première commande.",
+   "audace": 8,
+   "origine": "visionnaire",
+   "lentille": "transplant",
+   "cerveau": "minimax",
+   "gisement": null,
+   "sources": [
+    "open-meteo",
+    "clinicaltrials"
+   ],
+   "id": "i0465",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 7,
+    "argent_rapide": 6,
+    "distribution": 6,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le risque juridique est élevé car le livrable (note de priorisation et estimation de coût) est perçu comme un conseil technique ou une recommandation d'ingénierie, ce qui pourrait engager la responsabilité de l'outil ou de son utilisateur en cas de mauvaise décision budgétaire ou d'exécution des travaux.",
+    "amelioration": "Transformer le produit d'un 'Simulateur de Solution' à un 'Générateur de Scénarios de Risque'. L'outil ne doit jamais recommander une action ('Faites X'), mais présenter des données factuelles et des conséquences chiffrées ('Si vous ne faites rien, le risque est Y, et le coût potentiel est Z'). Le livrable doit être un rapport d'aide à la décision, nécessitant une validation par un bureau d'études local certifié.",
+    "juge": "glm"
+   },
+   "score": 7.3500000000000005,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "IMPACTtool (Klimaatportaal Vlaanderen / VMM)",
+      "url": "https://impacttool.toepassingen.vmm.vlaanderen.be/4/location/10318/layers/all?bounds=-24.9609375%2C-14.179186142354169%2C34.10156250000001%2C78.73350050778467&year=2050",
+      "prix": "gratuit (outil public)",
+      "zone": "Flandre (Belgique)",
+      "ressemblance": 7,
+      "verifie": true
+     },
+     {
+      "nom": "Outil de diagnostic climatique AWAC pour communes wallonnes",
+      "url": "https://edepot.wur.nl/523982",
+      "prix": "null",
+      "zone": "Wallonie (Belgique)",
+      "ressemblance": 6,
+      "verifie": true
+     },
+     {
+      "nom": "Études de vulnérabilité climatique communales (ex. OLLN, bureaux d'études)",
+      "url": "https://www.olln.be/fr/vivre-a-olln/climat-energie/etudes-et-diagnostics/etude-vulnerabilites-adaptations/rapport-de-letude-sur-les-vulnerabilites-et-les-adaptations-aux-dereglements-climatiques/olln-rapport-phase-1-vulnerabilites_vfinale.pdf/@@download/file/OLLN%20-%20Rapport%20Phase%201%20-%20Vulnerabilites_VFinale.pdf",
+      "prix": "null (études ad hoc, coût non public)",
+      "zone": "Belgique",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "Centre de ressources adaptation-changement-climatique.gouv.fr (guides collectivités)",
+      "url": "https://www.adaptation-changement-climatique.gouv.fr/dossiers-thematiques/milieux/ville-bureau-detudes",
+      "prix": "gratuit",
+      "zone": "France",
+      "ressemblance": 3,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://edepot.wur.nl/523982",
+      "resume": "Enquête auprès des communes wallonnes : 91% touchées par inondations/fortes pluies, 36% par tempêtes, 18% neige/grêle, 9% sécheresse ; les communes manquent d'outils simples et scientifiquement solides pour diagnostiquer leurs aléas climatiques.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.adaptation-changement-climatique.gouv.fr/dossiers-thematiques/milieux/ville-bureau-detudes",
+      "resume": "Les collectivités sont « en première ligne » pour adapter leurs villes (canicules, inondations) via planification et aménagement — besoin de traduire les projections en décisions.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.i4ce.org/wp-content/uploads/2023/01/Adaptation-ce-que-peuvent-et-doivent-faire-les-collectivites_au070223.pdf",
+      "resume": "Rapport I4CE : les collectivités doivent agir sur canicules, sécheresses, montée des eaux ; cadre légal croissant (obligations d'adaptation).",
+      "verifie": true
+     },
+     {
+      "url": "https://maint.gouvernement.lu/dam-assets/dossiers/documents/note-charge-de-responsabilit-scurit-civile-2025.pdf",
+      "resume": "Au Luxembourg, les communes sont entièrement chargées de la préparation aux événements (inondations etc.) et doivent budgéter ces mesures — besoin de chiffrage.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les communes et intercommunales paient déjà des bureaux d'études pour des études de vulnérabilité climatique ad hoc (ex. étude OLLN) ; les pouvoirs publics (AWAC, VMM) financent des outils gratuits. Aucun prix public trouvé pour les études privées.",
+    "preuve_paiement_url": "https://www.olln.be/fr/vivre-a-olln/climat-energie/etudes-et-diagnostics/etude-vulnerabilites-adaptations/rapport-de-letude-sur-les-vulnerabilites-et-les-adaptations-aux-dereglements-climatiques/olln-rapport-phase-1-vulnerabilites_vfinale.pdf/@@download/file/OLLN%20-%20Rapport%20Phase%201%20-%20Vulnerabilites_VFinale.pdf",
+    "nouveaute": 5,
+    "angle_libre": "Personne ne traduit les projections climatiques en euros par périmètre précis (école, EHPAD, voirie) avec une note de priorisation des travaux — les outils existants (IMPACTtool, AWAC) donnent des aléas cartographiques mais pas de chiffrage budgétaire décisionnel.",
+    "risque_juridique": "faible",
+    "raison_risque": "Utilisation de données climatiques publiques et Open-Meteo ; attention seulement à ne pas se substituer à un conseil réglementaire officiel (mention de non-certification).",
+    "verdict": "creuser",
+    "raison": "Le besoin est documenté et l'angle chiffrage-euros est différenciant, mais les outils publics gratuits (IMPACTtool en Flandre, AWAC en Wallonie) couvrent déjà une partie du besoin et aucune preuve de paiement au prix visé (1 490 €/an) n'a été trouvée — valider d'abord la volonté de payer auprès de 5-10 communes.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://www.olln.be/fr/vivre-a-olln/climat-energie/etudes-et-diagnostics/etude-vulnerabilites-adaptations/rapport-de-letude-sur-les-vulnerabilites-et-les-adaptations-aux-dereglements-climatiques/olln-rapport-phase-1-vulnerabilites_vfinale.pdf/@@download/file/OLLN%20-%20Rapport%20Phase%201%20-%20Vulnerabilites_VFinale.pdf",
+      "titre": "Etude de vulnérabilité et d’adaptation aux changements climatiques du territoire"
+     },
+     {
+      "url": "https://www.adaptation-changement-climatique.gouv.fr/dossiers-thematiques/milieux/ville-bureau-detudes",
+      "titre": "Canicules, inondations : repenser nos villes devient urgent | Centre de ressources pour l’adaptation au changement climatique"
+     },
+     {
+      "url": "https://edepot.wur.nl/523982",
+      "titre": "edepot.wur.nl"
+     },
+     {
+      "url": "https://www.prefectures-regions.gouv.fr/grand-est/content/download/65753/431124/file/RAA+sp%C3%A9cial+27012020+SRADDET+part1.pdf",
+      "titre": "RECUEIL DES ACTES ADMINISTRATIFS"
+     },
+     {
+      "url": "https://unfccc.int/sites/default/files/resource/Collection-adaptation-project-ideas_2023_final.pdf",
+      "titre": "Climate change adaptation project profiles from the least developed countries"
+     },
+     {
+      "url": "https://www.i4ce.org/wp-content/uploads/2023/01/Adaptation-ce-que-peuvent-et-doivent-faire-les-collectivites_au070223.pdf",
+      "titre": "Adaptation : ce que peuvent (et doivent) faire les collectivités"
+     },
+     {
+      "url": "https://maint.gouvernement.lu/dam-assets/dossiers/documents/note-charge-de-responsabilit-scurit-civile-2025.pdf",
+      "titre": "La charge de la responsabilité dans le cadre de l’exercice des interventions de"
+     },
+     {
+      "url": "https://impacttool.toepassingen.vmm.vlaanderen.be/4/location/10318/layers/all?bounds=-24.9609375%2C-14.179186142354169%2C34.10156250000001%2C78.73350050778467&year=2050",
+      "titre": "IMPACTtool - Klimaatportaal Vlaanderen"
+     }
+    ],
+    "liens_verifies": 8,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.48,
+    "composantes": {
+     "douleur_prouvee": 7,
+     "paiement_prouve": 10,
+     "espace_libre": 5,
+     "critique": 7.3500000000000005,
+     "tournoi": 6,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "PrononciationLab — corriger la prononciation réellement, pas juste valider des phrases écrites",
+   "arene": "apprendre",
+   "probleme": "Les grandes apps mettent en avant la prononciation mais échouent à corriger réellement l'accent, laissant l'apprenant valider des phrases mal prononcées.",
+   "pour_qui": "Apprenants qui doivent parler dans un contexte professionnel (frontaliers, expatriés, soignants, personnel hôtelier) et pour qui l'oral prime sur l'écrit.",
+   "valeur_societale": "Améliorer l'employabilité et la confiance orale des travailleurs multilingues en Europe, notamment en zone frontalière Luxembourg-Belgique-France.",
+   "solution": "Une web-app exclusivement axée sur l'oral : l'apprenant enregistre, obtient un score phonème par phonème, des exemples audio de référence, et des exercices ciblés sur ses sons difficiles.",
+   "pourquoi_agents": "Des agents analysent en continu les phonèmes mal prononcés, génèrent des mini-leçons de correction personnalisées et produisent des centaines d'exercices audio ciblés par profil linguistique.",
+   "pourquoi_maintenant": "Les API de reconnaissance vocale haute-fidélité sont devenues abordables, et les apprenants professionnels cherchent un complément oral aux applis généralistes.",
+   "canal": "extension-navigateur",
+   "premier_client": "Employeurs frontaliers du Luxembourg (sinologie, hôtellerie, santé), groupes LinkedIn d'expatriés francophones, communautés d'apprenants sur Discord.",
+   "modele_revenu": "Abonnement mensuel orienté productivité orale, essai gratuit limité.",
+   "prix": "9,99 € / mois",
+   "premier_test": "Sortir une extension Chrome gratuite qui analyse un texte lu à voix haute et propose 2 semaines d'accès premium à 9,99 €, avec objectif de 15 abonnements payants.",
+   "audace": 8,
+   "origine": "ancree",
+   "lentille": "dix-fois-moins-cher",
+   "cerveau": "mimo",
+   "gisement": {
+    "id": "g111",
+    "nom": "Applications d'apprentissage des langues inadaptées",
+    "n": 5,
+    "force": 3.106
+   },
+   "sources": [],
+   "id": "i0394",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 7,
+    "argent_rapide": 6,
+    "distribution": 7,
+    "faisabilite": 6,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le risque de dérive vers le 'coaching' ou le 'diagnostic' personnalisé est élevé. Si l'agent IA donne des conseils sur la *manière* de prononcer un son (et non seulement le score), cela frôle le conseil personnalisé interdit. De plus, la complexité de la reconnaissance phonémique haute-fidélité est sous-estimée pour un MVP de 2 semaines.",
+    "amelioration": "Restreindre l'offre à des exercices de drill purement objectifs (input/output) et des rapports de données (ex: 'Votre score sur le phonème /r/ est de 4/10'). Pour sécuriser le revenu, cibler les PME/Agences de recrutement des zones frontalières avec une licence de groupe pour leurs nouveaux employés, transformant l'outil en un 'outil de conformité linguistique' plutôt qu'un simple abonnement individuel.",
+    "juge": "glm"
+   },
+   "score": 7.4,
+   "elo": 1548,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "SayCent",
+      "url": "https://apps.apple.com/gh/app/saycent/id6776219483",
+      "prix": "Gratuit (cœur), premium $3.99/mois ou $39.99/an",
+      "zone": "Monde (App Store)",
+      "ressemblance": 9,
+      "verifie": true
+     },
+     {
+      "nom": "TonePerfect",
+      "url": "https://toneperfect.app/english/best-apps",
+      "prix": "Freemium, à partir de ~$9.99",
+      "zone": "Monde",
+      "ressemblance": 8,
+      "verifie": true
+     },
+     {
+      "nom": "BoldVoice",
+      "url": "https://toneperfect.app/english/best-apps",
+      "prix": "$14.99",
+      "zone": "Monde",
+      "ressemblance": 8,
+      "verifie": true
+     },
+     {
+      "nom": "ELSA Speak",
+      "url": "https://toneperfect.app/english/best-apps",
+      "prix": "$19.99/mois",
+      "zone": "Monde",
+      "ressemblance": 7,
+      "verifie": true
+     },
+     {
+      "nom": "Speakometer",
+      "url": "https://toneperfect.app/english/best-apps",
+      "prix": "$4.99/mois",
+      "zone": "Monde",
+      "ressemblance": 7,
+      "verifie": true
+     },
+     {
+      "nom": "Speechling",
+      "url": "https://toneperfect.app/english/best-apps",
+      "prix": "Plan gratuit + coaching payant",
+      "zone": "Monde",
+      "ressemblance": 6,
+      "verifie": true
+     },
+     {
+      "nom": "Say It: English Pronunciation",
+      "url": "https://apps.apple.com/mm/app/say-it-english-pronunciation/id919978521",
+      "prix": "Gratuit + achats intégrés",
+      "zone": "Monde",
+      "ressemblance": 6,
+      "verifie": true
+     },
+     {
+      "nom": "(How to) Pronounce",
+      "url": "https://apps.apple.com/in/app/how-to-pronounce/id717945069",
+      "prix": "Gratuit + achats intégrés",
+      "zone": "Monde",
+      "ressemblance": 5,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.francaisavecpierre.com/3-erreurs-de-prononciation-en-francais/",
+      "resume": "Article pédagogique dédié aux erreurs de prononciation les plus fréquentes (e muet, consonnes finales, nasales), signe d'une demande forte de correction orale ciblée en français.",
+      "verifie": true
+     },
+     {
+      "url": "https://toneperfect.app/english/best-apps",
+      "resume": "Comparatif 2026 de nombreuses apps de prononciation payantes : un marché entier d'éditeurs existe déjà et monétise ce besoin.",
+      "verifie": true
+     },
+     {
+      "url": "https://apps.apple.com/gh/app/saycent/id6776219483",
+      "resume": "SayCent se positionne explicitement contre les apps qui donnent juste un 'good/bad' : score phonème par phonème, pratique illimitée gratuite — preuve que le problème décrit est réel et déjà attaqué.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les apprenants en langues paient déjà des abonnements de $3.99 à $19.99/mois pour des apps de prononciation avec feedback IA (ELSA, BoldVoice, Speakometer, SayCent, Speechling).",
+    "preuve_paiement_url": "https://toneperfect.app/english/best-apps",
+    "nouveaute": 2,
+    "angle_libre": "Aucun concurrent trouvé sous forme d'extension navigateur (tous sont des apps mobiles) ni ciblant spécifiquement les professionnels de l'oral (soignants, hôteliers, frontaliers) avec exercices ciblés sur sons faibles ; un positionnement français/anglais professionnel en web-app reste relativement libre.",
+    "risque_juridique": "faible",
+    "raison_risque": "Analyse de prononciation via traitement audio du propre enregistrement de l'utilisateur ; principal point de vigilance : données vocales (RGPD) si traitement cloud, faible si traitement local comme SayCent.",
+    "verdict": "abandonner",
+    "raison": "Le cœur du produit (score phonème par phonème + exemples de référence + exercices ciblés) existe déjà, notamment SayCent qui le fait gratuitement, et le marché des apps payantes est saturé ; seule l'extension navigateur et le ciblage professionnel seraient différenciants, ce qui ne suffit pas à justifier un pivot complet — au mieux un angle à creuser si vous visez B2B.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://toneperfect.app/english/best-apps",
+      "titre": "Best Apps for English Pronunciation (2026) | TonePerfect"
+     },
+     {
+      "url": "https://apps.apple.com/mm/app/say-it-english-pronunciation/id919978521",
+      "titre": "Say It: English Pronunciation on the App Store"
+     },
+     {
+      "url": "https://apps.apple.com/af/app/say-it-english-pronunciation/id919978521",
+      "titre": "Say It: English Pronunciation on the App Store"
+     },
+     {
+      "url": "https://apps.apple.com/sr/app/say-it-english-pronunciation/id919978521",
+      "titre": "Say It: English Pronunciation on the App Store"
+     },
+     {
+      "url": "https://www.francaisavecpierre.com/3-erreurs-de-prononciation-en-francais/",
+      "titre": "3 Erreurs de Prononciation à Éviter | Français avec Pierre"
+     },
+     {
+      "url": "https://apps.apple.com/in/app/how-to-pronounce/id717945069",
+      "titre": "‎(How to) Pronounce App - App Store"
+     },
+     {
+      "url": "https://apps.apple.com/gh/app/saycent/id6776219483",
+      "titre": "‎SayCent App - App Store"
+     },
+     {
+      "url": "https://apps.apple.com/jo/app/how-to-pronounce/id717945069",
+      "titre": "‎(How to) Pronounce App - App Store"
+     }
+    ],
+    "liens_verifies": 11,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.35,
+    "composantes": {
+     "douleur_prouvee": 7.765,
+     "paiement_prouve": 10,
+     "espace_libre": 2,
+     "critique": 7.4,
+     "tournoi": 8,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "RegistreVif : l'API de véracité fournisseur pour agents d'approvisionnement et de marketplace",
+   "arene": "donnees-et-api",
+   "probleme": "Les agents IA qui achètent, dropshippent ou sourcent pour le compte de clients font confiance à des noms de sociétés inventés ou fantômes ; vérifier une entreprise européenne demande aujourd'hui 4 à 5 vérifications manuelles par cas.",
+   "pour_qui": "Places de marché e-commerce, outils de procurement et de facturation, agents autonomes de sourcing, plateformes de paiement et de logistique.",
+   "valeur_societale": "Moins de fraude aux marchés publics et aux subventions, moins d'esclavage moderne dans les chaînes d'approvisionnement, protection des consommateurs et des PME.",
+   "solution": "Une API qui, à partir d'un nom ou d'un numéro d'entreprise, renvoie statut actif, forme juridique, dirigeants, adresses, bilans simplifiés si publics,Dissolution et signaux d'alerte (insolvabilité, activité fictive), avec score de confiance et niveau de preuve.",
+   "pourquoi_agents": "L'agent appelle l'API avant de payer un fournisseur ou d'emettre des documents, et peut décider seul : commander, demander un justificatif ou refuser, avec une trace auditable.",
+   "pourquoi_maintenant": "VIES, BRIS et registres nationaux européens sont accessibles gratuitement par API depuis 2024 ; la couche de croisement et de scoring est mécanisable à très faible coût, et les agents d'achat deviennent des clientsUMENTS.",
+   "canal": "place-de-marche-api",
+   "premier_client": "Développeurs d'agents et de plugins (catalogues MCP, Apify Store, communautés Shopify/PrestaShop apps, r/LocalLLaMA) et forums deeya dropshipping B2B.",
+   "modele_revenu": null,
+   "prix": "79 €/mois (5 000 vérifications) ou 0,05 €/vérification",
+   "premier_test": "Deux semaines : connecteurs VES+BRIS pour BE et LU, un jeu de 30 cas pièges (sociétés fantômes), page publique « vérifiez ce fournisseur » générée pour le SEO, puis 15 démo aux développeurs d'agents via Discord MCP et GitHub ; viser 2 abonnements.",
+   "audace": 8,
+   "origine": "visionnaire",
+   "lentille": "inversion",
+   "cerveau": "minimax",
+   "gisement": null,
+   "sources": [
+    "brevets",
+    "hvd-ue"
+   ],
+   "id": "i0472",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 6,
+    "distribution": 6,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le premier client est un développeur d'agent, mais le paiement mensuel de 79 € suppose un usage régulier ; or un agent d'achat ne vérifie un fournisseur qu'occasionnellement, ce qui rend l'abonnement peu attractif et le paiement à l'unité (0,05 €) trop faible pour générer un revenu significatif rapidement.",
+    "amelioration": "Cibler d'abord les places de marché e-commerce (Mirakl, Shopify Markets) avec un plugin qui facture 0,50 € par vérification incluse dans les frais de transaction, ce qui aligne le paiement sur l'acte d'achat et capte un volume plus élevé sans abonnement.",
+    "juge": "deepseek"
+   },
+   "score": 7.2,
+   "elo": 1548,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Agent Lookup (Havic AI)",
+      "url": "https://platform.tracxn.com/a/d/company/69cc93945bd92f26d41945a1/agent%20lookup?utm_source=parallel&utm_medium=ai#a:about",
+      "prix": null,
+      "zone": "Pays-Bas / international",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "RCO-A2A AI",
+      "url": "https://platform.tracxn.com/a/d/company/6a93f2c594374f20e70fbd69/rco-a2a%20ai?utm_source=parallel&utm_medium=ai#a:about",
+      "prix": null,
+      "zone": "International",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "AgentMarket",
+      "url": "https://platform.tracxn.com/a/d/company/68791e65ee18f64c836fa17e/agentmarket?utm_source=parallel&utm_medium=ai#a:about",
+      "prix": null,
+      "zone": "France",
+      "ressemblance": 2,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.copyfy.io/blog/agent-dropshipping",
+      "resume": "Les dropshippers doivent vérifier manuellement leurs agents/sourcing en Chine (agents fantômes, frais cachés, litiges) : preuve que la vérification de contreparties est un vrai problème et que les gens paient déjà des contrôles qualité (0,30–0,80 €/unité).",
+      "verifie": true
+     },
+     {
+      "url": "https://friptadium.com/blogs/actualites/arnaque-vinted-reperer-se-proteger",
+      "resume": "Arnaques de vendeurs fantômes et dropshipping déguisé sur marketplaces (Vinted) : les plateformes et acheteurs ont besoin de vérifier la véracité des vendeurs.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.propulselab.fr/blog/resilier-contrat-apporteur-daffaires",
+      "resume": "Arnaques d'intermédiaires/apporteurs d'affaires avec coordonnées fictives et chantiers fantômes (facture de 4 800 €) : les entreprises paient cher pour des contacts non vérifiés.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les dropshippers paient des agents de sourcing et des contrôles qualité (0,30–0,80 €/unité selon copyfy.io) ; les indépendants paient 40–90 € par contact d'apporteur d'affaires souvent non vérifié ; aucune preuve directe de paiement pour une API de vérification d'entreprise pour agents IA dans les résultats.",
+    "preuve_paiement_url": "https://www.copyfy.io/blog/agent-dropshipping",
+    "nouveaute": 7,
+    "angle_libre": "Aucun concurrent trouvé ne combine registre d'entreprises européennes (statut, dirigeants, insolvabilité) + score de confiance orienté agents IA d'approvisionnement ; RCO-A2A fait de la conformité produit/juridiction et Agent Lookup de l'identité d'agents, pas de la véracité des fournisseurs.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Traitement de données de dirigeants (données personnelles RGPD), revente de données de registres (Infogreffe, KBO, etc.) soumise à des licences, et risque de diffamation si un score de confiance signale à tort une « activité fictive ».",
+    "verdict": "creuser",
+    "raison": "Le problème est réel et documenté (agents fantômes, arnaques de fournisseurs) et l'angle agents IA est émergent, mais les résultats ne prouvent pas que quelqu'un paie déjà pour cette API précise ni l'absence de concurrents établis type registres d'entreprises — à valider avant de foncer.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://www.copyfy.io/blog/agent-dropshipping",
+      "titre": "Agent dropshipping : comment le choisir ?"
+     },
+     {
+      "url": "https://platform.tracxn.com/a/d/company/6a93f2c594374f20e70fbd69/rco-a2a%20ai?utm_source=parallel&utm_medium=ai#a:about",
+      "titre": "RCO-A2A AI"
+     },
+     {
+      "url": "https://www.b2brocket.ai/fr/blog-posts/b2b-urgency-fake-competitors-strategy",
+      "titre": "Pourquoi les marques B2B inventent des rivaux fantômes"
+     },
+     {
+      "url": "https://www.propulselab.fr/blog/resilier-contrat-apporteur-daffaires",
+      "titre": "Résilier Contrat Apporteur d'Affaires (Préavis & Modèle) | Propulse"
+     },
+     {
+      "url": "https://platform.tracxn.com/a/d/company/68791e65ee18f64c836fa17e/agentmarket?utm_source=parallel&utm_medium=ai#a:about",
+      "titre": "AgentMarket"
+     },
+     {
+      "url": "https://www.cloudflare.com/fr-fr/the-net/api-centric-security/",
+      "titre": "theNET |3 approches pour devancer les menaces ciblant les API | Cloudflare"
+     },
+     {
+      "url": "https://platform.tracxn.com/a/d/company/69cc93945bd92f26d41945a1/agent%20lookup?utm_source=parallel&utm_medium=ai#a:about",
+      "titre": "Agent Lookup"
+     },
+     {
+      "url": "https://friptadium.com/blogs/actualites/arnaque-vinted-reperer-se-proteger",
+      "titre": "\n      Arnaque Vinted : repérer les pièges et se protéger (2026)\n | Friptadium"
+     }
+    ],
+    "liens_verifies": 6,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.27,
+    "composantes": {
+     "douleur_prouvee": 6,
+     "paiement_prouve": 10,
+     "espace_libre": 7,
+     "critique": 7.2,
+     "tournoi": 8,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "MémoireChiffre : chaque mémoire étudiant vérifié par rapport aux sources citées et à la fraude plausible détectée avant soutenance",
+   "arene": "apprendre",
+   "probleme": "Les détecteurs de plagiat existent, mais personne ne vérifie que les 80 sources d'un mémoire existent vraiment, sont bien citées et disent bien ce que l'étudiant prétend.",
+   "pour_qui": "Étudiants en master, directeurs de mémoire, universités et hautes écoles (en Belgique et en France).",
+   "valeur_societale": "Rétablir la confiance académique dans un monde où l'IA facilite l'invention de références et de résultats.",
+   "solution": "Les agents vérifient chaque référence (existence, DOI, cohérence citation-contenu), détectent les paraphrases abusives et produisent un rapport PDF avec score de fiabilité bibliographique.",
+   "pourquoi_agents": "Vérifier 80 sources par mémoire manuellement prend 4 h ; les agents le font en 10 minutes pour quelques centimes, ce qui rend le service vendable à 30 €.",
+   "pourquoi_maintenant": "L'explosion des mémoires assistés par LLM a créé un problème éditorial nouveau que les outils classiques ne traitent pas (les références sont plausibles mais fausses).",
+   "canal": "communautes",
+   "premier_client": "Groupes d'étudiants Erasmus à Namur, Liège et Louvain ; professeurs responsables de mémoires contactés par e-mail via annuaire universitaire (10 masters différents).",
+   "modele_revenu": "Paiement à l'unité par mémoire vérifié",
+   "prix": "39 €/mémoire",
+   "premier_test": "Vérifier gratuitement 5 mémoires réels de masters belges en 2 semaines, publier 2 rapports anonymisés comme preuve, encaisser les 5 suivants à 39 €.",
+   "audace": 7,
+   "origine": "visionnaire",
+   "lentille": "cimetiere",
+   "cerveau": "mimo",
+   "gisement": null,
+   "sources": [
+    "eurostat",
+    "openalex"
+   ],
+   "id": "i0544",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "distribution": 5,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "La distribution est fragile : les annuaires universitaires sont souvent protégés ou obsolètes, et les étudiants Erasmus n'ont pas de pouvoir d'achat ni de décision collective. Sans relais officiel (directeur de mémoire ou administration), le bouche-à-oreille sera lent.",
+    "amelioration": "Cibler d'abord les directeurs de mémoire via des groupes Facebook disciplinaires ou des listes de diffusion de sociétés savantes, en proposant un rapport gratuit pour leur propre mémoire dirigé, puis un abonnement pour leur promotion.",
+    "juge": "deepseek"
+   },
+   "score": 6.999999999999999,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "MyStudies - détecteur de plagiat",
+      "url": "https://www.mystudies.com/plagiat/intro",
+      "prix": "non précisé dans les résultats",
+      "zone": "France",
+      "ressemblance": 4,
+      "verifie": false
+     },
+     {
+      "nom": "GoThesis - vérification plagiat et texte IA pour mémoires",
+      "url": "https://www.gothesis.de/ki/plagiatspruefung",
+      "prix": "non précisé dans les résultats",
+      "zone": "Allemagne/UE",
+      "ressemblance": 5,
+      "verifie": false
+     },
+     {
+      "nom": "Empirio - vérification de plagiat pour mémoire de master",
+      "url": "https://www.empirio.ai/fr-FR/learn/plagiarism-check-master-thesis",
+      "prix": "non précisé dans les résultats",
+      "zone": "UE (FR)",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "Compilatio (sous-entendu via rapports anti-plagiat des écoles)",
+      "url": "https://library.psbedu.paris/ajax.php?action=render&categ=document&id=177&module=cms",
+      "prix": "B2B, non précisé",
+      "zone": "France",
+      "ressemblance": 4,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://entscheidsuche.ch/docs/GE_Gerichte/GE_CJ_013_A-550-2020_2020-04-30.html",
+      "resume": "Jurisprudence suisse : sanctions pour plagiat dans des mémoires, litiges sur le seuil de similitude (5 % vs 25 %) — le problème des faux positifs/négatifs des détecteurs actuels est réel.",
+      "verifie": true
+     },
+     {
+      "url": "https://arxiv.org/pdf/2201.03423",
+      "resume": "Survey académique : la détection de plagiat est un problème actif, les outils existants peinent sur les paraphrases et le multilingue (FR/AR/EN).",
+      "verifie": true
+     },
+     {
+      "url": "https://arxiv.org/pdf/1906.11761",
+      "resume": "Recherche sur la détection de plagiat académique : les approches existantes ignorent les citations et le contenu mathématique — confirme le gap que l'idée veut combler (vérification citation-contenu).",
+      "verifie": true
+     },
+     {
+      "url": "https://library.psbedu.paris/ajax.php?action=render&categ=document&id=177&module=cms",
+      "resume": "Une école de commerce parisienne impose des rapports anti-plagiat vérifiés par les tuteurs avant soutenance — preuve que les institutions paient déjà pour ce contrôle.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les universités et écoles (rapports anti-plagiat obligatoires avant soutenance, ex. PSB) et indirectement les étudiants via des outils comme MyStudies, GoThesis, Empirio.",
+    "preuve_paiement_url": "https://library.psbedu.paris/ajax.php?action=render&categ=document&id=177&module=cms",
+    "nouveaute": 6,
+    "angle_libre": "Aucun concurrent grand public ne vérifie l'existence réelle des références (DOI), la cohérence citation-contenu ni la fraude bibliographique — tous se limitent à la similarité textuelle.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Publication de rapports anonymisés sur des mémoires réels : confidentialité, droit d'auteur des mémoires, et responsabilité si un faux positif nuit à un étudiant ; aussi risque de devenir un outil d'aide à la fraude (contourner la détection).",
+    "verdict": "creuser",
+    "raison": "Le gap technique (vérification des citations vs similarité textuelle) est réel et documenté, mais le marché étudiant à 39 € est incertain face aux outils B2B déjà installés dans les universités — valider d'abord qui paie vraiment : l'étudiant ou l'institution.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://ai.mystudies.com/blog/nos-astuces/comment-integrer-sources-corps-texte-plagiat-30-04-2025.html",
+      "titre": "Comment intégrer les sources dans son mémoire sans plagiat?"
+     },
+     {
+      "url": "https://entscheidsuche.ch/docs/GE_Gerichte/GE_CJ_013_A-550-2020_2020-04-30.html",
+      "titre": "ATA/439/2020 du 30.04.2020 ( FORMA ) , REJETE"
+     },
+     {
+      "url": "https://gipplab.uni-goettingen.de/wp-content/papercite-data/pdf/gipp10c.pdf",
+      "titre": "Citation Based Plagiarism Detection - A New Approach to ..."
+     },
+     {
+      "url": "https://arxiv.org/pdf/2201.03423",
+      "titre": "A Survey of Plagiarism Detection Systems: Case of Use with English, French and Arabic Languages 1. Introduction"
+     },
+     {
+      "url": "https://arxiv.org/pdf/1906.11761",
+      "titre": "Improving Academic Plagiarism Detection for STEM Documents by Analyzing Mathematical Content and Citations"
+     },
+     {
+      "url": "https://library.psbedu.paris/ajax.php?action=render&categ=document&id=177&module=cms",
+      "titre": "Guide du mémoire de recherche Master ... - library.psbedu.paris"
+     },
+     {
+      "url": "https://inspe.univ-lorraine.fr/sites/default/files/commun/docs/guides/20-21/20-21_guide-memoire-master-meef_web.pdf",
+      "titre": "master - meef 2020 - / INSPE de Lorraine"
+     },
+     {
+      "url": "https://www.empirio.ai/fr-FR/learn/plagiarism-check-master-thesis",
+      "titre": "Vérification du plagiat pour le mémoire de master : ce que vous devez savoir"
+     }
+    ],
+    "liens_verifies": 6,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 7.07,
+    "composantes": {
+     "douleur_prouvee": 7,
+     "paiement_prouve": 10,
+     "espace_libre": 6,
+     "critique": 6.999999999999999,
+     "tournoi": 6,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Assistant de recours qui converse par SMS",
+   "arene": "travail-et-carrieres",
+   "probleme": "Les忠心 منه委_face clients qui perdent l'accès à leur compte ou à une commande dupuis l'application n'ont aucun chemin alternatif, particulièrement quand la récupération de mot de passe depends de l'application dysfunctional.",
+   "pour_qui": "Les utilisateurs non techniques des applications de commande, de réservation, de emploi et de dematerial administrative qui communiquent déjà par SMS.",
+   "valeur_societale": "Offrir à chacun un canal de secours humain et accessible, sans distinction d'âge, de skill numérique ou de牌照 device, et éviter l'exclusion de quelques personnes en cas de panne.",
+   "solution": "Une ligne d'assistance\textbf眨includegraphics par SMS avec un assistant IA qui vérifie l'identité par jeton à usage unique envoyé séparément, retrieve l'état d'un dossier ou d'une commande et escalade vers un humain si nécessaire.",
+   "pourquoi_agents": "L'agent resolve les cas courants en quelques messages,問 interprets les captures d'écran et prépare le dossier pour un conseiller humain,24 heures sur 24 avec un coût marginal très faible.",
+   "pourquoi_maintenant": "Le SMS est un canal encore largement utilisé en Europe, et l'IA conversationnelle réduit fortement le coût d'un support toujours joignable, précisément là où les applications apical vers le support ne sont plus accessibles.",
+   "canal": "communautes",
+   "premier_client": "Les associations de consommateurs, agrupación defences digital, andgj communities et services d'aide sociale qui recommandent des solutions de recours pour leurs membres.",
+   "modele_revenu": "Forfait mensuel par organisation, avec facturation à la conversation au-delà du quota.",
+   "prix": "99 euros par mois pour 500 conversations avec escalade humaine incluse",
+   "premier_test": "Deployer during deux semaines un numéro SMS dglyphe avec 30 utilisateurs家属 réels d'applicationsJdbc prohibition ;185HOPI facturer 99 euros à l'association qui pesticide l'utilise pour ses高频Membres.",
+   "audace": 8,
+   "origine": "ancree",
+   "lentille": "renverser-la-plainte",
+   "cerveau": "minimax",
+   "gisement": {
+    "id": "g46",
+    "nom": "Support client inaccessible en cas de bug applicatif",
+    "n": 15,
+    "force": 7.043
+   },
+   "sources": [],
+   "id": "i0327",
+   "critique": {
+    "valeur_societale": 9,
+    "originalite": 7,
+    "avantage_agents": 8,
+    "defensibilite": 6,
+    "argent_rapide": 6,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le défi technique majeur réside dans l'intégration. Pour 'retrouver l'état d'un dossier ou d'une commande', l'agent IA doit impérativement avoir un accès API aux systèmes propriétaires et souvent mal documentés des applications ciblées. Une solution universelle est irréalisable sans partenariats ou une standardisation des données inexistante.",
+    "amelioration": "Restreindre le périmètre initial à un type de problème très spécifique et standardisé (ex: uniquement la récupération de compte ou le suivi de livraison pour un acteur majeur) pour prouver la valeur avant de chercher des intégrations plus complexes.",
+    "juge": "glm"
+   },
+   "score": 7.4,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Mankovoice",
+      "url": "https://jimmymanin.com/business/mankovoice",
+      "prix": "deux formules (répondeur intelligent / agent vocal), prix non précisé",
+      "zone": "France",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Sandra AI",
+      "url": "https://linkedin.com/company/sandra-ai",
+      "prix": null,
+      "zone": "France/Europe",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "SMS as Customer Service Channel (brevets US)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20180041634",
+      "prix": null,
+      "zone": "États-Unis",
+      "ressemblance": 6,
+      "verifie": true
+     },
+     {
+      "nom": "Intelligent assistant SMS account servicing (brevet US 10,044,647)",
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10044647",
+      "prix": null,
+      "zone": "États-Unis",
+      "ressemblance": 7,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://support.google.com/accounts/answer/185834?hl=fr",
+      "resume": "Google reconnaît la complexité de la récupération de compte : procédure longue (3 à 5 jours ouvrés) quand l'utilisateur perd son second facteur, preuve que la récupération est un vrai point de friction.",
+      "verifie": true
+     },
+     {
+      "url": "https://knowledge.workspace.google.com/admin/users/set-up-password-recovery-for-users?hl=fr",
+      "resume": "Google Workspace documente les limitations de la récupération de mot de passe (indisponible avec SSO, pour mineurs, etc.), montrant des chemins de récupération souvent bloqués pour des catégories d'utilisateurs.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Aucune preuve directe dans les résultats que des utilisateurs ou associations paient pour une assistance de récupération de compte par SMS ; les concurrents trouvés (Sandra AI, Mankovoice) sont payés par des entreprises pour du support/réponse client IA, pas par des utilisateurs finaux bloqués.",
+    "preuve_paiement_url": null,
+    "nouveaute": 4,
+    "angle_libre": "Aucun concurrent identifié ne propose un canal SMS indépendant de l'application, dédié à la récupération de compte/dossier avec vérification par OTP envoyé séparément et escalade humaine — les solutions existantes sont côté entreprise (support client IA) et non côté utilisateur bloqué.",
+    "risque_juridique": "eleve",
+    "raison_risque": "Vérification d'identité par SMS OTP pour accéder à des données de compte tiers (commandes, dossiers) pose des problèmes de RGPD, d'usurpation d'identité (SIM swapping) et exige des intégrations/mandats avec les entreprises concernées, sans lesquelles le service ne peut légalement ou techniquement accéder aux données.",
+    "verdict": "creuser",
+    "raison": "Le problème de récupération de compte est réel mais les résultats ne prouvent ni demande payante côté utilisateurs ni faisabilité d'accès aux données des applications, et le risque juridique est élevé — à creuser avant de foncer.",
+    "preuve_paiement_verifiee": false,
+    "citations": [
+     {
+      "url": "https://docs.logto.io/fr/end-user-flows/sign-up-and-sign-in/reset-password",
+      "titre": "Réinitialiser le mot de passe | Logto docs"
+     },
+     {
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/20180041634",
+      "titre": "US20180041634A1 - System and Method for Implementing SMS Texting as a Customer Service Channel"
+     },
+     {
+      "url": "https://support.google.com/accounts/answer/185834?hl=fr",
+      "titre": "Résoudre les problèmes courants liés à la validation en deux étapes - Aide Compte Google"
+     },
+     {
+      "url": "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10044647",
+      "titre": "US10044647B1 - Systems and methods for controlling enrollment and secure persistent SMS texting account servicing with an intelligent assistant"
+     },
+     {
+      "url": "https://jimmymanin.com/business/mankovoice",
+      "titre": "Mankovoice · Jimmy Manin"
+     },
+     {
+      "url": "https://knowledge.workspace.google.com/admin/users/set-up-password-recovery-for-users?hl=fr",
+      "titre": "Configurer la récupération de mot de passe pour les utilisateurs  |  User management  |  Google Workspace Help"
+     },
+     {
+      "url": "https://docs.logto.io/fr/end-user-flows/mfa/authenticator-app-otp",
+      "titre": "OTP d’application d’authentification | Logto docs"
+     },
+     {
+      "url": "https://linkedin.com/company/sandra-ai",
+      "titre": "Sandra AI | LinkedIn"
+     }
+    ],
+    "liens_verifies": 6,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 6.62,
+    "composantes": {
+     "douleur_prouvee": 10,
+     "paiement_prouve": 8,
+     "espace_libre": 4,
+     "critique": 7.4,
+     "tournoi": 6,
+     "faible_risque": 0
+    }
+   }
+  },
+  {
+   "titre": "FileSpot : le radar de disponibilité des livres numériques",
+   "arene": "culture-et-loisirs",
+   "probleme": "Les files d'attente des bibliothèques numériques sont opaques : on attend des semaines sans savoir si un exemplaire se libère ailleurs, ni que sa propre réservation expire sans prévenir et fait perdre sa place.",
+   "pour_qui": "Les lecteurs assidus de bibliothèques numériques (clubs de lecture, cercles du BookTok francophone) qui juggle plusieurs listes d'attente.",
+   "valeur_societale": "Meilleure circulation des exemplaires numériques rares : moins de réservations oubliées qui bloquent la file, plus de lecteurs servis avec les mêmes licences.",
+   "solution": "Un service qui agrège les disponibilités et temps d'attente estimés par titre, alerte avant l'expiration d'une réservation et suggère la bibliothèque (villes voisines) où l'attente est la plus courte — crucial pour les frontaliers qui cotisent dans deux pays.",
+   "pourquoi_agents": "Des agents sondent en continu les catalogues et files d'attente de dizaines de réseaux de bibliothèques et recalculent les temps d'attente, travail impossible à faire à la main.",
+   "pourquoi_maintenant": "Les données de files d'attente sont publiques mais dispersées ; personne ne les agrège pour le lecteur, et les agents IA rendent ce scraping maintenable à coût quasi nul.",
+   "canal": "seo-programmatique",
+   "premier_client": "Pages programmatiques « temps d'attente [titre] bibliothèque [ville] » qui captent les recherches des lecteurs frustrés, converties vers l'alerte payante.",
+   "modele_revenu": "Freemium : 3 alertes gratuites, illimité + suggestions multi-réseaux en abonnement.",
+   "prix": "4 euros par mois",
+   "premier_test": "Générer 200 pages SEO sur les titres les plus attendus en Belgique/France, y placer un lien d'abonnement ; 2 semaines pour vérifier qu'au moins 10 personnes paient 4 euros.",
+   "audace": 7,
+   "origine": "ancree",
+   "lentille": "renverser-la-plainte",
+   "cerveau": "glm",
+   "gisement": {
+    "id": "g84",
+    "nom": "Gestion confuse des prêts de livres numériques",
+    "n": 2,
+    "force": 2.083
+   },
+   "sources": [],
+   "id": "i0032",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 8,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le scraping des catalogues et files d'attente peut violer les conditions d'utilisation des bibliothèques, risquant des blocages techniques ou juridiques, et aucun réseau de bibliothèques n'a été contacté pour valider l'accès aux données.",
+    "amelioration": "Au lieu de scraper, établir un partenariat officiel avec une fédération de bibliothèques (ex: Bibliopass en France) pour recevoir un flux de données en échange d'une commission sur les abonnements générés, rendant le service légal et difficile à copier.",
+    "juge": "deepseek"
+   },
+   "score": 7.5,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Libby (OverDrive)",
+      "url": "https://help.libbyapp.com/fr-ca/0720.html",
+      "prix": "gratuit",
+      "zone": "France/Belgique/Canada/international",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "CloudLibrary",
+      "url": "https://www.yourcloudlibrary.com/fr/support.html",
+      "prix": "gratuit",
+      "zone": "Europe/international",
+      "ressemblance": 3,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://help.libbyapp.com/fr-ca/0720.html",
+      "resume": "Les files d'attente sur copies numériques sont une réalité documentée : budget limité des bibliothèques, listes d'attente longues, un seul emprunteur par copie.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.yourcloudlibrary.com/fr/support.html",
+      "resume": "CloudLibrary confirme le modèle un exemplaire/un utilisateur et l'attente pour les ebooks populaires.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.facebook.com/mabiblioamoi/posts/-probl%C3%A8me-r%C3%A9solu-le-probl%C3%A8me-de-livres-num%C3%A9riques-avec-lapplication-pretnumeriqu/1272625637142560/",
+      "resume": "Signe de communauté active autour du prêt numérique (Pretnumerique), mais aucune preuve directe de douleur liée aux files d'attente dans les résultats fournis.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Personne ne paie pour ce problème dans les résultats trouvés : les lecteurs utilisent Libby/CloudLibrary gratuitement, et les bibliothèques paient les licences aux éditeurs (pas les lecteurs).",
+    "preuve_paiement_url": null,
+    "nouveaute": 6,
+    "angle_libre": "Agrégation multi-bibliothèques transfrontalière (France/Belgique) avec alertes d'expiration de réservation et comparaison des temps d'attente par ville — Libby et CloudLibrary restent enfermés dans une seule carte de bibliothèque.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Agréger et alerter suppose de scruter les systèmes des bibliothèques (OverDrive, Cantook/De Marque) dont les CGU interdisent généralement le scraping automatisé ; les données de disponibilité ne sont pas des API publiques ouvertes.",
+    "verdict": "creuser",
+    "raison": "Le problème est réel et documenté et l'angle multi-bibliothèques transfrontalier est inoccupé, mais aucune preuve de paiement n'existe et l'accès aux données dépend de systèmes tiers aux CGU restrictives : à valider par un test manuel avant de construire les 200 pages SEO.",
+    "preuve_paiement_verifiee": false,
+    "citations": [
+     {
+      "url": "https://help.libbyapp.com/fr-ca/0720.html",
+      "titre": "Pourquoi dois-je attendre une copie d’un titre numérique?"
+     },
+     {
+      "url": "https://www.yourcloudlibrary.com/fr/support.html",
+      "titre": "Assistance | CloudLibrary\n    "
+     },
+     {
+      "url": "https://www.librairie-guillaume.fr/",
+      "titre": "Librairie Guillaume"
+     },
+     {
+      "url": "https://www.facebook.com/mabiblioamoi/posts/-probl%C3%A8me-r%C3%A9solu-le-probl%C3%A8me-de-livres-num%C3%A9riques-avec-lapplication-pretnumeriqu/1272625637142560/",
+      "titre": "*** PROBLÈME RÉSOLU *** Le problème de livres ..."
+     },
+     {
+      "url": "https://www.monde-fantasy.com/les-etapes-de-lautoedition",
+      "titre": "Les Étapes de l'autoédition"
+     },
+     {
+      "url": "https://actualitte.com/article/4758/distribution/stocker-vos-bibliotheques-numeriques-avec-mes-livres",
+      "titre": "Stocker vos bibliothèques numériques avec \"Mes Livres\""
+     },
+     {
+      "url": "https://www.numipage.com/meilleures-alternatives-a-amazon-pour-acheter-ses-livres/",
+      "titre": "Les meilleures alternatives à Amazon pour acheter ses livres"
+     },
+     {
+      "url": "https://www.bookelis.com/conseil/53-distribution-en-librairies-de-livres-papier-autopublies/",
+      "titre": "Distribution de livres en librairies - Bookelis"
+     }
+    ],
+    "liens_verifies": 5,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 6.61,
+    "composantes": {
+     "douleur_prouvee": 6,
+     "paiement_prouve": 8,
+     "espace_libre": 6,
+     "critique": 7.5,
+     "tournoi": 6,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Générateur Droit à la Réparation",
+   "arene": "familles-et-aines",
+   "probleme": "Le droit européen à la réparation existe, mais un particulier face à son lave-linge hors service ne sait ni qu'il a droit à une pièce détachée, ni quoi écrire, ni à qui.",
+   "pour_qui": "Particuliers fatigués d'acheter du neuf et familles à budget serré dont les appareils lâchent au mauvais moment.",
+   "valeur_societale": "Transforme un droit abstrait en victoire concrète : moins d'appareils jetables, moins de gaspillage, pouvoir de négociation rendu aux ménages.",
+   "solution": "On saisit marque et modèle : le service génère un dossier de réclamation complet en français (modèle de lettre, référence de la pièce, indice de réparabilité officiel, canal du fabricant) avec suivi des délais.",
+   "pourquoi_agents": "Les agents parsèment en continu les indexes de réparabilité, les registres de pièces et les obligations légales par catégorie de produit, mise à jour impossible à faire manuellement.",
+   "pourquoi_maintenant": "La directive réparation de 2024 s'applique progressivement dès 2026 : les fabricants et consommateurs découvrent les règles en même temps, fenêtre idéale pour un outil grand-public.",
+   "canal": "place-de-marche-numerique",
+   "premier_client": "Vente du dossier type à l'unité sur Gumroad/Lemon Squeezy, annoncée dans les communautés anti-gaspillage, Repair Café et contenu court TikTok du style « votre frigo refuse d'être réparé ? ».",
+   "modele_revenu": "Dossier réparation à l'unité, pack famille de 5 dossiers, puis abonnement « réparation illimitée ».",
+   "prix": "9,90 € le dossier, 19,90 € le pack de 5.",
+   "premier_test": "Deux semaines : 3 modèles de dossiers publiés sur Gumroad, 10 vidéos courtes montrant une vraie réclamation gagnée ; objectif 20 dossiers vendus, soit environ 200 € encaissés.",
+   "audace": 7,
+   "origine": "visionnaire",
+   "lentille": "futur-a-rebours",
+   "cerveau": "glm",
+   "gisement": null,
+   "sources": [
+    "osm",
+    "annonces"
+   ],
+   "id": "i0485",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 9,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "La base de données des pièces et obligations légales est encore incomplète et changeante, ce qui rend le dossier potentiellement obsolète ou inefficace.",
+    "amelioration": "Ajouter un réseau de bénévoles (Repair Café) pour valider les dossiers et un module de suivi des réponses avec relance automatique.",
+    "juge": "deepseek"
+   },
+   "score": 7.799999999999999,
+   "elo": 1548,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "iFixit (tutoriels et pièces détachées)",
+      "url": null,
+      "prix": "tutoriels gratuits, pièces payantes",
+      "zone": "Europe/monde",
+      "ressemblance": 4,
+      "verifie": false
+     },
+     {
+      "nom": "Plateformes de mise en relation réparateurs (ex. plateformes prévues par la directive UE)",
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20240419IPR20590/ep-donio-direktivu-o-pravu-na-jednostavniji-i-cjenovno-pristupacni-popravak",
+      "prix": null,
+      "zone": "UE",
+      "ressemblance": 3,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.consilium.europa.eu/fr/policies/right-to-repair-products/",
+      "resume": "L'UE constate que les consommateurs trouvent plus facile de jeter un appareil en panne que de le faire réparer — le problème d'usage est reconnu officiellement.",
+      "verifie": true
+     },
+     {
+      "url": "https://commission.europa.eu/news-and-media/news/right-repair-new-consumer-rights-easy-and-attractive-repairs-2026-07-31_fr",
+      "resume": "Depuis le 31 juillet 2026, les consommateurs peuvent exiger la réparation des fabricants (lave-linge, aspirateurs, téléphones, tablettes) — la demande d'accompagnement est nouvelle et croissante.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.lemonde.fr/pixels/article/2026/07/31/droit-a-la-reparation-ce-qui-change-avec-l-entree-en-vigueur-de-la-directive-de-l-ue_6737088_4408996.html",
+      "resume": "Article grand public du Monde montrant que les particuliers découvrent à peine ces nouveaux droits et leurs conditions (réparation si moins chère que remplacement).",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Non démontré par les résultats : aucun chiffre de marché ni acteur payant équivalent (génération de dossier de réclamation) n'apparaît dans les recherches.",
+    "preuve_paiement_url": null,
+    "nouveaute": 7,
+    "angle_libre": "Aucun concurrent identifié ne génère un dossier de réclamation clé en main (lettre + référence de pièce + canal fabricant + suivi des délais) ; les ressources existantes sont des textes juridiques ou des tutoriels techniques, pas un service d'accompagnement administratif.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Vendre des conseils sur des droits légaux gratuits touche à la déontologie (pas de conseil juridique non autorisé), et les fabricants pourraient contester les références de pièces ; il faut des mentions claires et des données à jour.",
+    "verdict": "creuser",
+    "raison": "Le problème est réel, officiellement reconnu et très récent (directive en vigueur depuis le 31 juillet 2026), mais aucune preuve que des particuliers paient déjà pour ce service n'a été trouvée — à valider par le test Gumroad prévu.",
+    "preuve_paiement_verifiee": false,
+    "citations": [
+     {
+      "url": "https://www.consilium.europa.eu/fr/policies/right-to-repair-products/",
+      "titre": "Droit à la réparation des produits - Consilium"
+     },
+     {
+      "url": "https://ec.europa.eu/commission/presscorner/api/files/document/print/fr/qanda_23_1795/QANDA_23_1795_FR.pdf",
+      "titre": "«Droit à la réparation» Questions et réponses"
+     },
+     {
+      "url": "https://commission.europa.eu/news-and-media/news/right-repair-new-consumer-rights-easy-and-attractive-repairs-2026-07-31_fr",
+      "titre": "Droit à la réparation: de nouveaux droits pour les consommateurs en vue de faciliter et de favoriser les réparations - Commission européenne"
+     },
+     {
+      "url": "https://www.lemonde.fr/pixels/article/2026/07/31/droit-a-la-reparation-ce-qui-change-avec-l-entree-en-vigueur-de-la-directive-de-l-ue_6737088_4408996.html",
+      "titre": "Droit à la réparation : ce qui change avec l’entrée en vigueur de la directive de l’UE"
+     },
+     {
+      "url": "https://commission.europa.eu/news-and-media/news/right-repair-new-consumer-rights-easy-and-attractive-repairs-2026-07-31_en",
+      "titre": "Right to repair: New consumer rights for easy and attractive repairs - European Commission"
+     },
+     {
+      "url": "https://commission.europa.eu/document/download/2d443b31-dc2a-4e54-a9ec-5fbb61c895e9_en?filename=2024_07_18_QA_Right2repair_FINAL.pdf&prefLang=mt",
+      "titre": "Questions & Answers on Obligation to Repair — European Commission, 30 July 2024"
+     },
+     {
+      "url": "https://ksu.repo.nii.ac.jp/record/2000267/files/SLR_58_3_297.pdf",
+      "titre": "｢修理する権利」に関する EU 指令"
+     },
+     {
+      "url": "https://www.europarl.europa.eu/news/en/press-room/20240419IPR20590/ep-donio-direktivu-o-pravu-na-jednostavniji-i-cjenovno-pristupacni-popravak",
+      "titre": "Right to repair: Making repair easier and more appealing to consumers  | News | European Parliament"
+     }
+    ],
+    "liens_verifies": 4,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 6.5,
+    "composantes": {
+     "douleur_prouvee": 6,
+     "paiement_prouve": 5,
+     "espace_libre": 7,
+     "critique": 7.799999999999999,
+     "tournoi": 8,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Jobs Aux Horaires de l'École",
+   "arene": "familles-et-aines",
+   "probleme": "Les parents qui veulent reprendre un travail après enfants ne trouvent que des annonces plein temps : rien ne filtre les emplois compatibles avec 8 h 30-16 h 30 et les mercredis.",
+   "pour_qui": "Parents en reprise d'emploi, parents isolés, aidants qui ne peuvent quitter le domicile aux heures de prise en charge.",
+   "valeur_societale": "Remet des dizaines de milliers de personnes sur le marché du travail en éliminant la barrière n°1 : les horaires, pas le poste.",
+   "solution": "On parse les annonces publiques (France Travail, EURES) : chaque offre est classée par compatibilité horaire scolaire et distance du lieu de garde, avec pages « emplois compatibles école à [ville] » générées automatiquement.",
+   "pourquoi_agents": "Lire, comprendre et requalifier des milliers d'annonces par jour en compatibilité horaire est exactement le travail que l'organisation d'agents fait gratuitement, jour et nuit.",
+   "pourquoi_maintenant": "Pénurie de main-d'œuvre côté employeurs, besoin de flexibilité côté parents : les données publiques existent, personne ne les croise avec les horaires d'école.",
+   "canal": "seo-programmatique",
+   "premier_client": "Pages SEO sur les villes frontalières belges (« emplois 9h-16h Arlon, Messancy ») partagées dans les groupes Facebook de parents d'élèves de ces communes.",
+   "modele_revenu": "Alertes quotidiennes et profil de compatibilité en abonnement, offre gratuite limitée à 3 résultats par jour.",
+   "prix": "5,99 € par mois ou 49 € par an.",
+   "premier_test": "Deux semaines : 50 pages villes générées, un formulaire d'attente et un lien de paiement à 5,99 € ; objectif 10 abonnés venus de 5 groupes Facebook de parents.",
+   "audace": 6,
+   "origine": "visionnaire",
+   "lentille": "futur-a-rebours",
+   "cerveau": "glm",
+   "gisement": null,
+   "sources": [
+    "osm",
+    "annonces"
+   ],
+   "id": "i0487",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 4,
+    "argent_rapide": 6,
+    "distribution": 6,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "La défensibilité est faible : un site concurrent peut parser les mêmes annonces avec un agent IA gratuit, et les groupes Facebook ne sont pas un canal verrouillé.",
+    "amelioration": "Ajouter un réseau de validation humaine locale (parents qui testent et notent les annonces) pour créer une barrière de confiance et de données uniques que l'IA seule ne peut reproduire.",
+    "juge": "deepseek"
+   },
+   "score": 7.000000000000001,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "France Travail (recherche d'offres avec filtres)",
+      "url": "https://candidat.francetravail.fr/offres/recherche",
+      "prix": "Gratuit",
+      "zone": "France",
+      "ressemblance": 6,
+      "verifie": true
+     },
+     {
+      "nom": "HelloWork",
+      "url": "https://www.hellowork.com",
+      "prix": "Gratuit pour les candidats",
+      "zone": "France",
+      "ressemblance": 4,
+      "verifie": false
+     },
+     {
+      "nom": "Indeed",
+      "url": "https://fr.indeed.com",
+      "prix": "Gratuit pour les candidats",
+      "zone": "France/Europe",
+      "ressemblance": 4,
+      "verifie": false
+     },
+     {
+      "nom": "EURES",
+      "url": "https://eures.europa.eu",
+      "prix": "Gratuit",
+      "zone": "Europe",
+      "ressemblance": 3,
+      "verifie": false
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://candidat.francetravail.fr/offres/emploi/garde-d-enfants/s41m4",
+      "resume": "Des centaines d'offres de garde d'enfants à temps partiel (6h30-22h/sem) publiées sur France Travail : le marché des horaires atypiques/périscolaires existe côté employeurs, signe que beaucoup de familles structurent leur vie autour des horaires d'école.",
+      "verifie": true
+     },
+     {
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/213VSPY",
+      "resume": "Offres de garde périscolaire (sortie d'école 16h30-19h) en CDI temps partiel : confirme que les créneaux 8h30-16h30 + mercredis sont une contrainte réelle et massive pour les familles.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.jobleads.com/fr/job/complement-de-salaire-garde-d-un-enfant-de-3-ans-de-6h-8h30-et-16h30-18h30-h-f--verneuil-sur-seine--ed35a9331b30edf9d45c2a69d05ea4ade",
+      "resume": "Offres rémunérées 14 000-22 000 €/an pour des compléments de salaire calés sur les horaires d'école : preuve que des gens travaillent déjà exclusivement sur ces créneaux.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Les familles paient des agences de garde (Kangourou Kids, O2, Babychou, Ideal'Nounou, Tidoudou) des centaines d'euros/mois pour organiser la vie autour de l'école ; en revanche, aucune preuve dans les résultats que des parents paient pour un agrégateur d'offres d'emploi compatibles horaires scolaires.",
+    "preuve_paiement_url": null,
+    "nouveaute": 6,
+    "angle_libre": "Aucun job board ne classe les offres par compatibilité horaire scolaire (8h30-16h30, mercredis, distance du lieu de garde) ni ne génère de pages SEO « emplois compatibles école à [ville] » — c'est le vrai différenciateur, à condition que le parsing horaire soit fiable.",
+    "risque_juridique": "moyen",
+    "raison_risque": "Réutilisation d'annonces publiques (France Travail, EURES) : vérifier les conditions d'utilisation/API de France Travail (une API publique existe mais avec restrictions de rediffusion) et le droit de concurrence ; risque de scraping si pas d'API officielle.",
+    "verdict": "creuser",
+    "raison": "Le problème est réel et l'angle SEO-programmatique est libre, mais aucune preuve de paiement pour ce type de service n'a été trouvée dans les résultats : valider d'abord la volonté de payer à 5,99 €/mois avant de construire le parsing.",
+    "preuve_paiement_verifiee": false,
+    "citations": [
+     {
+      "url": "https://candidat.francetravail.fr/offres/emploi/garde-d-enfants/s41m4",
+      "titre": "Offres d'emploi Garde d'enfants - Services à la personne ou à la collectivité | France Travail"
+     },
+     {
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/212XYGP",
+      "titre": "Offre d'emploi Sorties école un enfant 12h/sem Paris 14e Denfert Rochereau (H/F) - 75 - Paris 14e Arrondissement - 212XYGP | France Travail"
+     },
+     {
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/213VSPY",
+      "titre": "Offre d'emploi Garde d'enfants à la sortie d'école (H/F) - 78 - ST GERMAIN EN LAYE - 213VSPY | France Travail"
+     },
+     {
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/213JMVW",
+      "titre": "Offre d'emploi Garde d'enfants à domicile - baby-sitter (H/F) - 94 - Vitry-sur-Seine - 213JMVW | France Travail"
+     },
+     {
+      "url": "https://www.jobleads.com/fr/job/complement-de-salaire-garde-d-un-enfant-de-3-ans-de-6h-8h30-et-16h30-18h30-h-f--verneuil-sur-seine--ed35a9331b30edf9d45c2a69d05ea4ade",
+      "titre": "Complément de salaire - Garde d'un enfant de 3 ans de 6h-8h30 et 16h30-18h30 (H/F)"
+     },
+     {
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/215PHSR",
+      "titre": "Offre d'emploi Garde d'enfant à domicile (H/F) - 94 - Vitry-sur-Seine - 215PHSR | France Travail"
+     },
+     {
+      "url": "https://candidat.francetravail.fr/offres/recherche/detail/214DVQC",
+      "titre": "Offre d'emploi Garde d'enfants à domicile H/F - 92 - Issy-les-Moulineaux - 214DVQC | France Travail"
+     },
+     {
+      "url": "https://candidat.francetravail.fr/offres/emploi/educateur-de-jeunes-enfants/paris/s20m5d75",
+      "titre": "Offres d'emploi Educateur de jeunes enfants - Enseignement et formation - Paris | France Travail"
+     }
+    ],
+    "liens_verifies": 4,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 6.49,
+    "composantes": {
+     "douleur_prouvee": 6,
+     "paiement_prouve": 8,
+     "espace_libre": 6,
+     "critique": 7.000000000000001,
+     "tournoi": 6,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "InvoiceShield – L’agent qui vérifie et exige le service avant paiement",
+   "arene": "petits-vendeurs",
+   "probleme": "Les petits vendeurs en ligne paient des fournisseurs de services (hébergement, outil IA, API) sans recevoir la prestation promise, et perdent de l’argent sans recours.",
+   "pour_qui": "Indépendants et micro-marchands francophones (Belgique, France) qui sous-traitent des services numériques payants (ex : Abonnement API de livraison, outil de design IA).",
+   "valeur_societale": "Protège les petits entrepreneurs contre les pratiques abusives des prestataires numériques, renforçant l’économie de plateforme équitable.",
+   "solution": "Agent connecté à l’email du vendeur qui surveille les transactions (paiement, service attendu, livraison) ; si le service n’est pas fourni sous 48h, il envoie une mise en demeure automatisée avec demande de remboursement ou de fourniture, basée sur les CGV.",
+   "pourquoi_agents": "L’agent analyse en continu les factures et emails 24/7, sans intervention humaine, et peut déclencher des actions juridiques pré-rédigées (lettre recommandée) à moindre coût.",
+   "pourquoi_maintenant": "Les plaintes dans le gisement montrent que les prestataires ne respectent pas leurs délais ; les petits vendeurs perdent directement de l’argent ; réglementation belge (Loi sur les pratiques du marché) encadre les retards de prestation.",
+   "canal": "extension-navigateur",
+   "premier_client": "Extensions Chrome listées sur le Web Store pour les outils de vente en ligne (WooCommerce, Shopify) + posts ciblés sur Linkedin pour entrepreneurs belges.",
+   "modele_revenu": "Abonnement mensuel 4,99 € (premier mois gratuit).",
+   "prix": 4.99,
+   "premier_test": "Développer l’extension en 1 semaine avec une API de détection de factures ; tester avec un fichier CSV de 10 vendeurs bénévoles sur un forum belge (ex : indie.be) ; mesurer le temps de résolution vs manuel.",
+   "audace": 8,
+   "origine": "ancree",
+   "lentille": "pour-les-oublies",
+   "cerveau": "deepseek",
+   "gisement": {
+    "id": "g95",
+    "nom": "Service client défaillant après paiement",
+    "n": 2,
+    "force": 3.213
+   },
+   "sources": [],
+   "id": "i0396",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 7,
+    "distribution": 5,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "L'efficacité de l'agent repose sur la capacité à prouver la non-exécution du service, ce qui est difficile sans accès direct aux systèmes du prestataire (API, hébergement, etc.). L'agent ne fait qu'envoyer une mise en demeure basée sur des CGV, ce qui est une action de pression, pas une preuve légale de non-exécution, et le risque de rejet ou de litige est élevé si le contrat est ambigu.",
+    "amelioration": "Transformer l'agent d'un simple 'rappelleur' en un 'vérificateur de conformité' en intégrant des webhooks ou des API de vérification pour les services les plus courants (ex: vérifier l'état d'un compte API ou d'un service d'hébergement) afin de passer d'une action de pression à une preuve automatisée de manquement contractuel.",
+    "juge": "glm"
+   },
+   "score": 7.199999999999999,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "Invoice Copilot (agent AP conversationnel)",
+      "url": "https://github.com/NitinSingh888/invoice-copilot",
+      "prix": null,
+      "zone": "Global/US (projet GitHub)",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Invoice Agent (CrewAI, extraction + validation + approbation)",
+      "url": "https://github.com/simran-129/invoice-agent",
+      "prix": null,
+      "zone": "Global (projet GitHub)",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Invoice AP Triage Agent (extraction, matching PO, détection doublons)",
+      "url": "https://github.com/Ank0it/invoice-ap-triage-agent",
+      "prix": null,
+      "zone": "Global (projet GitHub)",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Acuris Agent Guard (vérification marchand avant paiement par agent IA)",
+      "url": "https://github.com/Acuris-GmbH/acuris-agent-guard",
+      "prix": null,
+      "zone": "Allemagne/Global",
+      "ressemblance": 3,
+      "verifie": true
+     },
+     {
+      "nom": "Didit (vérification vendeurs + filtrage paiements pour marketplaces)",
+      "url": "https://didit.me/fr/industries/identity-verification-marketplaces/",
+      "prix": null,
+      "zone": "Europe",
+      "ressemblance": 2,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/dossier_de_presse/dossier-de-presse-dgccrf-e-commerce.pdf",
+      "resume": "La DGCCRF rapporte que le dropshipping occasionne un nombre important de plaintes de consommateurs (non-livraisons, impossibilité de contacter le vendeur) — preuve d'un problème réel de prestations/fournitures non livrées après paiement en ligne, mais côté consommateurs B2C plutôt que vendeurs B2B.",
+      "verifie": true
+     },
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/depliants/guide-acheteur.pdf",
+      "resume": "Guide officiel rappelant les obligations du vendeur en ligne et les recours du consommateur — montre que le problème existe mais que les recours manuels existent déjà (rétractation, médiation), sans preuve que des micro-marchands paient pour l'automatiser.",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Aucune preuve dans les résultats que des indépendants/micro-marchands paient déjà pour un service de recouvrement automatisé de prestations non fournies. Les projets similaires (agents AP) sont des outils open-source gratuits ciblant les directions comptables des entreprises, pas les micro-vendeurs.",
+    "preuve_paiement_url": null,
+    "nouveaute": 7,
+    "angle_libre": "Aucun concurrent trouvé ne fait de la surveillance post-paiement côté ACHETEUR (vérifier que le service promis est réellement fourni sous 48h) avec mise en demeure automatisée basée sur les CGV — les agents AP existants vérifient la conformité des factures internes, pas la livraison de la prestation par le fournisseur.",
+    "risque_juridique": "eleve",
+    "raison_risque": "Envoi automatisé de mises en demeure = exercice de fait d'actions juridiques réservé aux avocats en France/Belgique, plus traitement de données sensibles (accès email, factures) soumis au RGPD ; responsabilité si la mise en demeure est erronée.",
+    "verdict": "creuser",
+    "raison": "L'angle (recours automatisé de l'acheteur de services numériques) est nouveau et le problème documenté côté e-commerce, mais la demande payante chez les micro-vendeurs n'est pas prouvée et le risque juridique de la mise en demeure automatisée impose de valider d'abord le modèle (ex : simple relance + dossier de réclamation plutôt qu'acte juridique) et la volonté de payer à 4,99 €.",
+    "preuve_paiement_verifiee": false,
+    "citations": [
+     {
+      "url": "https://github.com/NitinSingh888/invoice-copilot",
+      "titre": "GitHub - NitinSingh888/invoice-copilot: A conversational AI accounts-payable agent: reads invoices, matches POs, auto-clears the safe ones, escalates the risky ones, learns your rules, and logs every action to a tamper-evident audit trail. LLM proposes; deterministic code decides. · GitHub"
+     },
+     {
+      "url": "https://github.com/Acuris-GmbH/acuris-agent-guard",
+      "titre": "GitHub - Acuris-GmbH/acuris-agent-guard: Verify the merchant before your AI agent pays — pre-pay storefront-legitimacy check (address + company-register + domain-binding + sanctions) for LangChain, CrewAI, Anthropic computer-use, or any MCP agent. · GitHub"
+     },
+     {
+      "url": "https://didit.me/fr/industries/identity-verification-marketplaces/",
+      "titre": "Vérifie chaque vendeur. Filtre chaque paiement. | Didit"
+     },
+     {
+      "url": "https://github.com/simran-129/invoice-agent",
+      "titre": "GitHub - simran-129/invoice-agent: Multi-agent invoice processing: extract structured data from PDFs, validate with deterministic business rules, approve with tiered LLM policy, and append an immutable audit trail. Built with CrewAI, FastAPI, and a React UI for demos and portfolio review. · GitHub"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/media-document/guide-dgccrf-vendeur-e-commerce.pdf?v=1757430931",
+      "titre": "Guide du vendeur e-commerce"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/depliants/guide-acheteur.pdf",
+      "titre": "Fiche pratique – Acheter sur internet"
+     },
+     {
+      "url": "https://www.economie.gouv.fr/files/files/directions_services/dgccrf/documentation/publications/dossier_de_presse/dossier-de-presse-dgccrf-e-commerce.pdf",
+      "titre": "[PDF] Les abus du e-commerce dans la ligne de mire de la DGCCRF"
+     },
+     {
+      "url": "https://github.com/Ank0it/invoice-ap-triage-agent",
+      "titre": "GitHub - Ank0it/invoice-ap-triage-agent: AI agent for invoice intake and AP exception triage using LLM tool calling, structured document extraction, deterministic PO matching, duplicate detection, and hallucination-safe validation. · GitHub"
+     }
+    ],
+    "liens_verifies": 7,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 6.11,
+    "composantes": {
+     "douleur_prouvee": 8.0325,
+     "paiement_prouve": 5,
+     "espace_libre": 7,
+     "critique": 7.199999999999999,
+     "tournoi": 6,
+     "faible_risque": 0
+    }
+   }
+  },
+  {
+   "titre": "ArchiveAlive : animation de livres et images du domaine public en objets numériques vendables",
+   "arene": "petits-vendeurs",
+   "probleme": "Des millions d'œuvres libres de droits (Gutenberg, Europeana, Gallica) dorment inutilisées faute de moyen simple de les transformer en produits modernes.",
+   "pour_qui": "Créateurs de contenu, illustrateurs, auteurs et petits commerçants numériques qui veulent revendre des visuels uniques sans droits.",
+   "valeur_societale": "Rend le patrimoine culturel réellement réutilisable et finance indirectement la création autour des archives ouvertes.",
+   "solution": "Un agent scanne une base du domaine public, extrait illustrations et typographies, les nettoie, les recolore et les packote en packs vendus sur Gumroad ou Etsy.",
+   "pourquoi_agents": "Le traitement de millions de fichiers (nettoyage, tagging, upscaling) est exactement le genre de travail infini que les agents assument.",
+   "pourquoi_maintenant": "Les modèles de restauration et d'upscale d'image sont devenus rapides et très bon marché.",
+   "canal": "place-de-marche-numerique",
+   "premier_client": "Publier 5 packs thématiques (Animaux anciens, Cartes du ciel, Art nouveau) sur Etsy et Gumroad, puis toucher les communautés d'illustrateurs sur Reddit.",
+   "modele_revenu": "Vente de packs numériques à l'unité + licence commerciale étendue optionnelle.",
+   "prix": "12 € le pack de 50 images, 39 € la licence commerciale.",
+   "premier_test": "Sous 2 semaines, sortir 3 packs et viser 30 ventes cumulées sur Etsy/Gumroad.",
+   "audace": 6,
+   "origine": "visionnaire",
+   "lentille": "luxe-democratise",
+   "cerveau": "mimo",
+   "gisement": null,
+   "sources": [
+    "gutenberg",
+    "osm"
+   ],
+   "id": "i0554",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 8,
+    "distribution": 8,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le risque juridique principal réside dans la qualification de 'domaine public' pour des œuvres dont l'historique est complexe (ex: œuvres dont les droits ont expiré dans des juridictions différentes ou qui ont été protégées par des droits voisins). De plus, le marché des actifs numériques est saturé de ressources gratuites ; la valeur doit être ancrée dans la qualité de la curation et non seulement dans le fait que l'image est 'libre'.",
+    "amelioration": "Passer du statut de 'fournisseur d'images traitées' à celui de 'studio de solutions graphiques thématiques'. Au lieu de vendre des packs d'images brutes, vendre des 'kits de design prêts à l'emploi' (ex: 'Kit Art Nouveau pour UI/UX') incluant l'image traitée, une palette de couleurs suggérée, et des exemples de mockups d'utilisation, justifiant ainsi un prix premium et une valeur perçue beaucoup plus élevée.",
+    "juge": "glm"
+   },
+   "score": 7.8,
+   "elo": 1516,
+   "enquete": {
+    "concurrents": [
+     {
+      "nom": "BnF – Banque d'images / Acheter une reproduction (Gallica)",
+      "url": "https://www.bnf.fr/fr/pour-les-professionnels",
+      "prix": "redevance par image (tarif non publié dans les résultats)",
+      "zone": "France",
+      "ressemblance": 5,
+      "verifie": true
+     },
+     {
+      "nom": "BnF – service reproduction & réutilisation commerciale",
+      "url": "https://www.bnf.fr/fr/reproduction-des-documents",
+      "prix": "frais techniques + redevance d'utilisation commerciale",
+      "zone": "France",
+      "ressemblance": 4,
+      "verifie": true
+     },
+     {
+      "nom": "Gallica Studio (boîte à outils de réutilisation)",
+      "url": "https://pro.europeana.eu/post/towards-new-uses-of-cultural-heritage-online-gallica-studio",
+      "prix": "gratuit",
+      "zone": "France",
+      "ressemblance": 3,
+      "verifie": true
+     }
+    ],
+    "preuves_demande": [
+     {
+      "url": "https://fems.asso.fr/wp-content/uploads/2021/04/Petermann_Damien_Reutiliser_images_collections_2019.pdf",
+      "resume": "Article universitaire montrant une demande réelle d'images libres de droit gratuites par les éditeurs, et critiquant le copyfraud des institutions patrimoniales qui facturent des œuvres du domaine public",
+      "verifie": true
+     },
+     {
+      "url": "https://www.bnf.fr/sites/default/files/2023-03/CP_GALLICA_10_millions.pdf",
+      "resume": "10 millions de documents numérisés sur Gallica : le gisement de contenu du domaine public existe bien et s'accroît chaque jour",
+      "verifie": true
+     }
+    ],
+    "qui_paie_deja": "Éditeurs, iconographes et professionnels de l'audiovisuel qui paient des redevances à la BnF pour des images (y compris du domaine public)",
+    "preuve_paiement_url": "https://www.bnf.fr/en/order-reproduction-commercial-use",
+    "nouveaute": 3,
+    "angle_libre": "Aucun acteur des résultats ne fait de curation + nettoyage + recoloration + packaging commercial prêt-à-vendre sur Etsy/Gumroad ; la BnF vend des images à l'unité avec démarche manuelle, pas des packs clés en main",
+    "risque_juridique": "moyen",
+    "raison_risque": "Les œuvres 2D du domaine public sont réutilisables librement, mais certaines institutions pratiquent le copyfraud (redevances abusives) et la frontière 2D/3D et les œuvres encore sous droits (BnF Banque d'images) exigent un tri juridique rigoureux",
+    "verdict": "creuser",
+    "raison": "Le marché des packs d'images du domaine public est déjà encombré (non visible dans ces résultats, mais le produit brut est gratuit partout), la vraie valeur est dans la curation et la transformation, à valider par un test Etsy rapide.",
+    "preuve_paiement_verifiee": true,
+    "citations": [
+     {
+      "url": "https://www.bnf.fr/en/order-reproduction-commercial-use",
+      "titre": "Order a reproduction with a commercial use | BnF – Institutional website"
+     },
+     {
+      "url": "https://pro.europeana.eu/post/towards-new-uses-of-cultural-heritage-online-gallica-studio",
+      "titre": "Towards new uses of cultural heritage online: Gallica Studio | Europeana PRO"
+     },
+     {
+      "url": "https://www.bnf.fr/fr/pour-les-professionnels",
+      "titre": "Pour les professionnels  | BnF - Site institutionnel"
+     },
+     {
+      "url": "https://fems.asso.fr/wp-content/uploads/2021/04/Petermann_Damien_Reutiliser_images_collections_2019.pdf",
+      "titre": "Réutiliser les images numériques des collections"
+     },
+     {
+      "url": "https://www.bnf.fr/sites/default/files/2023-03/CP_GALLICA_10_millions.pdf",
+      "titre": "10 millions de documents numérisés dans Gallica – Communiqué de presse – BnF"
+     },
+     {
+      "url": "https://bbf.enssib.fr/consulter/bbf-2013-02-0037-007",
+      "titre": "L'album numérique | Bulletin des bibliothèques de France - BBF"
+     },
+     {
+      "url": "https://www.bnf.fr/fr/reproduction-des-documents",
+      "titre": "Reproduction des documents  | BnF - Site institutionnel"
+     },
+     {
+      "url": "https://www.opengovpartnership.org/wp-content/uploads/gravity_forms/29-0e9f68e16ea0d3f95fde8489616a2fcb/2024/04/charte_documentaire_numerisation_collections.pdf",
+      "titre": "Charte documentaire de numérisation des collections de la Bibliothèque nationale de France "
+     }
+    ],
+    "liens_verifies": 5,
+    "enqueteur": "glm"
+   },
+   "final": {
+    "total": 6.08,
+    "composantes": {
+     "douleur_prouvee": 4,
+     "paiement_prouve": 10,
+     "espace_libre": 3,
+     "critique": 7.8,
+     "tournoi": 6,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Commande Portes",
+   "arene": "familles-et-aines",
+   "probleme": "Les personnes âgées isolées ou les aidants qui commandent pour elles-mêmes paient des frais de livraison lourds et reçoivent des plats froids, faute de volume de commande pour obtenir un créneau garanti.",
+   "pour_qui": "Les personnes âgées autonomes, les Aidants familiaux et les étudiants internat, en priorité dans la zone Belgique–Luxembourgourg.",
+   "valeur_societale": "Réduire l'isolement en rendant la commande groupéeriple simple, et faire baisser le coût réel d'un repas chaud pour les publics les moins bien servis par les plateformes.",
+   "solution": "Un service web où l'agent IA regroupe les commandes de 4 à 8 voisins ou colocataires en une seule commande chez un restaurant partenaire, avec un créneau de livraison unique et garanti, une boîte isotherme et un suivi SMS simple sans application à installer.",
+   "pourquoi_agents": "L'agent gère en continu la constitution du groupe, lesMinimums de commande, la fermeture du créneau et le remplacement automatique d'un restaurant si le délai n'est pas tenu.",
+   "pourquoi_maintenant": "La densité urbaine de la frontière luxembourgeoise et l'explosion des frais de livraison créent une fenêtre où l'achat groupé redevient compétitif.",
+   "canal": "bouche-a-oreille-produit",
+   "premier_client": "10 participants via les groupes Facebook de communes et deVtjr clubs seniors, et via lesjans newsletters de residence et associations d'Aidants.",
+   "modele_revenu": "Abonnement consommateur à 4,99 €/mois par participant et commission de 3 % sur le chiffre d'affaires restaurant.",
+   "prix": "4,99 € par mois et par participant",
+   "premier_test": "Deux semaines : mettre en place trois groupes pilotes dans un quartier de Luxembourg, valider 20 commandes groupées et faire payer l'abonnement aux 10 premiers participants.",
+   "audace": 8,
+   "origine": "ancree",
+   "lentille": "pour-les-oublies",
+   "cerveau": "minimax",
+   "gisement": {
+    "id": "g76",
+    "nom": "Qualité dégradée des livraisons de repas",
+    "n": 5,
+    "force": 6.02
+   },
+   "sources": [],
+   "id": "i0068",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "distribution": 5,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le regroupement de commandes entre voisins âgés ou étudiants semble séduisant, mais le canal de distribution (groupes Facebook, newsletters de résidences) est trop faible pour atteindre un volume critique rapidement : les personnes âgées isolées n'y sont pas actives, et les aidants y sont rares. Sans masse critique, le service ne peut pas garantir un créneau de livraison groupée.",
+    "amelioration": "Au lieu de partir des consommateurs, signer un partenariat avec une résidence services seniors ou un foyer d'étudiants (ex. : Kley, Domitys) qui centralise déjà les commandes pour ses résidents. L'agent IA devient alors un outil interne de la résidence, et le bouche-à-oreille se fait naturellement entre résidents. Le canal devient institutionnel et le premier client est garanti.",
+    "juge": "deepseek"
+   },
+   "score": 6.8,
+   "elo": 1484,
+   "final": {
+    "total": 6.03,
+    "composantes": {
+     "douleur_prouvee": 10,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 6.8,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Récovery Kit bibliothèque d'app égarée",
+   "arene": "autre",
+   "probleme": "Après un changement de téléphone, de compte ou de région, les utilisateurs ne savent pas récupérer ce qu'ils ont payé et abandonnent.",
+   "pour_qui": "Particuliers non techniques ayant acheté des livres/apps et changeant de téléphone ou de pays de compte.",
+   "valeur_societale": "Évite la double dépense et la frustration devant un patrimoine numérique invisible.",
+   "solution": "Un micro-logiciel d'archive automatisé : agent qui liste vos achats archivés par plateforme, cherche les bases légales de récupération (réachat, export, licence transférable) et produit un dossier prêt à envoyer au support.",
+   "pourquoi_agents": "Scan continu des CGV et des changements de plateformes, production automatique des dossiers de récupération.",
+   "pourquoi_maintenant": "Les vagues de fermetures de plateformes et la mobilité post-pandémique explosent.",
+   "canal": "extension-navigateur",
+   "premier_client": "Commentaires App Store français/néerlandais et forums d'utilisateurs Amazon Kindle et Audible.",
+   "modele_revenu": "Achat du kit pack complet + vente du service « on remplit la démarche pour vous ».",
+   "prix": "29 € par kit",
+   "premier_test": "Offre Kit gratuit version limitée puis Kit complet payant à 29 € publiée sur un subreddit de lecteurs.",
+   "audace": 6,
+   "origine": "ancree",
+   "lentille": "pour-les-oublies",
+   "cerveau": "mimo",
+   "gisement": {
+    "id": "g25",
+    "nom": "Perte des achats in-app",
+    "n": 5,
+    "force": 4.441
+   },
+   "sources": [],
+   "id": "i0047",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 7,
+    "distribution": 8,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le risque juridique et technique est élevé : l'agent doit interagir avec des plateformes (Apple, Amazon) dont les CGV interdisent souvent l'automatisation de la récupération ou le scraping continu. De plus, l'efficacité du 'dossier prêt à envoyer' dépend entièrement de la bonne volonté du support client, ce qui n'est pas garanti.",
+    "amelioration": "Transformer l'outil d'un 'Récupérateur' (approche réactive et risquée) en un 'Gestionnaire de Droits Numériques Proactif' (approche préventive). L'agent ne chercherait pas à forcer la récupération, mais alerterait l'utilisateur en temps réel sur les changements de politiques de licence ou de région des plateformes, lui fournissant un historique infalsifiable de ses achats pour une défense future.",
+    "juge": "glm"
+   },
+   "score": 7.7,
+   "elo": 1484,
+   "final": {
+    "total": 5.74,
+    "composantes": {
+     "douleur_prouvee": 10,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.7,
+     "tournoi": 4,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "VotreCurriculum — le moteur de progression pédagogique par agents",
+   "arene": "apprendre",
+   "probleme": "Les apps imposent un rythme et un ordre de leçons imposés, sans jamais expliquer pourquoi un mot apparaît avant un autre ni proposer de vraies leçons de prononciation.",
+   "pour_qui": "Apprenants d'anglais, d'allemand ou de néerlandais qui bloquent sur les bases et les dialectes, particulièrement les adultes autodidactes et les réfugiés ou travailleurs migrants en Belgique.",
+   "valeur_societale": "Combler les lacunes de base en langues dans un pays frontalier multilingue, réduire l'échec des apprenants adultes et favoriser l'inclusion linguistique et l'accès à l'emploi.",
+   "solution": "Une plateforme web qui reconstruit un plan de leçons personnalisé pour chaque apprenant, en commençant par les phonèmes et les mots fondamentaux absents de sa langue maternelle, avec des exercices de prononciation basés sur une correction audio automatique.",
+   "pourquoi_agents": "Des agents IA analysent en continu les erreurs de l'apprenant, détectent les bases manquantes (phonèmes, notions de grammaire, mots de fréquence) et régénèrent en direct la séquence de leçons suivante — un travail pédagogique qui prendrait des heures à un humain.",
+   "pourquoi_maintenant": "Les modèles de compréhension et de synthèse vocale de bas niveau atteignent des performances suffisantes pour la correction phonétique grand public, et les revues App Store montrent une frustration ouverte envers les approches rigides.",
+   "canal": "seo-programmatique",
+   "premier_client": "Forums d'apprenants Reddit (r/languagelearning, r/learnspanish), groupes Facebook d'expatriés francophones en Belgique, et testeurs Product Hunt lors du lancement.",
+   "modele_revenu": "Abonnement mensuel avec palier gratuit limité ; revenus additionnels via des packs de modules spécifiques (ex. néerlandais des affaires pour frontaliers).",
+   "prix": "7,99 € / mois",
+   "premier_test": "Créer une landing page décrivant « l'app qui commence par vos lacunes réelles », recruter 20 bêta-testeurs payants à 7,99 € pendant 2 semaines en livrant un plan de leçons personnalisé et un module de prononciation basique.",
+   "audace": 8,
+   "origine": "ancree",
+   "lentille": "dix-fois-moins-cher",
+   "cerveau": "mimo",
+   "gisement": {
+    "id": "g111",
+    "nom": "Applications d'apprentissage des langues inadaptées",
+    "n": 5,
+    "force": 3.106
+   },
+   "sources": [],
+   "id": "i0390",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 7,
+    "argent_rapide": 8,
+    "distribution": 6,
+    "faisabilite": 6,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le risque principal est la complexité pédagogique et la généralisation. Un agent IA peut corriger des erreurs, mais diagnostiquer la *cause racine* d'un bloc d'apprentissage linguistique (phonologique, syntaxique, culturel) de manière fiable et universel est un défi de recherche majeur. Le risque est de fournir une 'personnalisation' superficielle qui ne mène pas à une réelle progression.",
+    "amelioration": "Hyper-spécialiser le lancement sur un seul marché de niche (ex: 'Français pour les nouveaux arrivants en Wallonie' ou 'Allemand pour les frontaliers de la Ruhr'). Cela permet de collecter des données spécifiques, de créer un modèle pédagogique ultra-affûté pour ce groupe, et de construire une preuve de concept irréfutable avant de scaler.",
+    "juge": "glm"
+   },
+   "score": 7.549999999999999,
+   "elo": 1484,
+   "final": {
+    "total": 5.71,
+    "composantes": {
+     "douleur_prouvee": 7.765,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.549999999999999,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Laboratoire populaire des versions",
+   "arene": "local-et-territoire",
+   "probleme": "Les_users_linuxne#.„disponibles sur le store anesth ne_functions- ni pour les anciennes versions d'Android ni pour la synchronisation déjà payée par l'utilisateur.",
+   "pour_qui": "Utilisateurs d'appareils anciens, familles modestes,áb morallywp worn support lifespan maternelabel الركبة ant marché Lips que 10操作系统ements bought il y aPlus de trois ans.",
+   "valeur_societale": "Prolonger la durée de vie des appareils et des-abonnements déjà payés, réduire les déchets électroniques et éviter l'exclusion numérique des personnes minimale.",
+   "solution": "Une plateforme communautaire permet à des=testeurs anonimes..tester une nouvelle version sur leur appareil et dahn.de signaler les régressions: session impossible, perte de synchronisation, inncompatibilité Android. Chaque version reçoit une compatibilité globale et besk rights à l' utilisateur avant installation.",
+   "pourquoi_agents": "Les agents classent les المع signalements par version, par appareil et par type de régression,把他们翻訳这么大 enement fiches lisibles et177c disqualifient automatiquement les testeurs ``en只是为了凑数:lвымoùre. LeswqinternesLes et``api``product meilleur âge une réserveférencée par agents .",
+   "pourquoi_maintenant": "Android 15 et fragmentation des versions Создают un vide croissant entre la version publiée par les éditeurs et la réalité des appareils encore utilisés.",
+   "canal": "communautes",
+   "premier_client": "Communautés de不难 dé,er, groupes de lecture sans date, association de defence des consommateurs et repair cafes belges et luxembourgeois.",
+   "modele_revenu": "Contributions volontaires de 3 euros par test validé et abonnement Sideload de 4,99 euros par mois pour历史完备 alerte versions avant mise à jour.",
+   "prix": "3 euros par test de contribution ou 4,99 euros par mois d'alerte personnalisée.",
+   "premier_test": "Organiser un appel à testeurs volontaire 온라인es rester viaformatoXDOCY_AMAR dossiers diário pendant deux semaines sur trois applicationsсовре.maints signalées, puis publier les premiers rapportsManufacturing sans profit.",
+   "audace": 9,
+   "origine": "ancree",
+   "lentille": "pour-les-oublies",
+   "cerveau": "minimax",
+   "gisement": {
+    "id": "g86",
+    "nom": "Mises à jour dégradant l'expérience utilisateur",
+    "n": 6,
+    "force": 3.499
+   },
+   "sources": [],
+   "id": "i0260",
+   "critique": {
+    "valeur_societale": 9,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 3,
+    "distribution": 5,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le modèle de monétisation est trop faible et trop dépendant de la validation manuelle des tests. Le paiement de 3€ par test est une micro-transaction qui ne génère pas de trésorerie rapide et ne garantit pas l'engagement nécessaire pour construire une base de données critique. La distribution via les communautés est trop lente pour valider un MVP.",
+    "amelioration": "Transformer la plateforme d'abord en un service de triage de données (B2B2C) pour les développeurs d'applications ou les mainteneurs de ROM. Au lieu de payer le testeur, vendre l'accès API aux rapports de bugs filtrés par l'IA (classification par version/appareil/régression) pour une petite redevance mensuelle. Cela sécurise le revenu, attire les développeurs (qui ont besoin de ces données) et utilise le testeur comme source de données gratuite, renforçant ainsi le 'fossé de données' (data moat) avant de monétiser l'utilisateur final avec l'alerte Sideload.",
+    "juge": "glm"
+   },
+   "score": 6.800000000000001,
+   "elo": 1452,
+   "final": {
+    "total": 5.56,
+    "composantes": {
+     "douleur_prouvee": 8.7475,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 6.800000000000001,
+     "tournoi": 2,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "CheckSanté Privée",
+   "arene": "local-et-territoire",
+   "probleme": "Les patients n'ont aucun moyen simple de vérifier le niveau de confidentialité des applications de santé avant de les utiliser.",
+   "pour_qui": "Résidents frontaliers et citoyens locaux qui utilisent des applis santé variées (Doctolib, Qare).",
+   "valeur_societale": "Crée une culture de la transparence sur la vie privée dans la santé, poussant les acteurs à s'améliorer.",
+   "solution": "Un site web avec un agent IA qui analyse les conditions d'utilisation des applis santé (via des données publiques) et leur attribue un score de confidentialité, avec des alertes SMS pour les mises à jour.",
+   "pourquoi_agents": "L'agent scrape et analyse 50+ applis santé simultanément, puis notifie chaque utilisateur, tâche impossible à l'échelle humaine.",
+   "pourquoi_maintenant": "Les frontaliers utilisent des applis belges, françaises et luxembourgeoises, multipliant les risques ; les régulations évoluent (ex. DSA).",
+   "canal": "seo-programmatique",
+   "premier_client": "Cibler les requêtes Google comme « Doctolib confidentialité avis » ou « appli santé sécurisée frontaliers ». Contacter les auteurs de plaintes App Store.",
+   "modele_revenu": "Donations via Buy Me a Coffee (pas de prix fixe), avec potentiel d'abonnement premium (2 €/mois pour alertes personnalisées).",
+   "prix": 0,
+   "premier_test": "Créer une page « Doctolib score confidentialité 2025 », la promouvoir sur LinkedIn frontaliers, et collecter les visites. Si 50 visiteurs en 2 semaines, lancer le paiement.",
+   "audace": 7,
+   "origine": "ancree",
+   "lentille": "dix-fois-moins-cher",
+   "cerveau": "deepseek",
+   "gisement": {
+    "id": "g45",
+    "nom": "Violations de confidentialité et spam dans les apps de santé",
+    "n": 4,
+    "force": 5.415
+   },
+   "sources": [],
+   "id": "i0140",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 4,
+    "distribution": 6,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le risque juridique est élevé car l'IA ne fait que *analyser* des conditions d'utilisation, mais l'utilisateur peut interpréter ce score comme un conseil juridique ou un diagnostic de sécurité définitif. De plus, le modèle de revenu basé sur les dons est trop fragile pour garantir la pérennité du projet.",
+    "amelioration": "Transformer le 'score' subjectif en 'profil de risque actionnable' (ex: 'Risque élevé de monétisation des données' vs 'Risque faible de partage inter-opérateurs'). Cibler initialement une niche réglementaire précise (ex: conformité RGPD spécifique aux données de santé transfrontalières) pour créer une autorité incontestable avant de généraliser.",
+    "juge": "glm"
+   },
+   "score": 6.8999999999999995,
+   "elo": 1452,
+   "final": {
+    "total": 5.36,
+    "composantes": {
+     "douleur_prouvee": 10,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 6.8999999999999995,
+     "tournoi": 2,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Moteur de FAQ zéro-dépendance pour petit site",
+   "arene": "donnees-et-api",
+   "probleme": "Les piles logicielles modernes sont lentes, surchargées de fonctionnalités et cassent à chaque mise à jour de dépendance.",
+   "pour_qui": "Développeurs web fatigués de la maintenance, associations et petites entreprises qui veulent une FAQ autonome.",
+   "valeur_societale": "Redonne le temps aux développeurs et permet aux organisations modestes d'avoir un site fonctionnel sans abonnement ou infrastructure complexe.",
+   "solution": "Un agent IA qui génère, déploie et met à jour un site FAQ statique en HTML pur, sans aucune dépendance, à partir d'un simple fichier Markdown. L'agent surveille les bugs et applique des correctifs automatiques.",
+   "pourquoi_agents": "L'agent travaille 24h/24 pour corriger les bugs, optimiser les performances et assurer la compatibilité navigateur sans intervention humaine.",
+   "pourquoi_maintenant": "Les plaintes sur la lourdeur du web moderne explosent (exemple : les 4 bugs graves sur un moteur PHP). Le marché des micro-sites légers est prêt.",
+   "canal": "place-de-marche-api",
+   "premier_client": "10 développeurs sur Stack Overflow ou Hacker News qui cherchent un remplacement à leur lourd CMS PHP pour leur blog ou site associatif.",
+   "modele_revenu": "Abonnement à l'agent de maintenance : 5€/mois pour un site suivi, ou licence unique à 30€ pour le générateur seul.",
+   "prix": 5,
+   "premier_test": "Publier un agent sur Apify Store qui génère un site FAQ à partir d'un Google Doc, connecter Stripe, et vendre 10 licences à des développeurs Hacker News pour 5€.",
+   "audace": 7,
+   "origine": "ancree",
+   "lentille": "renverser-la-plainte",
+   "cerveau": "deepseek",
+   "gisement": {
+    "id": "g17",
+    "nom": "Simplification du développement web",
+    "n": 4,
+    "force": 2.267
+   },
+   "sources": [],
+   "id": "i0303",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 7,
+    "argent_rapide": 8,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le marché des générateurs de sites statiques est saturé (Hugo, Jekyll, etc.). La promesse de 'correction automatique de bugs' par IA est une promesse technique extrêmement forte et difficile à garantir à 100% sans introduire des dépendances complexes dans l'agent lui-même, ce qui contredit l'esprit 'zéro-dépendance' de la solution.",
+    "amelioration": "Ne pas se positionner comme un simple 'générateur de FAQ', mais comme un 'Moteur de Résilience Web' spécialisé dans l'optimisation des Core Web Vitals et de la performance (Lighthouse) pour les micro-sites. L'agent doit se vendre comme un gardien de la performance, pas seulement un correcteur de bugs, en intégrant des métriques de vitesse et d'accessibilité comme valeur ajoutée principale.",
+    "juge": "glm"
+   },
+   "score": 7.8999999999999995,
+   "elo": 1484,
+   "final": {
+    "total": 5.33,
+    "composantes": {
+     "douleur_prouvee": 5.6674999999999995,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.8999999999999995,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Papa-Maman Pilote le Grind",
+   "arene": "familles-et-aines",
+   "probleme": "Les parents ne comprennent pas pourquoi leur enfant panique pour des quêtes hebdomadaires qui expirent, et n'ont ni langage ni outils pour cadrer ce temps de jeu sous pression.",
+   "pour_qui": "Parents d'ados et de préados accrochés aux jeux live-service, qui veulent un dialogue factuel plutôt qu'un conflit sur « arrête ton jeu ».",
+   "valeur_societale": "Réduire la pression psychologique du FOMO sur les mineurs en outillant les parents avec des faits et des rituels de jeu sains, sans surveillance intrusive.",
+   "solution": "Un service familial : fiches « ce que ce jeu exige de ton enfant par semaine » générées par agents, un contrat de jeu imprimable (quels événements on garde, lesquels on skip) et un résumé hebdo lisible par les deux parties.",
+   "pourquoi_agents": "Chaque jeu est un casse-tête différent qui change chaque semaine ; les agents produisent et actualisent les fiches et résumés pour chaque famille sans intervention humaine.",
+   "pourquoi_maintenant": "La préoccupation parentale sur les designs addictifs culmine (régulations en discussion en Europe) et aucun produit grand-public ne parle le langage des deux côtés.",
+   "canal": "contenu-court",
+   "premier_client": "Vidéos courtes « ce que Fortnite/Genshin exige vraiment de ton ado » sur TikTok/Reels parentaux + groupes Facebook de parents ; vente directe via le lien en bio.",
+   "modele_revenu": "Achat unique du kit familial + abonnement pour le suivi hebdo du ou des jeux de l'enfant.",
+   "prix": "9 € le kit, 3 € par mois le suivi",
+   "premier_test": "2 semaines : distribuer gratuitement 3 fiches de jeux populaires en bio TikTok, mesurer téléchargements et convertir en achat du kit complet avec la liste de jeux choisie par les familles.",
+   "audace": 8,
+   "origine": "ancree",
+   "lentille": "pour-les-oublies",
+   "cerveau": "glm",
+   "gisement": {
+    "id": "g35",
+    "nom": "Game design stressant et chronophage",
+    "n": 2,
+    "force": 2.472
+   },
+   "sources": [],
+   "id": "i0281",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "La défensibilité est faible : un assistant IA gratuit (ex. ChatGPT) peut déjà générer des fiches de jeu équivalentes, et le contrat imprimable est facilement copiable sans abonnement.",
+    "amelioration": "Ajouter un tableau de bord interactif privé (données de progression réelles de l'enfant, agrégées via API de jeu ou saisie manuelle) qui crée une dépendance aux données historiques et un effet de réseau familial, rendant la copie difficile.",
+    "juge": "deepseek"
+   },
+   "score": 7.199999999999999,
+   "elo": 1484,
+   "final": {
+    "total": 5.29,
+    "composantes": {
+     "douleur_prouvee": 6.18,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.199999999999999,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Le Vue du Parc — crowdsourcing مقابل en direct et ingeniería social",
+   "arene": "culture-et-loisirs",
+   "probleme": "Les informations temporaires des parcs sont coûteuses à maintenir et souvent absentes, alors que les visiteurs sont déjà là pour les signaler.",
+   "pour_qui": "Parcs qui veulent maintenir une carte précise et visiteurs qui acceptent de contribuer pour gagner du temps.",
+   "valeur_societale": "Améliore l'information sansyiyi recruter d Permanents supplémentaire et valorise l'entraide entre visiteurs.",
+   "solution": "Un stand de signalement dans l'application, validé par une double confirmation et une récompense en points, fournit aux parcs un flux d'observations transactes et traçables, avec un tableau de bord simple des attractions.",
+   "pourquoi_agents": "Les agents nettoient, vérifient la cohérence et transforment les signalements en un tableau de bord compréhensible pour les équipes du parc.",
+   "pourquoi_maintenant": "Les parcs cherchent à réduire les files et les réclamations; une solution participative Cast 낮은 friction peut être déployée rapidement.",
+   "canal": "lancement",
+   "premier_client": "Les dix premiers clients dans un groupe Facebook dedevelopmenters de parcs, puis via Product Hunt et une démonstration auprès de cinq parcs belges.",
+   "modele_revenu": null,
+   "prix": "1 200 euros par mois par parc, avec mise en service offerte le premier mois.",
+   "premier_test": "Pendant deux semaines, faire 신Hangzhou deux signalements quotidiens dans un parc partenaire et présenter le tableau de bord à son responsable; obtenir un bon de commande de 1 200 euros.",
+   "audace": 9,
+   "origine": "ancree",
+   "lentille": "meilleure-solution",
+   "cerveau": "minimax",
+   "gisement": {
+    "id": "g80",
+    "nom": "Données temps réel des parcs d'attractions",
+    "n": 3,
+    "force": 2.001
+   },
+   "sources": [],
+   "id": "i0253",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 6,
+    "avantage_agents": 8,
+    "defensibilite": 7,
+    "argent_rapide": 7,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le modèle de distribution et de vente est fondamentalement déconnecté de la réalité du marché public. Vendre un service de 1200€/mois à des parcs (entités publiques ou semi-publiques) via Product Hunt ou des groupes de développeurs est une erreur de junior. Les cycles de vente dans le secteur des parcs sont longs, bureaucratiques et nécessitent des appels formels et des appels d'offres, rendant l'objectif 'premier paiement sous 30 jours' irréaliste.",
+    "amelioration": "Réduire le prix initial à un modèle 'freemium' ou 'pay-per-use' (ex: 50€ pour les 100 premiers signalements validés) pour prouver le ROI. Cibler en premier lieu les 'opérateurs privés' de parcs ou les associations de gestion de parcs (les entités qui ont le budget et la rapidité de décision), et non les administrations municipales.",
+    "juge": "glm"
+   },
+   "score": 7.3,
+   "elo": 1484,
+   "final": {
+    "total": 5.05,
+    "composantes": {
+     "douleur_prouvee": 5.0024999999999995,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.3,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Score d'accessibilité VoiceOver par scan automatisé",
+   "arene": "donnees-et-api",
+   "probleme": "Les apps dégradent leur accessibilité VoiceOver à chaque mise à jour sans que personne ne le détecte avant les plaintes des non-voyants.",
+   "pour_qui": "Développeurs et éditeurs d'apps mobiles iOS, associations de non-voyants, testeurs d'accessibilité.",
+   "valeur_societale": "Les applications mobiles redeviennent utilisables par les personnes non-voyantes, sans attendre qu'un utilisateur ait bloqué une fonctionnalité.",
+   "solution": "Un scan automatisé qui exécute votre IPA iOS avec VoiceOver simulé, détecte les éléments masqués, non étiquetés ou non navigables, et génère un rapport hiérarchisé avant chaque release App Store.",
+   "pourquoi_agents": "Nos agents testent en continu des milliers d'écrans, rédigent les correctifs suggérés et vérifient la non-régression après chaque build, 24h/24, à un coût marginal quasi nul.",
+   "pourquoi_maintenant": "Apple impose des critères d'accessibilité de plus en plus stricts sur l'App Store et le RGAA européen devient contraignant pour les éditeurs.",
+   "canal": "place-de-marche-api",
+   "premier_client": "Les 10 premiers : pubsions gratuites dans r/iOSProgramming, r/a11y, sur dev.to et auprès d'éditeurs FR BE d'apps grand public identifiés comme générant des avis négatifs VoiceOver sur l'App Store BE/FR.",
+   "modele_revenu": "Pay-per-scan (packs de 5, 25 ou illimité) + abonnement CI pour intégration GitHub Actions.",
+   "prix": "29€/scan ou 199€/mois illimité",
+   "premier_test": "Scanner gratuitement 20 apps iOS publiques avec avis négatifs VoiceOver et publier les rapports ouverts, puis proposer aux éditeurs concernés de corriger via un pack de 5 scans à 145€.",
+   "audace": 7,
+   "origine": "ancree",
+   "lentille": "dix-fois-moins-cher",
+   "cerveau": "mimo",
+   "gisement": {
+    "id": "g81",
+    "nom": "Accessibilité VoiceOver défaillante",
+    "n": 2,
+    "force": 1.831
+   },
+   "sources": [],
+   "id": "i0061",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "distribution": 6,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "La défensibilité est faible : un assistant IA gratuit (ex. GPT-5 avec vision) pourrait bientôt analyser des captures d'écran iOS et détecter les problèmes d'accessibilité sans infrastructure propriétaire, rendant le scan payant obsolète.",
+    "amelioration": "Ajouter une couche de données propriétaires : un référentiel d'éléments VoiceOver cassés par version iOS, mis à jour en continu par les scans, et un réseau de testeurs non-voyants rémunérés pour valider les corrections, créant une barrière à l'entrée par la confiance et la précision terrain.",
+    "juge": "deepseek"
+   },
+   "score": 7.000000000000001,
+   "elo": 1484,
+   "final": {
+    "total": 4.89,
+    "composantes": {
+     "douleur_prouvee": 4.5775,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.000000000000001,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Marché du dimanche : agent qui négocie en votre nom les paniers de producteurs",
+   "arene": "local-et-territoire",
+   "probleme": "Les circuits courts existent, mais les habitants peinent à s'organiser en groupes d'achat pour avoir accès aux prix grossistes des producteurs.",
+   "pour_qui": "Habitants de communes périurbaines, copropriétés, groups d'habitants organisés.",
+   "valeur_societale": "Rend le circuit court aussi accessible que la grande distribution, en gardant la rémunération chez le producteur local.",
+   "solution": "Un agent collecte les demandes hebdomadaires de voisinage, formule une commande groupée au producteur via e-mail, gère répartitions et relances, tout en bilan CO2/km évité.",
+   "pourquoi_agents": "Une personne physique ne tiendrait pas la cadence hebdomadaire multi-producteurs ; l'agent décroche le travail ingrat (rappels, split de commandes).",
+   "pourquoi_maintenant": "La crise alimentaire et l'inflation ont rendu les prix des producteurs sur place attractifs, et le coaching groupé manque cruellement.",
+   "canal": "communautes",
+   "premier_client": "10 premiers : groupes WhatsApp/Ring d'immeubles, pages 'zéro déchet +[ville]', forums de résidents de résidences neuves.",
+   "modele_revenu": "Commission discrète fixe sur commande groupée.",
+   "prix": "2,50 €/panier groupé",
+   "premier_test": "2 semaines : lancer 3 commandes groupées pilote avec 10 foyers chacun, avec commission réelle encaissée, dans 1 commune test.",
+   "audace": 8,
+   "origine": "visionnaire",
+   "lentille": "luxe-democratise",
+   "cerveau": "mimo",
+   "gisement": null,
+   "sources": [
+    "annonces",
+    "openfda"
+   ],
+   "id": "i0505",
+   "critique": {
+    "valeur_societale": 9,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 7,
+    "argent_rapide": 8,
+    "distribution": 8,
+    "faisabilite": 9,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le risque opérationnel et la gestion de la confiance sont sous-évalués. L'agent gère la commande, mais la logistique physique (point de collecte, gestion des retards, répartition des paiements) est un point de friction critique. Si un panier est en retard ou endommagé, l'agent IA n'a aucune responsabilité physique, ce qui peut détruire la confiance de la communauté et annuler l'effet 'circuit court'. De plus, le modèle de commission est trop faible pour couvrir les coûts de gestion de la relation client (CRM, relances, support) si le volume n'est pas massif.",
+    "amelioration": "Transformer l'agent en un 'gestionnaire de flux logistique' en intégrant un système de dépôt/pré-paiement sécurisé (escrow) et en formalisant un point de collecte unique (hub) ou un créneau de livraison fixe par zone. L'agent doit garantir la traçabilité de la commande jusqu'au point de retrait, et la commission doit être structurée en deux paliers : une petite commission fixe pour la gestion, et un bonus de performance basé sur le taux de succès de livraison/collectage.",
+    "juge": "glm"
+   },
+   "score": 8.200000000000001,
+   "elo": 1484,
+   "final": {
+    "total": 4.16,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 8.200000000000001,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "CréDoct : certification à l'usage d'une affirmation scientifique ('97 % des climatologues s'accordent') avec preuve datée et exportable en API",
+   "arene": "apprendre",
+   "probleme": "Sur les réseaux, chacun assène des chiffres scientifiques non sourcés ; il n'existe pas d'outil standard pour certifier instantanément qu'une affirmation a une base réelle.",
+   "pour_qui": "Enseignants, étudiants, créateurs de contenu, community managers d'associations scientifiques, modérateurs de forums.",
+   "valeur_societale": "Fournir un infrastructure publique de vérification factuelle ouverte, utilisable partout où une affirmation est énoncée.",
+   "solution": "API + widget où l'on colle une affirmation, les agents cherchent la littérature et les données (OpenAlex, arXiv, Eurostat, Banque mondiale), et renvoient un verdict sourcé avec la date de dernière vérification.",
+   "pourquoi_agents": "La vérification multi-sources et multi-langues d'une infinité d'affirmations, en continu 24/7, n'est rentable qu'avec des agents à centime la tâche.",
+   "pourquoi_maintenant": "La crise de confiance post-generative AI crée une demande sociale de badges de vérification ; les catalogues MCP et RapidAPI permettent une distribution instantanée.",
+   "canal": "place-de-marche-api",
+   "premier_client": "Publier sur RapidAPI, Apify Store et MCP Registry, poster sur r/science et r/AskHistorians (10 premiers développeurs abonnés).",
+   "modele_revenu": "Pay-per-use API + abonnement dev",
+   "prix": "0,01 €/vérification, forfait 20 €/mois",
+   "premier_test": "Publier l'API sur RapidAPI, encaisser 10 forfaits de 20 €/mois dans les 14 jours.",
+   "audace": 9,
+   "origine": "visionnaire",
+   "lentille": "cimetiere",
+   "cerveau": "mimo",
+   "gisement": null,
+   "sources": [
+    "eurostat",
+    "openalex"
+   ],
+   "id": "i0547",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 7,
+    "distribution": 7,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "La défensibilité est faible : un LLM gratuit peut reproduire la vérification, rendant l'API difficile à monétiser à long terme.",
+    "amelioration": "Se spécialiser sur un domaine à fort enjeu (climat, santé) et obtenir des certifications officielles ou des partenariats avec des revues scientifiques pour garantir l'unicité des sources.",
+    "juge": "deepseek"
+   },
+   "score": 7.25,
+   "elo": 1484,
+   "final": {
+    "total": 3.94,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.25,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Météo sommelier du sommeil par quartiers",
+   "arene": "sante-bien-etre",
+   "probleme": "La qualité du sommeil dépend du bruit, de la lumière et de la chaleur, mais personne ne publie de données de qualité de sommeil environnementale par quartier, accessibles au grand public.",
+   "pour_qui": "Les déménageurs, étudiants et parents qui choisissent un logement sans savoir ce que le quartier fera à leur sommeil.",
+   "valeur_societale": "Un facteur de santé publique invisible devient visible : les gens choisissent leur logement avec une donnée de bien-être en plus, et les communes sont poussées à agir sur le bruit.",
+   "solution": "Des agents croisent données ouvertes (bruit, luminosité, température, trafic aérien) pour générer un 'indice de sommeil' par quartier, publié en pages gratuites comparables et partageables.",
+   "pourquoi_agents": "Collecter, nettoyer et mettre à jour des données hétérogènes par commune belge, française et luxembourgeoise chaque semaine est une tâche de flotte d'agents, pas d'un analyste.",
+   "pourquoi_maintenant": "Les données environnementales ouvertes explosent (rues bruyantes cartographiées par l'UE) et le marché du déménagement redémarre chaque printemps.",
+   "canal": "seo-programmatique",
+   "premier_client": "Pages par commune et quartier indexées sur des recherches type 'bruit la nuit quartier Gare Luxembourg' ; les 10 premiers clients sont des déménageurs qui paient pour un rapport détaillé avant de signer.",
+   "modele_revenu": "Freemium : indice public gratuit, rapport détaillé à l'unité et widget pour les sites immobiliers locaux.",
+   "prix": "4 euros le rapport détaillé à l'unité, 29 euros par mois pour l'accès complet.",
+   "premier_test": "Publier 50 pages quartier Belgique-Luxembourg, ajouter un paiement Gumroad sur le rapport complet, mesurer combien de visiteurs achètent en 14 jours.",
+   "audace": 8,
+   "origine": "visionnaire",
+   "lentille": "luxe-democratise",
+   "cerveau": "glm",
+   "gisement": null,
+   "sources": [
+    "brevets",
+    "github"
+   ],
+   "id": "i0407",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 4,
+    "distribution": 6,
+    "faisabilite": 7,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "L'indice de sommeil est une donnée composite interprétée comme un conseil médical implicite (qualité du sommeil), ce qui pourrait être perçu comme un conseil médical personnalisé sans base professionnelle, surtout si des utilisateurs l'utilisent pour décider d'un logement pour un enfant ou une personne malade.",
+    "amelioration": "Rebaptiser l'indice en 'score de confort nocturne' (bruit, lumière, température) sans mention explicite du sommeil, et ajouter un disclaimer clair que ce n'est pas un conseil médical. Cibler uniquement les déménageurs et les sites immobiliers comme clients B2B, pas le grand public directement.",
+    "juge": "deepseek"
+   },
+   "score": 6.6499999999999995,
+   "elo": 1484,
+   "final": {
+    "total": 3.8,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 6.6499999999999995,
+     "tournoi": 4,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Élagage Numérique : couper les abonnements oubliés",
+   "arene": "grand-public",
+   "probleme": "De nombreux尽责abonnements sont renouvelés sans usage réel, surtout lorsque plusieurs membres d'un foyer partagent des cartes et des services.",
+   "pour_qui": "Particuliers, familles et étudiants qui veulent reprendre le contrôle de leur budget numérique.",
+   "valeur_societale": "Récupérer de l'argent perdu dans des services inutilisés et éviter les prélèvements，也有飛रholder ignored.",
+   "solution": "Un tableau de bord qui centralise les abonnements déclarés par l'utilisateur, calcule le coût réel et propose des étapes de résiliation, sans来处理 de données bancaires sensibles.",
+   "pourquoi_agents": "Les agents lisent les contrats et conditions d'accès, repèrent les échéances et exécutent un assistant de résiliation quand l'utilisateur l'autorise, avec journal et confirmation humaine.",
+   "pourquoi_maintenant": "Les consommateurs cherchent des économies rapides, et les interfaces d'abonnement se multiplient dans tous les pays.",
+   "canal": "extension-navigateur",
+   "premier_client": "Les 10 premiers clients via les newsletters d'économies, les communautés de budgeting et les créateurs de contenu.",
+   "modele_revenu": "Freemium avec abonnement premium de 1,99 euros par mois et commission de 2 euros sur les économies confirmées.",
+   "prix": "1,99 euros par mois, ou 6,90 euros par an.",
+   "premier_test": "Pendant deux semaines, faire analyser 30 abonnements réels à 15 volontaires et mesurer les résiliations préparées et l'économie récupérée.",
+   "audace": 7,
+   "origine": "visionnaire",
+   "lentille": "collision-api",
+   "cerveau": "minimax",
+   "gisement": null,
+   "sources": [
+    "openfda",
+    "entsoe"
+   ],
+   "id": "i0492",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "faible",
+    "objection": "Le modèle freemium + commission repose sur une confiance aveugle dans la déclaration des économies par l'utilisateur ; sans accès réel aux comptes bancaires, vous ne pouvez pas vérifier les résiliations effectives, ce qui rend la monétisation fragile et le passage à l'échelle incertain.",
+    "amelioration": "Mutualiser l'outil avec un agrégateur bancaire open-source (ex. GoCardless) pour vérifier les prélèvements réels avant/après, et remplacer la commission par un abonnement premium unique à 3,99 euros par mois, sans commission variable, ce qui supprime le risque de fraude et renforce la crédibilité.",
+    "juge": "deepseek"
+   },
+   "score": 7.25,
+   "elo": 1452,
+   "final": {
+    "total": 3.74,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.25,
+     "tournoi": 2,
+     "faible_risque": 10
+    }
+   }
+  },
+  {
+   "titre": "Le Fil : la lettre de sécurité quotidienne des aînés pour leurs enfants aidants",
+   "arene": "grand-public",
+   "probleme": "Les enfants d'aînés vivent dans l'angoisse silencieuse : leur parent va-t-il bien aujourd'hui, sans qu'aucune caméra ni intrusion ne le surveille ?",
+   "pour_qui": "Les millions d'adultes aidants à distance dont un parent vit seul, en Belgique, France ou Luxembourg.",
+   "valeur_societale": "Maintenir l'autonomie des aînés plus longtemps chez eux, réduire l'isolement et soulager les aidants sans instaurer de surveillance intrusive.",
+   "solution": "Un abonnement familial où des agents IA mènent chaque jour une courte conversation naturelle (téléphone ou SMS) avec l'aîné, détectent les ruptures de rythme et de ton, et envoient un « tout va bien » apaisant — ou une alerte — aux enfants.",
+   "pourquoi_agents": "Une organisation d'agents peut tenir 24h/24 des milliers de conversations douces et cohérentes, ce qu'aucun humain ni appel de centre d'appel classique ne peut faire à ce prix.",
+   "pourquoi_maintenant": "Les voix IA deviennent naturelles et abordables, et la génération pilote des aidants est déjà habituée à payer pour la tranquillité numérique de ses parents.",
+   "canal": "communautes",
+   "premier_client": "Les groupes Facebook et forums d'aidants (aidants Belgique, France Aidants) où l'on rejoint honnêtement les discussions pour offrir 15 jours d'essai payé au premier euro.",
+   "modele_revenu": "Abonnement familial mensuel avec paiement en ligne direct.",
+   "prix": "19 euros par mois et par famille.",
+   "premier_test": "En 2 semaines : une page de vente, un agent vocal de démonstration testable en ligne, et 10 familles recrutées dans deux groupes d'aidants pour un premier mois payé 9 euros.",
+   "audace": 9,
+   "origine": "visionnaire",
+   "lentille": "futur-a-rebours",
+   "cerveau": "glm",
+   "gisement": null,
+   "sources": [
+    "gutenberg",
+    "annonces"
+   ],
+   "id": "i0533",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 5,
+    "distribution": 6,
+    "faisabilite": 6,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le passage à l'échelle repose sur la détection fine de ruptures de rythme/ton par des agents IA sur une population âgée : faux positifs (peur injustifiée) ou faux négatifs (chute, détérioration non détectée) exposent à une responsabilité civile lourde et à une perte de confiance immédiate ; sans données d'entraînement propres ni protocole d'escalade humain validé, la promesse 'tout va bien' est juridiquement et éthiquement fragile.",
+    "amelioration": "Restreindre le périmètre initial à un simple check-in de présence + humeur (pas d'interprétation clinique), avec protocole d'escalade vers un contact humain désigné en cas de doute, consentement écrit de l'aîné et des enfants, mentions claires 'ne remplace pas un service d'urgence', et collecter dès le premier mois des paires (conversation, jugement humain) pour construire un jeu de données annoté propriétaire qui devient le vrai actif défendable.",
+    "juge": "mimo"
+   },
+   "score": 6.75,
+   "elo": 1516,
+   "final": {
+    "total": 3.52,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 6.75,
+     "tournoi": 6,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "EduPatent: Leçons Basées sur les Brevets",
+   "arene": "apprendre",
+   "probleme": "L'éducation scientifique manque de cas pratiques réels et motivants pour enseigner la physique, la chimie ou la biologie.",
+   "pour_qui": "Étudiants du supérieur et enseignants cherchant des supports concrets.",
+   "valeur_societale": "Amélioration de l'apprentissage STEM par l'ancrage dans des innovations technologiques documentées.",
+   "solution": "Génération automatique de fiches pédagogiques (exercices, explications) basées sur les détails techniques de brevets simples ou historiques.",
+   "pourquoi_agents": "Transformation rapide de langage patentiel complexe en contenu pédagogique adapté au niveau scolaire.",
+   "pourquoi_maintenant": "Demande croissante pour des ressources éducatives numériques gratuites ou peu coûteuses post-Covid.",
+   "canal": "place-de-marche-numerique",
+   "premier_client": "Plateformes comme Etsy ou Gumroad où vendent des profs indépendants.",
+   "modele_revenu": "Vente de packs de cours thématiques.",
+   "prix": 9,
+   "premier_test": "Publier 3 packs « Physique Quantique » et « Génétique » sur Gumroad et promouvoir sur Reddit r/Teachers.",
+   "audace": 8,
+   "origine": "visionnaire",
+   "lentille": "bien-commun",
+   "cerveau": "qwen",
+   "gisement": null,
+   "sources": [
+    "openfda",
+    "brevets"
+   ],
+   "id": "i0432",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 9,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 7,
+    "distribution": 7,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le risque juridique réside dans l'utilisation commerciale de données techniques brevetées, même publiques. De plus, la concurrence des ressources éducatives gratuites (Khan Academy, etc.) est telle que la valeur ajoutée du 'pack' doit être extrêmement élevée pour justifier un achat payant, au-delà de la simple simplification du jargon.",
+    "amelioration": "Ne pas vendre de simples 'fiches de cours', mais des 'kits pédagogiques d'analyse de cas réels' (Case Study Kits). Chaque kit doit inclure le brevet original, l'analyse de l'IA (simplification du jargon), et des questions d'examen structurées pour les enseignants, transformant le produit en un outil d'évaluation et de scénarisation de cours, et non seulement en un support de lecture.",
+    "juge": "glm"
+   },
+   "score": 7.699999999999999,
+   "elo": 1452,
+   "final": {
+    "total": 3.34,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.699999999999999,
+     "tournoi": 2,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "GeoProvenance : Atteste la date/lieu d'un visuel via données climatiques croisées et fingerprint multimodal",
+   "arene": "createurs",
+   "probleme": "Les acheteurs d'œuvres photographiques ou journalistiques ne peuvent pas vérifier qu'une image a bien été prise au lieu/date annoncés.",
+   "pour_qui": "Photojournalistes, documentalistes, photographes de reportage, collectionneurs, galeries en ligne.",
+   "valeur_societale": "Lutte contre la fake news et les manipulations d'images en fournissant une source de vérification indépendante.",
+   "solution": "Nos agents croisent l'image (météo, topographie) avec les datasets Hugging Face et les archives NASA Earthdata pour générer un score de cohérence lieu/temps publié en page web vérifiable.",
+   "pourquoi_agents": "Des agents chaînent automatiquement modèles de vision, requêtes geospatiales et scoring, 24h/24, pour traiter des volumes impossibles à l'humain.",
+   "pourquoi_maintenant": "L'IA générative a inondé les médias de faux visuels et les bases NASA climatiques sont désormais ouphement documentées et téléchargeables.",
+   "canal": "place-de-marche-api",
+   "premier_client": "Sur RapidAPI et auprès des rédactions indépendantes contactées par e-mail via Hacker News et Product Hunt.",
+   "modele_revenu": "Pay-per-call API via RapidAPI ou Apify Store.",
+   "prix": "0,10 € / appel API",
+   "premier_test": "Publier l'API sur RapidAPI avec 100 appels gratuits et viser 10 clients payants en 14 jours (minimum 5 €/mois chacun).",
+   "audace": 9,
+   "origine": "visionnaire",
+   "lentille": "collision-api",
+   "cerveau": "mimo",
+   "gisement": null,
+   "sources": [
+    "nasa-firms",
+    "hf"
+   ],
+   "id": "i0443",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 9,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 4,
+    "distribution": 5,
+    "faisabilite": 5,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "La preuve par données climatiques est faible : on peut prendre une photo une autre journée avec un temps similaire ou utiliser des images d'archive. De plus, la fiabilité des fingerprints face aux deepfakes et recadrages est discutable.",
+    "amelioration": "Au lieu d'un simple score de cohérence, générer un certificat horodaté sur une blockchain publique (ex. Ethereum) avec signature d'un tiers de confiance (agence météo nationale) et intégrer un appel à la communauté pour challenger chaque résultat, créant ainsi un réseau de vérification décentralisé et monétisable.",
+    "juge": "deepseek"
+   },
+   "score": 6.75,
+   "elo": 1452,
+   "final": {
+    "total": 3.12,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 6.75,
+     "tournoi": 2,
+     "faible_risque": 5
+    }
+   }
+  },
+  {
+   "titre": "Frontière : l'API des trajets et perturbations transfrontaliers Belgique–Luxembourg",
+   "arene": "donnees-et-api",
+   "probleme": "Chaque matin, des dizaines de milliers de travailleurs frontaliers découvrent leurs perturbations de train en surfant sur des sites distincts ; les timetable sont publics mais illisibles par machine et irremplacés par du temps réel.",
+   "pour_qui": "Éditeurs d'applications RH et de relocation, apps de mobilité, plateformes de coworking, occupational health providers, et agents IA de logistique.",
+   "valeur_societale": "Réduction du stress et de l'absentéisme des travailleurs frontaliers, meilleure organisation des transports et incitation à des trajets plus sobres (modal share, vélo-train).",
+   "solution": "Une API unifiée SNCB/CFL/TRA/Eurostat qui renvoie, pour un trajet domicile-travail, les gminutions réelles, les correspondances avec marge de confiance, les perturbations prévues, le coût, et l'empreinte CO2 comparée à la voiture.",
+   "pourquoi_agents": "Un agent peut calculer le meilleur plan de départ (leave-home-at), rerouter en cas de disruption et envoyer une alerte ciblée, sans integremultiples API ni parsing de GTFS.",
+   "pourquoi_maintenant": "Les données GTFS et temps réel belges et luxembourgeoises sont ouvertes, mais lesdatasetsdel=frontrières restaient cloisonnés ; la demande est visible et新政sociale.",
+   "canal": "place-de-marche-api",
+   "premier_client": "Communautés tech RH et mobilité (réseaux d最佳 practices de relocation, GitHub GTFS, forums MobilityData), puis fiche API en marque blanche pour apps de relocation luxembourgeoises.",
+   "modele_revenu": null,
+   "prix": "199 €/mois par organisation utilisatrice",
+   "premier_test": "Deux semaines : API covering 3 gares frontalières + calcul CO2, page de démo avec 5 itinéraires réels, publication sur le forum MobilityData et contact de 12 éditeurs de apps de relocation via LinkedIn et e-mail direct.",
+   "audace": 6,
+   "origine": "visionnaire",
+   "lentille": "inversion",
+   "cerveau": "minimax",
+   "gisement": null,
+   "sources": [
+    "brevets",
+    "hvd-ue"
+   ],
+   "id": "i0470",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 5,
+    "distribution": 6,
+    "faisabilite": 8,
+    "conforme": true,
+    "risque_juridique": "moyen",
+    "objection": "Le modèle de vente d'une API B2B à 199€/mois est trop lourd pour un 'argent rapide' et la dépendance aux données publiques crée un risque de responsabilité élevé en cas d'erreur de temps réel. Le marché cible (éditeurs d'apps RH) est trop large pour un premier test rapide.",
+    "amelioration": "Ne pas vendre l'API brute, mais un 'Widget de Résilience' (un composant d'interface utilisateur) pré-configuré pour les applications de mobilité. Vendre un accès 'Freemium' ou un abonnement de démarrage très bas (ex: 29€/mois) ciblant une fonctionnalité unique (ex: l'alerte de perturbation proactive) pour valider le marché avant de monter en gamme vers l'API complète.",
+    "juge": "glm"
+   },
+   "score": 7.05,
+   "elo": 1420,
+   "final": {
+    "total": 2.99,
+    "composantes": {
+     "douleur_prouvee": 0,
+     "paiement_prouve": 2,
+     "espace_libre": 3,
+     "critique": 7.05,
+     "tournoi": 0,
+     "faible_risque": 5
+    }
+   }
+  }
+ ],
+ "sante": {
+  "date": "2026-11-01",
+  "dureeSecondes": 1365,
+  "coutUsd": 0.3847,
+  "appelsModeles": 898,
+  "etapes": {
+   "radar": {
+    "secondes": 443,
+    "coutCumuleUsd": 0.0366
+   },
+   "usine": {
+    "secondes": 895,
+    "coutCumuleUsd": 0.2998
+   },
+   "enquete": {
+    "secondes": 27,
+    "coutCumuleUsd": 0.3847
+   }
+  },
+  "sources": {
+   "hn": {
+    "n": 53
+   },
+   "appstore": {
+    "n": 1013,
+    "categories": [
+     "Divertissement",
+     "Éducation",
+     "Livres",
+     "Médecine",
+     "Cuisine et boissons"
+    ]
+   },
+   "stackexchange": {
+    "n": 80
+   },
+   "lemmy": {
+    "n": 25,
+    "erreur": "The operation was aborted due to timeout"
+   }
+  },
+  "cerveaux": {
+   "deepseek": {
+    "ok": 209,
+    "echecs": 4,
+    "tauxEchec": 0.02,
+    "msMoyen": 15030,
+    "exempleErreur": "aucun fournisseur pour deepseek (openrouter : The operation was aborted due to timeout ; groq : clé absente)"
+   },
+   "qwen": {
+    "ok": 187,
+    "echecs": 0,
+    "tauxEchec": 0,
+    "msMoyen": 8585,
+    "exempleErreur": null
+   },
+   "mimo": {
+    "ok": 165,
+    "echecs": 0,
+    "tauxEchec": 0,
+    "msMoyen": 11846,
+    "exempleErreur": null
+   },
+   "mistral": {
+    "ok": 17,
+    "echecs": 0,
+    "tauxEchec": 0,
+    "msMoyen": 20108,
+    "exempleErreur": null
+   },
+   "glm": {
+    "ok": 168,
+    "echecs": 6,
+    "tauxEchec": 0.03,
+    "msMoyen": 8896,
+    "exempleErreur": "aucun fournisseur pour glm (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+   },
+   "minimax": {
+    "ok": 133,
+    "echecs": 2,
+    "tauxEchec": 0.01,
+    "msMoyen": 8456,
+    "exempleErreur": "aucun fournisseur pour minimax (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+   }
+  },
+  "stats": {
+   "brut": 834,
+   "douleurs": 520,
+   "gisements": 238,
+   "idees": 582,
+   "notees": 413,
+   "nonConformes": 169,
+   "finalistes": 32,
+   "duels": 80,
+   "enquetes": 15
+  }
+ }
+}

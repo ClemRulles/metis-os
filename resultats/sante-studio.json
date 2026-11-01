@@ -1,0 +1,97 @@
+{
+ "date": "2026-11-01",
+ "dureeSecondes": 1365,
+ "coutUsd": 0.3847,
+ "appelsModeles": 898,
+ "etapes": {
+  "radar": {
+   "secondes": 443,
+   "coutCumuleUsd": 0.0366
+  },
+  "usine": {
+   "secondes": 895,
+   "coutCumuleUsd": 0.2998
+  },
+  "enquete": {
+   "secondes": 27,
+   "coutCumuleUsd": 0.3847
+  }
+ },
+ "sources": {
+  "hn": {
+   "n": 53
+  },
+  "appstore": {
+   "n": 1013,
+   "categories": [
+    "Divertissement",
+    "Éducation",
+    "Livres",
+    "Médecine",
+    "Cuisine et boissons"
+   ]
+  },
+  "stackexchange": {
+   "n": 80
+  },
+  "lemmy": {
+   "n": 25,
+   "erreur": "The operation was aborted due to timeout"
+  }
+ },
+ "cerveaux": {
+  "deepseek": {
+   "ok": 209,
+   "echecs": 4,
+   "tauxEchec": 0.02,
+   "msMoyen": 15030,
+   "exempleErreur": "aucun fournisseur pour deepseek (openrouter : The operation was aborted due to timeout ; groq : clé absente)"
+  },
+  "qwen": {
+   "ok": 187,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 8585,
+   "exempleErreur": null
+  },
+  "mimo": {
+   "ok": 165,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 11846,
+   "exempleErreur": null
+  },
+  "mistral": {
+   "ok": 17,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 20108,
+   "exempleErreur": null
+  },
+  "glm": {
+   "ok": 168,
+   "echecs": 6,
+   "tauxEchec": 0.03,
+   "msMoyen": 8896,
+   "exempleErreur": "aucun fournisseur pour glm (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+  },
+  "minimax": {
+   "ok": 133,
+   "echecs": 2,
+   "tauxEchec": 0.01,
+   "msMoyen": 8456,
+   "exempleErreur": "aucun fournisseur pour minimax (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+  }
+ },
+ "stats": {
+  "brut": 834,
+  "douleurs": 520,
+  "gisements": 238,
+  "idees": 582,
+  "notees": 413,
+  "nonConformes": 169,
+  "finalistes": 32,
+  "duels": 80,
+  "enquetes": 15
+ }
+}
