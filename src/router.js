@@ -24,6 +24,9 @@ export const FOURNISSEURS_PAR_DEFAUT = [
       llama: "meta-llama/llama-3.1-8b-instruct",
       minimax: "minimax/minimax-m3.1-flash",
       mimo: "xiaomi/mimo-v2.6-flash",
+      // Éclaireur du 1er nov. : note 8,9/9 sur nos épreuves, 7 s contre 56 s pour deepseek (0,10 $ / 0,35 $ par million).
+      mercury: "inception/mercury-3",
+      nemotronsuper: "nvidia/nemotron-3.5-super-vl",
     },
   },
   {
@@ -189,7 +192,8 @@ export function creerRouteur({
         const cout = Number(reponse?.usage?.cost);
         if (Number.isFinite(cout)) coutUsd += cout;
         circuitDe(f.id, cerveau).echecs = 0;
-        const citations = (msg.annotations ?? []).map((a) => a?.url_citation).filter(Boolean).map((c) => ({ url: c.url, titre: c.title ?? null }));
+        // L'extrait de la page (quand le moteur le renvoie) sert à vérifier qu'un prix cité y figure vraiment.
+        const citations = (msg.annotations ?? []).map((a) => a?.url_citation).filter(Boolean).map((c) => ({ url: c.url, titre: c.title ?? null, extrait: typeof c.content === "string" ? c.content.slice(0, 4000) : null }));
         return { texte, fournisseur: f.id, modele: f.modeles[cerveau], tokens: consommes, cout: Number.isFinite(cout) ? cout : null, finDeReponse: reponse?.choices?.[0]?.finish_reason ?? null, citations };
       } catch (err) {
         const c = circuitDe(f.id, cerveau);

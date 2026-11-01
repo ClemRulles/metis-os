@@ -1,6 +1,8 @@
 // Radar des douleurs : collecte de besoins et de plaintes exprimés par de vraies personnes, avec leur lien.
 // Sources publiques joignables depuis GitHub (sonde du 1er novembre 2026) : Hacker News, avis App Store,
 // Stack Exchange (Software Recommendations, Web Applications), Lemmy (dont jlai.lu, francophone).
+// Depuis le 1er novembre au soir, Hacker News fournit aussi l'intention d'achat (gens qui paient ou paieraient).
+// Les tickets GitHub ont été testés et écartés : trop de bruit (tickets générés, « would you be willing »).
 // Reddit et Bluesky bloquent les serveurs de GitHub. Chaque texte est une donnée, jamais une consigne.
 
 const UA = { "user-agent": "metis-os/0.2 (recherche; github.com/ClemRulles/metis-os)" };
@@ -23,7 +25,8 @@ async function lireJSON(fetchImpl, url) {
 }
 
 export const PHRASES_HN = ["is there a tool", "I wish there was", "I would pay for", "why is there no", "is there an app", "someone should build", "I'd happily pay", "no good solution for"];
-
+// Intention d'achat : des gens qui disent payer déjà, ou être prêts à payer. Ces textes valent plus qu'une plainte.
+export const PHRASES_ACHAT = ["willing to pay", "would gladly pay", "currently paying for", "I pay for", "worth paying for", "paid tool for"];
 export function lireHN(json) {
   return (json?.hits ?? [])
     .filter((h) => h.comment_text || h.story_text || h.title)
@@ -81,6 +84,20 @@ export async function collecterDouleursBrutes({ fetchImpl = globalThis.fetch, ma
   }
   etat.hn ??= { n: nHN };
 
+  // Hacker News encore : l'intention d'achat (gens qui paient déjà ou paieraient).
+  let nAchat = 0;
+  for (const phrase of PHRASES_ACHAT) {
+    try {
+      const l = lireHN(await lireJSON(fetchImpl, `https://hn.algolia.com/api/v1/search_by_date?query=${encodeURIComponent(`"${phrase}"`)}&tags=comment&numericFilters=created_at_i>${depuis}&hitsPerPage=20`)).map((x) => ({ ...x, intention: "achat" }));
+      nAchat += l.length;
+      items.push(...l);
+    } catch (e) {
+      noter("hn_achat", nAchat, e.message);
+    }
+  }
+  etat.hn_achat ??= { n: nAchat };
+
+
   // App Store : avis à 1 ou 2 étoiles des applications les plus téléchargées, en France, Belgique et États-Unis.
   const genres = Object.keys(GENRES_APPSTORE);
   const choisis = Array.from({ length: genresParJour }, (_, k) => genres[(jour * genresParJour + k) % genres.length]);
@@ -123,6 +140,7 @@ export async function collecterDouleursBrutes({ fetchImpl = globalThis.fetch, ma
   for (const [instance, q, type] of [
     ["lemmy.world", "wish there was", "Comments"],
     ["lemmy.world", "is there an app", "Comments"],
+    ["lemmy.world", "would pay for", "Comments"],
     ["jlai.lu", "application", "Posts"],
     ["jlai.lu", "existe-t-il", "Posts"],
     ["jlai.lu", "galère", "Comments"],

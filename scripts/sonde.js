@@ -12,6 +12,9 @@ const cibles = {
   openrouter_models: "https://openrouter.ai/api/v1/models",
   google_play: "https://play.google.com/store/apps/details?id=com.duolingo&hl=fr",
   bluesky: "https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts?q=%22is%20there%20an%20app%22&limit=3",
+  apify_store: "https://api.apify.com/v2/store?limit=2&sortBy=popularity",
+  registre_mcp: "https://registry.modelcontextprotocol.io/v0/servers?limit=2&version=latest",
+  github_recherche: "https://api.github.com/search/repositories?q=voice%20agent%20created:2026-08-01..2026-11-01&per_page=1",
 };
 for (const [nom, url] of Object.entries(cibles)) {
   const t = Date.now();

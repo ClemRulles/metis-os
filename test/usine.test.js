@@ -4,9 +4,11 @@ import { readFileSync } from "node:fs";
 import { extraireJSON, extraireListe, objetsComplets, creerDemandeur } from "../src/commun/outils.js";
 import { scorePondere, elo, lancerUsine, messagesGenerationVisionnaire, selectionDiverse, estPropre } from "../src/usine/pipeline.js";
 import { lireArxiv } from "../src/usine/signaux.js";
-import { lireHN, lireAvisAppStore, lireTopAppStore, lireStackExchange, lireLemmy } from "../src/radar/sources.js";
-import { extraireDouleurs, regrouper, forceGisement } from "../src/radar/douleurs.js";
-import { verifierLiens, scoreFinal, enqueter } from "../src/enquete/enquete.js";
+import { lireHN, lireAvisAppStore, lireTopAppStore, lireStackExchange, lireLemmy, PHRASES_ACHAT } from "../src/radar/sources.js";
+import { extraireDouleurs, regrouper, forceGisement, messagesExtraction } from "../src/radar/douleurs.js";
+import { verifierLiens, scoreFinal, enqueter, preuvePaiement, prixDansTexte, nombresDuTexte } from "../src/enquete/enquete.js";
+import { noteElan, mesurerElan } from "../src/enquete/elan.js";
+import { lireApify, prixPrincipal, mettreAJourPanel, croissances, analyserMarche, signauxMarche, gisementsDuMarche, rapprocher, rapportMarcheMd, lireRegistreMCP } from "../src/marche/agents.js";
 
 const config = JSON.parse(readFileSync("config/usine.json", "utf8"));
 const atlas = JSON.parse(readFileSync("config/atlas-api.json", "utf8"));
@@ -49,14 +51,139 @@ test("sources du radar : lecture des formats publics", () => {
 });
 
 test("enquête : seuls les liens présents dans la recherche sont vérifiés ; score final", () => {
-  const d = verifierLiens({ concurrents: [{ nom: "A", url: "https://www.a.fr/x", prix: "5 €", ressemblance: 6 }, { nom: "B", url: "https://invente.com" }], preuves_demande: [{ url: "https://forum.fr/t", resume: "r" }], preuve_paiement_url: null, nouveaute: 7, risque_juridique: "faible" }, [{ url: "https://a.fr" }, { url: "https://forum.fr/z" }]);
+  const d = verifierLiens({ concurrents: [{ nom: "A", url: "https://www.a.fr/x", prix: "5 €", ressemblance: 6 }, { nom: "B", url: "https://invente.com" }], preuves_demande: [{ url: "https://forum.fr/t", resume: "r" }], nouveaute: 7, risque_juridique: "faible", mots_cles_en: ["voice agent", "x".repeat(60)] }, [{ url: "https://a.fr" }, { url: "https://forum.fr/z" }]);
   assert.deepEqual(d.concurrents.map((c) => c.verifie), [true, false]);
   assert.equal(d.liens_verifies, 2);
+  assert.deepEqual(d.mots_cles_en, ["voice agent"]);
   const s = scoreFinal({ score: 7, elo: 1550, gisement: { force: 3 }, enquete: d }, config.score_final.poids);
-  assert.equal(s.composantes.paiement_prouve, 8);
+  assert.equal(s.composantes.paiement_prouve, 6, "offre proche avec prix, mais prix non lu sur la page");
   assert.equal(s.composantes.douleur_prouvee, 5);
+  assert.equal(s.composantes.elan, 5, "élan neutre quand il n'est pas mesuré");
   assert.ok(s.total > 0 && s.total <= 10);
   assert.equal(scoreFinal({ score: 7, elo: 1500 }, config.score_final.poids).composantes.paiement_prouve, 2);
+});
+
+test("preuve de paiement : un prix ne compte que s'il est lu sur la page du même site", () => {
+  assert.deepEqual(nombresDuTexte("Dès 9,99 € par mois, ou 1 290 € à vie ; $1.50 per 1K"), [9.99, 1290, 1.5, 1]);
+  assert.ok(prixDansTexte(29, "Rapport complet : 29 € TTC"));
+  assert.ok(!prixDansTexte(29, "Rapport complet : 39 € TTC"));
+  const citations = [
+    { url: "https://outil.fr/prix", extrait: "Formule Pro à 12,90 € par mois, sans engagement." },
+    { url: "https://autre.com/a", extrait: "Plans start at $49/month." },
+    { url: "https://blog.fr/opera", extrait: "Opera lance Neon premium." },
+  ];
+  const d = verifierLiens(
+    {
+      concurrents: [],
+      offres_payantes: [
+        { nom: "Outil", url: "https://www.outil.fr/tarifs", prix: 12.9, meme_besoin: 8 },
+        { nom: "Autre", url: "https://autre.com/pricing", prix: 59, meme_besoin: 7 },
+        { nom: "Opera", url: "https://blog.fr/opera", prix: 20, meme_besoin: 2 },
+        { nom: "Inventé", url: "https://nulle-part.io", prix: 10, meme_besoin: 9 },
+      ],
+      qui_paie_deja: "Des abonnés payants.",
+    },
+    citations
+  );
+  assert.deepEqual(d.offres_payantes.map((o) => [o.verifie, o.prix_vu]), [[true, true], [true, false], [true, false], [false, false]]);
+  assert.equal(d.preuve_paiement_verifiee, true);
+  assert.equal(preuvePaiement({ enquete: d }).note, 9, "un prix lu + une deuxième offre du même besoin");
+  // Le cas du 1er novembre : un article sans rapport ne prouve plus rien, et l'aveu de l'enquêteur plafonne.
+  const faux = verifierLiens({ concurrents: [{ nom: "Blog", url: "https://blog.fr/x", ressemblance: 4 }], offres_payantes: [{ nom: "Opera", url: "https://blog.fr/opera", prix: 20, meme_besoin: 2 }], qui_paie_deja: "Aucune preuve dans les résultats que quelqu'un paie pour ce service." }, citations);
+  assert.equal(preuvePaiement({ enquete: faux }).note, 4);
+  // Sur le marché des agents, l'usage payé est observé directement.
+  assert.equal(preuvePaiement({ enquete: faux, marche_agents: [{ payant: true, users30: 640 }, { payant: true, users30: 230 }] }).note, 9);
+  // Des gens qui disent payer déjà ajoutent un point.
+  assert.equal(preuvePaiement({ gisement: { paieDeja: 3 } }).note, 3);
+});
+
+test("score final : malus d'abandon, élan et espace pris par les serveurs MCP", () => {
+  const base = { score: 7, elo: 1550, gisement: { force: 5 }, enquete: { concurrents: [], preuves_demande: [], offres_payantes: [], nouveaute: 8, risque_juridique: "faible", verdict: "creuser" } };
+  const a = scoreFinal(base, config.score_final.poids);
+  const b = scoreFinal({ ...base, enquete: { ...base.enquete, verdict: "abandonner" } }, config.score_final.poids);
+  assert.ok(b.total < a.total);
+  const c = scoreFinal({ ...base, elan: { note: 9 } }, config.score_final.poids);
+  assert.ok(c.total > a.total);
+  const d = scoreFinal({ ...base, mcp: { n: "100+" } }, config.score_final.poids);
+  assert.equal(d.composantes.espace_libre, 5);
+});
+
+test("élan : chaque série vote à égalité, rien n'est conclu sans signal", async () => {
+  assert.deepEqual(noteElan([{ recent: 2, avant: 3 }]), { note: 5, rapport: null, faible: true });
+  const monte = noteElan([{ recent: 120, avant: 30 }, { recent: 12000, avant: 12000 }]);
+  assert.ok(monte.note > 6 && monte.note < 8, `note ${monte.note}`);
+  const urls = [];
+  const fetchImpl = async (url) => {
+    urls.push(url);
+    const bas = Number(/created_at_i>(\d+)/.exec(url)?.[1] ?? 0);
+    const recent = bas > Date.parse("2026-07-15") / 1000 || /\.\.2026-11/.test(decodeURIComponent(url));
+    return { ok: true, json: async () => (url.includes("algolia") ? { nbHits: recent ? 80 : 20 } : { total_count: recent ? 400 : 100 }) };
+  };
+  const r = await mesurerElan({ mots: ["voice agent", "spaced repetition", "trop"], fetchImpl, maintenant: Date.parse("2026-11-01T12:00:00Z"), attendre: async () => {} });
+  assert.equal(r.mesures.length, 2);
+  assert.equal(urls.filter((u) => u.includes("github")).length, 2, "une seule expression interrogée sur GitHub");
+  assert.ok(r.note > 8);
+});
+
+test("marché des agents : lecture, prix, garde-fous, panel, rapprochement, gisements", () => {
+  const item = (id, titre, stats, prix, extra = {}) => ({
+    id,
+    title: titre,
+    name: id,
+    username: "u",
+    url: `https://apify.com/u/${id}`,
+    description: extra.description ?? "",
+    categories: extra.categories ?? ["DEVELOPER_TOOLS"],
+    actorReviewRating: extra.note ?? 4.6,
+    actorReviewCount: extra.avis ?? 10,
+    isWhiteListedForAgenticPayments: true,
+    stats: { totalUsers7Days: stats[0], totalUsers30Days: stats[1], totalUsers90Days: stats[2], totalUsers: stats[2], publicActorRunStats30Days: { TOTAL: 1000, FAILED: extra.echecs ?? 0 } },
+    currentPricingInfo: prix == null ? { pricingModel: "FREE" } : { pricingModel: "PAY_PER_EVENT", pricingPerEvent: { actorChargeEvents: { start: { isOneTimeEvent: true, eventPriceUsd: 0.00005 }, res: { isPrimaryEvent: true, eventTitle: "result", eventTieredPricingUsd: { FREE: { tieredEventPriceUsd: prix } } } } } },
+  });
+  const acteurs = lireApify({
+    data: {
+      items: [
+        item("trends", "Google Trends Scraper", [900, 3000, 5000], 0.004, { categories: ["SEO_TOOLS"], note: 3.7, echecs: 210 }),
+        item("news", "Google News Scraper", [300, 640, 1500], 0.004, { categories: ["NEWS"] }),
+        item("lk", "Profile Scraper for LinkedIn", [4000, 9000, 20000], 0.005, { categories: ["LEAD_GENERATION"], note: 3.1 }),
+        item("traffic", "Traffic Generator", [100, 414, 900], 0.01, { categories: ["SEO_TOOLS"], note: 4.0 }),
+        item("sheets", "Google Sheets Import", [200, 800, 1700], null, { categories: ["AUTOMATION"] }),
+      ],
+    },
+  });
+  assert.equal(acteurs[0].prix, 0.004);
+  assert.equal(acteurs[0].echec30, 0.21);
+  assert.equal(acteurs[4].payant, false);
+  assert.deepEqual(acteurs.map((a) => a.donnees_personnelles), [false, false, true, true, false]);
+  assert.deepEqual(prixPrincipal({ pricingModel: "PRICE_PER_DATASET_ITEM", pricePerUnitUsd: 0.002 }), { prix: 0.002, unite: "résultat" });
+  // Panel : la croissance réelle apparaît après six jours.
+  let panel = mettreAJourPanel({}, acteurs, "2026-10-25");
+  panel = mettreAJourPanel(panel, acteurs.map((a) => (a.id === "news" ? { ...a, users30: 1280 } : a)), "2026-11-01");
+  assert.equal(croissances(panel, "2026-11-01").parId.news, 2);
+  const analyse = analyserMarche({ acteurs: acteurs.map((a) => (a.id === "news" ? { ...a, users30: 1280 } : a)), serveurs: [{ titre: "Météo", publie: "2026-10-30T10:00:00Z", heberge: true }], panel, date: "2026-11-01" });
+  assert.equal(analyse.acceleration[0].id, "news");
+  assert.ok(analyse.fragiles.some((a) => a.id === "trends"));
+  assert.equal(analyse.mcp.publies_7_jours, 1);
+  assert.ok(signauxMarche(analyse).every((s) => !/LinkedIn|Traffic/.test(s.titre)), "aucun signal sur des données personnelles ou de la manipulation");
+  const gm = gisementsDuMarche(analyse);
+  assert.deepEqual(gm.map((g) => g.id).sort(), ["m-news", "m-trends"]);
+  assert.equal(gm.find((g) => g.id === "m-trends").marche[0].payant, true);
+  assert.deepEqual(rapprocher(["google trends", "search trends"], acteurs).map((m) => m.titre), ["Google Trends Scraper"]);
+  assert.deepEqual(rapprocher(["voice agent"], acteurs), [], "un seul mot commun ne suffit pas");
+  assert.match(rapportMarcheMd(analyse), /⚠ \[Profile Scraper for LinkedIn\]/);
+  assert.equal(lireRegistreMCP({ servers: [{ server: { name: "a/b", title: "B", remotes: [{}] }, _meta: { "io.modelcontextprotocol.registry/official": { publishedAt: "x" } } }] })[0].heberge, true);
+});
+
+test("radar : intention d'achat marquée et transmise à l'extraction", async () => {
+  assert.ok(PHRASES_ACHAT.length >= 4);
+  const lot = [{ source: "Hacker News", texte: "I pay for X but it is bad", intention: "achat" }];
+  const m = messagesExtraction(lot);
+  assert.match(m[1].content, /intention="achat"/);
+  assert.match(m[0].content, /prix_cite/);
+  const demandeur = { demander: async () => ({ valeur: [{ n: 0, douleur: "d", paie_deja: true, prix_cite: "12", citation: "I pay for X" }] }) };
+  const [d] = await extraireDouleurs({ items: lot, demandeur, cerveaux: ["x"] });
+  assert.equal(d.prix_cite, 12);
+  assert.equal(d.intention, "achat");
 });
 
 test("texte parasite écarté", () => {

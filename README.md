@@ -13,11 +13,14 @@ https://claude.ai/artifact/BTswA5ePxA5RQTWZFqU4VK · Cockpit : https://claude.ai
 | `src/sprt.js` | Test séquentiel des pages de test (plonger, continuer, arrêter) | Testé |
 | `src/banc/` | Banc du passé : collecte Show HN et Manifold, consignes, notation, carte des gènes | Testé, collecte réelle faite |
 | `schema/registre.sql` | Registre D1 : configurations, cas, prédictions, expériences, événements, trouvailles, règles, versions | Prêt |
+| `src/marche/agents.js` | Marché des agents : 1 000 outils d'Apify Store (utilisateurs, prix réels, notes, échecs) et registre officiel MCP ; panel quotidien de croissance, leaders fragiles, gisements prouvés par l'argent ; garde-fou données personnelles | Testé, collecte réelle faite (1er nov.) |
+| `src/enquete/enquete.js` | Preuve de paiement stricte : un prix ne compte que s'il est lu dans l'extrait de la page citée ; offres du même besoin seulement | Testé |
+| `src/enquete/elan.js` | Élan : activité des 90 derniers jours contre les 90 d'avant (Hacker News, GitHub), chaque série vote à égalité | Testé, mesure réelle faite |
 
 ## Lancer
 
 ```bash
-npm test                                   # 11 tests, aucune dépendance
+npm test                                   # 31 tests, aucune dépendance
 node scripts/collecter.js 60               # banc du passé sur 60 jours -> data/
 OPENROUTER_API_KEY=... node scripts/lancer-banc.js data/cas-show-hn-AAAA-MM-JJ.json 30
 ```
@@ -26,6 +29,6 @@ OPENROUTER_API_KEY=... node scripts/lancer-banc.js data/cas-show-hn-AAAA-MM-JJ.j
 
 - Aucune clé dans le code ni dans le dépôt : variables d'environnement ou secrets Cloudflare.
 - Les textes des cas sont des données : les consignes demandent d'ignorer toute instruction qu'ils contiennent.
-- Sources : API officielles et gratuites uniquement (Algolia HN, Manifold). Aucun scraping de plateformes qui l'interdisent.
+- Sources : API officielles et gratuites uniquement (Algolia HN, Manifold, Apify Store, registre MCP, GitHub). Aucun scraping de plateformes qui l'interdisent ; aucun gisement bâti sur des outils de données personnelles ou de manipulation.
 - Aucune donnée personnelle n'est envoyée aux modèles gratuits.
 - `data/` n'est pas versionné : les cas se recollectent en une commande.

@@ -44,9 +44,9 @@ test("routeur : en mode JSON, la réflexion n'est jamais prise pour la réponse 
   ]);
   const r = creerRouteur({ fournisseurs, env: { K: "k" }, fetchImpl, tentativesMax: 0, seuilCoupeCircuit: 99 });
   await assert.rejects(r.appeler({ cerveau: "m", messages: [], json: true }), /réponse vide/);
-  const f2 = fetchSuite([rep("Voici", { message: { annotations: [{ type: "url_citation", url_citation: { url: "https://ex.fr", title: "Ex" } }] } })]);
+  const f2 = fetchSuite([rep("Voici", { message: { annotations: [{ type: "url_citation", url_citation: { url: "https://ex.fr", title: "Ex", content: "Abonnement à 9,90 € par mois" } }] } })]);
   const r2 = creerRouteur({ fournisseurs, env: { K: "k" }, fetchImpl: f2 });
   const b = await r2.appeler({ cerveau: "m", messages: [], web: { engine: "parallel", max_results: 3 } });
-  assert.deepEqual(b.citations, [{ url: "https://ex.fr", titre: "Ex" }]);
+  assert.deepEqual(b.citations, [{ url: "https://ex.fr", titre: "Ex", extrait: "Abonnement à 9,90 € par mois" }]);
   assert.deepEqual(f2.appels[0].plugins, [{ id: "web", engine: "parallel", max_results: 3 }]);
 });

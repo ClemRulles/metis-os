@@ -1,12 +1,13 @@
 {
-  "version": 2,
-  "note": "Usine v2, ancrée dans le réel. Tout est réglable ici sans toucher au code. Les poids du score final seront recalibrés sur les résultats des tests réels. Passage du 1er nov. : minimax retiré (texte parasite dans 75 % de ses idées), température plafonnée à 1,0.",
+  "version": 3,
+  "note": "Usine v3, ancrée dans le réel et dans l'argent. Tout est réglable ici sans toucher au code. 1er nov. au soir : marché des agents (Apify Store, registre MCP) en source de gisements payés, preuve de paiement stricte (prix lu sur la page), élan mesuré (Hacker News, GitHub), mercury-3 ajouté (8× plus rapide à qualité égale selon l'éclaireur).",
   "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
   "cerveaux_generation": [
     "deepseek",
     "qwen",
     "glm",
-    "mimo"
+    "mimo",
+    "mercury"
   ],
   "cerveaux_jugement": [
     "deepseek",
@@ -18,7 +19,8 @@
     "qwen",
     "deepseek",
     "mimo",
-    "mistral"
+    "mistral",
+    "mercury"
   ],
   "cerveaux_enquete": [
     "glm",
@@ -35,7 +37,8 @@
     "max_finalistes_par_arene": 5,
     "max_finalistes_par_gisement": 2,
     "enquetes": 15,
-    "top_publie": 10
+    "top_publie": 10,
+    "generations_marche": 18
   },
   "arenes": {
     "grand-public": "Particuliers : vie quotidienne, argent, logement, mobilité, consommation.",
@@ -97,6 +100,11 @@
     "pour-les-oublies": "Les citations ci-dessous viennent de vraies personnes. Identifie le sous-groupe le plus mal servi parmi elles et conçois la solution pour lui d'abord.",
     "renverser-la-plainte": "Les citations ci-dessous sont des plaintes contre des produits existants. Conçois le produit qui est l'exact contraire de ce dont elles se plaignent."
   },
+  "lentilles_marche": {
+    "besoin-final": "Cet outil est payé par des centaines de personnes chaque mois, mais il est mal noté ou échoue souvent. Ne le recopie pas et n'aspire jamais un site qui l'interdit : trouve pourquoi ses acheteurs paient (le résultat qu'ils veulent vraiment), puis sers ce résultat bien mieux, avec des données ouvertes, des API officielles ou un résultat livré clé en main.",
+    "monter-d-un-etage": "Des développeurs et des agents paient déjà cet outil brut. Monte d'un étage : quel produit fini, pour quel public précis (particuliers, créateurs, petits vendeurs, associations), se construit au-dessus de ce besoin et se vend en libre-service, sans appel ?",
+    "agent-client": "Les clients de cet outil sont de plus en plus des agents IA. Conçois l'outil ou l'API qu'un agent choisirait sans hésiter sur une place de marché (fiable, documenté, payé à l'usage, résultats vérifiables), sur un besoin voisin encore mal servi."
+  },
   "axes": {
     "valeur_societale": {
       "poids": 0.2,
@@ -128,14 +136,15 @@
     }
   },
   "score_final": {
-    "note": "Le classement final repose sur des preuves. L'avis des IA (critique et tournoi) ne pèse qu'un tiers.",
+    "note": "Le classement final repose sur des preuves (douleur, paiement lu sur la page ou observé sur le marché, espace libre, élan, risque). L'avis des IA (critique et tournoi) pèse environ 30 %.",
     "poids": {
-      "douleur_prouvee": 0.22,
-      "paiement_prouve": 0.18,
-      "espace_libre": 0.17,
-      "critique": 0.23,
-      "tournoi": 0.1,
-      "faible_risque": 0.1
+      "douleur_prouvee": 0.2,
+      "paiement_prouve": 0.2,
+      "espace_libre": 0.15,
+      "elan": 0.08,
+      "critique": 0.2,
+      "tournoi": 0.08,
+      "faible_risque": 0.09
     }
   },
   "contraintes": [
@@ -143,6 +152,8 @@
     "Aucun appel téléphonique ; vente par site, e-mail, communauté ou place de marché.",
     "300 euros maximum avant le premier euro encaissé.",
     "Rien d'illégal, de trompeur ou de manipulateur ; pas de faux avis ni de spam ; pas de conseil médical, juridique ou financier personnalisé présenté comme celui d'un professionnel.",
-    "Aucune donnée personnelle sensible collectée sans base légale."
-  ]
+    "Aucune donnée personnelle sensible collectée sans base légale.",
+    "Pas d'aspiration de sites ou de réseaux sociaux qui l'interdisent, ni de collecte de profils ou de coordonnées de personnes ; données ouvertes, API officielles ou données fournies par l'utilisateur."
+  ],
+  "enquete_elan": true
 }
