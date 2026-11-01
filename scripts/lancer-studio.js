@@ -10,6 +10,7 @@ import { collecterSignaux } from "../src/usine/signaux.js";
 import { lancerUsine } from "../src/usine/pipeline.js";
 import { enqueter, scoreFinal } from "../src/enquete/enquete.js";
 import { mesurerElanDes } from "../src/enquete/elan.js";
+import { sonderAtlas, sourcesUsine, historiqueSante, tauxReponse } from "../src/atlas/vivant.js";
 import { collecterMarcheAgents, analyserMarche, mettreAJourPanel, signauxMarche, gisementsDuMarche, rapprocher, compterMCP, rapportMarcheMd } from "../src/marche/agents.js";
 
 const [dossierEtat = "/tmp/etat", dossierSortie = "sortie"] = process.argv.slice(2);
@@ -23,11 +24,13 @@ const lire = async (chemin, defaut) => {
 const debut = Date.now();
 const date = new Date().toISOString().slice(0, 10);
 const config = await lire("config/usine.json");
-const atlas = await lire("config/atlas-api.json");
+const atlasStatique = await lire("config/atlas-api.json");
+const atlasVivant = await lire("config/atlas-vivant.json", { apis: [] });
 const historique = await lire(`${dossierEtat}/gisements.json`, []);
 const graines = await lire(`${dossierEtat}/graines.json`, []);
 const dejaVues = await lire(`${dossierEtat}/deja_vues.json`, []);
 const panelPrecedent = await lire(`${dossierEtat}/marche-agents.json`, {});
+const santeAtlasPrecedente = await lire(`${dossierEtat}/atlas-sante.json`, {});
 console.log(`État précédent : ${historique.length} gisements, ${graines.length} graines, ${dejaVues.length} idées déjà vues.`);
 
 const fournisseurs = FOURNISSEURS_PAR_DEFAUT.map((f) => ({ ...f, tokensParJour: 20_000_000 })); // le plafond en dollars fait foi
@@ -57,13 +60,20 @@ const acteursSurs = marche.acteurs.filter((a) => !a.donnees_personnelles);
 chrono("marche", t0);
 journal(`marché : ${analyse.outils} outils, ${analyse.payants} payants, ${gisementsMarche.length} gisements de marché`);
 
-// 3. Usine.
+// 3. Atlas vivant : chaque API publique est appelée pour de vrai ; les inventeurs voient ce qu'elle renvoie.
+t0 = Date.now();
+const sondes = await sonderAtlas({ apis: atlasVivant.apis, journal });
+const santeAtlas = historiqueSante(santeAtlasPrecedente, sondes, date);
+const atlas = { sources: sourcesUsine(sondes, atlasStatique.sources) };
+chrono("atlas", t0);
+
+// 4. Usine.
 t0 = Date.now();
 const signaux = [...(await collecterSignaux()), ...signauxMarche(analyse)];
 const usine = await lancerUsine({ config, atlas, gisements, gisementsMarche, signaux, graines, dejaVues, demandeur, graine, journal });
 chrono("usine", t0);
 
-// 4. Enquête, preuves du marché, élan et classement à preuves.
+// 5. Enquête, preuves du marché, élan et classement à preuves.
 t0 = Date.now();
 const aEnqueter = usine.classement.slice(0, config.volumes.enquetes);
 await enqueter({ finalistes: aEnqueter, demandeur, config, journal });
@@ -89,7 +99,7 @@ const opportunites = [...usine.classement].sort((a, b) => b.final.total - a.fina
 
 // 4. Sorties.
 const cout = routeur.cout();
-const sante = { date, dureeSecondes: Math.round((Date.now() - debut) / 1000), coutUsd: cout.usd, appelsModeles: cout.appels, etapes, sources: { ...etatSources, ...marche.etat }, cerveaux: demandeur.sante(), stats: { brut: items.length, douleurs: douleurs.length, gisements: gisements.length, gisementsMarche: gisementsMarche.length, ...usine.stats, enquetes: aEnqueter.filter((i) => i.enquete).length, prixLus: aEnqueter.filter((i) => i.enquete?.preuve_paiement_verifiee).length, elanMesure: aEnqueter.filter((i) => i.elan && !i.elan.faible).length } };
+const sante = { date, dureeSecondes: Math.round((Date.now() - debut) / 1000), coutUsd: cout.usd, appelsModeles: cout.appels, etapes, sources: { ...etatSources, ...marche.etat, atlas: { vivantes: sondes.filter((x) => x.ok).length, total: sondes.length } }, cerveaux: demandeur.sante(), stats: { brut: items.length, douleurs: douleurs.length, gisements: gisements.length, gisementsMarche: gisementsMarche.length, ...usine.stats, enquetes: aEnqueter.filter((i) => i.enquete).length, prixLus: aEnqueter.filter((i) => i.enquete?.preuve_paiement_verifiee).length, elanMesure: aEnqueter.filter((i) => i.elan && !i.elan.faible).length } };
 const dossierJour = `${dossierSortie}/studio/${date}`;
 await mkdir(dossierJour, { recursive: true });
 await mkdir(`${dossierSortie}/etat`, { recursive: true });
@@ -104,6 +114,8 @@ await writeFile(
 await writeFile(`${dossierSortie}/etat/deja_vues.json`, JSON.stringify([...opportunites.slice(0, 20).map((i) => i.titre), ...dejaVues].slice(0, 300), null, 1));
 await writeFile(`${dossierSortie}/sante-studio.json`, JSON.stringify(sante, null, 1));
 await writeFile(`${dossierSortie}/etat/marche-agents.json`, JSON.stringify(panel));
+await writeFile(`${dossierSortie}/etat/atlas-sante.json`, JSON.stringify(santeAtlas));
+await writeFile(`${dossierJour}/atlas.json`, JSON.stringify(sondes.map(({ id, nom, ok, statut, ms, echantillon, erreur }) => ({ id, nom, ok, statut, ms, taux_30_passages: tauxReponse(santeAtlas, id), echantillon, erreur })), null, 1));
 await writeFile(`${dossierJour}/marche.json`, JSON.stringify(analyse, null, 1));
 const mdMarche = rapportMarcheMd(analyse);
 await writeFile(`${dossierJour}/MARCHE-DES-AGENTS.md`, mdMarche);
@@ -165,6 +177,7 @@ const md = [
   "## Santé",
   `- Sources : ${Object.entries(etatSources).map(([k, s]) => `${k} ${s.n}${s.erreur ? ` (erreur : ${s.erreur})` : ""}`).join(" ; ")}`,
   ...Object.entries(sante.cerveaux).map(([c, s]) => `- ${c} : ${s.ok} ok, ${s.echecs} échecs (${Math.round(s.tauxEchec * 100)} %), ${s.msMoyen} ms${s.exempleErreur ? ` — ${s.exempleErreur}` : ""}`),
+  `- Atlas vivant : ${sondes.filter((x) => x.ok).length}/${sondes.length} API répondent${sondes.some((x) => !x.ok) ? ` (muettes : ${sondes.filter((x) => !x.ok).map((x) => x.id).join(", ")})` : ""}`,
   `- Étapes : ${Object.entries(etapes).map(([k, s]) => `${k} ${s.secondes} s (cumul ${s.coutCumuleUsd} $)`).join(" ; ")}`,
 ].join("\n");
 await writeFile(`${dossierJour}/OPPORTUNITES.md`, md);

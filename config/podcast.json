@@ -1,12 +1,12 @@
 {
   "version": 1,
   "nom": "Métis, le matin",
-  "description": "Chaque matin, 8 à 10 minutes pour comprendre l'IA en construisant une vraie machine : ce que les agents ont fait la nuit, une leçon tirée de ce qu'ils ont vécu, et une question pour Clément.",
-  "auditeur": "Clément, ingénieur de gestion, consultant, francophone de Belgique. Curieux, ambitieux, pressé ; il veut comprendre vraiment, sans jargon inutile, et pouvoir agir.",
+  "description": "Chaque matin, 8 à 10 minutes pour comprendre l'IA en construisant une vraie machine : ce que les agents ont fait la nuit, une leçon tirée de ce qu'ils ont vécu, et une question pour l'auditeur.",
+  "auditeur": "Le dirigeant de la machine. Curieux, ambitieux, pressé ; il veut comprendre vraiment, sans jargon inutile, et pouvoir agir.",
   "cerveaux": ["glm", "deepseek", "qwen"],
   "voix": {
     "metis": { "nom": "Métis", "edge": "fr-FR-HenriNeural", "role": "le stratège qui dirige la machine ; précis, chaleureux, concret, avec des chiffres" },
-    "lea": { "nom": "Léa", "edge": "fr-BE-CharlineNeural", "role": "l'apprentie ; pose les questions que Clément se poserait, demande des exemples, résume" }
+    "lea": { "nom": "Léa", "edge": "fr-BE-CharlineNeural", "role": "l'apprentie ; pose les questions que l'auditeur se poserait, demande des exemples, résume" }
   },
   "programme": [
     { "titre": "Ce qu'est vraiment un modèle de langage", "idees": "Prédire le mot suivant ; les jetons ; pourquoi un modèle « sait » sans comprendre ; ce que ça change pour nos agents." },

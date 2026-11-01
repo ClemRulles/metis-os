@@ -8,7 +8,7 @@ on:
     - cron: "43 3 * * *" # vers 4 h 43 heure de Bruxelles, prêt pour le point de contrôle de 6 h 39
   push:
     branches: [main]
-    paths: ["config/usine.json", "config/atlas-api.json", "src/usine/**", "src/radar/**", "src/enquete/**", "src/marche/**", "src/commun/**", "scripts/lancer-studio.js"]
+    paths: ["config/usine.json", "config/atlas-api.json", "src/usine/**", "src/radar/**", "src/enquete/**", "src/marche/**", "src/atlas/**", "config/atlas-vivant.json", "src/commun/**", "scripts/lancer-studio.js"]
 
 permissions:
   contents: write
@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p /tmp/etat
           git fetch origin resultats || true
-          for f in gisements graines deja_vues marche-agents; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
+          for f in gisements graines deja_vues marche-agents atlas-sante; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
           ls -la /tmp/etat
       - name: Radar, usine, enquête
         env:

@@ -51,7 +51,7 @@
     "sante-bien-etre": "Bien-être, sommeil, forme, prévention (jamais de conseil médical personnalisé).",
     "planete": "Climat, énergie, biodiversité, alimentation durable.",
     "donnees-et-api": "Données, API et agents vendus à d'autres agents ou développeurs (places de marché).",
-    "travail-et-carrieres": "Chercheurs d'emploi, reconversions, travailleurs frontaliers."
+    "travail-et-carrieres": "Chercheurs d'emploi, reconversions, indépendants, nouveaux métiers."
   },
   "canaux": {
     "seo-programmatique": "Des milliers de pages utiles générées à partir de données, qui captent des recherches précises.",
@@ -76,14 +76,19 @@
     "L'apprentissage personnalisé coûte presque rien à produire : n'importe quel savoir de niche peut devenir un cours, un jeu ou un compagnon.",
     "Le local revient : circuits courts, vie de quartier, communes qui manquent de moyens."
   ],
-  "atouts_fondateur": [
-    "Francophone, basé en Belgique à la frontière luxembourgeoise ; connaît le quotidien des travailleurs frontaliers.",
-    "Ingénieur de gestion : finance, stratégie, vente ; aime l'IA, le spatial, les projets ambitieux.",
-    "Dispose d'une organisation d'agents IA qui travaille 24 h sur 24 pour presque rien."
+  "atouts_equipe": [
+    "Une organisation d'agents IA qui travaille 24 h sur 24 pour presque rien, lit et compare des milliers de documents, et construit vite des logiciels.",
+    "Un dirigeant qui ne s'occupe que de l'identité, de l'argent et de la signature : tout le reste est fait par les agents."
+  ],
+  "themes_exclus": [
+    "frontalier",
+    "transfrontalier",
+    "cross-border worker",
+    "cross border worker"
   ],
   "lentilles": {
     "futur-a-rebours": "Écris d'abord, mentalement, un article de presse de 2031 sur un service devenu indispensable. Puis remonte le temps : quelle première brique peut-on lancer dès ce mois-ci ?",
-    "collision-api": "Prends les deux sources de données ou API fournies et fais-les entrer en collision : quel service nouveau naît seulement de leur croisement ?",
+    "collision-api": "Prends les sources de données fournies (avec leur échantillon réel du jour) et fais-les entrer en collision : quel service nouveau naît seulement de leur croisement ? Dis dans « apis » lesquelles tu utilises.",
     "cimetiere": "Pense à une idée tentée avant 2023, abandonnée parce qu'elle demandait trop de travail humain ou coûtait trop cher. Avec des agents à un centime la tâche, que devient-elle ?",
     "travail-invisible": "Trouve un travail utile que personne ne fait parce qu'il demande de lire, comparer ou surveiller des milliers de documents. Des agents peuvent le faire chaque jour : à qui ça change la vie ?",
     "luxe-democratise": "Prends un service réservé aux riches ou aux grandes entreprises (veille, analyste, majordome, chercheur) et rends-le accessible à tous pour quelques euros.",
@@ -92,7 +97,8 @@
     "inversion": "Prends une pratique établie et inverse-la (le client devient fournisseur, le payant devient gratuit, le lent devient instantané, le centralisé devient local).",
     "super-pouvoir-agent": "Quelle chose devient possible seulement quand on a mille travailleurs infatigables qui coûtent presque rien, travaillent 24 h sur 24 et ne s'ennuient jamais ?",
     "bien-commun": "Pars d'un grand problème de société (climat, santé, isolement, accès au droit, éducation, logement, biodiversité, démocratie locale) et trouve une brique utile, finançable et testable en 2 semaines.",
-    "evolution": "Voici des idées finalistes d'un passage précédent, leur dossier d'enquête et la critique qui les rendrait plus fortes. Fais-les muter, croise-les, pousse-les plus loin : ne les recopie pas."
+    "evolution": "Voici des idées finalistes d'un passage précédent, leur dossier d'enquête et la critique qui les rendrait plus fortes. Fais-les muter, croise-les, pousse-les plus loin : ne les recopie pas.",
+    "api-vivante": "Voici des API publiques gratuites, avec ce qu'elles ont réellement renvoyé ce matin. Conçois un produit qu'une équipe d'agents peut construire en un jour au-dessus d'elles (alerte, outil, carte, classement, API dérivée vendue à l'usage) et qui rend un service concret à un public précis. Dis dans « apis » lesquelles tu utilises."
   },
   "lentilles_ancrees": {
     "meilleure-solution": "Les citations ci-dessous viennent de vraies personnes. Conçois la solution que ces gens choisiraient sans hésiter, en faisant ce qu'aucune solution actuelle ne fait.",
@@ -148,7 +154,7 @@
     }
   },
   "contraintes": [
-    "Jamais d'offre de conseil, d'audit, de diagnostic ou d'automatisation sur mesure pour entreprises (contrat de travail de Clément). Un logiciel ou des données en libre-service pour des professionnels restent permis.",
+    "Jamais d'offre de conseil, d'audit, de diagnostic ou d'automatisation sur mesure pour entreprises (règle de la maison). Un logiciel ou des données en libre-service pour des professionnels restent permis.",
     "Aucun appel téléphonique ; vente par site, e-mail, communauté ou place de marché.",
     "300 euros maximum avant le premier euro encaissé.",
     "Rien d'illégal, de trompeur ou de manipulateur ; pas de faux avis ni de spam ; pas de conseil médical, juridique ou financier personnalisé présenté comme celui d'un professionnel.",

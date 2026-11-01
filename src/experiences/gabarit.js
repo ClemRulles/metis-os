@@ -53,6 +53,7 @@ footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;font-size:13px;color
 </form>
 <p class="mentions" id="msg">${precommande ? `Aucun paiement aujourd'hui : vous serez prévenu(e) avant tout prélèvement, et la précommande reste remboursable sans condition.` : "Un seul e-mail au lancement, puis seulement si vous le souhaitez."}</p>
 </div>
+${f.demo_url ? `<p class="mentions"><a href="${esc(f.demo_url)}">Voir un aperçu construit avec des données réelles</a> (démonstration, le service complet est en préparation).</p>` : ""}
 <h2>Le problème</h2>
 <ul class="pts">${li(f.probleme_points)}</ul>
 <h2>Comment ça marche</h2>

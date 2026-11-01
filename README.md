@@ -15,12 +15,15 @@ https://claude.ai/artifact/BTswA5ePxA5RQTWZFqU4VK · Cockpit : https://claude.ai
 | `schema/registre.sql` | Registre D1 : configurations, cas, prédictions, expériences, événements, trouvailles, règles, versions | Prêt |
 | `src/marche/agents.js` | Marché des agents : 1 000 outils d'Apify Store (utilisateurs, prix réels, notes, échecs) et registre officiel MCP ; panel quotidien de croissance, leaders fragiles, gisements prouvés par l'argent ; garde-fou données personnelles | Testé, collecte réelle faite (1er nov.) |
 | `src/enquete/enquete.js` | Preuve de paiement stricte : un prix ne compte que s'il est lu dans l'extrait de la page citée ; offres du même besoin seulement | Testé |
+| `src/atlas/vivant.js` + `config/atlas-vivant.json` | Atlas vivant : 36 API publiques sans clé (météo, pollens, crues, biodiversité, rappels de produits, science, énergie, entreprises, failles logicielles, orbites…) appelées à chaque passage ; les inventeurs voient leur échantillon réel du jour | Testé, sonde réelle faite (26/36 depuis l'atelier, à vérifier depuis GitHub) |
+| `src/lancement/vague.js` | Vague de lancement : plans critiqués, tournoi, 5 à 10 pages de test relues, porte de crédibilité, mise en ligne automatique | Testé, première vague réelle le 1er nov. |
+| `src/atelier/atelier.js` | Atelier : fiche technique → données réelles → programme → boîte fermée (aucun secret, aucun fichier, aucun sous-processus) → vérification → correction (3 essais) ; une démonstration réelle par test | Testé |
 | `src/enquete/elan.js` | Élan : activité des 90 derniers jours contre les 90 d'avant (Hacker News, GitHub), chaque série vote à égalité | Testé, mesure réelle faite |
 
 ## Lancer
 
 ```bash
-npm test                                   # 31 tests, aucune dépendance
+npm test                                   # 40 tests, aucune dépendance
 node scripts/collecter.js 60               # banc du passé sur 60 jours -> data/
 OPENROUTER_API_KEY=... node scripts/lancer-banc.js data/cas-show-hn-AAAA-MM-JJ.json 30
 ```
