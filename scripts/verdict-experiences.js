@@ -16,4 +16,6 @@ const verdicts = s.visites.map((v) => {
   return { experience: v.experience, visiteurs: v.visites, inscriptions: n, taux: +(n / Math.max(1, v.visites)).toFixed(4), verdict: verdict(v.visites, n), seuils: seuils(v.visites), sources: s.sources.filter((x) => x.experience === v.experience) };
 });
 await writeFile(sortie, JSON.stringify({ date: new Date().toISOString(), verdicts }, null, 1));
-for (const v of verdicts) console.log(`${v.experience} : ${v.inscriptions}/${v.visiteurs} (${(v.taux * 100).toFixed(1)} %) → ${v.verdict}`);
+const lignes = verdicts.map((v) => `- **${v.experience}** : ${v.inscriptions} inscriptions pour ${v.visiteurs} visiteurs (${(v.taux * 100).toFixed(1)} %) → ${v.verdict}`);
+await writeFile(sortie.replace(/\.json$/, ".md"), [`# Verdicts des tests — ${new Date().toISOString().slice(0, 10)}`, "", "Test séquentiel : plonger, continuer ou arrêter (plafond 250 visiteurs).", "", ...lignes].join("\n"));
+for (const l of lignes) console.log(l);

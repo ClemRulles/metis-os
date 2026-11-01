@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "note": "Vagues de lancement automatiques (décision de Clément, 1er nov. 2026 : aucune confirmation par page ; il suit depuis le Cockpit). Une page ne part en ligne que si elle franchit toute la porte de crédibilité, éditeur compris. Mettre auto à false arrête toute mise en ligne.",
+  "auto": true,
+  "taille_vague": 8,
+  "candidats": 12,
+  "rondes": 3,
+  "max_par_arene": 2,
+  "budget_vague_eur": 0,
+  "minutes_humaines_par_test": 0,
+  "editeur": { "nom": "", "adresse": "", "contact": "" },
+  "api_url": ""
+}

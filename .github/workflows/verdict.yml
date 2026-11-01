@@ -1,0 +1,44 @@
+name: Verdicts
+
+# Chaque jour vers 18 h (Bruxelles) : visiteurs et inscriptions de chaque page de test, verdict séquentiel.
+on:
+  schedule:
+    - cron: "7 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resultats
+  cancel-in-progress: false
+
+jobs:
+  verdicts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verdicts
+        run: |
+          git fetch origin resultats
+          url=$(git show origin/resultats:resultats/etat/infra.json 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(JSON.parse(s).liste_attente_url||"")}catch{}})')
+          [ -n "$url" ] && [ -n "$STATS_TOKEN" ] || { echo "Aucun test en ligne ou STATS_TOKEN absent."; exit 0; }
+          mkdir -p sortie/experiences
+          LISTE_ATTENTE_URL="$url" node scripts/verdict-experiences.js sortie/experiences/verdicts.json
+      - name: Dépôt des résultats
+        run: |
+          [ -d sortie ] || exit 0
+          cp -r sortie /tmp/sortie
+          git config user.name "metis-os"
+          git config user.email "noreply@github.com"
+          git checkout -B resultats origin/resultats
+          mkdir -p resultats && cp -r /tmp/sortie/. resultats/
+          git add resultats
+          git commit -qm "Verdicts : passage ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git push origin resultats && break; git pull --rebase -q origin resultats; done
