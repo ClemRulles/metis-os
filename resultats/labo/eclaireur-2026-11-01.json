@@ -1,0 +1,274 @@
+{
+ "date": "2026-11-01",
+ "candidats": [
+  {
+   "id": "particle-ai/particle-1",
+   "nom": "Particle AI: Particle-1",
+   "cree": "2026-10-28",
+   "prix_entree": 0.049999999999999996,
+   "prix_sortie": 0.5
+  },
+  {
+   "id": "deepseek/deepseek-v4.1-flash-1017",
+   "nom": "DeepSeek: DeepSeek V4.1 Flash 1017",
+   "cree": "2026-10-17",
+   "prix_entree": 0.15,
+   "prix_sortie": 0.6
+  },
+  {
+   "id": "reflection/beam-1.0-501b-a23b",
+   "nom": "Reflection: Beam 1.0 501B A23B",
+   "cree": "2026-10-16",
+   "prix_entree": 0.25,
+   "prix_sortie": 1
+  },
+  {
+   "id": "inception/mercury-3",
+   "nom": "Inception: Mercury 3",
+   "cree": "2026-10-16",
+   "prix_entree": 0.09999999999999999,
+   "prix_sortie": 0.35
+  },
+  {
+   "id": "prism-ml/ternary-bonsai-2-9b",
+   "nom": "PrismML: Ternary Bonsai 2 9B",
+   "cree": "2026-10-16",
+   "prix_entree": 0.08,
+   "prix_sortie": 0.13
+  },
+  {
+   "id": "nvidia/nemotron-3.5-super-vl",
+   "nom": "NVIDIA: Nemotron 3.5 Super VL",
+   "cree": "2026-10-15",
+   "prix_entree": 0.15,
+   "prix_sortie": 0.5
+  }
+ ],
+ "resultats": [
+  {
+   "modele": "deepseek/deepseek-v4-flash",
+   "cle": "deepseek",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 4.57,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 55731,
+   "echecs": 0,
+   "note": 9
+  },
+  {
+   "modele": "inception/mercury-3",
+   "cle": "candidat:inception/mercury-3",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 4.29,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 6997,
+   "echecs": 0,
+   "note": 8.86
+  },
+  {
+   "modele": "nvidia/nemotron-3.5-super-vl",
+   "cle": "candidat:nvidia/nemotron-3.5-super-vl",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 4.29,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 28760,
+   "echecs": 0,
+   "note": 8.86
+  },
+  {
+   "modele": "reflection/beam-1.0-501b-a23b",
+   "cle": "candidat:reflection/beam-1.0-501b-a23b",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 4,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 24974,
+   "echecs": 0,
+   "note": 8.666666666666666
+  },
+  {
+   "modele": "mistralai/mistral-small-24b-instruct-2501",
+   "cle": "mistral",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 3.86,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 27265,
+   "echecs": 0,
+   "note": 8.573333333333334
+  },
+  {
+   "modele": "z-ai/glm-5.3-flash",
+   "cle": "glm",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 3.43,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 31375,
+   "echecs": 0,
+   "note": 8.286666666666667
+  },
+  {
+   "modele": "prism-ml/ternary-bonsai-2-9b",
+   "cle": "candidat:prism-ml/ternary-bonsai-2-9b",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 3.43,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 13.3
+   },
+   "ms": 24086,
+   "echecs": 0,
+   "note": 8.286666666666667
+  },
+  {
+   "modele": "xiaomi/mimo-v2.6-flash",
+   "cle": "mimo",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 3.14,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 35780,
+   "echecs": 0,
+   "note": 8.093333333333334
+  },
+  {
+   "modele": "particle-ai/particle-1",
+   "cle": "candidat:particle-ai/particle-1",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 3,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 9374,
+   "echecs": 0,
+   "note": 8
+  },
+  {
+   "modele": "deepseek/deepseek-v4.1-flash-1017",
+   "cle": "candidat:deepseek/deepseek-v4.1-flash-1017",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 3,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 16115,
+   "echecs": 0,
+   "note": 8
+  },
+  {
+   "modele": "qwen/qwen3.7-flash",
+   "cle": "qwen",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 2.86,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 29213,
+   "echecs": 0,
+   "note": 7.906666666666666
+  },
+  {
+   "modele": "meta-llama/llama-3.1-8b-instruct",
+   "cle": "llama",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 2.86,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 50014,
+   "echecs": 0,
+   "note": 7.906666666666666
+  },
+  {
+   "modele": "minimax/minimax-m3.1-flash",
+   "cle": "minimax",
+   "extraction": {
+    "trouvees": 3,
+    "justes": 3,
+    "bruit": false
+   },
+   "discrimination": 2.71,
+   "generation": {
+    "idees": 3,
+    "champsRemplis": 14
+   },
+   "ms": 25539,
+   "echecs": 0,
+   "note": 7.806666666666667
+  }
+ ],
+ "cout": {
+  "usd": 0.0209,
+  "appels": 52
+ }
+}

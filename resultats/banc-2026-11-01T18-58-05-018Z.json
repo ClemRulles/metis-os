@@ -1,0 +1,1824 @@
+{
+ "manche": {
+  "note": "Plan de la prochaine manche. Métis le réécrit après chaque analyse : une manche sans hypothèse ne sert à rien. Champs lus par scripts/lancer-banc.js et recopiés dans le fichier de résultats.",
+  "phase": "idee",
+  "numero": 5,
+  "hypothese": "Avec seulement des modèles fiables (6 cerveaux payants quasi gratuits, sans llama), le prix collectif bat le taux de base (Brier marché < Brier taux de base).",
+  "critere_succes": "Brier du marché inférieur au Brier du taux de base sur les mêmes 100 cas, et au moins 90 réponses lisibles sur 100 par modèle.",
+  "question_suivante": "Si oui : le recalibrage vers le taux de base et l'ajout du modèle maison au marché améliorent-ils encore le score ? Si non : les modèles n'ajoutent rien au taux de base, on passe au modèle maison comme juge principal.",
+  "historique": [
+   {
+    "numero": 4,
+    "verdict": "partiellement confirmée",
+    "detail": "qwen répond 100/100 (correctif efficace) ; gemma 0/50 (HTTP 429, file gratuite saturée), inkling 0/50 (HTTP 403). Marché 0,0796 contre 0,0736 pour le taux de base : pire, à cause de llama (probabilité moyenne 57 % pour un vrai taux de 7,5 %). qwen et mimo sont au niveau du taux de base."
+   }
+  ],
+  "nb_cas": 100
+ },
+ "configurations": [
+  {
+   "id": "predicteur-01",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "cimetiere",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "europe-est",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "totale",
+   "outils": "code",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-02",
+   "cerveau": "mistral",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "lancements-produits",
+   "zone": "chine",
+   "risque": "equilibre",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-03",
+   "cerveau": "mimo",
+   "role": "predicteur",
+   "lentille": "luxe-democratise",
+   "raisonnement": "intuitif",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "usa",
+   "risque": "prudent",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-04",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "inversion",
+   "raisonnement": "statistique",
+   "persona": "aucune",
+   "territoire": "aucun",
+   "zone": "europe-est",
+   "risque": "kamikaze",
+   "horizon": "18-36",
+   "memoire": "totale",
+   "outils": "redaction",
+   "temperature": 0.5
+  },
+  {
+   "id": "predicteur-05",
+   "cerveau": "mistral",
+   "role": "predicteur",
+   "lentille": "super-pouvoir-agent",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "bresil",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "aucun",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-06",
+   "cerveau": "mimo",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "analogie",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "monde",
+   "risque": "prudent",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "code",
+   "temperature": 0.2
+  }
+ ],
+ "resultat": {
+  "parConfiguration": [
+   {
+    "id": "predicteur-03",
+    "n": 30,
+    "brier": 0.07682416666666665,
+    "logScore": -0.2654205039433903,
+    "apport": 0.038544845696884864
+   },
+   {
+    "id": "predicteur-06",
+    "n": 30,
+    "brier": 0.08392586666666668,
+    "logScore": -0.2954072506470383,
+    "apport": 0.00014429902049923105
+   },
+   {
+    "id": "predicteur-02",
+    "n": 27,
+    "brier": 0.07735,
+    "logScore": -0.2743019353869724,
+    "apport": -0.028501224098901875
+   },
+   {
+    "id": "predicteur-01",
+    "n": 30,
+    "brier": 0.09067600000000002,
+    "logScore": -0.32956195848015857,
+    "apport": -0.04227014660517107
+   },
+   {
+    "id": "predicteur-04",
+    "n": 30,
+    "brier": 0.09082176666666669,
+    "logScore": -0.3305412852970233,
+    "apport": -0.04360489420252498
+   },
+   {
+    "id": "predicteur-05",
+    "n": 28,
+    "brier": 0.08139427714285714,
+    "logScore": -0.2858630024143164,
+    "apport": -0.05941903289992756
+   }
+  ],
+  "marche": {
+   "n": 30,
+   "brier": 0.08370202111033248,
+   "logScore": -0.29397100304567186,
+   "apport": null
+  },
+  "carteDesGenes": {
+   "cerveau": {
+    "qwen": {
+     "configurations": 2,
+     "apportMoyen": -0.042937520403848024
+    },
+    "mistral": {
+     "configurations": 2,
+     "apportMoyen": -0.04396012849941472
+    },
+    "mimo": {
+     "configurations": 2,
+     "apportMoyen": 0.019344572358692046
+    }
+   },
+   "role": {
+    "predicteur": {
+     "configurations": 6,
+     "apportMoyen": -0.022517692181523566
+    }
+   },
+   "lentille": {
+    "cimetiere": {
+     "configurations": 1,
+     "apportMoyen": -0.04227014660517107
+    },
+    "travail-abandonne": {
+     "configurations": 2,
+     "apportMoyen": -0.014178462539201322
+    },
+    "luxe-democratise": {
+     "configurations": 1,
+     "apportMoyen": 0.038544845696884864
+    },
+    "inversion": {
+     "configurations": 1,
+     "apportMoyen": -0.04360489420252498
+    },
+    "super-pouvoir-agent": {
+     "configurations": 1,
+     "apportMoyen": -0.05941903289992756
+    }
+   },
+   "raisonnement": {
+    "premiers-principes": {
+     "configurations": 3,
+     "apportMoyen": -0.0433968012013335
+    },
+    "intuitif": {
+     "configurations": 1,
+     "apportMoyen": 0.038544845696884864
+    },
+    "statistique": {
+     "configurations": 1,
+     "apportMoyen": -0.04360489420252498
+    },
+    "analogie": {
+     "configurations": 1,
+     "apportMoyen": 0.00014429902049923105
+    }
+   },
+   "persona": {
+    "aucune": {
+     "configurations": 6,
+     "apportMoyen": -0.022517692181523566
+    }
+   },
+   "territoire": {
+    "marches-de-prevision": {
+     "configurations": 2,
+     "apportMoyen": -0.05084458975254931
+    },
+    "lancements-produits": {
+     "configurations": 1,
+     "apportMoyen": -0.028501224098901875
+    },
+    "rss-tech": {
+     "configurations": 2,
+     "apportMoyen": 0.019344572358692046
+    },
+    "aucun": {
+     "configurations": 1,
+     "apportMoyen": -0.04360489420252498
+    }
+   },
+   "zone": {
+    "europe-est": {
+     "configurations": 2,
+     "apportMoyen": -0.042937520403848024
+    },
+    "chine": {
+     "configurations": 1,
+     "apportMoyen": -0.028501224098901875
+    },
+    "usa": {
+     "configurations": 1,
+     "apportMoyen": 0.038544845696884864
+    },
+    "bresil": {
+     "configurations": 1,
+     "apportMoyen": -0.05941903289992756
+    },
+    "monde": {
+     "configurations": 1,
+     "apportMoyen": 0.00014429902049923105
+    }
+   },
+   "risque": {
+    "equilibre": {
+     "configurations": 3,
+     "apportMoyen": -0.0433968012013335
+    },
+    "prudent": {
+     "configurations": 2,
+     "apportMoyen": 0.019344572358692046
+    },
+    "kamikaze": {
+     "configurations": 1,
+     "apportMoyen": -0.04360489420252498
+    }
+   },
+   "horizon": {
+    "6-18": {
+     "configurations": 3,
+     "apportMoyen": -0.02104811126940459
+    },
+    "0-6": {
+     "configurations": 2,
+     "apportMoyen": -0.014178462539201322
+    },
+    "18-36": {
+     "configurations": 1,
+     "apportMoyen": -0.04360489420252498
+    }
+   },
+   "memoire": {
+    "totale": {
+     "configurations": 2,
+     "apportMoyen": -0.042937520403848024
+    },
+    "partielle": {
+     "configurations": 2,
+     "apportMoyen": -0.014178462539201322
+    },
+    "aucune": {
+     "configurations": 2,
+     "apportMoyen": -0.010437093601521348
+    }
+   },
+   "outils": {
+    "code": {
+     "configurations": 2,
+     "apportMoyen": -0.02106292379233592
+    },
+    "redaction": {
+     "configurations": 3,
+     "apportMoyen": -0.011187090868180663
+    },
+    "aucun": {
+     "configurations": 1,
+     "apportMoyen": -0.05941903289992756
+    }
+   },
+   "temperature": {
+    "0.8": {
+     "configurations": 2,
+     "apportMoyen": -0.05084458975254931
+    },
+    "1.1": {
+     "configurations": 2,
+     "apportMoyen": 0.005021810798991494
+    },
+    "0.5": {
+     "configurations": 1,
+     "apportMoyen": -0.04360489420252498
+    },
+    "0.2": {
+     "configurations": 1,
+     "apportMoyen": 0.00014429902049923105
+    }
+   }
+  },
+  "predictions": 180,
+  "echecs": 5,
+  "parCerveau": {
+   "qwen": {
+    "ok": 60,
+    "echecs": 0,
+    "msMoyen": 13349,
+    "exempleErreur": null
+   },
+   "mistral": {
+    "ok": 55,
+    "echecs": 5,
+    "msMoyen": 3823,
+    "exempleErreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)"
+   },
+   "mimo": {
+    "ok": 60,
+    "echecs": 0,
+    "msMoyen": 2829,
+    "exempleErreur": null
+   }
+  },
+  "detail": [
+   {
+    "cas": "hn-50192988",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13378
+   },
+   {
+    "cas": "hn-50192988",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": null,
+    "erreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 16124
+   },
+   {
+    "cas": "hn-50192988",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 3275
+   },
+   {
+    "cas": "hn-50192988",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13544
+   },
+   {
+    "cas": "hn-50192988",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 2847
+   },
+   {
+    "cas": "hn-50192988",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 880
+   },
+   {
+    "cas": "hn-50038883",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14218
+   },
+   {
+    "cas": "hn-50038883",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": null,
+    "erreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15428
+   },
+   {
+    "cas": "hn-50038883",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.16,
+    "erreur": null,
+    "ms": 1011
+   },
+   {
+    "cas": "hn-50038883",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12294
+   },
+   {
+    "cas": "hn-50038883",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": null,
+    "erreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15509
+   },
+   {
+    "cas": "hn-50038883",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 3883
+   },
+   {
+    "cas": "hn-49917399",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13101
+   },
+   {
+    "cas": "hn-49917399",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": null,
+    "erreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15608
+   },
+   {
+    "cas": "hn-49917399",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 1037
+   },
+   {
+    "cas": "hn-49917399",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13116
+   },
+   {
+    "cas": "hn-49917399",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": null,
+    "erreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15383
+   },
+   {
+    "cas": "hn-49917399",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 964
+   },
+   {
+    "cas": "hn-50174826",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13660
+   },
+   {
+    "cas": "hn-50174826",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.05,
+    "erreur": null,
+    "ms": 17994
+   },
+   {
+    "cas": "hn-50174826",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.18,
+    "erreur": null,
+    "ms": 843
+   },
+   {
+    "cas": "hn-50174826",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13495
+   },
+   {
+    "cas": "hn-50174826",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 16893
+   },
+   {
+    "cas": "hn-50174826",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 4394
+   },
+   {
+    "cas": "hn-49826094",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13061
+   },
+   {
+    "cas": "hn-49826094",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.085,
+    "erreur": null,
+    "ms": 17671
+   },
+   {
+    "cas": "hn-49826094",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 1215
+   },
+   {
+    "cas": "hn-49826094",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12932
+   },
+   {
+    "cas": "hn-49826094",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.15,
+    "erreur": null,
+    "ms": 7482
+   },
+   {
+    "cas": "hn-49826094",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1024
+   },
+   {
+    "cas": "hn-49811140",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13310
+   },
+   {
+    "cas": "hn-49811140",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 6643
+   },
+   {
+    "cas": "hn-49811140",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 2174
+   },
+   {
+    "cas": "hn-49811140",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13853
+   },
+   {
+    "cas": "hn-49811140",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 15933
+   },
+   {
+    "cas": "hn-49811140",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 4885
+   },
+   {
+    "cas": "hn-49618059",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13133
+   },
+   {
+    "cas": "hn-49618059",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 6637
+   },
+   {
+    "cas": "hn-49618059",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 1629
+   },
+   {
+    "cas": "hn-49618059",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14165
+   },
+   {
+    "cas": "hn-49618059",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1719
+   },
+   {
+    "cas": "hn-49618059",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 685
+   },
+   {
+    "cas": "hn-49574970",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13480
+   },
+   {
+    "cas": "hn-49574970",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.064,
+    "erreur": null,
+    "ms": 1820
+   },
+   {
+    "cas": "hn-49574970",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 772
+   },
+   {
+    "cas": "hn-49574970",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12834
+   },
+   {
+    "cas": "hn-49574970",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1119
+   },
+   {
+    "cas": "hn-49574970",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1556
+   },
+   {
+    "cas": "hn-49861216",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13130
+   },
+   {
+    "cas": "hn-49861216",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 730
+   },
+   {
+    "cas": "hn-49861216",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.35,
+    "erreur": null,
+    "ms": 876
+   },
+   {
+    "cas": "hn-49861216",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 12949
+   },
+   {
+    "cas": "hn-49861216",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.6,
+    "erreur": null,
+    "ms": 2268
+   },
+   {
+    "cas": "hn-49861216",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 8163
+   },
+   {
+    "cas": "hn-49660434",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12734
+   },
+   {
+    "cas": "hn-49660434",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.043,
+    "erreur": null,
+    "ms": 2340
+   },
+   {
+    "cas": "hn-49660434",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1468
+   },
+   {
+    "cas": "hn-49660434",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12524
+   },
+   {
+    "cas": "hn-49660434",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1047
+   },
+   {
+    "cas": "hn-49660434",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1541
+   },
+   {
+    "cas": "hn-50216053",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14935
+   },
+   {
+    "cas": "hn-50216053",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1203
+   },
+   {
+    "cas": "hn-50216053",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.16,
+    "erreur": null,
+    "ms": 3570
+   },
+   {
+    "cas": "hn-50216053",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12919
+   },
+   {
+    "cas": "hn-50216053",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1433
+   },
+   {
+    "cas": "hn-50216053",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1483
+   },
+   {
+    "cas": "hn-49728811",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14227
+   },
+   {
+    "cas": "hn-49728811",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1555
+   },
+   {
+    "cas": "hn-49728811",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 4240
+   },
+   {
+    "cas": "hn-49728811",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12939
+   },
+   {
+    "cas": "hn-49728811",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1110
+   },
+   {
+    "cas": "hn-49728811",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.15,
+    "erreur": null,
+    "ms": 919
+   },
+   {
+    "cas": "hn-49906493",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14762
+   },
+   {
+    "cas": "hn-49906493",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.05,
+    "erreur": null,
+    "ms": 802
+   },
+   {
+    "cas": "hn-49906493",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 3392
+   },
+   {
+    "cas": "hn-49906493",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12998
+   },
+   {
+    "cas": "hn-49906493",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1026
+   },
+   {
+    "cas": "hn-49906493",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 814
+   },
+   {
+    "cas": "hn-49745641",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13522
+   },
+   {
+    "cas": "hn-49745641",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.25,
+    "erreur": null,
+    "ms": 778
+   },
+   {
+    "cas": "hn-49745641",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 12140
+   },
+   {
+    "cas": "hn-49745641",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13683
+   },
+   {
+    "cas": "hn-49745641",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1107
+   },
+   {
+    "cas": "hn-49745641",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.13,
+    "erreur": null,
+    "ms": 1207
+   },
+   {
+    "cas": "hn-49983690",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13152
+   },
+   {
+    "cas": "hn-49983690",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 622
+   },
+   {
+    "cas": "hn-49983690",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 800
+   },
+   {
+    "cas": "hn-49983690",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13467
+   },
+   {
+    "cas": "hn-49983690",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.11,
+    "erreur": null,
+    "ms": 872
+   },
+   {
+    "cas": "hn-49983690",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1237
+   },
+   {
+    "cas": "hn-49549111",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12772
+   },
+   {
+    "cas": "hn-49549111",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 2010
+   },
+   {
+    "cas": "hn-49549111",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 14241
+   },
+   {
+    "cas": "hn-49549111",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12809
+   },
+   {
+    "cas": "hn-49549111",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 894
+   },
+   {
+    "cas": "hn-49549111",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 5449
+   },
+   {
+    "cas": "hn-50194374",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13458
+   },
+   {
+    "cas": "hn-50194374",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.082,
+    "erreur": null,
+    "ms": 1052
+   },
+   {
+    "cas": "hn-50194374",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 849
+   },
+   {
+    "cas": "hn-50194374",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.085,
+    "erreur": null,
+    "ms": 9811
+   },
+   {
+    "cas": "hn-50194374",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 890
+   },
+   {
+    "cas": "hn-50194374",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 787
+   },
+   {
+    "cas": "hn-49712785",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13499
+   },
+   {
+    "cas": "hn-49712785",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 2360
+   },
+   {
+    "cas": "hn-49712785",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 585
+   },
+   {
+    "cas": "hn-49712785",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12964
+   },
+   {
+    "cas": "hn-49712785",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.097,
+    "erreur": null,
+    "ms": 1309
+   },
+   {
+    "cas": "hn-49712785",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 4504
+   },
+   {
+    "cas": "hn-49903249",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12756
+   },
+   {
+    "cas": "hn-49903249",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.55,
+    "erreur": null,
+    "ms": 867
+   },
+   {
+    "cas": "hn-49903249",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 962
+   },
+   {
+    "cas": "hn-49903249",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14499
+   },
+   {
+    "cas": "hn-49903249",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 931
+   },
+   {
+    "cas": "hn-49903249",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 2091
+   },
+   {
+    "cas": "hn-49902577",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14525
+   },
+   {
+    "cas": "hn-49902577",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 983
+   },
+   {
+    "cas": "hn-49902577",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1954
+   },
+   {
+    "cas": "hn-49902577",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13944
+   },
+   {
+    "cas": "hn-49902577",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 774
+   },
+   {
+    "cas": "hn-49902577",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 897
+   },
+   {
+    "cas": "hn-49860275",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12962
+   },
+   {
+    "cas": "hn-49860275",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.63,
+    "erreur": null,
+    "ms": 1268
+   },
+   {
+    "cas": "hn-49860275",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 899
+   },
+   {
+    "cas": "hn-49860275",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12932
+   },
+   {
+    "cas": "hn-49860275",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1045
+   },
+   {
+    "cas": "hn-49860275",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 636
+   },
+   {
+    "cas": "hn-49588503",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13253
+   },
+   {
+    "cas": "hn-49588503",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.03,
+    "erreur": null,
+    "ms": 1894
+   },
+   {
+    "cas": "hn-49588503",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 995
+   },
+   {
+    "cas": "hn-49588503",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12496
+   },
+   {
+    "cas": "hn-49588503",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 661
+   },
+   {
+    "cas": "hn-49588503",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 1550
+   },
+   {
+    "cas": "hn-49721941",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13833
+   },
+   {
+    "cas": "hn-49721941",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 693
+   },
+   {
+    "cas": "hn-49721941",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1766
+   },
+   {
+    "cas": "hn-49721941",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12853
+   },
+   {
+    "cas": "hn-49721941",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1205
+   },
+   {
+    "cas": "hn-49721941",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 4442
+   },
+   {
+    "cas": "hn-50157876",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13901
+   },
+   {
+    "cas": "hn-50157876",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.15,
+    "erreur": null,
+    "ms": 1320
+   },
+   {
+    "cas": "hn-50157876",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.11,
+    "erreur": null,
+    "ms": 11343
+   },
+   {
+    "cas": "hn-50157876",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13435
+   },
+   {
+    "cas": "hn-50157876",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1052
+   },
+   {
+    "cas": "hn-50157876",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.11,
+    "erreur": null,
+    "ms": 1814
+   },
+   {
+    "cas": "hn-49899130",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14609
+   },
+   {
+    "cas": "hn-49899130",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.5,
+    "erreur": null,
+    "ms": 5739
+   },
+   {
+    "cas": "hn-49899130",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 7959
+   },
+   {
+    "cas": "hn-49899130",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14107
+   },
+   {
+    "cas": "hn-49899130",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.23,
+    "erreur": null,
+    "ms": 1096
+   },
+   {
+    "cas": "hn-49899130",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 7655
+   },
+   {
+    "cas": "hn-49983275",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12944
+   },
+   {
+    "cas": "hn-49983275",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.15,
+    "erreur": null,
+    "ms": 892
+   },
+   {
+    "cas": "hn-49983275",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 6252
+   },
+   {
+    "cas": "hn-49983275",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12981
+   },
+   {
+    "cas": "hn-49983275",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.5,
+    "erreur": null,
+    "ms": 726
+   },
+   {
+    "cas": "hn-49983275",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 1241
+   },
+   {
+    "cas": "hn-49745351",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 14160
+   },
+   {
+    "cas": "hn-49745351",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 761
+   },
+   {
+    "cas": "hn-49745351",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.14,
+    "erreur": null,
+    "ms": 2117
+   },
+   {
+    "cas": "hn-49745351",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13916
+   },
+   {
+    "cas": "hn-49745351",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.24,
+    "erreur": null,
+    "ms": 1328
+   },
+   {
+    "cas": "hn-49745351",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 3725
+   },
+   {
+    "cas": "hn-50151724",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13630
+   },
+   {
+    "cas": "hn-50151724",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.15,
+    "erreur": null,
+    "ms": 1616
+   },
+   {
+    "cas": "hn-50151724",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.16,
+    "erreur": null,
+    "ms": 1293
+   },
+   {
+    "cas": "hn-50151724",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13502
+   },
+   {
+    "cas": "hn-50151724",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 1351
+   },
+   {
+    "cas": "hn-50151724",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1147
+   },
+   {
+    "cas": "hn-49701936",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12954
+   },
+   {
+    "cas": "hn-49701936",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 1037
+   },
+   {
+    "cas": "hn-49701936",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1375
+   },
+   {
+    "cas": "hn-49701936",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13340
+   },
+   {
+    "cas": "hn-49701936",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.074,
+    "erreur": null,
+    "ms": 590
+   },
+   {
+    "cas": "hn-49701936",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 3655
+   },
+   {
+    "cas": "hn-49746346",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 12672
+   },
+   {
+    "cas": "hn-49746346",
+    "config": "predicteur-02",
+    "cerveau": "mistral",
+    "p": 0.74,
+    "erreur": null,
+    "ms": 703
+   },
+   {
+    "cas": "hn-49746346",
+    "config": "predicteur-03",
+    "cerveau": "mimo",
+    "p": 0.3,
+    "erreur": null,
+    "ms": 2589
+   },
+   {
+    "cas": "hn-49746346",
+    "config": "predicteur-04",
+    "cerveau": "qwen",
+    "p": 0.07400000000000001,
+    "erreur": null,
+    "ms": 13880
+   },
+   {
+    "cas": "hn-49746346",
+    "config": "predicteur-05",
+    "cerveau": "mistral",
+    "p": 0.0674,
+    "erreur": null,
+    "ms": 630
+   },
+   {
+    "cas": "hn-49746346",
+    "config": "predicteur-06",
+    "cerveau": "mimo",
+    "p": 0.18,
+    "erreur": null,
+    "ms": 2916
+   }
+  ]
+ },
+ "routeur": [
+  {
+   "fournisseur": "openrouter",
+   "tokensUtilises": 123211,
+   "tokensRestants": 2876789,
+   "modelesCoupes": [],
+   "cle": true
+  },
+  {
+   "fournisseur": "groq",
+   "tokensUtilises": 0,
+   "tokensRestants": 200000,
+   "modelesCoupes": [],
+   "cle": false
+  }
+ ]
+}
