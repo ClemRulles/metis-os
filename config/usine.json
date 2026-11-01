@@ -1,64 +1,102 @@
 {
-  "version": 1,
-  "note": "Usine à idées. Tout est réglable ici sans toucher au code : lentilles, cerveaux, volumes, poids des axes. Métis réécrit ce fichier à mesure que les tests réels disent ce qui marche.",
+  "version": 2,
+  "note": "Usine v2, ancrée dans le réel. Tout est réglable ici sans toucher au code. Les poids du score final seront recalibrés sur les résultats des tests réels.",
   "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
-  "cerveaux_generation": [
-    "deepseek",
-    "qwen",
-    "glm",
-    "minimax",
-    "mimo"
-  ],
-  "cerveaux_jugement": [
-    "deepseek",
-    "qwen",
-    "glm",
-    "mimo"
-  ],
+  "cerveaux_generation": ["deepseek", "qwen", "glm", "minimax", "mimo"],
+  "cerveaux_jugement": ["deepseek", "qwen", "glm", "mimo", "minimax"],
+  "cerveaux_extraction": ["qwen", "deepseek", "mimo", "mistral"],
+  "cerveaux_enquete": ["glm", "minimax"],
+  "moteur_web": "parallel",
+  "plafond_cout_usd": 0.9,
   "volumes": {
-    "generations": 60,
-    "idees_par_generation": 4,
-    "finalistes_tournoi": 24,
-    "rondes_tournoi": 4,
+    "generations": 120,
+    "idees_par_generation": 5,
+    "part_ancree": 0.7,
+    "finalistes_tournoi": 32,
+    "rondes_tournoi": 5,
+    "max_finalistes_par_arene": 5,
+    "max_finalistes_par_gisement": 2,
+    "enquetes": 15,
     "top_publie": 10
   },
+  "arenes": {
+    "grand-public": "Particuliers : vie quotidienne, argent, logement, mobilité, consommation.",
+    "familles-et-aines": "Parents, enfants, aidants, personnes âgées.",
+    "apprendre": "Éducation, langues, formation, étudiants, autodidactes.",
+    "createurs": "Créateurs de contenu, artistes, auteurs, musiciens, artisans qui vendent en ligne.",
+    "petits-vendeurs": "Indépendants et petits commerçants en ligne (produits, pas conseil).",
+    "local-et-territoire": "Communes, quartiers, associations, vie locale.",
+    "culture-et-loisirs": "Patrimoine, jeux, voyages, sport, passions.",
+    "sante-bien-etre": "Bien-être, sommeil, forme, prévention (jamais de conseil médical personnalisé).",
+    "planete": "Climat, énergie, biodiversité, alimentation durable.",
+    "donnees-et-api": "Données, API et agents vendus à d'autres agents ou développeurs (places de marché).",
+    "travail-et-carrieres": "Chercheurs d'emploi, reconversions, travailleurs frontaliers."
+  },
+  "canaux": {
+    "seo-programmatique": "Des milliers de pages utiles générées à partir de données, qui captent des recherches précises.",
+    "magasin-applications": "App Store, Google Play : la vitrine apporte des utilisateurs.",
+    "extension-navigateur": "Chrome Web Store : distribution intégrée, installation en un clic.",
+    "place-de-marche-api": "Apify Store, RapidAPI, catalogues MCP : des développeurs et des agents achètent à l'usage.",
+    "place-de-marche-numerique": "Etsy, Gumroad, Lemon Squeezy : produits numériques vendus à l'unité.",
+    "communautes": "Forums, groupes, Discord, Lemmy, Hacker News : présence utile et honnête, jamais de spam.",
+    "lancement": "Product Hunt, Show HN, BetaList : un pic de visiteurs qualifiés.",
+    "newsletter-partenaire": "Une newsletter existante du domaine présente le produit.",
+    "contenu-court": "Vidéos courtes et carrousels qui montrent le résultat.",
+    "bouche-a-oreille-produit": "Le produit se partage seul (résultat partageable, invitation, widget).",
+    "publicite-test": "Petit budget publicitaire standardisé, seulement pour mesurer la demande."
+  },
+  "theses": [
+    "Les données publiques européennes sont devenues gratuites par API depuis juin 2024 (jeux de données à forte valeur) : satellites, météo, registres, mobilité. Presque personne ne les transforme en services pour le grand public.",
+    "Les agents IA deviennent des clients : ils achètent des données, des API et des outils à l'usage. Une place de marché d'agents est un canal de vente sans appel et mondial.",
+    "Le vieillissement : des millions d'aidants débordés et des aînés isolés ; les enfants paient pour la tranquillité.",
+    "Un travail de lecture ou de surveillance de mille heures coûte désormais quelques euros : tout service de veille réservé aux riches peut devenir un abonnement à 5 euros.",
+    "La confiance devient rare : faux avis, contenus générés, arnaques. Ce qui prouve, vérifie ou certifie gagne de la valeur.",
+    "Les règles européennes créent des besoins nouveaux chez les particuliers : passeport numérique des produits, droit à la réparation, étiquetage énergétique, accessibilité.",
+    "L'apprentissage personnalisé coûte presque rien à produire : n'importe quel savoir de niche peut devenir un cours, un jeu ou un compagnon.",
+    "Le local revient : circuits courts, vie de quartier, communes qui manquent de moyens."
+  ],
+  "atouts_fondateur": [
+    "Francophone, basé en Belgique à la frontière luxembourgeoise ; connaît le quotidien des travailleurs frontaliers.",
+    "Ingénieur de gestion : finance, stratégie, vente ; aime l'IA, le spatial, les projets ambitieux.",
+    "Dispose d'une organisation d'agents IA qui travaille 24 h sur 24 pour presque rien."
+  ],
   "lentilles": {
     "futur-a-rebours": "Écris d'abord, mentalement, un article de presse de 2031 sur un service devenu indispensable. Puis remonte le temps : quelle première brique peut-on lancer dès ce mois-ci ?",
     "collision-api": "Prends les deux sources de données ou API fournies et fais-les entrer en collision : quel service nouveau naît seulement de leur croisement ?",
     "cimetiere": "Pense à une idée tentée avant 2023, abandonnée parce qu'elle demandait trop de travail humain ou coûtait trop cher. Avec des agents à un centime la tâche, que devient-elle ?",
     "travail-invisible": "Trouve un travail utile que personne ne fait parce qu'il demande de lire, comparer ou surveiller des milliers de documents. Des agents peuvent le faire chaque jour : à qui ça change la vie ?",
-    "luxe-democratise": "Prends un service réservé aux riches ou aux grandes entreprises (veille, avocat, analyste, majordome, chercheur) et rends-le accessible à tous pour quelques euros.",
+    "luxe-democratise": "Prends un service réservé aux riches ou aux grandes entreprises (veille, analyste, majordome, chercheur) et rends-le accessible à tous pour quelques euros.",
     "signal-faible": "Pars d'un des signaux récents fournis (recherche scientifique, tendance tech) : qui va en avoir besoin dans 12 à 36 mois, avant tout le monde ?",
     "transplant": "Prends un modèle qui marche dans un pays ou un secteur, et transplante-le là où il n'existe pas encore (Europe, francophonie, un autre métier).",
     "inversion": "Prends une pratique établie et inverse-la (le client devient fournisseur, le payant devient gratuit, le lent devient instantané, le centralisé devient local).",
     "super-pouvoir-agent": "Quelle chose devient possible seulement quand on a mille travailleurs infatigables qui coûtent presque rien, travaillent 24 h sur 24 et ne s'ennuient jamais ?",
     "bien-commun": "Pars d'un grand problème de société (climat, santé, isolement, accès au droit, éducation, logement, biodiversité, démocratie locale) et trouve une brique utile, finançable et testable en 2 semaines.",
-    "evolution": "Voici des idées finalistes d'un passage précédent et la critique qui les rendrait plus fortes. Fais-les muter, croise-les, pousse-les plus loin : ne les recopie pas."
+    "evolution": "Voici des idées finalistes d'un passage précédent, leur dossier d'enquête et la critique qui les rendrait plus fortes. Fais-les muter, croise-les, pousse-les plus loin : ne les recopie pas."
+  },
+  "lentilles_ancrees": {
+    "meilleure-solution": "Les citations ci-dessous viennent de vraies personnes. Conçois la solution que ces gens choisiraient sans hésiter, en faisant ce qu'aucune solution actuelle ne fait.",
+    "dix-fois-moins-cher": "Les citations ci-dessous viennent de vraies personnes. Conçois une solution dix fois moins chère ou dix fois plus rapide que ce qu'elles utilisent, grâce aux agents.",
+    "pour-les-oublies": "Les citations ci-dessous viennent de vraies personnes. Identifie le sous-groupe le plus mal servi parmi elles et conçois la solution pour lui d'abord.",
+    "renverser-la-plainte": "Les citations ci-dessous sont des plaintes contre des produits existants. Conçois le produit qui est l'exact contraire de ce dont elles se plaignent."
   },
   "axes": {
-    "valeur_societale": {
-      "poids": 0.25,
-      "definition": "Combien de personnes en profitent, et à quel point leur vie ou leur travail s'en trouve meilleur."
-    },
-    "originalite": {
-      "poids": 0.2,
-      "definition": "Personne ne le fait déjà ainsi ; l'angle surprend un expert du domaine."
-    },
-    "avantage_agents": {
-      "poids": 0.15,
-      "definition": "L'idée exploite ce que des agents IA font mieux que des humains (volume, vitesse, constance, coût)."
-    },
-    "defensibilite": {
-      "poids": 0.15,
-      "definition": "Si un assistant IA gratuit sait le faire demain, il reste quelque chose : données propres, réseau, confiance, résultat livré."
-    },
-    "argent_rapide": {
-      "poids": 0.15,
-      "definition": "Un premier paiement est plausible sous 30 jours, sans appel téléphonique, avec moins de 300 euros."
-    },
-    "faisabilite": {
-      "poids": 0.1,
-      "definition": "Testable en 2 semaines avec environ 7 heures humaines par semaine."
+    "valeur_societale": { "poids": 0.2, "definition": "Combien de personnes en profitent, et à quel point leur vie ou leur travail s'en trouve meilleur." },
+    "originalite": { "poids": 0.15, "definition": "Personne ne le fait déjà ainsi ; l'angle surprend un expert du domaine." },
+    "avantage_agents": { "poids": 0.15, "definition": "L'idée exploite ce que des agents IA font mieux que des humains (volume, vitesse, constance, coût)." },
+    "defensibilite": { "poids": 0.1, "definition": "Si un assistant IA gratuit sait le faire demain, il reste quelque chose : données propres, réseau, confiance, résultat livré." },
+    "argent_rapide": { "poids": 0.15, "definition": "Un premier paiement est plausible sous 30 jours, sans appel téléphonique, avec moins de 300 euros." },
+    "distribution": { "poids": 0.15, "definition": "Le canal choisi peut réellement amener les premiers clients sans appel et sans spam." },
+    "faisabilite": { "poids": 0.1, "definition": "Testable en 2 semaines avec environ 7 heures humaines par semaine." }
+  },
+  "score_final": {
+    "note": "Le classement final repose sur des preuves. L'avis des IA (critique et tournoi) ne pèse qu'un tiers.",
+    "poids": {
+      "douleur_prouvee": 0.22,
+      "paiement_prouve": 0.18,
+      "espace_libre": 0.17,
+      "critique": 0.23,
+      "tournoi": 0.1,
+      "faible_risque": 0.1
     }
   },
   "contraintes": [

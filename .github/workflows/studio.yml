@@ -1,0 +1,53 @@
+name: Studio
+
+# Chaque jour : radar des douleurs réelles → usine à idées → enquête web → classement à preuves.
+# La mémoire (gisements, graines, idées déjà vues) vit sur la branche « resultats », dossier resultats/etat.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 3 * * *" # vers 4 h 43 heure de Bruxelles, prêt pour le point de contrôle de 6 h 39
+  push:
+    branches: [main]
+    paths: ["config/usine.json", "config/atlas-api.json", "src/usine/**", "src/radar/**", "src/enquete/**", "src/commun/**", "scripts/lancer-studio.js"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resultats
+  cancel-in-progress: false
+
+jobs:
+  studio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Tests
+        run: npm test
+      - name: Mémoire du studio
+        run: |
+          mkdir -p /tmp/etat
+          git fetch origin resultats || true
+          for f in gisements graines deja_vues; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
+          ls -la /tmp/etat
+      - name: Radar, usine, enquête
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: node scripts/lancer-studio.js /tmp/etat sortie
+      - name: Dépôt des résultats
+        if: always()
+        run: |
+          [ -d sortie ] || exit 0
+          cp -r sortie /tmp/sortie
+          git config user.name "metis-os"
+          git config user.email "noreply@github.com"
+          if git rev-parse --verify -q origin/resultats >/dev/null; then git checkout -B resultats origin/resultats; else git checkout --orphan resultats && git rm -rq --cached . && git clean -fdq; fi
+          mkdir -p resultats && cp -r /tmp/sortie/. resultats/
+          git add resultats
+          git commit -qm "Studio : passage ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git push origin resultats && break; git pull --rebase -q origin resultats; done

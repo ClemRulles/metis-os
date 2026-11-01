@@ -9,10 +9,14 @@ on:
         description: "Nombre de cas à faire prédire"
         default: ""
   schedule:
-    - cron: "17 */4 * * *" # toutes les 4 heures
+    - cron: "17 2 * * 0" # chaque dimanche : banc d'essai des modèles (le banc ne prédit pas mieux que le taux de base, manches 3 à 5)
 
 permissions:
   contents: write # pour déposer les résultats sur la branche « resultats », lue par Métis
+
+concurrency:
+  group: resultats
+  cancel-in-progress: false
 
 jobs:
   banc:
