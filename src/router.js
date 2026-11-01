@@ -56,8 +56,9 @@ export function creerRouteur({
   seuilCoupeCircuit = 3,
   pauseCoupeCircuitMs = 10 * 60 * 1000,
   arretGlobal = () => false,
-  tentativesMax = 4,
-  attente429Ms = 8_000,
+  tentativesMax = 2,
+  attente429Ms = 5_000,
+  delaiRequeteMs = 45_000, // une requête qui ne répond pas en 45 s est abandonnée
   dormir = (ms) => new Promise((r) => setTimeout(r, ms)),
 } = {}) {
   const etat = new Map(); // fournisseur -> { jour, tokens, fenetre: [] }
@@ -139,6 +140,7 @@ export function creerRouteur({
       if (estGratuit(f, cerveau)) e.fenetreGratuits.push(maintenant());
       try {
         const rep = await fetchImpl(f.url, {
+          signal: typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(delaiRequeteMs) : undefined,
           method: "POST",
           headers: { "content-type": "application/json", authorization: `Bearer ${env[f.cle]}` },
           body: JSON.stringify({ model: f.modeles[cerveau], messages, temperature, max_tokens: maxTokens }),

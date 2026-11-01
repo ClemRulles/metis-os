@@ -5,32 +5,37 @@ import { messagesPrediction, lireProbabilite } from "./prompt.js";
 import { prixMarche, apport, bilan } from "../scoring.js";
 import { NOMS_GENES } from "../genome.js";
 
-export async function executerBanc({ configurations, cas, routeur, tauxDeBase = null, seuilPoints = 10, surProgres = () => {} }) {
+export async function executerBanc({ configurations, cas, routeur, tauxDeBase = null, seuilPoints = 10, parallelisme = 12, surProgres = () => {} }) {
   const predictions = []; // { cas, config, p, fournisseur, erreur? }
   let fait = 0;
-  // Pour chaque cas, toutes les configurations prédisent en parallèle : chacune utilise un modèle différent,
-  // et le routeur gère seul les limites de débit.
-  for (const c of cas) {
-    const lot = await Promise.all(
-      configurations.map(async (config) => {
-        try {
-          const r = await routeur.appeler({
-            cerveau: config.cerveau,
-            temperature: config.temperature,
-            maxTokens: 200,
-            messages: messagesPrediction(config, c, { tauxDeBase, seuilPoints }),
-          });
-          const p = lireProbabilite(r.texte);
-          return { cas: c.id, config: config.id, p, fournisseur: r.fournisseur, erreur: p == null ? "illisible" : null };
-        } catch (err) {
-          return { cas: c.id, config: config.id, p: null, erreur: err.message };
-        } finally {
-          surProgres(++fait, cas.length * configurations.length);
-        }
-      })
-    );
-    predictions.push(...lot);
+  // File de travail : toutes les prédictions partent dans un pool de taille fixe. Un modèle lent
+  // ne bloque plus les autres, et chaque prédiction garde sa durée pour repérer les modèles lents.
+  const taches = [];
+  for (const c of cas) for (const config of configurations) taches.push({ c, config });
+  const resultats = new Array(taches.length);
+  let suivante = 0;
+  async function ouvrier() {
+    while (suivante < taches.length) {
+      const i = suivante++;
+      const { c, config } = taches[i];
+      const debut = Date.now();
+      try {
+        const r = await routeur.appeler({
+          cerveau: config.cerveau,
+          temperature: config.temperature,
+          maxTokens: 200,
+          messages: messagesPrediction(config, c, { tauxDeBase, seuilPoints }),
+        });
+        const p = lireProbabilite(r.texte);
+        resultats[i] = { cas: c.id, config: config.id, cerveau: config.cerveau, p, fournisseur: r.fournisseur, erreur: p == null ? "illisible" : null, ms: Date.now() - debut };
+      } catch (err) {
+        resultats[i] = { cas: c.id, config: config.id, cerveau: config.cerveau, p: null, erreur: err.message, ms: Date.now() - debut };
+      }
+      surProgres(++fait, taches.length);
+    }
   }
+  await Promise.all(Array.from({ length: Math.min(parallelisme, taches.length) }, ouvrier));
+  predictions.push(...resultats);
   return noter({ configurations, cas, predictions });
 }
 
@@ -63,6 +68,7 @@ export function noter({ configurations, cas, predictions }) {
     carteDesGenes: carteDesGenes(configurations, parConfiguration),
     predictions: predictions.length,
     echecs,
+    parCerveau: statsParCerveau(predictions),
   };
 }
 
@@ -84,4 +90,22 @@ export function carteDesGenes(configurations, parConfiguration) {
     );
   }
   return carte;
+}
+
+// Santé de chaque modèle : réponses lisibles, échecs, durée moyenne, première erreur rencontrée.
+export function statsParCerveau(predictions) {
+  const stats = {};
+  for (const p of predictions) {
+    const cle = p.cerveau ?? "inconnu";
+    const s = (stats[cle] ??= { ok: 0, echecs: 0, msTotal: 0, n: 0, exempleErreur: null });
+    s.n += 1;
+    s.msTotal += p.ms ?? 0;
+    if (p.p == null) {
+      s.echecs += 1;
+      s.exempleErreur ??= p.erreur;
+    } else s.ok += 1;
+  }
+  return Object.fromEntries(
+    Object.entries(stats).map(([k, s]) => [k, { ok: s.ok, echecs: s.echecs, msMoyen: Math.round(s.msTotal / s.n), exempleErreur: s.exempleErreur }])
+  );
 }

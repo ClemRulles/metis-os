@@ -33,4 +33,5 @@ const sortie = `data/banc-${new Date().toISOString().replace(/[:.]/g, "-")}.json
 await writeFile(sortie, JSON.stringify({ configurations, resultat, routeur: routeur.rapport() }, null, 1));
 console.log(`\nMarché : ${JSON.stringify(resultat.marche)}`);
 console.table(resultat.parConfiguration);
+console.table(resultat.parCerveau);
 console.log(`Échecs : ${resultat.echecs}/${resultat.predictions}. Détail : ${sortie}`);
