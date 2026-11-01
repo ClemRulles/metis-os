@@ -4,9 +4,17 @@
 <title>Métis, le matin</title>
 <link>https://github.com/ClemRulles/metis-os</link>
 <language>fr</language>
-<description>Chaque matin, 8 à 10 minutes pour comprendre l'IA en construisant une vraie machine : ce que les agents ont fait la nuit, une leçon tirée de ce qu'ils ont vécu, et une question pour Clément.</description>
+<description>Chaque matin, 8 à 10 minutes pour comprendre l'IA en construisant une vraie machine : ce que les agents ont fait la nuit, une leçon tirée de ce qu'ils ont vécu, et une question pour l'auditeur.</description>
 <itunes:author>Métis</itunes:author>
 <itunes:explicit>false</itunes:explicit>
+<item>
+<title>3. Métis, le matin — Épisode 3 : les jetons, l'argent et le compteur</title>
+<description>Hier, la machine a lu 762 textes réels, produit 658 idées et 80 duels pour 36 cents en 977 appels. La leçon du jour explique ce qu'est un jeton, pourquoi un passage coûte quelques dizaines de centimes, et comment on plafonne le coût. Question du jour : Pour plafonner le coût de la machine, quelle règle tu écrirais en premier : un budget maximum par passage, par idée, ou par semaine ? Et pourquoi ?</description>
+<pubDate>Sun, 01 Nov 2026 05:30:00 GMT</pubDate>
+<guid isPermaLink="false">metis-matin-3</guid>
+<enclosure url="https://github.com/ClemRulles/metis-os/releases/download/podcast-003/metis-matin-003.mp3" length="3383949" type="audio/mpeg"/>
+<itunes:duration>564</itunes:duration>
+</item>
 <item>
 <title>2. Métis, le matin — Épisode 2 : les poids, la carte graphique et nos modèles chinois</title>
 <description>Métis explique ce que sont les poids d'un modèle, pourquoi un modèle gratuit coûte quand même de l'argent, et comment OpenRouter nous donne accès à des modèles chinois comme DeepSeek, Qwen, GLM et MiMo. L'opportunité du jour est un comparateur de salaires pour frontaliers Belgique-Luxembourg. Question du jour : Pour la leçon d'aujourd'hui : si un jour tu devais héberger toi-même un modèle open source sur ta propre machine pour couper les coûts, préfères-tu rester sur OpenRouter pour la simplicité, ou tenter un petit modèle auto-hébergé malgré le temps que ça demandera ?</description>

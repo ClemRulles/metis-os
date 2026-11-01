@@ -26,5 +26,19 @@
   "auteur_script": "glm",
   "mots": 1495,
   "cout_usd": 0.0014
+ },
+ {
+  "numero": 3,
+  "date": "2026-11-01",
+  "titre": "Métis, le matin — Épisode 3 : les jetons, l'argent et le compteur",
+  "resume": "Hier, la machine a lu 762 textes réels, produit 658 idées et 80 duels pour 36 cents en 977 appels. La leçon du jour explique ce qu'est un jeton, pourquoi un passage coûte quelques dizaines de centimes, et comment on plafonne le coût.",
+  "question_du_jour": "Pour plafonner le coût de la machine, quelle règle tu écrirais en premier : un budget maximum par passage, par idée, ou par semaine ? Et pourquoi ?",
+  "lecon": "Les jetons et l'argent",
+  "duree": 564,
+  "taille": 3383949,
+  "audio": "https://github.com/ClemRulles/metis-os/releases/download/podcast-003/metis-matin-003.mp3",
+  "auteur_script": "glm",
+  "mots": 1649,
+  "cout_usd": 0.0023
  }
 ]
