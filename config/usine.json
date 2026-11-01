@@ -1,11 +1,29 @@
 {
   "version": 2,
-  "note": "Usine v2, ancrée dans le réel. Tout est réglable ici sans toucher au code. Les poids du score final seront recalibrés sur les résultats des tests réels.",
+  "note": "Usine v2, ancrée dans le réel. Tout est réglable ici sans toucher au code. Les poids du score final seront recalibrés sur les résultats des tests réels. Passage du 1er nov. : minimax retiré (texte parasite dans 75 % de ses idées), température plafonnée à 1,0.",
   "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
-  "cerveaux_generation": ["deepseek", "qwen", "glm", "minimax", "mimo"],
-  "cerveaux_jugement": ["deepseek", "qwen", "glm", "mimo", "minimax"],
-  "cerveaux_extraction": ["qwen", "deepseek", "mimo", "mistral"],
-  "cerveaux_enquete": ["glm", "minimax"],
+  "cerveaux_generation": [
+    "deepseek",
+    "qwen",
+    "glm",
+    "mimo"
+  ],
+  "cerveaux_jugement": [
+    "deepseek",
+    "qwen",
+    "glm",
+    "mimo"
+  ],
+  "cerveaux_extraction": [
+    "qwen",
+    "deepseek",
+    "mimo",
+    "mistral"
+  ],
+  "cerveaux_enquete": [
+    "glm",
+    "minimax"
+  ],
   "moteur_web": "parallel",
   "plafond_cout_usd": 0.9,
   "volumes": {
@@ -80,13 +98,34 @@
     "renverser-la-plainte": "Les citations ci-dessous sont des plaintes contre des produits existants. Conçois le produit qui est l'exact contraire de ce dont elles se plaignent."
   },
   "axes": {
-    "valeur_societale": { "poids": 0.2, "definition": "Combien de personnes en profitent, et à quel point leur vie ou leur travail s'en trouve meilleur." },
-    "originalite": { "poids": 0.15, "definition": "Personne ne le fait déjà ainsi ; l'angle surprend un expert du domaine." },
-    "avantage_agents": { "poids": 0.15, "definition": "L'idée exploite ce que des agents IA font mieux que des humains (volume, vitesse, constance, coût)." },
-    "defensibilite": { "poids": 0.1, "definition": "Si un assistant IA gratuit sait le faire demain, il reste quelque chose : données propres, réseau, confiance, résultat livré." },
-    "argent_rapide": { "poids": 0.15, "definition": "Un premier paiement est plausible sous 30 jours, sans appel téléphonique, avec moins de 300 euros." },
-    "distribution": { "poids": 0.15, "definition": "Le canal choisi peut réellement amener les premiers clients sans appel et sans spam." },
-    "faisabilite": { "poids": 0.1, "definition": "Testable en 2 semaines avec environ 7 heures humaines par semaine." }
+    "valeur_societale": {
+      "poids": 0.2,
+      "definition": "Combien de personnes en profitent, et à quel point leur vie ou leur travail s'en trouve meilleur."
+    },
+    "originalite": {
+      "poids": 0.15,
+      "definition": "Personne ne le fait déjà ainsi ; l'angle surprend un expert du domaine."
+    },
+    "avantage_agents": {
+      "poids": 0.15,
+      "definition": "L'idée exploite ce que des agents IA font mieux que des humains (volume, vitesse, constance, coût)."
+    },
+    "defensibilite": {
+      "poids": 0.1,
+      "definition": "Si un assistant IA gratuit sait le faire demain, il reste quelque chose : données propres, réseau, confiance, résultat livré."
+    },
+    "argent_rapide": {
+      "poids": 0.15,
+      "definition": "Un premier paiement est plausible sous 30 jours, sans appel téléphonique, avec moins de 300 euros."
+    },
+    "distribution": {
+      "poids": 0.15,
+      "definition": "Le canal choisi peut réellement amener les premiers clients sans appel et sans spam."
+    },
+    "faisabilite": {
+      "poids": 0.1,
+      "definition": "Testable en 2 semaines avec environ 7 heures humaines par semaine."
+    }
   },
   "score_final": {
     "note": "Le classement final repose sur des preuves. L'avis des IA (critique et tournoi) ne pèse qu'un tiers.",
@@ -100,7 +139,7 @@
     }
   },
   "contraintes": [
-    "Jamais d'offre de conseil, d'audit, de diagnostic ou d'automatisation pour entreprises (contrat de travail de Clément).",
+    "Jamais d'offre de conseil, d'audit, de diagnostic ou d'automatisation sur mesure pour entreprises (contrat de travail de Clément). Un logiciel ou des données en libre-service pour des professionnels restent permis.",
     "Aucun appel téléphonique ; vente par site, e-mail, communauté ou place de marché.",
     "300 euros maximum avant le premier euro encaissé.",
     "Rien d'illégal, de trompeur ou de manipulateur ; pas de faux avis ni de spam ; pas de conseil médical, juridique ou financier personnalisé présenté comme celui d'un professionnel.",

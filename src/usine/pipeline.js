@@ -130,6 +130,10 @@ export function selectionDiverse(idees, { nombre, maxParArene, maxParGisement })
   return choisies;
 }
 
+// Texte parasite : écritures étrangères au français, jetons de code. Une idée qui en contient est écartée.
+const PARASITE = /[\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af\u0e00-\u0e7f\u0600-\u06ff\u0400-\u04ff]|ndarray|\b[a-z]+_[a-z]+_[a-z]+\b/;
+export const estPropre = (idee) => !PARASITE.test(CHAMPS_IDEE.map((c) => idee[c] ?? "").join(" "));
+
 const normaliserTitre = (t) => String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
 
 export async function lancerUsine({ config, atlas, gisements = [], signaux = [], graines = [], dejaVues = [], demandeur, graine = Date.now(), parallelisme = 12, journal = () => {} }) {
@@ -173,7 +177,7 @@ export async function lancerUsine({ config, atlas, gisements = [], signaux = [],
         const l = extraireListe(t, "idees", "titre");
         return l.length ? l : null;
       },
-      temperature: 0.95 + alea() * 0.25,
+      temperature: 0.8 + alea() * 0.2, // au-delà de 1,0, plusieurs modèles déraillent (mots chinois, jetons de code)
       maxTokens: 5000,
       autres: config.cerveaux_generation,
     });
@@ -189,7 +193,9 @@ export async function lancerUsine({ config, atlas, gisements = [], signaux = [],
     }));
   });
   const vues = new Set(dejaVues.map(normaliserTitre));
-  const idees = lots.flat().filter((i) => {
+  const brutes = lots.flat();
+  const idees = brutes.filter((i) => {
+    if (!estPropre(i)) return false;
     const cle = normaliserTitre(i.titre);
     if (!cle || vues.has(cle)) return false;
     vues.add(cle);
@@ -271,7 +277,7 @@ export async function lancerUsine({ config, atlas, gisements = [], signaux = [],
   };
 
   return {
-    stats: { idees: idees.length, notees: idees.filter((i) => i.score != null).length, nonConformes: idees.filter((i) => i.critique?.conforme === false).length, finalistes: finalistes.length, duels: duels.length },
+    stats: { generees: brutes.length, parasites: brutes.filter((i) => !estPropre(i)).length, idees: idees.length, notees: idees.filter((i) => i.score != null).length, nonConformes: idees.filter((i) => i.critique?.conforme === false).length, finalistes: finalistes.length, duels: duels.length },
     classement,
     cartes: { lentilles: carte("lentille"), origines: carte("origine"), arenes: carte("arene") },
     duels,

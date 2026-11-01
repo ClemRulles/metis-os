@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { extraireJSON, extraireListe, objetsComplets, creerDemandeur } from "../src/commun/outils.js";
-import { scorePondere, elo, lancerUsine, messagesGenerationVisionnaire, selectionDiverse } from "../src/usine/pipeline.js";
+import { scorePondere, elo, lancerUsine, messagesGenerationVisionnaire, selectionDiverse, estPropre } from "../src/usine/pipeline.js";
 import { lireArxiv } from "../src/usine/signaux.js";
 import { lireHN, lireAvisAppStore, lireTopAppStore, lireStackExchange, lireLemmy } from "../src/radar/sources.js";
 import { extraireDouleurs, regrouper, forceGisement } from "../src/radar/douleurs.js";
@@ -54,9 +54,15 @@ test("enquête : seuls les liens présents dans la recherche sont vérifiés ; s
   assert.equal(d.liens_verifies, 2);
   const s = scoreFinal({ score: 7, elo: 1550, gisement: { force: 3 }, enquete: d }, config.score_final.poids);
   assert.equal(s.composantes.paiement_prouve, 8);
-  assert.equal(s.composantes.douleur_prouvee, 7.5);
+  assert.equal(s.composantes.douleur_prouvee, 5);
   assert.ok(s.total > 0 && s.total <= 10);
   assert.equal(scoreFinal({ score: 7, elo: 1500 }, config.score_final.poids).composantes.paiement_prouve, 2);
+});
+
+test("texte parasite écarté", () => {
+  assert.equal(estPropre({ titre: "Un service utile", probleme: "Les parents manquent de temps." }), true);
+  assert.equal(estPropre({ titre: "Données而非 ouvertes" }), false);
+  assert.equal(estPropre({ titre: "x", solution: "via ndarraycpy" }), false);
 });
 
 test("sélection diverse : quotas par arène et par gisement", () => {

@@ -66,7 +66,8 @@ const borne = (x) => Math.max(0, Math.min(10, x));
 export function scoreFinal(idee, poids) {
   const e = idee.enquete;
   const preuvesWeb = e ? (e.preuves_demande ?? []).filter((p) => p.verifie).length : 0;
-  const douleurTerrain = idee.gisement ? borne(2.5 * (idee.gisement.force ?? 0)) : 0;
+  const f = idee.gisement?.force ?? 0;
+  const douleurTerrain = idee.gisement ? borne((10 * f) / (f + 3)) : 0; // force 3 → 5, 8 → 7,3, 13 → 8,1 : ne sature plus
   const composantes = {
     douleur_prouvee: borne(Math.max(douleurTerrain, Math.min(7, 2 * preuvesWeb))),
     paiement_prouve: !e ? 2 : e.preuve_paiement_verifiee ? 10 : (e.concurrents ?? []).some((c) => c.verifie && c.prix && c.prix !== "null") ? 8 : (e.concurrents ?? []).some((c) => c.verifie) ? 5 : 2,

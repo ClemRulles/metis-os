@@ -17,7 +17,7 @@ const nettoyer = (html) =>
 const couper = (t, n = 700) => (t.length > n ? `${t.slice(0, n)}…` : t);
 
 async function lireJSON(fetchImpl, url) {
-  const rep = await fetchImpl(url, { headers: UA, signal: AbortSignal.timeout?.(20000) });
+  const rep = await fetchImpl(url, { headers: UA, signal: AbortSignal.timeout?.(40000) });
   if (!rep.ok) throw new Error(`HTTP ${rep.status}`);
   return rep.json();
 }
@@ -61,7 +61,7 @@ export function lireLemmy(json, instance) {
 // Catégories App Store tournantes : chaque jour en explore d'autres (santé, éducation, finance, vie pratique…).
 export const GENRES_APPSTORE = { 6013: "Santé et forme", 6017: "Éducation", 6015: "Finance", 6012: "Style de vie", 6007: "Productivité", 6003: "Voyages", 6023: "Cuisine et boissons", 6024: "Shopping", 6002: "Utilitaires", 6018: "Livres", 6010: "Navigation", 6020: "Médecine", 6011: "Musique", 6016: "Divertissement" };
 
-export async function collecterDouleursBrutes({ fetchImpl = globalThis.fetch, maintenant = Date.now(), jour = new Date().getUTCDate(), journal = () => {}, appsParGenre = 5, genresParJour = 5 } = {}) {
+export async function collecterDouleursBrutes({ fetchImpl = globalThis.fetch, maintenant = Date.now(), jour = new Date().getUTCDate(), journal = () => {}, appsParGenre = 5, genresParJour = 5, plafondAppStore = 320 } = {}) {
   const items = [];
   const etat = {};
   const noter = (nom, n, erreur) => (etat[nom] = erreur ? { n, erreur: String(erreur).slice(0, 100) } : { n });
@@ -106,10 +106,10 @@ export async function collecterDouleursBrutes({ fetchImpl = globalThis.fetch, ma
   etat.appstore ??= { n: nAS, categories: choisis.map((g) => GENRES_APPSTORE[g]) };
 
   // Stack Exchange : demandes explicites de logiciels qui n'existent pas ou mal.
-  let nSE = 0;
-  for (const site of ["softwarerecs", "webapps"]) {
+  let nSE = 0; // demandes de logiciels, mais aussi argent, parents, voyage, cuisine : la vie quotidienne
+  for (const site of ["softwarerecs", "webapps", "money", "parenting", "travel", "cooking"]) {
     try {
-      const l = lireStackExchange(await lireJSON(fetchImpl, `https://api.stackexchange.com/2.3/questions?order=desc&sort=creation&site=${site}&pagesize=40&filter=withbody`), site);
+      const l = lireStackExchange(await lireJSON(fetchImpl, `https://api.stackexchange.com/2.3/questions?order=desc&sort=creation&site=${site}&pagesize=30&filter=withbody`), site);
       nSE += l.length;
       items.push(...l);
     } catch (e) {
@@ -137,8 +137,15 @@ export async function collecterDouleursBrutes({ fetchImpl = globalThis.fetch, ma
   }
   etat.lemmy ??= { n: nL };
 
+  // Équilibre : l'App Store ne doit pas noyer les autres sources (1 013 avis sur 1 171 textes le 1er nov.).
+  const parSource = {};
+  const equilibres = items.filter((x) => {
+    const famille = x.source.split(" ")[0];
+    parSource[famille] = (parSource[famille] ?? 0) + 1;
+    return famille !== "App" || parSource[famille] <= plafondAppStore;
+  });
   const vus = new Set();
-  const uniques = items.filter((x) => {
+  const uniques = equilibres.filter((x) => {
     const cle = `${x.url}|${x.texte.slice(0, 80)}`;
     if (vus.has(cle)) return false;
     vus.add(cle);
