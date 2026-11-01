@@ -176,7 +176,7 @@ export async function lancerUsine({ config, atlas, signaux = [], graines = [], r
   }));
   journal(`génération : ${plans.length} appels`);
   const lots = await pool(plans, parallelisme, async (p) => {
-    const { json, cerveau } = await demander([p.cerveau], messagesGeneration({ config, lentille: p.lentille, sources: p.sources, signaux: p.signaux, graines: p.lentille === "evolution" ? graines : [], n: v.idees_par_generation }), p.temperature, 3000, config.cerveaux_generation);
+    const { json, cerveau } = await demander([p.cerveau], messagesGeneration({ config, lentille: p.lentille, sources: p.sources, signaux: p.signaux, graines: p.lentille === "evolution" ? graines : [], n: v.idees_par_generation }), p.temperature, 6000, config.cerveaux_generation);
     const liste = Array.isArray(json) ? json : Array.isArray(json?.idees) ? json.idees : [];
     return liste
       .filter((i) => i && typeof i.titre === "string" && i.titre.trim())
@@ -196,7 +196,7 @@ export async function lancerUsine({ config, atlas, signaux = [], graines = [], r
   await pool(idees, parallelisme, async (idee) => {
     const juges = config.cerveaux_jugement.filter((c) => c !== idee.cerveau);
     const juge = choisir(alea, juges.length ? juges : config.cerveaux_jugement);
-    const { json: c, cerveau: jugeReel } = await demander([juge], messagesCritique({ config, idee }), 0.3, 1500, juges.length ? juges : config.cerveaux_jugement);
+    const { json: c, cerveau: jugeReel } = await demander([juge], messagesCritique({ config, idee }), 0.3, 3000, juges.length ? juges : config.cerveaux_jugement);
     idee.critique = c ? { ...c, juge: jugeReel } : null;
     idee.score = c && c.conforme !== false ? scorePondere(c, config.axes) : null;
   });
@@ -216,8 +216,10 @@ export async function lancerUsine({ config, atlas, signaux = [], graines = [], r
     const issues = await pool(paires, parallelisme, async ([a, b]) => {
       const inverse = alea() < 0.5; // l'ordre de présentation est tiré au sort pour éviter le biais de position
       const [x, y] = inverse ? [b, a] : [a, b];
-      const juge = choisir(alea, config.cerveaux_jugement);
-      const { json: d } = await demander([juge], messagesDuel({ config, a: x, b: y }), 0.2, 800);
+      // Arbitre neutre : jamais l'un des deux cerveaux qui ont inventé les idées (sinon un modèle vote pour lui-même).
+      const neutres = config.cerveaux_jugement.filter((c) => c !== a.cerveau && c !== b.cerveau);
+      const juge = choisir(alea, neutres.length ? neutres : config.cerveaux_jugement);
+      const { json: d } = await demander([juge], messagesDuel({ config, a: x, b: y }), 0.2, 2000, neutres.length ? neutres : config.cerveaux_jugement);
       const g = String(d?.gagnant ?? "").trim().toUpperCase();
       if (g !== "A" && g !== "B") return null;
       const gagnant = g === "A" ? x : y;
