@@ -1,0 +1,52 @@
+name: Podcast
+
+# « Métis, le matin » : un épisode chaque jour, juste après le passage du studio.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Studio"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resultats
+  cancel-in-progress: false
+
+jobs:
+  episode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Voix et outils audio
+        run: |
+          pip install --quiet edge-tts
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: Derniers résultats
+        run: |
+          git fetch origin resultats
+          mkdir -p /tmp/res && git archive origin/resultats resultats | tar -x -C /tmp
+          ls /tmp/resultats
+      - name: Script et voix
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: node scripts/podcast.js /tmp/resultats sortie-podcast
+      - name: Publication de l'épisode
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          source sortie-podcast/episode.env
+          gh release create "podcast-$NUMERO" "sortie-podcast/$AUDIO" --title "$TITRE" --notes "Épisode de « Métis, le matin »." --target main
+          cp -r sortie-podcast/podcast /tmp/podcast
+          git config user.name "metis-os"
+          git config user.email "noreply@github.com"
+          git checkout -B resultats origin/resultats
+          mkdir -p resultats/podcast && cp /tmp/podcast/* resultats/podcast/
+          git add resultats/podcast
+          git commit -qm "Podcast : épisode $NUMERO"
+          for i in 1 2 3; do git push origin resultats && break; git pull --rebase -q origin resultats; done

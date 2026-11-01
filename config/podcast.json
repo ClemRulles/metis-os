@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "nom": "Métis, le matin",
+  "description": "Chaque matin, 8 à 10 minutes pour comprendre l'IA en construisant une vraie machine : ce que les agents ont fait la nuit, une leçon tirée de ce qu'ils ont vécu, et une question pour Clément.",
+  "auditeur": "Clément, ingénieur de gestion, consultant, francophone de Belgique. Curieux, ambitieux, pressé ; il veut comprendre vraiment, sans jargon inutile, et pouvoir agir.",
+  "cerveaux": ["glm", "deepseek", "qwen"],
+  "voix": {
+    "metis": { "nom": "Métis", "edge": "fr-FR-HenriNeural", "role": "le stratège qui dirige la machine ; précis, chaleureux, concret, avec des chiffres" },
+    "lea": { "nom": "Léa", "edge": "fr-BE-CharlineNeural", "role": "l'apprentie ; pose les questions que Clément se poserait, demande des exemples, résume" }
+  },
+  "programme": [
+    { "titre": "Ce qu'est vraiment un modèle de langage", "idees": "Prédire le mot suivant ; les jetons ; pourquoi un modèle « sait » sans comprendre ; ce que ça change pour nos agents." },
+    { "titre": "Open source, poids et hébergement", "idees": "Les poids d'un modèle ; pourquoi le modèle est gratuit mais pas la carte graphique ; OpenRouter ; nos modèles chinois (DeepSeek, Qwen, GLM, MiMo)." },
+    { "titre": "Les jetons et l'argent", "idees": "Prix par million de jetons ; entrée et sortie ; pourquoi un passage du studio coûte quelques dizaines de centimes ; comment on plafonne le coût." },
+    { "titre": "La température et la créativité", "idees": "Ce que règle la température ; pourquoi au-delà de 1,0 nos modèles ont produit des mots chinois ; créativité contre fiabilité." },
+    { "titre": "Les modèles qui réfléchissent", "idees": "Le raisonnement caché ; pourquoi GLM et MiniMax refusent de couper leur réflexion ; le coût de réfléchir ; réponses tronquées." },
+    { "titre": "Faire répondre une IA en données propres", "idees": "Le mode JSON ; les schémas ; récupérer une réponse tronquée ; pourquoi la fiabilité est un sujet d'ingénierie, pas de magie." },
+    { "titre": "Les hallucinations et comment s'en protéger", "idees": "Pourquoi un modèle invente des liens ; notre règle : un lien ne compte que s'il vient de la recherche web ; vérifier plutôt que croire." },
+    { "titre": "Donner des yeux à une IA : la recherche web", "idees": "Le plugin web, les moteurs (Parallel, Exa), les citations ; ce que coûte une enquête ; ses limites." },
+    { "titre": "Les agents : une IA qui agit", "idees": "Différence entre un modèle et un agent ; outils, boucles, mémoire ; comment notre studio enchaîne radar, usine, enquête." },
+    { "titre": "Pourquoi les IA ne savent pas prédire le succès", "idees": "Le banc du passé : 5 manches, pas mieux que le taux de base ; surconfiance ; calibration ; le score de Brier expliqué simplement." },
+    { "titre": "Le juge biaisé", "idees": "Un modèle préfère ses propres idées ; biais de position ; pourquoi nos duels ont un arbitre neutre et un ordre tiré au sort." },
+    { "titre": "Mesurer au lieu de croire : les évaluations", "idees": "Construire une épreuve à réponse connue ; l'éclaireur de modèles ; comment choisir un modèle sur nos vraies tâches." },
+    { "titre": "La sagesse des foules de modèles", "idees": "Combiner plusieurs modèles ; marché de prédiction ; quand la moyenne bat le meilleur, et quand elle ne le fait pas." },
+    { "titre": "Les embeddings : donner une adresse au sens", "idees": "Transformer un texte en vecteur ; similarité ; regrouper des douleurs proches ; pourquoi c'est la base des moteurs de recherche modernes." },
+    { "titre": "RAG : une IA qui lit vos documents", "idees": "Chercher puis répondre ; mémoire externe ; quand c'est mieux que réentraîner." },
+    { "titre": "Petits modèles, grands modèles", "idees": "Paramètres ; ce qu'on perd et gagne ; quantification ; ce qui tourne sur un Mac ou une carte graphique gratuite." },
+    { "titre": "Réentraîner un modèle : le fine-tuning", "idees": "Pourquoi réentraîner ; ce qu'il faut comme données ; LoRA expliqué avec une image ; coût réel sur Kaggle." },
+    { "titre": "Nos données, notre avantage", "idees": "Pourquoi les résultats de nos tests réels valent plus que n'importe quel modèle ; boucle d'apprentissage ; défensibilité." },
+    { "titre": "Le test séquentiel : décider vite sans se tromper", "idees": "Taux de base, vraie faille, risques d'erreur ; plonger, arrêter, continuer ; exemple chiffré avec une page de test." },
+    { "titre": "La sécurité des agents", "idees": "Injection de consignes cachées dans un texte ; pourquoi chaque texte lu est une donnée, jamais un ordre ; secrets et clés." },
+    { "titre": "Coûts, plafonds et pannes", "idees": "Coupe-circuit, repli sur un autre modèle, limites par minute ; comment une machine tient debout la nuit sans surveillance." },
+    { "titre": "Multimodal : voir, entendre, parler", "idees": "Modèles d'images et de voix ; la voix de ce podcast ; ce que ça ouvre comme produits." },
+    { "titre": "L'IA et le droit européen", "idees": "AI Act, RGPD, droit de la consommation ; ce qui encadre nos pages de test ; transparence quand une IA répond." },
+    { "titre": "Où va l'IA dans les 3 prochaines années", "idees": "Agents qui achètent, coûts qui s'effondrent, modèles ouverts qui rattrapent ; ce que ça veut dire pour notre jeu." }
+  ]
+}
