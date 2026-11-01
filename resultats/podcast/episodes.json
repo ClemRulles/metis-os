@@ -12,5 +12,19 @@
   "auteur_script": "glm",
   "mots": 1586,
   "cout_usd": 0.0021
+ },
+ {
+  "numero": 2,
+  "date": "2026-11-01",
+  "titre": "Métis, le matin — Épisode 2 : les poids, la carte graphique et nos modèles chinois",
+  "resume": "Métis explique ce que sont les poids d'un modèle, pourquoi un modèle gratuit coûte quand même de l'argent, et comment OpenRouter nous donne accès à des modèles chinois comme DeepSeek, Qwen, GLM et MiMo. L'opportunité du jour est un comparateur de salaires pour frontaliers Belgique-Luxembourg.",
+  "question_du_jour": "Pour la leçon d'aujourd'hui : si un jour tu devais héberger toi-même un modèle open source sur ta propre machine pour couper les coûts, préfères-tu rester sur OpenRouter pour la simplicité, ou tenter un petit modèle auto-hébergé malgré le temps que ça demandera ?",
+  "lecon": "Open source, poids et hébergement",
+  "duree": 527,
+  "taille": 3160029,
+  "audio": "https://github.com/ClemRulles/metis-os/releases/download/podcast-002/metis-matin-002.mp3",
+  "auteur_script": "glm",
+  "mots": 1495,
+  "cout_usd": 0.0014
  }
 ]

@@ -8,6 +8,14 @@
 <itunes:author>Métis</itunes:author>
 <itunes:explicit>false</itunes:explicit>
 <item>
+<title>2. Métis, le matin — Épisode 2 : les poids, la carte graphique et nos modèles chinois</title>
+<description>Métis explique ce que sont les poids d'un modèle, pourquoi un modèle gratuit coûte quand même de l'argent, et comment OpenRouter nous donne accès à des modèles chinois comme DeepSeek, Qwen, GLM et MiMo. L'opportunité du jour est un comparateur de salaires pour frontaliers Belgique-Luxembourg. Question du jour : Pour la leçon d'aujourd'hui : si un jour tu devais héberger toi-même un modèle open source sur ta propre machine pour couper les coûts, préfères-tu rester sur OpenRouter pour la simplicité, ou tenter un petit modèle auto-hébergé malgré le temps que ça demandera ?</description>
+<pubDate>Sun, 01 Nov 2026 05:30:00 GMT</pubDate>
+<guid isPermaLink="false">metis-matin-2</guid>
+<enclosure url="https://github.com/ClemRulles/metis-os/releases/download/podcast-002/metis-matin-002.mp3" length="3160029" type="audio/mpeg"/>
+<itunes:duration>527</itunes:duration>
+</item>
+<item>
 <title>1. Métis, le matin — Épisode 1 : ce qu'est vraiment un modèle de langage</title>
 <description>Premier épisode du podcast : Métis et Léa présentent la machine et décortiquent ce qu'est vraiment un modèle de langage, du mot suivant aux jetons. L'opportunité du jour est l'assistant de révision vocale pour le code de la route, et Clément reçoit une question à trancher dans le Cockpit. Question du jour : Pour l'assistant de révision vocale du code de la route, préfères-tu démarrer par un bot WhatsApp avec cinq amis testeurs, ou par une landing page ciblée sur la révision mobile, comme le suggère la mutation proposée ?</description>
 <pubDate>Sun, 01 Nov 2026 05:30:00 GMT</pubDate>
