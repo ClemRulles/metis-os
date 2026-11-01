@@ -143,7 +143,7 @@ export function creerRouteur({
           signal: typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(delaiRequeteMs) : undefined,
           method: "POST",
           headers: { "content-type": "application/json", authorization: `Bearer ${env[f.cle]}` },
-          body: JSON.stringify({ model: f.modeles[cerveau], messages, temperature, max_tokens: maxTokens }),
+          body: JSON.stringify({ model: f.modeles[cerveau], messages, temperature, max_tokens: maxTokens, reasoning: { effort: "low" } }),
         });
         if (rep.status === 429) {
           refus.push(`${f.id} : HTTP 429`);
@@ -152,8 +152,11 @@ export function creerRouteur({
         }
         if (!rep.ok) throw new Error(`HTTP ${rep.status}`);
         const json = await rep.json();
-        const texte = json?.choices?.[0]?.message?.content;
-        if (typeof texte !== "string") throw new Error("réponse sans texte");
+        // Les modèles qui « réfléchissent » peuvent renvoyer un contenu vide et leur réponse dans le champ
+        // reasoning : on lit le contenu d'abord, puis la réflexion en secours.
+        const msg = json?.choices?.[0]?.message ?? {};
+        const texte = typeof msg.content === "string" && msg.content.trim() ? msg.content : typeof msg.reasoning === "string" && msg.reasoning.trim() ? msg.reasoning : null;
+        if (texte == null) throw new Error(`réponse vide (fin : ${json?.choices?.[0]?.finish_reason ?? "inconnue"})`);
         const consommes = json?.usage?.total_tokens ?? estimation;
         e.tokens += consommes;
         circuitDe(f.id, cerveau).echecs = 0;
@@ -168,7 +171,7 @@ export function creerRouteur({
         refus.push(`${f.id} : ${err.message}`);
       }
     }
-    throw new ErreurRouteur(`aucun fournisseur pour ${cerveau}`, { refus, attenteMs });
+    throw new ErreurRouteur(`aucun fournisseur pour ${cerveau} (${refus.join(" ; ")})`, { refus, attenteMs });
   }
 
   function rapport() {

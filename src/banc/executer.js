@@ -23,7 +23,7 @@ export async function executerBanc({ configurations, cas, routeur, tauxDeBase = 
         const r = await routeur.appeler({
           cerveau: config.cerveau,
           temperature: config.temperature,
-          maxTokens: 200,
+          maxTokens: 1200, // marge pour les modèles qui réfléchissent avant de répondre
           messages: messagesPrediction(config, c, { tauxDeBase, seuilPoints }),
         });
         const p = lireProbabilite(r.texte);
@@ -69,6 +69,7 @@ export function noter({ configurations, cas, predictions }) {
     predictions: predictions.length,
     echecs,
     parCerveau: statsParCerveau(predictions),
+    detail: predictions.map(({ cas, config, cerveau, p, erreur, ms }) => ({ cas, config, cerveau, p, erreur: erreur ? String(erreur).slice(0, 160) : null, ms })),
   };
 }
 
