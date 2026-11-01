@@ -1,0 +1,39 @@
+{
+ "slug": "ecotrace",
+ "nom": "EcoTrace",
+ "accroche": "Badge carbone simple pour vos créations",
+ "sous_titre": "Outil en préparation : générez une estimation d'empreinte CO2 basée sur des données publiques pour vos produits Etsy ou Shopify, sans complexité.",
+ "probleme_points": [
+  "Calculer l'impact environnemental d'un produit demande du temps et des compétences techniques.",
+  "Les solutions professionnelles ont un coût élevé pour les artisans.",
+  "Les acheteurs manquent d'informations sur la démarche éco-responsable des vendeurs."
+ ],
+ "comment": [
+  "Entrez les matériaux et le poids de votre produit.",
+  "L'outil calcule une estimation selon les facteurs officiels.",
+  "Téléchargez le badge visuel pour votre fiche produit."
+ ],
+ "pour_qui": "Artisans producteurs, créateurs et marques vendant en ligne qui souhaitent afficher une information transparente sur l'impact de leurs produits.",
+ "prix": "7 € / mois",
+ "condition_prix": "Prix bloqué à vie pour les 50 premiers inscrits via cette page de test.",
+ "offre": "precommande",
+ "cta": "Je réserve ma place à 7 €/mois",
+ "faq": [
+  {
+   "question": "Le badge est-il une certification officielle ?",
+   "reponse": "Non. Il s'agit d'une estimation informative basée sur des facteurs d'émission publics (ADEME/ECOMAS). Ce n'est pas un audit certifié par un tiers indépendant, mais un signal clair de transparence pour vos clients."
+  },
+  {
+   "question": "Mes données personnelles sont-elles sécurisées ?",
+   "reponse": "Nous ne collectons que l'email pour vous tenir informé du lancement. Aucune donnée sensible ou commerciale n'est stockée avant l'utilisation effective de l'outil."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#4A7C59",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

@@ -1,0 +1,51 @@
+{
+ "slug": "alt-text-forge",
+ "nom": "Alt-Text Forge",
+ "accroche": "Alt-texts orientés WCAG, générés par lot",
+ "sous_titre": "Une API en préparation qui transformera des URLs d'images en descriptions multilingues, avec un contrôle de cohérence intégré. Réservez un quota gratuit de 500 images pour l'ouverture.",
+ "probleme_points": [
+  "Une grande partie des images en ligne n'a pas de texte alternatif, ce qui limite l'accessibilité et la qualité des pipelines d'agents IA.",
+  "Les descriptions générées à la volée sont souvent vagues, peu conformes aux critères WCAG et difficiles à maintenir à grande échelle.",
+  "Les outils existants sont surtout des plugins WordPress : il y a peu de solutions batch par API pour les scrapers et les catalogues e-commerce."
+ ],
+ "comment": [
+  "Inscrivez-vous à la précommande pour réserver votre quota gratuit de 500 images et être informé en priorité de l'ouverture.",
+  "À l'ouverture, vous enverrez vos lots d'URLs d'images via l'API : chaque image recevra un alt-text multilingue, avec un niveau de détail paramétrable.",
+  "Un second agent vérificateur relira chaque description selon les critères WCAG avant de la restituer dans votre pipeline."
+ ],
+ "pour_qui": "Développeurs, vendeurs d'actors Apify, agences web et plateformes e-commerce qui ingèrent des catalogues d'images et cherchent des descriptions normalisées et faciles à intégrer.",
+ "prix": "0,01 € par image décrite, gratuit jusqu'à 500 images",
+ "condition_prix": "Tarif annoncé pour le lancement, réservé aux inscrits en précommande. Le service n'existe pas encore : aucun paiement n'est encaissé à ce stade.",
+ "offre": "precommande",
+ "cta": "Réserver mon quota gratuit",
+ "faq": [
+  {
+   "question": "Le service existe-t-il déjà ?",
+   "reponse": "Non. Alt-Text Forge est en préparation. Cette page est un test : nous mesurons l'intérêt avant de construire. Aucun avis ni compteur de clients n'est affiché, car le service n'est pas encore en ligne."
+  },
+  {
+   "question": "Que reçoit-on en précommande ?",
+   "reponse": "La réservation de votre quota gratuit (500 images), le tarif de lancement de 0,01 €/image au-delà, et une information prioritaire à l'ouverture de l'API. Aucun montant n'est encaissé aujourd'hui."
+  },
+  {
+   "question": "Comment fonctionnera l'API ?",
+   "reponse": "Vous enverrez un lot d'URLs d'images et recevrez en retour un alt-text multilingue, avec un niveau de détail paramétrable. Un second agent vérificateur relira chaque description selon les critères WCAG."
+  },
+  {
+   "question": "En quoi est-ce différent d'un plugin WordPress ?",
+   "reponse": "Les outils du marché sont des plugins liés à la médiathèque WordPress. Alt-Text Forge est conçu comme une API batch générique, pensée pour les pipelines d'agents IA et les scrapers de catalogues e-commerce."
+  },
+  {
+   "question": "Puis-je annuler mon inscription ?",
+   "reponse": "Oui, à tout moment et sans justification, en répondant à l'e-mail de confirmation. Votre adresse sert uniquement à vous informer de l'ouverture du service."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2F6F5E",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

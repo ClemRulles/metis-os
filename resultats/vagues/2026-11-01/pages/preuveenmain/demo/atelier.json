@@ -1,0 +1,52 @@
+{
+ "ok": true,
+ "raison": null,
+ "essais": 1,
+ "spec": {
+  "titre": "PreuveEnMain : Alerte Risque & Logistique",
+  "promesse": "Démontre comment PreuveEnMain intègre des données externes (météo, alertes produits, actualité locale) pour aider les commerçants à anticiper les risques de litiges ou d'annulation de commande.",
+  "donnees": [
+   {
+    "cle": "meteo",
+    "api": "meteo",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&hourly=temperature_2m,precipitation_probability,uv_index&forecast_days=1",
+    "pourquoi": "Prédire l'affluence et le risque de détérioration des marchandises périssables (fleurs, glaces) lors de la livraison."
+   },
+   {
+    "cle": "rappelconso",
+    "api": "rappelconso",
+    "url": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records?limit=3&order_by=date_publication%20desc",
+    "pourquoi": "Identifier si un produit vendu par le commerçant fait l'objet d'un rappel récent, justifiant potentiellement un refus de livraison ou une demande de remboursement urgente."
+   },
+   {
+    "cle": "entreprises",
+    "api": "entreprises-fr",
+    "url": "https://recherche-entreprises.api.gouv.fr/search?q=boulangerie&per_page=1",
+    "pourquoi": "Valider l'existence légale et le statut d'une entreprise cible pour l'exemple de démonstration."
+   }
+  ],
+  "ecran": "Une interface sombre et professionnelle ('Mode Nuit') simulant le tableau de bord du commerçant.\n\n1. **En-tête** : Logo PreuveEnMain + Titre 'Tableau de Bord - Boulangerie BG'.\n2. **Section Météo & Impact** : Affiche la température et probabilité de pluie pour Paris aujourd'hui. Un indicateur coloré (Vert/Orange/Rouge) suggère l'impact sur les livraisons (ex: 'Risques faibles').\n3. **Section Vigilance Produits** : Liste les derniers rappels de consommation en France. Si un produit alimentaire est listé, il apparaît avec une icône d'alerte jaune.\n4. **Section Contexte Local** : Nomme l'entreprise 'BOULANGERIES BG' trouvée dans la base SIRENE.\n5. **Pied de page** : Mentions légales, sources des données (Open-Meteo, RappelConso, API Entreprises).",
+  "calcul": "1. La météo est analysée : si precipitation_probability > 50%, l'indicateur devient Orange (risque de retard). \n2. Les rappels de consommation sont affichés tels quels pour montrer la transparence des risques marché.\n3. L'entreprise est affichée pour contextualiser la démo.",
+  "limites": "La démo ne montre pas la signature client ni la photo, mais se concentre sur la partie 'Intelligence Commerciale' qui précède la transaction."
+ },
+ "sources": [
+  "Open-Meteo prévisions",
+  "RappelConso (France)",
+  "Recherche d'entreprises (France)"
+ ],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [
+    "meteo",
+    "rappelconso",
+    "entreprises"
+   ],
+   "erreurs": []
+  },
+  {
+   "essai": 1,
+   "erreurs": []
+  }
+ ]
+}

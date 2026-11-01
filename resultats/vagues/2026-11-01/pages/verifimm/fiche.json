@@ -1,0 +1,43 @@
+{
+ "slug": "verifimm",
+ "nom": "VérifImm",
+ "accroche": "Vérifiez la fiabilité d'une agence avant de payer.",
+ "sous_titre": "Outil en préparation pour croiser les registres officiels et les signalements publics. Recevez un rapport gratuit par e-mail après votre inscription.",
+ "probleme_points": [
+  "Risque de payer des agences non déclarées ou frauduleuses.",
+  "Difficulté à distinguer les avis réels des faux témoignages.",
+  "Absence de données centralisées sur la légitimité des prestataires."
+ ],
+ "comment": [
+  "Saisissez le nom ou l'URL de l'agence dans le champ prévu.",
+  "Indiquez votre adresse e-mail pour recevoir le rapport.",
+  "Consultez les signaux d'alerte et les données publiques croisées."
+ ],
+ "pour_qui": "Toute personne souhaitant vérifier la légitimité d'une agence d'immigration, de visa ou de traduction avant tout engagement financier.",
+ "prix": "9 € le rapport détaillé, 29 € l'abonnement de suivi (3 mois)",
+ "condition_prix": "Le service est en phase de test. Le paiement ne sera demandé qu'à la mise en ligne officielle de la version complète.",
+ "offre": "precommande",
+ "cta": "Recevoir mon rapport gratuit par e-mail",
+ "faq": [
+  {
+   "question": "Ce service existe-t-il déjà ?",
+   "reponse": "Non, le service est en cours de développement. Cette page sert à valider l'intérêt et à constituer une liste d'attente pour la bêta."
+  },
+  {
+   "question": "Quelles données sont utilisées ?",
+   "reponse": "Uniquement des données ouvertes et légales : registres du commerce, mentions légales publiques et signalements utilisateurs soumis avec consentement explicite."
+  },
+  {
+   "question": "Est-ce un conseil juridique ?",
+   "reponse": "Non. VérifImm fournit des informations factuelles et des signaux de risque basés sur des données publiques. Il ne remplace pas l'avis d'un avocat ou d'un conseiller agréé."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

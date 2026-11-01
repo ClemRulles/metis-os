@@ -1,0 +1,52 @@
+{
+ "slug": "cachecast",
+ "nom": "CacheCast",
+ "accroche": "Pré-téléchargement de segments vidéo pour la lecture hors-ligne",
+ "sous_titre": "CacheCast est une extension navigateur en développement. Elle pré-télécharge les segments vidéo suivants pour permettre une lecture continue lors d'une interruption de connexion. Conçue pour les zones mal couvertes, les déplacements et les forfaits limités.",
+ "probleme_points": [
+  "Interruptions fréquentes du flux vidéo dues à une connexion instable",
+  "Limitations des modes hors-ligne officiels (plateformes restreintes ou payantes)",
+  "Surconsommation de données lors des rechargements automatiques après coupure",
+  "Abandon de contenus longs ou éducatifs par manque de stabilité"
+ ],
+ "comment": [
+  "Inscrivez votre e-mail pour rejoindre la liste d'attente (gratuit, sans engagement)",
+  "Accès à la version de test dès sa disponibilité, incluant un essai gratuit de 7 jours",
+  "Achat unique de 4,99 € si le produit vous convient ; aucun paiement requis sinon"
+ ],
+ "pour_qui": "Utilisateurs dans des zones rurales mal couvertes, voyageurs fréquents (train, van) et personnes avec forfait data limité souhaitant regarder des vidéos HTML5 (YouTube, Vimeo, sources ouvertes) sans subir les coupures.",
+ "prix": "4,99 € une fois (après 7 jours d'essai gratuit)",
+ "condition_prix": "Le service est en préparation : inscription gratuite sur liste d'attente. Le paiement intervient uniquement après la sortie de la version testable et l'expiration de la période d'essai. Pas d'abonneme",
+ "offre": "precommande",
+ "cta": "Rejoindre la liste d'attente gratuite",
+ "faq": [
+  {
+   "question": "CacheCast existe-t-il déjà ?",
+   "reponse": "Non, l'extension est en cours de développement. La liste d'attente permet de valider l'intérêt et de prioriser les fonctionnalités. Vous serez notifié par e-mail dès qu'une version testable sera disponible."
+  },
+  {
+   "question": "Est-ce légal et compatible avec les plateformes ?",
+   "reponse": "CacheCast fonctionne côté client sur des flux HTML5, principalement pour les contenus libres, éducatifs ou autorisés. Il ne contourne pas les protections DRM : il est inopérant sur les plateformes qui les interdisent (ex. Netflix). Cette limitation sera documentée."
+  },
+  {
+   "question": "Combien de data est-ce que j'économise ?",
+   "reponse": "Le pré-téléchargement évite le re-téléchargement des segments après chaque coupure. L'économie exacte varie selon votre connexion et sera communiquée via des mesures objectives lors de la phase bêta."
+  },
+  {
+   "question": "Sur quels navigateurs ?",
+   "reponse": "Chrome et Firefox sont prévus en priorité. Pour les autres navigateurs, merci de l'indiquer dans le formulaire d'inscription afin d'influencer la feuille de route."
+  },
+  {
+   "question": "Que se passe-t-il si je paie et que l'extension ne marche pas chez moi ?",
+   "reponse": "Vous ne payez qu'après un essai gratuit de 7 jours sur votre propre connexion. Si le produit ne fonctionne pas chez vous, vous n'avez pas à procéder à l'achat."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#1F3A5F",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

@@ -1,0 +1,43 @@
+{
+ "slug": "preuveavant",
+ "nom": "PreuveAvant",
+ "accroche": "Testez votre app avant la mise à jour critique.",
+ "sous_titre": "Un outil en libre-service pour vérifier si vos clients peuvent encore commander. En préparation, disponible prochainement.",
+ "probleme_points": [
+  "Une mise à jour bloquante peut interrompre les ventes.",
+  "Les tests manuels prennent du temps et comportent des risques avant le lancement.",
+  "Il est difficile de savoir si le parcours client fonctionne sans déploiement."
+ ],
+ "comment": [
+  "Connectez votre URL publique ou importez vos données.",
+  "Lancez la simulation des scénarios clés (commande, paiement).",
+  "Recevez un rapport indiquant les points bloquants."
+ ],
+ "pour_qui": "Créateurs indépendants et petits vendeurs qui gèrent une application mobile ou web e-commerce ou communautaire utilisée par leurs clients.",
+ "prix": "19 euros pour la précommande (accès garanti à la sortie)",
+ "condition_prix": "Remboursement intégral si le produit n'est pas livré sous 60 jours. Tarif futur prévu : 39 €/mois pour un usage illimité.",
+ "offre": "precommande",
+ "cta": "Je réserve ma place à 19 €",
+ "faq": [
+  {
+   "question": "Est-ce que c'est déjà disponible ?",
+   "reponse": "Non, le service est en préparation. Cette page permet de réserver l'accès au premier lancement à tarif réduit."
+  },
+  {
+   "question": "Que se passe-t-il si je ne suis pas satisfait ?",
+   "reponse": "Remboursement intégral si le produit final ne correspond pas à la promesse ou n'est pas livré sous 60 jours."
+  },
+  {
+   "question": "Dois-je partager mes données sensibles ?",
+   "reponse": "Non, l'outil teste uniquement les flux publics ou ceux que vous choisissez explicitement de soumettre."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

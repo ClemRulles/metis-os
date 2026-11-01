@@ -1,0 +1,67 @@
+{
+ "ok": false,
+ "raison": "Erreur à l'exécution : exécution interrompue (code 1) file:///tmp/atelier-tFpvNO/demo.mjs:1\n{ \"title\": \"Module JavaScript (ES2022) - Rapport Prêt ou Pas Prêt\",\n         ^\n\nSyntaxError: Unexpected token ':'\n    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)\n    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:110:18)\n    at #translate (node:internal/modules/esm/loader:559:20)\n    at afterLoad (node:internal/mo",
+ "essais": null,
+ "spec": {
+  "titre": "Preuve avant mise à jour — rapport « prêt ou pas »",
+  "promesse": "La page prouve qu'on peut produire, en direct et sans backend, un rapport « prêt ou pas » calculé sur des données réelles : santé des dépendances, vulnérabilités connues, fraîcheur et latence des flux de données que l'app consomme, et simulation du coût d'une mise à jour bloquante.",
+  "donnees": [
+   {
+    "cle": "vulns",
+    "api": "osv",
+    "url": "https://api.osv.dev/v1/vulns/GHSA-jfh8-c2jp-5v3q",
+    "pourquoi": "Vérifier en direct la base OSV des failles logicielles : c'est le cœur du contrôle « mes dépendances ont-elles une CVE critique connue ? » avant publication."
+   },
+   {
+    "cle": "downloads",
+    "api": "npm",
+    "url": "https://api.npmjs.org/downloads/point/last-week/react",
+    "pourquoi": "Mesurer la popularité réelle d'une dépendance (react) sur 7 jours : une dépendance massivement utilisée est mieux maintenue, ce qui entre dans le score de risque."
+   },
+   {
+    "cle": "flux-meteo",
+    "api": "meteo",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&hourly=temperature_2m,precipitation_probability&forecast_days=1",
+    "pourquoi": "Simuler un scénario d'usage réel : l'app affiche la météo du lieu du magasin. On chronomètre l'appel et on valide la structure de la réponse, comme le ferait un agent de test."
+   },
+   {
+    "cle": "flux-rappels",
+    "api": "rappelconso",
+    "url": "https://api.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records?limit=2&order_by=date_publication%20desc",
+    "pourquoi": "Deuxième scénario réel : un flux produit (rappels consommateur, données du jour). On teste fraîcheur des données et temps de réponse, exactement le flux critique d'une app e-commerce."
+   }
+  ],
+  "ecran": "1) Bandeau titre avec la promesse et un badge global « PRÊT / PAS PRÊT / À VÉRIFIER » calculé en direct. 2) Section « Santé des dépendances » : téléchargements hebdomadaires de la dépendance testée (chiffre réel npm) et verdict vulnérabilité tiré d'OSV (id, sévérité, résumé). 3) Section « Scénarios d'usage réels » : deux cartes de test (flux météo, flux rappels produits) affichant pour chacune le temps de réponse mesuré en ms, la taille de la charge utile, la fraîcheur des données (écart entre la dernière donnée et maintenant) et un verdict par scénario. 4) Section « Simulation du coût d'une mise à jour bloquante » : à partir des temps de réponse mesurés, estimation du temps d'inaccessibilité si la version bloquait, multipliée par un panier moyen fictif réglable (curseur), affichant un coût en euros. 5) Rapport final : score sur 100, liste des critères verts/rouges, horodatage du test. 6) Pied de page : sources et licences (OSV CC BY 4.0, npm publique, Open-Meteo CC BY 4.0, RappelConso Licence ouverte), mention « aucune donnée personnelle collectée ».",
+  "calcul": "Chaque appel est chronométré côté navigateur (performance.now) et validé structurellement (présence des champs attendus). Score de dépendance : 50 points si aucune vulnérabilité critique OSV active, 30 si sévérité haute, 0 si critique ; bonus 0–20 selon le volume de téléchargements npm (proxy de maintenance). Score de scénario : 0–25 points par flux selon latence (<500 ms plein, dégradé au-delà de 2 s), validité de la structure et fraîcheur des données (<24 h). Le score global est la somme, ramenée sur 100 : ≥80 = PRÊT, 50–79 = À VÉRIFIER, <50 = PAS PRÊT. La simulation de coût prend le pire temps de réponse mesuré, y ajoute une marge de blocage de mise à jour forcée (ex. 15 s), le multiplie par un trafic horaire fictif et un panier moyen réglable pour donner un coût estimé en euros par heure de blocage.",
+  "limites": "La démonstration ne teste pas réellement la nouvelle version d'une app (pas d'exécution de parcours dans un navigateur headless ni d'agents générant des scénarios) : elle exécute des sondes réelles sur des flux et dépendances représentatifs. La liste des dépendances est codée en dur (une seule vérifiée via OSV) au lieu d'être extraite d'un lockfile. Le trafic et le panier moyen de la simulation de coût sont fictifs et réglables à la main. Les appels se font depuis le navigateur, donc certains blocages CORS ou limites de débit d'API peuvent faire échouer un scénario (affiché alors comme « échec du test », ce qui est aussi un résultat)."
+ },
+ "sources": [],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [
+    "vulns",
+    "downloads"
+   ],
+   "erreurs": []
+  },
+  {
+   "essai": 1,
+   "erreurs": [
+    "Erreur à l'exécution : exécution interrompue (code 1) file:///tmp/atelier-050gx4/demo.mjs:2\n  \"title\": \"Module JavaScript (ES2022) - Rapport Prêt ou Pas Prêt\",\n         ^\n\nSyntaxError: Unexpected token ':'\n    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)\n    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:110:18)\n    at #translate (node:internal/modules/esm/loader:559:20)\n    at afterLoad (node:internal/mo"
+   ]
+  },
+  {
+   "essai": 2,
+   "erreurs": [
+    "Erreur à l'exécution : exécution interrompue (code 1) file:///tmp/atelier-wA0SsC/demo.mjs:1\n{ \"title\": \"Module JavaScript (ES2022) - Rapport Prêt ou Pas Prêt\",\n         ^\n\nSyntaxError: Unexpected token ':'\n    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)\n    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:110:18)\n    at #translate (node:internal/modules/esm/loader:559:20)\n    at afterLoad (node:internal/mo"
+   ]
+  },
+  {
+   "essai": 3,
+   "erreurs": [
+    "Erreur à l'exécution : exécution interrompue (code 1) file:///tmp/atelier-tFpvNO/demo.mjs:1\n{ \"title\": \"Module JavaScript (ES2022) - Rapport Prêt ou Pas Prêt\",\n         ^\n\nSyntaxError: Unexpected token ':'\n    at compileSourceTextModule (node:internal/modules/esm/utils:346:16)\n    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:110:18)\n    at #translate (node:internal/modules/esm/loader:559:20)\n    at afterLoad (node:internal/mo"
+   ]
+  }
+ ]
+}

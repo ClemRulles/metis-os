@@ -1,0 +1,48 @@
+{
+ "slug": "preuveenmain",
+ "nom": "PreuveEnMain",
+ "accroche": "Gardez une trace vérifiable de chaque livraison",
+ "sous_titre": "Une borne QR en caisse : le client signe et photographie sa réception, chaque preuve est horodatée et archivée. Service en préparation, nous cherchons des testeurs.",
+ "probleme_points": [
+  "Sans preuve, un litige de livraison devient un mot contre un autre : le client dit ne pas avoir reçu, vous ne pouvez rien démontrer",
+  "Si vous confiez vos livraisons, vous n'avez aucun moyen de vérifier qu'elles ont bien été effectuées",
+  "Les solutions de preuve de livraison existantes visent les grandes flottes logistiques, pas l'épicerie du quartier"
+ ],
+ "comment": [
+  "Vous installez la borne QR en caisse ou à l'entrée de votre commerce",
+  "Au moment de la remise, le client scanne le QR, signe sur l'écran et photographie ce qu'il reçoit",
+  "Signature et photo sont horodatées puis archivées, et vous pouvez les consulter en cas de contestation"
+ ],
+ "pour_qui": "Commerçants de proximité qui assurent eux-mêmes leurs livraisons en ville : épiceries de quartier, bouchers, fleuristes, et associations de commerçants.",
+ "prix": "29 €/mois par borne",
+ "condition_prix": "Tarif prévu pour la mise en service, aucun prélèvement avant le lancement du service",
+ "offre": "precommande",
+ "cta": "Je précommande sans payer",
+ "faq": [
+  {
+   "question": "Le service existe-t-il déjà ?",
+   "reponse": "Non, PreuveEnMain est en préparation. Cette page sert à vérifier l'intérêt des commerçants avant de développer la borne."
+  },
+  {
+   "question": "Vos clients vont-ils accepter de signer et de prendre une photo ?",
+   "reponse": "C'est la principale question qu'on nous pose. On prépare une démonstration du parcours client (QR, signature, photo) pour que vous puissiez le tester avant de vous engager."
+  },
+  {
+   "question": "Quand le service sera-t-il disponible ?",
+   "reponse": "Pas de date annoncée pour l'instant. Les précommandes servent à financer et prioriser le développement ; vous serez contacté par e-mail à chaque étape."
+  },
+  {
+   "question": "Que deviennent les preuves collectées ?",
+   "reponse": "Signature et photo sont horodatées et archivées, consultables par le commerçant en cas de contestation. Aucune donnée n'est revendue."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2F6F5E",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": "",
+ "demo_url": "demo/"
+}

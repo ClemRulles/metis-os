@@ -1,0 +1,43 @@
+{
+ "slug": "apiguard",
+ "nom": "ApiGuard",
+ "accroche": "Surveillez vos APIs critiques avant la panne.",
+ "sous_titre": "Un agent autonome qui détecte les changements de schéma et la latence anormale. Alerte prédictive pour développeurs indépendants et petites startups SaaS. Service en préparation, lancement imminent.",
+ "probleme_points": [
+  "Intégration d'APIs tierces instables ou changeantes sans avertissement.",
+  "Pannes silencieuses impactant l'expérience utilisateur final.",
+  "Difficulté à prioriser le remplacement des dépendances risquées."
+ ],
+ "comment": [
+  "Inscrivez-vous à la liste d'attente pour une précommande fondateur.",
+  "Recevez un accès anticipé et le rapport de volatilité dès le lancement.",
+  "Profitez du prix fixe de 9 €/mois pendant la période fondateur."
+ ],
+ "pour_qui": "Développeurs indépendants et petites équipes SaaS (1-5 personnes) dont les applications dépendent d'APIs externes critiques (ex: Stripe, Shopify, providers No-Code) et qui souhaitent éviter les interruptions de service liées aux changements de structure ou aux",
+ "prix": "9 €/mois (tarif fondateur)",
+ "condition_prix": "Prix réservé aux précommandes validées avant le lancement public. Le tarif standard sera de 19 €/mois pour 5 APIs après le lancement. Premier mois gratuit au lancement pour les abonnés fondateurs.",
+ "offre": "precommande",
+ "cta": "Réserver mon accès fondateur",
+ "faq": [
+  {
+   "question": "Pourquoi un prix si bas ?",
+   "reponse": "C'est notre offre fondateur pour remercier les premiers utilisateurs qui nous accompagnent durant la phase de test. Ce tarif est bloqué pour vous jusqu'à ce que le produit soit pleinement stable."
+  },
+  {
+   "question": "Comment fonctionne la surveillance ?",
+   "reponse": "Notre agent vérifie en continu la structure (schéma) et la latence de vos APIs. Il ne se contente pas de détecter une panne, il analyse les changements potentiels pour vous alerter avant qu'ils n'affectent votre application."
+  },
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, le service est actuellement en préparation active. Cette page permet uniquement de sécuriser votre place et votre tarif fondateur. L'accès complet sera ouvert progressivement lors du lancement."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2563EB",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

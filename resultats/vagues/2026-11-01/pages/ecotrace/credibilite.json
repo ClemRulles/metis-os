@@ -1,0 +1,106 @@
+{
+ "ok": false,
+ "bloquants": [
+  "mentions-editeur",
+  "api-branchee",
+  "interdit-offre"
+ ],
+ "controles": [
+  {
+   "id": "statut-honnete",
+   "ok": true,
+   "bloquant": true,
+   "detail": "La page dit clairement que le service n'existe pas encore."
+  },
+  {
+   "id": "mentions-editeur",
+   "ok": false,
+   "bloquant": true,
+   "detail": "Éditeur identifié : nom, adresse géographique, contact (Code de droit économique, livre XII)."
+  },
+  {
+   "id": "confidentialite",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Notice de confidentialité : finalité, base légale, durée, droit de suppression (RGPD)."
+  },
+  {
+   "id": "consentement-explicite",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Case de consentement non précochée et obligatoire."
+  },
+  {
+   "id": "prix-affiche",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Le prix prévu est affiché."
+  },
+  {
+   "id": "precommande-remboursable",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Une précommande est explicitement remboursable."
+  },
+  {
+   "id": "noindex-test",
+   "ok": true,
+   "bloquant": false,
+   "detail": "Page de test non indexée par défaut."
+  },
+  {
+   "id": "mobile",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Affichage mobile."
+  },
+  {
+   "id": "api-branchee",
+   "ok": false,
+   "bloquant": true,
+   "detail": "Liste d'attente branchée (sinon les inscriptions sont perdues)."
+  },
+  {
+   "id": "interdit-étoiles",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Pas de étoiles d'avis."
+  },
+  {
+   "id": "interdit-avis",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Pas de avis ou témoignages (aucun client n'existe encore)."
+  },
+  {
+   "id": "interdit-compteur",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Pas de compteur d'utilisateurs."
+  },
+  {
+   "id": "interdit-fausse",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Pas de fausse urgence."
+  },
+  {
+   "id": "interdit-promesse",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Pas de promesse absolue."
+  },
+  {
+   "id": "interdit-apparence",
+   "ok": true,
+   "bloquant": true,
+   "detail": "Pas de apparence officielle."
+  },
+  {
+   "id": "interdit-offre",
+   "ok": false,
+   "bloquant": true,
+   "detail": "Trouvé : « audit » (offre interdite par le contrat de Clément)."
+  }
+ ]
+}

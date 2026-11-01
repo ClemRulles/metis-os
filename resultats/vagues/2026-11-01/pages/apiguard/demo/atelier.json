@@ -1,0 +1,36 @@
+{
+ "ok": false,
+ "raison": "aucune donnée récupérée (données « meteo » (https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&hourly=temperature_2m,precipitation_probability,uv_index&forecast_days=1) : fetch failed)",
+ "essais": null,
+ "spec": {
+  "titre": "Contrôleur de Compatibilité API – Démo",
+  "promesse": "Surveiller en temps réel la disponibilité et la cohérence des données de deux APIs météo et qualité de l'air pour détecter les anomalies avant qu'elles n'impactent votre application.",
+  "donnees": [
+   {
+    "cle": "meteo",
+    "api": "Open-Meteo prévisions",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&hourly=temperature_2m,precipitation_probability,uv_index&forecast_days=1",
+    "pourquoi": "Vérifier que les prévisions sont bien renvoyées (structure complète, valeurs numériques) et mesurer le temps de réponse."
+   },
+   {
+    "cle": "pollen-air",
+    "api": "Open-Meteo qualité de l'air et pollens",
+    "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=48.85&longitude=2.35&hourly=birch_pollen,grass_pollen,ragweed_pollen,pm2_5,ozone&forecast_days=1",
+    "pourquoi": "Vérifier que les données de qualité de l'air sont bien renvoyées (structure complète, valeurs numériques) et mesurer le temps de réponse."
+   }
+  ],
+  "ecran": "La page affiche un tableau de bord avec deux blocs :\n- Bloc Météo : titre 'Prévisions météo (Paris)', liste des 24 heures avec température, probabilité de précipitation, indice UV. En dessous, un indicateur 'État : OK' ou 'État : Anomalie' (si un champ est manquant ou non numérique).\n- Bloc Qualité de l'air : titre 'Qualité de l’air (Paris)', liste des 24 heures avec pollen de bouleau, pollen de graminées, pollen d'ambroisie, PM2.5, ozone. En dessous, un indicateur 'État : OK' ou 'État : Anomalie'.\n- En bas : horodatage de la dernière vérification, temps de réponse de chaque API (ms), et lien vers les sources (Open-Meteo, licence CC BY 4.0).",
+  "calcul": "Pour chaque API, la page :\n1. Effectue un appel fetch() vers l'URL donnée.\n2. Mesure le temps de réponse (performance.now()).\n3. Vérifie que la réponse est au format JSON et contient les clés attendues (ex: 'hourly', 'temperature_2m', 'precipitation_probability', 'uv_index' pour la météo ; 'hourly', 'birch_pollen', 'grass_pollen', 'ragweed_pollen', 'pm2_5', 'ozone' pour la qualité de l'air).\n4. Vérifie que chaque tableau de valeurs contient 24 éléments numériques (typeof === 'number' et non NaN).\n5. Si tout est conforme, l'état est 'OK' ; sinon 'Anomalie'.\n6. Affiche les données sous forme de tableau simple et les indicateurs.",
+  "limites": "Cette démonstration ne surveille que deux APIs sur une seule localisation (Paris) et ne teste pas les changements de schéma dans le temps (pas d'historique). Elle ne gère pas les alertes en continu (pas de polling automatique) et ne couvre pas la latence réseau côté serveur (seulement le temps de réponse total)."
+ },
+ "sources": [],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [],
+   "erreurs": [
+    "données « meteo » (https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&hourly=temperature_2m,precipitation_probability,uv_index&forecast_days=1) : fetch failed"
+   ]
+  }
+ ]
+}

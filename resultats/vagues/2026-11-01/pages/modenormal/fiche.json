@@ -1,0 +1,47 @@
+{
+ "slug": "modenormal",
+ "nom": "ModeNormal",
+ "accroche": "Apprenez sans notifications ni récompenses.",
+ "sous_titre": "Une application minimaliste pour travailler une seule compétence à la fois, sans notifications, sans badges, sans distractions.",
+ "probleme_points": [
+  "Les applications éducatives envoient de nombreuses notifications et affichent des badges qui interrompent votre concentration.",
+  "Le temps passé à gérer les récompenses se soustrait au temps d'apprentissage.",
+  "Trop d'éléments à suivre rend difficile le maintien d'une habitude régulière."
+ ],
+ "comment": [
+  "Choisissez une compétence à travailler (vocabulaire, syntaxe, etc.).",
+  "Lancez une session chronométrée de 25 minutes, sans interruption.",
+  "À la fin, consultez vos résultats avec des métriques de rétention simples."
+ ],
+ "pour_qui": "",
+ "prix": "4,99 € (achat unique)",
+ "condition_prix": "Prix de précommande, valable pour les 500 premières précommandes.",
+ "offre": "precommande",
+ "cta": "Précommander",
+ "faq": [
+  {
+   "question": "En quoi ModeNormal est-il différent d'un simple minuteur ?",
+   "reponse": "ModeNormal réunit un minuteur et un suivi de progression sur une compétence unique. L'application vous aide à rester concentré pendant la session et enregistre vos résultats pour que vous puissiez suivre votre évolution."
+  },
+  {
+   "question": "Y aura-t-il des notifications ou des récompenses ?",
+   "reponse": "Non. L'application n'envoie pas de notifications, n'affiche pas de badges et ne propose pas de classement. Le retour fourni est une mesure de votre progression."
+  },
+  {
+   "question": "Quand l'application sera-t-elle disponible ?",
+   "reponse": "La version bêta est en préparation. En précommandant, vous recevrez un message à l'occasion du lancement, au prix indiqué."
+  },
+  {
+   "question": "Puis-je l'utiliser sur mon téléphone ?",
+   "reponse": "L'application est prévue pour iOS et Android."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#f0f0f0",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}
