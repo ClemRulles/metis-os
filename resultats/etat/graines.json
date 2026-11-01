@@ -1,32 +1,32 @@
 [
  {
-  "titre": "OpenSubs — l'index ouvert et comparable des conditions d'abonnement",
-  "solution": "Un index public et une API des conditions réelles d'abonnement : engagement minimum, reconduction automatique, délai de remboursement, frais de résiliation, prérequis de clics, note de « friction de résiliation » mesurée et vérifiée. Alimenté par extraction automatique des CGU, déclaration juridique_pad-in pad des stores, versements de，提前半个月 de_usersconsentis (opt-in), et des signalements d'utilisateurs.",
-  "angle_libre": "Aucun des résultats ne propose une base de données structurée et comparable (API) des conditions d'abonnement avec une métrique mesurée de 'friction de résiliation' ; les concurrents sont des guides éditoriaux ou des services de résiliation, pas des fournisseurs de données.",
-  "objection": "Le premier paiement sous 30 jours est fragile : les clients API (fintechs, médias) exigent une fiabilité et une couverture critique avant d'acheter, et 100 apps en 2 semaines ne suffiront pas à convaincre. Le freemium attire des curieux mais pas des payeurs immédiats."
+  "titre": "Assistant de Révision par Chat Vocal",
+  "solution": "Un agent vocal via WhatsApp ou Telegram (ou une appli dédiée) qui pose des questions à voix haute, écoute la réponse et donne un feedback immédiat, avec un système de répétition espacée.",
+  "angle_libre": "Aucun concurrent trouvé ne combine agent vocal conversationnel (réponse à voix haute évaluée par IA) + répétition espacée sur les 100 questions de l'oral, via WhatsApp/Telegram sans installer d'appli.",
+  "objection": "La distribution repose trop fortement sur l'organique des communautés (WhatsApp/Telegram), ce qui est non scalable et rend le taux de conversion initial incertain sans un tunnel de vente structuré."
  },
  {
-  "titre": "Recours / Calibration",
-  "solution": "Une application mobile où l'utilisateur importe son justificatif de commande, les agents génèrent un dossier de réclamation solide (photos, reçu, chronologie) et des lettres ou formulaires pré-remplis pour chaque plateforme, avec suivi du dossier jusqu'au paiement.",
-  "angle_libre": "Aucun acteur des résultats ne propose un dossier de réclamation automatisé, pré-rempli par plateforme (Uber Eats, Deliveroo, Wolt) avec suivi jusqu'au paiement effectif — les associations sont généralistes et lentes, le Signal Conso ne suit pas le dossier individuellement.",
-  "objection": "La faille : préparer des réclamations pour des particuliers face à des plateformes peut basculer vers du conseil juridique non réglementé si les agents produisent des arguments juridiques personnalisés (droit de la consommation, mise en demeure), et la valeur défendable est faible — un simple GPT gratuit avec les CGV de la plateforme fait à peu près pareil demain, sans données propriétaires ni réseau qui barrent la route."
+  "titre": "FreeFinder",
+  "solution": "Extension de navigateur qui, sur la page d'une application payante, affiche automatiquement une liste d'alternatives gratuites ou moins chères, choisies par IA.",
+  "angle_libre": "Aucun concurrent des résultats ne fait de la recommandation automatique et contextuelle d'alternatives gratuites directement sur la page de l'application payante : tous sont des articles SEO statiques à consulter volontairement. L'angle libre est la détection automatique in-page + mise à jour continue des recommandations par IA, là où les articles vieillissent.",
+  "objection": "Le modèle repose sur un point de friction majeur : convaincre l'utilisateur d'installer une extension de navigateur pour une valeur perçue initiale faible (1.99€/an). La distribution via des groupes sociaux est trop passive et ne garantit ni le trafic ni la confiance nécessaire pour l'installation."
  },
  {
-  "titre": "Veille conformité produits : le nœud que le vendeur ne voit pas",
-  "solution": "Un agent alerte en continu le vendeur des rappels de lots et seuils réglementaires (cosmétique, REACH, toys) dans sa catégorie, traduits et adaptés, avec un lien vers la source officielle et la liste exacte des références concernées à retirer de l'inventaire.",
-  "angle_libre": "Personne ne traduit, filtre par catégorie et croise les rappels Safety Gate/RappelConso avec l'inventaire exact d'un petit vendeur pour lui dire précisément quelles références retirer — les sources existantes sont gratuites mais brutes, non personnalisées et en anglais pour Safety Gate.",
-  "objection": "Le principal obstacle est l'acquisition des données d'inventaire du vendeur. Pour croiser les rappels avec les références, l'outil doit connaître les SKUs, les numéros de lot et les catégories des produits. Exiger une intégration API complète ou un accès profond au back-office est trop lourd et risque de violer la contrainte de 'pas de conseil/audit'. Si le vendeur doit fournir manuellement ses données, la friction est trop élevée pour un premier achat."
+  "titre": "Coach de checkout pour boutiques en ligne",
+  "solution": "Un logiciel en libre-service : on entre l'URL de sa boutique, des agents IA passent une commande réelle de test avec plusieurs cartes virtuelles, filme le parcours, identifient les points d'échec et livrent un rapport correctif en langage clair.",
+  "angle_libre": "Aucun acteur trouvé ne propose un audit automatisé en libre-service avec commande réelle de test, cartes virtuelles multiples et rapport vidéo correctif à prix fixe (29 €) pour petits vendeurs Shopify/Etsy/WooCommerce.",
+  "objection": "La defensibilité est faible : une fois que Stripe ou Shopify intègre un diagnostic de paiement natif (ou qu'un outil open-source gratuit émerge), le produit devient obsolète. Les données de test ne sont pas exclusives."
  },
  {
-  "titre": "SearchFix : Le Moteur de Recherche Sémantique pour Apps Métier",
-  "solution": "Une couche logicielle (widget ou extension API) qui intercepte les requêtes de recherche natives et applique une recherche sémantique « contains » ou floue en arrière-plan.",
-  "angle_libre": "Une couche cross-ERP (Dynamics 365, Salesforce Mobile, Odoo) exposée comme API par requête, indépendante de l'éditeur — aucun des concurrents trouvés n'offre un widget universel de recherche sémantique « contains » facturé à la recherche sur mobile.",
-  "objection": "La complexité d'intégration avec les schémas propriétaires (Salesforce, Dynamics) est le goulot d'étranglement. L'IA doit pouvoir 'comprendre' la structure de données sans accès direct et exhaustif, ce qui est souvent impossible sans API d'introspection coûteuses."
+  "titre": "PrononciAction – l'agent qui corrige la prononciation en contexte réel",
+  "solution": "Un agent IA (basé sur un modèle de synthèse vocale ouvert de Hugging Face) qui écoute l'utilisateur répéter des phrases tirées de situations réelles (appels téléphoniques, commandes, réunions) et corrige phonème par phonème avec feedback visuel.",
+  "angle_libre": "Les concurrents ciblent l'anglais générique ; personne ne cible les travailleurs frontaliers et situations professionnelles précises (appels téléphoniques, réunions) en français et autres langues, avec correction phonème par phonème en contexte réel.",
+  "objection": "La qualité et la pertinence des scénarios de conversation sont le point de rupture. Si les dialogues sont trop génériques ou ne simulent pas la complexité réelle d'une interaction (ex: négociation, urgence), l'utilisateur percevra rapidement une limite entre l'outil et la réalité, ce qui mine la valeur perçue du prix."
  },
  {
-  "titre": "Kiosk-as-a-Service : la borne devient logicielle, plus physique",
-  "solution": "Un boîtier ou un mode « borne » sur une tablette Android/Linux avec un écran tactile sur pied loué 49 €/mois : commande en 4 gestes, paiement sans contact, impression de ticket, et surtout un mode « Commande depuis la table » où le client scanne un QR code du comptoir pour commander et payer sans se lever.",
-  "angle_libre": "Personne dans les résultats ne propose un vrai Kiosk-as-a-Service à 49 €/mois tout inclus (matériel loué, sans engagement lourd) ciblé spécifiquement la Belgique/Luxembourg et les micro-commerces (sandwicheries, boulangeries, kebabs) avec le duo borne + QR commande à table — Lightspeed et CLYO s'en approchent mais restent plus chers et liés à des écosystèmes.",
-  "objection": "Le modèle est trop dépendant du matériel (boîtier Android standard) et du faible prix de l'abonnement (49€/mois), ce qui le rend extrêmement vulnérable à la concurrence des solutions POS grand public ou des solutions open-source qui pourraient copier la fonctionnalité de base sans le coût de développement initial. La défense repose uniquement sur l'intégration AI, qui n'est pas encore assez profonde."
+  "titre": "RésilieFacile",
+  "solution": "Guides de résiliation ultra-précis par service (chaque clic, chaque piège), générés et maintenus par des agents IA à partir des parcours réels, avec modèles de courriers de résiliation et suivi des délais légaux.",
+  "angle_libre": "Guides de résiliation ultra-détaillés clic par clic avec détection des dark patterns spécifiques à chaque service, générés par IA et mis à jour en continu — aucun concurrent ne documente les pièges précis de chaque parcours (comme le bug Canal+), et le marché belge francophone est peu couvert par Ideel.",
+  "objection": "La défendabilité est faible : un assistant IA gratuit (ex. ChatGPT) peut déjà générer des guides de résiliation à la demande, et les parcours changent vite, rendant la maintenance coûteuse sans barrière réelle."
  }
 ]

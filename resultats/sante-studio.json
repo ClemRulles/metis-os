@@ -1,20 +1,20 @@
 {
  "date": "2026-11-01",
- "dureeSecondes": 1365,
- "coutUsd": 0.3847,
- "appelsModeles": 898,
+ "dureeSecondes": 1255,
+ "coutUsd": 0.3179,
+ "appelsModeles": 884,
  "etapes": {
   "radar": {
-   "secondes": 443,
-   "coutCumuleUsd": 0.0366
+   "secondes": 291,
+   "coutCumuleUsd": 0.0276
   },
   "usine": {
-   "secondes": 895,
-   "coutCumuleUsd": 0.2998
+   "secondes": 925,
+   "coutCumuleUsd": 0.2342
   },
   "enquete": {
-   "secondes": 27,
-   "coutCumuleUsd": 0.3847
+   "secondes": 40,
+   "coutCumuleUsd": 0.3179
   }
  },
  "sources": {
@@ -22,7 +22,7 @@
    "n": 53
   },
   "appstore": {
-   "n": 1013,
+   "n": 1189,
    "categories": [
     "Divertissement",
     "Éducation",
@@ -32,64 +32,58 @@
    ]
   },
   "stackexchange": {
-   "n": 80
+   "n": 180
   },
   "lemmy": {
-   "n": 25,
-   "erreur": "The operation was aborted due to timeout"
+   "n": 125
   }
  },
  "cerveaux": {
-  "deepseek": {
-   "ok": 209,
-   "echecs": 4,
-   "tauxEchec": 0.02,
-   "msMoyen": 15030,
-   "exempleErreur": "aucun fournisseur pour deepseek (openrouter : The operation was aborted due to timeout ; groq : clé absente)"
-  },
   "qwen": {
-   "ok": 187,
+   "ok": 205,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 8585,
+   "msMoyen": 9165,
    "exempleErreur": null
   },
   "mimo": {
-   "ok": 165,
+   "ok": 226,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 11846,
+   "msMoyen": 10026,
    "exempleErreur": null
   },
   "mistral": {
-   "ok": 17,
+   "ok": 14,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 20108,
+   "msMoyen": 10966,
    "exempleErreur": null
   },
-  "glm": {
-   "ok": 168,
-   "echecs": 6,
-   "tauxEchec": 0.03,
-   "msMoyen": 8896,
-   "exempleErreur": "aucun fournisseur pour glm (openrouter : réponse vide (fin : length) ; groq : clé absente)"
-  },
-  "minimax": {
-   "ok": 133,
-   "echecs": 2,
+  "deepseek": {
+   "ok": 205,
+   "echecs": 3,
    "tauxEchec": 0.01,
-   "msMoyen": 8456,
-   "exempleErreur": "aucun fournisseur pour minimax (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+   "msMoyen": 14656,
+   "exempleErreur": "aucun fournisseur pour deepseek (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+  },
+  "glm": {
+   "ok": 226,
+   "echecs": 5,
+   "tauxEchec": 0.02,
+   "msMoyen": 6769,
+   "exempleErreur": "réponse illisible (fin : stop) : {}"
   }
  },
  "stats": {
-  "brut": 834,
-  "douleurs": 520,
-  "gisements": 238,
-  "idees": 582,
-  "notees": 413,
-  "nonConformes": 169,
+  "brut": 678,
+  "douleurs": 393,
+  "gisements": 426,
+  "generees": 597,
+  "parasites": 2,
+  "idees": 595,
+  "notees": 517,
+  "nonConformes": 78,
   "finalistes": 32,
   "duels": 80,
   "enquetes": 15
