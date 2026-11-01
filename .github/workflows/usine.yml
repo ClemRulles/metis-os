@@ -1,0 +1,57 @@
+name: Usine à idées
+
+# Chaque jour, l'usine génère des centaines d'idées avec les modèles ouverts, les fait critiquer et s'affronter,
+# puis dépose le classement sur la branche « resultats ». Le passage suivant fait muter les meilleures.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "43 4 * * *" # chaque jour vers 5 h 43 heure de Bruxelles
+  push:
+    branches: [main]
+    paths: ["config/usine.json", "config/atlas-api.json", "src/usine/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: usine
+  cancel-in-progress: false
+
+jobs:
+  usine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Tests
+        run: npm test
+      - name: Dernier passage (pour l'évolution)
+        run: |
+          git fetch origin resultats || true
+          mkdir -p /tmp/precedent
+          dernier=$(git ls-tree --name-only origin/resultats resultats/ 2>/dev/null | grep '/idees-.*\.json$' | sort | tail -1 || true)
+          if [ -n "$dernier" ]; then git show "origin/resultats:$dernier" > /tmp/precedent/idees.json; fi
+      - name: Génération, critique et tournoi
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          if [ -f /tmp/precedent/idees.json ]; then node scripts/lancer-usine.js /tmp/precedent/idees.json; else node scripts/lancer-usine.js; fi
+      - name: Dépôt des résultats
+        run: |
+          mkdir -p /tmp/sortie && cp data/idees-* /tmp/sortie/
+          git config user.name "metis-os"
+          git config user.email "noreply@github.com"
+          if git rev-parse --verify -q origin/resultats >/dev/null; then
+            git checkout -B resultats origin/resultats
+          else
+            git checkout --orphan resultats && git rm -rq --cached . && git clean -fdq
+          fi
+          mkdir -p resultats && cp /tmp/sortie/* resultats/
+          cp "$(ls -t /tmp/sortie/*.md | head -1)" resultats/IDEES-DU-JOUR.md
+          git add resultats
+          git commit -qm "Usine à idées : passage ${{ github.run_id }}" || exit 0
+          for i in 1 2 3; do git push origin resultats && break; git pull --rebase -q origin resultats; done

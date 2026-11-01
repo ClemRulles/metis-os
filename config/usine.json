@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "note": "Usine à idées. Tout est réglable ici sans toucher au code : lentilles, cerveaux, volumes, poids des axes. Métis réécrit ce fichier à mesure que les tests réels disent ce qui marche.",
+  "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
+  "cerveaux_generation": ["deepseek", "qwen", "glm", "minimax", "mimo", "mistral"],
+  "cerveaux_jugement": ["deepseek", "qwen", "glm", "mimo"],
+  "volumes": {
+    "generations": 60,
+    "idees_par_generation": 4,
+    "finalistes_tournoi": 24,
+    "rondes_tournoi": 4,
+    "top_publie": 10
+  },
+  "lentilles": {
+    "futur-a-rebours": "Écris d'abord, mentalement, un article de presse de 2031 sur un service devenu indispensable. Puis remonte le temps : quelle première brique peut-on lancer dès ce mois-ci ?",
+    "collision-api": "Prends les deux sources de données ou API fournies et fais-les entrer en collision : quel service nouveau naît seulement de leur croisement ?",
+    "cimetiere": "Pense à une idée tentée avant 2023, abandonnée parce qu'elle demandait trop de travail humain ou coûtait trop cher. Avec des agents à un centime la tâche, que devient-elle ?",
+    "travail-invisible": "Trouve un travail utile que personne ne fait parce qu'il demande de lire, comparer ou surveiller des milliers de documents. Des agents peuvent le faire chaque jour : à qui ça change la vie ?",
+    "luxe-democratise": "Prends un service réservé aux riches ou aux grandes entreprises (veille, avocat, analyste, majordome, chercheur) et rends-le accessible à tous pour quelques euros.",
+    "signal-faible": "Pars d'un des signaux récents fournis (recherche scientifique, tendance tech) : qui va en avoir besoin dans 12 à 36 mois, avant tout le monde ?",
+    "transplant": "Prends un modèle qui marche dans un pays ou un secteur, et transplante-le là où il n'existe pas encore (Europe, francophonie, un autre métier).",
+    "inversion": "Prends une pratique établie et inverse-la (le client devient fournisseur, le payant devient gratuit, le lent devient instantané, le centralisé devient local).",
+    "super-pouvoir-agent": "Quelle chose devient possible seulement quand on a mille travailleurs infatigables qui coûtent presque rien, travaillent 24 h sur 24 et ne s'ennuient jamais ?",
+    "bien-commun": "Pars d'un grand problème de société (climat, santé, isolement, accès au droit, éducation, logement, biodiversité, démocratie locale) et trouve une brique utile, finançable et testable en 2 semaines.",
+    "evolution": "Voici des idées finalistes d'un passage précédent et la critique qui les rendrait plus fortes. Fais-les muter, croise-les, pousse-les plus loin : ne les recopie pas."
+  },
+  "axes": {
+    "valeur_societale": { "poids": 0.25, "definition": "Combien de personnes en profitent, et à quel point leur vie ou leur travail s'en trouve meilleur." },
+    "originalite": { "poids": 0.2, "definition": "Personne ne le fait déjà ainsi ; l'angle surprend un expert du domaine." },
+    "avantage_agents": { "poids": 0.15, "definition": "L'idée exploite ce que des agents IA font mieux que des humains (volume, vitesse, constance, coût)." },
+    "defensibilite": { "poids": 0.15, "definition": "Si un assistant IA gratuit sait le faire demain, il reste quelque chose : données propres, réseau, confiance, résultat livré." },
+    "argent_rapide": { "poids": 0.15, "definition": "Un premier paiement est plausible sous 30 jours, sans appel téléphonique, avec moins de 300 euros." },
+    "faisabilite": { "poids": 0.1, "definition": "Testable en 2 semaines avec environ 7 heures humaines par semaine." }
+  },
+  "contraintes": [
+    "Jamais d'offre de conseil, d'audit, de diagnostic ou d'automatisation pour entreprises (contrat de travail de Clément).",
+    "Aucun appel téléphonique ; vente par site, e-mail, communauté ou place de marché.",
+    "300 euros maximum avant le premier euro encaissé.",
+    "Rien d'illégal, de trompeur ou de manipulateur ; pas de faux avis ni de spam ; pas de conseil médical, juridique ou financier personnalisé présenté comme celui d'un professionnel.",
+    "Aucune donnée personnelle sensible collectée sans base légale."
+  ]
+}

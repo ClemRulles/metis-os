@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "note": "Atlas des sources à forte valeur ajoutée, gratuites ou presque. Chaque entrée est un super-pouvoir pour les agents. L'éclaireur en ajoute ; Métis retire ce qui ne sert pas. Vérifier les conditions d'utilisation avant tout usage commercial.",
+  "sources": [
+    { "id": "hvd-ue", "nom": "Jeux de données à forte valeur de l'UE (data.europa.eu)", "pouvoir": "Données publiques européennes rendues gratuites par API depuis juin 2024 : géographie, observation de la Terre, environnement, météo, statistiques, registres d'entreprises, mobilité.", "domaine": "public" },
+    { "id": "copernicus", "nom": "Copernicus (Sentinel, services atmosphère, climat, terres)", "pouvoir": "Images satellites gratuites de toute l'Europe tous les quelques jours : cultures, inondations, chantiers, pollution, neige, forêts.", "domaine": "terre" },
+    { "id": "nasa-firms", "nom": "NASA FIRMS et Earthdata", "pouvoir": "Feux actifs détectés par satellite en quasi temps réel, et des milliers de jeux de données climatiques.", "domaine": "terre" },
+    { "id": "open-meteo", "nom": "Open-Meteo", "pouvoir": "Prévisions, historique et modèles climatiques à l'heure près pour n'importe quel point du globe.", "domaine": "terre" },
+    { "id": "entsoe", "nom": "ENTSO-E Transparency et Electricity Maps", "pouvoir": "Prix, production et intensité carbone de l'électricité en Europe, heure par heure.", "domaine": "energie" },
+    { "id": "osm", "nom": "OpenStreetMap (Overpass)", "pouvoir": "Carte complète du monde interrogeable : commerces, accessibilité, pistes cyclables, bâtiments.", "domaine": "territoire" },
+    { "id": "gbif", "nom": "GBIF et iNaturalist", "pouvoir": "Milliards d'observations d'espèces géolocalisées : biodiversité, espèces invasives, pollinisateurs.", "domaine": "vivant" },
+    { "id": "openalex", "nom": "OpenAlex, Semantic Scholar, arXiv, Europe PMC", "pouvoir": "Toute la recherche scientifique mondiale, ses citations et ses auteurs : voir une découverte avant qu'elle n'arrive dans les produits.", "domaine": "science" },
+    { "id": "clinicaltrials", "nom": "ClinicalTrials.gov et registre européen des essais (CTIS)", "pouvoir": "Tous les essais cliniques en cours, leurs critères et leurs lieux de recrutement.", "domaine": "sante" },
+    { "id": "openfda", "nom": "openFDA et base européenne des médicaments", "pouvoir": "Effets indésirables déclarés, rappels de produits, notices.", "domaine": "sante" },
+    { "id": "off", "nom": "Open Food Facts, Open Beauty Facts", "pouvoir": "Composition, Nutri-Score et origine de millions de produits du quotidien.", "domaine": "conso" },
+    { "id": "rappel-conso", "nom": "RappelConso et Safety Gate (UE)", "pouvoir": "Tous les rappels de produits dangereux en France et en Europe, au jour le jour.", "domaine": "conso" },
+    { "id": "eurlex", "nom": "EUR-Lex, Légifrance, Moniteur belge", "pouvoir": "Tout le droit européen, français et belge, et ses changements quotidiens.", "domaine": "droit" },
+    { "id": "ted", "nom": "TED (marchés publics européens) et BOAMP", "pouvoir": "Chaque marché public d'Europe, ses montants et ses gagnants.", "domaine": "public" },
+    { "id": "registres", "nom": "BCE belge, Sirene et BODACC, Registre luxembourgeois, OpenCorporates", "pouvoir": "Création, faillite, dirigeants et comptes des entreprises.", "domaine": "economie" },
+    { "id": "brevets", "nom": "EPO Open Patent Services, Google Patents, USPTO", "pouvoir": "Tous les brevets du monde, dont ceux qui expirent et deviennent libres d'usage.", "domaine": "innovation" },
+    { "id": "gdelt", "nom": "GDELT", "pouvoir": "L'actualité mondiale de 100 langues, codée en événements et en émotions, toutes les 15 minutes.", "domaine": "monde" },
+    { "id": "eurostat", "nom": "Eurostat, Banque mondiale, OCDE, Statbel, INSEE", "pouvoir": "Les statistiques de tous les pays et régions, prêtes à croiser.", "domaine": "public" },
+    { "id": "edgar", "nom": "SEC EDGAR et ESEF (rapports financiers européens)", "pouvoir": "Comptes et risques déclarés de toutes les sociétés cotées.", "domaine": "economie" },
+    { "id": "opensky", "nom": "OpenSky, AIS (navires), GTFS (transports publics)", "pouvoir": "Avions, bateaux, bus et trains en mouvement, en temps réel.", "domaine": "mobilite" },
+    { "id": "hf", "nom": "Hugging Face (modèles et jeux de données ouverts)", "pouvoir": "Des centaines de milliers de modèles spécialisés gratuits : voix, vision, traduction, chimie, biologie.", "domaine": "ia" },
+    { "id": "wikidata", "nom": "Wikidata et Wikipedia", "pouvoir": "Une base de connaissances mondiale structurée, en 300 langues.", "domaine": "savoir" },
+    { "id": "gutenberg", "nom": "Domaine public (Gutenberg, Europeana, Gallica)", "pouvoir": "Des millions de livres, images, cartes et archives libres de droits, à recréer et rendre vivants.", "domaine": "culture" },
+    { "id": "github", "nom": "GitHub et registres de paquets (npm, PyPI)", "pouvoir": "Tout le logiciel libre du monde, ses failles, ses dépendances abandonnées.", "domaine": "logiciel" },
+    { "id": "annonces", "nom": "Annonces publiques d'emploi (France Travail, EURES)", "pouvoir": "Les besoins réels des employeurs, métier par métier, région par région.", "domaine": "travail" },
+    { "id": "air", "nom": "Agence européenne de l'environnement, OpenAQ, Sensor.Community", "pouvoir": "Qualité de l'air et bruit mesurés par des stations et des capteurs citoyens.", "domaine": "terre" },
+    { "id": "cadastre", "nom": "Cadastre, DVF (valeurs foncières), Géoportail, PVGIS", "pouvoir": "Parcelles, prix réels des ventes immobilières, potentiel solaire de chaque toit.", "domaine": "territoire" }
+  ]
+}

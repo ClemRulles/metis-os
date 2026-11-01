@@ -52,4 +52,4 @@ jobs:
           mkdir -p resultats && cp /tmp/resultats/*.json resultats/
           git add resultats
           git commit -qm "Banc du passé : passage ${{ github.run_id }}" || exit 0
-          git push origin resultats
+          for i in 1 2 3; do git push origin resultats && break; git pull --rebase -q origin resultats; done
