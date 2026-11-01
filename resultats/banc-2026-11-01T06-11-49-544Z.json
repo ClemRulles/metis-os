@@ -1,0 +1,2767 @@
+{
+ "manche": {
+  "note": "Plan de la prochaine manche. Métis le réécrit après chaque analyse : une manche sans hypothèse ne sert à rien. Champs lus par scripts/lancer-banc.js et recopiés dans le fichier de résultats.",
+  "phase": "idee",
+  "numero": 4,
+  "hypothese": "Avec 1 200 tokens et reasoning low, qwen, gemma et inkling répondent enfin (moins de 10 % d'échecs par modèle).",
+  "critere_succes": "Chaque cerveau a au moins 40 réponses lisibles sur 50 ; sinon, il est retiré ou remplacé à la manche suivante.",
+  "question_suivante": "Si tous répondent : la moyenne recalibrée vers le taux de base bat-elle le taux de base ?",
+  "nb_cas": 50
+ },
+ "configurations": [
+  {
+   "id": "predicteur-01",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "cimetiere",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "europe-est",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "totale",
+   "outils": "code",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-02",
+   "cerveau": "gemma",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "lancements-produits",
+   "zone": "chine",
+   "risque": "equilibre",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-03",
+   "cerveau": "inkling",
+   "role": "predicteur",
+   "lentille": "luxe-democratise",
+   "raisonnement": "intuitif",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "usa",
+   "risque": "prudent",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-04",
+   "cerveau": "llama",
+   "role": "predicteur",
+   "lentille": "inversion",
+   "raisonnement": "statistique",
+   "persona": "aucune",
+   "territoire": "aucun",
+   "zone": "europe-est",
+   "risque": "kamikaze",
+   "horizon": "18-36",
+   "memoire": "totale",
+   "outils": "redaction",
+   "temperature": 0.5
+  },
+  {
+   "id": "predicteur-05",
+   "cerveau": "mimo",
+   "role": "predicteur",
+   "lentille": "super-pouvoir-agent",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "bresil",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "aucun",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-06",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "analogie",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "monde",
+   "risque": "prudent",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "code",
+   "temperature": 0.2
+  }
+ ],
+ "resultat": {
+  "parConfiguration": [
+   {
+    "id": "predicteur-01",
+    "n": 50,
+    "brier": 0.07307450000000014,
+    "logScore": -0.275299560251922,
+    "apport": 0.0537245582310374
+   },
+   {
+    "id": "predicteur-05",
+    "n": 50,
+    "brier": 0.07381700000000004,
+    "logScore": -0.27544284823757453,
+    "apport": 0.049774908332766064
+   },
+   {
+    "id": "predicteur-06",
+    "n": 50,
+    "brier": 0.07404800000000014,
+    "logScore": -0.2811838720724153,
+    "apport": 0.04527009583644092
+   },
+   {
+    "id": "predicteur-04",
+    "n": 50,
+    "brier": 0.3560880391999999,
+    "logScore": -0.9436649858410722,
+    "apport": -0.6678992317408127
+   },
+   {
+    "id": "predicteur-02",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-03",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   }
+  ],
+  "marche": {
+   "n": 50,
+   "brier": 0.07962668757219558,
+   "logScore": -0.30320452844218154,
+   "apport": null
+  },
+  "carteDesGenes": {
+   "cerveau": {
+    "qwen": {
+     "configurations": 2,
+     "apportMoyen": 0.04949732703373916
+    },
+    "llama": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "mimo": {
+     "configurations": 1,
+     "apportMoyen": 0.049774908332766064
+    }
+   },
+   "role": {
+    "predicteur": {
+     "configurations": 4,
+     "apportMoyen": -0.12978241733514206
+    }
+   },
+   "lentille": {
+    "cimetiere": {
+     "configurations": 1,
+     "apportMoyen": 0.0537245582310374
+    },
+    "inversion": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "super-pouvoir-agent": {
+     "configurations": 1,
+     "apportMoyen": 0.049774908332766064
+    },
+    "travail-abandonne": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   },
+   "raisonnement": {
+    "premiers-principes": {
+     "configurations": 2,
+     "apportMoyen": 0.05174973328190173
+    },
+    "statistique": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "analogie": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   },
+   "persona": {
+    "aucune": {
+     "configurations": 4,
+     "apportMoyen": -0.12978241733514206
+    }
+   },
+   "territoire": {
+    "marches-de-prevision": {
+     "configurations": 2,
+     "apportMoyen": 0.05174973328190173
+    },
+    "aucun": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "rss-tech": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   },
+   "zone": {
+    "europe-est": {
+     "configurations": 2,
+     "apportMoyen": -0.30708733675488764
+    },
+    "bresil": {
+     "configurations": 1,
+     "apportMoyen": 0.049774908332766064
+    },
+    "monde": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   },
+   "risque": {
+    "equilibre": {
+     "configurations": 2,
+     "apportMoyen": 0.05174973328190173
+    },
+    "kamikaze": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "prudent": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   },
+   "horizon": {
+    "6-18": {
+     "configurations": 2,
+     "apportMoyen": 0.05174973328190173
+    },
+    "18-36": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "0-6": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   },
+   "memoire": {
+    "totale": {
+     "configurations": 2,
+     "apportMoyen": -0.30708733675488764
+    },
+    "aucune": {
+     "configurations": 1,
+     "apportMoyen": 0.049774908332766064
+    },
+    "partielle": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   },
+   "outils": {
+    "code": {
+     "configurations": 2,
+     "apportMoyen": 0.04949732703373916
+    },
+    "redaction": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "aucun": {
+     "configurations": 1,
+     "apportMoyen": 0.049774908332766064
+    }
+   },
+   "temperature": {
+    "0.8": {
+     "configurations": 2,
+     "apportMoyen": 0.05174973328190173
+    },
+    "0.5": {
+     "configurations": 1,
+     "apportMoyen": -0.6678992317408127
+    },
+    "0.2": {
+     "configurations": 1,
+     "apportMoyen": 0.04527009583644092
+    }
+   }
+  },
+  "predictions": 300,
+  "echecs": 100,
+  "parCerveau": {
+   "qwen": {
+    "ok": 100,
+    "echecs": 0,
+    "msMoyen": 14171,
+    "exempleErreur": null
+   },
+   "gemma": {
+    "ok": 0,
+    "echecs": 50,
+    "msMoyen": 27395,
+    "exempleErreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)"
+   },
+   "inkling": {
+    "ok": 0,
+    "echecs": 50,
+    "msMoyen": 6,
+    "exempleErreur": "aucun fournisseur pour inkling (openrouter : HTTP 403 ; groq : clé absente)"
+   },
+   "llama": {
+    "ok": 50,
+    "echecs": 0,
+    "msMoyen": 1897,
+    "exempleErreur": null
+   },
+   "mimo": {
+    "ok": 50,
+    "echecs": 0,
+    "msMoyen": 2438,
+    "exempleErreur": null
+   }
+  },
+  "detail": [
+   {
+    "cas": "hn-50080712",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14360
+   },
+   {
+    "cas": "hn-50080712",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15595
+   },
+   {
+    "cas": "hn-50080712",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : HTTP 403 ; groq : clé absente)",
+    "ms": 133
+   },
+   {
+    "cas": "hn-50080712",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.63,
+    "erreur": null,
+    "ms": 3313
+   },
+   {
+    "cas": "hn-50080712",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1105
+   },
+   {
+    "cas": "hn-50080712",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13391
+   },
+   {
+    "cas": "hn-49600186",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14487
+   },
+   {
+    "cas": "hn-49600186",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15539
+   },
+   {
+    "cas": "hn-49600186",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : HTTP 403 ; groq : clé absente)",
+    "ms": 142
+   },
+   {
+    "cas": "hn-49600186",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 922
+   },
+   {
+    "cas": "hn-49600186",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 1548
+   },
+   {
+    "cas": "hn-49600186",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13809
+   },
+   {
+    "cas": "hn-50182774",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14066
+   },
+   {
+    "cas": "hn-50182774",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15459
+   },
+   {
+    "cas": "hn-50182774",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : HTTP 403 ; groq : clé absente)",
+    "ms": 30
+   },
+   {
+    "cas": "hn-50182774",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 2388
+   },
+   {
+    "cas": "hn-50182774",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1802
+   },
+   {
+    "cas": "hn-50182774",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13973
+   },
+   {
+    "cas": "hn-50182657",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14813
+   },
+   {
+    "cas": "hn-50182657",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 15718
+   },
+   {
+    "cas": "hn-50182657",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50182657",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.42,
+    "erreur": null,
+    "ms": 2455
+   },
+   {
+    "cas": "hn-50182657",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 879
+   },
+   {
+    "cas": "hn-50182657",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14763
+   },
+   {
+    "cas": "hn-50144419",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14186
+   },
+   {
+    "cas": "hn-50144419",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 70311
+   },
+   {
+    "cas": "hn-50144419",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 1
+   },
+   {
+    "cas": "hn-50144419",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.65,
+    "erreur": null,
+    "ms": 772
+   },
+   {
+    "cas": "hn-50144419",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.15,
+    "erreur": null,
+    "ms": 2030
+   },
+   {
+    "cas": "hn-50144419",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14179
+   },
+   {
+    "cas": "hn-50050732",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14415
+   },
+   {
+    "cas": "hn-50050732",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 70153
+   },
+   {
+    "cas": "hn-50050732",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50050732",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.43,
+    "erreur": null,
+    "ms": 301
+   },
+   {
+    "cas": "hn-50050732",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 512
+   },
+   {
+    "cas": "hn-50050732",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 12027
+   },
+   {
+    "cas": "hn-49966541",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14013
+   },
+   {
+    "cas": "hn-49966541",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 70205
+   },
+   {
+    "cas": "hn-49966541",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49966541",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.42,
+    "erreur": null,
+    "ms": 7325
+   },
+   {
+    "cas": "hn-49966541",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 832
+   },
+   {
+    "cas": "hn-49966541",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13787
+   },
+   {
+    "cas": "hn-49976134",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13919
+   },
+   {
+    "cas": "hn-49976134",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 49132
+   },
+   {
+    "cas": "hn-49976134",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49976134",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 3530
+   },
+   {
+    "cas": "hn-49976134",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 7863
+   },
+   {
+    "cas": "hn-49976134",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13606
+   },
+   {
+    "cas": "hn-50125746",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13534
+   },
+   {
+    "cas": "hn-50125746",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 41909
+   },
+   {
+    "cas": "hn-50125746",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50125746",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.85,
+    "erreur": null,
+    "ms": 2500
+   },
+   {
+    "cas": "hn-50125746",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 2831
+   },
+   {
+    "cas": "hn-50125746",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13723
+   },
+   {
+    "cas": "hn-49738954",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 19213
+   },
+   {
+    "cas": "hn-49738954",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 37867
+   },
+   {
+    "cas": "hn-49738954",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49738954",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.23,
+    "erreur": null,
+    "ms": 2501
+   },
+   {
+    "cas": "hn-49738954",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 2401
+   },
+   {
+    "cas": "hn-49738954",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13142
+   },
+   {
+    "cas": "hn-49594944",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14389
+   },
+   {
+    "cas": "hn-49594944",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 503 ; groq : clé absente)",
+    "ms": 20805
+   },
+   {
+    "cas": "hn-49594944",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49594944",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 1872
+   },
+   {
+    "cas": "hn-49594944",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 1142
+   },
+   {
+    "cas": "hn-49594944",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14294
+   },
+   {
+    "cas": "hn-49914005",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14394
+   },
+   {
+    "cas": "hn-49914005",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 21964
+   },
+   {
+    "cas": "hn-49914005",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49914005",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.45,
+    "erreur": null,
+    "ms": 2543
+   },
+   {
+    "cas": "hn-49914005",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 1600
+   },
+   {
+    "cas": "hn-49914005",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14338
+   },
+   {
+    "cas": "hn-49857297",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13980
+   },
+   {
+    "cas": "hn-49857297",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 3747
+   },
+   {
+    "cas": "hn-49857297",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49857297",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.823,
+    "erreur": null,
+    "ms": 1108
+   },
+   {
+    "cas": "hn-49857297",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 518
+   },
+   {
+    "cas": "hn-49857297",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 12645
+   },
+   {
+    "cas": "hn-50052795",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13954
+   },
+   {
+    "cas": "hn-50052795",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 11475
+   },
+   {
+    "cas": "hn-50052795",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 1
+   },
+   {
+    "cas": "hn-50052795",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.83,
+    "erreur": null,
+    "ms": 3537
+   },
+   {
+    "cas": "hn-50052795",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 1106
+   },
+   {
+    "cas": "hn-50052795",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14064
+   },
+   {
+    "cas": "hn-49591238",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14356
+   },
+   {
+    "cas": "hn-49591238",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 13795
+   },
+   {
+    "cas": "hn-49591238",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49591238",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.83,
+    "erreur": null,
+    "ms": 2141
+   },
+   {
+    "cas": "hn-49591238",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.11,
+    "erreur": null,
+    "ms": 5167
+   },
+   {
+    "cas": "hn-49591238",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14519
+   },
+   {
+    "cas": "hn-49643992",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 12747
+   },
+   {
+    "cas": "hn-49643992",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 3639
+   },
+   {
+    "cas": "hn-49643992",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 1
+   },
+   {
+    "cas": "hn-49643992",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.615,
+    "erreur": null,
+    "ms": 909
+   },
+   {
+    "cas": "hn-49643992",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 4504
+   },
+   {
+    "cas": "hn-49643992",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14381
+   },
+   {
+    "cas": "hn-49533731",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14063
+   },
+   {
+    "cas": "hn-49533731",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 15341
+   },
+   {
+    "cas": "hn-49533731",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49533731",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.82,
+    "erreur": null,
+    "ms": 1025
+   },
+   {
+    "cas": "hn-49533731",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 4486
+   },
+   {
+    "cas": "hn-49533731",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13649
+   },
+   {
+    "cas": "hn-49717545",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 15567
+   },
+   {
+    "cas": "hn-49717545",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 66850
+   },
+   {
+    "cas": "hn-49717545",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49717545",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.67,
+    "erreur": null,
+    "ms": 1486
+   },
+   {
+    "cas": "hn-49717545",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1341
+   },
+   {
+    "cas": "hn-49717545",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13556
+   },
+   {
+    "cas": "hn-50014702",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13865
+   },
+   {
+    "cas": "hn-50014702",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 44961
+   },
+   {
+    "cas": "hn-50014702",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50014702",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.32,
+    "erreur": null,
+    "ms": 5565
+   },
+   {
+    "cas": "hn-50014702",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 7247
+   },
+   {
+    "cas": "hn-50014702",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14096
+   },
+   {
+    "cas": "hn-50153867",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13683
+   },
+   {
+    "cas": "hn-50153867",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 40683
+   },
+   {
+    "cas": "hn-50153867",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50153867",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.43,
+    "erreur": null,
+    "ms": 1921
+   },
+   {
+    "cas": "hn-50153867",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 7003
+   },
+   {
+    "cas": "hn-50153867",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 12341
+   },
+   {
+    "cas": "hn-50088333",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14269
+   },
+   {
+    "cas": "hn-50088333",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 33971
+   },
+   {
+    "cas": "hn-50088333",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50088333",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.55,
+    "erreur": null,
+    "ms": 1535
+   },
+   {
+    "cas": "hn-50088333",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 859
+   },
+   {
+    "cas": "hn-50088333",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13987
+   },
+   {
+    "cas": "hn-50010301",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13819
+   },
+   {
+    "cas": "hn-50010301",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 30260
+   },
+   {
+    "cas": "hn-50010301",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 1
+   },
+   {
+    "cas": "hn-50010301",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.025,
+    "erreur": null,
+    "ms": 2496
+   },
+   {
+    "cas": "hn-50010301",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1389
+   },
+   {
+    "cas": "hn-50010301",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14307
+   },
+   {
+    "cas": "hn-49770637",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14050
+   },
+   {
+    "cas": "hn-49770637",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 27119
+   },
+   {
+    "cas": "hn-49770637",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49770637",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.67,
+    "erreur": null,
+    "ms": 2678
+   },
+   {
+    "cas": "hn-49770637",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 773
+   },
+   {
+    "cas": "hn-49770637",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 15063
+   },
+   {
+    "cas": "hn-49900368",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14188
+   },
+   {
+    "cas": "hn-49900368",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 10826
+   },
+   {
+    "cas": "hn-49900368",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49900368",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.85,
+    "erreur": null,
+    "ms": 2669
+   },
+   {
+    "cas": "hn-49900368",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 961
+   },
+   {
+    "cas": "hn-49900368",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13300
+   },
+   {
+    "cas": "hn-49946213",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14579
+   },
+   {
+    "cas": "hn-49946213",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 7077
+   },
+   {
+    "cas": "hn-49946213",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49946213",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.38,
+    "erreur": null,
+    "ms": 465
+   },
+   {
+    "cas": "hn-49946213",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 3179
+   },
+   {
+    "cas": "hn-49946213",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13713
+   },
+   {
+    "cas": "hn-50129425",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14896
+   },
+   {
+    "cas": "hn-50129425",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 13757
+   },
+   {
+    "cas": "hn-50129425",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50129425",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.52,
+    "erreur": null,
+    "ms": 1892
+   },
+   {
+    "cas": "hn-50129425",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.06,
+    "erreur": null,
+    "ms": 2016
+   },
+   {
+    "cas": "hn-50129425",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14120
+   },
+   {
+    "cas": "hn-49626806",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 15593
+   },
+   {
+    "cas": "hn-49626806",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 13931
+   },
+   {
+    "cas": "hn-49626806",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49626806",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.83,
+    "erreur": null,
+    "ms": 902
+   },
+   {
+    "cas": "hn-49626806",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1630
+   },
+   {
+    "cas": "hn-49626806",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 12517
+   },
+   {
+    "cas": "hn-49737199",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14978
+   },
+   {
+    "cas": "hn-49737199",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 8935
+   },
+   {
+    "cas": "hn-49737199",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49737199",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 4490
+   },
+   {
+    "cas": "hn-49737199",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 4743
+   },
+   {
+    "cas": "hn-49737199",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14966
+   },
+   {
+    "cas": "hn-50157557",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 15634
+   },
+   {
+    "cas": "hn-50157557",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 15300
+   },
+   {
+    "cas": "hn-50157557",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50157557",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.42,
+    "erreur": null,
+    "ms": 2764
+   },
+   {
+    "cas": "hn-50157557",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 1418
+   },
+   {
+    "cas": "hn-50157557",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14791
+   },
+   {
+    "cas": "hn-50127659",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14312
+   },
+   {
+    "cas": "hn-50127659",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 4931
+   },
+   {
+    "cas": "hn-50127659",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50127659",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 1052
+   },
+   {
+    "cas": "hn-50127659",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 2576
+   },
+   {
+    "cas": "hn-50127659",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14360
+   },
+   {
+    "cas": "hn-49553092",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14845
+   },
+   {
+    "cas": "hn-49553092",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 64701
+   },
+   {
+    "cas": "hn-49553092",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49553092",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.73,
+    "erreur": null,
+    "ms": 2428
+   },
+   {
+    "cas": "hn-49553092",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1231
+   },
+   {
+    "cas": "hn-49553092",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14252
+   },
+   {
+    "cas": "hn-50024608",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 17054
+   },
+   {
+    "cas": "hn-50024608",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 42780
+   },
+   {
+    "cas": "hn-50024608",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50024608",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.82,
+    "erreur": null,
+    "ms": 1122
+   },
+   {
+    "cas": "hn-50024608",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 1584
+   },
+   {
+    "cas": "hn-50024608",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14516
+   },
+   {
+    "cas": "hn-50017907",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 16173
+   },
+   {
+    "cas": "hn-50017907",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 38478
+   },
+   {
+    "cas": "hn-50017907",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50017907",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.42,
+    "erreur": null,
+    "ms": 791
+   },
+   {
+    "cas": "hn-50017907",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 3802
+   },
+   {
+    "cas": "hn-50017907",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13845
+   },
+   {
+    "cas": "hn-50104944",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14365
+   },
+   {
+    "cas": "hn-50104944",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 33656
+   },
+   {
+    "cas": "hn-50104944",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50104944",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 1098
+   },
+   {
+    "cas": "hn-50104944",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 1425
+   },
+   {
+    "cas": "hn-50104944",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13270
+   },
+   {
+    "cas": "hn-49609562",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13766
+   },
+   {
+    "cas": "hn-49609562",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 30203
+   },
+   {
+    "cas": "hn-49609562",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49609562",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.55,
+    "erreur": null,
+    "ms": 1891
+   },
+   {
+    "cas": "hn-49609562",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1393
+   },
+   {
+    "cas": "hn-49609562",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 13126
+   },
+   {
+    "cas": "hn-50107279",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13651
+   },
+   {
+    "cas": "hn-50107279",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 22107
+   },
+   {
+    "cas": "hn-50107279",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50107279",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.65,
+    "erreur": null,
+    "ms": 271
+   },
+   {
+    "cas": "hn-50107279",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 844
+   },
+   {
+    "cas": "hn-50107279",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13157
+   },
+   {
+    "cas": "hn-49547254",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14526
+   },
+   {
+    "cas": "hn-49547254",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 15029
+   },
+   {
+    "cas": "hn-49547254",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49547254",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 176
+   },
+   {
+    "cas": "hn-49547254",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 663
+   },
+   {
+    "cas": "hn-49547254",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 10267
+   },
+   {
+    "cas": "hn-50024159",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14747
+   },
+   {
+    "cas": "hn-50024159",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 13206
+   },
+   {
+    "cas": "hn-50024159",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50024159",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.16,
+    "erreur": null,
+    "ms": 1021
+   },
+   {
+    "cas": "hn-50024159",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1299
+   },
+   {
+    "cas": "hn-50024159",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13906
+   },
+   {
+    "cas": "hn-50154371",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13995
+   },
+   {
+    "cas": "hn-50154371",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 5723
+   },
+   {
+    "cas": "hn-50154371",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50154371",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.61,
+    "erreur": null,
+    "ms": 976
+   },
+   {
+    "cas": "hn-50154371",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 940
+   },
+   {
+    "cas": "hn-50154371",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13040
+   },
+   {
+    "cas": "hn-50073593",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14961
+   },
+   {
+    "cas": "hn-50073593",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 13817
+   },
+   {
+    "cas": "hn-50073593",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50073593",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.625,
+    "erreur": null,
+    "ms": 1209
+   },
+   {
+    "cas": "hn-50073593",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.08,
+    "erreur": null,
+    "ms": 1014
+   },
+   {
+    "cas": "hn-50073593",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14083
+   },
+   {
+    "cas": "hn-49850400",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14933
+   },
+   {
+    "cas": "hn-49850400",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 8868
+   },
+   {
+    "cas": "hn-49850400",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49850400",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.62,
+    "erreur": null,
+    "ms": 988
+   },
+   {
+    "cas": "hn-49850400",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1416
+   },
+   {
+    "cas": "hn-49850400",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13873
+   },
+   {
+    "cas": "hn-49848556",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 15238
+   },
+   {
+    "cas": "hn-49848556",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 13316
+   },
+   {
+    "cas": "hn-49848556",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49848556",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.4286,
+    "erreur": null,
+    "ms": 2334
+   },
+   {
+    "cas": "hn-49848556",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 1665
+   },
+   {
+    "cas": "hn-49848556",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14183
+   },
+   {
+    "cas": "hn-49697103",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 16051
+   },
+   {
+    "cas": "hn-49697103",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : limite par minute ; groq : clé absente)",
+    "ms": 12052
+   },
+   {
+    "cas": "hn-49697103",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49697103",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.35,
+    "erreur": null,
+    "ms": 1610
+   },
+   {
+    "cas": "hn-49697103",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.1,
+    "erreur": null,
+    "ms": 2218
+   },
+   {
+    "cas": "hn-49697103",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.09,
+    "erreur": null,
+    "ms": 12273
+   },
+   {
+    "cas": "hn-50090683",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 16113
+   },
+   {
+    "cas": "hn-50090683",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 65239
+   },
+   {
+    "cas": "hn-50090683",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50090683",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.52,
+    "erreur": null,
+    "ms": 3330
+   },
+   {
+    "cas": "hn-50090683",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.11,
+    "erreur": null,
+    "ms": 3354
+   },
+   {
+    "cas": "hn-50090683",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.15,
+    "erreur": null,
+    "ms": 11926
+   },
+   {
+    "cas": "hn-49953063",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13272
+   },
+   {
+    "cas": "hn-49953063",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 41778
+   },
+   {
+    "cas": "hn-49953063",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 1
+   },
+   {
+    "cas": "hn-49953063",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.23,
+    "erreur": null,
+    "ms": 2605
+   },
+   {
+    "cas": "hn-49953063",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 3319
+   },
+   {
+    "cas": "hn-49953063",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13891
+   },
+   {
+    "cas": "hn-50160198",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13981
+   },
+   {
+    "cas": "hn-50160198",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 38326
+   },
+   {
+    "cas": "hn-50160198",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50160198",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.65,
+    "erreur": null,
+    "ms": 647
+   },
+   {
+    "cas": "hn-50160198",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.11,
+    "erreur": null,
+    "ms": 1403
+   },
+   {
+    "cas": "hn-50160198",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14677
+   },
+   {
+    "cas": "hn-50089352",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14858
+   },
+   {
+    "cas": "hn-50089352",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 34364
+   },
+   {
+    "cas": "hn-50089352",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-50089352",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.82,
+    "erreur": null,
+    "ms": 892
+   },
+   {
+    "cas": "hn-50089352",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.12,
+    "erreur": null,
+    "ms": 12372
+   },
+   {
+    "cas": "hn-50089352",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14517
+   },
+   {
+    "cas": "hn-49831720",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14184
+   },
+   {
+    "cas": "hn-49831720",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 29543
+   },
+   {
+    "cas": "hn-49831720",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49831720",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.42,
+    "erreur": null,
+    "ms": 691
+   },
+   {
+    "cas": "hn-49831720",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.28,
+    "erreur": null,
+    "ms": 854
+   },
+   {
+    "cas": "hn-49831720",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14788
+   },
+   {
+    "cas": "hn-49897196",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14606
+   },
+   {
+    "cas": "hn-49897196",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 21661
+   },
+   {
+    "cas": "hn-49897196",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 0
+   },
+   {
+    "cas": "hn-49897196",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.43,
+    "erreur": null,
+    "ms": 854
+   },
+   {
+    "cas": "hn-49897196",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 4358
+   },
+   {
+    "cas": "hn-49897196",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 13356
+   },
+   {
+    "cas": "hn-49934692",
+    "config": "predicteur-01",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 15006
+   },
+   {
+    "cas": "hn-49934692",
+    "config": "predicteur-02",
+    "cerveau": "gemma",
+    "p": null,
+    "erreur": "aucun fournisseur pour gemma (openrouter : HTTP 429 ; groq : clé absente)",
+    "ms": 13660
+   },
+   {
+    "cas": "hn-49934692",
+    "config": "predicteur-03",
+    "cerveau": "inkling",
+    "p": null,
+    "erreur": "aucun fournisseur pour inkling (openrouter : coupe-circuit ; groq : clé absente)",
+    "ms": 1
+   },
+   {
+    "cas": "hn-49934692",
+    "config": "predicteur-04",
+    "cerveau": "llama",
+    "p": 0.85,
+    "erreur": null,
+    "ms": 864
+   },
+   {
+    "cas": "hn-49934692",
+    "config": "predicteur-05",
+    "cerveau": "mimo",
+    "p": 0.07,
+    "erreur": null,
+    "ms": 1273
+   },
+   {
+    "cas": "hn-49934692",
+    "config": "predicteur-06",
+    "cerveau": "qwen",
+    "p": 0.075,
+    "erreur": null,
+    "ms": 14098
+   }
+  ]
+ },
+ "routeur": [
+  {
+   "fournisseur": "openrouter",
+   "tokensUtilises": 175992,
+   "tokensRestants": 2824008,
+   "modelesCoupes": [
+    "inkling"
+   ],
+   "cle": true
+  },
+  {
+   "fournisseur": "groq",
+   "tokensUtilises": 0,
+   "tokensRestants": 200000,
+   "modelesCoupes": [],
+   "cle": false
+  }
+ ]
+}
