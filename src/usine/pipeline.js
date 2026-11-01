@@ -139,25 +139,31 @@ export async function lancerUsine({ config, atlas, signaux = [], graines = [], r
   const v = config.volumes;
   const lentilles = Object.keys(config.lentilles).filter((l) => l !== "evolution" || graines.length);
   const stats = { appels: 0, echecs: 0, parCerveau: {} };
-  const noter = (cerveau, ok) => {
-    const s = (stats.parCerveau[cerveau] ??= { ok: 0, echecs: 0 });
+  const noter = (cerveau, ok, erreur) => {
+    const s = (stats.parCerveau[cerveau] ??= { ok: 0, echecs: 0, exempleErreur: null });
     stats.appels += 1;
     if (ok) s.ok += 1;
     else {
       s.echecs += 1;
       stats.echecs += 1;
+      s.exempleErreur ??= String(erreur ?? "").slice(0, 200);
     }
   };
-  async function demander(cerveau, messages, temperature, maxTokens) {
-    try {
-      const r = await routeur.appeler({ cerveau, messages, temperature, maxTokens });
-      const json = extraireJSON(r.texte);
-      noter(cerveau, json != null);
-      return json;
-    } catch {
-      noter(cerveau, false);
-      return null;
+  // Un appel raté (modèle coupé, délai dépassé, JSON illisible) est retenté sur d'autres cerveaux : l'usine
+  // ne perd pas une idée parce qu'un modèle a un mauvais jour.
+  async function demander(preferes, messages, temperature, maxTokens, secours = config.cerveaux_jugement) {
+    const essais = [...new Set([...preferes, ...tirer(alea, secours, secours.length)])].slice(0, 3);
+    for (const cerveau of essais) {
+      try {
+        const r = await routeur.appeler({ cerveau, messages, temperature, maxTokens });
+        const json = extraireJSON(r.texte);
+        noter(cerveau, json != null, json == null ? `JSON illisible : ${String(r.texte).slice(0, 120)}` : null);
+        if (json != null) return { json, cerveau };
+      } catch (err) {
+        noter(cerveau, false, err?.message);
+      }
     }
+    return { json: null, cerveau: null };
   }
 
   // 1. Génération : chaque appel combine une lentille, un cerveau, deux sources de l'atlas et trois signaux.
@@ -170,11 +176,11 @@ export async function lancerUsine({ config, atlas, signaux = [], graines = [], r
   }));
   journal(`génération : ${plans.length} appels`);
   const lots = await pool(plans, parallelisme, async (p) => {
-    const json = await demander(p.cerveau, messagesGeneration({ config, lentille: p.lentille, sources: p.sources, signaux: p.signaux, graines: p.lentille === "evolution" ? graines : [], n: v.idees_par_generation }), p.temperature, 2400);
+    const { json, cerveau } = await demander([p.cerveau], messagesGeneration({ config, lentille: p.lentille, sources: p.sources, signaux: p.signaux, graines: p.lentille === "evolution" ? graines : [], n: v.idees_par_generation }), p.temperature, 3000, config.cerveaux_generation);
     const liste = Array.isArray(json) ? json : Array.isArray(json?.idees) ? json.idees : [];
     return liste
       .filter((i) => i && typeof i.titre === "string" && i.titre.trim())
-      .map((i) => ({ ...Object.fromEntries(CHAMPS_IDEE.map((c) => [c, i[c] ?? null])), lentille: p.lentille, cerveau: p.cerveau, sources: p.sources.map((s) => s.id) }));
+      .map((i) => ({ ...Object.fromEntries(CHAMPS_IDEE.map((c) => [c, i[c] ?? null])), lentille: p.lentille, cerveau: cerveau ?? p.cerveau, sources: p.sources.map((s) => s.id) }));
   });
   const vues = new Set();
   const idees = lots.flat().filter((i) => {
@@ -190,8 +196,8 @@ export async function lancerUsine({ config, atlas, signaux = [], graines = [], r
   await pool(idees, parallelisme, async (idee) => {
     const juges = config.cerveaux_jugement.filter((c) => c !== idee.cerveau);
     const juge = choisir(alea, juges.length ? juges : config.cerveaux_jugement);
-    const c = await demander(juge, messagesCritique({ config, idee }), 0.3, 1200);
-    idee.critique = c ? { ...c, juge } : null;
+    const { json: c, cerveau: jugeReel } = await demander([juge], messagesCritique({ config, idee }), 0.3, 1500, juges.length ? juges : config.cerveaux_jugement);
+    idee.critique = c ? { ...c, juge: jugeReel } : null;
     idee.score = c && c.conforme !== false ? scorePondere(c, config.axes) : null;
   });
 
@@ -211,7 +217,7 @@ export async function lancerUsine({ config, atlas, signaux = [], graines = [], r
       const inverse = alea() < 0.5; // l'ordre de présentation est tiré au sort pour éviter le biais de position
       const [x, y] = inverse ? [b, a] : [a, b];
       const juge = choisir(alea, config.cerveaux_jugement);
-      const d = await demander(juge, messagesDuel({ config, a: x, b: y }), 0.2, 600);
+      const { json: d } = await demander([juge], messagesDuel({ config, a: x, b: y }), 0.2, 800);
       const g = String(d?.gagnant ?? "").trim().toUpperCase();
       if (g !== "A" && g !== "B") return null;
       const gagnant = g === "A" ? x : y;

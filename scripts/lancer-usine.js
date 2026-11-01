@@ -19,7 +19,7 @@ if (precedent) {
 const signaux = await collecterSignaux();
 console.log(`Signaux : ${signaux.length} ; graines : ${graines.length}`);
 
-const routeur = creerRouteur();
+const routeur = creerRouteur({ delaiRequeteMs: 120_000, pauseCoupeCircuitMs: 2 * 60 * 1000 }); // les idées demandent des réponses longues
 const graine = Number(process.env.GITHUB_RUN_ID ?? Date.now()) % 2147483647;
 const resultat = await lancerUsine({ config, atlas, signaux, graines, routeur, graine, journal: (m) => console.log(m) });
 
@@ -38,6 +38,9 @@ const md = [
   `${resultat.stats.idees} idées générées, ${resultat.stats.notees} notées, ${resultat.stats.duels} duels. Appels : ${resultat.stats.appels} (${resultat.stats.echecs} échecs).`,
   "",
   ...resultat.top.map(ligne),
+  "## Santé des cerveaux",
+  ...Object.entries(resultat.stats.parCerveau).map(([c, s]) => `- ${c} : ${s.ok} ok, ${s.echecs} échecs${s.exempleErreur ? ` (${s.exempleErreur})` : ""}`),
+  "",
   "## Lentilles",
   ...Object.entries(resultat.parLentille).map(([l, s]) => `- ${l} : ${s.idees} idées, score moyen ${s.scoreMoyen}, ${s.finalistes} finalistes`),
 ].join("\n");

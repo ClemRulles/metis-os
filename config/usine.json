@@ -2,8 +2,19 @@
   "version": 1,
   "note": "Usine à idées. Tout est réglable ici sans toucher au code : lentilles, cerveaux, volumes, poids des axes. Métis réécrit ce fichier à mesure que les tests réels disent ce qui marche.",
   "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
-  "cerveaux_generation": ["deepseek", "qwen", "glm", "minimax", "mimo", "mistral"],
-  "cerveaux_jugement": ["deepseek", "qwen", "glm", "mimo"],
+  "cerveaux_generation": [
+    "deepseek",
+    "qwen",
+    "glm",
+    "minimax",
+    "mimo"
+  ],
+  "cerveaux_jugement": [
+    "deepseek",
+    "qwen",
+    "glm",
+    "mimo"
+  ],
   "volumes": {
     "generations": 60,
     "idees_par_generation": 4,
@@ -25,12 +36,30 @@
     "evolution": "Voici des idées finalistes d'un passage précédent et la critique qui les rendrait plus fortes. Fais-les muter, croise-les, pousse-les plus loin : ne les recopie pas."
   },
   "axes": {
-    "valeur_societale": { "poids": 0.25, "definition": "Combien de personnes en profitent, et à quel point leur vie ou leur travail s'en trouve meilleur." },
-    "originalite": { "poids": 0.2, "definition": "Personne ne le fait déjà ainsi ; l'angle surprend un expert du domaine." },
-    "avantage_agents": { "poids": 0.15, "definition": "L'idée exploite ce que des agents IA font mieux que des humains (volume, vitesse, constance, coût)." },
-    "defensibilite": { "poids": 0.15, "definition": "Si un assistant IA gratuit sait le faire demain, il reste quelque chose : données propres, réseau, confiance, résultat livré." },
-    "argent_rapide": { "poids": 0.15, "definition": "Un premier paiement est plausible sous 30 jours, sans appel téléphonique, avec moins de 300 euros." },
-    "faisabilite": { "poids": 0.1, "definition": "Testable en 2 semaines avec environ 7 heures humaines par semaine." }
+    "valeur_societale": {
+      "poids": 0.25,
+      "definition": "Combien de personnes en profitent, et à quel point leur vie ou leur travail s'en trouve meilleur."
+    },
+    "originalite": {
+      "poids": 0.2,
+      "definition": "Personne ne le fait déjà ainsi ; l'angle surprend un expert du domaine."
+    },
+    "avantage_agents": {
+      "poids": 0.15,
+      "definition": "L'idée exploite ce que des agents IA font mieux que des humains (volume, vitesse, constance, coût)."
+    },
+    "defensibilite": {
+      "poids": 0.15,
+      "definition": "Si un assistant IA gratuit sait le faire demain, il reste quelque chose : données propres, réseau, confiance, résultat livré."
+    },
+    "argent_rapide": {
+      "poids": 0.15,
+      "definition": "Un premier paiement est plausible sous 30 jours, sans appel téléphonique, avec moins de 300 euros."
+    },
+    "faisabilite": {
+      "poids": 0.1,
+      "definition": "Testable en 2 semaines avec environ 7 heures humaines par semaine."
+    }
   },
   "contraintes": [
     "Jamais d'offre de conseil, d'audit, de diagnostic ou d'automatisation pour entreprises (contrat de travail de Clément).",
