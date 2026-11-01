@@ -13,6 +13,10 @@ const BON = "```js\nexport function construire(d) {\n  const p = (d.pollen?.hour
 test("code : extraction, contrôle statique, URL autorisées", () => {
   assert.ok(extraireCode(BON));
   assert.equal(extraireCode("```js\nconst x = 1;\n```"), null);
+  // Cas réel du 1er nov. : le module emballé dans un objet JSON.
+  const emballe = JSON.stringify({ title: "Module", code: "export function construire(d) { return '<p>ok</p>'; }" });
+  assert.equal(extraireCode(emballe), "export function construire(d) { return '<p>ok</p>'; }");
+  assert.equal(extraireCode('{ "title": "x", "export function construire": 1 }'), null);
   assert.deepEqual(controlerCode("export function construire(){ return 1 }"), []);
   for (const mauvais of ["const r = require('fs')", "fetch('https://x')", "process.env.CLE", "globalThis.x", "(()=>{}).constructor('return 1')()", "import('node:fs')", "import fs from 'node:fs'"]) assert.ok(controlerCode(mauvais).length > 0, mauvais);
   const l = urlsAutorisees({ donnees: [{ cle: "pollen", url: "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=48&longitude=2&hourly=birch_pollen" }, { cle: "vol", url: "https://evil.example.com/x" }, { cle: "../x", url: "https://api.frankfurter.dev/v1/latest" }] }, apis);
@@ -51,12 +55,19 @@ test("atelier : fiche, données, programme corrigé après une erreur", async ()
       return { valeur: lire(BON), cerveau: "b" };
     },
   };
-  const fetchImpl = async () => ({ ok: true, status: 200, text: async () => JSON.stringify({ hourly: { birch_pollen: [2, 9, 4] } }) });
+  let coupures = 0;
+  const fetchImpl = async () => {
+    if (coupures++ === 0) throw new Error("fetch failed");
+    return { ok: true, status: 200, text: async () => JSON.stringify({ hourly: { birch_pollen: [2, 9, 4] } }) };
+  };
   const d = await construireDemo({ idee: { titre: "Pollen" }, plan: {}, apis, demandeur, cerveaux: ["a", "b"], fetchImpl });
   assert.equal(d.ok, true, d.raison);
   assert.equal(d.essais, 2);
   assert.match(d.html, /pic à 9/);
   assert.match(resumerPourCode({ a: [1, 2, 3, 4, 5] }), /2 de plus/);
+  const horsSujet = await construireDemo({ idee: { titre: "Coiffure" }, plan: {}, apis, demandeur: { demander: async (p, m, { lire }) => ({ valeur: lire('{"pertinent": false, "raison": "aucune API utile"}'), cerveau: "a" }) }, cerveaux: ["a"] });
+  assert.equal(horsSujet.ok, false);
+  assert.match(horsSujet.raison, /aucune API de l'atlas ne sert ce produit/);
 });
 
 test("atlas vivant : résumé, sonde, sources, santé", async () => {

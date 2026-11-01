@@ -114,12 +114,12 @@ export function creerDemandeur({ routeur, alea = Math.random, secours = [] }) {
       s.exempleErreur ??= String(erreur ?? "").slice(0, 200);
     }
   };
-  async function demander(preferes, messages, { lire = extraireJSON, temperature = 0.5, maxTokens = 2000, raisonnement = "none", web = null, autres = secours } = {}) {
+  async function demander(preferes, messages, { lire = extraireJSON, temperature = 0.5, maxTokens = 2000, raisonnement = "none", web = null, autres = secours, json = true } = {}) {
     const essais = [...new Set([...preferes, ...tirer(alea, autres, autres.length)])].slice(0, 3);
     for (const cerveau of essais) {
       const t = Date.now();
       try {
-        const r = await routeur.appeler({ cerveau, messages, temperature, maxTokens, json: true, raisonnement, web });
+        const r = await routeur.appeler({ cerveau, messages, temperature, maxTokens, json, raisonnement, web });
         const valeur = lire(r.texte);
         const ok = valeur != null && !(Array.isArray(valeur) && valeur.length === 0);
         noter(cerveau, ok, ok ? null : `réponse illisible (fin : ${r.finDeReponse ?? "?"}) : ${String(r.texte).slice(0, 120)}`, Date.now() - t);
