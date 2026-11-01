@@ -6,13 +6,15 @@ import { populationInitiale } from "../src/genome.js";
 import { executerBanc } from "../src/banc/executer.js";
 import { tauxDeBase } from "../src/banc/sources.js";
 
-const [fichier, nb = "30"] = process.argv.slice(2);
+const [fichier, nbArg] = process.argv.slice(2);
 if (!fichier) {
   console.error("Indique un fichier de cas (voir scripts/collecter.js).");
   process.exit(1);
 }
 const catalogue = JSON.parse(await readFile("config/genes.json", "utf8"));
 const tous = JSON.parse(await readFile(fichier, "utf8"));
+// Plan de manche : l'hypothèse testée et le critère de réussite, recopiés dans le résultat.
+const manche = JSON.parse(await readFile("config/manche.json", "utf8").catch(() => "{}"));
 
 // Échantillon différent à chaque passage (graine = numéro du passage), pour que chaque manche apporte
 // des cas nouveaux au lieu de rejouer les mêmes.
@@ -29,7 +31,7 @@ for (let i = melange.length - 1; i > 0; i--) {
   const j = Math.floor(alea() * (i + 1));
   [melange[i], melange[j]] = [melange[j], melange[i]];
 }
-const cas = melange.slice(0, Number(nb));
+const cas = melange.slice(0, Number(nbArg || manche.nb_cas || 30));
 const base = tauxDeBase(tous);
 
 const configurations = populationInitiale(catalogue, { roles: ["predicteur"], parRole: 6 });
@@ -43,8 +45,9 @@ const resultat = await executerBanc({
 });
 await mkdir("data", { recursive: true });
 const sortie = `data/banc-${new Date().toISOString().replace(/[:.]/g, "-")}.json`;
-await writeFile(sortie, JSON.stringify({ configurations, resultat, routeur: routeur.rapport() }, null, 1));
-console.log(`\nMarché : ${JSON.stringify(resultat.marche)}`);
+await writeFile(sortie, JSON.stringify({ manche, configurations, resultat, routeur: routeur.rapport() }, null, 1));
+console.log(`\nManche ${manche.numero ?? "?"} : ${manche.hypothese ?? "sans hypothèse"}`);
+console.log(`Marché : ${JSON.stringify(resultat.marche)}`);
 console.table(resultat.parConfiguration);
 console.table(resultat.parCerveau);
 console.log(`Échecs : ${resultat.echecs}/${resultat.predictions}. Détail : ${sortie}`);

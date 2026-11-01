@@ -1,0 +1,9 @@
+{
+  "note": "Plan de la prochaine manche. Métis le réécrit après chaque analyse : une manche sans hypothèse ne sert à rien. Champs lus par scripts/lancer-banc.js et recopiés dans le fichier de résultats.",
+  "phase": "idee",
+  "numero": 4,
+  "hypothese": "Avec 1 200 tokens et reasoning low, qwen, gemma et inkling répondent enfin (moins de 10 % d'échecs par modèle).",
+  "critere_succes": "Chaque cerveau a au moins 40 réponses lisibles sur 50 ; sinon, il est retiré ou remplacé à la manche suivante.",
+  "question_suivante": "Si tous répondent : la moyenne recalibrée vers le taux de base bat-elle le taux de base ?",
+  "nb_cas": 50
+}
