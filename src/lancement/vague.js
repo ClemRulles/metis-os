@@ -159,10 +159,12 @@ export async function lancerVague({ opportunites, config, lancement, demandeur, 
   const cerveaux = config.cerveaux_jugement;
   const editeur = lancement.editeur ?? {};
   const deja = new Set(dejaLances.map((t) => String(t).toLowerCase()));
+  // Rien qui repose sur l'aspiration d'un site tiers (conditions des plateformes, RGPD).
+  const aspire = (i) => /scrap|aspir|crawl/i.test(`${i.solution ?? ""} ${i.premier_test ?? ""}`);
 
   // Candidats : les meilleures opportunités qui tiennent (pas d'abandon, pas de risque juridique élevé, pas déjà testées).
   const candidats = opportunites
-    .filter((i) => i.final && i.enquete?.verdict !== "abandonner" && (i.enquete?.risque_juridique ?? i.critique?.risque_juridique) !== "eleve" && i.critique?.conforme !== false && !deja.has(String(i.titre).toLowerCase()))
+    .filter((i) => i.final && i.enquete?.verdict !== "abandonner" && (i.enquete?.risque_juridique ?? i.critique?.risque_juridique) !== "eleve" && i.critique?.conforme !== false && !aspire(i) && !deja.has(String(i.titre).toLowerCase()))
     .slice(0, lancement.candidats ?? 12);
   journal(`vague : ${candidats.length} candidats`);
 

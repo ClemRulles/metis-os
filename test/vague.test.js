@@ -56,17 +56,18 @@ function demandeurFactice() {
 }
 
 test("vague : plans, tournoi, sélection diverse, pages relues, porte de crédibilité", async () => {
-  const opportunites = [1, 2, 3, 4, 5, 6].map((k) => ({
+  const opportunites = [1, 2, 3, 4, 5, 6, 7].map((k) => ({
     titre: `Idée ${k}`,
     arene: k <= 3 ? "apprendre" : `arene-${k}`,
     probleme: "p",
+    solution: k === 7 ? "Un site qui croise les offres Indeed aspirées par scraping" : "s",
     final: { total: 8 - k / 10, paiement: "x" },
     enquete: { verdict: k === 6 ? "abandonner" : "creuser", risque_juridique: "faible" },
     critique: { conforme: true },
   }));
   const d = demandeurFactice();
   const v = await lancerVague({ opportunites, config, lancement: { taille_vague: 4, max_par_arene: 2, editeur, api_url: "https://api.exemple", rondes: 2 }, demandeur: d, graine: 3, dejaLances: ["Idée 5"] });
-  assert.equal(v.candidats, 4, "abandon et déjà lancé exclus");
+  assert.equal(v.candidats, 4, "abandon, aspiration de site et déjà lancé exclus");
   assert.equal(v.plans, 8, "deux plans par idée");
   assert.ok(v.choisis.length <= 4);
   assert.ok(v.choisis.filter((p) => p.idee.arene === "apprendre").length <= 2, "deux par arène au plus");

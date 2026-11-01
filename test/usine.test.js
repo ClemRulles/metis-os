@@ -91,8 +91,11 @@ test("preuve de paiement : un prix ne compte que s'il est lu sur la page du mêm
   // Le cas du 1er novembre : un article sans rapport ne prouve plus rien, et l'aveu de l'enquêteur plafonne.
   const faux = verifierLiens({ concurrents: [{ nom: "Blog", url: "https://blog.fr/x", ressemblance: 4 }], offres_payantes: [{ nom: "Opera", url: "https://blog.fr/opera", prix: 20, meme_besoin: 2 }], qui_paie_deja: "Aucune preuve dans les résultats que quelqu'un paie pour ce service." }, citations);
   assert.equal(preuvePaiement({ enquete: faux }).note, 4);
-  // Sur le marché des agents, l'usage payé est observé directement.
-  assert.equal(preuvePaiement({ enquete: faux, marche_agents: [{ payant: true, users30: 640 }, { payant: true, users30: 230 }] }).note, 9);
+  // Sur le marché des agents, l'usage payé est observé directement, pour une idée vendue aux mêmes acheteurs.
+  const marche = [{ payant: true, users30: 640 }, { payant: true, users30: 230 }];
+  assert.equal(preuvePaiement({ enquete: faux, canal: "place-de-marche-api", marche_agents: marche }).note, 9);
+  // Mais des développeurs qui paient un outil brut ne prouvent rien pour un site grand public (cas du 1er nov. au soir).
+  assert.equal(preuvePaiement({ enquete: faux, arene: "travail-et-carrieres", canal: "seo-programmatique", marche_agents: marche, gisement: { marche: marche, paieDeja: 2062 } }).note, 4);
   // Des gens qui disent payer déjà ajoutent un point.
   assert.equal(preuvePaiement({ gisement: { paieDeja: 3 } }).note, 3);
 });
