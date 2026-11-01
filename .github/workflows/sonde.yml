@@ -1,0 +1,16 @@
+name: Sonde
+# Vérifie à la demande les sources joignables et le comportement des modèles (aucune donnée écrite).
+on:
+  workflow_dispatch:
+jobs:
+  sonde:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: node scripts/sonde.js
