@@ -1,0 +1,281 @@
+{
+ "configurations": [
+  {
+   "id": "predicteur-01",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "cimetiere",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "europe-est",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "totale",
+   "outils": "code",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-02",
+   "cerveau": "gemma",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "lancements-produits",
+   "zone": "chine",
+   "risque": "equilibre",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-03",
+   "cerveau": "inkling",
+   "role": "predicteur",
+   "lentille": "luxe-democratise",
+   "raisonnement": "intuitif",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "usa",
+   "risque": "prudent",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "redaction",
+   "temperature": 1.1
+  },
+  {
+   "id": "predicteur-04",
+   "cerveau": "llama",
+   "role": "predicteur",
+   "lentille": "inversion",
+   "raisonnement": "statistique",
+   "persona": "aucune",
+   "territoire": "aucun",
+   "zone": "europe-est",
+   "risque": "kamikaze",
+   "horizon": "18-36",
+   "memoire": "totale",
+   "outils": "redaction",
+   "temperature": 0.5
+  },
+  {
+   "id": "predicteur-05",
+   "cerveau": "mimo",
+   "role": "predicteur",
+   "lentille": "super-pouvoir-agent",
+   "raisonnement": "premiers-principes",
+   "persona": "aucune",
+   "territoire": "marches-de-prevision",
+   "zone": "bresil",
+   "risque": "equilibre",
+   "horizon": "6-18",
+   "memoire": "aucune",
+   "outils": "aucun",
+   "temperature": 0.8
+  },
+  {
+   "id": "predicteur-06",
+   "cerveau": "qwen",
+   "role": "predicteur",
+   "lentille": "travail-abandonne",
+   "raisonnement": "analogie",
+   "persona": "aucune",
+   "territoire": "rss-tech",
+   "zone": "monde",
+   "risque": "prudent",
+   "horizon": "0-6",
+   "memoire": "partielle",
+   "outils": "code",
+   "temperature": 0.2
+  }
+ ],
+ "resultat": {
+  "parConfiguration": [
+   {
+    "id": "predicteur-05",
+    "n": 27,
+    "brier": 0.1000602962962963,
+    "logScore": -0.342429669164519,
+    "apport": 0.4731262293842943
+   },
+   {
+    "id": "predicteur-04",
+    "n": 30,
+    "brier": 0.2977024666666666,
+    "logScore": -0.845652113644276,
+    "apport": -0.42581360644586486
+   },
+   {
+    "id": "predicteur-01",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-02",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-03",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   },
+   {
+    "id": "predicteur-06",
+    "n": 0,
+    "brier": null,
+    "logScore": null,
+    "apport": null
+   }
+  ],
+  "marche": {
+   "n": 30,
+   "brier": 0.16404140205969417,
+   "logScore": -0.49317114737599843,
+   "apport": null
+  },
+  "carteDesGenes": {
+   "cerveau": {
+    "llama": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "mimo": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "role": {
+    "predicteur": {
+     "configurations": 2,
+     "apportMoyen": 0.023656311469214708
+    }
+   },
+   "lentille": {
+    "inversion": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "super-pouvoir-agent": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "raisonnement": {
+    "statistique": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "premiers-principes": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "persona": {
+    "aucune": {
+     "configurations": 2,
+     "apportMoyen": 0.023656311469214708
+    }
+   },
+   "territoire": {
+    "aucun": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "marches-de-prevision": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "zone": {
+    "europe-est": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "bresil": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "risque": {
+    "kamikaze": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "equilibre": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "horizon": {
+    "18-36": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "6-18": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "memoire": {
+    "totale": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "aucune": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "outils": {
+    "redaction": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "aucun": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   },
+   "temperature": {
+    "0.5": {
+     "configurations": 1,
+     "apportMoyen": -0.42581360644586486
+    },
+    "0.8": {
+     "configurations": 1,
+     "apportMoyen": 0.4731262293842943
+    }
+   }
+  },
+  "predictions": 180,
+  "echecs": 123
+ },
+ "routeur": [
+  {
+   "fournisseur": "openrouter",
+   "tokensUtilises": 5726,
+   "tokensRestants": 2994274,
+   "modelesCoupes": [
+    "qwen",
+    "inkling"
+   ],
+   "cle": true
+  },
+  {
+   "fournisseur": "groq",
+   "tokensUtilises": 0,
+   "tokensRestants": 200000,
+   "modelesCoupes": [],
+   "cle": false
+  }
+ ]
+}
