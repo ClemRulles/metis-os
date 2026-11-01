@@ -1,28 +1,39 @@
 {
  "date": "2026-11-01",
- "dureeSecondes": 1255,
- "coutUsd": 0.3179,
- "appelsModeles": 884,
+ "dureeSecondes": 1254,
+ "coutUsd": 0.3766,
+ "appelsModeles": 983,
  "etapes": {
   "radar": {
-   "secondes": 291,
-   "coutCumuleUsd": 0.0276
+   "secondes": 325,
+   "coutCumuleUsd": 0.0393
+  },
+  "marche": {
+   "secondes": 6,
+   "coutCumuleUsd": 0.0393
   },
   "usine": {
-   "secondes": 925,
-   "coutCumuleUsd": 0.2342
+   "secondes": 764,
+   "coutCumuleUsd": 0.2929
   },
   "enquete": {
-   "secondes": 40,
-   "coutCumuleUsd": 0.3179
+   "secondes": 29,
+   "coutCumuleUsd": 0.3766
+  },
+  "elan": {
+   "secondes": 130,
+   "coutCumuleUsd": 0.3766
   }
  },
  "sources": {
   "hn": {
    "n": 53
   },
+  "hn_achat": {
+   "n": 58
+  },
   "appstore": {
-   "n": 1189,
+   "n": 1219,
    "categories": [
     "Divertissement",
     "Éducation",
@@ -35,57 +46,74 @@
    "n": 180
   },
   "lemmy": {
-   "n": 125
+   "n": 150
+  },
+  "apify": {
+   "n": 1027
+  },
+  "mcp": {
+   "n": 8000,
+   "complet": false
   }
  },
  "cerveaux": {
-  "qwen": {
-   "ok": 205,
+  "mercury": {
+   "ok": 44,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 9165,
+   "msMoyen": 5276,
    "exempleErreur": null
   },
-  "mimo": {
+  "qwen": {
    "ok": 226,
+   "echecs": 1,
+   "tauxEchec": 0,
+   "msMoyen": 7911,
+   "exempleErreur": "réponse illisible (fin : length) : {\n  \"valeur_societale\": 6,\n  \"originalite\": 5,\n  \"avantage_agents\": 8,\n  \"defensibilite\": 3,\n  \"argent_rapide\": 2,\n  \"di"
+  },
+  "mimo": {
+   "ok": 248,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 10026,
+   "msMoyen": 10587,
    "exempleErreur": null
   },
   "mistral": {
-   "ok": 14,
+   "ok": 13,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 10966,
+   "msMoyen": 11519,
    "exempleErreur": null
   },
   "deepseek": {
-   "ok": 205,
-   "echecs": 3,
-   "tauxEchec": 0.01,
-   "msMoyen": 14656,
-   "exempleErreur": "aucun fournisseur pour deepseek (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+   "ok": 217,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 12001,
+   "exempleErreur": null
   },
   "glm": {
-   "ok": 226,
+   "ok": 229,
    "echecs": 5,
    "tauxEchec": 0.02,
-   "msMoyen": 6769,
-   "exempleErreur": "réponse illisible (fin : stop) : {}"
+   "msMoyen": 6664,
+   "exempleErreur": "réponse illisible (fin : stop) : {\"idees\": [{\"\": \"Analyse de Faisabilité Transfrontalière de Poste\", \"arene\": \"travail-et-carrieres\", \"probleme\": \"Les tr"
   }
  },
  "stats": {
-  "brut": 678,
-  "douleurs": 393,
-  "gisements": 426,
-  "generees": 597,
-  "parasites": 2,
-  "idees": 595,
-  "notees": 517,
-  "nonConformes": 78,
+  "brut": 761,
+  "douleurs": 446,
+  "gisements": 607,
+  "gisementsMarche": 12,
+  "generees": 677,
+  "parasites": 6,
+  "idees": 670,
+  "notees": 493,
+  "nonConformes": 177,
   "finalistes": 32,
   "duels": 80,
-  "enquetes": 15
+  "enquetes": 15,
+  "prixLus": 2,
+  "elanMesure": 7
  }
 }

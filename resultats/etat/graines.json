@@ -1,32 +1,32 @@
 [
  {
-  "titre": "Assistant de Révision par Chat Vocal",
-  "solution": "Un agent vocal via WhatsApp ou Telegram (ou une appli dédiée) qui pose des questions à voix haute, écoute la réponse et donne un feedback immédiat, avec un système de répétition espacée.",
-  "angle_libre": "Aucun concurrent trouvé ne combine agent vocal conversationnel (réponse à voix haute évaluée par IA) + répétition espacée sur les 100 questions de l'oral, via WhatsApp/Telegram sans installer d'appli.",
-  "objection": "La distribution repose trop fortement sur l'organique des communautés (WhatsApp/Telegram), ce qui est non scalable et rend le taux de conversion initial incertain sans un tunnel de vente structuré."
+  "titre": "Veille Salaire Frontalier : comparateur de rémunérations transfrontalières",
+  "solution": "Un site qui croise les offres Indeed (API) avec les données salariales publiques des conventions collectives et des statistiques nationales pour afficher des fourchettes réalistes par métier et zone frontalière.",
+  "angle_libre": "Croiser les fourchettes de conventions collectives luxembourgeoises/belges avec les offres d'emploi réelles par zone frontalière — aucun des résultats trouvés (statistiques publiques, rapports ADEM/LISER) n'offre un comparateur interactif par métier et par zone.",
+  "objection": "La dépendance aux scrapings de données (Indeed) est fragile et potentiellement contraire aux conditions d'utilisation des plateformes. De plus, la valeur repose entièrement sur la qualité de la corrélation entre données de marché (Indeed) et données légales (conventions), un travail de curation extrêmement complexe et risqué."
  },
  {
-  "titre": "FreeFinder",
-  "solution": "Extension de navigateur qui, sur la page d'une application payante, affiche automatiquement une liste d'alternatives gratuites ou moins chères, choisies par IA.",
-  "angle_libre": "Aucun concurrent des résultats ne fait de la recommandation automatique et contextuelle d'alternatives gratuites directement sur la page de l'application payante : tous sont des articles SEO statiques à consulter volontairement. L'angle libre est la détection automatique in-page + mise à jour continue des recommandations par IA, là où les articles vieillissent.",
-  "objection": "Le modèle repose sur un point de friction majeur : convaincre l'utilisateur d'installer une extension de navigateur pour une valeur perçue initiale faible (1.99€/an). La distribution via des groupes sociaux est trop passive et ne garantit ni le trafic ni la confiance nécessaire pour l'installation."
+  "titre": "Lettre de libération — générateur légal de résiliation conforme",
+  "solution": "Un service en ligne où l'utilisateur entre le nom du service, son contrat, et la raison de la résiliation ; l'agent génère une lettre recommandée électronique conforme au droit belge/français, l'envoie au service client, et archive la preuve d'envoi.",
+  "angle_libre": "Se concentrer sur les abonnements SaaS B2B (facturation, comptabilité) avec vérification des conditions contractuelles spécifiques belges et françaises, et l'archivage de la preuve d'envoi comme dossier de litige — aucun concurrent trouvé ne cible spécifiquement les indépendants et leurs outils SaaS en Belgique.",
+  "objection": "Le risque juridique est élevé car le service est positionné comme 'légal' et 'conforme'. Si l'IA commet une erreur d'interprétation d'une clause contractuelle ou d'une loi locale (FR/BE), l'utilisateur pourrait subir des conséquences financières ou légales, exposant le service à des risques de responsabilité, même avec des disclaimers. Le service est perçu comme un conseil juridique automatisé."
  },
  {
-  "titre": "Coach de checkout pour boutiques en ligne",
-  "solution": "Un logiciel en libre-service : on entre l'URL de sa boutique, des agents IA passent une commande réelle de test avec plusieurs cartes virtuelles, filme le parcours, identifient les points d'échec et livrent un rapport correctif en langage clair.",
-  "angle_libre": "Aucun acteur trouvé ne propose un audit automatisé en libre-service avec commande réelle de test, cartes virtuelles multiples et rapport vidéo correctif à prix fixe (29 €) pour petits vendeurs Shopify/Etsy/WooCommerce.",
-  "objection": "La defensibilité est faible : une fois que Stripe ou Shopify intègre un diagnostic de paiement natif (ou qu'un outil open-source gratuit émerge), le produit devient obsolète. Les données de test ne sont pas exclusives."
+  "titre": "Anti-Piège Emploi : détecteur d'arnaques sur les offres Indeed",
+  "solution": "Un service en ligne où l'utilisateur colle l'URL d'une offre Indeed, et un agent analyse le texte, le nom de l'entreprise et les signaux suspects pour donner un verdict en quelques secondes.",
+  "angle_libre": "Aucun acteur ne propose une vérification automatisée offre-par-offre avec verdict instantané : tous donnent des listes de signaux à vérifier manuellement ; un agent qui analyse une URL précise comblerait ce vide.",
+  "objection": "La défensibilité est faible : un assistant IA gratuit (ex. ChatGPT avec navigation) peut déjà analyser une offre en collant l'URL, ce qui rend le service payant difficile à justifier."
  },
  {
-  "titre": "PrononciAction – l'agent qui corrige la prononciation en contexte réel",
-  "solution": "Un agent IA (basé sur un modèle de synthèse vocale ouvert de Hugging Face) qui écoute l'utilisateur répéter des phrases tirées de situations réelles (appels téléphoniques, commandes, réunions) et corrige phonème par phonème avec feedback visuel.",
-  "angle_libre": "Les concurrents ciblent l'anglais générique ; personne ne cible les travailleurs frontaliers et situations professionnelles précises (appels téléphoniques, réunions) en français et autres langues, avec correction phonème par phonème en contexte réel.",
-  "objection": "La qualité et la pertinence des scénarios de conversation sont le point de rupture. Si les dialogues sont trop génériques ou ne simulent pas la complexité réelle d'une interaction (ex: négociation, urgence), l'utilisateur percevra rapidement une limite entre l'outil et la réalité, ce qui mine la valeur perçue du prix."
+  "titre": "DeepLink Forge : SDK d'appairage anti-boucle open core",
+  "solution": "Un SDK open core (gratuit pour l'essentiel) avec des composants testés d'appairage TV : détection d'app installée, fallback web, QR code intelligent qui ouvre l'app au lieu du store, et suite de tests automatiques sur émulateurs.",
+  "angle_libre": "Personne ne traite le cas spécifique du compagnon TV : détection d'app installée côté TV, QR code qui ouvre l'app au lieu du store, suite de tests automatiques d'appairage sur émulateurs — les concurrents couvrent le deferred deep linking publicitaire, pas le pairing second screen testé.",
+  "objection": "Le SDK open core est facile à copier ; la valeur payante (tests automatiques, support multi-fabricants) est difficile à défendre face à un concurrent qui reprendrait le code gratuit et proposerait un service similaire à moindre coût."
  },
  {
-  "titre": "RésilieFacile",
-  "solution": "Guides de résiliation ultra-précis par service (chaque clic, chaque piège), générés et maintenus par des agents IA à partir des parcours réels, avec modèles de courriers de résiliation et suivi des délais légaux.",
-  "angle_libre": "Guides de résiliation ultra-détaillés clic par clic avec détection des dark patterns spécifiques à chaque service, générés par IA et mis à jour en continu — aucun concurrent ne documente les pièges précis de chaque parcours (comme le bug Canal+), et le marché belge francophone est peu couvert par Ideel.",
-  "objection": "La défendabilité est faible : un assistant IA gratuit (ex. ChatGPT) peut déjà générer des guides de résiliation à la demande, et les parcours changent vite, rendant la maintenance coûteuse sans barrière réelle."
+  "titre": "Code de sortie — le standard ouvert pour une résiliation en un clic",
+  "solution": "Une API ouverte et un standard de données (un schema JSON) que les entreprises peuvent adopter pour déclarer leurs procédures de résiliation ; les agents peuvent interroger cette API pour automatiser la résiliation, et un annuaire public recense les services conformes.",
+  "angle_libre": "Aucun acteur trouvé ne propose un standard ouvert interopérable (schema JSON + API publique) que les entreprises déclarent volontairement pour que des agents tiers automatisent la résiliation côté consommateur ; les concurrents existants sont tous côté entreprise (rétention, support, gestion interne) et fermés.",
+  "objection": "Le succès dépend entièrement de l'adoption par les fournisseurs de services (Netflix, Spotify, etc.). Si ces entreprises ne sont pas incitées à intégrer le standard, l'API reste une curiosité technique sans valeur marchande."
  }
 ]
