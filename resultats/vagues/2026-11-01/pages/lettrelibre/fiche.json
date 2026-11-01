@@ -1,0 +1,51 @@
+{
+ "slug": "lettrelibre",
+ "nom": "LettreLibre",
+ "accroche": "Résiliez votre abonnement SaaS en 5 minutes",
+ "sous_titre": "Générez une lettre de résiliation conforme au droit belge et français, avec preuve d'envoi archivée. Service en préparation.",
+ "probleme_points": [
+  "Vous payez chaque mois un outil SaaS (facturation, comptabilité, marketing) que vous n'utilisez plus.",
+  "Les clauses de reconduction tacite et les pénalités vous empêchent de résilier facilement.",
+  "Vous perdez du temps et de l'argent à chercher comment rédiger une lettre conforme."
+ ],
+ "comment": [
+  "Choisissez votre abonnement SaaS parmi une liste d'outils courants (Canva, Adobe, etc.) ou saisissez le nom du service.",
+  "Répondez à quelques questions simples sur votre contrat (date de début, durée, motif de résiliation).",
+  "Recevez votre lettre générée automatiquement, prête à être envoyée en recommandé électronique via une API officielle, avec preuve d'envoi archivée."
+ ],
+ "pour_qui": "Indépendants et petits commerçants en Belgique et en France, qui utilisent des outils SaaS et veulent résilier sans litige.",
+ "prix": "9,99 € (précommande, prix final au lancement)",
+ "condition_prix": "Prix de précommande, remboursé si le service ne sort pas.",
+ "offre": "precommande",
+ "cta": "Précommander pour 9,99 €",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, le service est en préparation. Vous pouvez le précommander à prix réduit. Si nous ne lançons pas, vous serez remboursé."
+  },
+  {
+   "question": "Quels sont les abonnements pris en charge ?",
+   "reponse": "Tous les abonnements SaaS B2B courants : facturation, comptabilité, marketing, design, etc. Nous couvrons le droit belge et français."
+  },
+  {
+   "question": "La lettre est-elle juridiquement conforme ?",
+   "reponse": "Le document est généré à partir de modèles types basés sur le droit public FR/BE. Il ne constitue pas un conseil juridique personnalisé. Nous vous recommandons de vérifier auprès d'un avocat pour des cas complexes."
+  },
+  {
+   "question": "Comment est envoyée la lettre ?",
+   "reponse": "Vous recevez la lettre en format PDF. Vous pouvez l'envoyer par recommandé électronique via une API officielle (service postal) ou par courrier simple."
+  },
+  {
+   "question": "Que se passe-t-il après la précommande ?",
+   "reponse": "Nous vous tiendrons informé par e-mail de l'avancement du service. Vous aurez accès au générateur dès le lancement."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

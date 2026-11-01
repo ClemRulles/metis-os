@@ -1,0 +1,43 @@
+{
+ "slug": "veillepoints",
+ "nom": "VeillePoints",
+ "accroche": "Ne perdez plus vos points fidélité sans rien dire.",
+ "sous_titre": "Une plateforme en préparation pour suivre et alerter sur les expirations de programmes de fidélité. Rejoignez la liste d'attente pour être informé du lancement.",
+ "probleme_points": [
+  "Les règles d'expiration changent souvent sans notification claire.",
+  "Il est difficile de suivre manuellement plusieurs cartes de fidélité.",
+  "On découvre trop tard que ses points ont été annulés."
+ ],
+ "comment": [
+  "Choisissez votre enseigne préférée dans notre catalogue.",
+  "Indiquez votre email pour recevoir des alertes personnalisées.",
+  "Soyez notifié avant toute expiration ou changement de règle."
+ ],
+ "pour_qui": "Consommateurs soucieux de ne pas perdre leurs avantages fidélité, notamment en Belgique (Wallonie/Bruxelles), et associations de consommateurs souhaitant disposer d'outils de veille objectifs.",
+ "prix": "15 € par an",
+ "condition_prix": "Accès à l'outil complet une fois le service lancé. Pas de paiement requis aujourd'hui.",
+ "offre": "precommande",
+ "cta": "Recevoir l'alerte au lancement",
+ "faq": [
+  {
+   "question": "Est-ce que vous négociez avec les enseignes ?",
+   "reponse": "Non. Nous fournissons un outil de veille et d'alerte basé sur des données ouvertes. Nous ne faisons ni audit, ni conseil personnalisé, ni négociation directe."
+  },
+  {
+   "question": "Mes données sont-elles sécurisées ?",
+   "reponse": "Nous collectons uniquement votre email et l'enseigne concernée, avec votre consentement explicite. Aucune donnée sensible n'est stockée."
+  },
+  {
+   "question": "Pourquoi 'en préparation' ?",
+   "reponse": "Le service est actuellement en phase de test. Cette page permet de valider l'intérêt et de constituer notre premier cercle d'utilisateurs avant le lancement public."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

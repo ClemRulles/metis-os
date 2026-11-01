@@ -1,0 +1,43 @@
+{
+ "slug": "deeplink-forge",
+ "nom": "DeepLink Forge",
+ "accroche": "L'appairage TV qui ne boucle pas",
+ "sous_titre": "Un SDK open source pour développeurs indépendants : QR code intelligent, deep links fiables et fallback web — testé sur émulateurs. Plus de boucle App Store.",
+ "probleme_points": [
+  "Les deep links mal implémentés envoient vos utilisateurs dans une boucle entre l'app et le store.",
+  "Les solutions existantes sont chères ou inexistantes pour le cas compagnon TV.",
+  "Pas de test automatique d'appairage : chaque mise à jour peut casser l'expérience."
+ ],
+ "comment": [
+  "1. Téléchargez le SDK open core gratuit sur GitHub (déjà publiable).",
+  "2. Intégrez en quelques lignes le QR code intelligent et la détection d'app installée.",
+  "3. Précommandez la version Pro pour accéder aux tests cloud et au support multi-fabricants."
+ ],
+ "pour_qui": "Développeurs indépendants et petits studios qui ajoutent un mode compagnon TV ou second screen à leur app (Android TV, Fire TV, tvOS).",
+ "prix": "39 €",
+ "condition_prix": "Précommande unique, remboursée si le SDK complet n'est pas livré sous 60 jours.",
+ "offre": "precommande",
+ "cta": "Précommander la licence Pro",
+ "faq": [
+  {
+   "question": "Le SDK open core est-il utilisable tout de suite ?",
+   "reponse": "Oui, le cœur du SDK (QR code intelligent, deep links, fallback web) est disponible sur GitHub dès maintenant. Vous pouvez l'intégrer et le tester."
+  },
+  {
+   "question": "Que donne la version Pro en plus ?",
+   "reponse": "La version Pro ajoute les tests automatiques d'appairage sur émulateurs, le support multi-fabricants (Samsung, LG, etc.) et les mises à jour prioritaires."
+  },
+  {
+   "question": "Et si le SDK n'est pas livré dans les délais ?",
+   "reponse": "Vous serez intégralement remboursé. Aucun risque."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#1a73e8",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

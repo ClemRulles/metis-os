@@ -1,0 +1,43 @@
+{
+ "slug": "litigeapi",
+ "nom": "LitigeAPI",
+ "accroche": "Vérifiez l'éligibilité juridique des litiges livraison en 200 ms.",
+ "sous_titre": "Une API pour développeurs qui renvoie le statut légal, le montant dû et un projet de réponse conforme au droit UE. Service en préparation.",
+ "probleme_points": [
+  "Aucun outil ne vérifie la légitimité juridique d'une réclamation de livraison selon les normes européennes.",
+  "Les équipes développement manquent de temps pour intégrer une logique juridique complexe dans leurs flux.",
+  "Risque de payer des remboursements injustifiés ou de mal gérer les litiges sans base légale claire."
+ ],
+ "comment": [
+  "Envoyez les faits du litige (commande, retard, casse) via notre endpoint.",
+  "Recevez instantanément l'analyse d'éligibilité, le calcul du montant et le texte de réponse.",
+  "Intégrez ce résultat directement dans votre interface client ou votre workflow support."
+ ],
+ "pour_qui": "Développeurs back-end de SaaS e-commerce, marketplaces émergentes et fintech souhaitant automatiser la gestion des litiges de livraison avec une base légale robuste.",
+ "prix": "19 € par mois au-delà de 1 000 appels (0,02 € par appel supp",
+ "condition_prix": "Premiers 100 appels offerts pour tester l'intégration. Facturation mensuelle transparente via place de marché.",
+ "offre": "precommande",
+ "cta": "Accéder à la documentation technique",
+ "faq": [
+  {
+   "question": "Le service est-il déjà en ligne ?",
+   "reponse": "Non, LitigeAPI est en phase de préparation. Cette page permet de comprendre le concept et de s'inscrire pour être notifié du lancement officiel sur les places de marché d'API."
+  },
+  {
+   "question": "L'API fournit-elle un conseil juridique personnalisé ?",
+   "reponse": "Non. Elle fournit une analyse algorithmique basée sur des règles et données ouvertes pour générer un projet de réponse. Cela ne remplace pas l'avis d'un avocat."
+  },
+  {
+   "question": "Comment puis-je tester l'API avant de payer ?",
+   "reponse": "Nous offrons 100 appels gratuits lors de l'inscription à la liste d'attente. Aucune carte bancaire n'est requise pour cette phase de test."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

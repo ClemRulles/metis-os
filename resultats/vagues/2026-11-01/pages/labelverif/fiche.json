@@ -1,0 +1,43 @@
+{
+ "slug": "labelverif",
+ "nom": "LabelVérif",
+ "accroche": "Vérifiez les labels bio en un clic.",
+ "sous_titre": "Extension navigateur en préparation pour comparer les allégations cosmétiques aux textes réglementaires européens et aux bases de données publiques.",
+ "probleme_points": [
+  "Différence entre le discours marketing et la réglementation sur les produits dits naturels.",
+  "Vérification manuelle et lente des seuils officiels derrière un label.",
+  "Peu d'informations lisibles avant l'achat en ligne."
+ ],
+ "comment": [
+  "Installez l'extension une fois le service lancé.",
+  "La fiche produit en ligne est analysée automatiquement.",
+  "Un résultat s'affiche en s'appuyant sur les bases de données ouvertes."
+ ],
+ "pour_qui": "Consommateurs de cosmétiques qui veulent comparer les allégations « naturel » ou « bio » aux textes réglementaires, sans se fier uniquement au discours des marques.",
+ "prix": "2,99 € (précommande unique)",
+ "condition_prix": "Remboursement intégral si le lancement n'a pas lieu dans les 60 jours suivant la précommande. Le service est en phase de développement.",
+ "offre": "precommande",
+ "cta": "Précommander l'accès anticipé",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, LabelVérif est en cours de finalisation. Cette page permet de réserver un accès avant le lancement public."
+  },
+  {
+   "question": "D'où viennent les données de vérification ?",
+   "reponse": "Les résultats s'appuient sur des bases de données scientifiques ouvertes (comme OpenAlex) et sur les textes réglementaires européens. Aucune donnée privée n'est collectée."
+  },
+  {
+   "question": "Est-ce un conseil médical ou dermatologique ?",
+   "reponse": "Non. LabelVérif affiche une information factuelle sur la conformité des étiquettes aux normes légales. Ce n'est ni un avis de santé, ni un diagnostic, ni un conseil personnalisé."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#4A7C59",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

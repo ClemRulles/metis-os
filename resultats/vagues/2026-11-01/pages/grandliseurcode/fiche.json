@@ -1,0 +1,39 @@
+{
+ "slug": "grandliseurcode",
+ "nom": "GrandLiseurCode",
+ "accroche": "Révision du code de la route avec une typographie agrandie",
+ "sous_titre": "Un outil de révision conçu pour les personnes ayant des difficultés de lecture, intégrant une lecture audio et une fonction de connexion à distance.",
+ "probleme_points": [
+  "Les applications de révision actuelles utilisent souvent une typographie réduite et un jargon complexe.",
+  "Les supports de révision disponibles ne sont pas adaptés aux besoins visuels des seniors.",
+  "Les aidants recherchent une solution simple et sans engagement pour accompagner la révision de leurs proches."
+ ],
+ "comment": [
+  "Découvrez la démo audio d'une question lue à voix haute, sans inscription requise.",
+  "Procédure de précommande pour la licence familiale à vie à 19 € (remboursement possible avant le lancement officiel).",
+  "Vous recevrez une notification dès la disponibilité du produit pour commencer la révision à deux."
+ ],
+ "pour_qui": "Aidants et enfants accompagnant une personne de 60 ans ou plus qui prépare le code de la route.",
+ "prix": "19 € licence familiale à vie",
+ "condition_prix": "Précommande remboursable jusqu'au lancement officiel du service.",
+ "offre": "precommande",
+ "cta": "Précommander pour 19 €",
+ "faq": [
+  {
+   "question": "Quand l'application sera-t-elle disponible ?",
+   "reponse": "Le développement est en cours. Vous serez informé de la date de lancement. Les précommandes donnent accès à la version bêta en avant-première."
+  },
+  {
+   "question": "Puis-je l'utiliser avec mon parent à distance ?",
+   "reponse": "Oui, l'application intègre un mode duo permettant de suivre la progression et d'assister la personne à distance."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2f5d50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

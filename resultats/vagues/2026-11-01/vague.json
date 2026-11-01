@@ -1,0 +1,381 @@
+{
+ "date": "2026-11-01",
+ "dateStudio": "2026-11-01",
+ "deploiement": "aucune page mise en ligne : éditeur absent (nom, adresse, contact dans config/lancement.json : obligatoire pour une page qui recueille des e-mails) ; liste d'attente non branchée (secrets Cloudflare absents du dépôt). Les pages sont écrites et attendent.",
+ "pret": false,
+ "cout": {
+  "usd": 0.0186,
+  "appels": 84
+ },
+ "sante": {
+  "glm": {
+   "ok": 17,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 5930,
+   "exempleErreur": null
+  },
+  "qwen": {
+   "ok": 24,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 5584,
+   "exempleErreur": null
+  },
+  "deepseek": {
+   "ok": 22,
+   "echecs": 2,
+   "tauxEchec": 0.08,
+   "msMoyen": 14363,
+   "exempleErreur": "réponse illisible (fin : length) : {\n  \"promesse\": \"Transformez vos sites modernes en HTML statique autonome, sans dépendances ni serveur.\",\n  \"public_prec"
+  },
+  "mimo": {
+   "ok": 19,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 10137,
+   "exempleErreur": null
+  }
+ },
+ "choisis": [
+  {
+   "slug": "lettrelibre",
+   "titre": "Lettre de libération — générateur légal de résiliation conforme",
+   "score_studio": 6.86,
+   "note_plan": 6,
+   "elo": 1569,
+   "plan": {
+    "promesse": "Résiliez votre abonnement SaaS en 5 minutes : une lettre de résiliation conforme et la preuve d'envoi archivée, pour 9,99 €.",
+    "public_precis": "Indépendants et petits commerçants FR/BE qui veulent quitter un outil SaaS (facturation, comptabilité, marketing) et craignent les clauses de reconduction tacite.",
+    "canal_principal": "Groupes et communautés d'indépendants : Facebook « Indépendants Belgique », « Freelance France », sous-réseaux Reddit r/indépendants et r/freelance, réponses utiles sur les forums entrepreneur.",
+    "premiers_visiteurs": [
+     "Publier 3 posts/semaine dans 4-5 groupes Facebook d'indépendants FR/BE avec un message honnête : « J'assemble un outil qui génère la lettre de résiliation de votre abonnement SaaS + preuve d'envoi. Ça vous intéresse ? Page de test ici (service en préparation, précommande 9,99 €) » — automatisable avec comptes existants, respect des règles de chaque groupe.",
+     "Répondre aux discussions existantes sur Reddit/forums où des indépendants racontent leurs galères de résiliation (Canva, Adobe, outils de facturation) : apporter d'abord une vraie réponse utile, puis linker la page en un commentaire transparent.",
+     "Créer 5-10 pages SEO longue traîne : « résilier abonnement Canva France », « lettre résiliation logiciel facturation Belgique » — chaque page explique le préavis légal FR/BE et propose le générateur.",
+     "Annoncer sur 2-3 newsletters/communautés freelance gratuites (groupes Telegram/Discord d'indépendants) via une offre de fondateur : premiers 50 utilisateurs à prix réduit."
+    ],
+    "part_automatisable": "Rédaction des posts et commentaires (soumis à validation), génération des pages SEO, génération de la lettre à partir des données saisies par l'utilisateur, envoi recommandé électronique via API officielle (e.g. service postal électronique), archivage de la preuve, e-mails de suivi, mesure analytics.",
+    "action_humaine": "Clément valide chaque post/commentaire avant publication (30 min/semaine au total), choisit les groupes autorisés, et vérifie que les modèles de lettres restent des documents types non personnalisés (1 h une fois).",
+    "offre": "precommande",
+    "prix": "9,99 € (précommande, prix affiché à la hausse au lancement ; remboursement si le service ne sort pas)",
+    "metrique": "Visiteurs qualifiés (100-250 en 14 jours) et taux de précommande sur la page.",
+    "seuil_succes": "Au moins 5 précommandes payées (soit ~5 % de conversion sur 100 visiteurs) → continuer ; 0 précommande sur 150 visiteurs qualifiés → pivot.",
+    "budget_eur": 25,
+    "risque_principal": "Positionner le produit comme un « conseil juridique conforme » créerait une responsabilité en cas d'erreur, ce qui est interdit ici (pas de conseil juridique personnalisé).",
+    "parade": "Le service est présenté strictement comme un générateur de documents types (modèles basés sur le droit FR/BE public) avec disclaimer clair : « document fourni à titre d'information, ne constitue pas un conseil juridique personnalisé ». Aucune analyse de clause spécifique au contrat de l'utilisateur ; l'« analyse de risque » est une checklist générique, pas un diagnostic individualisé."
+   },
+   "critique": {
+    "trafic_realiste": 4,
+    "clarte_offre": 6,
+    "vitesse": 7,
+    "cout": 8,
+    "honnetete": 5,
+    "echec_probable": "Le plan échoue car le trafic est trop faible : les groupes Facebook et Reddit ciblés sont saturés de posts promotionnels, et les indépendants ne cliquent pas sur des liens de précommande sans preuve de valeur. Les pages SEO longue traîne mettent des mois à indexer, et les newsletters gratuites ont un faible taux de conversion. Avec 25 € de budget, impossible d'acheter des annonces ou de générer un trafic significatif. Résultat : moins de 50 visiteurs en 14 jours, zéro précommande.",
+    "correction": "Remplacer la stratégie de trafic organique par un partenariat avec un petit cabinet comptable ou une association d'indépendants (ex. 'Indépendants.be') qui recommande l'outil à ses membres via une newsletter ciblée. Offrir 5 lettres gratuites aux premiers utilisateurs pour créer des témoignages et un bouche-à-oreille. Le prix de précommande passe à 4,99 € pour réduire la friction."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee"
+   ],
+   "en_ligne": false
+  },
+  {
+   "slug": "pulsebrief",
+   "titre": "TrendBrief : newsletter de tendances prêtes à publier, pour créateurs paresseux",
+   "score_studio": 5.42,
+   "note_plan": 5.6,
+   "elo": 1559,
+   "plan": {
+    "promesse": "3 sujets tendance prêts à poster, chaque lundi, sans y passer 2 heures.",
+    "public_precis": "Créateurs de contenu solo francophones (YouTube, TikTok, blog) qui consacrent moins de 10h/semaine à leur chaîne et cherchent des idées de contenu prêtes à l'emploi.",
+    "canal_principal": "Sponsoring dans 3 newsletters de créateurs existantes (ex: 'La Lettre du Créateur', 'CréaTips', 'Newsletter de [influenceur partenaire]') avec un message court et un lien direct vers la page de test.",
+    "premiers_visiteurs": [
+     "Contacter 3 créateurs de newsletters (audience 5k-20k) pour un sponsoring unique à 0€ en échange d'un accès gratuit à vie au produit final (leur audience = mon test).",
+     "Préparer 3 variantes de message de sponsoring (email/MP) : 'Je t'offre un accès gratuit à vie si tu acceptes de promouvoir mon test une fois dans ta prochaine newsletter'.",
+     "Publier un post sur X (ex-Twitter) dans des communautés créateurs (ex: #CréateurFrançais, #ContentCreator) en proposant un accès anticipé gratuit en échange d'un email (lien vers page de test)."
+    ],
+    "part_automatisable": "Les agents génèrent la page de test (landing page avec formulaire email et description claire), automatisent l'envoi du message de sponsoring aux 3 newsletters cibles (via template et envoi programmé), et mettent en place un compteur de visiteurs et d'inscriptions.",
+    "action_humaine": "Clément doit personnaliser le message de sponsoring pour chaque newsletter (3 messages, ~15 min), puis valider la page de test et lancer l'envoi des messages (10 min).",
+    "offre": "precommande",
+    "prix": "12€/mois pour 12 mois (soit 144€/an) ou 15€/mois sans engagement. Offre de précommande : 12€/mois pour toujours.",
+    "metrique": "Nombre d'inscriptions à la newsletter de test (email) et nombre de visiteurs uniques sur la page de test.",
+    "seuil_succes": "50 inscriptions email en 14 jours (signe de demande réelle pour continuer).",
+    "budget_eur": 0,
+    "risque_principal": "Faible taux de conversion des visiteurs en inscriptions si le message de sponsoring n'est pas suffisamment convaincant ou si les audiences des newsletters partenaires ne sont pas assez ciblées.",
+    "parade": "Tester 2 messages différents (un axé 'gagner du temps', l'autre 'idées virales') en A/B sur les 3 newsletters, et ajuster en fonction du taux de clic et d'inscription."
+   },
+   "critique": {
+    "trafic_realiste": 3,
+    "clarte_offre": 6,
+    "vitesse": 5,
+    "cout": 8,
+    "honnetete": 6,
+    "echec_probable": "Aucun des 3 propriétaires de newsletters n'accepte le troc 'accès à vie contre un sponsoring' (ils protègent leur audience, et un produit non lancé n'a aucune valeur à leurs yeux), le post X avec hashtags tombe à plat (zéro reach organique), la page de test reste à <20 visiteurs et les 50 inscriptions ne sont jamais atteintes.",
+    "correction": "Abandonner le sponsoring en troc comme canal principal : payer un vrai placement (50-100€ dans une seule newsletter au CTR prouvé) OU aller là où les créateurs cherchent déjà des idées (subreddits r/FrenchCreators, serveurs Discord créateurs, groupes Facebook) avec un post qui délivre de la valeur : 'voici 3 sujets tendance de cette semaine pour YouTube FR, gratuits' — le lead magnet EST le produit. Et clarifier l'offre : la précommande à 144€/an pour un produit qui n'existe pas avec des 'courbes' fournies suppose une source de données fiable — dire explicitement ce que le client reçoit et quand, sinon c'est une promesse trompeuse."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee"
+   ],
+   "en_ligne": false
+  },
+  {
+   "slug": "litigeapi",
+   "titre": "LitigeAPI",
+   "score_studio": 6.33,
+   "note_plan": 6.8,
+   "elo": 1550,
+   "plan": {
+    "promesse": "Une API qui dit en 200 ms si une réclamation de livraison est légitime en droit UE, combien est dû, et génère la réponse conforme.",
+    "public_precis": "Développeurs back-end de SaaS e-commerce, marketplaces et fintech (1-20 devs) dans l'UE, plus les leads produit des outils de support qui veulent ajouter un module 'litige livraison' sans builder l'équipe juridique.",
+    "canal_principal": "Place de marché d'API (RapidAPI) + page de test auto-hébergée, indexée et relayée sur des communautés de devs (Reddit r/SaaS et r/eCommerce, Hacker News Show HN, groupes Telegram/Discord SaaS FR/EN).",
+    "premiers_visiteurs": [
+     "Publier le listing RapidAPI 'delivery-dispute-checker' (gratuit) avec docs et 100 appels offerts : les devs qui cherchent déjà une API y arrivent en recherche interne.",
+     "Soumettre un Show HN 'J'ai buildé une API qui vérifie l'éligibilité juridique UE d'une réclamation livraison' avec lien vers la page de test, à 14h CET un mardi.",
+     "Poster 5 messages non promotionnels sur r/SaaS, r/eCommerce, r/legaladviceEurope en répondant à des threads existants sur 'chargeback/refus de remboursement livraison' avec le lien en commentaire contextuel.",
+     "Créer 3 snippets de code publics (Postman collection, exemple Node/Python) hébergés sur GitHub avec README renvoyant vers la page de test.",
+     "Soumettre le listing sur Apify Store et sur 2 annuaires gratuits d'API (APIs.guru, Public APIs) en 1 clic."
+    ],
+    "part_automatisable": "Les agents génèrent et soumettent le listing RapidAPI/Apify, écrivent les posts Show HN et commentaires Reddit en respectant les règles de chaque sub, créent les repos GitHub + docs OpenAPI, soumettent aux annuaires, et suivent les métriques (visites, inscriptions) via analytics.",
+    "action_humaine": "Clément valide en ~10 min : le contenu juridique des exemples (pour ne pas présenter du conseil juridique personnalisé), les CGU de la page de test, et relit les 3 posts avant publication.",
+    "offre": "liste",
+    "prix": "0,02 €/appel, 19 €/mois au-delà de 1 000 appels — page de test gratuite avec 100 appels offerts, pas de carte bancaire",
+    "metrique": "Visiteurs qualifiés (développeurs identifiables : clics depuis sources dev, inscriptions RapidAPI, appels API de test) en 14 jours",
+    "seuil_succes": "≥100 visiteurs qualifiés et ≥15 inscriptions API de test en 14 jours",
+    "budget_eur": 0,
+    "risque_principal": "Le trafic arrive mais reste non qualifié (curieux non-devs) ou les places de marché refusent la listing avant validation juridique du contenu.",
+    "parade": "Ne dépendre que d'un canal : diversifier dès J3 sur au moins 3 sources (RapidAPI, Show HN, Reddit) et filtrer la qualification via un champ 'URL de votre app' à l'inscription pour distinguer devs réels des curieux."
+   },
+   "critique": {
+    "trafic_realiste": 4,
+    "clarte_offre": 7,
+    "vitesse": 6,
+    "cout": 9,
+    "honnetete": 8,
+    "echec_probable": "Le plan échoue car le trafic est trop faible et non qualifié : les canaux (RapidAPI, Show HN, Reddit) génèrent peu de visiteurs développeurs réels, et ceux qui arrivent sont des curieux ou des non-devs, ce qui ne permet pas d'atteindre le seuil de 100 visiteurs qualifiés et 15 inscriptions en 14 jours.",
+    "correction": "Remplacer la dépendance aux canaux passifs par une approche outbound ciblée : identifier 50 startups e-commerce/fintech sur des annuaires (Craft, Sifted) et envoyer des démos personnalisées par email ou LinkedIn, avec un cas d'usage concret (ex. réduction des chargebacks). Ajouter un partenariat avec un éditeur de SaaS support (ex. Zendesk, Freshdesk) pour intégrer l'API comme plugin, ce qui apporte un trafic qualifié et récurrent."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee",
+    "interdit-avis",
+    "interdit-apparence"
+   ],
+   "en_ligne": false
+  },
+  {
+   "slug": "labelverif",
+   "titre": "Vérificateur de Labels Bien-être",
+   "score_studio": 5.34,
+   "note_plan": 6.4,
+   "elo": 1543,
+   "plan": {
+    "promesse": "Scannez une fiche produit cosmétique en ligne et voyez en 10 secondes si les allégations « naturel », « bio » ou « sans toxines » tiennent face aux seuils réglementaires officiels.",
+    "public_precis": "Consommateuses averties de cosmétiques (25-45 ans) actives dans les communautés Frenchy Beauty, r/beauty FR, forums Yuka/INCI Beauty et groupes Facebook spécialisés clean beauty qui critiquent déjà les allégations marketing.",
+    "canal_principal": "Participation honnête et automatisable dans des discussions publiques existantes (Reddit, forums, communautés ouvertes) : réponse factuelle aux questions « ce produit est-il vraiment bio/naturel ? » avec lien vers la page de test.",
+    "premiers_visiteurs": [
+     "Publier une page de test transparente (précommande 2,99 €, service en préparation, aucune fausse urgence) avec 50 produits de démonstration vérifiés sur données publiques officielles (base INCI, règlement EU 1272/2009 et notices publiques).",
+     "Préparer des réponses types factuelles aux discussions publiques Reddit r/SkincareAddiction_fr, r/beauty et forums UE-CHOSE-like où des utilisateurs demandent si une allégation est vraie : réponse honnête + lien, sans scraping ni collecte de profils.",
+     "Créer 10 pages de vérification SEO pour des produits très recherchés (ex. « sérum X réellement bio ? ») générées uniquement à partir de données publiques réglementaires, reliant vers la page de test.",
+     "Publier dans 3 communautés ouvertes de clean beauty une analyse comparative honnête « 10 allégations bio vérifiées » (contenu réel, pas de spam).",
+     "Suivre quotidiennement les visites, sources et précommandes ; couper les canaux sous 20 visiteurs à J+7 et concentrer les agents sur les 2 canaux qui convertissent."
+    ],
+    "part_automatisable": "Les agents génèrent les 50 fiches de démonstration depuis les bases publiques, rédigent et publient les pages SEO, rédigent les réponses types factuelles, publient dans les communautés ouvertes selon les règles de chacune, surveillent les métriques et arbitrent les canaux à J+7 — sans intervention humaine.",
+    "action_humaine": "Aucune. Tout le test est automatisable avec des données ouvertes et des communautés publiques.",
+    "offre": "precommande",
+    "prix": "2,99 € en précommande unique, remboursée si le lancement n'arrive pas sous 60 jours",
+    "metrique": "Visiteurs qualifiés sur la page de test, taux de précommande, et clics sur les fiches produit de démonstration (mesure de l'intérêt réel pour la vérification).",
+    "seuil_succes": "Au moins 150 visiteurs qualifiés ET au moins 6 précommandes payées (taux ≥ 3-4 %) à J+14 : on continue et on construit l'extension. Sous 2 précommandes : pivot ou arrêt.",
+    "budget_eur": 45,
+    "risque_principal": "Le sujet frontière avec la santé : toute réponse qui ressemble à un conseil santé personnalisé est interdite et détruirait la confiance ; risque aussi de modération dans les communautés si les agents sont perçus comme du marketing déguisé.",
+    "parade": "Formuler strictement en vérification réglementaire factuelle (« cette allégation respecte ou non le seuil officiel de 95 % », sources citées), jamais en jugement d'efficacité ou de sécurité, avec mention visible « information réglementaire, pas un conseil de santé ». Seules les communautés autorisant les liens éditoriaux sont utilisées, publication transparente, à faible volume, et arrêt immédiat si un modérateur le refuse."
+   },
+   "critique": {
+    "trafic_realiste": 3,
+    "clarte_offre": 7,
+    "vitesse": 6,
+    "cout": 8,
+    "honnetete": 8,
+    "echec_probable": "Le plan échoue car le trafic initial est trop faible : les réponses sur Reddit et forums génèrent peu de clics (moins de 20 visiteurs par canal), les pages SEO mettent des mois à indexer, et les communautés clean beauty sont souvent fermées aux liens promotionnels. Résultat : moins de 50 visiteurs en 14 jours, zéro précommande.",
+    "correction": "Remplacer la stratégie de trafic passif (SEO + réponses) par un ciblage direct : contacter 50 micro-influenceuses clean beauty (1k-5k abonnés) avec une offre de test gratuit et un lien d'affiliation, et lancer une campagne publicitaire Facebook à 30 € ciblant les groupes d'achat de cosmétiques bio. Cela garantit un volume de visiteurs suffisant pour valider l'intérêt."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee",
+    "interdit-avis",
+    "interdit-offre"
+   ],
+   "en_ligne": false
+  },
+  {
+   "slug": "salfront",
+   "titre": "Veille Salaire Frontalier : comparateur de rémunérations transfrontalières",
+   "score_studio": 7.16,
+   "note_plan": 6.4,
+   "elo": 1542,
+   "plan": {
+    "promesse": "Découvrez en 30 secondes si votre salaire frontalier est sous-évalué par rapport aux conventions et au marché réel.",
+    "public_precis": "Travailleurs frontaliers Belgique-Luxembourg (métiers administratifs, IT, logistique) cherchant à négocier ou vérifier leur rémunération.",
+    "canal_principal": "Communautés Reddit (r/Luxembourg, r/Belgique), groupes Facebook 'Frontaliers' et LinkedIn Groups ciblés.",
+    "premiers_visiteurs": [
+     "Identifier 5 threads actifs sur Reddit/FB parlant de 'salaire', 'negociation', 'frontalier' dans les 7 derniers jours.",
+     "Poster un commentaire utile apportant une anecdote factuelle + lien vers l'outil : 'J'ai croisé ces données avec les conventions, voici le résultat pour ce profil : [Lien]'.",
+     "Créer un post type 'Storytelling' : 'J'ai calculé la fourchette réelle pour [Métier] Frontalier, voici ce que les offres Indeed cachent : [Lien]'.",
+     "Partager le lien dans 3 groupes LinkedIn spécialisés avec l'accroche : 'Outil gratuit pour vérifier son écart salarial avant la prochaine négociation.'."
+    ],
+    "part_automatisable": "Le bot surveille les mots-clés 'salaire' et 'frontalier' sur les canaux sélectionnés, génère des réponses contextuelles non-spam utilisant les données publiques disponibles pour alimenter le trafic vers la page de test. L'agent gère aussi le tracking des clics et l'enregistrement des emails.",
+    "action_humaine": "Vérifier 2 fois par jour pendant 5 minutes que les liens ne sont pas supprimés pour spam, et répondre manuellement aux 3-5 questions techniques précises qui arrivent en commentaire (pour humaniser sans vendre).",
+    "offre": "precommande",
+    "prix": "19.00",
+    "metrique": "Nombre d'emails collectés parmi les visiteurs qualifiés (ceux qui ont vu >1 minute de contenu).",
+    "seuil_succes": "Collecte de 50 emails qualifiés ou 5 pré-commandes validées (paiement fictif ou engagement ferme) sur les 100-250 visiteurs.",
+    "budget_eur": 0,
+    "risque_principal": "Blocage des liens par les modérateurs pour auto-promotion ou considérés comme spam.",
+    "parade": "Apporter de la valeur gratuite immédiate dans le commentaire (ex: un chiffre clé tiré des données) avant de donner le lien, et varier les angles d'attaque (conseil vs curiosité)."
+   },
+   "critique": {
+    "trafic_realiste": 4,
+    "clarte_offre": 7,
+    "vitesse": 6,
+    "cout": 10,
+    "honnetete": 5,
+    "echec_probable": "Les posts dans les groupes Reddit et Facebook seront supprimés pour auto-promotion ou considérés comme spam, générant un trafic quasi nul (moins de 10 visiteurs) car les modérateurs sont très stricts et le produit n'existe pas encore (précommande).",
+    "correction": "Développer d'abord un MVP fonctionnel gratuit (sans précommande) pour prouver la valeur, puis utiliser des canaux organiques comme un blog avec des études de cas réelles, des partenariats avec des associations de frontaliers, et du SEO sur des mots-clés longue traîne. Éviter le posting direct de liens dans les groupes."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee"
+   ],
+   "en_ligne": false
+  },
+  {
+   "slug": "grandliseurcode",
+   "titre": "AinéCodeVoisin",
+   "score_studio": 6,
+   "note_plan": 6.4,
+   "elo": 1511,
+   "plan": {
+    "promesse": "Réviser le code de la route en gros caractères, avec les questions lues à voix haute et un mode duo avec votre enfant, pour 19 € une fois, à vie.",
+    "public_precis": "Enfants/aidants (45-60 ans) d'un parent de 60+ qui doit repasser le code — ce sont eux qui cherchent en ligne et paient, pas l'ainé.",
+    "canal_principal": "Groupes Facebook d'aidants et forums seniors (Notre Temps,forum des aidants), via posts de témoignage utiles — pas d'annonces, pas de DM de masse.",
+    "premiers_visiteurs": [
+     "Créer la page test : gros titres, démo audio d'une question lue à voix haute jouable sans inscription, bouton 'Être prévenu + précommander 19 €', mention explicite 'en préparation'.",
+     "Lister 30 groupes Facebook actifs (aidants, seniors, permis après 60 ans) et 10 fils Reddit/forum (Notre Temps, Doctissimo) où le sujet 'parent doit repasser son code' apparaît — recherche manuelle de mots-clés, sans collecte de profils.",
+     "Rédiger 3 messages natifs différents (question sincère : 'comment vous aidez vos parents à réviser ?', retour d'expérience avec lien, offre directe) et les poster en rotation, 1 par jour et par groupe max, en respectant les règles de chaque groupe.",
+     "Répondre en agent à chaque commentaire sous les posts avec une question ouverte + lien vers la page test (jamais de message privé non sollicité).",
+     "Publier sur 3 subreddits/forums francophones aidants un post 'J'ai construit une app de code pour les seniors : voici pourquoi' avec la démo audio comme accroche.",
+     "Croiser avec 2-3 annuaires d'apps accessibles/seniors et un post sur Hacker News/Show HN francophone pour capter du trafic organique complémentaire."
+    ],
+    "part_automatisable": "Génération de la page test et de la démo vocale (TTS) ; veille et détection des posts/fils où le besoin est exprimé ; rédaction des variantes de messages et de réponses aux commentaires ; relances e-mail des préinscrits ; suivi des métriques et rapport quotidien.",
+    "action_humaine": "Clément poste les 3 variantes dans les groupes choisis (15 min/jour) et participe à 2-3 discussions par semaine où il a de la légitimité personnelle (10 min) — les agents ne postent pas eux-mêmes sur Facebook sans risque de ban.",
+    "offre": "precommande",
+    "prix": "19 € licence familiale à vie, précommande remboursable jusqu'au lancement",
+    "metrique": "Nombre de précommandes payées à 19 € sur le trafic reçu (et taux de lecture de la démo audio comme signal secondaire).",
+    "seuil_succes": "Au moins 5 précommandes payées (≈95 €) et 15 inscriptions 'prévenez-moi' sur 150+ visiteurs qualifiés — sinon pivot sur le canal ou le message.",
+    "budget_eur": 25,
+    "risque_principal": "Les ainés paient rarement en ligne : l'acheteur réel est l'aidant, et les groupes Facebook sont allergiques aux posts promotionnels — risque de saturation et de ban.",
+    "parade": "Toujours cibler l'aidant (pas l'ainé) dans le message, mener par le problème ('mon père a dû repasser son code à 72 ans'), publier une valeur d'abord (la démo audio partageable), et si Facebook bloque, basculer sur les forums et la recherche organique 'code de la route senior' via une page SEO générée par agents."
+   },
+   "critique": {
+    "trafic_realiste": 3,
+    "clarte_offre": 8,
+    "vitesse": 5,
+    "cout": 9,
+    "honnetete": 7,
+    "echec_probable": "Les groupes Facebook d'aidants et forums seniors sont saturés de messages promotionnels, et les posts de témoignage utiles seront noyés ou supprimés par les modérateurs, ce qui générera moins de 30 visiteurs qualifiés en 30 jours, bien en dessous des 150 nécessaires pour atteindre 5 précommandes.",
+    "correction": "Remplacer le canal principal par un partenariat direct avec 3 auto-écoles locales spécialisées seniors (via démarchage téléphonique) et une page de précommande optimisée SEO pour 'code de la route senior' avec démo audio intégrée, en supprimant la dépendance aux groupes Facebook."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee",
+    "interdit-apparence"
+   ],
+   "en_ligne": false
+  },
+  {
+   "slug": "deeplink-forge",
+   "titre": "DeepLink Forge : SDK d'appairage anti-boucle open core",
+   "score_studio": 6.58,
+   "note_plan": 6.2,
+   "elo": 1508,
+   "plan": {
+    "promesse": "Le SDK open source qui fait fonctionner l'appairage TV (QR code, deep links, fallback) sans boucles App Store — testé sur émulateurs.",
+    "public_precis": "Développeurs indépendants et petits studios qui livrent une app avec mode compagnon TV / second screen (Android TV, Fire TV, tvOS).",
+    "canal_principal": "Show HN + communautés dev ciblées (r/androiddev, r/flutterdev, Discords Flutter/Compose, GitHub) — 100% organique.",
+    "premiers_visiteurs": [
+     "Jour 1-3 : publier le dépôt GitHub open core avec README honnête 'en préparation' et une démo vidéo de 60s du QR code qui ouvre l'app au lieu du store",
+     "Jour 3 : post Show HN 'Show HN: DeepLink Forge — SDK open source d'appairage TV anti-boucle' avec lien vers la landing",
+     "Jour 4-7 : un post par communauté (r/androiddev, r/flutterdev, Discord Flutter, r/androidtv) formulé comme retour d'expérience, pas comme pub : 'j'ai livré une app TV avec une boucle App Store, voici ce que j'en ai appris'",
+     "Jour 7-10 : répondre aux issues et questions GitHub, chaque réponse pointe vers la page de précommande",
+     "Jour 10-14 : relancer les personnes ayant interagi (via réponses publiques, pas de DM) et publier un snippet technique utile sur dev.to liant vers la landing"
+    ],
+    "part_automatisable": "Les agents génèrent le code du SDK, la landing page, le README, la démo vidéo scriptée, les snippets techniques et brouillons de posts adaptés à chaque communauté ; ils surveillent les mots-clés (deep link, second screen, companion app) sur les forums publics pour suggérer des réponses utiles ; ils préparent les pages Gumroad/Lemon Squeezy.",
+    "action_humaine": "Clément poste les messages lui-même (les communautés bannissent les bots) : ~30 min pour Show HN + 4 posts communautaires, puis 15 min/jour pour répondre aux commentaires.",
+    "offre": "precommande",
+    "prix": "39 € la licence Pro en précommande (au lieu de 79 €), remboursée si le SDK complet n'est pas livré en 60 jours.",
+    "metrique": "Visiteurs qualifiés sur la landing (issus de HN/Reddit/Discord/GitHub), taux de visiteurs qui cliquent vers la précommande, et nombre de précommandes payées.",
+    "seuil_succes": ">= 100 visiteurs qualifiés ET >= 5 précommandes payées (199 € encaissés) en 14 jours.",
+    "budget_eur": 30,
+    "risque_principal": "Les dev ne paient pas pour un SDK non livré : la promesse open core suggère que le gratuit suffira, et les posts communautaires peuvent être perçus comme de l'autopromotion et supprimés.",
+    "parade": "Publier réellement le cœur du SDK sur GitHub dès le jour 1 (usage réel possible) pour rendre la précommande crédible (pro + tests cloud à venir) ; rédiger chaque post comme un partage d'expérience technique sincère conforme aux règles de chaque communauté ; le remboursement garanti lève le risque d'achat."
+   },
+   "critique": {
+    "trafic_realiste": 4,
+    "clarte_offre": 7,
+    "vitesse": 6,
+    "cout": 7,
+    "honnetete": 7,
+    "echec_probable": "Le trafic organique Show HN + 4 posts Reddit/Discord génère 30-80 visiteurs en 14 jours (pas 100), et surtout des visiteurs non qualifiés : les devs qui lisent HN ne sont pas en train de livrer une app TV cassée ce jour-là, donc le taux de précommande tombe à 0-1 au lieu de 5 — le plan compte sur 'poster dans des communautés' sans cibler les threads exacts où quelqu'un décrit une boucle App Store en cours.",
+    "correction": "Remplacer la diffusion large par du ciblage de douleur : chercher manuellement (GitHub issues, Stack Overflow, r/androidtv) les développeurs qui rapportent ACTUELLEMENT un bug d'appairage/boucle de deep link, et leur répondre avec le lien vers le SDK + démo ; doubler d'une landing SEO sur 'Android TV deep link loop' / 'companion app QR pairing' pour capter la recherche existante ; réduire le seuil de succès réaliste à 2-3 précommandes et viser 30 jours plutôt que 14 ; préciser ce que le gratuit inclut vs le Pro (tests cloud, support fabricants) pour que la valeur payante soit lisible dès la landing."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee"
+   ],
+   "en_ligne": false
+  },
+  {
+   "slug": "veillepoints",
+   "titre": "Allongez : la plateforme qui négocie collectivement l'expiration des points",
+   "score_studio": 5.05,
+   "note_plan": 4.4,
+   "elo": 1505,
+   "plan": {
+    "promesse": "Signez une pétition ciblée par enseigne sur l'expiration de vos points fidélité et recevez le dossier chiffré qui la soutient, gratuitement.",
+    "public_precis": "Consommateurs belges (Wallonie/Bruxelles) membres de groupes Facebook de réclamations enseignes, pages de consommateurs belges, forums de quartier, et les associations de consommateurs qui les animent (UFC-Que Choisir Belgique, Test Achats, coopératives locales).",
+    "canal_principal": "Communautés existantes : groupes Facebook de réclamations/conso, pages de consommateurs belges, forums de quartier.",
+    "premiers_visiteurs": [
+     "Poster manuellement (par Clément, 10 min) un message honnête dans 3-5 groupes Facebook belges de réclamations enseignes : « On prépare un site où chacun signe une pétition par enseigne sur l'expiration des points, avec un dossier chiffré envoyé automatiquement. Page de test en préparation, dites-moi si ça vous parle »",
+     "Publier le même message (copié par les agents) dans 10-15 forums et pages de quartier belges ouverts, avec lien vers la page de test clairement étiquetée « service en préparation »",
+     "Contacter par e-mail (pas de téléphone) 5 associations de consommateurs belges et leur proposer de relayer la page de test à leurs abonnés",
+     "Déposer une annonce gratuite sur 2-3 sites d'annonces locales belges et 1-2 subreddits Belgique/Francophonie concernés par la consommation",
+     "Envoyer un pitch par e-mail à 3 journalistes conso belges (Test Achats magazine, presse locale) demandant simplement leur avis sur la page"
+    ],
+    "part_automatisable": "Les agents rédigent et publient les messages sur forums/pages ouvertes, préparent les e-mails aux associations et journalistes, génèrent le dossier chiffré type (pertes moyennes, exemples d'expiration) à partir de données ouvertes, et suivent les clics/inscriptions. Aucune donnée personnelle sensible collectée : juste e-mail et enseigne concernée, base légale = consentement explicite sur le formulaire.",
+    "action_humaine": "10 minutes : publier le premier message dans 3-5 groupes Facebook (les agents ne peuvent pas publier dans des groupes fermés sans y être membres).",
+    "offre": "precommande",
+    "prix": "15 €/an par membre contributeur",
+    "metrique": "Nombre de visiteurs qualifiés (Belgique, intérêt conso/points fidélité) sur la page de test en 14 jours + nombre d'e-mails captés via le formulaire « prévenez-moi »",
+    "seuil_succes": "100 visiteurs qualifiés + 20 e-mails en 14 jours",
+    "budget_eur": 250,
+    "risque_principal": "Les groupes Facebook pertinents sont fermés ou modérés, bloquant l'accès aux premiers visiteurs",
+    "parade": "Se rabattre sur les canaux ouverts (forums, Reddit, pages publiques, e-mails aux associations) qui représentent assez de volume pour atteindre 100 visiteurs sans dépendre des groupes fermés"
+   },
+   "critique": {
+    "trafic_realiste": 2,
+    "clarte_offre": 4,
+    "vitesse": 3,
+    "cout": 6,
+    "honnetete": 7,
+    "echec_probable": "Le plan repose sur une illusion de trafic organique. Poster dans des groupes Facebook sans être membre actif ou modérateur est impossible (bloqué par les règles de la plateforme), et les forums/Reddit sont saturés de contenu anti-spam. Sans budget publicitaire ciblé (Facebook Ads) ou partenariats actifs avec les associations (qui ne relayeront pas un projet non validé), le seuil de 100 visiteurs qualifiés en 14 jours est statistiquement inaccessible. De plus, l'offre est floue : on vend une pétition dont l'issue est incertaine, ce qui décourage l'adhésion immédiate.",
+    "correction": "Arrêter le spam manuel inefficace. Allouer le budget à du ciblage précis Facebook/Instagram Ads (ciblant les intérêts 'fidélité', 'points', 'consommation' en Belgique) pour tester la page de capture d'email. Remplacer la promesse de 'négociation' par une promesse de 'veille et alerte' : 'Soyez alerté avant l'expiration de vos points'. Valider l'intérêt via un test payant symbolique (1€) ou une attente active plutôt qu'une précommande vague. Contacter directement les présidents d'associations pour co-construire le premier dossier, plutôt que de leur demander de relayer."
+   },
+   "credibilite": [
+    "mentions-editeur",
+    "api-branchee",
+    "interdit-offre"
+   ],
+   "en_ligne": false
+  }
+ ]
+}

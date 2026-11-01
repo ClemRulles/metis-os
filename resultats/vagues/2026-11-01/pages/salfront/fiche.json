@@ -1,0 +1,43 @@
+{
+ "slug": "salfront",
+ "nom": "SalFront",
+ "accroche": "Estimer votre salaire frontalier",
+ "sous_titre": "Un outil en développement qui croise les offres d'emploi avec les conventions collectives pour fournir une fourchette salariale par métier et zone frontalière.",
+ "probleme_points": [
+  "Les offres d'emploi affichent rarement les salaires, particulièrement pour les postes frontaliers.",
+  "Les conventions collectives sont complexes et peu accessibles pour un travailleur individuel.",
+  "Il est difficile de vérifier si sa rémunération est compétitive sur le marché transfrontalier."
+ ],
+ "comment": [
+  "Saisissez votre métier et votre zone frontalière (ex: Belgique-Luxembourg).",
+  "L'outil analysera les données des offres d'emploi via API et les textes légaux des conventions collectives.",
+  "Vous obtiendrez une fourchette salariale estimée et une indication de positionnement par rapport au marché."
+ ],
+ "pour_qui": "Travailleurs frontaliers Belgique-Luxembourg et employeurs locaux souhaitant vérifier leur compétitivité.",
+ "prix": "19.00 € unique",
+ "condition_prix": "Paiement unique pour un accès anticipé à la version finale. Le service est en préparation ; vous serez informé dès son lancement.",
+ "offre": "precommande",
+ "cta": "Précommander l'accès anticipé",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, il est en préparation. En précommandant, vous bénéficierez d'un accès prioritaire dès le lancement et recevrez des mises à jour sur l'avancement du projet."
+  },
+  {
+   "question": "Comment les données sont-elles collectées ?",
+   "reponse": "Nous utilisons l'API officielle d'Indeed et les données publiques des conventions collectives luxembourgeoises et belges, ainsi que les statistiques nationales (ADEM, LISER)."
+  },
+  {
+   "question": "Que se passe-t-il si le projet ne voit pas le jour ?",
+   "reponse": "En cas d'annulation du projet, vous serez intégralement remboursé."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

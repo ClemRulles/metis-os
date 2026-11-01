@@ -1,0 +1,39 @@
+{
+ "slug": "pulsebrief",
+ "nom": "PulseBrief",
+ "accroche": "Des idées de contenu à partir de tendances, prêtes à être adaptées.",
+ "sous_titre": "Un brief hebdomadaire par e-mail pour vous aider à trouver des sujets et des angles, sans y consacrer trop de temps.",
+ "probleme_points": [
+  "La recherche de sujets de contenu peut prendre du temps.",
+  "Trouver un angle pertinent peut être difficile.",
+  "Suivre les tendances demande des efforts, surtout pour un créateur seul."
+ ],
+ "comment": [
+  "Inscrivez-vous pour recevoir un exemple de brief pendant la phase de test.",
+  "Chaque brief contient 3 sujets avec des angles et des données clés.",
+  "Vous pouvez alors créer votre contenu en vous concentrant sur la production."
+ ],
+ "pour_qui": "Les créateurs de contenu solo (YouTube, TikTok, blog) qui veulent gagner du temps dans la recherche de sujets.",
+ "prix": "12€ par mois",
+ "condition_prix": "Tarif de précommande pour un accès anticipé pendant la phase de test. Le service est en préparation.",
+ "offre": "precommande",
+ "cta": "S'inscrire pour le brief de test",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "PulseBrief est en préparation. En vous inscrivant, vous participez à la phase de test et recevrez les premiers briefs quand ils seront prêts."
+  },
+  {
+   "question": "Comment les sujets sont-ils choisis ?",
+   "reponse": "Nous examinons des signaux de tendance et les transformons en angles pratiques pour votre domaine."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}
