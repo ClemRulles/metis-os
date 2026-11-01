@@ -14,9 +14,22 @@ if (!fichier) {
 const catalogue = JSON.parse(await readFile("config/genes.json", "utf8"));
 const tous = JSON.parse(await readFile(fichier, "utf8"));
 
-// Échantillon équilibré et reproductible : on mélange avec une graine fixe.
-const melange = [...tous].sort((a, b) => (a.id < b.id ? -1 : 1));
-const cas = melange.filter((_, i) => i % Math.max(1, Math.floor(melange.length / Number(nb))) === 0).slice(0, Number(nb));
+// Échantillon différent à chaque passage (graine = numéro du passage), pour que chaque manche apporte
+// des cas nouveaux au lieu de rejouer les mêmes.
+const graine = Number(process.env.GITHUB_RUN_ID ?? Date.now()) % 2147483647;
+let a = graine >>> 0;
+const alea = () => {
+  a = (a + 0x6d2b79f5) >>> 0;
+  let t = Math.imul(a ^ (a >>> 15), a | 1);
+  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+};
+const melange = [...tous];
+for (let i = melange.length - 1; i > 0; i--) {
+  const j = Math.floor(alea() * (i + 1));
+  [melange[i], melange[j]] = [melange[j], melange[i]];
+}
+const cas = melange.slice(0, Number(nb));
 const base = tauxDeBase(tous);
 
 const configurations = populationInitiale(catalogue, { roles: ["predicteur"], parRole: 6 });
