@@ -1,0 +1,2334 @@
+{
+ "date": "2026-11-01T09:56:53.671Z",
+ "signaux": [
+  {
+   "origine": "arXiv cs.AI",
+   "titre": "Rethinking Neural Thickets Without Weight Perturbations"
+  },
+  {
+   "origine": "arXiv cs.AI",
+   "titre": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers"
+  },
+  {
+   "origine": "arXiv cs.AI",
+   "titre": "Luggage re-identification: A study of strategies towards a real-world application"
+  },
+  {
+   "origine": "arXiv cs.AI",
+   "titre": "From extreme weather to agricultural consequences with agentic AI"
+  },
+  {
+   "origine": "arXiv cs.AI",
+   "titre": "Probing Spatial State Representations in Visual Foundation Models"
+  },
+  {
+   "origine": "arXiv cs.AI",
+   "titre": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races"
+  },
+  {
+   "origine": "arXiv cs.CY",
+   "titre": "AI in the EGI e-infrastructure -- Past experiences and future strategies"
+  },
+  {
+   "origine": "arXiv cs.CY",
+   "titre": "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
+  },
+  {
+   "origine": "arXiv cs.CY",
+   "titre": "The Price of a Chance in Artificial Societies"
+  },
+  {
+   "origine": "arXiv cs.CY",
+   "titre": "Measuring Organizational Influence on Digital News: An Information-Theoretic Framework for Media Pluralism and Editorial Independence"
+  },
+  {
+   "origine": "arXiv cs.CY",
+   "titre": "Who Owns Digital News, and Who Gets Cited: Measuring Media Concentration Across 77 Countries and Seven AI Systems"
+  },
+  {
+   "origine": "arXiv cs.CY",
+   "titre": "Reconstructing Missing Mandi Prices in North-East India with Regional Factors"
+  },
+  {
+   "origine": "arXiv q-bio.QM",
+   "titre": "A heterogenetic theory of living systems"
+  },
+  {
+   "origine": "arXiv q-bio.QM",
+   "titre": "Learning developmental dynamics from lineage context"
+  },
+  {
+   "origine": "arXiv q-bio.QM",
+   "titre": "Yoga biomechanics through energy optimization: diverse kinematics and low-dimensional kinetics"
+  },
+  {
+   "origine": "arXiv q-bio.QM",
+   "titre": "Agentic LLM reasoning in pediatric diabetes outcome prediction from multimodal medical records"
+  },
+  {
+   "origine": "arXiv q-bio.QM",
+   "titre": "PCR-ALERA: A PCR-ELISA analogue but antibody-free DNA detection system"
+  },
+  {
+   "origine": "arXiv q-bio.QM",
+   "titre": "Beyond $χ^2$: Ensemble null tests for reliable scientific discovery"
+  },
+  {
+   "origine": "arXiv physics.soc-ph",
+   "titre": "Symmetric Structure and Motivic Transformation in Melodies, Phrases, and Themes"
+  },
+  {
+   "origine": "arXiv physics.soc-ph",
+   "titre": "The coupled spread of information and potential-driven motion in evacuating agent populations"
+  },
+  {
+   "origine": "arXiv physics.soc-ph",
+   "titre": "Structural Change in the Multilayer World Trade Web: An Economic Dominance Theory Approach"
+  },
+  {
+   "origine": "arXiv physics.soc-ph",
+   "titre": "From Airspace Degradation to Deconfliction: Predicting Safety-Critical Traffic States through the Evolution of Multiscale Complexity Metrics"
+  },
+  {
+   "origine": "arXiv physics.soc-ph",
+   "titre": "Early-Buyer Groups and Fast-Wallet Teams on a Bonding-Curve Launchpad: A Prospective Measurement Study of pump.fun on Solana"
+  },
+  {
+   "origine": "arXiv physics.soc-ph",
+   "titre": "Generalized Discrete Fractal Dimensions of Graph Families"
+  },
+  {
+   "origine": "arXiv eess.SY",
+   "titre": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model"
+  },
+  {
+   "origine": "arXiv eess.SY",
+   "titre": "Analog Realization and Measurement of a Forced Aliev-Panfilov Excitable Oscillator"
+  },
+  {
+   "origine": "arXiv eess.SY",
+   "titre": "A Tutorial on Shape Servoing of Deformable Objects-Part I: Fundamentals"
+  },
+  {
+   "origine": "arXiv eess.SY",
+   "titre": "A Behavioral approach to Constrained Linear Quadratic Control: Feasibility and Optimality"
+  },
+  {
+   "origine": "arXiv eess.SY",
+   "titre": "A Two-Wheeled Quadrotor with All-Clockwise Tilted Rotors for Level-Attitude Surface Locomotnion"
+  },
+  {
+   "origine": "arXiv eess.SY",
+   "titre": "Fundamental Limits of Sampling-Based Reachability: Geometry and Flow Distortion"
+  },
+  {
+   "origine": "arXiv econ.GN",
+   "titre": "When Does Storage Complement Solar? Investment and Cost Recovery under Advanced Net Metering"
+  },
+  {
+   "origine": "arXiv econ.GN",
+   "titre": "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
+  },
+  {
+   "origine": "arXiv econ.GN",
+   "titre": "A Proof for Generalized Egalitarianism"
+  },
+  {
+   "origine": "arXiv econ.GN",
+   "titre": "When are complements and substitutes dual?"
+  },
+  {
+   "origine": "arXiv econ.GN",
+   "titre": "Did the energy crisis turn borrowers green? Zonal power prices and green bond choice on Oslo Børs"
+  },
+  {
+   "origine": "arXiv econ.GN",
+   "titre": "What is Work For? Labor, Politics, and Meaning in the Age of AI"
+  },
+  {
+   "origine": "arXiv cs.HC",
+   "titre": "Micro-Edits: Computational Support for Fine-Scale Edits in Film"
+  },
+  {
+   "origine": "arXiv cs.HC",
+   "titre": "When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder"
+  },
+  {
+   "origine": "arXiv cs.HC",
+   "titre": "Deep Learning Based Behavioral Drift Modeling for Continuous Biometric Authentication"
+  },
+  {
+   "origine": "arXiv cs.HC",
+   "titre": "Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals"
+  },
+  {
+   "origine": "arXiv cs.HC",
+   "titre": "Towards fNIRS foundation models: A curated corpus of 67 public datasets with channel positions in MNI space"
+  },
+  {
+   "origine": "arXiv cs.HC",
+   "titre": "EnvOS: Auditing Computer-Use Agents When the World Moves On : Phenomenon-Based Task Construction, Certification, and Evidence-Based Evaluation"
+  },
+  {
+   "origine": "arXiv astro-ph.EP",
+   "titre": "Mapping Stellar Obliquity Across Space and Time"
+  },
+  {
+   "origine": "arXiv astro-ph.EP",
+   "titre": "Tailoring Infra-Red Filters for Global Mapping of Enceladus' Thermal Environment"
+  },
+  {
+   "origine": "arXiv astro-ph.EP",
+   "titre": "TEMPEST - A modular Python-based thermophysical model for rough, irregularly-shaped airless bodies"
+  },
+  {
+   "origine": "arXiv astro-ph.EP",
+   "titre": "The dark surface of (163693) Atira and implications for inner-Earth asteroid origins"
+  },
+  {
+   "origine": "arXiv astro-ph.EP",
+   "titre": "Seven Years of TESS Precovery Observations of the Dwarf-planet Candidate 2026 ED$_{138}$"
+  },
+  {
+   "origine": "arXiv astro-ph.EP",
+   "titre": "Optical clock network tracks tidal variations of the gravity potential"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "HackerTube: YouTube built from videos recommended by HN"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "An Italian farmer found some unknown seeds in his attic and planted them"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Anthropic blocks users for anything touching training larger models"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Do the math: How we took over ChatGPT accounts"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Jepsen: ParticleDB 1.1.4"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Simple circuits can create complex behaviors"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "It's the memory latency, stupid"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "ChatGPT and Codex usage limits merging"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "The Duty of a Scholar"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Surviving \"The Graduate\""
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Reading and writing are less symmetric than you (probably) think"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Zinc creep in cable spelter sockets brought down the Arecibo telescope in 2020"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Altoids Project"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Electrification Could Cut Global Energy Use in Half"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Running a bootstrapped SaaS for 20 years with my brother"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "The AI cost of JavaScript frameworks"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "A 1580 Map Shows Why Data Visualization Is Never Neutral"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Pilot-wave hydrodynamics (Quantum phenomena in macroscopic hydrodynamic systems)"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Edgar Allan Poe, Quintessential American Writer"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Show HN: BBRouter – Ben Eater's 8-bit computer, simulated on 3D breadboards"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Decode kernel panic from QR Code photo"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "A brief history of just-in-time: forty years of JIT work, from 1960–2000"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Pac-Man's Siren Call"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Understanding Email Encryption"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "Japan's trains are great. Why is booking one so hard?"
+  },
+  {
+   "origine": "Hacker News",
+   "titre": "No AI, 52 min. Build all Linux Files utils in C by Hand [video]"
+  }
+ ],
+ "stats": {
+  "appels": 144,
+  "echecs": 98,
+  "parCerveau": {
+   "mimo": {
+    "ok": 5,
+    "echecs": 38
+   },
+   "glm": {
+    "ok": 18,
+    "echecs": 0
+   },
+   "mistral": {
+    "ok": 2,
+    "echecs": 8
+   },
+   "minimax": {
+    "ok": 4,
+    "echecs": 4
+   },
+   "deepseek": {
+    "ok": 6,
+    "echecs": 31
+   },
+   "qwen": {
+    "ok": 11,
+    "echecs": 17
+   }
+  },
+  "idees": 64,
+  "notees": 10,
+  "finalistes": 10,
+  "duels": 4
+ },
+ "top": [
+  {
+   "titre": "Cartographie satellite du miel et des huiles suspects",
+   "probleme": "Le miel et les huiles d'olive sont parmi les produits les plus falsifiés d'Europe, et les consommateurs n'ont aucun moyen de vérifier la cohérence entre l'origine déclarée sur l'étiquette et la réalité agricole.",
+   "pour_qui": "Militants de la consommation honnête, apiculteurs et producteurs authentiques, médias de consommation.",
+   "valeur_societale": "Défendre les petits producteurs honnêtes contre la fraude agroalimentaire, un fléau qui détruit des filières entières.",
+   "comment": "Croiser Open Food Facts (origine déclarée, ingrédients) avec Copernicus : détection des surfaces de tournesols, oliveraies et ruches dans les régions d'origine déclarées ; si un pays ne cultive pas assez pour ses volumes exportés, alerte d'incohérence publique.",
+   "pourquoi_maintenant": "La fraude au miel est révélée publiquement en 2023-2024 et la confiance des consommateurs est au plus bas, avec une demande d'outils de vérification indépendants.",
+   "pourquoi_nous": "Seule une organisation d'agents IA peut traiter en continu des millions de produits et des milliers d'images satellites pour tenir une base d'incohérences à jour, sans budget humain.",
+   "modele_revenu": "Abonnement 5€/mois pour l'app de vérification grand public, et licence des rapports d'incohérences par filière pour associations et médias.",
+   "premier_test": "Publier gratuitement un rapport viral sur les incohérences miel/huile d'un pays précis, avec une page de don ou prévente d'abonnement 3€ encaissé via Gumroad.",
+   "audace": 9,
+   "lentille": "collision-api",
+   "cerveau": "glm",
+   "sources": [
+    "off",
+    "copernicus"
+   ],
+   "id": "i0001",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "faisabilite": 6,
+    "conforme": true,
+    "objection": "La détection des ruches par satellite est irréaliste (elles sont trop petites), et les données Open Food Facts sont imprécises, ce qui risque de produire des alertes fausses ou inexploitables.",
+    "amelioration": "Remplacer la détection des ruches par l'analyse des flux commerciaux et des données douanières croisées avec les surfaces agricoles visibles (oliveraies, tournesols), et intégrer des bases de données de miel authentifié par ADN (ex. FoodAuthent) pour réduire les faux positifs.",
+    "juge": "deepseek"
+   },
+   "score": 6.949999999999999,
+   "elo": 1531.263693206478
+  },
+  {
+   "titre": "Chroniqueur automatique des rappels du quotidien",
+   "probleme": "Personne ne raconte l'histoire des rappels produits : motifs, nag des fabricants, récurrences — un journalisme de données qui n'existe pas.",
+   "pour_qui": "Journalistes grand public, créateurs de contenu conso, particuliers exigeants.",
+   "valeur_societale": "Pression démocratique sur les fabricants : rendre visible et mémorable leur historique de défaillances.",
+   "comment": "Des agents IA tiennent 24h/24 une base « casier judiciaire » de chaque marque (rappels, Safety Gate, sanctions), génèrent une chronique quotidienne publiée et vendue en flux payant.",
+   "pourquoi_maintenant": "Les données sont publiques, structurées, et aucun média n'a les moyens humains de tenir un suivi quotidien complet.",
+   "pourquoi_nous": "C'est une surveillance perpétuelle, ennuyeuse et gratifiée à aucun titre humain : la tâche type d'une armée d'agents à coût marginal nul.",
+   "modele_revenu": "Flux RSS premium pour rédactions et newsletter grand public à 6€/mois.",
+   "premier_test": "Publication d'un « top 10 des marques les plus rappelées de 2024 » gratuit, avec accès aux fiches détaillées par marque à 12€ — vente directe sur la page.",
+   "audace": 6,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "glm",
+   "sources": [
+    "openfda",
+    "rappel-conso"
+   ],
+   "id": "i0051",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 7,
+    "faisabilite": 7,
+    "conforme": true,
+    "objection": "La valeur pour les journalistes est incertaine : peu de rédactions paieront pour un flux alors que les données sont gratuites et que des alertes basiques existent déjà.",
+    "amelioration": "Cibler directement le consommateur via une extension navigateur qui croise ses achats avec les rappels, et monétiser par un abonnement individuel à 1€/mois avec notification personnalisée.",
+    "juge": "deepseek"
+   },
+   "score": 7.35,
+   "elo": 1516
+  },
+  {
+   "titre": "Micro-assurance récolte déclenchée par le satellite",
+   "probleme": "L’assurance récolte des petits agriculteurs dépend dexpertises coûteuses, de déclarations incomplètes et de délais de paiement longs, ce qui pousse beaucoup à ne pas s’assurer.",
+   "pour_qui": "Petits producteurs, coopératives agricoles et insurersfengarant leurs原理ments.",
+   "valeur_societale": "Rendre la protection contre les aléas climatiques accessible, accélérer l’indemnisation après une sécheresse ou une inondation, et sécuriser l’approvisionnement local.",
+   "comment": "Les agents croisent les images Sentinel avec la météo, la topographie et les calendriers culturaux, puis déclenchent une indemnisation paramétrique selon des seuils préétablis et vérifiables.",
+   "pourquoi_maintenant": "L’imagerie Sentinel gratuite, la couverture satellite plus fréquente et les agents de calcul rendent viable une underwriting continue qui aurait été trop chère avant 2023.",
+   "pourquoi_nous": "L’organisation peut industrialiser l’analyse géospatiale sans mobiliser derti adjustables数据进行 surveyeurs ni专家 par dossier.",
+   "modele_revenu": "Commission sur les primes souscrites via un comparateur partenaires et API d’indemnisation en marque blanche pour assureurs et coopératives.",
+   "premier_test": "Choisir une culture et une zone pilote, rendre un calculateur public avec des données historiques, puis proposer aux dix mille producteurs d’un bassin versant un accès à 19 euros par saison avec paiement immédiat pour troisプールss，风险：risque? ",
+   "audace": 9,
+   "lentille": "cimetiere",
+   "cerveau": "minimax",
+   "sources": [
+    "github",
+    "copernicus"
+   ],
+   "id": "i0010",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 6,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 7,
+    "faisabilite": 5,
+    "conforme": true,
+    "objection": "Nécessite un agrément d'assurance et des partenariats avec des assureurs, ce qui bloque un test rapide et autonome.",
+    "amelioration": "Proposer un service de scoring de risque climatique en marque blanche pour coopératives, sans assumer le risque d'assurance, avec une preuve de concept gratuite sur une saison.",
+    "juge": "deepseek"
+   },
+   "score": 6.999999999999999,
+   "elo": 1515.263693206478
+  },
+  {
+   "titre": "Simulation d'électrification domestique ouverte et Gamifiée",
+   "probleme": "Les ménages qui veulent passer au tout-électrique (pompe à chaleur, voiture, induction) n'ont aucun outil fiable pour simuler leur courbe de charge et leur facture réelle, et la tendance « électrifier pourrait diviser la consommation mondiale par deux » reste inaccessible au grand public.",
+   "pour_qui": "Propriétaires en rénovation énergétique et futurs acheteurs de VE, dans les 12-36 mois avant l'explosion de la demande de pilotage domestique.",
+   "valeur_societale": "Accélérer une électrification intelligente (moins de pic réseau, plus de renouvelable absorbée) au lieu d'une électrification chaotique.",
+   "comment": "Agents qui génèrent, à partir d'une description libre du logement (texte, pas de donnée sensible), un profil horaire de consommation simulé sur 12 mois avec Open-Meteo (degrés-jours, production PV théorique) et un plan de passage au tout-électrique étape par étape, livré par e-mail sous 24 h.",
+   "pourquoi_maintenant": "Les prix de l'énergie et la sortie du fioul/gaz rendent la question pressante pour des millions de foyers dès 2025-2027, et les prévisions météo horaires open source rendent la simulation précise et gratuite à produire.",
+   "pourquoi_nous": "Une organisation d'agents peut lancer la simulation complexe et se retrancher sans commercial, là où les énergéticiens vendent la leur à des industriels et pas au ménage lambda.",
+   "modele_revenu": "Simulation de base gratuite (boucle d'acquisition), plan détaillé personnalisé 19 €, puis affiliation transparente sur équipements sobres.",
+   "premier_test": "Page « Le tout-électrique en 12 mois : ta feuille de route » ; 30 simulations gratuites offertes la semaine 1 contre partage, puis activation du paiement ; mesurer la conversion sur 2 semaines.",
+   "audace": 8,
+   "lentille": "signal-faible",
+   "cerveau": "glm",
+   "sources": [
+    "open-meteo",
+    "hvd-ue"
+   ],
+   "id": "i0019",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 8,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "faisabilite": 7,
+    "conforme": true,
+    "objection": "Faible barrière à l'entrée : un concurrent peut reproduire le service avec un LLM et une API météo gratuite, rendant la différenciation difficile.",
+    "amelioration": "Intégrer un module de calibration basé sur les factures réelles (upload anonymisé) et créer une communauté d'utilisateurs partageant leurs courbes de charge pour enrichir le modèle et verrouiller l'avantage réseau.",
+    "juge": "deepseek"
+   },
+   "score": 6.95,
+   "elo": 1500
+  },
+  {
+   "titre": "Le Score-Caducée : noter les notices de médicaments en risque de rappel, en direct",
+   "probleme": "Les laboratoires et pharmacies n'ont aucune visibilité en temps réel sur les effets indésirables qui se cumulent autour d'une molécule avant que l'agence ne déclenche un rappel officiel, trop tard pour protéger les patients.",
+   "pour_qui": "Pharmacies indépendantes, établissements de santé, distributeurs en ligne.",
+   "valeur_societale": "Détecter la dérive d'un produit dangereux des semaines avant l'alerte publique, au moment où des centaines d'achats peuvent encore être bloqués.",
+   "comment": "Croiser openFDA et la base EMA (signaux d'effets indésirables) avec RappelConso et Safety Gate (signaux de rappels déjà confirmés) pour entraîner un score prédictif de risque de rappel par produit, publié sur une page publique consultable sans appel.",
+   "pourquoi_maintenant": "Safety Gate alimente les rappels européens au jour le jour et openFDA a doublé ses volumes de données ; jamais ces deux flux n'ont été mis en regard automatiquement.",
+   "pourquoi_nous": "Des agents IA capables de normaliser des vocabulaires réglementaires hétérogènes (ATC, CIOMS, codes RappelConso) en continu, sans équipe de data-scientists.",
+   "modele_revenu": "Abonnement mensuel par établissement (à partir de 49 €/mois) via inscription en ligne, plus un widget gratuit viral.",
+   "premier_test": "Publier en 2 semaines une page publique « 50 produits les plus proches d'un rappel cette semaine » et vendre 3 abonnements à des pharmacies indépendantes contactées par e-mail.",
+   "audace": 8,
+   "lentille": "collision-api",
+   "cerveau": "mimo",
+   "sources": [
+    "rappel-conso",
+    "openfda"
+   ],
+   "id": "i0025",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 7,
+    "avantage_agents": 8,
+    "defensibilite": 4,
+    "argent_rapide": 3,
+    "faisabilite": 6,
+    "conforme": true,
+    "objection": "Un score prédictif de dangerosité de médicaments, même agrégé, touche à la pharmacovigilance : un faux signal publié publiquement peut nuire à un laboratoire (diffamation commerciale) ou faussement rassurer sur un produit risqué, et la frontière avec le dispositif médical réglementé (MDR) est floue. De plus, les données sources sont publiques : un concurrent (ou l'IA gratuite de demain) peut reconstruire le score en un week-end, et des pharmacies indépendantes n'achèteront pas 49 €/mois un abonnement par simple e-mail sans preuve d'exactitude passée.",
+    "amelioration": "Repositionner le score comme un simple « indice d'attention réglementaire » factuel et sourcé (comptage des signaux publics, jamais de jugement de dangerosité), avec un historique public vérifiable : chaque prédiction passée affichée avec son issue réelle (rappel confirmé ou non). Cette transparence crée la confiance et la défensibilité (track record impossible à copier sans historique), réduit le risque juridique, et permet de vendre d'abord un widget d'affiliation/veille gratuit aux pharmaciens via leurs groupes Facebook pro, puis l'abonnement aux distributeurs en ligne qui, eux, ont un vrai enjeu financier (retirer un lot avant rappel = économies mesurables).",
+    "juge": "glm"
+   },
+   "score": 6,
+   "elo": 1500
+  },
+  {
+   "titre": "Synthése statistique sur mésure",
+   "probleme": "Les données publiques (Eurostat, OCDE) sont imenses et complexes : un élu local ne peut pas les exploiter pour compárer sa ville avec d’autrès.",
+   "pour_qui": "Maires de comùunes moyénnes, assoçiations locales, journalistes de proximité.",
+   "valeur_societale": null,
+   "comment": "Agént qui collecte, nettoie et croise les statistiiques (chômage, démographie, etc.) pour gẹnérer un rapport en langage clair, actualisé automatiquement.",
+   "pourquoi_maintenant": "Généralisation des données ouvertes mais encore très andrộtes pied ; forte demànde de transparance locale.",
+   "pourquoi_nous": "Seul un agent peut lire et croiser des milliers de tableaux Excel/CSV chaque jour sans erreur.",
+   "modele_revenu": "Paiement par rapport (50–100 €) ou forfait trimestriel pour une ville ou une association.",
+   "premier_test": "Proposer à une mairie de moins de 10 000 habitants un rapport gratuit sur sa démographie, puis lui soumettre un devis de 60 € pour un tableaud de bord mensuel.",
+   "audace": 6,
+   "lentille": "travail-invisible",
+   "cerveau": "deepseek",
+   "sources": [
+    "github",
+    "eurostat"
+   ],
+   "id": "i0014",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 5,
+    "avantage_agents": 8,
+    "defensibilite": 4,
+    "argent_rapide": 4,
+    "faisabilite": 8,
+    "conforme": true,
+    "objection": "Les données sources sont publiques et gratuites : dès qu'un GPT généraliste sait interroger Eurostat, le rapport perd toute valeur perçue ; et vendre à des mairies sans appel téléphonique est très lent (achats publics, inertie), le test 'gratuit puis devis 60 €' risque de ne convertir personne sous 30 jours.",
+    "amelioration": "Cesser de vendre un rapport ponctuel et vendre un abonnement 'observatoire territorial clé en main' : page web blanchable par commune, mise à jour continue, comparaison automatique avec les villes jumelles, et diffusion via les réseaux existants (intercommunalités, fédérations d'associations, newsletters de journalistes locaux) plutôt que démarchage mairie par mairie — la défensibilité vient alors du flux actualisé et du réseau, pas du PDF.",
+    "juge": "glm"
+   },
+   "score": 5.949999999999999,
+   "elo": 1500
+  },
+  {
+   "titre": "L’atlas à contre-courant",
+   "probleme": "Les tableaux statistiques montrent ce qui existe déjà ; ils rarely montrent comment un territoire pourrait changer si une règle, un budget ou un service fonctionnait autrement.",
+   "pour_qui": "Les citoyens, élèves, associations et élus locaux qui veulent explorer des scénarios territoriaux avant une décision.",
+   "valeur_societale": "L’atlas rend les hypothèses visibles, confronte les modèles existants et ouvre la discussion à des trajectoires non verbales dominantes.",
+   "comment": "L’utilisateur choisit un indicateur et une contrainte réelle, puis l’IA simule plusieurs trajectoires avec les données publiques et des hypothèses explicites. Chaque scénario affiche ses sources, ses incertitudes et ses effets possibles, sans prétendre prévoir.",
+   "pourquoi_maintenant": "Les recherches sur les représentations spatiales des modèles visuels indiquent une capacité croissante à relier images, lieux et contexte, ce qui rend crédible une couche visuelle et cartographique des données.",
+   "pourquoi_nous": "Nous pouvonsüllir directement sur les sources fournies et produire un produit grand public distinct des outils dheatmap et des consultants, avec un coût marginal très faible.",
+   "modele_revenu": "Version gratuite limitée à un scénario, puis abonnement à 6 euros par mois pour les simulations illimitées, l’export et l’archivage.",
+   "premier_test": "Publier un prototype comparant trois scénarios de mobility-framework pour une ville, enforceable auprès de 150 testers, et obtenir 20 abonnements payants sous deux semaines.",
+   "audace": 9,
+   "lentille": "inversion",
+   "cerveau": "minimax",
+   "sources": [
+    "eurostat",
+    "eurlex"
+   ],
+   "id": "i0024",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 6,
+    "avantage_agents": 7,
+    "defensibilite": 3,
+    "argent_rapide": 2,
+    "faisabilite": 5,
+    "conforme": true,
+    "objection": "Le premier paiement en 30 jours est très improbable : personne ne passe de la curiosité à un abonnement de 6 €/mois en 2 semaines pour un prototype de scénarios territoriaux, et la défensibilité est quasi nulle puisque les données sont publiques et l'IA grand public produira des choses similaires gratuitement.",
+    "amelioration": "Remplacer l'abonnement grand public par des packs thématiques 'atlas d'un territoire' vendus à l'unité (15-30 €) aux associations et collectifs citoyens qui en font un argument dans leurs campagnes — ou prévendre un atlas financé via une page de dons/partenariat citoyen — pour transformer un gadget en objet de mobilisation avec une communauté propriétaire.",
+    "juge": "glm"
+   },
+   "score": 5.25,
+   "elo": 1500
+  },
+  {
+   "titre": "Adventures Temporelles",
+   "probleme": "Les créateurs de contenu cherchent des idées pour des histoires immersives et historiques.",
+   "pour_qui": "Les créateurs de contenu numérique, YouTubers, et podcasters.",
+   "valeur_societale": "Fournir des idées créatives et fiables pour des histoires captivantes basées sur des événements historiques.",
+   "comment": "Créer une plateforme qui génère des scénarii pour des vidéos ou podcasts, utilisant des descriptions et des objets interdi des livres historiques et des rapels de produits dangereux pour ajouter un contexte unique à des récits de fiction.",
+   "pourquoi_maintenant": "La demande croissante pour des contenus interactifs et immersifs dans le domaine du divertissement.",
+   "pourquoi_nous": "Une IA peut analyser rapidement des millions de documents pour des idées créatives et fiables.",
+   "modele_revenu": "Vente de scénarios personnalisés.",
+   "premier_test": "Créer 5 scénarios et les vendre à 1€99 pour un événement en ligne organisé sur les réseaux sociaux.",
+   "audace": 9,
+   "lentille": "collision-api",
+   "cerveau": "mistral",
+   "sources": [
+    "gutenberg",
+    "rappel-conso"
+   ],
+   "id": "i0060",
+   "critique": {
+    "valeur_societale": 4,
+    "originalite": 3,
+    "avantage_agents": 6,
+    "defensibilite": 2,
+    "argent_rapide": 3,
+    "faisabilite": 6,
+    "conforme": true,
+    "objection": "Le positionnement est flou et le mélange 'rappel-conso + livres historiques' est incohérent : les créateurs historiques n'ont aucun besoin de rappels produits, et des scénarios à 1€99 vendus via un 'événement en ligne' vague ne généreront rien. Surtout, un assistant IA gratuit peut déjà générer des idées d'histoires historiques : la valeur perçue est quasi nulle.",
+    "amelioration": "Se recentrer sur une niche précise : générer des packs d'épisodes documentés (timeline vérifiée, sources Gutenberg citées, angles narratifs, hooks) pour podcasteurs d'histoire vraie, vendus par abonnement sur Gumroad. La défensibilité vient de la vérification des sources et de la profondeur documentaire — pas de l'idée brute — et le premier euro peut venir d'un pack '10 épisodes prêts à tourner' à 19€ posté dans des communautés de créateurs.",
+    "juge": "glm"
+   },
+   "score": 3.85,
+   "elo": 1484.736306793522
+  },
+  {
+   "titre": "Utopie Factory : transformer les scénarios impossibles enxpérience",
+   "probleme": "Les forecasts publiques sur les transitions énergétiques, les migrations ou l’IA sont souvent des documents opaques, difficiles à manipuler et rarement reliés à l’histoire.",
+   "pour_qui": "Élèves, étudiants,Citizens associations, Reveres de politiques publiques et Outsiders.",
+   "valeur_societale": "L’outil rend l’incertitude explorable par l’expérience plutôt que par la宣传, et confronte chaque scénario à des sources historiques sans pretended prédiction.",
+   "comment": "Un moteur d’agents simule des centaines de futurs à partir de règles explicites sur la substitution et la complémentarité, puis les publie sous forme de récits, cartes et games branchés issus du domaine public.",
+   "pourquoi_maintenant": "Les recherches sur les substituts et les complements convergence avec la capacité des agents à construire des scénarios interactifs, ouvrant un produit pédagogique encore inexistant à cette échelle.",
+   "pourquoi_nous": "Notre Agrément vient de l’orchestration : des milliers de scénarios peuvent être générés, testés et documentés en parallèle, avec une cohérence historique et une traçabilité rarement obtenues.",
+   "modele_revenu": "Accès gratuit à un scénario, puis abonnement à 5 euros par mois et vente d’exercices工作组 pour groupes éducatifs.",
+   "premier_test": "En deux semaines, lancer un scénario gratuit sur les transports、食品 et l’énergie, mesurer sa complétion et demander un accès à 5 euros par mois aux 30 premiers participants volontaires.",
+   "audace": 8,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "minimax",
+   "sources": [
+    "gdelt",
+    "gutenberg"
+   ],
+   "id": "i0032",
+   "critique": {
+    "valeur_societale": 6,
+    "originalite": 7,
+    "avantage_agents": 7,
+    "defensibilite": 3,
+    "argent_rapide": 3,
+    "faisabilite": 4,
+    "conforme": true,
+    "objection": "Le public est flou (élèves, associations, curieux ?), le premier test n'a aucun canal de distribution identifié et l'abonnement à 5 € pour des récits génératifs est très faible face à un assistant gratuit qui peut improviser un scénario interactif sur demande ; la défensibilité repose sur des sources publiques (GDELT, Gutenberg) copiables par tous.",
+    "amelioration": "Cibler UN acheteur précis — enseignants de SES/histoire-géo — et vendre des packs de scénarios prêts à l'emploi alignés sur le programme (fiches + jeu de branches + corrigés) à 19–29 € l'unité sur une place de marché éducative, avec la base de scénarios tracée et vérifiables comme actif accumulé plutôt qu'un abonnement grand public.",
+    "juge": "glm"
+   },
+   "score": 5.250000000000001,
+   "elo": 1484
+  },
+  {
+   "titre": "RappelCarto : la carte vivante des produits dangereux autour de chez vous",
+   "probleme": "Les rappels sont diffusés en liste textuelle illisible sur des sites officiels ; personne ne sait quel produit dangereux est vendu dans son quartier, ses marchés, ses friperies.",
+   "pour_qui": "Consommateurs citoyens, associations locales de protection, collectivités.",
+   "valeur_societale": "Rendre visible et géolocalisable l'information de sécurité publique, la sortie des listes et l'entrée dans le réel quotidien.",
+   "comment": "Croiser les rappels Safety Gate/RappelConso avec les catalogues ouverts de commerce local (fichiers open data des commerce, APIs de marketplaces) pour cartographier quels établissements vendent encore un produit rappelé.",
+   "pourquoi_maintenant": "Les deux flux sont publiques, gratuits et horodatés ; aucune cartographie croisée n'existe en France aujourd'hui.",
+   "pourquoi_nous": "Des agents qui relèvent et rapprochent en continu des milliers de fiches produits et de catalogues sans intervention humaine, avec un coût d'infrastructure quasi nul.",
+   "modele_revenu": "Freemium : cartographie gratuite, abonnement « quartier » à 3 €/mois pour les alertes push, partenariats avec marques conscientes de leur réputation.",
+   "premier_test": "Lancer la carte sur 3 villes pilotes et faire payer 20 abonnements mensuels de 3 € sous 2 semaines via une landing page.",
+   "audace": 7,
+   "lentille": "collision-api",
+   "cerveau": "mimo",
+   "sources": [
+    "rappel-conso",
+    "openfda"
+   ],
+   "id": "i0026",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 8,
+    "defensibilite": 4,
+    "argent_rapide": 3,
+    "faisabilite": 5,
+    "conforme": true,
+    "objection": "Le croisement est fragile : les catalogues open data de commerce local ne disent pas ce qu'un magasin précis a en stock ni en lots (dates, numéros de lot) — la cartographie risque d'être fausse ou vide, et une fausse alerte « produit dangereux chez ce commerçant » est juridiquement risquée (diffamation commerciale). À cela s'ajoute que 60 € de revenus en 2 semaines ne couvre même pas l'hébergement, et qu'un grand media ou un rappelConso amélioré peut répliquer l'idée en un week-end.",
+    "amelioration": "Inverser la promesse : au lieu de pointer des magasins (invérifiable), devenir l'agrégateur-alerte par produit et par code-barres — l'utilisateur scanne ou suit une catégorie, l'agent IA surveille en continu Safety Gate + RappelConso + notices, et pousse une alerte datée, sourcée, horodatée, avec lien officiel. Ça supprime le risque juridique, rend les données propres défendables (historique des alertes,base croisée unique), rend l'abonnement 3€ crédible (« on veille pour vous 24/7 »), et se teste en 2 semaines sur une seule catégorie à risque (jouets, cosmétiques) via une landing page + newsletter.",
+    "juge": "glm"
+   },
+   "score": 6.15,
+   "elo": 1468.736306793522
+  }
+ ],
+ "parLentille": {
+  "collision-api": {
+   "idees": 12,
+   "notees": 4,
+   "scoreMoyen": 5.74,
+   "finalistes": 4
+  },
+  "bien-commun": {
+   "idees": 8,
+   "notees": 0,
+   "scoreMoyen": null,
+   "finalistes": 0
+  },
+  "cimetiere": {
+   "idees": 8,
+   "notees": 1,
+   "scoreMoyen": 7,
+   "finalistes": 1
+  },
+  "travail-invisible": {
+   "idees": 4,
+   "notees": 1,
+   "scoreMoyen": 5.95,
+   "finalistes": 1
+  },
+  "signal-faible": {
+   "idees": 8,
+   "notees": 1,
+   "scoreMoyen": 6.95,
+   "finalistes": 1
+  },
+  "inversion": {
+   "idees": 4,
+   "notees": 1,
+   "scoreMoyen": 5.25,
+   "finalistes": 1
+  },
+  "super-pouvoir-agent": {
+   "idees": 8,
+   "notees": 2,
+   "scoreMoyen": 6.3,
+   "finalistes": 2
+  },
+  "luxe-democratise": {
+   "idees": 4,
+   "notees": 0,
+   "scoreMoyen": null,
+   "finalistes": 0
+  },
+  "futur-a-rebours": {
+   "idees": 4,
+   "notees": 0,
+   "scoreMoyen": null,
+   "finalistes": 0
+  },
+  "transplant": {
+   "idees": 4,
+   "notees": 0,
+   "scoreMoyen": null,
+   "finalistes": 0
+  }
+ },
+ "graines": [
+  {
+   "titre": "Cartographie satellite du miel et des huiles suspects",
+   "comment": "Croiser Open Food Facts (origine déclarée, ingrédients) avec Copernicus : détection des surfaces de tournesols, oliveraies et ruches dans les régions d'origine déclarées ; si un pays ne cultive pas assez pour ses volumes exportés, alerte d'incohérence publique.",
+   "amelioration": "Remplacer la détection des ruches par l'analyse des flux commerciaux et des données douanières croisées avec les surfaces agricoles visibles (oliveraies, tournesols), et intégrer des bases de données de miel authentifié par ADN (ex. FoodAuthent) pour réduire les faux positifs."
+  },
+  {
+   "titre": "Chroniqueur automatique des rappels du quotidien",
+   "comment": "Des agents IA tiennent 24h/24 une base « casier judiciaire » de chaque marque (rappels, Safety Gate, sanctions), génèrent une chronique quotidienne publiée et vendue en flux payant.",
+   "amelioration": "Cibler directement le consommateur via une extension navigateur qui croise ses achats avec les rappels, et monétiser par un abonnement individuel à 1€/mois avec notification personnalisée."
+  },
+  {
+   "titre": "Micro-assurance récolte déclenchée par le satellite",
+   "comment": "Les agents croisent les images Sentinel avec la météo, la topographie et les calendriers culturaux, puis déclenchent une indemnisation paramétrique selon des seuils préétablis et vérifiables.",
+   "amelioration": "Proposer un service de scoring de risque climatique en marque blanche pour coopératives, sans assumer le risque d'assurance, avec une preuve de concept gratuite sur une saison."
+  },
+  {
+   "titre": "Simulation d'électrification domestique ouverte et Gamifiée",
+   "comment": "Agents qui génèrent, à partir d'une description libre du logement (texte, pas de donnée sensible), un profil horaire de consommation simulé sur 12 mois avec Open-Meteo (degrés-jours, production PV théorique) et un plan de passage au tout-électrique étape par étape, livré par e-mail sous 24 h.",
+   "amelioration": "Intégrer un module de calibration basé sur les factures réelles (upload anonymisé) et créer une communauté d'utilisateurs partageant leurs courbes de charge pour enrichir le modèle et verrouiller l'avantage réseau."
+  },
+  {
+   "titre": "Le Score-Caducée : noter les notices de médicaments en risque de rappel, en direct",
+   "comment": "Croiser openFDA et la base EMA (signaux d'effets indésirables) avec RappelConso et Safety Gate (signaux de rappels déjà confirmés) pour entraîner un score prédictif de risque de rappel par produit, publié sur une page publique consultable sans appel.",
+   "amelioration": "Repositionner le score comme un simple « indice d'attention réglementaire » factuel et sourcé (comptage des signaux publics, jamais de jugement de dangerosité), avec un historique public vérifiable : chaque prédiction passée affichée avec son issue réelle (rappel confirmé ou non). Cette transparence crée la confiance et la défensibilité (track record impossible à copier sans historique), réduit le risque juridique, et permet de vendre d'abord un widget d'affiliation/veille gratuit aux pharmaciens via leurs groupes Facebook pro, puis l'abonnement aux distributeurs en ligne qui, eux, ont un vrai enjeu financier (retirer un lot avant rappel = économies mesurables)."
+  }
+ ],
+ "duels": [
+  {
+   "ronde": 1,
+   "a": "i0032",
+   "b": "i0001",
+   "gagnant": "i0001",
+   "juge": "glm",
+   "raison": "A cible une fraude documentée avec des données publiques vérifiables, un test viral concret et un revenu rapide, tandis que B souffre d'un public flou, d'une défensibilité quasi nulle face aux LLM gratuits et d'un canal de distribution inexistant."
+  },
+  {
+   "ronde": 2,
+   "a": "i0051",
+   "b": "i0026",
+   "gagnant": "i0051",
+   "juge": "glm",
+   "raison": "A exploite des données publiques fiables sans risque juridique de fausse accusation, avec un avantage agents réel (veille 24h/24, base historique cumulative défendable) et un test de monétisation crédible, là où B repose sur un croisement de données inexistant et juridiquement dangereux."
+  },
+  {
+   "ronde": 3,
+   "a": "i0001",
+   "b": "i0060",
+   "gagnant": "i0001",
+   "juge": "glm",
+   "raison": "A cible une fraude réelle et documentée avec des données publiques existantes, un rapport viral comme premier encaissement et une défensibilité par la donnée croisée, tandis que B est un assistant d'idées générique sans valeur perçue face aux IA gratuites."
+  },
+  {
+   "ronde": 3,
+   "a": "i0026",
+   "b": "i0010",
+   "gagnant": "i0010",
+   "juge": "glm",
+   "raison": "Malgré l'agrément d'assurance nécessaire, l'assurance paramétrique satellitaire offre une valeur sociétale forte, une défensibilité réelle (données et partenariats) et un potentiel de grande envergure, là où RappelCarto repose sur des données de stock inexistantes et un risque juridique de fausses alertes qui la rend quasi infaisable telle quelle."
+  }
+ ],
+ "idees": [
+  {
+   "titre": "Cartographie satellite du miel et des huiles suspects",
+   "probleme": "Le miel et les huiles d'olive sont parmi les produits les plus falsifiés d'Europe, et les consommateurs n'ont aucun moyen de vérifier la cohérence entre l'origine déclarée sur l'étiquette et la réalité agricole.",
+   "pour_qui": "Militants de la consommation honnête, apiculteurs et producteurs authentiques, médias de consommation.",
+   "valeur_societale": "Défendre les petits producteurs honnêtes contre la fraude agroalimentaire, un fléau qui détruit des filières entières.",
+   "comment": "Croiser Open Food Facts (origine déclarée, ingrédients) avec Copernicus : détection des surfaces de tournesols, oliveraies et ruches dans les régions d'origine déclarées ; si un pays ne cultive pas assez pour ses volumes exportés, alerte d'incohérence publique.",
+   "pourquoi_maintenant": "La fraude au miel est révélée publiquement en 2023-2024 et la confiance des consommateurs est au plus bas, avec une demande d'outils de vérification indépendants.",
+   "pourquoi_nous": "Seule une organisation d'agents IA peut traiter en continu des millions de produits et des milliers d'images satellites pour tenir une base d'incohérences à jour, sans budget humain.",
+   "modele_revenu": "Abonnement 5€/mois pour l'app de vérification grand public, et licence des rapports d'incohérences par filière pour associations et médias.",
+   "premier_test": "Publier gratuitement un rapport viral sur les incohérences miel/huile d'un pays précis, avec une page de don ou prévente d'abonnement 3€ encaissé via Gumroad.",
+   "audace": 9,
+   "lentille": "collision-api",
+   "cerveau": "glm",
+   "sources": [
+    "off",
+    "copernicus"
+   ],
+   "id": "i0001",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "faisabilite": 6,
+    "conforme": true,
+    "objection": "La détection des ruches par satellite est irréaliste (elles sont trop petites), et les données Open Food Facts sont imprécises, ce qui risque de produire des alertes fausses ou inexploitables.",
+    "amelioration": "Remplacer la détection des ruches par l'analyse des flux commerciaux et des données douanières croisées avec les surfaces agricoles visibles (oliveraies, tournesols), et intégrer des bases de données de miel authentifié par ADN (ex. FoodAuthent) pour réduire les faux positifs.",
+    "juge": "deepseek"
+   },
+   "score": 6.949999999999999,
+   "elo": 1531.263693206478
+  },
+  {
+   "titre": "Jumeau numérique de mon assiette",
+   "probleme": "Personne ne sait de quoi son alimentation habituelle est réellement faite au niveau régional : pesticides émis près des cultures, sécheresses affectant les ingrédients, émissions agricoles.",
+   "pour_qui": "Citoyens soucieux de leur empreinte réelle, parents, enseignants, créateurs de contenu engagés.",
+   "valeur_societale": "Rendre tangible le lien entre ce qu'on mange et les territoires agricoles européens, pour des choix alimentaires éclairés collectivement.",
+   "comment": "Scanner un produit via Open Food Facts, l'agent le décompose en ingrédients, les géolocalise avec Copernicus (surfaces cultivées, stress hydrique, indices de végétation), et génère une carte narrative personnalisée de son assiette, partageable.",
+   "pourquoi_maintenant": "Sentinel-2 livre des images quasi hebdomadaires exploitables et l'assiette carbone est devenue un sujet grand public post-étiquetage environnemental.",
+   "pourquoi_nous": "Le croisement automatique code-barres → ingrédients → géolocalisation → imagerie satellite est un pipeline d'agents IA pur, économiquement impossible à faire à la main.",
+   "modele_revenu": "Freemium : 3 cartes gratuites, puis 4€/mois ou 29€/an pour cartes illimitées et historique d'impact.",
+   "premier_test": "Site web où l'on saisit son alimentation type de la semaine et paie 2€ pour recevoir sa « carte d'assiette » personnalisée et partageable.",
+   "audace": 7,
+   "lentille": "collision-api",
+   "cerveau": "glm",
+   "sources": [
+    "off",
+    "copernicus"
+   ],
+   "id": "i0002",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Alerte ingrédient-climat",
+   "probleme": "Sécheresses, gel et canicules détruisent chaque année des récoltes de base (amandes, cacao, blé, tomates), et les consommateurs n'apprennent la pénurie qu'au moment de la flambée des prix.",
+   "pour_qui": "Familles à budget serré, cuisiniers amateurs, petites épiceries et boulangeries indépendantes.",
+   "valeur_societale": "Redonner de l'anticipation aux ménages modestes face à l'inflation alimentaire climatique, au lieu de la subir.",
+   "comment": "Les agents surveillent Copernicus (indices de végétation, sécheresse, neige) sur les zones de production clés, croisent avec les produits Open Food Facts contenant ces ingrédients, et envoient une alerte « ce produit va renchérir, voici les alternatives au même Nutri-Score ».",
+   "pourquoi_maintenant": "Les chocs climatiques sur les récoltes se multiplient (cacao, huile d'olive) et chaque épipse fait la une, créant une demande d'alerte anticipée.",
+   "pourquoi_nous": "Surveillance satellite continue multi-cultures multi-pays + analyse de composition de millions de produits : seule une flotte d'agents IA peut le faire à coût quasi nul.",
+   "modele_revenu": "Abonnement 3€/mois par e-mail ou notification, version communautaire à 29€/an pour épiceries.",
+   "premier_test": "Newsletter payante 1€/mois lancée sur une seule alerte réelle (ex : cacao) diffusée dans des communautés anti-inflation sur Reddit et forums de parents.",
+   "audace": 6,
+   "lentille": "collision-api",
+   "cerveau": "glm",
+   "sources": [
+    "off",
+    "copernicus"
+   ],
+   "id": "i0003",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Verdict du terroir : certification d'origine vérifiée par satellite",
+   "probleme": "Les allégations « origine France », « montagne » ou « produits de nos régions » ne sont jamais vérifiées indépendamment au niveau du produit, seulement des filières entières.",
+   "pour_qui": "Petites marques agroalimentaires et cosmétiques honnêtes qui veulent le prouver, et consommateurs sceptiques face au greenwashing.",
+   "valeur_societale": "Récompenser la sincérité des marques et rendre le greenwashing d'origine vérifiable par tous, gratuitement côté consommateur.",
+   "comment": "Une marque déclare l'aire de production de ses matières premières ; les agents IA vérifient via Copernicus que les cultures correspondantes existent bien avec une surface cohérente aux volumes vendus, et attribuent un « sceau vérifié-satellite » public, référencé côté consommateur via les données Open Food Facts / Beauty Facts.",
+   "pourquoi_maintenant": "La réglementation européenne contre le greenwashing durcit en 2024-2026, les marques cherchent des preuves tierces abordables pour les PME.",
+   "pourquoi_nous": "Une équipe humaine facturerait des audits ; nos agents vérifient en continu pour quelques centimes, rendant la preuve accessible aux marques de 5 personnes, pas seulement aux multinationales.",
+   "modele_revenu": "Abonnement de 39€/mois par marque pour le sceau et le monitoring, côté consommateur gratuit pour l'effet de réseau.",
+   "premier_test": "Vérifier bénévolement 3 petites marques cosmétiques trouvées sur Open Beauty Facts, leur proposer le sceau + badge web à 29€/mois, encaisser via page de paiement sans contact.",
+   "audace": 8,
+   "lentille": "collision-api",
+   "cerveau": "glm",
+   "sources": [
+    "off",
+    "copernicus"
+   ],
+   "id": "i0004",
+   "critique": {
+    "0": "off",
+    "1": "copernicus",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Marché public en langage clair",
+   "probleme": "De nombreuses entreprises associations et indépendants découvrent les marchés publics trop tard, mientras que des millions d’euros sont adjugés chaque année en Europe.",
+   "pour_qui": "Petites structures realistically candidates aux marchés publics, notamment dans la culture, le numérique responsable et la transition écologique.",
+   "valeur_societale": "Le service rend l’accès aux contrats publics moins dépendant du réseau et desostomyités, sans remplacer les seront l象牙orum Adjustment des marchés publics.",
+   "comment": "Les annonces publiques sont nettoyées, classées et traduites avec des modèles ouverts, puis chaque abstract peut être vérifié en moins de dix minutes via une carte de recherche sur le web.",
+   "pourquoi_maintenant": "Les données de TED et BOAMP sont plus accessibles que jamais, tandis que les agents IA peuvent structurer et expliquer les documents à faible coût.",
+   "pourquoi_nous": "Nous 결합ons une infrastructure de données ouvertes avec une évaluation mensuelle de la qualité du service par les abonnés.",
+   "modele_revenu": "Abonnement à 19 euros par mois, tarif dégressif pour les associations et vente de données agrégées anonymisées aux Wolverine organisations.",
+   "premier_test": "En deux semaines, publier gratuitement vingt marchés français et européens filtrés, puis ouvrir trois prépaiements payants à 49 euros pour un accès mensuel.",
+   "audace": 8,
+   "lentille": "bien-commun",
+   "cerveau": "minimax",
+   "sources": [
+    "hf",
+    "ted"
+   ],
+   "id": "i0005",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Mémoire saine des Prescription financières",
+   "probleme": "Les personnes subjectivity qui vivent avec une maladie chronique ou un handicap ont souvent de multiples documents médicaux dispersés et peinent à expliquer leur parcours aux services concernés.",
+   "pour_qui": "Adultes场比赛 en situation de Deux степени de vie quotidienne disclosures,encers et aidants, avec le consentement des personnes concernées.",
+   "valeur_societale": "Le produit réduit la charge administrative et favorise l’autonomie sans établir de diagnostic ni donner de conseil médical personnalisé.",
+   "comment": "Une application permet de classer, résumer et dater les documents avec un modèle local, puis de produire un dossieruge à partager volontairement avec un professionnel.",
+   "pourquoi_maintenant": "Les modèles ouverts de vision et de documentos permettent une extraction respectueuse de la vie privée, et lshares attention grandit vers l’autonomie healthcare.",
+   "pourquoi_nous": "Nous maîtrisons le traitement confidentiel et la traçabilité tout en exploitant des briques ouvertes plutôt qu’un modèle propriétaire unique.",
+   "modele_revenu": "Abonnement mensuel de 4,99 euros et option familiale à 7,99 euros, avec un accès gratuit limité pour les associations djective aux patients.",
+   "premier_test": "Tester sur trente volontaires avec leurs propres documents, puis proposer un abonnement annuel prépayé à 29 euros à cent personnes recruited par des associations.",
+   "audace": 8,
+   "lentille": "bien-commun",
+   "cerveau": "minimax",
+   "sources": [
+    "hf",
+    "ted"
+   ],
+   "id": "i0006",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "VeilleCitizens du vivant",
+   "probleme": "Les associations de protection de la biodiversité collectent des observations utiles mais追星 peu de données comparables, ce qui limite leur visibilité auprès du public et des financeurs.",
+   "pour_qui": "Associationsnaturalistes,arring naturalist citizen clubs et petits projets de restauration d’habitats.",
+   "valeur_societale": "Le service transforme une multitude d’observations locales en preuves collectives utiles à la conservation, sans exploité localiser les espèces rares.",
+   "comment": "Une application open source transforme les photos, le son et les coordonnées en observations validées; les données sensibles restent masquées par défaut.",
+   "pourquoi_maintenant": "Les modèles multimodaux ouverts, les bases naturalistes ouvertes et le financement de la biodiversité créent une fenêtre pour une infrastructure indépendante.",
+   "pourquoi_nous": "Nous avons la capacité de construire une couche de confiance décentralisée combinant IA, science participative et contrôle humain.",
+   "modele_revenu": "Abonnement de 9 euros par mois aux groupes, contributions自愿 de 20 euros pour une carte de synthèse et partenariats institutionnels pour des増強 fonctionalités.",
+   "premier_test": "Pendant deux semaines, accompany er trois associations pouritempty trente observations géolocalisées, puis vendre un accès premium à 99 euros par association.",
+   "audace": 9,
+   "lentille": "bien-commun",
+   "cerveau": "minimax",
+   "sources": [
+    "hf",
+    "ted"
+   ],
+   "id": "i0007",
+   "critique": {
+    "0": "hf",
+    "1": "ted",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Agora des décisions prévisibles",
+   "probleme": "Les citizen consultations.Collectivesstatt les décisions locales, mais les participants ignorent souvent l’effet réel de leur participation et les élus manquent d’un retour structuré sur les acceptabilités.",
+   "pour_qui": "Habitants, módérateurs de_panel citoyens et élus de petites communesayes Wanting des consultations inclusives et traçables.",
+   "valeur_societale": "L’outil rend la deliberazione collective plus honnête et accessible, en distinguant clairement préférences individuelles, Waxed majorités et conséquences attendues.",
+   "comment": "Une plateforme abierta permet de soumettre des options, de tester les scénarios avec un modèle calibré et de publier une synthèse des désaccords sans résultats manipulés.",
+   "pourquoi_maintenant": "Les recherches sur les marchés prédictifs indiquent que les objectifs des participants sont souvent surestimés, creating an opportunity for transparent collective calibration.",
+   "pourquoi_nous": "Nous aggregons des outils ouverts de prédiction, de visualisation et de facilitation pour rendre le processus utilisable sans obliger chaque commune à le construire.",
+   "modele_revenu": "Abonnement de 39 euros par mois aux modérateurs et licence annuelle à 490 euros pour les collectivités, avec une consultation gratuite par mois pour les groupes citoyens.",
+   "premier_test": "Animer deux consultations de quartier pendant dix jours, puis convertir dix participants en membres payants à 15 euros via une page d’inscription en ligne.",
+   "audace": 9,
+   "lentille": "bien-commun",
+   "cerveau": "minimax",
+   "sources": [
+    "hf",
+    "ted"
+   ],
+   "id": "i0008",
+   "critique": {
+    "0": "hf",
+    "1": "ted",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Pacte de maintenance : les agents deviennent soignants du logiciel libre",
+   "probleme": "Des dépendances critiques, souvent sans mainteneur, cassent des services publics et des entreprises ; la surveillance manuelle des avis de sécurité est trop coûteuse à grande échelle.",
+   "pour_qui": "Bibliothèques numériques, petites entreprisesMaintaineurs open source et responsables de produits numériques.",
+   "valeur_societale": "Réduire les failles non corrigées, rémunérer les mainteneurs plutôt que de laisser la sécurité reposer sur le bénévolat, et préserver un socle logiciel commun.",
+   "comment": "Les agents analysent en continu GitHub, npm et PyPI, regroupent les vulnérabilités par chemin d’exploitation réel, génèrent des correctifs testés et ouvrent une proposition de prime automatique au mainteneur concerné.",
+   "pourquoi_maintenant": "La一般的té de l’IA agentique rend enfinumerable une vérification auparavant réservée à quelques équipes de sécurité très bien dotées.",
+   "pourquoi_nous": "Une organisation d’agents peut assembler cette chaîne complète sans service sur mesure et transformer les anomalies du registre public en travail rémunéré.",
+   "modele_revenu": "Abonnement mensuel des équipes logicielles, avec une part reversée sous conditions aux mainteneurs ayant corrigé une vulnérabilité pertinente.",
+   "premier_test": "Pendant deux semaines, publier gratuitement un bulletin sur 100 paquets sélectionnés, puis proposer à 30 mainteneurs un bouton «Arraysumer pour cette vulnérabilité » à 9 euros ; viser dix paiements avant de dépasser 300 euros de frais.",
+   "audace": 8,
+   "lentille": "cimetiere",
+   "cerveau": "minimax",
+   "sources": [
+    "github",
+    "copernicus"
+   ],
+   "id": "i0009",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Micro-assurance récolte déclenchée par le satellite",
+   "probleme": "L’assurance récolte des petits agriculteurs dépend dexpertises coûteuses, de déclarations incomplètes et de délais de paiement longs, ce qui pousse beaucoup à ne pas s’assurer.",
+   "pour_qui": "Petits producteurs, coopératives agricoles et insurersfengarant leurs原理ments.",
+   "valeur_societale": "Rendre la protection contre les aléas climatiques accessible, accélérer l’indemnisation après une sécheresse ou une inondation, et sécuriser l’approvisionnement local.",
+   "comment": "Les agents croisent les images Sentinel avec la météo, la topographie et les calendriers culturaux, puis déclenchent une indemnisation paramétrique selon des seuils préétablis et vérifiables.",
+   "pourquoi_maintenant": "L’imagerie Sentinel gratuite, la couverture satellite plus fréquente et les agents de calcul rendent viable une underwriting continue qui aurait été trop chère avant 2023.",
+   "pourquoi_nous": "L’organisation peut industrialiser l’analyse géospatiale sans mobiliser derti adjustables数据进行 surveyeurs ni专家 par dossier.",
+   "modele_revenu": "Commission sur les primes souscrites via un comparateur partenaires et API d’indemnisation en marque blanche pour assureurs et coopératives.",
+   "premier_test": "Choisir une culture et une zone pilote, rendre un calculateur public avec des données historiques, puis proposer aux dix mille producteurs d’un bassin versant un accès à 19 euros par saison avec paiement immédiat pour troisプールss，风险：risque? ",
+   "audace": 9,
+   "lentille": "cimetiere",
+   "cerveau": "minimax",
+   "sources": [
+    "github",
+    "copernicus"
+   ],
+   "id": "i0010",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 6,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 7,
+    "faisabilite": 5,
+    "conforme": true,
+    "objection": "Nécessite un agrément d'assurance et des partenariats avec des assureurs, ce qui bloque un test rapide et autonome.",
+    "amelioration": "Proposer un service de scoring de risque climatique en marque blanche pour coopératives, sans assumer le risque d'assurance, avec une preuve de concept gratuite sur une saison.",
+    "juge": "deepseek"
+   },
+   "score": 6.999999999999999,
+   "elo": 1515.263693206478
+  },
+  {
+   "titre": "Observatoire public de la concentration des médias",
+   "probleme": "Les audiences et les revenus médias deviennent dépendants de quelques plateformes, mais personne ne mesureurdéclarativement les arbitrages de visibilité, de citation et de recommandation qui renforcent cette concentration.",
+   "pour_qui": "Citoyens, journalistes, chercheurs en médias, associations et régulateurs.",
+   "valeur_societale": "Rendre visibles les asymétries d’information, documenter la diversity失踪des voix dans les systèmes d’IA et fournir un contrepoids aux black boxes médiatiques.",
+   "comment": "Les agents collectent les articles, reconstructent les chaînes de citation et de reprise, exécutent des panels reproductibles sur plusieurs moteurs et publient un indice de concentration et de dépendance, avec ses méthodes ouvertes.",
+   "pourquoi_maintenant": "Les travaux récents sur la concentrationryptiques médiatiques dans 77 pays montrent un besoin concret, tandis que les agents rendent mesurable à grande échelle ce qui exigeait auparavant des équipes de recherche pénibles.",
+   "pourquoi_nous": "La force de l’organisation réside dans l’exécution continue et vérifiable de milliers de tests, plutôt que dans un rapport manuelShapes ponctuel.",
+   "modele_revenu": "Abonnement ouvert aux organisations de taille moyenne, licence API pour les instituts de recherche et vente de données agrégées à des instituts et宫的rochers?",
+   "premier_test": "Publier en deux semaines un prototype sur trois pays et trois langues, puis charger 29 euros par mois pour recevoir l’alerte hebdomadaire et l’API brute ;lya pour dix abonnés.",
+   "audace": 7,
+   "lentille": "cimetiere",
+   "cerveau": "minimax",
+   "sources": [
+    "github",
+    "copernicus"
+   ],
+   "id": "i0011",
+   "critique": {
+    "0": "github",
+    "1": "copernicus",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Horloge de marée : prédire l’eau utile au millimètre",
+   "probleme": "Ports, exploitations ostréicoles, marais et gestionnaires côtiers(Self) pilotent leurs opérations avec des prévisions de marée très grossières, sans connaître précisément les fenêtres locales dimersniveau utile ou les risques de submersion.",
+   "pour_qui": "Ports de pêche, ostréiculteurs, gestionnaires de zones humides, collectivités côtières etResearchers environnement.",
+   "valeur_societale": "Réduire les pertes matérielles, optimiser les prélèvements sans surexploiter les milieux, et mieux coordonner lesresponses aux marées extremes et aux tempêtes.",
+   "comment": "Les agents combinent les signaux des satellites, la topographie et les données de marée pour produire, par site, des calendriers операционnels avec marges de sécurité et niveaux d’eau locaux.",
+   "pourquoi_maintenant": "La découverte d’un réseau d’horloges optiques capable de suivre les variations du potentiel de gravité rend mesurable l’effet des marées sur le terrain, alors que la résolution satellite et les modèles_available se sont améliorés depuis 2023.",
+   "pourquoi_nous": "Nous pouvons traiter en continu des milliers de sites côtiers et distribuer un produit numérique là où le travail humain de calage était auparavant rédhibitoire.",
+   "modele_revenu": "Abonnement mensuel par site aux opérateurs, licence aux plateformes de gestion portuaire et vente d’API aux assuringurs et modèles de catastrophe.",
+   "premier_test": "Couvrir gratuitement vingt sites pilotes, publier leurs calendriers et proposer un pack à 39 euros par mois aux responsables de cinq ports et exploitations ; facturer dès la première semaine pour atteindre 300 euros.",
+   "audace": 8,
+   "lentille": "cimetiere",
+   "cerveau": "minimax",
+   "sources": [
+    "github",
+    "copernicus"
+   ],
+   "id": "i0012",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Veille des dépendances abandonnées",
+   "probleme": "Des milliers de packages open source ne sont plus maintenus, exposant les logiciels à des failles de sécurité non corrigées.",
+   "pour_qui": "Startups et petites équipes de développement qui utilisent massivement des bibliothèques npm/PyPI.",
+   "valeur_societale": "Sécuriser la chaîne d'approvisionnement logicielle, réduire les risques de cyberattaques.",
+   "comment": "Un agent scanne chaque jour les registres (npm, PyPI) et alerte sur les packages sans mise à jour depuis plus d’un an, en croisant avec les dépendances des projets clients.",
+   "pourquoi_maintenant": "Explosion des dépendances et multiplication des failles zero-day (ex: log4j) ; les développeurs n’ont pas le temps de surveiller manuellement.",
+   "pourquoi_nous": "Notre agent traite des millions de packages en continu, là où un humain ne peut en suivre que quelques dizaines.",
+   "modele_revenu": "Abonnement mensuel (20–50 €) pour des rapports de vulnérabilité automatisés, avec un scan gratuit limité.",
+   "premier_test": "Créer un script qui scanne le fichier package.json d’un dépôt public et envoie un rapport par email, puis demander 10 € pour un scan poussé d’un projet réel.",
+   "audace": 7,
+   "lentille": "travail-invisible",
+   "cerveau": "deepseek",
+   "sources": [
+    "github",
+    "eurostat"
+   ],
+   "id": "i0013",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Synthése statistique sur mésure",
+   "probleme": "Les données publiques (Eurostat, OCDE) sont imenses et complexes : un élu local ne peut pas les exploiter pour compárer sa ville avec d’autrès.",
+   "pour_qui": "Maires de comùunes moyénnes, assoçiations locales, journalistes de proximité.",
+   "valeur_societale": null,
+   "comment": "Agént qui collecte, nettoie et croise les statistiiques (chômage, démographie, etc.) pour gẹnérer un rapport en langage clair, actualisé automatiquement.",
+   "pourquoi_maintenant": "Généralisation des données ouvertes mais encore très andrộtes pied ; forte demànde de transparance locale.",
+   "pourquoi_nous": "Seul un agent peut lire et croiser des milliers de tableaux Excel/CSV chaque jour sans erreur.",
+   "modele_revenu": "Paiement par rapport (50–100 €) ou forfait trimestriel pour une ville ou une association.",
+   "premier_test": "Proposer à une mairie de moins de 10 000 habitants un rapport gratuit sur sa démographie, puis lui soumettre un devis de 60 € pour un tableaud de bord mensuel.",
+   "audace": 6,
+   "lentille": "travail-invisible",
+   "cerveau": "deepseek",
+   "sources": [
+    "github",
+    "eurostat"
+   ],
+   "id": "i0014",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 5,
+    "avantage_agents": 8,
+    "defensibilite": 4,
+    "argent_rapide": 4,
+    "faisabilite": 8,
+    "conforme": true,
+    "objection": "Les données sources sont publiques et gratuites : dès qu'un GPT généraliste sait interroger Eurostat, le rapport perd toute valeur perçue ; et vendre à des mairies sans appel téléphonique est très lent (achats publics, inertie), le test 'gratuit puis devis 60 €' risque de ne convertir personne sous 30 jours.",
+    "amelioration": "Cesser de vendre un rapport ponctuel et vendre un abonnement 'observatoire territorial clé en main' : page web blanchable par commune, mise à jour continue, comparaison automatique avec les villes jumelles, et diffusion via les réseaux existants (intercommunalités, fédérations d'associations, newsletters de journalistes locaux) plutôt que démarchage mairie par mairie — la défensibilité vient alors du flux actualisé et du réseau, pas du PDF.",
+    "juge": "glm"
+   },
+   "score": 5.949999999999999,
+   "elo": 1500
+  },
+  {
+   "titre": "Alerte tendances pour cherchëurs ciblés",
+   "probleme": "Le nombre d'articles scientifiques explose (ex: fNIRS), les chercheurs passent des heures à survoler des milliers de publications pour rester à jour.",
+   "pour_qui": "Cherchëurs et labos spécialisés dans un domaine precis (neuroscïences, biologie, physique).",
+   "valeur_societale": "Accélérer la découverte scientifique en réduisant le temps de veille documentaire.",
+   "comment": "Agent abonné aux flux arXiv, extrait par NLP les résumés et détecte les nouveautés, les contradictions ou les tendances émergentes, envoie un résumé quotidien.",
+   "pourquoi_maintenant": "Croissance exponentielle des preprints (arXiv : +15%/an) ; les humains ne peuvent plus tout lire.",
+   "pourquoi_nous": "Notre agent traite 50 000 articles par jour, impossible à faire manuellement.",
+   "modele_revenu": null,
+   "premier_test": "Créer un email de veille quotidien pour 10 chercheurs en fNIRS en utilisant les mots-clés de leurs propres articles ; leur demander 5 € après la première smaine d’essai.",
+   "audace": 8,
+   "lentille": "travail-invisible",
+   "cerveau": "deepseek",
+   "sources": [
+    "github",
+    "eurostat"
+   ],
+   "id": "i0015",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Empreinte carbone des frameworks web",
+   "probleme": "Les dévelopeurs ignorent l’impact énergétique et le coût serveur de châque framework JavaScript, car il faut analyser leur taille, leurs dépendances et leur fréquenc d’utilisatïon.",
+   "pour_qui": "Développeurs web, agences digitales, responsablles RSE d'enterprises.",
+   "valeur_societale": null,
+   "comment": "Agént qui télécharge et analyse automatiquemént le bundlle minifié des 500 frameworks les plus populaires, calcule un score de poid écologique et l’actualise châque smaine.",
+   "pourquoi_maintenant": null,
+   "pourquoi_nous": null,
+   "modele_revenu": null,
+   "premier_test": null,
+   "audace": 7,
+   "lentille": "travail-invisible",
+   "cerveau": "deepseek",
+   "sources": [
+    "github",
+    "eurostat"
+   ],
+   "id": "i0016",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Cartes microclimatiques permacoles par parcelle",
+   "probleme": "Les maraîchers et jardiniers pro n'ont aucun accès simple aux gelées tardives, heures-fraîcheur et stress hydrique à l'échelle de LEUR parcelle, alors que les modèles points-existants rendent possible une prévision à 100 mètres près.",
+   "pour_qui": "Maraîchers bio, pépiniéristes, arboriculteurs et collectifs de jardins partagés en Europe, avant les agritech qui visent les grands groupes.",
+   "valeur_societale": "Réduction des pertes de récoltes liées au climat, moins de gaspillage alimentaire, résilience des petites fermes sans payer de conseil onéreux.",
+   "comment": "Agents IA qui croisent Open-Meteo (prévisions, modèles climatiques, historique) et données sol/data.europa.eu pour générer, par coordonnées GPS, des alertes gel/heures de plantation et un microbulletin hebdo envoyé par e-mail.",
+   "pourquoi_maintenant": "Les gels tardifs et canicules hors-saison frappent de plus en plus les petites exploitations pendant que les API Open-Meteo et data.europa.eu rendent le service techniquement possible quasi gratuitement.",
+   "pourquoi_nous": "Seule une flotte d'agents peut produire à coût marginal quasi nul des milliers de bulletins hyperlocalisés personnalisés, ce qu'aucun humain ne ferait à ce prix.",
+   "modele_revenu": "Abonnement 5-9 €/mois par parcelle, vendu en ligne sur un site simple, avec 1 bulletin gratuit d'essai par e-mail.",
+   "premier_test": "Un formulaire « ta parcelle, ta culture » qui renvoie gratuitement un bulletin gel sur 10 jours, avec en bas un lien de paiement d'un abonnement saison ; diffuser dans 3 forums maraîchage/france sur 2 semaines et viser 20 payants.",
+   "audace": 6,
+   "lentille": "signal-faible",
+   "cerveau": "glm",
+   "sources": [
+    "open-meteo",
+    "hvd-ue"
+   ],
+   "id": "i0017",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Atlas vivant des zones inondables pour acheteurs immobiliers",
+   "probleme": "Un acheteur immobilier ne sait pas si un logement est en zone inondable ou soumis à aléa retrait-gonflement des argiles, et les cartes officielles éparses restent illisibles pour un non-expert.",
+   "pour_qui": "Particuliers achetant ou vendant un bien en France/Europe, et petites agences qui veulent informer honnêtement leurs clients.",
+   "valeur_societale": "Meilleure adaptation au changement climatique : les gens évitent d'acheter dans des zones à risque croissant, et l'État économise sur les indemnisations futures.",
+   "comment": "Site qui croise automatiquement data.europa.eu (PPR, zonages, registres) et Open-Meteo (historique de pluies extrêmes) pour produire, à partir d'une adresse de parcelle, un rapport climat-risque illustré, sans conseil juridique personnalisé (info factuelle sourcée).",
+   "pourquoi_maintenant": "Les jeux de données UE obligatoirement ouverts par API depuis juin 2024 rendent le croisement possible, et les sinistres climatiques font exploser la demande de transparence.",
+   "pourquoi_nous": "Le croisement de dizaines de jeux de données hétérogènes (formats, couches SIG divergentes) est exactement ce que des agents IA font mieux qu'un analyste humain, et seule l'IA le rend rentable à 4 € le rapport.",
+   "modele_revenu": "Rapport PDF à 4-6 € acheté en ligne par carte bancaire, avec version enrichie à 12 € (projection 2050 sur les scénarios climatiques open data).",
+   "premier_test": "Landing page « Votre parcelle est-elle en zone inondable ? » publiée sur 2 subreddits immobilier + un forum patrimoine, paiement Stripe en amont du rapport ; objectif 30 rapports vendus en 15 jours.",
+   "audace": 7,
+   "lentille": "signal-faible",
+   "cerveau": "glm",
+   "sources": [
+    "open-meteo",
+    "hvd-ue"
+   ],
+   "id": "i0018",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Simulation d'électrification domestique ouverte et Gamifiée",
+   "probleme": "Les ménages qui veulent passer au tout-électrique (pompe à chaleur, voiture, induction) n'ont aucun outil fiable pour simuler leur courbe de charge et leur facture réelle, et la tendance « électrifier pourrait diviser la consommation mondiale par deux » reste inaccessible au grand public.",
+   "pour_qui": "Propriétaires en rénovation énergétique et futurs acheteurs de VE, dans les 12-36 mois avant l'explosion de la demande de pilotage domestique.",
+   "valeur_societale": "Accélérer une électrification intelligente (moins de pic réseau, plus de renouvelable absorbée) au lieu d'une électrification chaotique.",
+   "comment": "Agents qui génèrent, à partir d'une description libre du logement (texte, pas de donnée sensible), un profil horaire de consommation simulé sur 12 mois avec Open-Meteo (degrés-jours, production PV théorique) et un plan de passage au tout-électrique étape par étape, livré par e-mail sous 24 h.",
+   "pourquoi_maintenant": "Les prix de l'énergie et la sortie du fioul/gaz rendent la question pressante pour des millions de foyers dès 2025-2027, et les prévisions météo horaires open source rendent la simulation précise et gratuite à produire.",
+   "pourquoi_nous": "Une organisation d'agents peut lancer la simulation complexe et se retrancher sans commercial, là où les énergéticiens vendent la leur à des industriels et pas au ménage lambda.",
+   "modele_revenu": "Simulation de base gratuite (boucle d'acquisition), plan détaillé personnalisé 19 €, puis affiliation transparente sur équipements sobres.",
+   "premier_test": "Page « Le tout-électrique en 12 mois : ta feuille de route » ; 30 simulations gratuites offertes la semaine 1 contre partage, puis activation du paiement ; mesurer la conversion sur 2 semaines.",
+   "audace": 8,
+   "lentille": "signal-faible",
+   "cerveau": "glm",
+   "sources": [
+    "open-meteo",
+    "hvd-ue"
+   ],
+   "id": "i0019",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 8,
+    "defensibilite": 5,
+    "argent_rapide": 6,
+    "faisabilite": 7,
+    "conforme": true,
+    "objection": "Faible barrière à l'entrée : un concurrent peut reproduire le service avec un LLM et une API météo gratuite, rendant la différenciation difficile.",
+    "amelioration": "Intégrer un module de calibration basé sur les factures réelles (upload anonymisé) et créer une communauté d'utilisateurs partageant leurs courbes de charge pour enrichir le modèle et verrouiller l'avantage réseau.",
+    "juge": "deepseek"
+   },
+   "score": 6.95,
+   "elo": 1500
+  },
+  {
+   "titre": "Traçage climatique des itinéraires sportifs outdoor",
+   "probleme": "Randonneurs, coureurs trail et cyclistes consultent la météo de la ville de départ, alors qu'un col, une crête ou un fond de vallée à 15 km peuvent avoir un tout autre microclimat — source d'accidents et d'annulations.",
+   "pour_qui": "Grands sportifs outdoor et clubs dont les sorties dépendent du microclimat (vent en crête, orages d'altitude, enneigement probable), 12-36 mois avant que les applis grand public l'intègrent bien.",
+   "valeur_societale": "Réduction des accidents en montagne liés à une sous-estimation des conditions, et encouragement de l'activité physique en plein air, en donnant à tous un tooling réservé hier aux guides professionnels.",
+   "comment": "Un agent qui prend un fichier GPX d'itinéraire et en ressort un e-rapport heure par heure : température, vent, pluie et risque d'orage point par point du tracé via Open-Meteo, envoyé par e-mail ou consulé sur une page lien partageable.",
+   "pourquoi_maintenant": "Les API météo horaires ouvertes couvrent désormais l'altitude via modèles multiples, et le boom du trail/rando post-Covid gonfle la demande ; personne ne commercialise encore le « GPX → briefing climat ».",
+   "pourquoi_nous": "Analyser des milliers de points d'altitude par tracé en secondes est un travail de grille de calcul que seuls des agents IA peuvent exécuter à 2 € par rapport.",
+   "modele_revenu": "Crédits prépayés : pack de 5 briefings à 9 €, abonnement saison à 19 €/an ; vente directe sur le site et en communauté de trail.",
+   "premier_test": "Payer 30 € de pub ciblée sur une communauté trail en ligne et une page « uploade ton GPX » ; livrer le 1er briefing gratuit, suivre combien achètent le pack de 5 sur 14 jours.",
+   "audace": 6,
+   "lentille": "signal-faible",
+   "cerveau": "glm",
+   "sources": [
+    "open-meteo",
+    "hvd-ue"
+   ],
+   "id": "i0020",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Le Signal civique inversé",
+   "probleme": "Les changements juridiques importants sont publiés au Moniteur, à EUR-Lex ou dans Légifrance, mais les habitants n’enصيent que les conséquences concrètes pour leur commune, leur métier ou leur quotidien.",
+   "pour_qui": "Les citoyens, associations et Proyectos de quartier实干 qui veulent suivre gratuitement les règles qui les concernent.",
+   "valeur_societale": "Le dispositif réduit l’asymétrie d’information entre institutions et citoyens, tout en faisant remonter des éléments locaux que les Monitores officiels ignorent souvent.",
+   "comment": "Chaque abonné devient contributeur : il confirme, conteste ou contextualise une évolution réglementaire, et le Système la rattache à des statistiques publiques pour en montrer l’impact territorial. Les alertes restent gratuites, sourcées et clairement distinguées du conseil professionnel.",
+   "pourquoi_maintenant": "Les bases juridiques européennes, françaises et belges sont structurées et mise à jour quotidiennement, tandis que les modèles visuels着小 commencent à mieux relier texte, territoire et situation réelle.",
+   "pourquoi_nous": "Une équipe d’agents peut croiser les textes, les statistiques et les contributions locales à faible coût, sans scrutinizedcommercial ni développement lourd.",
+   "modele_revenu": "Adhésion citoyenne à 5 euros par mois, avec contrepartie concrète comme l’historique personnalisé des règles et l’accès prioritaire aux vérifications.",
+   "premier_test": "Pendant deux semaines, suivre pour trois communes les changements liés au logement et au déchet, publier dix alertes vérifiées et demander à 100 membres Pilotes de payer leur première adhésion.",
+   "audace": 8,
+   "lentille": "inversion",
+   "cerveau": "minimax",
+   "sources": [
+    "eurostat",
+    "eurlex"
+   ],
+   "id": "i0021",
+   "critique": {
+    "0": "eurostat",
+    "1": "eurlex",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Le portefeuille de la preuve locale",
+   "probleme": "Les statistiques publiques décrivent les territoires, mais les habitants et associations disposent d vécus, de预算 et de petits signaux locaux que les indicateurs officiels ne captent pas.",
+   "pour_qui": "Les associations, chercheurs citoyens et habitants qui documentent une réalité territoriale sans collects de données sensibles.",
+   "valeur_societale": "Le projet donne aux données de terrain une existence vérifiable et collective, au lieu de les laisser dispersées dans desWfiches, des messages ou des études fragiles.",
+   "comment": "Les participants déposent des observations agrégées et vérifiables, reçoivent une part de la valeur créée par leur-statistics sous forme de licence d’usage, et les“零” complètent les séries Eurostat, Banque mondiale, OCDE, Statbel et INSEE.",
+   "pourquoi_maintenant": "L’ouverture croissante des données publiques rend possible un croisement reproductible, tandis que la demande de preuves locales et traçables progresse dans les médias et la recherche.",
+   "pourquoi_nous": "Notre avantage réside dans un moteur de provenance simple : chaque affirmation locale reste rattachée à sa source, à son aggregating et à son statut de vérification.",
+   "modele_revenu": "Commission de 20 % sur les licences de réutilisation des basesITIONS abiertas, et abonnement à 7 euros par mois pour les contributeurs qui veulent suivre leurs données.",
+   "premier_test": "Créer une base ouverte de 200 observations agrégées sur la qualité de l’air ou les transports dans trois communes, la publier gratuitement et facturer 10 licences pilotes à des médias indépendants et chercheurs.",
+   "audace": 9,
+   "lentille": "inversion",
+   "cerveau": "minimax",
+   "sources": [
+    "eurostat",
+    "eurlex"
+   ],
+   "id": "i0022",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Le marché des questions d’intérêt public",
+   "probleme": "Les statistiques et les laws sont accessibles, mais beaucoup de citoyens ne savent pas formuler la bonne question ni transformer une donnée générale en décision personnelle.",
+   "pour_qui": "Tout citoyen prêt à payer quelques euros pour une réponse sourcée, ainsi que les étudiants, militants et chercheurs qui vendent du temps d’analyse.",
+   "valeur_societale": "Le dispositif transforme l’accès à l’information en capacities collectives plutôt qu’en dependency à un consultant, et permet à des savoirs locaux d’être rémunérés.",
+   "comment": "Le client soumet une question bornée et publiquement vérifiable ; des contributeursjekt répondent avec les sources, le raisonnement et les limites. La plateforme prélève une commission et garantit la transparence sur la rémunération.",
+   "pourquoi_maintenant": "Les corpus statistiques et juridiques sont plus accessibles que jamais, alors que les modèles permettent un traitement rapide, mais les réponses doivent être reliées à des preuves et non à des hallucinations.",
+   "pourquoi_nous": "Nous pouvons lancer sans conseil : le produit est une réponse documentée à une question générale, livrée sous licence, et non un diagnostic professionnel ou une mission d’entreprise.",
+   "modele_revenu": "Commission de 15 à 25 % sur chaque réponse vendue, plus 2 euros pour une question prioritaire.",
+   "premier_test": "Ouvrir 30 questions sur les ruptures de droit au travail et les comparaisons territoriales, publier les réponses gratuites, puis vendre dix réponses à 7 euros à des particuliers.",
+   "audace": 8,
+   "lentille": "inversion",
+   "cerveau": "minimax",
+   "sources": [
+    "eurostat",
+    "eurlex"
+   ],
+   "id": "i0023",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "L’atlas à contre-courant",
+   "probleme": "Les tableaux statistiques montrent ce qui existe déjà ; ils rarely montrent comment un territoire pourrait changer si une règle, un budget ou un service fonctionnait autrement.",
+   "pour_qui": "Les citoyens, élèves, associations et élus locaux qui veulent explorer des scénarios territoriaux avant une décision.",
+   "valeur_societale": "L’atlas rend les hypothèses visibles, confronte les modèles existants et ouvre la discussion à des trajectoires non verbales dominantes.",
+   "comment": "L’utilisateur choisit un indicateur et une contrainte réelle, puis l’IA simule plusieurs trajectoires avec les données publiques et des hypothèses explicites. Chaque scénario affiche ses sources, ses incertitudes et ses effets possibles, sans prétendre prévoir.",
+   "pourquoi_maintenant": "Les recherches sur les représentations spatiales des modèles visuels indiquent une capacité croissante à relier images, lieux et contexte, ce qui rend crédible une couche visuelle et cartographique des données.",
+   "pourquoi_nous": "Nous pouvonsüllir directement sur les sources fournies et produire un produit grand public distinct des outils dheatmap et des consultants, avec un coût marginal très faible.",
+   "modele_revenu": "Version gratuite limitée à un scénario, puis abonnement à 6 euros par mois pour les simulations illimitées, l’export et l’archivage.",
+   "premier_test": "Publier un prototype comparant trois scénarios de mobility-framework pour une ville, enforceable auprès de 150 testers, et obtenir 20 abonnements payants sous deux semaines.",
+   "audace": 9,
+   "lentille": "inversion",
+   "cerveau": "minimax",
+   "sources": [
+    "eurostat",
+    "eurlex"
+   ],
+   "id": "i0024",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 6,
+    "avantage_agents": 7,
+    "defensibilite": 3,
+    "argent_rapide": 2,
+    "faisabilite": 5,
+    "conforme": true,
+    "objection": "Le premier paiement en 30 jours est très improbable : personne ne passe de la curiosité à un abonnement de 6 €/mois en 2 semaines pour un prototype de scénarios territoriaux, et la défensibilité est quasi nulle puisque les données sont publiques et l'IA grand public produira des choses similaires gratuitement.",
+    "amelioration": "Remplacer l'abonnement grand public par des packs thématiques 'atlas d'un territoire' vendus à l'unité (15-30 €) aux associations et collectifs citoyens qui en font un argument dans leurs campagnes — ou prévendre un atlas financé via une page de dons/partenariat citoyen — pour transformer un gadget en objet de mobilisation avec une communauté propriétaire.",
+    "juge": "glm"
+   },
+   "score": 5.25,
+   "elo": 1500
+  },
+  {
+   "titre": "Le Score-Caducée : noter les notices de médicaments en risque de rappel, en direct",
+   "probleme": "Les laboratoires et pharmacies n'ont aucune visibilité en temps réel sur les effets indésirables qui se cumulent autour d'une molécule avant que l'agence ne déclenche un rappel officiel, trop tard pour protéger les patients.",
+   "pour_qui": "Pharmacies indépendantes, établissements de santé, distributeurs en ligne.",
+   "valeur_societale": "Détecter la dérive d'un produit dangereux des semaines avant l'alerte publique, au moment où des centaines d'achats peuvent encore être bloqués.",
+   "comment": "Croiser openFDA et la base EMA (signaux d'effets indésirables) avec RappelConso et Safety Gate (signaux de rappels déjà confirmés) pour entraîner un score prédictif de risque de rappel par produit, publié sur une page publique consultable sans appel.",
+   "pourquoi_maintenant": "Safety Gate alimente les rappels européens au jour le jour et openFDA a doublé ses volumes de données ; jamais ces deux flux n'ont été mis en regard automatiquement.",
+   "pourquoi_nous": "Des agents IA capables de normaliser des vocabulaires réglementaires hétérogènes (ATC, CIOMS, codes RappelConso) en continu, sans équipe de data-scientists.",
+   "modele_revenu": "Abonnement mensuel par établissement (à partir de 49 €/mois) via inscription en ligne, plus un widget gratuit viral.",
+   "premier_test": "Publier en 2 semaines une page publique « 50 produits les plus proches d'un rappel cette semaine » et vendre 3 abonnements à des pharmacies indépendantes contactées par e-mail.",
+   "audace": 8,
+   "lentille": "collision-api",
+   "cerveau": "mimo",
+   "sources": [
+    "rappel-conso",
+    "openfda"
+   ],
+   "id": "i0025",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 7,
+    "avantage_agents": 8,
+    "defensibilite": 4,
+    "argent_rapide": 3,
+    "faisabilite": 6,
+    "conforme": true,
+    "objection": "Un score prédictif de dangerosité de médicaments, même agrégé, touche à la pharmacovigilance : un faux signal publié publiquement peut nuire à un laboratoire (diffamation commerciale) ou faussement rassurer sur un produit risqué, et la frontière avec le dispositif médical réglementé (MDR) est floue. De plus, les données sources sont publiques : un concurrent (ou l'IA gratuite de demain) peut reconstruire le score en un week-end, et des pharmacies indépendantes n'achèteront pas 49 €/mois un abonnement par simple e-mail sans preuve d'exactitude passée.",
+    "amelioration": "Repositionner le score comme un simple « indice d'attention réglementaire » factuel et sourcé (comptage des signaux publics, jamais de jugement de dangerosité), avec un historique public vérifiable : chaque prédiction passée affichée avec son issue réelle (rappel confirmé ou non). Cette transparence crée la confiance et la défensibilité (track record impossible à copier sans historique), réduit le risque juridique, et permet de vendre d'abord un widget d'affiliation/veille gratuit aux pharmaciens via leurs groupes Facebook pro, puis l'abonnement aux distributeurs en ligne qui, eux, ont un vrai enjeu financier (retirer un lot avant rappel = économies mesurables).",
+    "juge": "glm"
+   },
+   "score": 6,
+   "elo": 1500
+  },
+  {
+   "titre": "RappelCarto : la carte vivante des produits dangereux autour de chez vous",
+   "probleme": "Les rappels sont diffusés en liste textuelle illisible sur des sites officiels ; personne ne sait quel produit dangereux est vendu dans son quartier, ses marchés, ses friperies.",
+   "pour_qui": "Consommateurs citoyens, associations locales de protection, collectivités.",
+   "valeur_societale": "Rendre visible et géolocalisable l'information de sécurité publique, la sortie des listes et l'entrée dans le réel quotidien.",
+   "comment": "Croiser les rappels Safety Gate/RappelConso avec les catalogues ouverts de commerce local (fichiers open data des commerce, APIs de marketplaces) pour cartographier quels établissements vendent encore un produit rappelé.",
+   "pourquoi_maintenant": "Les deux flux sont publiques, gratuits et horodatés ; aucune cartographie croisée n'existe en France aujourd'hui.",
+   "pourquoi_nous": "Des agents qui relèvent et rapprochent en continu des milliers de fiches produits et de catalogues sans intervention humaine, avec un coût d'infrastructure quasi nul.",
+   "modele_revenu": "Freemium : cartographie gratuite, abonnement « quartier » à 3 €/mois pour les alertes push, partenariats avec marques conscientes de leur réputation.",
+   "premier_test": "Lancer la carte sur 3 villes pilotes et faire payer 20 abonnements mensuels de 3 € sous 2 semaines via une landing page.",
+   "audace": 7,
+   "lentille": "collision-api",
+   "cerveau": "mimo",
+   "sources": [
+    "rappel-conso",
+    "openfda"
+   ],
+   "id": "i0026",
+   "critique": {
+    "valeur_societale": 8,
+    "originalite": 7,
+    "avantage_agents": 8,
+    "defensibilite": 4,
+    "argent_rapide": 3,
+    "faisabilite": 5,
+    "conforme": true,
+    "objection": "Le croisement est fragile : les catalogues open data de commerce local ne disent pas ce qu'un magasin précis a en stock ni en lots (dates, numéros de lot) — la cartographie risque d'être fausse ou vide, et une fausse alerte « produit dangereux chez ce commerçant » est juridiquement risquée (diffamation commerciale). À cela s'ajoute que 60 € de revenus en 2 semaines ne couvre même pas l'hébergement, et qu'un grand media ou un rappelConso amélioré peut répliquer l'idée en un week-end.",
+    "amelioration": "Inverser la promesse : au lieu de pointer des magasins (invérifiable), devenir l'agrégateur-alerte par produit et par code-barres — l'utilisateur scanne ou suit une catégorie, l'agent IA surveille en continu Safety Gate + RappelConso + notices, et pousse une alerte datée, sourcée, horodatée, avec lien officiel. Ça supprime le risque juridique, rend les données propres défendables (historique des alertes,base croisée unique), rend l'abonnement 3€ crédible (« on veille pour vous 24/7 »), et se teste en 2 semaines sur une seule catégorie à risque (jouets, cosmétiques) via une landing page + newsletter.",
+    "juge": "glm"
+   },
+   "score": 6.15,
+   "elo": 1468.736306793522
+  },
+  {
+   "titre": "Le Marché des Risques : une cote boursière des produits de grande consommation fondée sur les rappels",
+   "probleme": "Aucun indicateur synthétique, lisible et comparable n'existe pour savoir si la sécurité des produits s'améliore ou se dégrade dans un secteur ; tout le monde raisonne à l'anecdote.",
+   "pour_qui": "Investisseurs éthiques, journalistes d'investigation, consommateurs avertis.",
+   "valeur_societale": "Créer un signal objectif et chiffré de sécurité des produits qui pèse sur les décisions d'achat et d'investissement, récompensant les marques vertueuses.",
+   "comment": "Croiser les rappels Safety Gate/RappelConso avec les effets indésirables openFDA/EMA pour calculer un indice quotidien de risque par secteur (jouets, cosmétiques, alimentaire, dispositifs médicaux), à la manière d'une cote de marché.",
+   "pourquoi_maintenant": "Les prévisions sur les comportements et les signaux de marché sont au cœur des travaux récents (prediction markets), et personne n'a appliqué cette logique aux rappels produits.",
+   "pourquoi_nous": "Une armée d'agents peut publier un indice frais chaque matin et expliquer chaque variation en langage clair, ce qu'aucune agence classique ne ferait.",
+   "modele_revenu": "Accès API payant aux indices (abonnement data), contenu sponsorisé de veille, licences pour médias et fonds thématiques.",
+   "premier_test": "Publier l'indice quotidien sur un site avec abonnement API à 29 €/mois et convaincre un premier client data sous 2 semaines par e-mail.",
+   "audace": 9,
+   "lentille": "collision-api",
+   "cerveau": "mimo",
+   "sources": [
+    "rappel-conso",
+    "openfda"
+   ],
+   "id": "i0027",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Ma Notice Vivante : un QR code qui raconte ce que les autres patients ont réellement vécu",
+   "probleme": "Une notice de médicament est un document figé, technique et rassurant par défaut ; les milliers de retours d'expérience d'effets indésirables existent mais restent enfouis dans des bases fermées.",
+   "pour_qui": "Patients (pour leurs proches et eux-mêmes), associations de patients, pharmaciens d'officine qui orientent au comptoir.",
+   "valeur_societale": "Donner accès, dans un langage simple et sourcé, aux effets indésirables réellement déclarés, pour que chacun pose les bonnes questions avant de prendre un traitement.",
+   "comment": "Croiser les notices EMA et openFDA (texte officiel) avec les signaux d'effets indésirables openFDA/EMA (retours du terrain) pour générer, pour chaque médicament, une page vivante qui synthétise ce qui est déclaré et met en avant les rappels associés.",
+   "pourquoi_maintenant": "Les deux bases sont ouvertes et mises à jour en continu ; l'IA générative permet enfin de résumer fiablement et sourcé un corpus réglementaire massif.",
+   "pourquoi_nous": "Des agents maintiennent des milliers de fiches à jour quotidiennement et refusent toute affirmation non sourcée, discipline qu'un site éditorial humain ne tient pas.",
+   "modele_revenu": "Abonnement annuel grand public (19 €/an) sans appel, partenariats d'affichage avec pharmacies en ligne, widget gratuit pour associations de patients.",
+   "premier_test": "Mettre en ligne 100 fiches médicaments les plus consommés en France et encaisser 15 abonnements annuels en 2 semaines via une page d'inscription.",
+   "audace": 6,
+   "lentille": "collision-api",
+   "cerveau": "mimo",
+   "sources": [
+    "rappel-conso",
+    "openfda"
+   ],
+   "id": "i0028",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Météo des chocs : le vivant mondial des événements",
+   "probleme": "Les signaux faibles locaux disparaissent dans le flux mondial, alors que certains événements,x% comme une rupture logistique ou unmovement% de protestation, peuvent être détectés des heures avant leur traitement médiatique.",
+   "pour_qui": "Journalistes, rédactions indépendantes, ONG humanitaires et organisations de veille civique.",
+   "valeur_societale": "Le service rend visible la suffering, les mobilisations et les ruptures qui relayées à retardement, sans surveillance massive ni collecte de données personnelles sensibles.",
+   "comment": "Mille agents classent en continu les événements GDELT, relient les récits locaux aux Comparable, sources du domaine public et signalent les ruptures avec des citations vérifiables.",
+   "pourquoi_maintenant": "La densité du flux GDELT et la baisse du coût de calcul permettent enfin un suivi multilingue continu, là où les anciens tableaux de bord étaient trop lents ou trop coûteux.",
+   "pourquoi_nous": "Notre avance tient à l’orchestration d’agents capables de relier des millions d’événements, de distinguer un signal réel d’une réaction artificielle et de produire des alertes multilingues exploitables sans appel.",
+   "modele_revenu": "Abonnement mensuel par newsletter et tableau de bord, avec une formule gratuite limitée aux alertes hebdomadaires.",
+   "premier_test": "Pendant deux semaines, diffuser gratuitement une alerte quotidienne sur un pays et un thème choisis, puis demander un paiement de 9 euros par mois aux 20 premiers abonnés DWARDSir la version complète.",
+   "audace": 9,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "minimax",
+   "sources": [
+    "gdelt",
+    "gutenberg"
+   ],
+   "id": "i0029",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Musées liquides : le patrimoine public devient manipulable",
+   "probleme": "Des millions d’ouvrages, cartes et photographies du domaine public dorment dans des bases difficultement accessibles, sans narration interactive ni public direkt.",
+   "pour_qui": "Curieux, familles, Visitors educators, libraries etMusées de petite taille.",
+   "valeur_societale": "Le patrimoine rare redevient lisible et partagé, tandis que les institutions拥有的 collections gagnent une vitrine mesurable sans vendre leursoeuvres.",
+   "comment": "Des agents transforment automatiquement les archives de Gutenberg, Europeana et Gallica en expositions web manipulables, citables et téléchargeables, avec provenance affichée.",
+   "pourquoi_maintenant": "Les corpus publics sont massivement accessibles et les modèles savent désormais produire des parcours cohérents à partir de sources hétérogènes sans intervention humaine constante.",
+   "pourquoi_nous": "Une flotte d’agents peut inventorier, relier, illustrated et tester des milliers d’expositions en parallèle, ce qu’un équipe de conservation humaine ne pourrait pas couvrir à ce coût.",
+   "modele_revenu": "Abonnement de 6 euros par mois pour explorer tous les musées, plus une licence blanche pour les établissements qui veulent exposer leur collection.",
+   "premier_test": "Construire en deux semaines un musée liquide de 50 pièces autour d’un thème, lancer une page d’accès gratuit et facturer 6 euros à la premièreMIDDLE soude donne hundred ...",
+   "audace": 8,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "minimax",
+   "sources": [
+    "gdelt",
+    "gutenberg"
+   ],
+   "id": "i0030",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Radio Ingénierie : une station mondiale fabriquée par les archives",
+   "probleme": "Les radios du monde entier dépendent d’équipes coûteuses, alors que de vastes archives publiques contiennent des voix, des musique, des ambiances et des récits citables légalement.",
+   "pour_qui": "Podcastscréateurs, artistes, associations, bibliothèques et stations communautaires.",
+   "valeur_societale": "Le service donne une voix à des archives négligées et permet des programmes culturels locaux à partir de Inheritance instead of l’achat massif de contenus.",
+   "comment": "Des agents assemblent chaque nuit des séquences originales à partir de domaine public, aurait tous les droits vérifiés, avec chapitrage, musique libre et publication automatique sur plusieurs plateformes.",
+   "pourquoi_maintenant": "Les plateformes de podcast acceptent du contenu généré et les archives publiques offrent désormais une matière abundance, mais la sélection reste un travail manuel高昂.",
+   "pourquoi_nous": "Mille agents peuvent explorer en permanence des millions de pièces, éviter les quasi-doublons et produire des Reliefs/hour des Programs adaptée à chaque audience, sans studio.",
+   "modele_revenu": "Abonnement de 12 euros par mois pour recevoir des épisodes prêts à publier et un tableau de bord de provenance, avec vente directe de compilation.Themes.",
+   "premier_test": "Produire pendant deux semaines cinq épisodes de dix minutes sur un sujet public, les distribuer gratuitement et facturer 12 euros aux 10 premiers créateurs qui obtiennent un retour positif de leur audience.",
+   "audace": 9,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "minimax",
+   "sources": [
+    "gdelt",
+    "gutenberg"
+   ],
+   "id": "i0031",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Utopie Factory : transformer les scénarios impossibles enxpérience",
+   "probleme": "Les forecasts publiques sur les transitions énergétiques, les migrations ou l’IA sont souvent des documents opaques, difficiles à manipuler et rarement reliés à l’histoire.",
+   "pour_qui": "Élèves, étudiants,Citizens associations, Reveres de politiques publiques et Outsiders.",
+   "valeur_societale": "L’outil rend l’incertitude explorable par l’expérience plutôt que par la宣传, et confronte chaque scénario à des sources historiques sans pretended prédiction.",
+   "comment": "Un moteur d’agents simule des centaines de futurs à partir de règles explicites sur la substitution et la complémentarité, puis les publie sous forme de récits, cartes et games branchés issus du domaine public.",
+   "pourquoi_maintenant": "Les recherches sur les substituts et les complements convergence avec la capacité des agents à construire des scénarios interactifs, ouvrant un produit pédagogique encore inexistant à cette échelle.",
+   "pourquoi_nous": "Notre Agrément vient de l’orchestration : des milliers de scénarios peuvent être générés, testés et documentés en parallèle, avec une cohérence historique et une traçabilité rarement obtenues.",
+   "modele_revenu": "Accès gratuit à un scénario, puis abonnement à 5 euros par mois et vente d’exercices工作组 pour groupes éducatifs.",
+   "premier_test": "En deux semaines, lancer un scénario gratuit sur les transports、食品 et l’énergie, mesurer sa complétion et demander un accès à 5 euros par mois aux 30 premiers participants volontaires.",
+   "audace": 8,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "minimax",
+   "sources": [
+    "gdelt",
+    "gutenberg"
+   ],
+   "id": "i0032",
+   "critique": {
+    "valeur_societale": 6,
+    "originalite": 7,
+    "avantage_agents": 7,
+    "defensibilite": 3,
+    "argent_rapide": 3,
+    "faisabilite": 4,
+    "conforme": true,
+    "objection": "Le public est flou (élèves, associations, curieux ?), le premier test n'a aucun canal de distribution identifié et l'abonnement à 5 € pour des récits génératifs est très faible face à un assistant gratuit qui peut improviser un scénario interactif sur demande ; la défensibilité repose sur des sources publiques (GDELT, Gutenberg) copiables par tous.",
+    "amelioration": "Cibler UN acheteur précis — enseignants de SES/histoire-géo — et vendre des packs de scénarios prêts à l'emploi alignés sur le programme (fiches + jeu de branches + corrigés) à 19–29 € l'unité sur une place de marché éducative, avec la base de scénarios tracée et vérifiables comme actif accumulé plutôt qu'un abonnement grand public.",
+    "juge": "glm"
+   },
+   "score": 5.250000000000001,
+   "elo": 1484
+  },
+  {
+   "titre": "Cimetière des modèles morts : ressuscitation d'archives scientifiques",
+   "probleme": "Avant 2023, ré-analyser des décennies de données publiques de recherche abandonnées (essais agronomiques, datasets non publiés) exigeait des équipes de doctorants. Ce travail a été abandonné faute de budget.",
+   "pour_qui": "Chercheurs, journalistes scientifiques, ONG environnementales qui ont besoin de séries historiques_longues inexploitées.",
+   "valeur_societale": "Redonne de la valeur à des millions d'heures de science publique financée par l'impôt, au lieu de la laisser pourrir dans des PDF.",
+   "comment": "Une flotte d'agents à un centime la tâche ingère, nettoie, croise et documente des jeux data.europa.eu et archives de recherche, produit des rapports de données exploitables à la demande.",
+   "pourquoi_maintenant": "data.europa.eu est devenu API gratuite depuis juin 2024, et les agents rendent le nettoyage de données soudain rentable là où il coûtait une thèse.",
+   "pourquoi_nous": "Une organisation d'agents peut paralléliser l'extraction sur des centaines de jeux hétérogènes sans salaires ; aucun humain ne s'y essaie faute de ROI.",
+   "modele_revenu": "Dossiers de données packagés vendus 30-80 € sur un site simple (ex. « 40 ans de sécheresses par parcelle française, format prêt-à-analyser »).",
+   "premier_test": "Produire 3 dossiers sur un sujet chaud (sécheresses agricoles en France), vendre à 30 € à des chercheurs et journalistes contactés par e-mail et sur des forums spécialisés.",
+   "audace": 7,
+   "lentille": "cimetiere",
+   "cerveau": "glm",
+   "sources": [
+    "hf",
+    "hvd-ue"
+   ],
+   "id": "i0033",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Marché de paris honnêtes sur ses propres résolutions",
+   "probleme": "Avant 2023, une plateforme où l'on peut parier contre soi-même sur ses objectifs exigeait vérification humaine, arbitration, paiement — un back-office interminable qui a tué plusieurs tentatives.",
+   "pour_qui": "Personnes motivées (sport, études, sobriété) qui savent que se vendre à elles-mêmes un engagement financier marche mieux que les applis d'habitudes.",
+   "valeur_societale": "Combat l'écart entre ce que les gens croient faire et ce qu'ils font (les marchés de prédiction surestiment la réussite) : l'engagement lié produit des comportements réels.",
+   "comment": "Agents qui vérifient les preuves (photos, captures, données de suivi consenties), arbitrent, notifient ; le pari perdant va à une association choisie — rien de personnel conservé au-delà du nécessaire.",
+   "pourquoi_maintenant": "Les arbitres IA rendent viable l'arbitrage micro-paiements impossible avant ; la science de l'engagement (stickk.com, mort par coût humain) a prouvé la demande.",
+   "pourquoi_nous": "Un arbitre humain par pari était économiquement absurde ; à un centime la vérification, chaque pari de 5 € est rentable.",
+   "modele_revenu": "Commission de 5 % sur chaque pari engagement + abonnement pour paris récurrents.",
+   "premier_test": "Page unique avec 20 paris « beta » sur un défi communautaire d'un subreddit de motivation francophone ; mise minimum 5 € via paiement en ligne.",
+   "audace": 8,
+   "lentille": "cimetiere",
+   "cerveau": "glm",
+   "sources": [
+    "hf",
+    "hvd-ue"
+   ],
+   "id": "i0034",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Registre vivant des objets perdus en transit",
+   "probleme": "La ré-identification d'objets (luggage re-identification) était un projet de labo : étiqueter, photographier, réconcilier des millions d'objets coûtait une logistique impossible sans usine humaine.",
+   "pour_qui": "Communautés d'objets trouvés (gares, festivals, plages), particuliers qui laissent des objets marqués.",
+   "valeur_societale": "Des centaines de milliers d'objets sains détruits faute de réconciliation ; un registre neutre réduit le gaspillage et les pertes sentimentales.",
+   "comment": "Tags physiques vendus en ligne ; les agents reconnaissent les descriptions et photos des finders/owners, croisent, et font l'intermédiation par e-mail sans jamais gérer d'appel.",
+   "pourquoi_maintenant": "La vision par machine open-source (Hugging Face) est arrivée au niveau où un agent peut matching des descriptions imparfaites, ce qui exigait des opérateurs avant.",
+   "pourquoi_nous": "Le matching sémantique masse-sur-masse (50 000 descriptions vs 50 000 comptes rendus) est exactement un travail d'essaim d'agents, pas de centre d'appels.",
+   "modele_revenu": "Vente de tags (pack 5 €), commission optionnelle sur retours réussis, abonnement communautaire pour événements.",
+   "premier_test": "Partenariat par e-mail avec un festival ou un déchet-objet communautaire : tags pré-vendus en ligne au public de l'événement dans les 2 semaines.",
+   "audace": 6,
+   "lentille": "cimetiere",
+   "cerveau": "glm",
+   "sources": [
+    "hf",
+    "hvd-ue"
+   ],
+   "id": "i0035",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Alertes agri-météo hyperlocales auto-générées",
+   "probleme": "Avant 2023, traduire météo extrême en conséquences agricoles concrètes (« dans 3 jours, ton blé au stade X risque Y ») demandait des agronomes par région ; les services existants se sont arrêtés aux données brutes.",
+   "pour_qui": "Petits agriculteurs et maraîchers européens non servis par les trailers premium, jardins familiaux, coopératives.",
+   "valeur_societale": "Réduction des pertes climatiques sur les plus petites exploitations, celles qui n'ont ni consultant ni assurance fine ; sécurité alimentaire locale.",
+   "comment": "Agents qui croisent les données ouvertes météo/sols de data.europa.eu avec des modèles agronomiques open-source et publient des bulletins d'action par e-mail, sans conseil personnalisé d'expert — seulement des alertes factuelles.",
+   "pourquoi_maintenant": "L'API data.europa.eu gratuite (2024) + les agents génèrent par parcelle ce qui coûtait un ingénieur agronome par région.",
+   "pourquoi_nous": "Seule une organisation d'agents peut maintenir des milliers de variantes hyperlocales de bulletins en continu pour quelques euros.",
+   "modele_revenu": "Abonnement 5-10 €/mois par exploitation pour alertes ciblées ; version gratuite limitée pour l'acquisition.",
+   "premier_test": "Un bulletin hebdo gratuit pendant 2 semaines pour une région test (ex. maraîchers de Bretagne via groupes Facebook/WhatsApp agricoles), avec abonnement payant immédiat pour l'option « parcelle personnalisée ».",
+   "audace": 5,
+   "lentille": "cimetiere",
+   "cerveau": "glm",
+   "sources": [
+    "hf",
+    "hvd-ue"
+   ],
+   "id": "i0036",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Planificateur d'électroménager carbone-optimisé",
+   "probleme": "Acheter l'électricité la plus propre et la moins chère demande d'analyser des données ENTSO-E heure par heure, inaccessible au grand public.",
+   "pour_qui": "Ménages européens avec lave-linge, lave-vaisselle, voiture électrique ou chauffe-eau pilotable.",
+   "valeur_societale": "Réduit les factures et le CO2 en déplaçant la consommation vers les heures vertes, démocratisant la flexibilité jusqu'ici réservée aux industriels.",
+   "comment": "Un agent connecté aux données ENTSO-E et Electricity Maps qui pousse, par e-mail ou notification, le créneau optimal de chaque jour pour les appareils du foyer.",
+   "pourquoi_maintenant": "Les prix spot volatils et l'IA énergivore rendent les écarts horaires énormes, et les compteurs intelligents se généralisent.",
+   "pourquoi_nous": "Une équipe d'agents IA peut surveiller 30 marchés électriques 24/7 sans coût marginal, ce qu'aucun foyer ne peut faire.",
+   "modele_revenu": "Abonnement 3 €/mois, essai gratuit 2 semaines, paiement Stripe sur le site.",
+   "premier_test": "Landing page avec grille tarifaire, 20 foyers pilotes recrutés sur des communautés énergie européenne, 5 € de pré-commande.",
+   "audace": 7,
+   "lentille": "luxe-democratise",
+   "cerveau": "glm",
+   "sources": [
+    "entsoe",
+    "gutenberg"
+   ],
+   "id": "i0037",
+   "critique": {
+    "0": "entsoe",
+    "1": "gutenberg",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Radar de pluralité médiatique grand public",
+   "probleme": "Le framework académique de mesure de l'influence éditoriale sur les news reste confiné aux chercheurs, alors que chaque lecteur se demande qui a façonné un article.",
+   "pour_qui": "Citoyens, enseignants et fact-checkers qui veulent situer un média dans le paysage avant de partager.",
+   "valeur_societale": "Renforce la résilience informationnelle et le débat démocratique en rendant visible la concentration médiatique.",
+   "comment": "Un agent analyse quotidiennement les contenus de dizaines de médias, calcule des indices de diversité et d'indépendance par thématique, et livre un badge consultable par URL ou e-mail hebdo.",
+   "pourquoi_maintenant": "La défiance médiatique atteint des records et les méthodes information-theoretiques deviennent reproductibles à faible coût.",
+   "pourquoi_nous": "Seule une flotte d'agents peut ingérer et comparer des milliers d'articles par jour à prix constant.",
+   "modele_revenu": "2 €/mois pour l'alerte hebdo personnalisée, plus licences X-plans à bibliothèques.",
+   "premier_test": "Publier l'indice sur 5 médias nationaux, vendre l'accès complet à 30 premiers utilisateurs via page Stripe à 2 €.",
+   "audace": 8,
+   "lentille": "luxe-democratise",
+   "cerveau": "glm",
+   "sources": [
+    "entsoe",
+    "gutenberg"
+   ],
+   "id": "i0038",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Archives publiques vivantes : fiction serialisée à partir du domaine public",
+   "probleme": "Des millions d'œuvres de Gutenberg, Gallica et Europeana dorment illisibles, alors que les gens paient pour des séries audio narratives.",
+   "pour_qui": "Amateurs d'histoire, famille homeschoolers, créateurs cherchant des matières narratives libres de droits.",
+   "valeur_societale": "Fait vivre le patrimoine culturel public et évite sa capture par quelques plateformes.",
+   "comment": "Un agent transforme des archives (diaries, correspondances, cartes) en feuilletons sonores hebdomadaires contextés, livrés par e-mail, avec liens vers les sources originales.",
+   "pourquoi_maintenant": "La génération vocale est devenue quasi gratuite et l'appétit pour le format serial est prouvé par les podcast dramas.",
+   "pourquoi_nous": "Produire 20 séries simultanées à partir de corpus variés est économiquement impossible pour un studio humain, trivial pour nos agents.",
+   "modele_revenu": "Abonnement 5 €/mois par collection, vente directe de packs saison à 9 €.",
+   "premier_test": "Sortir une série pilote de 4 épisodes sur un journal de guerre 14-18, pré-vendre la saison 1 sur Gumroad à 7 €.",
+   "audace": 6,
+   "lentille": "luxe-democratise",
+   "cerveau": "glm",
+   "sources": [
+    "entsoe",
+    "gutenberg"
+   ],
+   "id": "i0039",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Sentinelle de sécurité de compte IA personnel",
+   "probleme": "Le takeover de comptes ChatGPT (transcription, prompts sensibles, historique) exploite des failles de session que les utilisateurs ignorent totalement.",
+   "pour_qui": "Indépendants, étudiants et professionals qui concentrent leur travail et leurs données dans des comptes IA.",
+   "valeur_societale": "Réduit l'exposition de milliers d'utilisateurs aux fuites de données et hijacking, jusqu'ici gérée uniquement par les grandes entreprises via leurs RSSI.",
+   "comment": "Un agent guide l'utilisateur par e-mail à travers un audit pas-à-pas non intrusif de ses comptes IA (sessions actives, connexions, clés exposées) et surveille les fuites publiques de domains de sessions.",
+   "pourquoi_maintenant": "La multiplication des comptes IA quotidiens crée une surface d'attaque neuve, et le write-up public sur les takeovers prouve la faisabilité de l'attaque.",
+   "pourquoi_nous": "Un agentIA peut croiser en permanence indicateurs de compromission publics et configurations comptes, tâche fastidieuse qu'aucun particulier ne fait.",
+   "modele_revenu": "Scan de sécurité à 9 € (one-shot), plus surveillance continue à 2 €/mois.",
+   "premier_test": "Écrire un guide technique dur basé sur le write-up HN, le vendre à 9 € sur un mini-site avec scan email-éxposure inclus.",
+   "audace": 9,
+   "lentille": "luxe-democratise",
+   "cerveau": "glm",
+   "sources": [
+    "entsoe",
+    "gutenberg"
+   ],
+   "id": "i0040",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "ToitSoleil : le potentiel solaire de votre maison, en une page",
+   "probleme": "Les propriétaires veulent installer des panneaux solaires mais n'ont aucun moyen simple de savoir si leur toit en vaut la peine, et se font souvent vendre du vent par des commerciaux agressifs.",
+   "pour_qui": "Propriétaires de maisons individuelles en France, avant tout contact avec un installateur.",
+   "valeur_societale": "Accélérer la diffusion du solaire résidentiel et protéger les ménages contre les arnaques grâce à une estimation indépendante basée sur des données publiques.",
+   "comment": "En croisant automatiquement le cadastre, les données foncières et le potentiel solaire calculé par PVGIS, on génère un rapport PDF : production estimée, économies, payback, pièges à éviter.",
+   "pourquoi_maintenant": "Les prix de l'électricité restent volatils et les primes solaires relancent la demande, alors que les foyers n'ont toujours pas d'outil neutre et localisé.",
+   "pourquoi_nous": "Une équipe d'agents IA peut automatiser chaînage de données publiques + calcul PVGIS + rédaction du rapport à coût quasi nul, ce qu'aucun artisan ne fera jamais lui-même.",
+   "modele_revenu": "Rapport détaillé vendu en ligne 14 euros, paiement par carte sur le site, aucune intervention humaine.",
+   "premier_test": "Landing page avec génération automatique du rapport pour une adresse saisie, tunnel de paiement Stripe actif dès le jour 1, trafic obtenu via des posts dans des forums rénovation et groupes Facebook solaire.",
+   "audace": 6,
+   "lentille": "bien-commun",
+   "cerveau": "glm",
+   "sources": [
+    "cadastre",
+    "hf"
+   ],
+   "id": "i0041",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "TerreVive : réensauvager son jardin avec les bonnes espèces locales",
+   "probleme": "Les propriétaires de jardins veulent favoriser la biodiversité mais plantent des espèces inadaptées à leur sol et climat, avec des listes génériques trouvées sur internet.",
+   "pour_qui": "Particuliers possédant un jardin, et petites collectivités gérant des espaces verts de proximité.",
+   "valeur_societale": "Reconstituer des corridors écologiques parcelle par parcelle, en orientant des milliers de jardins vers des essences locales réellement adaptées.",
+   "comment": "À partir de la localisation de la parcelle, du climat et du type de terrain, un agent IA génère un plan de plantation personnalisé : espèces indigènes, calendrier, associations favorables, avec liens directs vers pépinières spécialisées.",
+   "pourquoi_maintenant": "La réglementation anti-pesticides dans les espaces verts et l'explosion de l'intérêt pour les jardins sauvages créent une vague de demande que l'offre reste incapable de personnaliser.",
+   "pourquoi_nous": "Croiser bases botaniques ouvertes, données climatiques et cadastre est un travail de collecte et de raisonnement que seuls des agents IA peuvent rendre abordable à 15 euros par parcelle.",
+   "modele_revenu": "Plan de plantation vendu 15 euros en ligne, complété par un abonnement saisonnier optionnel à 4 euros/mois pour les rappels de jardinage.",
+   "premier_test": "Bêta fermé via des communautés de permaculture en ligne : 50 premiers plans payants, mesure du taux de conversion et de la satisfaction pour valider le prix.",
+   "audace": 5,
+   "lentille": "bien-commun",
+   "cerveau": "glm",
+   "sources": [
+    "cadastre",
+    "hf"
+   ],
+   "id": "i0042",
+   "critique": {
+    "0": "cadastre",
+    "1": "hf",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "L'Oreille Sauvage : kits d'écoute de la biodiversité pour écoles et associations",
+   "probleme": "Écoles et associations naturalistes veulent faire découvrir la biodiversité aux enfants mais manquent d'outils concrets, et les modèles open source de reconnaissance de chants d'oiseaux restent inaccessibles aux non-techniciens.",
+   "pour_qui": "Écoles primaires, collèges, associations nature et centres de loisirs qui montent des projets de sciences participatives.",
+   "valeur_societale": "Éducation à la biodiversité par la pratique : des milliers d'enfants contribuent réellement à des données d'observation locales au lieu de regarder des diaporamas.",
+   "comment": "On assemble un kit clé en main : liste d'enregistreurs audio abordables, modèles open source de bioacoustique (Hugging Face) packagés pour tourner sur un simple ordinateur portable, guide pédagogique et carte des espèces détectées en direct.",
+   "pourquoi_maintenant": "Les modèles bioacoustiques open source viennent d'atteindre un niveau de fiabilité suffisant, et la sciences participative scolaire explose sans outil clé en main.",
+   "pourquoi_nous": "Nous seuls pouvons pakager des dizaines de modèles de vision et d'audio open source en un produit pédagogique simple, sans dépendre d'un éditeur commercial coûteux.",
+   "modele_revenu": "Kit pédagogique vendu 79 euros (guide + accès plateforme + configuration), ou 29 euros si l'école possède déjà son matériel.",
+   "premier_test": "Proposer le kit à 5 associations naturalistes et 5 écoles via leurs newsletters et pages contact par e-mail, avec précommande payante à prix réduit pour les 10 premières.",
+   "audace": 8,
+   "lentille": "bien-commun",
+   "cerveau": "glm",
+   "sources": [
+    "cadastre",
+    "hf"
+   ],
+   "id": "i0043",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "PrixVrai : la transparence foncière à l'échelle du quartier",
+   "probleme": "Les acheteurs et locataires naviguent à l'aveugle : les prix affichés sont gonflés, les données réelles des ventes sont publiques mais illisibles, et la concentration d'achat par des investisseurs reste invisible.",
+   "pour_qui": "Primo-accédants, locataires candidats à l'achat, et habitants qui veulent comprendre la dynamique foncière de leur quartier.",
+   "valeur_societale": "Rééquilibrer le rapport de force face aux agences et investisseurs institutionnels, et rendre visible la financiarisation des quartiers, un enjeu démocratique local majeur.",
+   "comment": "Un agent IA transforme les données ouvertes des ventes foncières en une carte interactive par quartier : prix réels au m², historique de reventes, part des acheteurs récurrents détectés par recoupement, alertes hebdomadaires par e-mail.",
+   "pourquoi_maintenant": "La tension immobilière et les débats sur l'investisseur locatif rendent la question brûlante, alors que les données publiques existent mais restent verrouillées derrière leur illisibilité.",
+   "pourquoi_nous": "Traiter, nettoyer et croiser en continu des dizaines de milliers de transactions par département est exactement le type de travail que nos agents font à coût marginal nul, là où un média ou une association n'aurait pas les moyens.",
+   "modele_revenu": "Abonnement 5 euros/mois pour les alertes et l'accès complet par commune, paiement carte sans engagement.",
+   "premier_test": "Version gratuite pour 3 villes moyennes, avec un tunnel d'abonnement payant pour les alertes personnalisées ; promotion via des subreddits immobiliers et des groupes locaux d'habitants.",
+   "audace": 7,
+   "lentille": "bien-commun",
+   "cerveau": "glm",
+   "sources": [
+    "cadastre",
+    "hf"
+   ],
+   "id": "i0044",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Archives Vivantes : réactiver les livres du domaine public en objets numériques achetables",
+   "probleme": "Des millions d'œuvres libres de droits (Gutenberg, Europeana, Gallica) dorment inutilisées faute d'être indexées, rééditées ou transformées en formats modernes.",
+   "pour_qui": "Éditeurs indépendants, créateurs de contenus pédagogiques, bibliothécaires, artisans du livre et studios de design.",
+   "valeur_societale": "Rend accessible et réutilisable un patrimoine culturel immense, sans dépendre de grands acteurs commerciaux.",
+   "comment": "Des agents IA extraient, structurent, illustrent et republient ces œuvres en produits concrets : éditions soignées, cartes anciennes restaurées, recueils thématiques.",
+   "pourquoi_maintenant": "Les API de domaine public s'ouvrent et les modèles de génération d'images/textes rendent la mise en valeur à grande échelle rentable pour la première fois.",
+   "pourquoi_nous": "Une armée d'agents peut traiter des milliers d'œuvres en continu, à coût marginal quasi nul, sans équipe éditoriale classique.",
+   "modele_revenu": "Vente à l'unité (fichiers prêts à publier, packs thématiques) et abonnement mensuel pour l'accès au flux d'œuvres enrichies.",
+   "premier_test": "Publier en 2 semaines un pack de 50 cartes anciennes restaurées et annotées, vendu à 15 € pièce sur un site simple, avec une landing page et un premier envoi e-mail.",
+   "audace": 7,
+   "lentille": "signal-faible",
+   "cerveau": "mimo",
+   "sources": [
+    "ted",
+    "gutenberg"
+   ],
+   "id": "i0045",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Marché Public Miroir : prévoir les appels d'offres européens avant leur publication officielle",
+   "probleme": "Les PME et freelances ratent des contrats publics car ils découvrent les avis trop tard pour préparer une réponse sérieuse.",
+   "pour_qui": "PME, freelances et associations souhaitant accéder aux marchés publics européens sans cabinet de conseil.",
+   "valeur_societale": "Élargit la concurrence sur les marchés publics, donc de meilleures allocations de fonds publics.",
+   "comment": "Des agents analysent l'historique TED/BOAMP pour repérer les organismes qui renouvellent leurs contrats à cycle régulier et alertent par e-mail sur les prévisions.",
+   "pourquoi_maintenant": "Les données TED/BOAMP sont désormais ouvertes et structurées, et les LLM savent raisonner sur des séries historiques complexes.",
+   "pourquoi_nous": "Un suivi continu de milliers d'organismes en parallèle serait impossible sans agents autonomes.",
+   "modele_revenu": "Abonnement mensuel (9 à 49 €/mois) selon le nombre d'alertes et de domaines suivis.",
+   "premier_test": "Sélectionner 30 organismes à cycle annuel, produire un rapport prédictif démontrant 3 prévisions sur les 4 prochains mois, le vendre en accès unique à 29 € à 10 destinataires.",
+   "audace": 8,
+   "lentille": "signal-faible",
+   "cerveau": "mimo",
+   "sources": [
+    "ted",
+    "gutenberg"
+   ],
+   "id": "i0046",
+   "critique": {
+    "0": "ted",
+    "1": "gutenberg",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Signe Fort : cartographie des signaux faibles scientifiques pour secteurs précis",
+   "probleme": "Les laboratoires et startups perdent des mois à surveiller arXiv ou les revues, faute de capacité à relier les signaux faibles à leur secteur.",
+   "pour_qui": "Chercheurs en veille, R&D de biotech/climat/électronique, doctorants et analystes sectoriels indépendants.",
+   "valeur_societale": "Accélère la circulation des découvertes scientifiques vers les applications qui en ont besoin.",
+   "comment": "Des agents lisent en continu des dépôts comme arXiv et produisent des « cartes de chaleur » par domaine, reliées aux publications et brevets voisins.",
+   "pourquoi_maintenant": "Le volume d'articles postés explose avec l'IA, et les modèles récents comprennent enfin le raisonnement scientifique interdisciplinaire.",
+   "pourquoi_nous": "Nous pouvons déployer des agents spécialisés par domaine, disponibles 24/7, à coût marginal.",
+   "modele_revenu": "Abonnement par domaine scientifique (15 à 60 €/mois), avec rapport mensuel exportable.",
+   "premier_test": "Créer en 2 semaines un dashboard public sur un seul domaine (ex : exoplanétologie), en vendre l'accès complet à 20 early adopters à 19 €/mois.",
+   "audace": 6,
+   "lentille": "signal-faible",
+   "cerveau": "mimo",
+   "sources": [
+    "ted",
+    "gutenberg"
+   ],
+   "id": "i0047",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Atelier des Oubliés : réécrire en langage clair les textes publics que personne ne comprend",
+   "probleme": "Règlements, statuts de copropriété, notices d'urbanisme restent inaccessibles aux citoyens non spécialistes, ce qui exclut une grande partie de la population.",
+   "pour_qui": "Associations d'habitants, syndics, mairies de petites communes, médiateurs citoyens et journalistes locaux.",
+   "valeur_societale": "Rend l'information administrative réellement compréhensible, donc réduit l'inégalité face aux droits.",
+   "comment": "Des agents transforment un texte officiel en version claire, illustrée et traduite, tout en gardant une trace de la version d'origine pour éviter toute trahison du sens.",
+   "pourquoi_maintenant": "Les modèles maîtrisent la reformulation fidèle et la génération d'illustrations explicatives, ce qui n'était pas fiable il y a deux ans.",
+   "pourquoi_nous": "Un flux d'agents peut traiter des milliers de documents en continu et appliquer un contrôle de cohérence automatique entre versions.",
+   "modele_revenu": "Prix fixe par document (19 à 79 € selon longueur) ou abonnement municipal, sans appel téléphonique.",
+   "premier_test": "Publier 10 documents publics en version claire sur un site, en vendre les packs thématiques à 29 € à des associations locales identifiées en ligne.",
+   "audace": 7,
+   "lentille": "signal-faible",
+   "cerveau": "mimo",
+   "sources": [
+    "ted",
+    "gutenberg"
+   ],
+   "id": "i0048",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Carte vivante des dangers domestiques",
+   "probleme": "Les rappels de produits dangereux (RappelConso, Safety Gate) sont noyés dans des sites administratifs que personne ne consulte ; les familles gardent des produits rappelés chez elles sans le savoir.",
+   "pour_qui": "Parents, jeunes parents, propriétaires d'airbnb et associations de consommateurs.",
+   "valeur_societale": "Retirer physiquement des foyers des produits dangereux pour bébés, électroménagers ou jouets avant l'accident.",
+   "comment": "Des agents IA traitent 24h/24 chaque rappel français et européen, le traduisent en langage clair (« vérifiez le numéro sous votre chauffe-biberon ») et envoient une alerte e-mail quotidienne hyper ciblée par catégorie d'abonné.",
+   "pourquoi_maintenant": "Safety Gate a explosé en volume et RappelConso reste méconnu ; aucun acteur n'agrège les deux avec du contenu vulgarisé.",
+   "pourquoi_nous": "Ça exige de lire, trier et réécrire des centaines d'avis chaque jour, sans faillir ni se lasser — exactement le travail d'une meute d'agents infatigables, impossible à vendre comme offre humaine à ce prix.",
+   "modele_revenu": "Abonnement 4€/mois par foyer, plus licences e-commerce qui affichent nos alertes sur leurs fiches produits.",
+   "premier_test": "Site d'une page avec alerte e-mail gratuite par catégorie ; les 100 premiers inscrits se voient proposer l'abonnement « historique complet + vérification de leurs achats passés » à 19€, facturé en ligne.",
+   "audace": 7,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "glm",
+   "sources": [
+    "openfda",
+    "rappel-conso"
+   ],
+   "id": "i0049",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Détecteur d'interactions entre compléments et médicaments",
+   "probleme": "Des millions de personnes cumulent compléments alimentaires et traitements sans savoir que certaines combinaisons sont documentées comme à risque dans les bases d'effets indésirables publiques.",
+   "pour_qui": "Grand public autofondé en compléments, coachs santé, parapharmacies en ligne.",
+   "valeur_societale": "Rendre lisible une information publique dispersée pour déclencher des conversations citoyennes avec pharmacien ou médecin (sans jamais remplacer un professionnel).",
+   "comment": "Des agents IA minent en continu openFDA et la base EMA pour construire un moteur de recherche public : on tape ses compléments, le site affiche les signaux documentés avec sources brutes, accompagné d'un rappel d'en parler à son pharmacien.",
+   "pourquoi_maintenant": "Le marché du complément explose et les bases d'effets indésirables sont désormais ouvertes et exploitables par API.",
+   "pourquoi_nous": "Croiser des dizaines de milliers de notices dans deux langues et deux réglementations chaque nuit demande des milliers de lecteurs inlassables ; une seule organisation d'agents peut offrir cette fraîcheur permanente.",
+   "modele_revenu": "Recherche gratuite, rapport complet imprimable à 9€, affiliation transparente vers des alternatives documentées.",
+   "premier_test": "Version bêta sur les 20 compléments les plus vendus en France ; e-mail à des communautés de nutrition enthusiast avec rapport premium payant par lien Stripe.",
+   "audace": 8,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "glm",
+   "sources": [
+    "openfda",
+    "rappel-conso"
+   ],
+   "id": "i0050",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Chroniqueur automatique des rappels du quotidien",
+   "probleme": "Personne ne raconte l'histoire des rappels produits : motifs, nag des fabricants, récurrences — un journalisme de données qui n'existe pas.",
+   "pour_qui": "Journalistes grand public, créateurs de contenu conso, particuliers exigeants.",
+   "valeur_societale": "Pression démocratique sur les fabricants : rendre visible et mémorable leur historique de défaillances.",
+   "comment": "Des agents IA tiennent 24h/24 une base « casier judiciaire » de chaque marque (rappels, Safety Gate, sanctions), génèrent une chronique quotidienne publiée et vendue en flux payant.",
+   "pourquoi_maintenant": "Les données sont publiques, structurées, et aucun média n'a les moyens humains de tenir un suivi quotidien complet.",
+   "pourquoi_nous": "C'est une surveillance perpétuelle, ennuyeuse et gratifiée à aucun titre humain : la tâche type d'une armée d'agents à coût marginal nul.",
+   "modele_revenu": "Flux RSS premium pour rédactions et newsletter grand public à 6€/mois.",
+   "premier_test": "Publication d'un « top 10 des marques les plus rappelées de 2024 » gratuit, avec accès aux fiches détaillées par marque à 12€ — vente directe sur la page.",
+   "audace": 6,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "glm",
+   "sources": [
+    "openfda",
+    "rappel-conso"
+   ],
+   "id": "i0051",
+   "critique": {
+    "valeur_societale": 7,
+    "originalite": 8,
+    "avantage_agents": 9,
+    "defensibilite": 6,
+    "argent_rapide": 7,
+    "faisabilite": 7,
+    "conforme": true,
+    "objection": "La valeur pour les journalistes est incertaine : peu de rédactions paieront pour un flux alors que les données sont gratuites et que des alertes basiques existent déjà.",
+    "amelioration": "Cibler directement le consommateur via une extension navigateur qui croise ses achats avec les rappels, et monétiser par un abonnement individuel à 1€/mois avec notification personnalisée.",
+    "juge": "deepseek"
+   },
+   "score": 7.35,
+   "elo": 1516
+  },
+  {
+   "titre": "Vérificateur d'annonces de seconde main rappelées",
+   "probleme": "Acheter un vélo, une poussette ou un appareil d'occasion expose à des modèles rappelés pour danger grave, sans aucun outil pour vérifier avant d'acheter.",
+   "pour_qui": "Acheteurs de seconde main (Leboncoin, Vinted, Facebook Marketplace), plateformes elles-mêmes.",
+   "valeur_societale": "Sortir du marché de l'occasion les produits rappelés pour danger — un tiers des modèles dangereux continuent de circuler.",
+   "comment": "Un site où l'on colle le titre d'une annonce ou le nom du modèle : nos agents croisent instantanément avec RappelConso et Safety Gate et affichent le verdict avec source officielle.",
+   "pourquoi_maintenant": "Le marché de l'occasion a doublé et les rappels sont en hausse, mais la vérification reste manuelle et quasi impossible.",
+   "pourquoi_nous": "Il faut indexer en continu des dizaines de milliers de références de rappel et les faire matcher avec du texte d'annonces quelconque : un travail de fourmi éternel, taillé pour mille agents.",
+   "modele_revenu": "Gratuit 3 recherches/jour, passe illimité à 29€/an, API pour plateformes de seconde main.",
+   "premier_test": "Page web fonctionnelle sur 5 catégories (poussettes, vélos enfants, airbags, jouets, électroménager), partagée dans des groupes Facebook de parents acheteurs d'occasion avec vente directe du passe annuel.",
+   "audace": 9,
+   "lentille": "super-pouvoir-agent",
+   "cerveau": "glm",
+   "sources": [
+    "openfda",
+    "rappel-conso"
+   ],
+   "id": "i0052",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Alerte Feu de Proximité",
+   "probleme": "Les habitants de zones à risque apprennent les feux par les réseaux sociaux, trop tard et trop bruité.",
+   "pour_qui": "Résidents ruraux et périurbains, mairies de petites communes, promeneurs et propriétaires de résidences secondaires.",
+   "valeur_societale": "Sauver des minutes vitales en donnant un signal fiable et hyperlocal des départs de feu, sans capteur à installer.",
+   "comment": "Pipeline qui croise NASA FIRMS avec les contours cadastraux et envoie SMS/e-mail sous 5 minutes à l'abonné dès détection dans un rayon défini autour de son adresse approximée (commune, pas de donnée sensible).",
+   "pourquoi_maintenant": "Sécheresses record et saison des feux qui s'allonge en Europe chaque année ; les données FIRMS sont gratuites et l'attente des citoyens est maximale.",
+   "pourquoi_nous": "Aucun grand acteur ne vend ce service au particulier à prix modique ; une organisation d'agents peut bâtir en continu toute la chaîne détection-filtrage-notification sans structure coûteuse.",
+   "modele_revenu": "Abonnement 5 euros/mois par lieu surveillé, vendu sur un site simple, avec version gratuite limitée pour l'adoption.",
+   "premier_test": "Page one-shot : l'utilisateur entre une commune et son e-mail ; on lui livre pendant deux semaines les alertes de sa zone contre 10 euros, promus dans les groupes Facebook de communes méditerranéennes à risque.",
+   "audace": 6,
+   "lentille": "futur-a-rebours",
+   "cerveau": "glm",
+   "sources": [
+    "nasa-firms",
+    "gdelt"
+   ],
+   "id": "i0053",
+   "critique": {
+    "0": "nasa-firms",
+    "1": "gdelt",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Baromètre Vivant du Monde",
+   "probleme": "L'actualité mondiale est un déluge de titres ; personne ne voit les tendances réelles : où la tension monte, où elle retombe, les signaux que l'agrégation à la main rate.",
+   "pour_qui": "Chercheurs, journalistes indépendants, étudiants, maisons de pensée et citoyens exigeants qui veulent une lecture macro, pas des scoops.",
+   "valeur_societale": "Rendre lisible et open l'état émotionnel et événementiel du monde, pour contrebalancer les algorithmes d'engagement qui amplifient l'anecdotique.",
+   "comment": "Un agent qui ingère GDELT toutes les 15 minutes et publie un flux public gratuit de cartes et séries (paix/conflit par région, thématiques émergentes), avec un rapport hebdo approfondi en produit payant.",
+   "pourquoi_maintenant": "GDELT est libre, les modèles d'analyse du langage sont accessibles, et la demande pour une lecture 'qui s'embrase où' n'a jamais été aussi forte.",
+   "pourquoi_nous": "Seule une organisation d'agents peut tourner 24/7 sur ce volume sans coût marginal et maintenir un standard de rigueur que ni la presse ni les GAFAM ne fournissent.",
+   "modele_revenu": "Rapport hebdomadaire à 8 euros, annuel à 79 euros, flux public comme aimant ; options pour chercheurs et salles de rédaction.",
+   "premier_test": "Publier trois rapports hebdo gratuits sur Reddit, Mastodon et un blog, et ouvrir la précommande d'un mois payant à 8 euros avec Bonus: la carte du monde des tensions du mois.",
+   "audace": 5,
+   "lentille": "futur-a-rebours",
+   "cerveau": "glm",
+   "sources": [
+    "nasa-firms",
+    "gdelt"
+   ],
+   "id": "i0054",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Coffre-Fort d'Horloge",
+   "probleme": "Les horloges et les temps de référence servent à dater des événements ; quand un litige survient, prouver 'quand' une chose a été créée reste coûteux et opaque.",
+   "pour_qui": "Créateurs, développeurs et photographes qui doivent prouver l'antériorité de leurs œuvres ou de leur code.",
+   "valeur_societale": "Démocratiser une preuve d'antériorité indépendante et vérifiable publiquement, au lieu de systèmes centralisés ou coûteux.",
+   "comment": "Service où l'on dépose un hash de son fichier ; il est inscrit dans une chaîne publique et horodaté par un réseau de serveurs indépendants synchronisés (notamment via des méthodes astronomiques précises), avec un certificat PDF vérifiable par n'importe qui.",
+   "pourquoi_maintenant": "L'explosion des contenus générés et des litiges d'attribution rend la preuve d'antériorité brûlante ; les recherches sur les horloges optiques viennent d'être publiées.",
+   "pourquoi_nous": "Nous pouvons construire et opérer l'infrastructure de vérification entièrement par agents, sans notaire ni serveur humain, à un coût dérisoire.",
+   "modele_revenu": "Packets de certificats : 5 timbres pour 9 euros, packs créateurs à 39 euros/an ; revenu de place de marché possible via intégrations (Gumroad, etc.).",
+   "premier_test": "Lancer le site avec 50 timbres gratuits, puis vendre un pack de 5 preuves à 9 euros via un post sur r/photography et r/webdev et Hacker News ; mesurer le taux de conversion.",
+   "audace": 7,
+   "lentille": "futur-a-rebours",
+   "cerveau": "glm",
+   "sources": [
+    "nasa-firms",
+    "gdelt"
+   ],
+   "id": "i0055",
+   "critique": {
+    "0": "nasa-firms",
+    "1": "gdelt",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Antenne Citoyenne des Risques Silence",
+   "probleme": "Les populations vivent sous des risques discrets (industriels, séismes, crues, feux) dont la cartographie est éclatée entre des dizaines de portails officiels illisibles.",
+   "pour_qui": "Collectivités de droit, associations environnementales, journaux locaux et habitants qui veulent un état des lieux clair de leur environnement.",
+   "valeur_societale": "Fournir gratuitement des dossiers publics, sourcés et opposables, sur les risques d'un territoire — un droit à la compréhension, pas un service d'expertise.",
+   "comment": "Un agent public par commune qui compile les données ouvertes (géorisques, NASA Earthdata, GDELT pour l'historique événementiel) en un dossier lisible et actualisé, publié en ligne et imprimable ; la version papier-clé premium finance la gratuité.",
+   "pourquoi_maintenant": "L'ouverture massive des données publiques est récente, les événements climatiques poussent la demande, et personne ne l'agrège à l'échelle de la commune.",
+   "pourquoi_nous": "Générer et mettre à jour des centaines de dossiers territoriaux exige un travail continu de lecture et de synthèse que seuls des agents bon marché peuvent assumer sans équipe humaine.",
+   "modele_revenu": "Dossier communal gratuit en ligne ; dossier approfondi imprimé et personnalisé par habit à 12 euros, annuel à 6 euros ; micro-sponsoring éthique possible.",
+   "premier_test": "Produire gratuitement les dossiers de 20 communes des Bouches-du-Rhône à risque, les publier en ligne et vendre le dossier 'Ma commune risque par risque' imprimé à 12 euros via la page ; promouvoir dans les pages locales.",
+   "audace": 8,
+   "lentille": "futur-a-rebours",
+   "cerveau": "glm",
+   "sources": [
+    "nasa-firms",
+    "gdelt"
+   ],
+   "id": "i0056",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "ChronoShoppeurs",
+   "probleme": "Les consommateurs ne savent pas toujours si les produits historiques sont dangereux.",
+   "pour_qui": "Les amateurs d'antiquités et les collectionneurs.",
+   "valeur_societale": "Assurer la sécurité des consommateurs en leur fournissant des informations claires et accessibles sur les produits anciens.",
+   "comment": "Créer un service en ligne qui combine des descriptions historical d'objets d'art et d'antiquités du domaine public avec les rappels de produits dangereux de RappelConso et Safety Gate pour garantir la sécurité des achats.",
+   "pourquoi_maintenant": "La disponibilité accrue des données historiques libres et le besoin croissant de sécurité des consommateurs rendent ce projet pertinent.",
+   "pourquoi_nous": "Une IA peut analyser rapidement des millions de documents pour des rapports fiables et immédiatement utilisables.",
+   "modele_revenu": "Abonnement mensuel pour des rapports détaillés et à jour.",
+   "premier_test": "Lancer un mini-site avec des descriptions et des vérifications de sécurité de 10 articles historiques populaires.",
+   "audace": 8,
+   "lentille": "collision-api",
+   "cerveau": "mistral",
+   "sources": [
+    "gutenberg",
+    "rappel-conso"
+   ],
+   "id": "i0057",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Récollections Historiques",
+   "probleme": "Les enseignants cherchent des moyens engageants et fiables pour enseigner l'histoire.",
+   "pour_qui": "Les enseignants d'histoire et les éducateurs.",
+   "valeur_societale": "Transformer l'apprentissage de l'histoire en une expérience interactive et authentique.",
+   "comment": "Un site ou un forum qui propose des modules interactifs en ligne, combinant des passages de livres historiques du domaine public avec des rappels de produits pour réduire les risques liés à des objets tombés en désuétude, en les faisant revivre à travers des jeux de rôle.",
+   "pourquoi_maintenant": "Le besoin croissant d'éducation interactive et immersive dans les écoles.",
+   "pourquoi_nous": "Seule une organisation de IA peut créer rapidement des modules éducatifs dynamiques et interactifs.",
+   "modele_revenu": "Abonnement annuel pour accès à une bibliothèque de modules interactifs.",
+   "premier_test": "Développer 5 modules interactifs et proposer un accès gratuit pour une semaine via e-mail.",
+   "audace": 7,
+   "lentille": "collision-api",
+   "cerveau": "mistral",
+   "sources": [
+    "gutenberg",
+    "rappel-conso"
+   ],
+   "id": "i0058",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "SécuriLivres",
+   "probleme": "Les lecteurs ne savent pas si les objets décrits dans les classiques de la littérature sont toujours sûrs.",
+   "pour_qui": "Les bibliophiles et les amateurs de littérature classique.",
+   "valeur_societale": "Protéger les lecteurs en les informant des dangers potentiels des objets décrits dans les classiques de la littérature.",
+   "comment": "Créer une plateforme où les utilisateurs peuvent soumettre des extraits de livres du domaine public pour vérifier la sécurité des objets mentionnés à l'aide des données de RappelConso et Safety Gate.",
+   "pourquoi_maintenant": "La popularité croissante des discussions littéraires en ligne et le besoin de sécurité des consommateurs.",
+   "pourquoi_nous": "Seule une IA peut traiter efficacement des millions de livres pour des vérifications de sécurité précises et instantanées.",
+   "modele_revenu": "Abonnement mensuel pour des vérifications de sécurité illimitées.",
+   "premier_test": "Lancer une campagne de e-mailing avec des vérifications gratuites pour 20 livres classiques populaires.",
+   "audace": 8,
+   "lentille": "collision-api",
+   "cerveau": "mistral",
+   "sources": [
+    "gutenberg",
+    "rappel-conso"
+   ],
+   "id": "i0059",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Adventures Temporelles",
+   "probleme": "Les créateurs de contenu cherchent des idées pour des histoires immersives et historiques.",
+   "pour_qui": "Les créateurs de contenu numérique, YouTubers, et podcasters.",
+   "valeur_societale": "Fournir des idées créatives et fiables pour des histoires captivantes basées sur des événements historiques.",
+   "comment": "Créer une plateforme qui génère des scénarii pour des vidéos ou podcasts, utilisant des descriptions et des objets interdi des livres historiques et des rapels de produits dangereux pour ajouter un contexte unique à des récits de fiction.",
+   "pourquoi_maintenant": "La demande croissante pour des contenus interactifs et immersifs dans le domaine du divertissement.",
+   "pourquoi_nous": "Une IA peut analyser rapidement des millions de documents pour des idées créatives et fiables.",
+   "modele_revenu": "Vente de scénarios personnalisés.",
+   "premier_test": "Créer 5 scénarios et les vendre à 1€99 pour un événement en ligne organisé sur les réseaux sociaux.",
+   "audace": 9,
+   "lentille": "collision-api",
+   "cerveau": "mistral",
+   "sources": [
+    "gutenberg",
+    "rappel-conso"
+   ],
+   "id": "i0060",
+   "critique": {
+    "valeur_societale": 4,
+    "originalite": 3,
+    "avantage_agents": 6,
+    "defensibilite": 2,
+    "argent_rapide": 3,
+    "faisabilite": 6,
+    "conforme": true,
+    "objection": "Le positionnement est flou et le mélange 'rappel-conso + livres historiques' est incohérent : les créateurs historiques n'ont aucun besoin de rappels produits, et des scénarios à 1€99 vendus via un 'événement en ligne' vague ne généreront rien. Surtout, un assistant IA gratuit peut déjà générer des idées d'histoires historiques : la valeur perçue est quasi nulle.",
+    "amelioration": "Se recentrer sur une niche précise : générer des packs d'épisodes documentés (timeline vérifiée, sources Gutenberg citées, angles narratifs, hooks) pour podcasteurs d'histoire vraie, vendus par abonnement sur Gumroad. La défensibilité vient de la vérification des sources et de la profondeur documentaire — pas de l'idée brute — et le premier euro peut venir d'un pack '10 épisodes prêts à tourner' à 19€ posté dans des communautés de créateurs.",
+    "juge": "glm"
+   },
+   "score": 3.85,
+   "elo": 1484.736306793522
+  },
+  {
+   "titre": "Obituaire prédictif des entreprises",
+   "probleme": "Les signaux de faillite d'une entreprise (comptes dégradés, changements de dirigeants, radiations) sont publics mais éparpillés dans BODACC, Sirene et les registres belges et luxembourgeois ; personne ne les agrège pour les clients et fournisseurs.",
+   "pour_qui": "PME qui veulent éviter les clients et fournisseurs insolvables, ainsi que voyageurs du B2B (freelances, plateformes de mise en relation).",
+   "valeur_societale": "Réduction des impayés qui tuent des milliers de PME chaque année, transparence sur la santé réelle des sociétés.",
+   "comment": "Pipeline d'agents qui ingère quotidiennement les registres publics, calcule un score de fragilité documenté (méthodologie transparente, pas un conseil financier) et envoie une veille e-mail hebdomadaire sur les sociétés suivies.",
+   "pourquoi_maintenant": "Les données d'entreprises européennes sont de plus en plus ouvertes et les défaillances remontent fortement avec la fin des aides post-Covid.",
+   "pourquoi_nous": "Seule une flotte d'agents peut surveiller en continu six registres nationaux à coût marginal nul, là où les acteurs existants vendent des rapports manuels à plusieurs centaines d'euros.",
+   "modele_revenu": "Abonnement mensuel 19-49 € selon le nombre de sociétés suivies, premiers comptes vendus via LinkedIn et communautés de dirigeants de PME.",
+   "premier_test": "Publier une liste publique hebdomadaire « 20 entreprises en difficulté détectées cette semaine » tirée des registres, et vendre aux PME du secteur concerné un suivi personnalisé de leurs 10 partenaires clés pour 29 €/mois.",
+   "audace": 7,
+   "lentille": "transplant",
+   "cerveau": "glm",
+   "sources": [
+    "registres",
+    "wikidata"
+   ],
+   "id": "i0061",
+   "critique": {
+    "0": "registres",
+    "1": "wikidata",
+    "juge": "qwen"
+   },
+   "score": null
+  },
+  {
+   "titre": "Wikipedia mental : le Wikidata des notions populaires",
+   "probleme": "Les élèves, parents curieux et autodidactes francophones butent sur des explications片段aires, commercialisées ou contradictoires ; Wikidata est riche mais illisible pour un humain qui veut comprendre un concept.",
+   "pour_qui": "Élèves du secondaire, parents qui aident aux devoirs, curieux francophones (y compris Afrique francophone, mal servie).",
+   "valeur_societale": "Démocratiser un savoir structuré, sourcé et gratuit dans des langues et régions où les outils éducatifs premium n'arrivent pas.",
+   "comment": "Agents qui transforment automatiquement les entités Wikidata/Wikipedia en fiches de compréhension vérifiables (d'où vient l'info, quels sont les points de désaccord), publiées sur un site navigable et monétisées par impression ou versions enrichies.",
+   "pourquoi_maintenant": "La fiabilité des contenus générés par IA sans source devient un problème public aigu ; proposer l'inverse (IA strictement adossée à des données sourcées) est un positionnement distinctif.",
+   "pourquoi_nous": "Générer et maintenir à jour des millions de fiches multi-langues exige exactement une organisation d'agents, pas une rédaction humaine.",
+   "modele_revenu": "Fiches imprimables payantes (livrets révision par sujet à 5-9 €), sponsors pédagogiques, API pour applications éducatives.",
+   "premier_test": "Produire 200 fiches « révisions brevets/bac » en français, les vendre en pack PDF à 7 € via un simple site et des groupes Facebook de parents d'élèves.",
+   "audace": 6,
+   "lentille": "transplant",
+   "cerveau": "glm",
+   "sources": [
+    "registres",
+    "wikidata"
+   ],
+   "id": "i0062",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Marché de paris publics sur ses propres objectifs",
+   "probleme": "Les recherches montrent que les marchés de prédiction surestiment la réussite des gens ; en réalité, s'engager financièrement sur son propre objectif est le mécanisme anti-procrastination le plus documenté, mais il n'existe aucune plateforme européenne francophone légale et honnête pour cela.",
+   "pour_qui": "Sportifs amateurs, étudiants en examens, personnes en rechute de mauvaises habitudes qui veulent un engagement contraignant.",
+   "valeur_societale": "Un outil de changement de comportement fondé sur la psychologie du commitment device, avec redistribution : l'argent des échecs finance des causes choisies ou récompense les réussites.",
+   "comment": "Plateforme web où l'utilisateur s'engage sur un objectif vérifiable (preuve photo, données de course) avec une mise ; s'il échoue, la mise va à un fonds commun ou une association, jamais dans nos poches — modèle transparent anticontraire à la manipulation.",
+   "pourquoi_maintenant": "Vague de résolutions post-Covid et appetite pour les dispositifs d'engagement (type Beeminder) absents du marché francophone, avec un cadrage réglementaire à respecter strictement (pas de jeu d'argent : mise à soi-même, pas contre autrui).",
+   "pourquoi_nous": "Un système de vérification de preuves multi-étapes (OCR, vision, plausibilité) est un travail d'agents ; une startup classique n'aurait pas les marges pour opérer à 5 € par pari.",
+   "modele_revenu": "Commission de service fixe de 5 % transparente sur chaque engagement, affichée publiquement.",
+   "premier_test": "Landing page + engagement manuel semi-automatisé : 50 premiers utilisateurs recrutés dans des communautés running et révisions du bac, chacun mise 20 € sur un objectif de 30 jours avec preuve Straba/photo.",
+   "audace": 9,
+   "lentille": "transplant",
+   "cerveau": "glm",
+   "sources": [
+    "registres",
+    "wikidata"
+   ],
+   "id": "i0063",
+   "critique": null,
+   "score": null
+  },
+  {
+   "titre": "Cartographie contradictoire des zones d'ombre urbaines",
+   "probleme": "Les cartes officielles (mobilité, zones inondables, pollution, déserts médicaux) racontent chacune leur version ; le citoyen et l'acheteur immobilier ne voient jamais le croisement, et les visualisations officielles ne sont jamais neutres.",
+   "pour_qui": "Acheteurs et locataires particuliers, associations de quartier, journalistes locaux.",
+   "valeur_societale": "Redonner du pouvoir d'information aux habitants sur leur quartier (bruit, risques, services) avant un engagement de vie à 30 ans, sans dépendre des brochures des vendeurs.",
+   "comment": "Agents qui recoupent des dizaines de jeux de données publics français et belges par adresse pour générer une « fiche de vérité croisée » d'un quartier, avec les tensions entre sources explicitées — aucune interprétation personnelle, que des faits juxtaposés.",
+   "pourquoi_maintenant": "L'open data urbain explose (INSEE, Copernicus, données communales) alors que l'information immobilier grand public reste concentrée entre les mains des vendeurs.",
+   "pourquoi_nous": "Croiser 30 jeux de données hétérogènes par adresse est exactement le travail infaisable pour un humain et trivial pour une flotte d'agents, ce qui permet un prix unitaire de quelques euros.",
+   "modele_revenu": "Fiche adresse à 4,90 € vendue en ligne, packs quartiers pour associations et journalistes,Widget de licence pour sites immobiliers indépendants.",
+   "premier_test": "Générer gratuitement 10 fiches de quartiers de Lyon et Bordeaux, les publier sur Reddit et groupes de futurs acheteurs, et vendre la fiche personnalisée de l'adresse de son choix à 4,90 €.",
+   "audace": 8,
+   "lentille": "transplant",
+   "cerveau": "glm",
+   "sources": [
+    "registres",
+    "wikidata"
+   ],
+   "id": "i0064",
+   "critique": null,
+   "score": null
+  }
+ ],
+ "routeur": [
+  {
+   "fournisseur": "openrouter",
+   "tokensUtilises": 251192,
+   "tokensRestants": 2748808,
+   "modelesCoupes": [
+    "mimo"
+   ],
+   "cle": true
+  },
+  {
+   "fournisseur": "groq",
+   "tokensUtilises": 0,
+   "tokensRestants": 200000,
+   "modelesCoupes": [],
+   "cle": false
+  }
+ ]
+}
