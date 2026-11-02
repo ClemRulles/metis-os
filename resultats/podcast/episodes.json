@@ -68,5 +68,19 @@
   "auteur_script": "glm",
   "mots": 1709,
   "cout_usd": 0.0016
+ },
+ {
+  "numero": 6,
+  "date": "2026-11-02",
+  "titre": "Métis, le matin : De la réflexion au format parfait",
+  "resume": "Aujourd'hui, nous voyons comment transformer les réponses d'une intelligence artificielle, souvent un déluge de texte, en données structurées et exploitables. Nous décortiquerons l'importance de la fiabilité technique, et présenterons une opportunité dans l'agrégation de données GitHub.",
+  "question_du_jour": "Si votre machine devait interagir avec un système tiers, préféreriez-vous une réponse longue et descriptive mais imprévisible, ou une réponse courte et structurée au format JSON même si elle est moins détaillée ?",
+  "lecon": "Faire répondre une IA en données propres",
+  "duree": 324,
+  "taille": 1944237,
+  "audio": "https://github.com/ClemRulles/metis-os/releases/download/podcast-006/metis-matin-006.mp3",
+  "auteur_script": "glm",
+  "mots": 941,
+  "cout_usd": 0.0006
  }
 ]

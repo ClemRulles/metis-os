@@ -8,6 +8,14 @@
 <itunes:author>Métis</itunes:author>
 <itunes:explicit>false</itunes:explicit>
 <item>
+<title>6. Métis, le matin : De la réflexion au format parfait</title>
+<description>Aujourd'hui, nous voyons comment transformer les réponses d'une intelligence artificielle, souvent un déluge de texte, en données structurées et exploitables. Nous décortiquerons l'importance de la fiabilité technique, et présenterons une opportunité dans l'agrégation de données GitHub. Question du jour : Si votre machine devait interagir avec un système tiers, préféreriez-vous une réponse longue et descriptive mais imprévisible, ou une réponse courte et structurée au format JSON même si elle est moins détaillée ?</description>
+<pubDate>Mon, 02 Nov 2026 05:30:00 GMT</pubDate>
+<guid isPermaLink="false">metis-matin-6</guid>
+<enclosure url="https://github.com/ClemRulles/metis-os/releases/download/podcast-006/metis-matin-006.mp3" length="1944237" type="audio/mpeg"/>
+<itunes:duration>324</itunes:duration>
+</item>
+<item>
 <title>5. Métis, le matin — Les modèles qui réfléchissent</title>
 <description>Ce matin, la machine a lu 446 textes et produit 663 idées pour 0.352 dollar. La leçon porte sur les modèles qui raisonnent : ce qu'ils font dans l'ombre, pourquoi certains refusent de couper cette réflexion, et combien ça coûte. Question du jour : Dans ton usine, accepterais-tu qu'un modèle réfléchisse longtemps en cachette pour gagner un point de qualité, si tu ne peux jamais lire son raisonnement ? Où tracerais-tu la ligne ?</description>
 <pubDate>Mon, 02 Nov 2026 05:30:00 GMT</pubDate>
