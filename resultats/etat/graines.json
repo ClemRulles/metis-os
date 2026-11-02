@@ -1,32 +1,32 @@
 [
  {
-  "titre": "Souscripteur Express",
-  "solution": "Un site libre-service où l'utilisateur décrit son abonnement ; nos agents identifient le canal de résiliation exact (page web, email type, formulaire), génèrent les documents nécessaires et envoient automatiquement les demandes de résiliation avec accusés de réception.",
-  "angle_libre": "Aucun concurrent ne fait de la résiliation assistée avec envoi automatique des demandes et accusés de réception : Origame centralise et change de fournisseur, SignalConso signale mais ne résilie pas pour l'utilisateur. Un service 'on fait la démarche à votre place, avec preuve d'envoi' reste un angle libre, à condition de prouver que les gens paieront alors que des alternatives gratuites existent.",
-  "objection": "Le canal principal (forums et groupes Facebook) est difficile à monétiser sans spam ou sans collecte de coordonnées, et le paiement par résiliation réussie crée une incitation à la tromperie si l'annulation échoue ou si l'utilisateur pouvait le faire seul gratuitement."
+  "titre": "API « santé SEO d'un domaine » en un seul appel, garanti à jour",
+  "solution": "Une API REST + endpoint MCP propre : un appel, un schéma JSON versionné et testé, cache transparent, scoring composite « santé domaine » calculé par nos agents (autorité, tendance de trafic, part du trafic venant des IA). Facturée à l'appel sur Apify Store et RapidAPI.",
+  "angle_libre": "Aucun concurrent ne vend un score composite « santé domaine » en un seul appel combinant autorité + tendance de trafic + part de trafic venant des IA, avec schéma JSON versionné et endpoint MCP pour agents IA.",
+  "objection": "La défendabilité est faible : un concurrent peut reproduire le même score composite avec des données ouvertes et un LLM, et les API concurrentes (Ahrefs, Semrush) ont déjà des endpoints fiables et des données propriétaires inaccessibles."
  },
  {
-  "titre": "IR-Flash : Générateur de Data Rooms & Q&A pour Startups",
-  "solution": "Un SaaS libre-service qui analyse les slides deck et le modèle financier pour générer automatiquement une Data Room structurée et un jeu de réponses Q&A cohérent basé sur les données fournies.",
-  "angle_libre": "Aucun concurrent des résultats ne génère automatiquement la data room ET les réponses Q&A cohérentes à partir du deck et du modèle financier : Pageform structure et analyse l'engagement mais part des documents existants ; l'angle 'génération + cohérence des réponses' reste ouvert, à condition de prouver que les fondateurs veulent de l'automatisé plutôt que du sur-mesure.",
-  "objection": "Le risque principal réside dans la confiance et la qualité du contenu. Si l'IA génère des réponses ou des structures de Data Room qui semblent génériques ou contiennent des 'hallucinations' financières/légales, le fondateur perd immédiatement confiance, rendant le SaaS inutilisable pour un processus aussi critique que la levée de fonds. La distribution est également trop vague (communautés Slack/Twitter) sans canal d'acquisition structuré."
+  "titre": "Le Déméteur : l'agent qui débarasse la maison d'un aîné avant la vente",
+  "solution": "L'aidant photographie pièce par pièce depuis son téléphone ; les agents identifient chaque objet, estiment sa valeur de revente réelle (comparables de ventes), génèrent le plan de tri : ce qui se vend sur Vinted/eBay/Leboncoin avec annonce rédigée, ce qui se donne à quelle association locale, ce qui part. Livré en dossier actionnable + annonces prêtes à publier.",
+  "angle_libre": "Aucun acteur ne vend un livrable purement digital (estimation objets par photo + annonces prêtes + plan de dons) sans intervention physique ni coordination : Kietud fait la coordination locale à Lyon, les débarrasseurs font la main-d'œuvre, mais personne ne solutionne l'étape « savoir quoi faire de chaque objet » à distance pour 89 €. Risque principal : le client veut souvent que quelqu'un fasse le travail, pas un dossier.",
+  "objection": "La promesse d'estimation fiable à partir de photos est techniquement difficile : les agents peuvent identifier des objets courants, mais la valeur de revente dépend de l'état, des marques, des variations locales — risque de déception et de demandes de remboursement."
  },
  {
-  "titre": "La Fenêtre Pêche",
-  "solution": "Pour chaque spot côtier de France, des milliers de pages générées automatiquement qui traduisent houle, température et météo en verdict simple : « fenêtre 6h-10h exploitable pour la pêche du bord », avec pages par port et par technique.",
-  "angle_libre": "Personne ne croise automatiquement houle, température de l'eau, marée et technique de pêche pour produire un verdict « fenêtre praticable » par spot et par technique, en pages SEO programm.",
-  "objection": "La défensibilité est faible : une fois les pages indexées, un concurrent ou un assistant IA gratuit peut reproduire le verdict à partir des mêmes APIs ouvertes, et l'abonnement alerte est trop facile à cloner."
+  "titre": "Bodacc Vert — Le Radar des Opportunités Circulaires",
+  "solution": "Un flux quotidien en libre-service qui filtre les annonces BODACC par code d'activité et localisation, signale les procédures où du matériel réemployable existe probablement, et trie par secteurs à fort potentiel de réemploi (industrie, restauration, BTP). Données ouvertes, aucune récupération interdite.",
+  "angle_libre": "Personne ne filtre le BODACC sous l'angle du réemploi : les concurrents visent les sales/clients (Charik, Coxee) ou la transmission d'entreprises (NextToYourBusiness), pas les acheteurs de matériel à sauver de la ferraille, et aucun ne trie par potentiel de réemployabilité sectorielle.",
+  "objection": "La défendabilité est fragile : une fois le filtre connu, un concurrent peut copier le code et l'API publique, et la valeur ajoutée (filtrage, résumé) est reproductible par un agent IA gratuit."
  },
  {
-  "titre": "Radar de salaires réels par métier et ville en France",
-  "solution": "Un site en SEO programmatique générant des milliers de pages « salaire de [métier] à [ville] en [mois] » calculées uniquement à partir des fourchettes affichées dans les offres collectées via des APIs officielles, avec graphiques partageables.",
-  "angle_libre": "Calculer les fourchettes uniquement à partir des salaires réellement affichés dans les offres (et non des moyennes INSEE ou des déclarations), avec fraîcheur mensuelle par ville — aucun concurrent trouvé ne le fait, mais c'est une différence de méthode difficile à percevoir pour l'utilisateur, et la directive européenne sur la transparence salariale (juin 2026) va pousser tous les acteurs à afficher des fourchettes.",
-  "objection": "La défensibilité est faible : un concurrent (ou un assistant IA gratuit) peut reproduire l'agrégation des fourchettes salariales à partir des mêmes API officielles, et le freemium ne crée pas de verrou fort (pas de données propriétaires, pas de réseau)."
+  "titre": "Rembourse-moi, vite",
+  "solution": "Un agent IA autonome qui, sur simple envoi du ticket de caisse et des preuves par l'utilisateur, rédige une lettre de mise en demeure conforme au droit français, l'envoie par courrier recommandé électronique (API La Poste) et suit le dossier jusqu'au remboursement.",
+  "angle_libre": "Aucun concurrent ne fait l'agent du consommateur : tout l'écosystème IA (eesel, Intake, Volubile) automatise les remboursements côté marchand ; côté consommateur il n'existe qu'un playbook gratuit sans exécution. L'angle libre est l'envoi automatisé de mise en demeure conforme au droit français via LRE (API La Poste) avec suivi jusqu'au remboursement.",
+  "objection": "Le risque juridique est élevé : l'IA génère des documents légaux (mise en demeure). Si le modèle est imparfait, l'utilisateur est prévenu, mais si l'IA commet une erreur de droit ou de procédure, la responsabilité du service est engagée, ce qui est incompatible avec un modèle de 'faible risque' pour un service d'automatisation juridique."
  },
  {
-  "titre": "CodeBruit — les stats publiques d'échec transformées en carte des pièges",
-  "solution": "Un site gratuit qui agrège et analyse les données ouvertes et les retours publics sur les échecs au code par thème, et classe publiquement les « 50 pièges qui coûtent le plus de points », avec un quiz gratuit centré uniquement dessus.",
-  "angle_libre": "Agrégation quantitative de données réelles d'échec (thèmes/fautes les plus éliminatoires) pour classer les pièges par coût en points, plutôt qu'une simple liste éditoriale de conseils comme le font les guides gratuits existants.",
-  "objection": "Le rapport personnalisé à 3,90€ repose sur un auto-diagnostic rapide, mais sans données fiables sur l'utilisateur (ses lacunes réelles), la valeur perçue est faible et le passage à l'achat incertain."
+  "titre": "FuckMuseum : base de données interactive des erreurs de terminal et de leurs solutions",
+  "solution": "Un site généré par agents à partir des erreurs réelles collectées anonymement, avec des explications claires, des vidéos courtes, et un simulateur de terminal qui montre les correctifs en direct.",
+  "angle_libre": "Un site web éducatif consultable sans installation (explications pédagogiques, vidéos, simulateur de terminal) alors que TheFuck et ses clones sont des outils CLI sans couche didactique ni base de données d'erreurs documentées pour débutants.",
+  "objection": "La valeur ajoutée repose uniquement sur la compilation d'erreurs publiques. Si les solutions générées par l'IA sont trop génériques (ex: 'vérifiez votre syntax'), l'utilisateur ne verra pas de différence significative avec une recherche Google, ce qui fragilise la monétisation des produits premium."
  }
 ]

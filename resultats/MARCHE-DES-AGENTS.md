@@ -1,6 +1,6 @@
 # Marché des agents — 2026-11-02
 
-1013 outils lus sur Apify Store, dont 949 payants et 799 ouverts au paiement par des agents. Registre MCP : 8000 serveurs publiés ou mis à jour en 7 jours (5493 hébergés), dont 7791 nouveaux.
+1013 outils lus sur Apify Store, dont 950 payants et 803 ouverts au paiement par des agents. Registre MCP : 8000 serveurs publiés ou mis à jour en 7 jours (5488 hébergés), dont 7791 nouveaux.
 Premier relevé du panel : la croissance réelle sera mesurée à partir de J+6 ; en attendant, le classement utilise la part des utilisateurs du mois actifs cette semaine.
 
 ⚠ = outil sur des données personnelles ou des réseaux sociaux : montré pour lire le marché, exclu de l'usine.
@@ -47,30 +47,30 @@ Premier relevé du panel : la croissance réelle sera mesurée à partir de J+6 
 ## Demande par outil, par catégorie
 - OPEN_SOURCE : 16 outils, 2668 utilisateurs par outil, prix médian 0.01 $, note médiane 4.71
 - TRAVEL : 49 outils, 1325 utilisateurs par outil, prix médian 0.003 $, note médiane 4.79
-- VIDEOS : 109 outils, 1252 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.88
-- SOCIAL_MEDIA : 439 outils, 1245 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.74
-- AI : 87 outils, 1215 utilisateurs par outil, prix médian 0.004 $, note médiane 4.73
-- LEAD_GENERATION : 450 outils, 832 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.74
-- JOBS : 97 outils, 604 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.63
-- SEO_TOOLS : 88 outils, 513 utilisateurs par outil, prix médian 0.003 $, note médiane 4.7
-- ECOMMERCE : 84 outils, 483 utilisateurs par outil, prix médian 0.0039 $, note médiane 4.73
-- AUTOMATION : 375 outils, 472 utilisateurs par outil, prix médian 0.003 $, note médiane 4.84
+- VIDEOS : 106 outils, 1288 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.88
+- SOCIAL_MEDIA : 435 outils, 1256 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.74
+- AI : 89 outils, 1188 utilisateurs par outil, prix médian 0.004 $, note médiane 4.73
+- LEAD_GENERATION : 449 outils, 834 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.74
+- JOBS : 98 outils, 598 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.63
+- SEO_TOOLS : 89 outils, 507 utilisateurs par outil, prix médian 0.003 $, note médiane 4.7
+- ECOMMERCE : 85 outils, 478 utilisateurs par outil, prix médian 0.00399 $, note médiane 4.73
+- AUTOMATION : 374 outils, 473 utilisateurs par outil, prix médian 0.003 $, note médiane 4.84
 - NEWS : 37 outils, 439 utilisateurs par outil, prix médian 0.002 $, note médiane 4.9
 - AGENTS : 36 outils, 409 utilisateurs par outil, prix médian 0.0029 $, note médiane 4.84
-- DEVELOPER_TOOLS : 179 outils, 367 utilisateurs par outil, prix médian 0.003 $, note médiane 4.87
+- DEVELOPER_TOOLS : 178 outils, 370 utilisateurs par outil, prix médian 0.003 $, note médiane 4.87
 - MARKETING : 18 outils, 246 utilisateurs par outil, prix médian 0.0018963 $, note médiane 4.83
 - INTEGRATIONS : 27 outils, 207 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.89
 
 ## Nouveaux serveurs MCP
-- Spacemail by NWD : Check, search, read and draft replies to Spacemail (Spaceship) emails, across several mail
-- PostSprout : Manage your blog ideas, article schedule, writing runs and draft approvals from your AI ap
-- io.github.BetaBots-LLC/callimachus : MCP server for Callimachus: local index and search of your AI coding-agent threads
-- Turbo Notify: WhatsApp for AI agents : Send and receive WhatsApp messages from your AI agent, on your own number, with Turbo Noti
-- Linkbreakers MCP : QR-driven customer-journey platform for tracked QR codes, short links, and analytics.
-- TypeBid 标探 : Search public tenders in China, inspect buyers, and estimate bid win probability.
-- esportsodds.gg : CS2 match data for AI assistants: matches, maps, vetoes, rounds, player stats, teams, rank
-- ResolveMCP-ext : Resolve MCP gaps: clip effects, Paste Attributes, frame export, photo albums, camera layou
-- Canton Venues : Live Canton Network DEX data: prices, best execution across venues, exit cost, premiums. N
-- Notes Vault : Indexed search, schema-checked writes and session hooks for a markdown notes vault
-- HomeShared : Find an Airbnb listing cheaper elsewhere, search vacation rentals, quote, and hand off to 
-- io.github.CloudCorpRecords/evalsnap : Snapshot diff for agent and tool outputs: changed cases, score regressions, pass/fail verd
+- Opportunity Zones (opportunityzones.help) : Opportunity Zone address and tract lookup (2018 zones and the 2027 round), state data, pro
+- io.github.DareDev256/fcpxml-mcp-server : Final Cut Pro automation: 15 grouped tools, 102 operations. FCPXML edit, QC, transcript, p
+- Empath Legal: venues, sign-up and access : Published venue facts for trial attorneys preparing jury selection, plus a guided account 
+- EconomicsAPI : Macroeconomic, trade, FX and commodity data for 50 countries over one MCP endpoint.
+- WebinarIgnition : Webinar leads and revenue from several WordPress sites, in one chat.
+- WireCat Zoom : Zoom cloud recordings and transcripts for agents, kept on your computer. Sign in with zm f
+- cmpose : Generate Compose Multiplatform apps, Unity games and Ktor backends locally from tested tem
+- Edgegap : Deploy and operate multiplayer game servers on Edgegap's global edge network.
+- io.github.CloudCorpRecords/parallelmap : Dependency graph of jobs or tests that can safely parallelize: levels, critical path, sche
+- io.github.KallistoX/mcp-unifi-applications : Queryable UniFi API docs: endpoint search, schemas, code examples. No controller access.
+- Imanginable : Plan, render, fix and publish multi-scene AI videos: scripts, storyboards, cast, narration
+- io.github.piotrkowalczuk/zordon : Supervise a local dev stack — databases, brokers and services declared in an Alphasfile — 

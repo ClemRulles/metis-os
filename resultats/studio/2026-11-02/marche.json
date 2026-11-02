@@ -2,8 +2,8 @@
  "date": "2026-11-02",
  "croissance_depuis": null,
  "outils": 1013,
- "payants": 949,
- "paiement_agentique": 799,
+ "payants": 950,
+ "paiement_agentique": 803,
  "acceleration": [
   {
    "id": "cIdqlEvw6afc1do1p",
@@ -942,65 +942,65 @@
   },
   {
    "categorie": "VIDEOS",
-   "outils": 109,
-   "users30": 136474,
-   "users_par_outil": 1252,
+   "outils": 106,
+   "users30": 136482,
+   "users_par_outil": 1288,
    "prix_median": 0.00299,
    "note_mediane": 4.88
   },
   {
    "categorie": "SOCIAL_MEDIA",
-   "outils": 439,
-   "users30": 546442,
-   "users_par_outil": 1245,
+   "outils": 435,
+   "users30": 546449,
+   "users_par_outil": 1256,
    "prix_median": 0.00299,
    "note_mediane": 4.74
   },
   {
    "categorie": "AI",
-   "outils": 87,
-   "users30": 105739,
-   "users_par_outil": 1215,
+   "outils": 89,
+   "users30": 105741,
+   "users_par_outil": 1188,
    "prix_median": 0.004,
    "note_mediane": 4.73
   },
   {
    "categorie": "LEAD_GENERATION",
-   "outils": 450,
-   "users30": 374426,
-   "users_par_outil": 832,
+   "outils": 449,
+   "users30": 374425,
+   "users_par_outil": 834,
    "prix_median": 0.00299,
    "note_mediane": 4.74
   },
   {
    "categorie": "JOBS",
-   "outils": 97,
-   "users30": 58557,
-   "users_par_outil": 604,
+   "outils": 98,
+   "users30": 58558,
+   "users_par_outil": 598,
    "prix_median": 0.0025,
    "note_mediane": 4.63
   },
   {
    "categorie": "SEO_TOOLS",
-   "outils": 88,
-   "users30": 45143,
-   "users_par_outil": 513,
+   "outils": 89,
+   "users30": 45144,
+   "users_par_outil": 507,
    "prix_median": 0.003,
    "note_mediane": 4.7
   },
   {
    "categorie": "ECOMMERCE",
-   "outils": 84,
-   "users30": 40595,
-   "users_par_outil": 483,
-   "prix_median": 0.0039,
+   "outils": 85,
+   "users30": 40596,
+   "users_par_outil": 478,
+   "prix_median": 0.00399,
    "note_mediane": 4.73
   },
   {
    "categorie": "AUTOMATION",
-   "outils": 375,
-   "users30": 176998,
-   "users_par_outil": 472,
+   "outils": 374,
+   "users30": 176997,
+   "users_par_outil": 473,
    "prix_median": 0.003,
    "note_mediane": 4.84
   },
@@ -1022,9 +1022,9 @@
   },
   {
    "categorie": "DEVELOPER_TOOLS",
-   "outils": 179,
-   "users30": 65775,
-   "users_par_outil": 367,
+   "outils": 178,
+   "users30": 65774,
+   "users_par_outil": 370,
    "prix_median": 0.003,
    "note_mediane": 4.87
   },
@@ -1046,9 +1046,9 @@
   },
   {
    "categorie": "REAL_ESTATE",
-   "outils": 50,
-   "users30": 9185,
-   "users_par_outil": 184,
+   "outils": 51,
+   "users30": 9186,
+   "users_par_outil": 180,
    "prix_median": 0.002,
    "note_mediane": 5
   },
@@ -1086,10 +1086,10 @@
   },
   {
    "categorie": "AUTRE",
-   "outils": 46,
-   "users30": 46,
+   "outils": 43,
+   "users30": 43,
    "users_par_outil": 1,
-   "prix_median": 0.0028,
+   "prix_median": 0.003,
    "note_mediane": null
   },
   {
@@ -1103,21 +1103,21 @@
  ],
  "mcp": {
   "actifs_7_jours": 8000,
-  "heberges": 5493,
+  "heberges": 5488,
   "publies_7_jours": 7791,
   "recents": [
-   "Spacemail by NWD : Check, search, read and draft replies to Spacemail (Spaceship) emails, across several mail",
-   "PostSprout : Manage your blog ideas, article schedule, writing runs and draft approvals from your AI ap",
-   "io.github.BetaBots-LLC/callimachus : MCP server for Callimachus: local index and search of your AI coding-agent threads",
-   "Turbo Notify: WhatsApp for AI agents : Send and receive WhatsApp messages from your AI agent, on your own number, with Turbo Noti",
-   "Linkbreakers MCP : QR-driven customer-journey platform for tracked QR codes, short links, and analytics.",
-   "TypeBid 标探 : Search public tenders in China, inspect buyers, and estimate bid win probability.",
-   "esportsodds.gg : CS2 match data for AI assistants: matches, maps, vetoes, rounds, player stats, teams, rank",
-   "ResolveMCP-ext : Resolve MCP gaps: clip effects, Paste Attributes, frame export, photo albums, camera layou",
-   "Canton Venues : Live Canton Network DEX data: prices, best execution across venues, exit cost, premiums. N",
-   "Notes Vault : Indexed search, schema-checked writes and session hooks for a markdown notes vault",
-   "HomeShared : Find an Airbnb listing cheaper elsewhere, search vacation rentals, quote, and hand off to ",
-   "io.github.CloudCorpRecords/evalsnap : Snapshot diff for agent and tool outputs: changed cases, score regressions, pass/fail verd"
+   "Opportunity Zones (opportunityzones.help) : Opportunity Zone address and tract lookup (2018 zones and the 2027 round), state data, pro",
+   "io.github.DareDev256/fcpxml-mcp-server : Final Cut Pro automation: 15 grouped tools, 102 operations. FCPXML edit, QC, transcript, p",
+   "Empath Legal: venues, sign-up and access : Published venue facts for trial attorneys preparing jury selection, plus a guided account ",
+   "EconomicsAPI : Macroeconomic, trade, FX and commodity data for 50 countries over one MCP endpoint.",
+   "WebinarIgnition : Webinar leads and revenue from several WordPress sites, in one chat.",
+   "WireCat Zoom : Zoom cloud recordings and transcripts for agents, kept on your computer. Sign in with zm f",
+   "cmpose : Generate Compose Multiplatform apps, Unity games and Ktor backends locally from tested tem",
+   "Edgegap : Deploy and operate multiplayer game servers on Edgegap's global edge network.",
+   "io.github.CloudCorpRecords/parallelmap : Dependency graph of jobs or tests that can safely parallelize: levels, critical path, sche",
+   "io.github.KallistoX/mcp-unifi-applications : Queryable UniFi API docs: endpoint search, schemas, code examples. No controller access.",
+   "Imanginable : Plan, render, fix and publish multi-scene AI videos: scripts, storyboards, cast, narration",
+   "io.github.piotrkowalczuk/zordon : Supervise a local dev stack — databases, brokers and services declared in an Alphasfile — "
   ]
  }
 }

@@ -1,158 +1,152 @@
 # Opportunités du 2026-11-02
 
-762 textes réels lus → 413 douleurs → 1317 gisements, plus 12 gisements du marché des agents (949 outils payants observés) et 24 failles calculées (14 transplants vérifiés). 795 idées générées, 643 critiquées, 80 duels, 15 enquêtes web. Coût : 0.454 $ en 1671 appels, 28 min.
+763 textes réels lus → 417 douleurs → 1477 gisements, plus 12 gisements du marché des agents (950 outils payants observés) et 24 failles calculées (14 transplants vérifiés). 800 idées générées, 645 critiquées, 80 duels, 15 enquêtes web. Coût : 0.470 $ en 1697 appels, 27 min.
 
 Classement fondé sur les preuves (douleur ou faille mesurée, prix lu sur la page ou paiement observé, espace libre, originalité mesurée contre le réflexe d'un assistant IA, élan sur 90 jours, risque) ; l'avis des IA pèse 18 %.
 
-## 1. Souscripteur Express
-**Score 7.1 / 10** · douleur 8.1 · paiement 9 · espace 5.0 · élan 4.8 · critique 6.7 · tournoi 10.0 · risque 5 — grand-public, née d'une douleur réelle
+## 1. API « santé SEO d'un domaine » en un seul appel, garanti à jour
+**Score 7.28 / 10** · douleur 6.0 · paiement 10 · espace 5.0 · élan 6.8 · critique 7.2 · tournoi 6.0 · risque 5 — donnees-et-api, née du marché des agents (besoin-final)
 
-- **Problème :** Les utilisateurs sont piégés par des abonnements impossibles à résilier, avec renouvellements automatiques non consentis et débits excessifs.
-- **Pour qui :** Toute personne ayant un abonnement récurrent (app, salle de sport, streaming) qu'elle n'arrive pas à annuler.
-- **Solution :** Un site libre-service où l'utilisateur décrit son abonnement ; nos agents identifient le canal de résiliation exact (page web, email type, formulaire), génèrent les documents nécessaires et envoient automatiquement les demandes de résiliation avec accusés de réception.
-- **Valeur pour la société :** Renforce le pouvoir des consommateurs face aux pratiques abusives, réduit le gaspillage financier et le stress.
-- **Canal :** seo-programmatique — premiers clients : Cibler les forums d'entraide (Reddit, UFC Que Choisir) et les groupes Facebook de consommateurs mécontents.
-- **Revenu :** Frais par résiliation réussie + abonnement premium pour suivi des renouvellements. (9.99)
-- **Premier test :** Créer une landing page avec un formulaire de demande de résiliation, traiter manuellement 10 cas pour valider la faisabilité et faire payer 10 utilisateurs via un lien de paiement.
-- **Preuve de paiement :** 1 prix lus sur la page, 1 offres payantes du même besoin ; 32 personnes disent payer déjà
-- **Originalité mesurée :** 7.22/10
-- **Élan :** ×0.93 sur 90 jours — « cancel subscription » HN 1 contre 2, GitHub 134 contre 144 ; « subscription trap » HN 2 contre 1
-- **Preuve de terrain :** gisement « Résiliation d'abonnement impossible », 35 mentions (App Store be, App Store us, App Store fr)
-  - « Geraak er niet vanaf. Heb alles geprobeerd om het het abonnement op te zeggen maar geraak er niet vanaf. » — [App Store be](https://apps.apple.com/be/app/kobo-books-audiobooks/id301259483?uo=2)
-  - « You can only cancel your subscription through a desktop computer, not through the mobile app. » — [App Store be](https://apps.apple.com/be/app/audible-audiobooks-podcasts/id379693831?uo=2)
-  - « Vous avez renouveler l’abonnement sans mon consentement bande de voleur 💔🤬🤬🤬🤬 » — [App Store be](https://apps.apple.com/be/app/dramawave-dramas-reels/id6670430706?uo=2)
-- **Enquête :** verdict creuser — Le besoin est massif et documenté (12-16 abonnements par Français, régulateurs mobilisés), mais les solutions gratuites existantes et l'absence de preuve de paiement exigent de valider d'abord la disposition à payer 9,99€ via le test manuel prévu.
-  - Concurrents : [Origame](https://www.jaimelesstartups.fr/origame-centralisation-des-abonnements-mensuels-pour-faire-des-economies) (gratuit (dashboard), économies jusqu'à 1000€/an, ressemblance 6/10) ; [SignalConso (DGCCRF)](https://signal.conso.gouv.fr/fr/renouvellement-abonnement-non-desire) (gratuit, ressemblance 5/10) ; [Litige.fr](https://www.litige.fr/articles/abonnement-impossible-resilier-solutions) (null, ressemblance 4/10)
-  - Qui paie déjà : Aucune offre payante directe et chiffrée trouvée dans les résultats pour un service de résiliation d'abonnements ; les solutions existantes (SignalConso, Origame) sont gratuites, ce qui pose la question de la disposition à payer 9,99€. ([preuve](https://www.jaimelesstartups.fr/origame-centralisation-des-abonnements-mensuels-pour-faire-des-economies))
-  - Angle libre : Aucun concurrent ne fait de la résiliation assistée avec envoi automatique des demandes et accusés de réception : Origame centralise et change de fournisseur, SignalConso signale mais ne résilie pas pour l'utilisateur. Un service 'on fait la démarche à votre place, avec preuve d'envoi' reste un angle libre, à condition de prouver que les gens paieront alors que des alternatives gratuites existent.
-  - Risque juridique : moyen — Le service agit pour le compte de tiers dans des démarches contractuelles (mandat, RGPD, éventuelle réglementation sur les démarches en nom d'autrui) ; le cadre légal existe déjà (art. L215-1 C. conso) mais l'opérationnalisation par un tiers nécessite un mandat clair.
-- **Faille :** Le canal principal (forums et groupes Facebook) est difficile à monétiser sans spam ou sans collecte de coordonnées, et le paiement par résiliation réussie crée une incitation à la tromperie si l'annulation échoue ou si l'utilisateur pouvait le faire seul gratuitement.
-- **Mutation proposée :** Spécialiser le site sur les abonnements à forte valeur et juridiquement sensibles (ex. assurances auto, mutuelles) avec un outil de génération de lettre type et de suivi automatisé des accusés de réception, et facturer un abonnement mensuel forfaitaire (sans pourcentage) plutôt qu'un frais par résiliation, pour aligner l'incitation et éviter tout conflit d'intérêt.
-
-## 2. IR-Flash : Générateur de Data Rooms & Q&A pour Startups
-**Score 6.62 / 10** · douleur 8.0 · paiement 9 · espace 3.0 · élan 4.9 · critique 7.4 · tournoi 8.0 · risque 5 — travail-et-carrieres, née d'une faille calculée (reprendre-l-abandon)
-
-- **Problème :** Les fondateurs passent des semaines à préparer les Due Diligence et répondent aux questions récurrentes des investisseurs, souvent de manière incohérente.
-- **Pour qui :** Fondateurs de startups en phase Seed ou Série A cherchant à lever des fonds rapidement.
-- **Solution :** Un SaaS libre-service qui analyse les slides deck et le modèle financier pour générer automatiquement une Data Room structurée et un jeu de réponses Q&A cohérent basé sur les données fournies.
-- **Valeur pour la société :** Démocratise l'accès aux marchés financiers en rendant la professionnalisation de la relation investisseur accessible sans coûts de consultants élevés.
-- **Canal :** place-de-marche-api — premiers clients : Communautés Slack/Twitter de founders (« YC Startup School », « French Tech »).
-- **Revenu :** Abonnement mensuel (SaaS) pour l'accès complet au générateur. (97)
-- **Premier test :** Lancer un formulaire Typeform demandant le pitch deck : les 10 premiers reçoivent gratuitement une ébauche de Data Room générée par l'IA via email.
-- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 2 outils payants utilisés sur le marché des agents
-- **Originalité mesurée :** 5.83/10
-  - Marché des agents : [Booking Scraper](https://apify.com/voyager/booking-scraper) — 1100 utilisateurs/30 j, 0.005 $ par Scraped place result
-  - Marché des agents : [Booking Reviews Scraper](https://apify.com/voyager/booking-reviews-scraper) — 546 utilisateurs/30 j, 0.002 $ par Scraped review
-  - Marché des agents : [Google Hotels Scraper - Prices, OTA Rates, Room Rates & Reviews](https://apify.com/factden/google-hotels-scraper) — 47 utilisateurs/30 j, 0.004 $ par Hotel
+- **Problème :** Les acteurs du gisement vendent un scraper fragile noté 3/6 : fields mélangés, sorties instables, pas de contrat de service clair. Les développeurs veulent un résultat fiable (autorité, trafic estimé, backlinks, trafic IA) sans déboguer un scrapeur.
+- **Pour qui :** Développeurs, agences SEO en marque blanche et agents IA automatisés qui intégrèrent ces données dans leurs pipelines.
+- **Solution :** Une API REST + endpoint MCP propre : un appel, un schéma JSON versionné et testé, cache transparent, scoring composite « santé domaine » calculé par nos agents (autorité, tendance de trafic, part du trafic venant des IA). Facturée à l'appel sur Apify Store et RapidAPI.
+- **Valeur pour la société :** Baisse du coût et de la barrier d'entrée à des données marché jusqu'ici réservées aux gros budgets, fiabilité et transparence tarifaire.
+- **Canal :** place-de-marche-api — premiers clients : Publier deux actors sur l'Apify Store (analyse de domaine + top sites) et répondre utilement dans les threads SEO de Hacker News et r/SEO où les acheteurs du scraper mal noté se plaignent déjà.
+- **Revenu :** Paiement à l'usage par appel + abonnement mensuel pour les gros volumes. (0,02 € par appel, packs de 10 000 appels à 120 €/mois.)
+- **Premier test :** En 2 semaines : livrer l'endpoint « santé domaine » avec 10 métriques, le mettre en pay-per-result sur Apify Store et viser 20 appels payants dont 5 clients récurrents.
+- **Preuve de paiement :** 2 prix lus sur la page, 2 offres payantes du même besoin ; 3 outils payants utilisés sur le marché des agents
+- **Originalité mesurée :** 10/10
+  - Marché des agents : [Semrush Full API SEO Scraper - Traffic, Authority, Backlinks](https://apify.com/pro100chok/semrush-scraper) — 483 utilisateurs/30 j, 0.015 $ par result
+  - Marché des agents : [Google Search Results (~$0.05/1K Results)](https://apify.com/scraperlink/google-search-results-serp-scraper) — 2464 utilisateurs/30 j, 0.0005 $ par search result pages
+  - Marché des agents : [Google Search Scraper ($0.15 per 1000 results)](https://apify.com/igolaizola/google-search-scraper-ppe) — 404 utilisateurs/30 j, 0.0003 $ par Result
   - Serveurs MCP déjà publiés sur ce besoin : 0
-- **Élan :** ×0.97 sur 90 jours — « data room » HN 4 contre 8, GitHub 1287 contre 1133 ; « due diligence » HN 235 contre 185
-- **Faille :** Faille (ça marche à l'étranger, rien ici) : Outil d'IA native pour la gestion des relations investisseurs (IR) générant des visions stratégiques.
-  - [Y Combinator Fall 2026](https://usecollarai.com) — Collar — AI-Native Investor Relations. We are a team of ex-intelligence, ex-finance, and most importantly, ex-founders who have known each other for over 5 year
-- **Enquête :** verdict creuser — Le besoin est bien documenté et Pageform occupe déjà le créneau avec un produit proche et gratuit en entrée : il faut valider un angle différenciant (génération auto + Q&A) et un prix avant de foncer.
-  - Concurrents : [Pageform (Startup Data Room)](https://pageform.io/startup-data-room) (prix ?, ressemblance 9/10) ; [Pageform (Fundraising Data Room)](https://pageform.io/fundraising-data-room) (prix ?, ressemblance 9/10)
-  - Qui paie déjà : Les fondateurs en levée (Seed/Série A) paient déjà des data rooms virtuelles (Pageform, et historiquement DocSend, Ansarada, Datasite — non vérifiés dans ces résultats) et des conseils (avocats, CFO à temps partagé) pour préparer la due diligence.
-  - Angle libre : Aucun concurrent des résultats ne génère automatiquement la data room ET les réponses Q&A cohérentes à partir du deck et du modèle financier : Pageform structure et analyse l'engagement mais part des documents existants ; l'angle 'génération + cohérence des réponses' reste ouvert, à condition de prouver que les fondateurs veulent de l'automatisé plutôt que du sur-mesure.
-  - Risque juridique : moyen — Traitement de documents financiers et juridiques sensibles (RGPD, confidentialité vis-à-vis des investisseurs, responsabilité en cas d'erreur dans les réponses Q&A générées par IA).
-- **Faille :** Le risque principal réside dans la confiance et la qualité du contenu. Si l'IA génère des réponses ou des structures de Data Room qui semblent génériques ou contiennent des 'hallucinations' financières/légales, le fondateur perd immédiatement confiance, rendant le SaaS inutilisable pour un processus aussi critique que la levée de fonds. La distribution est également trop vague (communautés Slack/Twitter) sans canal d'acquisition structuré.
-- **Mutation proposée :** Intégrer un système de 'validation par l'humain' ou de 'niveau de confiance' sur chaque réponse générée par l'IA. L'outil ne doit pas fournir la réponse finale, mais un 'brouillon optimisé' avec des alertes claires : 'Cette réponse est basée sur l'hypothèse X du modèle financier ; veuillez la vérifier.' De plus, cibler des intégrations directes (API) avec des outils de gestion de projet/CRM VC (ex: Notion, Airtable) pour passer du générateur au workflow de DD.
+- **Élan :** ×1.63 sur 90 jours — « domain authority » HN 3 contre 4, GitHub 93 contre 56 ; « SERP API » HN 8 contre 1
+- **Preuve de terrain :** Marché des agents : Semrush Full API SEO Scraper - Traffic, Authority, Backlinks — outil payé par 483 utilisateurs en 30 jours
+- **Enquête :** verdict creuser — Le besoin est réel et payant mais le marché est saturé d'APIs établies ; il faut valider que le scoring composite et le MCP sont un différenciateur suffisant face à DataForSEO/Ahrefs.
+  - Concurrents : [DataForSEO SERP API](https://dataforseo.com/help-center/best-web-search-api-for-developers-what-to-look-for-and-why-dataforseo-serp-api-fits) (pay-as-you-go (tarif à l'appel, non affiché), ressemblance 7/10) ; [SerpApi Google Search API](https://serpapi.com/search-api) (prix ?, ressemblance 6/10) ; [Zenserp](https://www.scraperapi.com/web-scraping/best-web-scraping-apis/google-serp-api/) ($49.99/mois pour 5 000 requêtes, ressemblance 6/10) ; [Apify SERP scrapers](https://www.scraperapi.com/web-scraping/best-web-scraping-apis/google-serp-api/) ($49/mois (~14 000 résultats), ressemblance 6/10)
+  - Qui paie déjà : Agences SEO et équipes marketing digital paient déjà des abonnements SERP/SEO APIs (Zenserp, Apify ~50$/mois) et du pay-as-you-go DataForSEO ; les développeurs intègrent ces données dans leurs pipelines. ([preuve](https://www.scraperapi.com/web-scraping/best-web-scraping-apis/google-serp-api/))
+  - Angle libre : Aucun concurrent ne vend un score composite « santé domaine » en un seul appel combinant autorité + tendance de trafic + part de trafic venant des IA, avec schéma JSON versionné et endpoint MCP pour agents IA.
+  - Risque juridique : moyen — Scraping de données Google et métriques propriétaires (Moz, Ahrefs) : risque de violation des CGU et de dépendance à des données qu'on ne possède pas.
+- **Faille :** La défendabilité est faible : un concurrent peut reproduire le même score composite avec des données ouvertes et un LLM, et les API concurrentes (Ahrefs, Semrush) ont déjà des endpoints fiables et des données propriétaires inaccessibles.
+- **Mutation proposée :** Ajouter une couche de données exclusives issues de partenariats avec des fournisseurs de logs ou de crawlers spécialisés, et breveter un algorithme de scoring « trafic IA » basé sur des signaux non publics (ex. mentions dans les réponses de modèles propriétaires).
 
-## 3. La Fenêtre Pêche
-**Score 6 / 10** · douleur 7.0 · paiement 2 · espace 6.0 · élan 6.0 · critique 7.2 · tournoi 6.0 · risque 10 — culture-et-loisirs, visionnaire (api-vivante)
+## 2. Le Déméteur : l'agent qui débarasse la maison d'un aîné avant la vente
+**Score 6.89 / 10** · douleur 6.0 · paiement 10 · espace 6.0 · élan 5.0 · critique 7.1 · tournoi 8.0 · risque 10 — familles-et-aines, visionnaire (inversion)
 
-- **Problème :** Les pêcheurs côtiers perdent des sorties entières à cause d'une houle ou d'une température d'eau mal jugée, et aucun outil ne croise conditions marine et fenêtres réellement praticables par type de pêche.
-- **Pour qui :** Pêcheurs récréatifs côtiers et plongeurs qui planifient leurs sorties de bord de mer.
-- **Solution :** Pour chaque spot côtier de France, des milliers de pages générées automatiquement qui traduisent houle, température et météo en verdict simple : « fenêtre 6h-10h exploitable pour la pêche du bord », avec pages par port et par technique.
-- **Valeur pour la société :** Réduit les prises de risque en mer pour les amateurs mal équipés en données professionnelles.
-- **Canal :** seo-programmatique — premiers clients : Les 10 premiers clients via forums et groupes Facebook/Discord de pêche du bord par région, en postant leurs pages de port favorites.
-- **Revenu :** Freemium : pages publiques, abonnement pour alertes SMS/e-mail de fenêtre de pêche sur ses 5 spots favoris. (4,99 €/mois)
-- **Premier test :** Publier 200 pages de ports gratuits, vendre l'alerte e-mail quotidienne à prix de lancement pendant 2 semaines et compter les payeurs.
+- **Problème :** Quand un parent déménage en résidence ou décède, les enfants doivent vider une maison entière : trier, estimer, vendre, donner, jeter — des semaines de travail épuisant sans méthode.
+- **Pour qui :** Les enfants adultes d'aînés qui doivent vider un logement en quelques semaines.
+- **Solution :** L'aidant photographie pièce par pièce depuis son téléphone ; les agents identifient chaque objet, estiment sa valeur de revente réelle (comparables de ventes), génèrent le plan de tri : ce qui se vend sur Vinted/eBay/Leboncoin avec annonce rédigée, ce qui se donne à quelle association locale, ce qui part. Livré en dossier actionnable + annonces prêtes à publier.
+- **Valeur pour la société :** Moins d'objets jetés en déchetterie, plus d'objets redirigés vers revente, don et associations ; désintoxication du stress des aidants.
+- **Canal :** communautes — premiers clients : Les groupes Facebook et forums d'aidants (Aidants Mag, groupes « aider un parent »), subreddits r/France et r/declutter : posts utiles de méthode gratuite avec l'outil en lien.
+- **Revenu :** Paiement unique par dossier de maison traité, avec palier selon volume. (89 € par logement traité (illimité en objets).)
+- **Premier test :** Landing page + traitement gratuit des 10 premiers dossiers contre témoignage, prix affiché à 89 €, annoncé dans 3 groupes d'aidants ; mesurer combien paient au dossier 14.
+- **Preuve de paiement :** 2 prix lus sur la page, 2 offres payantes du même besoin
+- **Originalité mesurée :** 3.75/10 — proche de l'idée réflexe « Vente de partitions ou tablatures »
+- **Élan :** pas assez de signal — « estate clearance » HN 0 contre 0, GitHub 2 contre 3 ; « decluttering service » HN 0 contre 0
+- **Enquête :** verdict creuser — Le besoin est massif et prouvé mais les clients paient aujourd'hui pour un débarras clé en main, pas pour un dossier à exécuter eux-mêmes : il faut valider qu'ils paieront 89 € pour le plan seul.
+  - Concurrents : [Kietud](https://www.kietud.com) (gratuit pour le devis (10 photos), commission/coordination non affichée, ressemblance 8/10) ; [Spacee](https://www.spacee.fr) (devis immédiat en ligne, prix non affiché, ressemblance 5/10) ; [Diogène France](https://diogene-france.fr/debarras-apres-deces) (800–1 500 € TTC pour 40–60 m², ressemblance 6/10) ; [MyJugaad](https://my-jugaad.eu/vide-logement) (null, ressemblance 5/10)
+  - Qui paie déjà : Les héritiers ou le notaire sur les fonds de la succession, typiquement 800–1 500 € pour un débarras physique (Diogène). Le budget existe donc déjà pour la logistique, mais personne ne paie encore uniquement pour le « plan de tri + annonces » sans le débarras. ([preuve](https://diogene-france.fr/debarras-apres-deces))
+  - Angle libre : Aucun acteur ne vend un livrable purement digital (estimation objets par photo + annonces prêtes + plan de dons) sans intervention physique ni coordination : Kietud fait la coordination locale à Lyon, les débarrasseurs font la main-d'œuvre, mais personne ne solutionne l'étape « savoir quoi faire de chaque objet » à distance pour 89 €. Risque principal : le client veut souvent que quelqu'un fasse le travail, pas un dossier.
+  - Risque juridique : faible — Conseil et rédaction d'annonces ; attention seulement aux estimations de valeur qui pourraient être perçues comme expertise d'inventaire successorale.
+- **Faille :** La promesse d'estimation fiable à partir de photos est techniquement difficile : les agents peuvent identifier des objets courants, mais la valeur de revente dépend de l'état, des marques, des variations locales — risque de déception et de demandes de remboursement.
+- **Mutation proposée :** Se concentrer sur un sous-ensemble à forte valeur et facilement identifiable (meubles de marque, vaisselle, livres anciens) et fournir une fourchette de prix avec liens vers des comparables réels, en laissant l'utilisateur valider avant de générer les annonces ; ou proposer un service de mise en relation avec des vide-maisons locaux pour les objets complexes.
+
+## 3. Bodacc Vert — Le Radar des Opportunités Circulaires
+**Score 6.85 / 10** · douleur 7.0 · paiement 4 · espace 6.0 · élan 5.0 · critique 7.6 · tournoi 6.0 · risque 10 — planete, visionnaire (collision-api)
+
+- **Problème :** Chaque jour, des entreprises industrielles font l'objet de liquidations ou de ventes d'actifs publiées au BODACC : leur matériel (machines, mobilier, stock) finit à la ferraille alors qu'il pourrait être racheté et remis en service. L'information existe mais personne ne la lit ni ne la filtre.
+- **Pour qui :** Ressourceries, reconditionneurs, artisans et acheteurs d'occasion professionnelle qui cherchent du matériel à récupérer avant qu'il ne soit détruit.
+- **Solution :** Un flux quotidien en libre-service qui filtre les annonces BODACC par code d'activité et localisation, signale les procédures où du matériel réemployable existe probablement, et trie par secteurs à fort potentiel de réemploi (industrie, restauration, BTP). Données ouvertes, aucune récupération interdite.
+- **Valeur pour la société :** Donner une seconde vie à des équipements voués à la destruction : réemploi réel, économie circulaire mesurable, avantage pour les petites structures qui ne peuvent pas payer un veilleur.
+- **Canal :** communautes — premiers clients : Les communautés d'acteurs du réemploi (réseaux des ressourceries, groupes LinkedIn des acheteurs d'occasion industrielle) : compte gratuit limité, alerte e-mail quotidienne complète en abonnement.
+- **Revenu :** Abonnement mensuel à l'alerte filtrée par secteur et région. (15 €/mois, 120 €/an pour l'accès complet aux alertes quotidiennes.)
+- **Premier test :** En 2 semaines : diffuser gratuitement pendant 10 jours le digest quotidien des liquidations les plus riches en matériel dans 5 groupes de professionnels du réemploi, puis passer à 15 €/mois. Objectif : 10 abonnés payants.
 - **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin
-- **Originalité mesurée :** 6.3/10
-- **Élan :** ×1.31 sur 90 jours — « fishing forecast » HN 0 contre 0, GitHub 52 contre 39 ; « surf conditions » HN 2 contre 1
-- **Enquête :** verdict creuser — Le besoin est réel, documenté et le marché (1,25 Md€) existe, mais aucun concurrent payant n'apparaît dans les résultats : il faut vérifier manuellement les apps existantes (marées, Windy, apps de pêche) et valider que des pêcheurs paient 4,99 €/mois pour une information agrégée.
-  - Concurrents : aucun trouvé
-  - Qui paie déjà : Aucune offre payante identifiée dans les résultats pour la traduction météo-marine en fenêtres de pêche ; les pêcheurs paient déjà du matériel et consultent des outils gratuits (marées, météo marine Météo-France).
-  - Angle libre : Personne ne croise automatiquement houle, température de l'eau, marée et technique de pêche pour produire un verdict « fenêtre praticable » par spot et par technique, en pages SEO programm.
-  - Risque juridique : faible — Agrégation de données météo publiques avec attribution ; pas de données personnelles sensibles, mais prudence sur la fiabilité des conseils de sécurité.
-- **Faille :** La défensibilité est faible : une fois les pages indexées, un concurrent ou un assistant IA gratuit peut reproduire le verdict à partir des mêmes APIs ouvertes, et l'abonnement alerte est trop facile à cloner.
-- **Mutation proposée :** Ajouter un réseau social de partage de prises réelles (photos, conditions du jour) modéré par les utilisateurs, ce qui crée une base de données propriétaire et un effet réseau difficile à copier.
+- **Originalité mesurée :** 10/10
+- **Élan :** pas assez de signal — « BODACC alerts » HN 0 contre 0, GitHub 1 contre 0 ; « liquidation assets » HN 0 contre 0
+- **Enquête :** verdict creuser — L'angle réemploi est différenciant et la donnée est gratuite, mais aucune preuve de prix payant dans le même besoin n'a été trouvée et la demande d'acheteurs de matériel (vs. veille commerciale) reste à valider par le test prévu.
+  - Concurrents : [Coxee – Veille BODACC clients](https://coxee.fr/cas/veille-bodacc-clients) (prix ?, ressemblance 6/10) ; [bodacc.io](https://bodacc.io/fr) (prix ?, ressemblance 5/10) ; [Charik (veille BODACC clients/prospects)](https://www.charik.app/blog/bodacc-surveiller-clients-prospects) (prix ?, ressemblance 5/10) ; [NextToYourBusiness (cartographie reprises/cessions)](https://www.data.gouv.fr/reuses/reprises-cessions-dentreprises-marche-de-la-transmission-par-commune) (gratuit, ressemblance 4/10)
+  - Qui paie déjà : Non visible dans les résultats : aucune page de prix trouvée pour Coxee, bodacc.io ou Charik ; les acheteurs de veille BODACC payante existent (agences, fournisseurs, mandataires) mais les tarifs exacts ne figurent sur aucune page des résultats.
+  - Angle libre : Personne ne filtre le BODACC sous l'angle du réemploi : les concurrents visent les sales/clients (Charik, Coxee) ou la transmission d'entreprises (NextToYourBusiness), pas les acheteurs de matériel à sauver de la ferraille, et aucun ne trie par potentiel de réemployabilité sectorielle.
+  - Risque juridique : faible — Données ouvertes sous licence libre (DILA/data.gouv.fr), aucun contact interdit à manipuler si on reste sur le signalement des annonces.
+- **Faille :** La défendabilité est fragile : une fois le filtre connu, un concurrent peut copier le code et l'API publique, et la valeur ajoutée (filtrage, résumé) est reproductible par un agent IA gratuit.
+- **Mutation proposée :** Ajouter une couche de données propriétaires : historique des ventes réelles, estimation de valeur de revente, contacts vérifiés des liquidateurs, et un système de notation des annonces par les acheteurs, créant un effet de réseau et une barrière à l'entrée.
 
-## 4. Radar de salaires réels par métier et ville en France
-**Score 5.9 / 10** · douleur 9.0 · paiement 4 · espace 4.0 · élan 2.4 · critique 7.3 · tournoi 8.0 · risque 5 — travail-et-carrieres, née d'une faille calculée (transplant-adapte)
+## 4. Rembourse-moi, vite
+**Score 6.84 / 10** · douleur 7.2 · paiement 5 · espace 7.0 · élan 4.4 · critique 7.4 · tournoi 8.0 · risque 5 — grand-public, née d'une douleur réelle
 
-- **Problème :** Aucun service francophone ne montre les salaires réellement affichés dans les offres (plus de 40 % des offres françaises publient désormais une fourchette légale) : les sites existants recyclent des moyennes datées ou des données américaines.
-- **Pour qui :** Chercheurs d'emploi, personnes en reconversion et salariés en négociation annuelle qui veulent savoir ce que leur poste vaut aujourd'hui, dans leur ville.
-- **Solution :** Un site en SEO programmatique générant des milliers de pages « salaire de [métier] à [ville] en [mois] » calculées uniquement à partir des fourchettes affichées dans les offres collectées via des APIs officielles, avec graphiques partageables.
-- **Valeur pour la société :** Transparence salariale : réduit l'écart de négociation entre candidats et employeurs, et expose publiquement les écarts femmes-hommes et juniors-seniors par secteur.
-- **Canal :** seo-programmatique — premiers clients : Les 10 premiers clients viennent du SEO (pages « salaire développeur Lyon » déjà recherchées des dizaines de milliers de fois par mois) et de Reddit/Facebook emploi France où les fils de négociation de salaire sont récurrents.
-- **Revenu :** Freemium : pages publiques gratuites, abonnement pour les rapports détaillés par entreprise, séniorité et évolution sur 12 mois. (49 €/an le rapport illimité, ou 6,99 €/mois.)
-- **Premier test :** Publier 500 pages sur les 20 métiers les plus recherchés, ajouter un rapport payant unique à 9 € sur les pages les plus visitées, et mesurer 10 ventes en 2 semaines.
+- **Problème :** Les consommateurs victimes de commandes frauduleuses ou non livrées sur des places de marché (Amazon, app stores) n'ont aucun contact humain pour obtenir un remboursement.
+- **Pour qui :** Tout acheteur en ligne bloqué par un chatbot ou une absence de service client après un paiement litigieux.
+- **Solution :** Un agent IA autonome qui, sur simple envoi du ticket de caisse et des preuves par l'utilisateur, rédige une lettre de mise en demeure conforme au droit français, l'envoie par courrier recommandé électronique (API La Poste) et suit le dossier jusqu'au remboursement.
+- **Valeur pour la société :** Rétablit un équilibre de pouvoir entre le consommateur et les géants du commerce électronique, réduit l'impunité des fraudes.
+- **Canal :** seo-programmatique — premiers clients : 10 premiers clients via une page SEO optimisée pour « remboursement Amazon impossible », « litige colis non reçu », « contacter service client Amazon », postée sur des forums consommateurs (Que Choisir, 60 Millions de consommateurs).
+- **Revenu :** Paiement à l'acte : 5 € par lettre de mise en demeure envoyée, 15 € si le suivi aboutit à un remboursement. (5)
+- **Premier test :** Lancer une page vitrine sur Gumroad avec le service à 5 €, générer 10 clients via un post sur un groupe Facebook d'entraide consommateurs, traiter manuellement les 10 premiers dossiers pour valider le modèle.
+- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 6 personnes disent payer déjà
+- **Originalité mesurée :** 10/10
+- **Élan :** ×0.84 sur 90 jours — « refund automation » HN 0 contre 0, GitHub 44 contre 53 ; « chargeback dispute » HN 1 contre 0
+- **Preuve de terrain :** gisement « Impossibilité de contacter l'éditeur pour un remboursement », 10 mentions (App Store us, App Store fr, App Store be)
+  - « Trois commandes frauduleuses ont été débitées sur mon compte, Malgré mes preuves et mes démarches, Service client difficilement joignable » — [App Store fr](https://apps.apple.com/fr/app/amazon-fr/id358861688?uo=2)
+  - « on ne peut contacter PERSONNE. Pas de mail, pas de chat en ligne, pas de téléphone.. » — [App Store fr](https://apps.apple.com/fr/app/whatnot-live-shopping-vid%C3%A9o/id1488269261?uo=2)
+  - « c’est un calvaire de trouver comment communiquer avec un humain » — [App Store fr](https://apps.apple.com/fr/app/amazon-fr/id358861688?uo=2)
+- **Enquête :** verdict creuser — Le besoin est massif et prouvé mais personne ne paie encore pour ce service côté consommateur : valider la volonté de payer à 5 € est exactement le bon premier test, en restant prudemment hors du périmètre juridique réglementé.
+  - Concurrents : [Agents Handbook - dispute-a-purchase-with-a-merchant-or-chargeback](https://github.com/0xrome/agentshandbook/blob/master/playbooks/dispute-a-purchase-with-a-merchant-or-chargeback/SKILL.md) (Gratuit (playbook open-source), ressemblance 7/10) ; [eesel AI (automatisation remboursements côté marchand)](https://www.eesel.ai/fr/blog/automatisation-des-remboursements-ia-ecommerce) (prix ?, ressemblance 3/10) ; [Intake (agent IA support e-commerce côté marchand)](https://www.intake.es/en/ai-support-ecommerce) (prix ?, ressemblance 2/10) ; [Volubile (agent vocal retail côté marchand)](https://www.volubile.ai/fr/industrie/retail-e-commerce) (prix ?, ressemblance 2/10)
+  - Qui paie déjà : Personne ne paie directement pour ce service côté consommateur dans les résultats ; les consommateurs utilisent gratuitement les médiateurs, associations de consommateurs ou chatbots IA génériques. Les marchands, eux, paient des outils IA (eesel, Intake, Volubile) pour traiter ces demandes en amont.
+  - Angle libre : Aucun concurrent ne fait l'agent du consommateur : tout l'écosystème IA (eesel, Intake, Volubile) automatise les remboursements côté marchand ; côté consommateur il n'existe qu'un playbook gratuit sans exécution. L'angle libre est l'envoi automatisé de mise en demeure conforme au droit français via LRE (API La Poste) avec suivi jusqu'au remboursement.
+  - Risque juridique : moyen — Rédaction de mises en demeure au nom de consommateurs peut toucher au démarchage juridique réglementé (réservé aux avocats en France) ; il faut rester de l'assistance documentaire, pas du conseil juridique.
+- **Faille :** Le risque juridique est élevé : l'IA génère des documents légaux (mise en demeure). Si le modèle est imparfait, l'utilisateur est prévenu, mais si l'IA commet une erreur de droit ou de procédure, la responsabilité du service est engagée, ce qui est incompatible avec un modèle de 'faible risque' pour un service d'automatisation juridique.
+- **Mutation proposée :** Ne pas se positionner comme un 'rédacteur de lettre', mais comme un 'stratège de litige' : l'IA doit analyser la CGV du géant (Amazon, etc.), les preuves, et les lois applicables, pour proposer un plan d'action (médiation, réclamation interne, mise en demeure) avec une probabilité de succès estimée, et seulement exécuter la démarche la plus efficace.
+
+## 5. FuckMuseum : base de données interactive des erreurs de terminal et de leurs solutions
+**Score 6.64 / 10** · douleur 7.1 · paiement 4 · espace 4.0 · élan 4.6 · critique 8.2 · tournoi 6.0 · risque 10 — apprendre, née d'une faille calculée (reprendre-l-abandon)
+
+- **Problème :** Les débutants en ligne de commande se heurtent à des erreurs cryptiques et ne savent pas comment les résoudre, surtout quand TheFuck ne fonctionne pas.
+- **Pour qui :** Étudiants en informatique, autodidactes et nouveaux développeurs qui apprennent le terminal.
+- **Solution :** Un site généré par agents à partir des erreurs réelles collectées anonymement, avec des explications claires, des vidéos courtes, et un simulateur de terminal qui montre les correctifs en direct.
+- **Valeur pour la société :** Démocratise l'apprentissage du terminal, réduit le décrochage technique et crée une ressource pédagogique libre et vivante.
+- **Canal :** contenu-court — premiers clients : Publier 10 vidéos TikTok et YouTube Shorts montrant des erreurs courantes et leurs correctifs, et rediriger les spectateurs vers le site; contacter les subreddits d'apprentissage (r/learnprogramming) pour partager la ressource.
+- **Revenu :** Vente de cartes de révision numériques et d'un ebook « Les 100 erreurs de terminal les plus fréquentes », plus abonnement premium pour le simulateur avancé. (5)
+- **Premier test :** Créer un site avec 50 erreurs documentées, le publier sur Reddit et Product Hunt, et proposer l'ebook à 5 euros aux 10 premiers visiteurs qui s'inscrivent à la newsletter.
 - **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin
-- **Originalité mesurée :** 6.3/10
-  - Marché des agents : [Indeed Scraper : Scrape jobs posted on Indeed. Get detailed information from this job portal about saved and sponsored jobs. Specify the search based on loca](https://apify.com/misceres/indeed-scraper) — 2050 utilisateurs/30 j, 0.006 $ par Job listing
-- **Élan :** ×0.49 sur 90 jours — « salary transparency » HN 1 contre 0, GitHub 17 contre 38 ; « salary comparison » HN 1 contre 0
-- **Faille :** Faille (demande payée, mal servie) : Indeed Scraper : Scrape jobs posted on Indeed. Get detailed information from this job portal about saved and sponsored jobs. Specify the search based on loca
-  - [Apify Store](https://apify.com/misceres/indeed-scraper) — Scrape jobs posted on Indeed. Get detailed information from this job portal about saved and sponsored jobs. Specify the search based on location with the output
-- **Enquête :** verdict creuser — Le besoin est réel et documenté, mais le marché français du salaire par métier/ville est déjà saturé d'outils gratuits adossés à des données officielles : il faut d'abord prouver que quelqu'un paierait 49 €/an pour une donnée que tous les concurrents donnent gratuitement.
-  - Concurrents : [France Salaires (francesalaires.fr)](https://francesalaires.fr/) (Gratuit, ressemblance 7/10) ; [Apec — Simulateur salaire](https://www.apec.fr/tous-nos-outils/fiche-outils/simulateur-salaire-apec--calculez-votre-salaire.html) (Gratuit, ressemblance 7/10) ; [Salairia — positionnement dans la distribution des salaires](https://salairia.com/simulateurs/ou-se-situe-mon-salaire) (Gratuit, ressemblance 6/10) ; [Salaire-metier.com](https://salaire-metier.com/salaire-assistant-rh) (Gratuit, ressemblance 6/10)
-  - Qui paie déjà : Personne ne paie pour des données salariales en France d'après les résultats : tous les concurrents trouvés (Apec, France Salaires, Salairia, WAAGE, TJMètre, salaire-metier.com) sont gratuits et financés par la publicité, les commissions d'offres d'emploi ou des données d'entreprises. Les offres payantes comparables (Glassdoor, Levels.fyi, payscale) n'apparaissent pas dans les résultats.
-  - Angle libre : Calculer les fourchettes uniquement à partir des salaires réellement affichés dans les offres (et non des moyennes INSEE ou des déclarations), avec fraîcheur mensuelle par ville — aucun concurrent trouvé ne le fait, mais c'est une différence de méthode difficile à percevoir pour l'utilisateur, et la directive européenne sur la transparence salariale (juin 2026) va pousser tous les acteurs à afficher des fourchettes.
-  - Risque juridique : moyen — Réutilisation des données d'offres d'emploi via des APIs officielles (France Travail) soumise à des conditions d'usage et d'attribution, et mention légale obligatoire des sources (INSEE, DARES) déjà appliquée par les concurrents ; pas de données personnelles sensibles, donc risque contenu.
-- **Faille :** La défensibilité est faible : un concurrent (ou un assistant IA gratuit) peut reproduire l'agrégation des fourchettes salariales à partir des mêmes API officielles, et le freemium ne crée pas de verrou fort (pas de données propriétaires, pas de réseau).
-- **Mutation proposée :** Ajouter un module de benchmark personnalisé où l'utilisateur importe son CV (anonymisé) et obtient une estimation ajustée à son profil, ce qui crée des données d'entraînement exclusives et une barrière à la copie.
-
-## 5. CodeBruit — les stats publiques d'échec transformées en carte des pièges
-**Score 5.83 / 10** · douleur 6.5 · paiement 5 · espace 6.0 · élan 5.0 · critique 6.8 · tournoi 8.0 · risque 5 — apprendre, née d'une douleur réelle
-
-- **Problème :** Aucune app ne dit quels sont réellement les questions et thèmes qui font échouer les candidats : tout le monde révise à l'aveugle des milliers de questions identiques.
-- **Pour qui :** Candidats pressés (examens imminents) qui veulent réviser en priorité ce qui fait vraiment échouer.
-- **Solution :** Un site gratuit qui agrège et analyse les données ouvertes et les retours publics sur les échecs au code par thème, et classe publiquement les « 50 pièges qui coûtent le plus de points », avec un quiz gratuit centré uniquement dessus.
-- **Valeur pour la société :** Réviser moins mais mieux, réduire l'écart entre ceux qui peuvent payer des packs complets et les autres.
-- **Canal :** bouche-a-oreille-produit — premiers clients : Le classement des pièges est partageable en un clic (« tu rates probablement le piège n°7 ») dans les groupes de candidats et sur les réseaux, attirant les premiers visiteurs sans pub.
-- **Revenu :** Quiz des 50 pièges gratuit et partageable ; rapport personnel « mes 10 pièges probables » en achat unique après un auto-diagnostic rapide. (3,90 euros le rapport personnalisé des pièges probables.)
-- **Premier test :** Publier la carte des 50 pièges avec quiz gratuit et widget partageable ; vendre le rapport à 3,90 euros et viser 25 ventes en 14 jours via le partage du widget.
-- **Preuve de paiement :** 0 prix lus sur la page, 0 offres payantes du même besoin ; 8 personnes disent payer déjà
-- **Originalité mesurée :** 5/10 — proche de l'idée réflexe « Données de santé publique ouvertes »
-- **Élan :** pas assez de signal — « driving theory traps » HN 0 contre 0, GitHub 0 contre 0 ; « exam failure statistics » HN 0 contre 0
-- **Preuve de terrain :** gisement « Applications de révision inefficaces », 11 mentions (App Store fr, App Store be)
-  - « Beuge répétitif. Franchement, l’application Ornikar est vraiment décevante. Quand on révise le code, les images ne s’affichent qu’une fois sur deux et l’application n’arrête pas de buguer. » — [App Store fr](https://apps.apple.com/fr/app/code-de-la-route-2026-ornikar/id1612432450?uo=2)
-  - « Nullissime. Je n’ai pas eu mon code avec Ornikar. Les fiches des séries se répètent, le format est difficilement lisible sur laptop. » — [App Store fr](https://apps.apple.com/fr/app/code-de-la-route-2026-ornikar/id1612432450?uo=2)
-  - « Très déçu ! » — [App Store fr](https://apps.apple.com/fr/app/code-de-la-route-2026-ornikar/id1612432450?uo=2)
-- **Enquête :** verdict creuser — Le besoin est prouvé et l'angle data est différenciant, mais le seul concurrent trouvé est gratuit et il faut d'abord vérifier l'accès réel aux données d'échec avant de vendre un rapport à 3,90 €.
-  - Concurrents : [Théorique en Poche — guide des pièges de l'examen théorique](https://theorique-en-poche.be/theorie/guide/pieges-examen) (gratuit (page de guide), ressemblance 7/10)
-  - Qui paie déjà : Aucune offre payante identifiée dans les résultats pour ce besoin précis ; les candidats au code paient déjà des packs de révision (tests blancs) chez les auto-écoles et plateformes classiques, mais rien n'apparaît ici sur un produit « pièges » payant.
-  - Angle libre : Agrégation quantitative de données réelles d'échec (thèmes/fautes les plus éliminatoires) pour classer les pièges par coût en points, plutôt qu'une simple liste éditoriale de conseils comme le font les guides gratuits existants.
-  - Risque juridique : moyen — Exploiter des « données publiques d'échec » suppose que ces données soient réellement ouvertes et réutilisables : les statistiques officielles d'examen peuvent être protégées ou indisponibles, et le mot « code » peut viser une marque ou un service public.
-- **Faille :** Le rapport personnalisé à 3,90€ repose sur un auto-diagnostic rapide, mais sans données fiables sur l'utilisateur (ses lacunes réelles), la valeur perçue est faible et le passage à l'achat incertain.
-- **Mutation proposée :** Remplacer le rapport générique par un mini-quiz adaptatif de 5 questions qui identifie les 3 pièges les plus probables pour l'utilisateur, puis vendre l'accès au diagnostic complet (20 questions) pour 3,90€, avec un taux de conversion plus élevé car la valeur est démontrée avant l'achat.
+- **Originalité mesurée :** 10/10
+- **Élan :** ×0.9 sur 90 jours — « terminal errors » HN 1 contre 0, GitHub 204 contre 205 ; « command line » HN 528 contre 654
+- **Faille :** Faille (logiciel très utilisé, abandonné) : nvbn/thefuck : Magnificent app which corrects your previous console command.
+  - [GitHub](https://github.com/nvbn/thefuck) — Magnificent app which corrects your previous console command.
+- **Enquête :** verdict creuser — Le besoin est prouvé mais déjà servi gratuitement par TheFuck ; l'angle base de données pédagogique web + simulateur est différenciant, à valider par le test des 50 erreurs avant de créer l'ebook payant.
+  - Concurrents : [TheFuck](https://github.com/nvbn/thefuck) (prix ?, ressemblance 7/10) ; [tf-ai (thefuckai)](https://github.com/AspireOne/thefuckai) (prix ?, ressemblance 7/10) ; [TheFuck (PyPI)](https://pypi.org/project/thefuck/3.28) (prix ?, ressemblance 6/10) ; [thefuck — ConfigCrate guide](https://configcrate.com/thefuck-command-corrector.html) (prix ?, ressemblance 4/10)
+  - Qui paie déjà : Personne ne paie directement : le besoin est résolu par des outils open source gratuits (TheFuck) et de la documentation gratuite ; les développeurs paient indirectement via des formations CLI et ebooks techniques.
+  - Angle libre : Un site web éducatif consultable sans installation (explications pédagogiques, vidéos, simulateur de terminal) alors que TheFuck et ses clones sont des outils CLI sans couche didactique ni base de données d'erreurs documentées pour débutants.
+  - Risque juridique : faible — Contenu éducatif original et collecte de données anonymisée ; veiller simplement à ne pas réutiliser le nom 'TheFuck' (open source, licence MIT, mais marque potentielle).
+- **Faille :** La valeur ajoutée repose uniquement sur la compilation d'erreurs publiques. Si les solutions générées par l'IA sont trop génériques (ex: 'vérifiez votre syntax'), l'utilisateur ne verra pas de différence significative avec une recherche Google, ce qui fragilise la monétisation des produits premium.
+- **Mutation proposée :** Intégrer un système de 'profil d'erreur' (Error Profile) qui ne se contente pas de donner la solution, mais identifie le prérequis manquant (ex: 'Vous n'avez pas installé Node.js', 'Vous n'avez pas configuré votre PATH'), transformant ainsi le catalogue d'erreurs en un parcours d'apprentissage structuré.
 
 ## Suivantes
-6. **Agent chasseur de contenu commercial incomplet** (5.77) — Les familles achètent des applis éducatives ou des jeux (surtout Apple Store) qui se révèlent être des arnaques (contenu incomplet, photo trompeuse, IA bâclée).
-7. **FichesBrutes — les annales officielles transformées en entraînement** (5.67) — Chaque examen (concours, code, capacités professionnelles) possède des annales et sujets officiels publics, mais les apps marchandisent des versions appauvries et buggées de ces contenus.
-8. **L'Archiviste Juridique Grand Public** (5.63) — Les consommateurs signent des CGV, des abonnements et des contrats de service complexes qu'ils ne comprennent pas, perdant leurs droits face aux clauses abusives.
-9. **ScamShield — Vérificateur de réputation de vendeur avant achat** (5.41) — Les avis en ligne sont souvent faux, et les consommateurs se font arnaquer sur des boutiques en ligne inconnues, sans savoir si le vendeur a des antécédents de non-remboursement.
-10. **La boîte noire de l'aidant familial** (5.36) — Les aidants de personnes âgées réinventent seuls des procédures tacites (quels papiers pour quel dossier, qui appeler, dans quel ordre) que des millions d'aidants avant eux ont déjà résolues mais jamais écrites.
+6. **Sismographe salarial ouvert** (6.58) — Les barèmes de salaires vendus aux développeurs et aux agents sont chers, opaques et mal actualisés ; les agents IA qui conseillent des candidats manquent d'une source de salaires fraîche et fiable.
+7. **LegacyShift : détecteur de dépendances open source mortes** (6.53) — Des milliers de packages npm comme request (3065 votes, 92 mois sans réponse) sont encore dans des millions de builds, sans que personne ne sache lesquels sont desfailles silencieuses. Les équipes découvrent la mort d'une dépendance le jour d'une faille de sécurité.
+8. **Radar de recrutement pour vendeurs B2B** (6.43) — Les petits vendeurs de logiciels et prestataires ne savent pas à qui écrire : les signaux d'achat les plus fiables (une entreprise qui ouvre 5 postes de comptable ou de développeur) sont enterrés dans les job boards et personne ne les rend exploitables aux indépendants.
+9. **Verdict sécurité en API pour les agents IA** (6.35) — Les applis d'identification (champignons, plantes) et les agents IA généralistes n'ont aucune source fiable et structurée de verdicts de comestibilité et toxicité ; leurs réponses sont dangereusement vagues.
+10. **Radar de trafic IA par domaine : « qui reçoit les clients de ChatGPT ? »** (6.18) — Les e-commerçants et créateurs ignorent si les IA recommandent leurs concurrents plutôt qu'eux ; le scraper du gisement donne le chiffre brut mais aucun plan d'action ni suivi dans le temps.
 
 ## Gisements les plus forts
 - **Abus des abonnements mobiles** — 61 mentions (0 aujourd'hui), 4 sources, force 18.048
-- **Outils utilitaires et de développement manquants** — 114 mentions (30 aujourd'hui), 7 sources, force 16.135
-- **Service client défaillant après paiement** — 29 mentions (10 aujourd'hui), 5 sources, force 15.799
-- **Tarification abusive des contenus numériques** — 75 mentions (0 aujourd'hui), 4 sources, force 14.156
+- **Outils utilitaires et de développement manquants** — 148 mentions (34 aujourd'hui), 7 sources, force 16.988
+- **Service client défaillant après paiement** — 33 mentions (4 aujourd'hui), 5 sources, force 15.964
+- **Tarification abusive des contenus numériques** — 80 mentions (5 aujourd'hui), 4 sources, force 14.538
 - **Résiliation d'abonnement impossible** — 35 mentions (0 aujourd'hui), 3 sources, force 12.643
-- **Remboursements et compensations de livraison non honorés** — 28 mentions (1 aujourd'hui), 3 sources, force 11.507
-- **Problèmes de performance des applications mobiles** — 66 mentions (13 aujourd'hui), 4 sources, force 11.467
-- **Retards de livraison imprévisibles** — 34 mentions (11 aujourd'hui), 3 sources, force 10.39
-- **Non-remboursement en cas de vol par le livreur** — 15 mentions (1 aujourd'hui), 3 sources, force 10.105
-- **Support client inaccessible en cas de bug applicatif** — 26 mentions (3 aujourd'hui), 4 sources, force 9.564
-- **Services e-mail privés et de qualité** — 18 mentions (2 aujourd'hui), 3 sources, force 8.857
-- **Fonctionnalités défaillantes dans les applications payantes** — 31 mentions (1 aujourd'hui), 3 sources, force 8.701
+- **Remboursements et compensations de livraison non honorés** — 31 mentions (3 aujourd'hui), 3 sources, force 11.794
+- **Problèmes de performance des applications mobiles** — 72 mentions (6 aujourd'hui), 4 sources, force 11.762
+- **Retards de livraison imprévisibles** — 48 mentions (14 aujourd'hui), 3 sources, force 10.92
+- **Non-remboursement en cas de vol par le livreur** — 16 mentions (1 aujourd'hui), 3 sources, force 10.388
+- **Support client inaccessible en cas de bug applicatif** — 29 mentions (3 aujourd'hui), 4 sources, force 9.897
+- **Services e-mail privés et de qualité** — 21 mentions (3 aujourd'hui), 3 sources, force 9.397
+- **Mises à jour dégradant l'expérience utilisateur** — 37 mentions (2 aujourd'hui), 4 sources, force 9.229
 
 ## Santé
-- Sources : hn 53 ; hn_achat 59 ; appstore 1546 ; stackexchange 180 ; lemmy 150
-- mercury : 205 ok, 156 échecs (43 %), 8108 ms — aucun fournisseur pour mercury (openrouter : HTTP 429 ; groq : clé absente)
-- deepseek : 293 ok, 1 échecs (0 %), 10254 ms — réponse illisible (fin : stop) : {"produits": []}
-- qwen : 325 ok, 0 échecs (0 %), 10592 ms
-- mistral : 28 ok, 1 échecs (3 %), 27320 ms — réponse illisible (fin : stop) : {"produits": []}
-- glm : 339 ok, 1 échecs (0 %), 7634 ms — réponse illisible (fin : stop) : {"idees": [{"": "Le Moteur de Conformité de Dispositif (Device Compliance Engine) pour MedTech", "arene": "donnees-et-ap
-- Atlas vivant : 26/36 API répondent (muettes : seismes, eonet, openfoodfacts, essais-cliniques, openfda, osm, solaire, gutendex, openverse, nasa-apod)
-- Étapes : radar 355 s (cumul 0.0321 $) ; marche 8 s (cumul 0.0321 $) ; atlas 25 s (cumul 0.0321 $) ; failles 234 s (cumul 0.125 $) ; usine 865 s (cumul 0.3713 $) ; enquete 82 s (cumul 0.4541 $) ; elan 95 s (cumul 0.4541 $)
+- Sources : hn 54 ; hn_achat 59 ; appstore 1546 ; stackexchange 180 ; lemmy 150
+- deepseek : 355 ok, 3 échecs (1 %), 8329 ms — réponse illisible (fin : stop) : {"produits": []}
+- qwen : 306 ok, 1 échecs (0 %), 10991 ms — réponse illisible (fin : stop) : []
+- mistral : 26 ok, 1 échecs (4 %), 13835 ms — réponse illisible (fin : stop) : []
+- mercury : 182 ok, 155 échecs (46 %), 9208 ms — aucun fournisseur pour mercury (openrouter : HTTP 429 ; groq : clé absente)
+- glm : 327 ok, 0 échecs (0 %), 8009 ms
+- Atlas vivant : 24/36 API répondent (muettes : seismes, eonet, gbif, openfoodfacts, essais-cliniques, openfda, osm, gdelt, solaire, gutendex, openverse, nasa-apod)
+- Étapes : radar 341 s (cumul 0.0311 $) ; marche 5 s (cumul 0.0311 $) ; atlas 24 s (cumul 0.0311 $) ; failles 195 s (cumul 0.1253 $) ; usine 933 s (cumul 0.3877 $) ; enquete 42 s (cumul 0.47 $) ; elan 87 s (cumul 0.47 $)

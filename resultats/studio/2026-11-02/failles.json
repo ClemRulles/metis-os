@@ -2,7 +2,7 @@
  "failles": [
   {
    "type": "transplant",
-   "titre": "Outil d'IA native pour la gestion des relations investisseurs (IR) générant des visions stratégiques.",
+   "titre": "Robot technique automatisant la maintenance automobile courante comme les vidanges.",
    "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : absent.",
    "force": 8,
    "chiffres": {
@@ -11,25 +11,54 @@
     "metrique": {
      "type": "selection YC",
      "valeur": 1,
-     "equipe": 4
+     "equipe": 2
     }
    },
    "preuves": [
     {
-     "texte": "Collar — AI-Native Investor Relations. We are a team of ex-intelligence, ex-finance, and most importantly, ex-founders who have known each other for over 5 years. Collar is redefining investor relations. Right now, investor relations is an under-appreciated yet sweeping function. They have a bird’s ",
-     "url": "https://usecollarai.com",
+     "texte": "Rodeo Robotics — Robots for vehicle maintenance.. Rodeo builds a robotic technician that automates maintenance so fleets can get vehicles back on the road sooner. Initial deployments focus on oil changes at centralized depots, where routine maintenance competes for scarce technician time. Cofounders",
+     "url": "https://www.rodeorobotics.com/",
      "source": "Y Combinator Fall 2026"
     }
    ],
    "mots_en": [
-    "investor relations AI",
-    "startup IR platform"
+    "vehicle maintenance robot",
+    "fleet automation hardware"
    ],
-   "public": "Startups et PME levant des fonds."
+   "public": "flottes automobiles, garages",
+   "acheteur": "professions"
   },
   {
    "type": "transplant",
-   "titre": "Conception et fabrication de hardware via des instructions en langage naturel",
+   "titre": "Optimisation des kernels GPU pour réduire les coûts d'exécution des modèles IA open-source.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : absent.",
+   "force": 8,
+   "chiffres": {
+    "traction": 8,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "selection YC",
+     "valeur": 1,
+     "equipe": 2
+    }
+   },
+   "preuves": [
+    {
+     "texte": "RightNow — Co-designing the fastest intelligence. RightNow AI is a research lab for GPU kernel optimization. Our platform RunInfra serves top open-source models optimized for AI agents at a fraction of the cost of closed-source APIs RightNow AI lab: https://rightnowai.co RunInfra platform: https://r",
+     "url": "https://runinfra.ai/",
+     "source": "Y Combinator Fall 2026"
+    }
+   ],
+   "mots_en": [
+    "GPU kernel optimization",
+    "AI inference cost reduction"
+   ],
+   "public": "ingénieurs ML, développeurs IA",
+   "acheteur": "professions"
+  },
+  {
+   "type": "transplant",
+   "titre": "Concevoir et commander des projets matériels via des instructions en anglais simple.",
    "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : absent.",
    "force": 8,
    "chiffres": {
@@ -49,37 +78,11 @@
     }
    ],
    "mots_en": [
-    "hardware from text",
-    "plain English CAD"
+    "hardware design",
+    "plain English prompts"
    ],
-   "public": "Créateurs, makers, ingénieurs hobbyistes"
-  },
-  {
-   "type": "transplant",
-   "titre": "Plateforme Legora pour les cabinets d'architecture, ingénierie et construction",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : absent.",
-   "force": 8,
-   "chiffres": {
-    "traction": 8,
-    "equivalents_fr": 0,
-    "metrique": {
-     "type": "selection YC",
-     "valeur": 1,
-     "equipe": 2
-    }
-   },
-   "preuves": [
-    {
-     "texte": "Gradon — Legora for AEC (Architecture, Engineering, & Construction) firms. Gradon is Legora for the firms that design the world's buildings and infrastructure. Every road, bridge, water system and building starts with engineers, and there aren't nearly enough of them for everything the world needs t",
-     "url": "https://heygradon.com/",
-     "source": "Y Combinator Fall 2026"
-    }
-   ],
-   "mots_en": [
-    "AEC workflow platform",
-    "engineering firm automation"
-   ],
-   "public": "Cabinets d'architecture, ingénierie et construction"
+   "public": "Créateurs, makers",
+   "acheteur": "createurs"
   },
   {
    "type": "transplant",
@@ -104,13 +107,42 @@
    ],
    "mots_en": [
     "AI credit card",
-    "startup benefits"
+    "Startup benefits"
    ],
-   "public": "startups"
+   "public": "Startups et entreprises utilisant l'IA",
+   "acheteur": "petits_commerces, grandes_entreprises"
   },
   {
    "type": "transplant",
-   "titre": "Système d'exploitation unifié pour startups technologiques remplaçant plusieurs outils SaaS par un agent autonome.",
+   "titre": "Une simulation de firmware pour l'adoption de l'IA dans l'ingénierie matérielle.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire.",
+   "force": 8,
+   "chiffres": {
+    "traction": 8,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "selection YC",
+     "valeur": 1,
+     "equipe": 4
+    }
+   },
+   "preuves": [
+    {
+     "texte": "Simantic — Firmware simulation for AI agents. Simantic is modernizing the embedded firmware industry with hardware simulation developed for the adoption of AI in hardware engineering. Simantic gives both humans and AI the visibility into hardware previously limited by the physical world.",
+     "url": "https://simantic.com",
+     "source": "Y Combinator Fall 2026"
+    }
+   ],
+   "mots_en": [
+    "Firmware simulation",
+    "AI hardware engineering"
+   ],
+   "public": "Ingénieurs en matériel et développeurs d'IA",
+   "acheteur": "grandes_entreprises, developpeurs"
+  },
+  {
+   "type": "transplant",
+   "titre": "Système d'exploitation unifié pour startups technologiques intégrant toutes les opérations via un agent autonome.",
    "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : absent.",
    "force": 6.4,
    "chiffres": {
@@ -133,70 +165,17 @@
     "startup operating system",
     "autonomous startup agent"
    ],
-   "public": "Fondateurs et équipes opérationnelles des startups tech."
+   "public": "startups tech, fondateurs",
+   "acheteur": "professions"
   },
   {
    "type": "transplant",
-   "titre": "Couche de connaissances structurée fournissant des réponses fiables aux chirurgiens sur les dispositifs médicaux.",
+   "titre": "Plateforme capturant les processus internes pour créer des playbooks et des agents IA opérationnels.",
    "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : absent.",
    "force": 6.4,
    "chiffres": {
     "traction": 8,
     "equivalents_fr": 0,
-    "metrique": {
-     "type": "selection YC",
-     "valeur": 1,
-     "equipe": 3
-    }
-   },
-   "preuves": [
-    {
-     "texte": "CONUS — The AI knowledge layer for medical devices. CONUS structures fragmented medical device information for surgeons. We combine manufacturer documentation, hospital protocols and medical research in one place, giving surgeons and MedTech teams reliable answers across products and procedures. We ",
-     "url": "https://www.conus-med.com",
-     "source": "Y Combinator Fall 2026"
-    }
-   ],
-   "mots_en": [
-    "medical device knowledge base",
-    "surgical AI assistant"
-   ],
-   "public": "Chirurgiens et équipes MedTech."
-  },
-  {
-   "type": "transplant",
-   "titre": "Benchmarks réels pour l'IA en génie électrique",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : absent.",
-   "force": 6.4,
-   "chiffres": {
-    "traction": 8,
-    "equivalents_fr": 0,
-    "metrique": {
-     "type": "selection YC",
-     "valeur": 1,
-     "equipe": 2
-    }
-   },
-   "preuves": [
-    {
-     "texte": "Evident Machines — Real-world benchmarks for electrical engineering. Evident Machines builds benchmarks for frontier AI in electrical engineering. We turn real research and engineering projects into evaluations grounded in computation, simulation, and physical experimentation. Our work helps frontie",
-     "url": "https://evidentmachines.com/",
-     "source": "Y Combinator Fall 2026"
-    }
-   ],
-   "mots_en": [
-    "AI benchmarks",
-    "electrical engineering evaluation"
-   ],
-   "public": "Laboratoires de recherche en IA et ingénieurs"
-  },
-  {
-   "type": "transplant",
-   "titre": "Plateforme capturant les processus internes des équipes pour créer des playbooks et des agents IA automatisés.",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire (Konverso).",
-   "force": 4.4,
-   "chiffres": {
-    "traction": 8,
-    "equivalents_fr": 1,
     "metrique": {
      "type": "selection YC",
      "valeur": 1,
@@ -208,23 +187,85 @@
      "texte": "GodHands — Turn how your team works into playbooks and agents.. GodHands learns how your teams actually work from the apps they already use, capturing the steps, decisions and exceptions that never get written down. It turns them into knowledge and playbooks, gives people and AI agents the answers, ",
      "url": "https://godhands.ai",
      "source": "Y Combinator Fall 2026"
-    },
-    {
-     "texte": "Équivalent francophone : Konverso",
-     "url": "https://www.konverso.ai/fr/agent-ia",
-     "source": "recherche web"
     }
    ],
    "mots_en": [
     "workflow automation AI",
     "employee onboarding agent"
    ],
-   "public": "Directeurs opérationnels et RH des entreprises."
+   "public": "directeurs opérationnels, RH",
+   "acheteur": "professions"
   },
   {
    "type": "transplant",
-   "titre": "Portefeuille crypto non-custodial axé sur la confidentialité avec traitement de paiements et conversion fiat.",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire (THORWallet (via Unblock)).",
+   "titre": "Couche de connaissances IA centralisant les informations sur les dispositifs médicaux pour les chirurgiens.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire (CONUS).",
+   "force": 4.4,
+   "chiffres": {
+    "traction": 8,
+    "equivalents_fr": 1,
+    "metrique": {
+     "type": "selection YC",
+     "valeur": 1,
+     "equipe": 3
+    }
+   },
+   "preuves": [
+    {
+     "texte": "CONUS — The AI knowledge layer for medical devices. CONUS structures fragmented medical device information for surgeons. We combine manufacturer documentation, hospital protocols and medical research in one place, giving surgeons and MedTech teams reliable answers across products and procedures. We ",
+     "url": "https://www.conus-med.com",
+     "source": "Y Combinator Fall 2026"
+    },
+    {
+     "texte": "Équivalent francophone : CONUS",
+     "url": "https://conus-med.com/en/about-us",
+     "source": "recherche web"
+    }
+   ],
+   "mots_en": [
+    "medical device knowledge base",
+    "surgical AI assistant"
+   ],
+   "public": "chirurgiens, équipes MedTech",
+   "acheteur": "professions"
+  },
+  {
+   "type": "transplant",
+   "titre": "Plateforme d'IA pour la gestion des relations investisseurs automatisant la communication financière.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire (Euronext Corporate Solutions (IR.Manager, EngageStream, LiveEquity)).",
+   "force": 3.52,
+   "chiffres": {
+    "traction": 8,
+    "equivalents_fr": 1,
+    "metrique": {
+     "type": "selection YC",
+     "valeur": 1,
+     "equipe": 4
+    }
+   },
+   "preuves": [
+    {
+     "texte": "Collar — AI-Native Investor Relations. We are a team of ex-intelligence, ex-finance, and most importantly, ex-founders who have known each other for over 5 years. Collar is redefining investor relations. Right now, investor relations is an under-appreciated yet sweeping function. They have a bird’s ",
+     "url": "https://usecollarai.com",
+     "source": "Y Combinator Fall 2026"
+    },
+    {
+     "texte": "Équivalent francophone : Euronext Corporate Solutions (IR.Manager, EngageStream, LiveEquity)",
+     "url": "https://www.corporatesolutions.euronext.com/fr/glossaire/le-regtech-explique",
+     "source": "recherche web"
+    }
+   ],
+   "mots_en": [
+    "investor relations AI",
+    "financial communications platform"
+   ],
+   "public": "startups en croissance, DAF (Directeurs Administratifs et Financiers)",
+   "acheteur": "professions"
+  },
+  {
+   "type": "transplant",
+   "titre": "Portefeuille crypto non-custodial axé sur la confidentialité avec intégration fiat.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire (Helius Portefeuille Privé).",
    "force": 3.52,
    "chiffres": {
     "traction": 8,
@@ -242,21 +283,55 @@
      "source": "Y Combinator Fall 2026"
     },
     {
-     "texte": "Équivalent francophone : THORWallet (via Unblock)",
-     "url": "https://www.gate.com/fr/learn/articles/unblock-and-thorwallet-build-a-global-crypto-payment-system-how-self-custody-wallets-are-entering-everyday-spending",
+     "texte": "Équivalent francophone : Helius Portefeuille Privé",
+     "url": "https://www.helius.dev/docs/fr/privacy/integration/wallet",
      "source": "recherche web"
     }
    ],
    "mots_en": [
     "privacy crypto wallet",
-    "stablecoin payment processor"
+    "stablecoin payment app"
    ],
-   "public": "Utilisateurs de cryptomonnaies soucieux de la vie privée."
+   "public": "utilisateurs crypto, particuliers",
+   "acheteur": "particuliers"
   },
   {
    "type": "transplant",
-   "titre": "Transformation de livres en livres audio avec des voix distinctes par personnage",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : present (ElevenLabs Audiobooks (Character Casting)).",
+   "titre": "Une liste de tâches qui s'exécute automatiquement en assistant personnel.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire (Claude Cowork (tâches planifiées)).",
+   "force": 3.52,
+   "chiffres": {
+    "traction": 8,
+    "equivalents_fr": 1,
+    "metrique": {
+     "type": "selection YC",
+     "valeur": 1,
+     "equipe": 3
+    }
+   },
+   "preuves": [
+    {
+     "texte": "Roma — Roma is the to-do list that does itself. Roma is the to-do list that does itself. Two of our three founders have been through YC before: Jan built Loom (W12, acquired by Dropbox) and Tobi built Senic (S13, acquired by Gira). Most of the work we do starts and ends with a task. So we're rebuild",
+     "url": "https://roma.app",
+     "source": "Y Combinator Fall 2026"
+    },
+    {
+     "texte": "Équivalent francophone : Claude Cowork (tâches planifiées)",
+     "url": "https://www.youtube.com/watch?v=ItqompNRNIY",
+     "source": "recherche web"
+    }
+   ],
+   "mots_en": [
+    "to-do list",
+    "AI assistant"
+   ],
+   "public": "Utilisateurs de listes de tâches",
+   "acheteur": "particuliers"
+  },
+  {
+   "type": "transplant",
+   "titre": "Transformer un livre en livre audio avec des voix distinctes pour chaque personnage.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : present (Notevibes).",
    "force": 3.52,
    "chiffres": {
     "traction": 8,
@@ -274,25 +349,64 @@
      "source": "Y Combinator Fall 2026"
     },
     {
-     "texte": "Équivalent francophone : ElevenLabs Audiobooks (Character Casting)",
-     "url": "https://elevenlabs.io/fr/audiobooks",
+     "texte": "Équivalent francophone : Notevibes",
+     "url": "https://notevibes.com/fr",
      "source": "recherche web"
     }
    ],
    "mots_en": [
-    "audiobook character voices",
-    "multi-voice narration"
+    "audiobook",
+    "character voices"
    ],
-   "public": "Auteurs, éditeurs, auditeurs de livres audio"
+   "public": "Auteurs, éditeurs, auditeurs de livres audio",
+   "acheteur": "particuliers"
   },
   {
    "type": "transplant",
-   "titre": "Logiciel d'automatisation de l'éligibilité et du renouvellement des résidents pour le logement abordable.",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : present (Imhoweb, HOMERE, RENLA).",
-   "force": 1.6,
+   "titre": "Assistant analyste de données IA qui détecte et explique les problèmes produits en temps réel.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : present (Pigment - Agent Analyste, Mindmetrics).",
+   "force": 1.28,
    "chiffres": {
     "traction": 8,
-    "equivalents_fr": 3,
+    "equivalents_fr": 2,
+    "metrique": {
+     "type": "selection YC",
+     "valeur": 1,
+     "equipe": 1
+    }
+   },
+   "preuves": [
+    {
+     "texte": "Databuddy — AI Data Analyst for fast-growing teams. Databuddy gives you your very own data analyst, always watching over your data, combining all your context to investigate and paint a full picture on every product issue that emerges in real-time; conversion drops, user frustration and churn. It ma",
+     "url": "https://www.databuddy.cc",
+     "source": "Y Combinator Fall 2026"
+    },
+    {
+     "texte": "Équivalent francophone : Pigment - Agent Analyste",
+     "url": "https://www.pigment.com/fr/ia/agent-analyste",
+     "source": "recherche web"
+    },
+    {
+     "texte": "Équivalent francophone : Mindmetrics",
+     "url": "http://mindmetrics.ai/",
+     "source": "recherche web"
+    }
+   ],
+   "mots_en": [
+    "product data analyst AI",
+    "churn analysis tool"
+   ],
+   "public": "équipes produit, chefs de produit",
+   "acheteur": "createurs"
+  },
+  {
+   "type": "transplant",
+   "titre": "Plateforme de gestion de projet et workflow pour les cabinets d'architecture, d'ingénierie et de construction.",
+   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : present (Milient Project Flow, Unit4 AEC, Mezzoteam, Proda Connect).",
+   "force": 1.28,
+   "chiffres": {
+    "traction": 8,
+    "equivalents_fr": 4,
     "metrique": {
      "type": "selection YC",
      "valeur": 1,
@@ -301,162 +415,37 @@
    },
    "preuves": [
     {
-     "texte": "Tire Swing — AI Compliance for Affordable Housing. Tire Swing uses AI to power resident and applicant eligibility evaluations for affordable housing. Our software manages the resident certification and recertification process end-to-end for public and private properties supported by Project Based Re",
-     "url": "https://gettireswing.com",
+     "texte": "Gradon — Legora for AEC (Architecture, Engineering, & Construction) firms. Gradon is Legora for the firms that design the world's buildings and infrastructure. Every road, bridge, water system and building starts with engineers, and there aren't nearly enough of them for everything the world needs t",
+     "url": "https://heygradon.com/",
      "source": "Y Combinator Fall 2026"
     },
     {
-     "texte": "Équivalent francophone : Imhoweb",
-     "url": "https://www.sigma.fr/services-solutions/edition-integration/collectivites-logement-social/imhoweb",
+     "texte": "Équivalent francophone : Milient Project Flow",
+     "url": "https://www.milientsoftware.com/fr/produit/gestion-de-projet",
      "source": "recherche web"
     },
     {
-     "texte": "Équivalent francophone : HOMERE",
-     "url": "https://www.scepia.fr/homere",
+     "texte": "Équivalent francophone : Unit4 AEC",
+     "url": "https://www.unit4.com/fr/industries/professional-services-software/architecture-engineering-construction",
      "source": "recherche web"
     },
     {
-     "texte": "Équivalent francophone : RENLA",
-     "url": "https://logement.public.lu/dam-assets/documents/actualites/2024/10/10-11-snl-ppt/02-20241011-presentation-renla.pdf",
+     "texte": "Équivalent francophone : Mezzoteam",
+     "url": "https://www.mezzoteam.fr/",
+     "source": "recherche web"
+    },
+    {
+     "texte": "Équivalent francophone : Proda Connect",
+     "url": "https://proda-connect.dz/",
      "source": "recherche web"
     }
    ],
    "mots_en": [
-    "affordable housing AI",
-    "tenant screening software"
+    "AEC project management",
+    "engineering workflow"
    ],
-   "public": "Propriétaires immobiliers publics et privés, gestionnaires de logements sociaux."
-  },
-  {
-   "type": "transplant",
-   "titre": "Liste de tâches intelligente qui s'exécute automatiquement en assistant personnel",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : embryonnaire (ChatGPT Tasks (tâches planifiées), Claude Cowork – tâches récurrentes).",
-   "force": 1.28,
-   "chiffres": {
-    "traction": 8,
-    "equivalents_fr": 2,
-    "metrique": {
-     "type": "selection YC",
-     "valeur": 1,
-     "equipe": 3
-    }
-   },
-   "preuves": [
-    {
-     "texte": "Roma — Roma is the to-do list that does itself. Roma is the to-do list that does itself. Two of our three founders have been through YC before: Jan built Loom (W12, acquired by Dropbox) and Tobi built Senic (S13, acquired by Gira). Most of the work we do starts and ends with a task. So we're rebuild",
-     "url": "https://roma.app",
-     "source": "Y Combinator Fall 2026"
-    },
-    {
-     "texte": "Équivalent francophone : ChatGPT Tasks (tâches planifiées)",
-     "url": "https://www.data-bird.co/blog/chatgpt-task",
-     "source": "recherche web"
-    },
-    {
-     "texte": "Équivalent francophone : Claude Cowork – tâches récurrentes",
-     "url": "https://support.claude.com/fr/articles/13854387-planifier-des-taches-recurrentes-dans-claude-cowork",
-     "source": "recherche web"
-    }
-   ],
-   "mots_en": [
-    "AI to-do list",
-    "smart task manager"
-   ],
-   "public": "Particuliers et professionnels cherchant à automatiser leurs tâches quotidiennes"
-  },
-  {
-   "type": "transplant",
-   "titre": "Un outil de création vidéo et de musique basé sur l'IA pour les créatifs.",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : present (MindVideo AI, DomoAI – Générateur de clips musicaux IA, Tunee, Tad AI).",
-   "force": 1.28,
-   "chiffres": {
-    "traction": 8,
-    "equivalents_fr": 4,
-    "metrique": {
-     "type": "selection YC",
-     "valeur": 1,
-     "equipe": 6
-    }
-   },
-   "preuves": [
-    {
-     "texte": "Voyager — Open harness for video and other creative work.. Most AI tools are built for coding. Voyager is designed to get the best creative results from models like Opus, Astra and DeepSeek. It comes bundled with free motion graphics, music and video editing tools - or, it can drive Blender, DaVinci",
-     "url": "https://voyager.so",
-     "source": "Y Combinator Fall 2026"
-    },
-    {
-     "texte": "Équivalent francophone : MindVideo AI",
-     "url": "https://www.mindvideo.ai/fr",
-     "source": "recherche web"
-    },
-    {
-     "texte": "Équivalent francophone : DomoAI – Générateur de clips musicaux IA",
-     "url": "https://www.domoai.app/fr/scenarios/music-video",
-     "source": "recherche web"
-    },
-    {
-     "texte": "Équivalent francophone : Tunee",
-     "url": "https://www.tunee.ai/fr",
-     "source": "recherche web"
-    },
-    {
-     "texte": "Équivalent francophone : Tad AI",
-     "url": "https://tad.ai/fr",
-     "source": "recherche web"
-    }
-   ],
-   "mots_en": [
-    "AI video creation",
-    "music editing tools"
-   ],
-   "public": "créateurs de contenu"
-  },
-  {
-   "type": "transplant",
-   "titre": "Un constructeur de site web AI qui optimise le référencement pour les petites entreprises.",
-   "resume": "Traction à l'étranger (Y Combinator Fall 2026 : selection YC 1) ; en Europe francophone : present (Dorik AI, DeepSite AI, GoDaddy Airo (créateur de site IA), Jimdo).",
-   "force": 1.28,
-   "chiffres": {
-    "traction": 8,
-    "equivalents_fr": 4,
-    "metrique": {
-     "type": "selection YC",
-     "valeur": 1,
-     "equipe": null
-    }
-   },
-   "preuves": [
-    {
-     "texte": "Theo — The site-builder and engine that gets your business found. . Theo is an AI agent that builds your small business website in minutes, then works on it every week so customers find you, whether they search Google themselves or ask an AI. Theo studies your site, your market and your search data,",
-     "url": "https://theo.site/",
-     "source": "Y Combinator Fall 2026"
-    },
-    {
-     "texte": "Équivalent francophone : Dorik AI",
-     "url": "https://www.cloudtalk.io/fr/blog/lia-pour-les-petites-entreprises/",
-     "source": "recherche web"
-    },
-    {
-     "texte": "Équivalent francophone : DeepSite AI",
-     "url": "https://deepsiteai.com/fr",
-     "source": "recherche web"
-    },
-    {
-     "texte": "Équivalent francophone : GoDaddy Airo (créateur de site IA)",
-     "url": "https://elementor.com/blog/fr/6-meilleurs-constructeurs-de-sites-web-ia-de-year",
-     "source": "recherche web"
-    },
-    {
-     "texte": "Équivalent francophone : Jimdo",
-     "url": "https://elementor.com/blog/fr/6-meilleurs-constructeurs-de-sites-web-ia-de-year",
-     "source": "recherche web"
-    }
-   ],
-   "mots_en": [
-    "AI website builder",
-    "SEO optimization"
-   ],
-   "public": "petites entreprises"
+   "public": "Cabinets d'architecture, d'ingénierie et de construction",
+   "acheteur": "professions"
   },
   {
    "type": "abandonne",
@@ -747,10 +736,10 @@
   {
    "type": "abandonne",
    "titre": "Lordog/dive-into-llms : 《动手学大模型Dive into LLMs》系列编程实践教程",
-   "resume": "58848 étoiles, aucune mise à jour depuis 13 mois, 18 demandes ouvertes (Jupyter Notebook).",
+   "resume": "58849 étoiles, aucune mise à jour depuis 13 mois, 18 demandes ouvertes (Jupyter Notebook).",
    "force": 4.73,
    "chiffres": {
-    "etoiles": 58848,
+    "etoiles": 58849,
     "mois_sans_maj": 13,
     "issues_ouvertes": 18,
     "langage": "Jupyter Notebook"
@@ -2073,1128 +2062,1124 @@
  "temoins": {
   "grand-public": [
    {
-    "titre": "Coach en budget familial",
-    "solution": "Aide les particuliers à gérer leurs finances, suivre leurs dépenses et épargner."
+    "titre": "Comparateur d'assurances en ligne",
+    "solution": "Permet aux particuliers de comparer rapidement les offres d'assurance auto, habitation et santé."
    },
    {
-    "titre": "Comparateur de crédits immobiliers",
-    "solution": "Propose un outil en ligne pour trouver le meilleur taux de prêt logement."
+    "titre": "Plateforme de gestion de budget personnel",
+    "solution": "Aide les utilisateurs à suivre leurs dépenses et économiser via des catégories automatiques."
    },
    {
-    "titre": "Service de livraison de courses",
-    "solution": "Livraison à domicile de produits alimentaires et ménagers commandés en ligne."
+    "titre": "Service de mise en relation pour colocation",
+    "solution": "Met en lien des locataires et propriétaires pour trouver des colocations vérifiées."
    },
    {
-    "titre": "Plateforme de covoiturage local",
-    "solution": "Met en relation conducteurs et passagers pour des trajets quotidiens."
+    "titre": "Application de covoiturage local",
+    "solution": "Facilite le partage de trajets quotidiens entre particuliers pour réduire les coûts."
    },
    {
-    "titre": "Conseil en rénovation énergétique",
-    "solution": "Aide les propriétaires à planifier et financer des travaux d'économie d'énergie."
+    "titre": "Place de marché de meubles d'occasion",
+    "solution": "Permet d'acheter et vendre des meubles entre particuliers avec livraison incluse."
    },
    {
-    "titre": "Abonnement à des repas prêts à cuisiner",
-    "solution": "Livraison hebdomadaire de kits repas avec ingrédients et recettes."
+    "titre": "Service de conseil en rénovation énergétique",
+    "solution": "Aide les propriétaires à obtenir des aides et planifier des travaux via un diagnostic en ligne."
    },
    {
-    "titre": "Service de déclaration d'impôts en ligne",
+    "titre": "Abonnement de repas à domicile",
+    "solution": "Propose des kits repas équilibrés livrés chaque semaine pour simplifier la cuisine."
+   },
+   {
+    "titre": "Assistant juridique en ligne pour particuliers",
+    "solution": "Offre des modèles de contrats et conseils pour litiges quotidiens (bail, divorce)."
+   },
+   {
+    "titre": "Service de garde d'animaux à la demande",
+    "solution": "Met en relation des propriétaires d'animaux avec des gardiens via une plateforme vérifiée."
+   },
+   {
+    "titre": "Application de suivi de prêts entre particuliers",
+    "solution": "Gère les remboursements et échéances entre amis ou famille avec notifications."
+   },
+   {
+    "titre": "Cours en ligne de bricolage",
+    "solution": "Propose des tutoriels vidéo pour réparations courantes (plomberie, électricité)."
+   },
+   {
+    "titre": "Service de nettoyage de maison réservable",
+    "solution": "Permet de réserver des professionnels pour un ménage ponctuel ou régulier."
+   },
+   {
+    "titre": "Location de matériel de jardinage",
+    "solution": "Offre la location de tondeuses, taille-haies entre particuliers ou via un stock central."
+   },
+   {
+    "titre": "Application de troc de vêtements",
+    "solution": "Échange de vêtements entre utilisateurs avec points de collecte locaux."
+   },
+   {
+    "titre": "Service de déménagement collaboratif",
+    "solution": "Met en relation des particuliers pour partager un camion et de l'aide."
+   },
+   {
+    "titre": "Plateforme de cashback sur courses",
+    "solution": "Rembourse un pourcentage des achats en supermarché via des offres partenaires."
+   },
+   {
+    "titre": "Coach sportif en visio",
+    "solution": "Propose des séances personnalisées à domicile sans abonnement en salle."
+   },
+   {
+    "titre": "Application de partage de frais de transport",
+    "solution": "Calcule et répartit les coûts d'essence ou de péage entre passagers."
+   },
+   {
+    "titre": "Service de déclaration de revenus simplifié",
     "solution": "Guide les particuliers pas à pas pour remplir leur déclaration fiscale."
    },
    {
-    "titre": "Plateforme de location de matériel",
-    "solution": "Permet de louer des outils, appareils ou équipements entre particuliers."
+    "titre": "Boutique en ligne de produits ménagers écologiques",
+    "solution": "Vend des recharges et produits zéro déchet livrés en consigne."
    },
    {
-    "titre": "Assistant pour déménagement",
-    "solution": "Organise et coordonne le déménagement : devis, transport, rangement."
+    "titre": "Plateforme de soutien scolaire en ligne",
+    "solution": "Met en relation des élèves avec des tuteurs pour des cours particuliers."
    },
    {
-    "titre": "Cours de cuisine en ligne",
-    "solution": "Propose des vidéos et sessions live pour apprendre à cuisiner."
+    "titre": "Application de suivi de consommation d'énergie",
+    "solution": "Aide à réduire les factures en analysant les données du compteur connecté."
    },
    {
-    "titre": "Service de garde d'animaux à domicile",
-    "solution": "Met en relation des pet-sitters avec des propriétaires pour garder leurs animaux."
+    "titre": "Service de location de places de parking",
+    "solution": "Permet aux propriétaires de louer leur place inutilisée à des conducteurs."
    },
    {
-    "titre": "Application de suivi de consommation électrique",
-    "solution": "Aide les ménages à réduire leur facture d'électricité en analysant leur usage."
+    "titre": "Abonnement de box de produits locaux",
+    "solution": "Livraison mensuelle de paniers de fruits, légumes et artisanat de producteurs."
    },
    {
-    "titre": "Plateforme de troc de vêtements",
-    "solution": "Permet d'échanger des vêtements d'occasion entre membres."
-   },
-   {
-    "titre": "Service de nettoyage à domicile",
-    "solution": "Propose des agents de nettoyage réservables en ligne."
-   },
-   {
-    "titre": "Conseil en investissement locatif",
-    "solution": "Aide les particuliers à acheter et gérer des biens locatifs."
-   },
-   {
-    "titre": "Abonnement à des produits ménagers écologiques",
-    "solution": "Livraison régulière de produits d'entretien durables et rechargeables."
-   },
-   {
-    "titre": "Plateforme de cours particuliers en ligne",
-    "solution": "Met en relation élèves et professeurs pour du soutien scolaire à distance."
-   },
-   {
-    "titre": "Service de réparation d'électroménager",
-    "solution": "Propose des tutoriels et pièces détachées pour réparer soi-même."
-   },
-   {
-    "titre": "Application de gestion de budget partagé",
-    "solution": "Facilite le suivi des dépenses communes entre colocataires ou couples."
-   },
-   {
-    "titre": "Plateforme de vente de meubles d'occasion",
-    "solution": "Permet d'acheter et vendre des meubles de seconde main."
-   },
-   {
-    "titre": "Service de coaching en mobilité douce",
-    "solution": "Conseille sur les alternatives à la voiture : vélo, transports, marche."
-   },
-   {
-    "titre": "Abonnement à des box de dégustation",
-    "solution": "Envoie chaque mois une sélection de produits locaux ou artisanaux."
-   },
-   {
-    "titre": "Plateforme de mutualisation de garde d'enfants",
-    "solution": "Organise des tours de garde entre parents d'un même quartier."
-   },
-   {
-    "titre": "Service de simulation de prêt immobilier",
-    "solution": "Calcule la capacité d'emprunt et les mensualités selon le profil."
-   },
-   {
-    "titre": "Application de chasse aux bonnes affaires",
-    "solution": "Recense les promotions et réductions dans les commerces locaux et en ligne."
+    "titre": "Application de gestion de listes de courses",
+    "solution": "Synchronise les listes entre membres d'un foyer et optimise les trajets en magasin."
    }
   ],
   "familles-et-aines": [
    {
-    "titre": "Plateforme de coordination pour aidants familiaux",
-    "solution": "Un outil centralisé pour gérer les plannings de soins, les médicaments et la communication entre les membres de la famille impliqués dans la prise en charge d'un proche âgé."
+    "titre": "Plateforme de mise en relation pour aidants familiaux",
+    "solution": "Un site web permettant aux familles de trouver et réserver des aidants à domicile qualifiés ou des solutions de répit."
    },
    {
-    "titre": "Cours de technologie adaptés aux seniors",
-    "solution": "Des formations en ligne en petits groupes ou en individuel pour apprendre aux personnes âgées à utiliser smartphones, ordinateurs et outils numériques courants."
+    "titre": "Blog de conseils pratiques pour la parentalité positive",
+    "solution": "Un contenu éditorial spécialisé offrant des guides, des témoignages et des ressources gratuites ou premium sur l'éducation bienveillante."
    },
    {
-    "titre": "Service de baby-sitting certifié à la demande",
-    "solution": "Une application connectant les parents avec des baby-sitters vérifiées et assurées pour des gardes ponctuelles ou régulières avec un système de notation transparent."
+    "titre": "Service de conciergerie administrative pour seniors",
+    "solution": "Une assistance en ligne pour aider les personnes âgées à gérer leurs démarches administratives, téléprocédures et rendez-vous médicaux."
    },
    {
-    "titre": "Blog et newsletter sur le développement de l'enfant",
-    "solution": "Un contenu expert rédigé par des psychologues ou éducateurs offrant des conseils pratiques sur la nutrition, l'éducation positive et la santé mentale des enfants."
+    "titre": "Marketplace d'objets connectés adaptés aux seniors",
+    "solution": "Une boutique e-commerce spécialisée dans la vente et l'installation de technologies simplifiées pour le maintien à domicile."
    },
    {
-    "titre": "Marketplace de produits sans danger pour bébés",
-    "solution": "Une boutique en ligne spécialisée dans la vente de jouets éducatifs, de vêtements et d'articles de puériculture testés et certifiés sans substances toxiques."
+    "titre": "Cours en ligne pour apprendre à utiliser le numérique",
+    "solution": "Des formations vidéo pas à pas destinées aux seniors pour maîtriser smartphones, tablettes et outils de communication."
    },
    {
-    "titre": "Conciergerie digitale pour personnes âgées isolées",
-    "solution": "Un service abonné qui gère les démarches administratives, les courses et l'organisation du quotidien pour les seniors vivant seuls, via une équipe dédiée."
+    "titre": "Application de gestion du quotidien familial",
+    "solution": "Un outil SaaS pour coordonner les emplois du temps, les courses et les tâches ménagères entre plusieurs membres d'une famille."
    },
    {
-    "titre": "Coaching parental personnalisé en vidéo",
-    "solution": "Des consultations vidéo avec des experts en parentalité pour aider les parents à gérer les crises, le sommeil ou l'alimentation de leurs enfants selon leur situation spécifique."
+    "titre": "Communauté de soutien en ligne pour parents isolés",
+    "solution": "Un forum modéré ou un groupe privé offrant écoute, conseils et entraide morale aux parents se sentant seuls dans leur rôle."
    },
    {
-    "titre": "Plateforme de mémoire et souvenirs intergénérationnels",
-    "solution": "Un service permettant aux familles d'enregistrer, organiser et imprimer les histoires de vie des grands-parents sous forme de livres numériques ou physiques."
+    "titre": "Création de contenus éducatifs pour enfants (PDF/Imprimables)",
+    "solution": "La vente de fiches d'activités, de coloriages éducatifs et de jeux cognitifs téléchargeables instantanément."
    },
    {
-    "titre": "Abonnement mensuel de boîtes ludiques pour enfants",
-    "solution": "Envoi mensuel d'activités manuelles, scientifiques ou éducatives adaptées à l'âge de l'enfant, réduisant la culpabilité des parents de limiter les écrans."
+    "titre": "Service de transcription de souvenirs de vie pour aînés",
+    "solution": "Proposer un accompagnement pour interviewer, transcrire et mettre en page les mémoires des grands-parents sous forme de livre."
    },
    {
-    "titre": "Agence de recrutement de personnel médical à domicile",
-    "solution": "Une plateforme B2B ou B2C facilitant la mise en relation rapide entre les familles et les infirmiers, aides-soignants ou médecins libéraux pour des visites à domicile."
+    "titre": "Abonnement de boxes mensuelles pour bébés et jeunes enfants",
+    "solution": "Livraison trimestrielle ou mensuelle de jouets Montessori, livres et produits de puériculture sélectionnés par âge."
    },
    {
-    "titre": "Forum communautaire de parents débutants",
-    "solution": "Un espace modéré où les nouveaux parents peuvent poser des questions, partager leurs expériences et obtenir du soutien émotionnel et pratique."
+    "titre": "Consultations en ligne avec psychologues pour enfants",
+    "solution": "Plateforme de télémédecine spécialisée connectant les familles à des thérapeutes pour le soutien émotionnel des enfants."
    },
    {
-    "titre": "Création de contenus éducatifs pour l'école à la maison",
-    "solution": "Vente de packs de cours, de fiches de travail et de vidéos pédagogiques pour les parents souhaitant accompagner ou remplacer l'enseignement scolaire traditionnel."
+    "titre": "Guide digital pour préparer sa retraite et son logement",
+    "solution": "Vente d'e-books et de checklists détaillés sur l'aménagement de maison adaptée, les droits sociaux et la planification financière."
    },
    {
-    "titre": "Service de traduction et interprétariat pour dossiers médicaux",
-    "solution": "Assistance linguistique en ligne pour les familles immigrées ou expatriées afin de comprendre les diagnostics et traitements de leurs proches âgés ou malades."
+    "titre": "Agence de voyage adaptée aux familles et seniors",
+    "solution": "Organisation de séjours sur mesure respectant les contraintes physiques et les besoins spécifiques des groupes intergénérationnels."
    },
    {
-    "titre": "Application de suivi de santé pour seniors",
-    "solution": "Une app simple avec alertes pour les prises de médicaments, rappels de rendez-vous médicaux et partage automatique des données de santé avec les aidants."
+    "titre": "Service de garde d'enfants à la demande via app mobile",
+    "solution": "Application type Uber mettant en relation rapide des parents avec des baby-sitters vérifiées et notées dans leur quartier."
    },
    {
-    "titre": "Consultant en aménagement du logement pour accessibilité",
-    "solution": "Des audits en ligne ou à distance pour conseiller les familles sur les modifications nécessaires (barres d'appui, éclairage) pour rendre la maison sécurisée pour les aînés."
+    "titre": "Formation en ligne pour devenir aidant familial professionnel",
+    "solution": "Certificats et cours pratiques dispensés en ligne pour acquérir les compétences techniques et relationnelles du soin à domicile."
    },
    {
-    "titre": "Marketplace de services de nettoyage spécialisé seniors",
-    "solution": "Mise en relation avec des professionnels du nettoyage formés aux besoins spécifiques des personnes âgées (désencombrement, hygiène renforcée)."
+    "titre": "Marketplace d'occasions pour matériel médical et infantile",
+    "solution": "Plateforme de vente entre particuliers de lits hospitaliers, poussettes, sièges auto et aides techniques reconditionnées."
    },
    {
-    "titre": "Formation en ligne à la gestion de la maladie d'Alzheimer",
-    "solution": "Un parcours pédagogique pour les aidants familiaux expliquant comment communiquer, adapter l'environnement et gérer les troubles du comportement."
+    "titre": "Newsletter payante sur les innovations santé et bien-être",
+    "solution": "Sélection hebdomadaire d'articles, d'études et de produits innovants concernant la santé des seniors et le développement de l'enfant."
    },
    {
-    "titre": "Service de garde d'animaux pour enfants",
-    "solution": "Une plateforme axée sur la responsabilité des enfants dans les soins aux animaux domestiques, avec des tutoriels et des services de promeneurs d'animaux adaptés."
+    "titre": "Coaching parental personnalisé en visioconférence",
+    "solution": "Sessions individuelles pour aider les parents à résoudre des problèmes comportementaux, éducatifs ou organisationnels spécifiques."
    },
    {
-    "titre": "Newsletter payante sur les droits des aidants familiaux",
-    "solution": "Information juridique et administrative régulière sur les aides financières, les congés de solidarité familiale et les ressources locales disponibles."
+    "titre": "Plateforme de tutorat scolaire en ligne",
+    "solution": "Mise en relation d'élèves ayant besoin d'aide ponctuelle avec des étudiants ou enseignants disponibles immédiatement."
    },
    {
-    "titre": "Plateforme de jumelage intergénérationnel",
-    "solution": "Coordination de rencontres virtuelles ou physiques entre jeunes étudiants et personnes âgées pour lutter contre l'isolement et favoriser l'échange de savoirs."
+    "titre": "Service de nettoyage et remise en ordre pour seniors",
+    "solution": "Coordination de prestataires de confiance pour l'entretien du domicile, le tri d'objets et la sécurité domestique."
    },
    {
-    "titre": "Boutique en ligne de produits de confort pour la maternité",
-    "solution": "Sélection de produits haut de gamme pour le post-partum (sièges ergonomiques, coussins d'allaitement, cosmétiques naturels) avec conseils d'experts."
+    "titre": "Boutique en ligne de vêtements confortables et faciles à porter",
+    "solution": "Mode inclusive proposant des tenues adaptées aux limitations motrices des seniors ou aux besoins sensoriels des enfants."
    },
    {
-    "titre": "Service de rédaction de lettres et emails pour seniors",
-    "solution": "Aide à la correspondance écrite pour les personnes âgées ayant des difficultés motrices ou cognitives légères, préservant leur lien social."
+    "titre": "Outil de suivi de santé familial partagé",
+    "solution": "Application centralisant les données médicales, les allergies et les traitements de tous les membres de la famille pour une meilleure coordination."
    },
    {
-    "titre": "Agenda collaboratif familial numérique",
-    "solution": "Un outil simple pour synchroniser les emplois du temps de toute la famille (parents, enfants, grands-parents) et coordonner les événements et repas."
+    "titre": "Organisation d'ateliers créatifs en ligne pour toutes générations",
+    "solution": "Classes virtuelles interactives (peinture, cuisine, jardinage) réunissant grands-parents et petits-enfants à distance."
    },
    {
-    "titre": "Conseiller en orientation scolaire et carrière pour adolescents",
-    "solution": "Services de coaching en ligne pour aider les jeunes et leurs parents à choisir leurs études supérieures et à préparer leur entrée dans la vie active."
+    "titre": "Conseil en aménagement intérieur adapté (Handicap/Senior)",
+    "solution": "Services de design d'intérieur à distance pour optimiser l'autonomie et la sécurité des logements pour personnes fragiles."
    },
    {
-    "titre": "Plateforme de réservation de vacances adaptées PMR",
-    "solution": "Annuaire vérifié de destinations et d'hébergements accessibles aux personnes à mobilité réduite et aux familles avec enfants en bas âge."
+    "titre": "Agence de relations publiques pour marques familiales",
+    "solution": "Stratégie de communication ciblée pour les entreprises souhaitant toucher les décideurs achats au sein des foyers et des institutions gériatriques."
    }
   ],
   "apprendre": [
    {
-    "titre": "Cours de langues en visio",
-    "solution": "Plateforme de cours particuliers de langues en visio avec des professeurs natifs vérifiés."
+    "titre": "Plateforme de cours de langues en visio",
+    "solution": "Mettre en relation des apprenants avec des professeurs de langues natives pour des cours individuels en ligne."
    },
    {
-    "titre": "Application de révision",
-    "solution": "App mobile de fiches de révision et quiz pour étudiants du supérieur."
+    "titre": "Application de flashcards intelligente",
+    "solution": "Créer une app de mémorisation par répétition espacée avec des decks prêts à l'emploi pour les langues et examens."
    },
    {
-    "titre": "Plateforme de cours en ligne",
-    "solution": "Marketplace où des experts vendent leurs formations vidéo sur des sujets de niche."
+    "titre": "Préparation aux examens en ligne",
+    "solution": "Proposer des parcours complets (cours, annales corrigées, simulations) pour les examens comme le bac, le TOEIC ou le diplôme de fin d'études."
    },
    {
-    "titre": "Préparation aux examens",
-    "solution": "Site de préparation en ligne au bac, brevet ou concours avec annales corrigées."
+    "titre": "Cohorts de formation en freelance",
+    "solution": "Vendre des formations structurées en petits groupes avec des sessions live hebdomadaires pour apprendre des compétences digitales."
    },
    {
-    "titre": "Coach en méthodologie",
-    "solution": "Service de coaching en ligne pour apprendre à apprendre et gérer son temps."
+    "titre": "Marketplace de cours créés par des enseignants",
+    "solution": "Permettre aux professeurs de vendre leurs propres cours vidéo sur une plateforme centralisée avec système de commission."
    },
    {
-    "titre": "Tutorat entre pairs",
-    "solution": "Plateforme mettant en relation étudiants avancés et étudiants en difficulté."
+    "titre": "Newsletter éducative payante",
+    "solution": "Envoyer chaque semaine des leçons courtes et ciblées (anglais business, data, finance perso) par email contre abonnement."
    },
    {
-    "titre": "Podcast éducatif premium",
-    "solution": "Podcast pédagogique avec abonnement payant pour épisodes exclusifs et transcriptions."
+    "titre": "Tuteur IA pour étudiants",
+    "solution": "Développer un chatbot qui aide les étudiants à résoudre leurs exercices étape par étape avec des explications personnalisées."
    },
    {
-    "titre": "Newsletters d'apprentissage",
-    "solution": "Newsletters payantes quotidiennes pour apprendre un sujet en 5 minutes par jour."
+    "titre": "Correction d'examens par des correcteurs humains",
+    "solution": "Offrir un service où des experts corrigent et commentent les devoirs et dissertations envoyés par les étudiants."
    },
    {
-    "titre": "Grammaire corrigée par IA",
-    "solution": "Outil d'aide à la rédaction pour étudiants avec correction et explications."
+    "titre": "Podcast éducatif avec contenu premium",
+    "solution": "Produire un podcast gratuit sur un sujet scolaire et monétiser via des épisodes bonus, transcriptions et quiz payants."
    },
    {
-    "titre": "Communauté d'autodidactes",
-    "solution": "Réseau social d'apprentissage où les autodidactes partagent parcours et ressources."
+    "titre": "Bootcamp en ligne orienté emploi",
+    "solution": "Proposer des formations intensives de 3 mois avec un accompagnement à la recherche d'emploi et un paiement différé."
    },
    {
-    "titre": "École de code en ligne",
-    "solution": "Bootcamp en ligne pour apprendre le développement web avec mentorat individuel."
+    "titre": "Plateforme de cours pour autodidactes",
+    "solution": "Créer des parcours d'apprentissage autoguidés avec des projets concrets et une communauté d'entraide."
    },
    {
-    "titre": "Ressources pour enseignants",
-    "solution": "Boutique de fiches pédagogiques et exercices prêts à l'emploi pour professeurs."
+    "titre": "Certification de compétences en ligne",
+    "solution": "Proposer des tests certifiants reconnus par les entreprises dans des domaines comme le marketing digital ou le code."
    },
    {
-    "titre": "Immersion linguistique virtuelle",
-    "solution": "Conversations hebdomadaires avec des natifs via visio pour pratiquer une langue."
+    "titre": "Cours particuliers pour enfants en visio",
+    "solution": "Connecter des parents avec des enseignants spécialisés dans le soutien scolaire des 6-15 ans."
    },
    {
-    "titre": "Certifications en ligne",
-    "solution": "Plateforme de micro-certifications reconnues par les entreprises."
+    "titre": "Application d'apprentissage par micro-leçons",
+    "solution": "Proposer des leçons de 3 minutes par jour, gamifiées, pour apprendre une langue ou une compétence pendant les temps morts."
    },
    {
-    "titre": "Bibliothèque de résumés",
-    "solution": "Service d'abonnement aux résumés de livres et articles académiques."
+    "titre": "Communauté payante pour étudiants en médecine",
+    "solution": "Créer un espace privé avec des fiches de révision, des QCM annotés et des anciens pour répondre aux questions."
    },
    {
-    "titre": "Soutien scolaire par abonnement",
-    "solution": "Devoirs corrigés et suivi scolaire personnalisé par abonnement mensuel."
+    "titre": "Plateforme de coaching en méthodologie",
+    "solution": "Aider les étudiants à améliorer leur organisation, prise de notes et préparation d'examens via des sessions individuelles."
    },
    {
-    "titre": "Simulateurs d'examens",
-    "solution": "Plateforme d'examens blancs chronométrés avec correction détaillée et statistiques."
+    "titre": "Vente de templates de fiches de révision",
+    "solution": "Vendre des modèles Notion ou PDF esthétiques et structurés pour réviser efficacement."
    },
    {
-    "titre": "Apprentissage par jeu",
-    "solution": "Jeu éducatif en ligne pour apprendre l'anglais ou les maths en s'amusant."
+    "titre": "Simulateur d'oral d'examen",
+    "solution": "Offrir des simulations d'oraux (bac, concours, entretiens) avec des jury professionnels via visio."
    },
    {
-    "titre": "Formations pour adultes en reconversion",
-    "solution": "Parcours en ligne pour adultes souhaitant se reconvertir vers un métier en tension."
+    "titre": "Plateforme de sous-titres éducatifs",
+    "solution": "Traduire et sous-titrer des conférences et vidéos éducatives pour les rendre accessibles dans plusieurs langues."
    },
    {
-    "titre": "Agenda d'étudiant intelligent",
-    "solution": "Outil de planification d'études qui génère automatiquement un programme de révision."
+    "titre": "Formations pour reconversion professionnelle",
+    "solution": "Créer des parcours complets pour se reconvertir vers des métiers en tension (cybersécurité, UX, développement web)."
    },
    {
-    "titre": "YouTube éducatif monétisé",
-    "solution": "Chaîne pédagogique monétisée par pubs, sponsors et formation premium associée."
+    "titre": "Application de lecture assistée de livres",
+    "solution": "Proposer des résumés détaillés de livres en texte et audio avec des plans d'action concrets."
    },
    {
-    "titre": "Coaching de mémoire",
-    "solution": "Programme en ligne de techniques de mémorisation pour étudiants et professionnels."
+    "titre": "Marketplace de professeurs de maths",
+    "solution": "Spécialiser la mise en relation exclusivement sur les mathématiques, du collège au supérieur, avec un algorithme de matching."
    },
    {
-    "titre": "Marketplace de cours particuliers",
-    "solution": "Mise en relation payante entre professeurs particuliers et familles, avec commission."
+    "titre": "Séjours linguistiques virtuels",
+    "solution": "Organiser des immersions linguistiques en ligne : une semaine avec activités, ateliers et conversations uniquement en langue cible."
    },
    {
-    "titre": "Ateliers d'écriture",
-    "solution": "Ateliers en ligne d'écriture créative et académique avec retours personnalisés."
+    "titre": "Plateforme de projets pratiques notés",
+    "solution": "Proposer des challenges réels soumis par des entreprises et évalués par des experts pour construire un portfolio."
    },
    {
-    "titre": "Langue pour professionnels",
-    "solution": "Formations d'anglais des affaires en ligne pour entreprises avec suivi RH."
+    "titre": "École en ligne pour adultes en illettrisme numérique",
+    "solution": "Proposer des cours très simples pour apprendre les bases du numérique (email, démarches en ligne, banque en ligne)."
    }
   ],
   "createurs": [
    {
-    "titre": "Abonnement pour tutoriels vidéo",
-    "solution": "Proposer un accès mensuel à des tutoriels vidéo exclusifs pour apprendre une compétence créative."
+    "titre": "Vente de formations en ligne",
+    "solution": "Créer et vendre des cours vidéo sur votre domaine d'expertise (art, musique, écriture, artisanat)."
    },
    {
-    "titre": "Vente de prints d'art numériques",
-    "solution": "Vendre des impressions haute qualité de ses œuvres numériques via une boutique en ligne."
+    "titre": "Abonnement à du contenu exclusif",
+    "solution": "Proposer un accès payant à des tutoriels, making-of, ou œuvres inédites via Patreon ou une plateforme similaire."
    },
    {
-    "titre": "Coffret mensuel d'artisanat",
-    "solution": "Créer un coffret mensuel contenant des matériaux et instructions pour réaliser un projet artisanal."
+    "titre": "Boutique de prints et posters",
+    "solution": "Vendre des impressions haute qualité de vos œuvres artistiques ou photographies."
    },
    {
-    "titre": "Licences de musique pour vidéos",
-    "solution": "Vendre des licences de ses compositions musicales pour utilisation dans des vidéos en ligne."
+    "titre": "Commission sur demande",
+    "solution": "Réaliser des créations personnalisées (illustrations, portraits, compositions musicales, écrits) sur commande."
    },
    {
-    "titre": "Cours en ligne pour écrivains",
-    "solution": "Développer un cours en ligne pour aider les écrivains à structurer et publier leur premier livre."
+    "titre": "Coffrets créatifs par abonnement",
+    "solution": "Envoyer chaque mois un kit de matériel et un guide pour réaliser un projet artisanal ou artistique."
    },
    {
-    "titre": "Boutique de vêtements personnalisés",
-    "solution": "Vendre des t-shirts et vêtements imprimés avec ses propres créations artistiques."
+    "titre": "Marketplace de templates",
+    "solution": "Vendre des templates prêts à l'emploi (logos, sites web, présentations, designs pour réseaux sociaux)."
    },
    {
-    "titre": "Service de portraits sur commande",
-    "solution": "Proposer des portraits dessinés ou peints sur commande via un site web."
+    "titre": "Vente de musique libre de droits",
+    "solution": "Proposer des pistes audio ou des effets sonores sous licence pour vidéos, podcasts ou jeux."
    },
    {
-    "titre": "Abonnement à des presets photo",
-    "solution": "Vendre un abonnement donnant accès à une bibliothèque de presets Lightroom personnalisés."
+    "titre": "Cours en direct (live streaming)",
+    "solution": "Organiser des sessions de formation en temps réel avec interaction, accessibles par abonnement ou paiement à la séance."
    },
    {
-    "titre": "Vente de patrons de couture",
-    "solution": "Créer et vendre des patrons de couture téléchargeables avec instructions détaillées."
+    "titre": "Boutique de produits dérivés",
+    "solution": "Créer et vendre des goodies (t-shirts, tasses, stickers) à l'effigie de vos personnages ou logos."
    },
    {
-    "titre": "Podcast sponsorisé sur sa niche",
-    "solution": "Lancer un podcast sur sa spécialité créative et générer des revenus via des sponsors."
+    "titre": "Service de relecture et correction",
+    "solution": "Offrir des services de relecture, édition et correction pour auteurs ou blogueurs."
    },
    {
-    "titre": "E-book de recettes ou techniques",
-    "solution": "Publier un e-book détaillant ses techniques ou recettes spécifiques à son art."
+    "titre": "Vente de patterns et motifs",
+    "solution": "Commercialiser des motifs répétitifs pour textiles, papiers peints ou fonds d'écran."
    },
    {
-    "titre": "Vente de polices de caractères",
-    "solution": "Créer et vendre des polices de caractères originales pour designers et marques."
+    "titre": "Accompagnement et coaching",
+    "solution": "Proposer des séances individuelles ou en groupe pour aider d'autres créateurs à développer leur activité."
    },
    {
-    "titre": "Ateliers en ligne en direct",
-    "solution": "Organiser des ateliers en ligne payants et interactifs pour enseigner son savoir-faire."
+    "titre": "Vente de packs d'assets numériques",
+    "solution": "Regrouper et vendre des ensembles d'icônes, polices, brushes ou textures."
    },
    {
-    "titre": "Boutique de bijoux faits main",
-    "solution": "Vendre des bijoux artisanaux uniques via une boutique en ligne avec photos soignées."
+    "titre": "Blog ou newsletter payante",
+    "solution": "Partager des conseils, analyses et coulisses de votre processus créatif via un abonnement mensuel."
    },
    {
-    "titre": "Membres via Patreon ou similaires",
-    "solution": "Offrir un accès à du contenu exclusif et des coulisses via une plateforme d'abonnement."
+    "titre": "Vente d'ebooks et guides pratiques",
+    "solution": "Rédiger et vendre des livres numériques sur des techniques artistiques, l'entrepreneuriat créatif ou la gestion de carrière."
    },
    {
-    "titre": "Vente de fichiers 3D imprimables",
-    "solution": "Vendre des fichiers STL ou modèles 3D prêts à imprimer pour les makers."
+    "titre": "Location d'outils ou logiciels en ligne",
+    "solution": "Mettre à disposition des outils spécialisés (presets, plugins, templates) moyennant un abonnement."
    },
    {
-    "titre": "Service de retouche photo freelance",
-    "solution": "Proposer un service de retouche photo professionnelle en ligne pour particuliers et entreprises."
+    "titre": "Organisation de concours ou challenges",
+    "solution": "Lancer des défis créatifs payants avec lots et visibilité, générant des frais d'inscription."
    },
    {
-    "titre": "Création de papeterie personnalisée",
-    "solution": "Vendre des cartes, invitations et papeterie personnalisées avec ses illustrations."
+    "titre": "Vente d'objets artisanaux faits main",
+    "solution": "Proposer des créations uniques (bijoux, céramiques, meubles) sur Etsy ou votre propre site."
    },
    {
-    "titre": "Abonnement à des fonds d'écran",
-    "solution": "Proposer un abonnement mensuel à des fonds d'écran artistiques haute résolution."
+    "titre": "Service de design graphique",
+    "solution": "Réaliser des logos, chartes graphiques ou supports de communication pour entreprises."
    },
    {
-    "titre": "Vente de stickers et autocollants",
-    "solution": "Créer et vendre des stickers originaux en ligne via des plateformes d'impression à la demande."
+    "titre": "Création de contenu sponsorisé",
+    "solution": "Produire des vidéos, articles ou posts pour des marques en échange de rémunération."
    },
    {
-    "titre": "Coaching individuel en créativité",
-    "solution": "Offrir des séances de coaching individuel en ligne pour aider d'autres créateurs à progresser."
+    "titre": "Vente de partitions ou tablatures",
+    "solution": "Publier et vendre des partitions originales ou des arrangements musicaux."
    },
    {
-    "titre": "Vente de partitions musicales",
-    "solution": "Vendre des partitions arrangées ou composées par soi-même en téléchargement numérique."
+    "titre": "Application mobile de tutoriels",
+    "solution": "Développer une app proposant des leçons interactives de dessin, musique ou écriture."
    },
    {
-    "titre": "Boutique de céramique artisanale",
-    "solution": "Vendre des pièces de céramique uniques fabriquées à la main avec envoi sécurisé."
+    "titre": "Podcast premium",
+    "solution": "Diffuser des épisodes bonus ou sans publicité via un abonnement payant."
    },
    {
-    "titre": "Abonnement à des modèles de design",
-    "solution": "Proposer un abonnement à des modèles de design graphique modifiables pour non-designers."
+    "titre": "Vente de droits de reproduction",
+    "solution": "Accorder des licences limitées pour utiliser vos œuvres (photos, illustrations) dans des publications."
    },
    {
-    "titre": "Vente de kits DIY pour enfants",
-    "solution": "Créer et vendre des kits d'activités créatives pour enfants avec instructions en ligne."
+    "titre": "Boutique de kits DIY",
+    "solution": "Vendre des kits tout-en-un pour réaliser un projet créatif (broderie, scrapbooking, peinture)."
    }
   ],
   "petits-vendeurs": [
    {
-    "titre": "Dropshipping de niche",
-    "solution": "Vendre des produits sans stock, en utilisant un fournisseur qui expédie directement aux clients."
+    "titre": "Boutique Shopify de dropshipping",
+    "solution": "Créer une boutique en ligne avec des produits expédiés directement par fournisseurs chinois via Oberlo."
    },
    {
-    "titre": "Boutique Etsy d'artisanat",
-    "solution": "Vendre des créations faites main (bijoux, déco, vêtements) sur Etsy ou une boutique similaire."
+    "titre": "Vente de produits artisanaux sur Etsy",
+    "solution": "Fabriquer et vendre des objets faits main (bijoux, décoration, vêtements) sur Etsy."
    },
    {
-    "titre": "Revente de vêtements vintage",
-    "solution": "Acheter des vêtements d'occasion en gros ou en friperie, puis les revendre sur Vinted ou Depop."
+    "titre": "Boutique de vêtements imprimés sur demande",
+    "solution": "Utiliser des plateformes comme Printful pour vendre des t-shirts et hoodies personnalisés."
    },
    {
-    "titre": "Abonnement de box mensuelle",
-    "solution": "Créer une box thématique (cosmétiques, snacks, livres) envoyée chaque mois aux abonnés."
+    "titre": "Revente de produits sur eBay",
+    "solution": "Acheter des lots en gros ou en brocante pour les revendre à l'unité sur eBay."
    },
    {
-    "titre": "Produits imprimés à la demande",
-    "solution": "Vendre des t-shirts, mugs ou posters personnalisés via des plateformes comme Printful."
+    "titre": "Vente de produits locaux et artisanaux",
+    "solution": "Mettre en ligne des produits de producteurs locaux (miel, fromages, cosmétiques) via une boutique."
    },
    {
-    "titre": "Boutique de produits locaux",
-    "solution": "Vendre en ligne des spécialités régionales (miel, confitures, fromages) depuis une petite région."
+    "titre": "Boutique de box cadeaux mensuelles",
+    "solution": "Proposer des abonnements mensuels de box thématiques (bien-être, gourmandises, etc.)."
    },
    {
-    "titre": "Revente de produits high-tech reconditionnés",
-    "solution": "Acheter des appareils électroniques d'occasion, les tester et les revendre avec garantie."
+    "titre": "Vente de produits digitaux (ebooks, templates)",
+    "solution": "Créer et vendre des fichiers téléchargeables comme des planners, recettes ou modèles."
    },
    {
-    "titre": "Produits de beauté naturels faits maison",
-    "solution": "Fabriquer et vendre des savons, baumes ou cosmétiques bio en ligne."
+    "titre": "Boutique de vêtements d'occasion",
+    "solution": "Acheter des vêtements en friperies ou via des particuliers pour les revendre sur Vinted ou Depop."
    },
    {
-    "titre": "Boutique de fournitures pour animaux",
-    "solution": "Vendre des accessoires, jouets ou aliments spécialisés pour chiens et chats."
-   },
-   {
-    "titre": "Vente de plantes et accessoires",
-    "solution": "Vendre des plantes d'intérieur, pots et terreaux sur une boutique dédiée."
+    "titre": "Vente de produits pour animaux de compagnie",
+    "solution": "Créer une boutique en ligne spécialisée pour chiens et chats (accessoires, friandises)."
    },
    {
     "titre": "Boutique de produits zéro déchet",
-    "solution": "Proposer des articles réutilisables (pailles, sacs, contenants) pour un mode de vie écologique."
+    "solution": "Vendre des alternatives écologiques (gourdes, sacs réutilisables, pailles en bambou) en ligne."
    },
    {
-    "titre": "Revente de livres d'occasion",
-    "solution": "Acheter des livres en lot et les revendre sur des plateformes comme Momox ou AbeBooks."
+    "titre": "Vente de plantes et accessoires",
+    "solution": "Vendre des plantes d'intérieur, pots décoratifs et terreaux via une boutique dédiée."
    },
    {
-    "titre": "Boutique de jeux et puzzles",
-    "solution": "Vendre des jeux de société, puzzles et jouets éducatifs en ligne."
+    "titre": "Boutique de produits pour bébés et enfants",
+    "solution": "Proposer des vêtements, jouets et accessoires pour bébés, fabriqués ou sélectionnés."
    },
    {
-    "titre": "Produits personnalisés pour événements",
-    "solution": "Vendre des articles personnalisés (gobelets, stickers, invitations) pour mariages ou anniversaires."
+    "titre": "Vente de cosmétiques maison",
+    "solution": "Fabriquer des savons, baumes à lèvres et crèmes naturels pour les vendre en ligne."
    },
    {
-    "titre": "Boutique de café ou thé en grains",
-    "solution": "Vendre du café ou thé de spécialité en ligne, avec abonnement possible."
+    "titre": "Boutique de bijoux fantaisie",
+    "solution": "Acheter des perles et fils pour créer et vendre des bijoux faits main abordables."
    },
    {
-    "titre": "Vente de kits DIY",
-    "solution": "Proposer des kits pour fabriquer soi-même (bougies, savons, bijoux) avec instructions."
+    "titre": "Vente de produits de papeterie",
+    "solution": "Créer des carnets, cartes et stickers originaux pour les vendre en ligne."
    },
    {
-    "titre": "Boutique de vêtements pour bébés",
-    "solution": "Vendre des vêtements, bodys et accessoires pour nourrissons en ligne."
+    "titre": "Boutique de produits de sport et fitness",
+    "solution": "Vendre des tapis de yoga, bouteilles isothermes et accessoires sportifs."
    },
    {
-    "titre": "Revente de sneakers limitées",
-    "solution": "Acheter des sneakers rares et les revendre sur des sites comme StockX ou Vestiaire Collective."
+    "titre": "Vente de produits pour la maison",
+    "solution": "Proposer des coussins, bougies parfumées et petits meubles design en ligne."
    },
    {
-    "titre": "Produits de papeterie créative",
-    "solution": "Vendre des carnets, stylos, stickers et fournitures pour bullet journal."
+    "titre": "Boutique de créations personnalisées",
+    "solution": "Vendre des tasses, calendriers ou puzzles personnalisés avec des photos clients."
    },
    {
-    "titre": "Boutique de compléments alimentaires",
-    "solution": "Vendre des vitamines, protéines ou super-aliments en ligne (respecter réglementation)."
+    "titre": "Vente de produits de seconde main haut de gamme",
+    "solution": "Cibler des marques de luxe ou vintage pour les revendre sur des plateformes spécialisées."
    },
    {
-    "titre": "Vente d'œuvres d'art numériques",
-    "solution": "Vendre des impressions d'art, posters ou fichiers numériques téléchargeables."
+    "titre": "Boutique de thé et cafés en grains",
+    "solution": "Vendre du thé en vrac, cafés torréfiés ou infusions bio en ligne."
    },
    {
-    "titre": "Boutique de produits pour le sport",
-    "solution": "Vendre des accessoires de fitness, tapis, bouteilles ou vêtements techniques."
+    "titre": "Vente de jeux éducatifs et puzzles",
+    "solution": "Sélectionner des jeux éducatifs en bois ou puzzles pour enfants et adultes."
    },
    {
-    "titre": "Revente de meubles vintage",
-    "solution": "Acheter des meubles d'occasion, les retaper et les revendre sur Leboncoin ou Etsy."
+    "titre": "Boutique de produits locaux et régionaux",
+    "solution": "Regrouper des spécialités gastronomiques provenant d'une région spécifique."
    },
    {
-    "titre": "Boutique de produits sans gluten",
-    "solution": "Vendre des aliments et snacks sans gluten pour intolérants."
+    "titre": "Vente de meubles démontés ou en kit",
+    "solution": "Vendre des meubles faciles à monter, inspirés du modèle IKEA, à prix compétitifs."
    },
    {
-    "titre": "Vente de kits de jardinage",
-    "solution": "Proposer des kits avec graines, terre et pots pour cultiver chez soi."
+    "titre": "Boutique de fournitures pour artistes",
+    "solution": "Vendre des crayons de couleur, pinceaux, toiles et carnets pour artistes."
+   },
+   {
+    "titre": "Vente de produits pour la salle de bain",
+    "solution": "Proposer des serviettes, tapis de bain, et accessoires de douche design."
    }
   ],
   "local-et-territoire": [
    {
-    "titre": "Annuaire des artisans locaux",
-    "solution": "Créer un site web référencant les plombiers, électriciens et artisans de la commune avec système d'avis vérifiés."
+    "titre": "Annuaire local premium",
+    "solution": "Créer un annuaire digital mis à jour des commerces et services de la commune avec options de visibilité payante."
    },
    {
-    "titre": "Marketplace des produits fermiers",
-    "solution": "Plateforme de vente en ligne connectant directement les agriculteurs des environs aux habitants pour la livraison locale."
-   },
-   {
-    "titre": "Agenda communautaire hebdomadaire",
-    "solution": "Newsletter ou application listant tous les événements gratuits et payants du quartier (marchés, spectacles, réunions)."
-   },
-   {
-    "titre": "Service de conciergerie de proximité",
-    "solution": "Plateforme de réservation pour faire ses courses, récupérer ses colis ou promener les chiens des résidents."
-   },
-   {
-    "titre": "Guide touristique alternatif local",
-    "solution": "Vente de guides numériques ou audio sur l'histoire cachée, les ruelles secrètes et les lieux insolites de la ville."
-   },
-   {
-    "titre": "Groupes d'achat solidaires",
-    "solution": "Organisation de commandes groupées auprès de producteurs locaux pour obtenir des tarifs préférentiels pour le quartier."
-   },
-   {
-    "titre": "Marketplace d'occasions entre voisins",
-    "solution": "Application de type Leboncoin hyper-localisée favorisant les échanges et dons entre habitants d'une même rue."
-   },
-   {
-    "titre": "Cours de soutien scolaire locaux",
-    "solution": "Mise en relation de parents d'élèves avec des étudiants ou professeurs particuliers habitant dans le même secteur."
+    "titre": "Gestionnaire d'événements associatifs",
+    "solution": "Proposer une plateforme SaaS simple pour gérer les inscriptions, paiements et communications des associations locales."
    },
    {
     "titre": "Blog de news municipales",
-    "solution": "Site d'information dédié à la vie politique et associative locale avec abonnement premium pour des analyses approfondies."
+    "solution": "Rédiger et monétiser via publicité locale un blog dédié à l'actualité officielle et informelle de la ville."
    },
    {
-    "titre": "Location d'équipements entre particuliers",
-    "solution": "Plateforme permettant de louer perceuses, tentes ou appareils photo aux voisins plutôt qu'en magasin."
+    "titre": "Service de mise en relation voisins",
+    "solution": "Lancer une app ou newsletter facilitant l'entraide de proximité (prêt d'objets, garde d'enfants, courses)."
    },
    {
-    "titre": "Association de gestion de copropriété en ligne",
-    "solution": "Outil SaaS simplifié pour gérer les comptes, les votes et les communications au sein des petites copropriétés locales."
+    "titre": "Newsletter du quartier",
+    "solution": "Envoyer une lettre hebdomadaire ciblée par zone géographique avec offres des commerçants et événements locaux."
    },
    {
-    "titre": "Visioconférence pour associations",
-    "solution": "Service de modération et d'animation d'assemblées générales ou de conseils d'administration pour les petites asso locales."
+    "titre": "Agenda culturel hyper-local",
+    "solution": "Centraliser tous les événements culturels et festifs de la commune dans un calendrier interactif monétisé."
    },
    {
-    "titre": "Recettes locales digitales",
-    "solution": "E-commerce vendant des recettes numériques exclusives basées sur les ingrédients traditionnels de la région."
+    "titre": "Conciergerie digitale pour résidents",
+    "solution": "Offrir un service de gestion des demandes administratives, réparations et prestataires pour les habitants."
    },
    {
-    "titre": "Plateforme de covoiturage domicile-travail",
-    "solution": "Réseau social dédié au partage de trajets quotidiens entre habitants d'un même arrondissement pour réduire les coûts."
+    "titre": "Plateforme de covoiturage quotidien",
+    "solution": "Développer un outil spécifique pour le covoiturage domicile-travail au sein d'une même agglomération."
    },
    {
-    "titre": "Design de vitrines virtuelles",
-    "solution": "Service de création de contenus visuels pour les commerces locaux afin d'animer leurs réseaux sociaux et leur e-shop."
+    "titre": "Marketplace d'occasion locale",
+    "solution": "Créer un site d'annonces restreint géographiquement pour réduire les frais de port et favoriser le recyclage."
    },
    {
-    "titre": "Audit digital des TPE locales",
-    "solution": "Consultation en ligne pour aider les petits commerçants à optimiser leur présence Google My Business et leur site web."
+    "titre": "Guide touristique alternatif",
+    "solution": "Vendre des guides PDF ou audio sur l'histoire et les lieux secrets de la commune aux touristes et nouveaux arrivants."
    },
    {
-    "titre": "Club de lecture virtuel local",
-    "solution": "Abonnement mensuel pour discuter en ligne de livres écrits par des auteurs locaux ou ayant trait à l'histoire de la ville."
+    "titre": "Consultant en numérisation pour TPE",
+    "solution": "Aider les petits commerces locaux à créer leur site web, fiche Google My Business et présence sociale."
    },
    {
-    "titre": "Service de traduction de documents administratifs",
-    "solution": "Plateforme mettant en relation les nouveaux arrivants avec des traducteurs bénévoles ou professionnels de la zone."
+    "titre": "Service de photos professionnelles locales",
+    "solution": "Proposer des séances photo pour les entreprises locales et les portraits professionnels à petit prix."
    },
    {
-    "titre": "Marketplace de services créatifs",
-    "solution": "Offre de services graphiques, photos ou rédactionnels proposés par des talents du quartier aux entreprises locales."
+    "titre": "Cours en ligne de langues locales",
+    "solution": "Enseigner les dialectes ou accents régionaux via des vidéos préenregistrées ou des cours Zoom groupés."
    },
    {
-    "titre": "Calendrier partagé des ressources publiques",
-    "solution": "Application indiquant en temps réel la disponibilité des salles des fêtes, terrains de sport et bibliothèques municipales."
+    "titre": "Affiliation produits locaux",
+    "solution": "Créer un blog testant et recommandant les produits agricoles et artisanaux de la région avec liens d'affiliation."
+   },
+   {
+    "titre": "Gestionnaire de réputation en ligne",
+    "solution": "Aider les restaurants et hôtels locaux à répondre aux avis et améliorer leur note sur les plateformes."
    },
    {
     "titre": "Formation aux outils numériques seniors",
-    "solution": "Cours en ligne ou hybrides adaptés spécifiquement aux personnes âgées pour maîtriser smartphone et internet."
+    "solution": "Organiser des ateliers en ligne ou hybrides pour apprendre aux seniors à utiliser internet et les smartphones."
    },
    {
-    "titre": "Place de marché des fleurs locales",
-    "solution": "Site de commande anticipée de bouquets composés par les fleuristes indépendants du secteur avec retrait en point relais."
+    "titre": "Recrutement local spécialisé",
+    "solution": "Créer une agence de recrutement niche dédiée uniquement aux emplois dans le secteur territorial et associatif."
    },
    {
-    "titre": "Système de fidélité numérique mutualisé",
-    "solution": "Application regroupant les cartes de fidélité de plusieurs commerces du centre-ville en une seule carte digitale."
+    "titre": "Location d'espaces entre particuliers",
+    "solution": "Permettre la location courte durée de salles, jardins ou bureaux privés situés dans la commune."
    },
    {
-    "titre": "Reportages vidéo institutionnels",
-    "solution": "Production de vidéos promotionnelles courtes pour mettre en valeur les initiatives citoyennes ou les projets urbains locaux."
+    "titre": "Application de suivi des déchets",
+    "solution": "Développer une app rappelant les jours de collecte et donnant des astuces de tri spécifiques à la commune."
    },
    {
-    "titre": "Courtage en subventions locales",
-    "solution": "Service en ligne aidant les associations et porteurs de projets à identifier et monter les dossiers pour les aides municipales."
+    "titre": "Marketplace de services à la personne",
+    "solution": "Mettre en relation sécurisée des prestataires locaux (jardiniers, ménage) avec les habitants."
+   },
+   {
+    "titre": "Webinaires sur la vie locale",
+    "solution": "Animer des discussions en direct avec des élus ou experts locaux pour informer les citoyens sur les projets urbains."
+   },
+   {
+    "titre": "Dotation personnalisée entreprise",
+    "solution": "Vendre des coffrets cadeaux composés exclusivement de produits de producteurs locaux aux entreprises."
+   },
+   {
+    "titre": "Audit SEO local",
+    "solution": "Proposer des audits gratuits suivis de prestations payantes pour améliorer la visibilité Google Maps des commerces."
+   },
+   {
+    "titre": "Club de lecture virtuel local",
+    "solution": "Organiser des rencontres en ligne autour de livres traitant de l'histoire ou de la sociologie de la région."
+   },
+   {
+    "titre": "Plateforme de financement participatif local",
+    "solution": "Aider les projets citoyens (parc, asso) à collecter des fonds auprès des habitants de la commune."
    }
   ],
   "culture-et-loisirs": [
    {
-    "titre": "Blog de voyages avec guides payants",
-    "solution": "Créer des guides de voyage détaillés et téléchargeables pour des destinations précises, monétisés par la vente et l'affiliation."
+    "titre": "Agence de voyages en ligne sur mesure",
+    "solution": "Proposer des itinéraires personnalisés et sur-mesure à partir d'un formulaire en ligne, avec service de conciergerie."
    },
    {
-    "titre": "Agence de réservation d'activités locales",
-    "solution": "Une plateforme mettant en relation voyageurs et guides locaux pour réserver des visites et expériences authentiques."
+    "titre": "Plateforme de réservation d'activités locales",
+    "solution": "Un site qui référence et permet de réserver des activités touristiques et culturelles proposées par des guides et artisans locaux."
    },
    {
-    "titre": "Site de vente de voyages sur mesure",
-    "solution": "Proposer la création d'itinéraires personnalisés et la réservation complète de voyages clés en main."
+    "titre": "Visites virtuelles de monuments historiques",
+    "solution": "Vendre des visites guidées immersives en 3D de sites patrimoniaux inaccessibles ou éloignés."
    },
    {
-    "titre": "Chaîne YouTube de voyages monétisée",
-    "solution": "Produire des contenus vidéo de découverte de destinations, monétisés par la publicité, les partenariats et le sponsoring."
+    "titre": "Abonnement de jeux de société",
+    "solution": "Louer et envoyer chaque mois des jeux de société de la while permettant de découvrir de nouveaux titres sans les acheter."
    },
    {
-    "titre": "Boutique de souvenirs et objets d'art en ligne",
-    "solution": "Vendre des objets artisanaux, œuvres d'art et souvenirs liés au patrimoine et aux voyages."
+    "titre": "Boutique en ligne de articles de sport reconditionnés",
+    "solution": "Acheter, restaurer et revendre du matériel de sport d'occasion (vélos, skis, golfs) avec garantie."
    },
    {
-    "titre": "Plateforme de cours de jeu d'échecs en ligne",
-    "solution": "Offrir des cours vidéo, des exercices et des coaching en visio pour progresser aux échecs tous niveaux."
+    "titre": "Cours de sport en visio par abonnement",
+    "solution": "Plateforme de coaching sportif en direct et à la demande (yoga, HIIT, danse) avec plans personnalisés."
    },
    {
-    "titre": "Site d'agrégation d'offres de concerts et spectacles",
-    "solution": "Un comparateur centralisant billetteries et événements culturels près de l'utilisateur."
+    "titre": "Application de suivi de randonnées",
+    "solution": "Une app freemium qui propose des tracés GPS de randonnées, cartes hors-ligne et communauté de partage."
    },
    {
-    "titre": "Abonnement de box passions (cinéma, musique, collections)",
-    "solution": "Envoyer chaque mois une box thématique autour d'une passion avec accessoires et contenus exclusifs."
+    "titre": "Box mensuelle de passions",
+    "solution": "Envoyer chaque mois une box thématique autour d'une passion (modélisme, cuisine du monde, astronomie)."
    },
    {
-    "titre": "Plateforme de recherche de partenaires de sport",
-    "solution": "Une application mettant en relation sportifs pour trouver des partenaires selon leur niveau et leur ville."
+    "titre": "Marketplace d'objets de collection",
+    "solution": "Une plateforme sécurisée d'achat-vente entre passionnés d'objets de collection (timbres, pièces, cartes à collectionner) avec authentification."
    },
    {
-    "titre": "Coaching sportif en ligne",
-    "solution": "Proposer des programmes d'entraînement personnalisés et un suivi par des coachs certifiés."
+    "titre": "Organisation de séjours sportifs à thème",
+    "solution": "Vendre en ligne des séjours tout compris autour d'un sport (trail, plongée, surf) avec coach inclus."
    },
    {
-    "titre": "Boutique d'équipements sportifs spécialisés",
-    "solution": "Un e-shop spécialisé dans un sport de niche (escalade, padel, trail) avec conseils d'experts."
+    "titre": "Podcast et média de patrimoine régional",
+    "solution": "Monétiser par abonnement et partenariats un média dédié aux histoires et anecdotes du patrimoine local."
    },
    {
-    "titre": "Site de visites virtuelles de monuments historiques",
-    "solution": "Proposer des visites immersives payantes du patrimoine culturel en 3D et réalité virtuelle."
+    "titre": "Cours en ligne de généalogie",
+    "solution": "Former les particuliers à rechercher leurs ancêtres via des modules vidéo et un accompagnement personnalisé."
    },
    {
-    "titre": "Généalogie en ligne en abonnement",
-    "solution": "Une plateforme d'aide à la création d'arbres généalogiques avec accès à des archives numérisées."
+    "titre": "Plateforme d'évasion games immersifs en ligne",
+    "solution": "Organiser des escape games virtuels à distance pour groupes d'amis ou entreprises."
    },
    {
-    "titre": "Marketplace de collections (cartes, vinyles, pièces)",
-    "solution": "Une place de marché dédiée aux collectionneurs avec authentification et estimation des objets."
+    "titre": "Blog affilié de comparaison de voyages",
+    "solution": "Comparer offres de vols, hôtels et séjours via des liens affiliés et guides de destination."
    },
    {
-    "titre": "Podcast culturel monétisé",
-    "solution": "Produire un podcast sur l'histoire et le patrimoine, financé par l'abonnement des auditeurs et les sponsors."
+    "titre": "Location de matériel de sport entre particuliers",
+    "solution": "Une plateforme de mise en relation pour louer vélos, skis, planches entre particuliers avec assurance incluse."
    },
    {
-    "titre": "Plateforme de réservation de terrains et salles de sport",
-    "solution": "Une application de réservation de créneaux pour terrains, courts et salles entre particuliers et clubs."
+    "titre": "Cours de musique en ligne",
+    "solution": "Connecter professeurs de musique et élèves via des cours en visio et un abonnement pour accéder à des vidéos."
    },
    {
-    "titre": "Formation aux jeux vidéo et e-sport",
-    "solution": "Vendre des cours en ligne et du coaching pour progresser sur des jeux compétitifs populaires."
+    "titre": "Vente de puzzles et jeux personnalisés",
+    "solution": "Créer et vendre en ligne des puzzles, cartes et jeux personnalisés à partir de photos des clients."
    },
    {
-    "titre": "Site de vente de jeux de société d'occasion et rares",
-    "solution": "Une boutique en ligne de jeux de société de collection avec livraison et avis vérifiés."
+    "titre": "Guide numérique de destinations hors des sentiers battus",
+    "solution": "Vendre des guides PDF et cartes détaillées de destinations insolites, mis à jour en continu."
    },
    {
-    "titre": "Réservation d'hébergements atypiques",
-    "solution": "Une plateforme spécialisée dans les séjours insolites (cabanes, yourtes, bateaux) avec guides de voyage intégrés."
+    "titre": "Concours et tournois de e-sport amateur",
+    "solution": "Organiser des tournois en ligne avec frais d'inscription, sponsors et diffusion en streaming."
    },
    {
-    "titre": "Magazine numérique sur le patrimoine régional",
-    "solution": "Un média en ligne par abonnement dédié à l'histoire locale, aux monuments et aux traditions."
+    "titre": "Abonnement de romans et policiers en avant-première",
+    "solution": "Envoyer chaque mois un livre choisi selon les goûts du lecteur avant sa sortie officielle en poche."
    },
    {
-    "titre": "Application de défis sportifs entre amis",
-    "solution": "Une app qui lance des challenges fitness et sportifs entre utilisateurs avec récompenses et classements."
+    "titre": "Réservation d'expériences chez l'habitant",
+    "solution": "Mettre en relation voyageurs et habitants proposant repas, ateliers et découvertes culturelles authentiques."
    },
    {
-    "titre": "Ateliers créatifs en ligne (loisirs créatifs)",
-    "solution": "Vendre des kits créatifs accompagnés de tutoriels vidéo pour apprendre la poterie, le dessin ou la couture."
+    "titre": "Coaching en photographie de voyage",
+    "solution": "Vendre des formations en ligne et des défis photo pour apprendre à photographier ses voyages."
    },
    {
-    "titre": "Carnets de voyage et accessoires personnalisés",
-    "solution": "Un e-shop de carnets de voyage, accessoires et articles personnalisés pour voyageurs et passionnés."
+    "titre": "Plateforme de quiz et jeux de culture générale",
+    "solution": "Un site freemium de quiz entre amis avec championnats en ligne et récompenses."
    },
    {
-    "titre": "Plateforme de réservation de stages sportifs et culturels",
-    "solution": "Centraliser les offres de stages et séjours sportifs ou culturels (danse, musique, ski) avec réservation en ligne."
+    "titre": "Boutique de accessoires pour passions créatives",
+    "solution": "Vendre en ligne du matériel et kits pour loisirs créatifs (tricot, poterie, peinture) avec tutoriels."
    },
    {
-    "titre": "Communauté et contenus premium pour passionnés d'histoire",
-    "solution": "Un espace d'abonnement avec articles approfondis, visioconférences avec historiens et forums dédiés."
+    "titre": "Marraine d'aventure : défis sportifs en ligne",
+    "solution": "Proposer des challenges sportifs à distance (course, vélo) avec médailles, classements et communauté."
    }
   ],
   "sante-bien-etre": [
    {
-    "titre": "Programme d'abonnement de méditation guidée",
-    "solution": "Proposer un accès mensuel à des séances audio de méditation pour réduire le stress et améliorer le sommeil."
+    "titre": "Coach en sommeil",
+    "solution": "Proposer des programmes personnalisés d'hygiène du sommeil via des consultations en ligne."
    },
    {
-    "titre": "Coach en hygiène de sommeil en ligne",
-    "solution": "Offrir des consultations individuelles et des plans personnalisés pour améliorer la qualité du sommeil sans avis médical."
+    "titre": "Application de méditation guidée",
+    "solution": "Développer une app avec des séances audio de méditation pour réduire le stress."
    },
    {
-    "titre": "Application de suivi d'habitudes bien-être",
-    "solution": "Créer une application mobile qui aide les utilisateurs à suivre et à maintenir des routines de forme et de bien-être."
+    "titre": "Boutique de tisanes bio",
+    "solution": "Vendre en ligne des mélanges de plantes pour la relaxation et le bien-être."
    },
    {
-    "titre": "Cours en ligne de yoga pour débutants",
-    "solution": "Vendre des vidéos de yoga progressives adaptées aux débutants pour améliorer la flexibilité et la relaxation."
+    "titre": "Programme de yoga en ligne",
+    "solution": "Proposer des cours vidéo de yoga pour améliorer la forme et la souplesse."
    },
    {
-    "titre": "Box mensuelle de produits naturels bien-être",
-    "solution": "Livrer chaque mois une sélection de thés, huiles essentielles et accessoires de relaxation."
+    "titre": "Coach en nutrition bien-être",
+    "solution": "Offrir des plans alimentaires équilibrés sans conseils médicaux."
    },
    {
-    "titre": "Blog avec contenu premium sur la prévention",
-    "solution": "Monétiser un blog avec des articles approfondis et des guides téléchargeables sur les habitudes saines."
+    "titre": "Application de suivi d'humeur",
+    "solution": "Créer un outil pour journaliser les émotions et identifier des tendances."
    },
    {
-    "titre": "Groupe de soutien en ligne pour le sommeil",
-    "solution": "Créer une communauté payante avec des ateliers hebdomadaires et des discussions sur les défis du sommeil."
+    "titre": "Blog sur la gestion du stress",
+    "solution": "Publier des articles et des exercices pratiques pour mieux gérer le stress."
    },
    {
-    "titre": "Catalogue de recettes saines et équilibrées",
-    "solution": "Vendre un livre de recettes numériques axé sur l'énergie et la vitalité quotidienne."
+    "titre": "Boutique d'huiles essentielles",
+    "solution": "Vendre des huiles essentielles pures et des diffuseurs pour l'aromathérapie."
    },
    {
-    "titre": "Plateforme de défis bien-être de 30 jours",
-    "solution": "Proposer des programmes structurés de 30 jours pour adopter de nouvelles habitudes de forme."
+    "titre": "Programme de marche active",
+    "solution": "Lancer des défis de marche avec des plans progressifs pour rester actif."
    },
    {
-    "titre": "Service de planification de routine matinale",
-    "solution": "Offrir des plans personnalisés de routine matinale pour booster l'énergie et la clarté mentale."
+    "titre": "Application de respiration guidée",
+    "solution": "Développer une app avec des exercices de respiration pour l'apaisement."
    },
    {
-    "titre": "Podcast sponsorisé sur le bien-être",
-    "solution": "Générer des revenus via des sponsors et des épisodes premium sur la santé et la forme."
+    "titre": "Boutique de coussins ergonomiques",
+    "solution": "Vendre des coussins pour le dos et le sommeil adaptés au bien-être."
    },
    {
-    "titre": "Formation en ligne sur la gestion du stress",
-    "solution": "Vendre un cours complet avec des techniques de respiration et de relaxation pour la vie quotidienne."
+    "titre": "Cours de stretching en ligne",
+    "solution": "Proposer des vidéos d'étirements pour améliorer la posture et la détente."
    },
    {
-    "titre": "Application de rappels de mouvement et d'étirements",
-    "solution": "Développer une app qui envoie des notifications pour encourager des pauses actives au travail."
+    "titre": "Box bien-être mensuelle",
+    "solution": "Créer des abonnements avec des produits comme des masques, thés et huiles."
    },
    {
-    "titre": "Boutique en ligne d'accessoires de relaxation",
-    "solution": "Vendre des coussins de méditation, des masques de sommeil et des diffuseurs de parfum."
+    "titre": "Application de gratitude",
+    "solution": "Proposer un journal numérique pour noter des gratitudes quotidiennes."
    },
    {
-    "titre": "Coaching de groupe en ligne pour la forme",
-    "solution": "Animer des séances collectives virtuelles de renforcement musculaire sans équipement lourd."
+    "titre": "Boutique de tapis de yoga",
+    "solution": "Vendre des tapis écologiques et accessoires pour la pratique du yoga."
    },
    {
-    "titre": "Newsletter payante sur les conseils bien-être",
-    "solution": "Proposer un abonnement hebdomadaire avec des astuces pratiques et des interviews d'experts."
+    "titre": "Programme de détox numérique",
+    "solution": "Offrir un guide pour réduire le temps d'écran et améliorer le sommeil."
    },
    {
-    "titre": "Cours de respiration consciente",
-    "solution": "Enseigner des techniques de respiration pour réduire l'anxiété et améliorer la concentration."
+    "titre": "Application de relaxation sonore",
+    "solution": "Proposer des paysages sonores naturels pour la méditation ou le sommeil."
    },
    {
-    "titre": "Application de journaling guidé",
-    "solution": "Fournir un outil numérique avec des invites quotidiennes pour la gratitude et l'introspection."
+    "titre": "Boutique de bougies naturelles",
+    "solution": "Vendre des bougies parfumées sans produits chimiques pour créer une ambiance zen."
    },
    {
-    "titre": "Programme de marche active en ligne",
-    "solution": "Offrir des plans de marche progressifs avec des podcasts audio d'accompagnement."
+    "titre": "Cours de Pilates en ligne",
+    "solution": "Proposer des séances vidéo pour renforcer le corps en douceur."
    },
    {
-    "titre": "Marketplace de coachs bien-être indépendants",
-    "solution": "Créer une plateforme où les coachs certifiés vendent leurs services et leurs programmes."
+    "titre": "Application de suivi d'hydratation",
+    "solution": "Développer un rappel intelligent pour boire de l'eau régulièrement."
    },
    {
-    "titre": "Série de webinaires sur la prévention",
-    "solution": "Organiser des événements en ligne payants sur des thèmes comme l'ergonomie et la posture."
+    "titre": "Boutique de vêtements de sport",
+    "solution": "Vendre des vêtements confortables pour le yoga ou la détente."
    },
    {
-    "titre": "Application de suivi de la lumière et de l'exposition au soleil",
-    "solution": "Aider les utilisateurs à optimiser leur exposition à la lumière naturelle pour réguler leur horloge interne."
+    "titre": "Programme de journaling",
+    "solution": "Offrir des carnets numériques avec des prompts pour l'écriture introspective."
    },
    {
-    "titre": "Coffret numérique de sons de la nature",
-    "solution": "Vendre des playlists audio de haute qualité pour la relaxation et le sommeil profond."
+    "titre": "Application de cycle circadien",
+    "solution": "Proposer des routines basées sur le rythme biologique pour mieux dormir."
    },
    {
-    "titre": "Service de personnalisation de défis de forme",
-    "solution": "Proposer des plans d'entraînement sur mesure basés sur les objectifs et le niveau de l'utilisateur."
+    "titre": "Boutique de masseurs portables",
+    "solution": "Vendre des appareils de massage pour soulager les tensions musculaires."
    },
    {
-    "titre": "Espace de coworking virtuel bien-être",
-    "solution": "Offrir des sessions de travail en ligne avec des pauses guidées de respiration et de mouvement."
+    "titre": "Cours de tai-chi en ligne",
+    "solution": "Proposer des vidéos de mouvements lents pour la relaxation et l'équilibre."
    }
   ],
   "planete": [
    {
-    "titre": "Conseil en bilan carbone pour PME",
-    "solution": "Aider les petites entreprises à mesurer et réduire leur empreinte carbone via des audits et des plans d'action."
-   },
-   {
-    "titre": "Marketplace de produits éco-responsables",
-    "solution": "Créer une plateforme en ligne regroupant des produits durables et zéro déchet, avec filtres par impact."
-   },
-   {
-    "titre": "Abonnement paniers de légumes bio locaux",
-    "solution": "Proposer un service d'abonnement hebdomadaire de paniers de légumes bio provenant de fermes locales, livrés à domicile."
-   },
-   {
     "titre": "Audit énergétique en ligne pour particuliers",
-    "solution": "Offrir un service en ligne pour évaluer la consommation énergétique des maisons et recommander des améliorations."
+    "solution": "Proposer un service de diagnostic énergétique à distance via un questionnaire et des conseils personnalisés pour réduire la consommation."
    },
    {
-    "titre": "Application de suivi de biodiversité citoyenne",
-    "solution": "Développer une app pour que les citoyens signalent des observations d'espèces, contribuant à la recherche scientifique."
+    "titre": "Place de marché de produits upcyclés",
+    "solution": "Créer une plateforme où des créateurs vendent des objets fabriqués à partir de matériaux recyclés ou récupérés."
    },
    {
-    "titre": "Formation en ligne sur le climat pour entreprises",
-    "solution": "Créer des modules e-learning pour sensibiliser les employés aux enjeux climatiques et aux pratiques durables."
+    "titre": "Abonnement à des kits de jardinage urbain",
+    "solution": "Livrer chaque mois des kits complets pour cultiver des légumes et herbes en appartement, avec des instructions écologiques."
+   },
+   {
+    "titre": "Application de suivi de l'empreinte carbone",
+    "solution": "Développer une app qui calcule l'empreinte carbone des utilisateurs et propose des défis pour la réduire."
+   },
+   {
+    "titre": "Plateforme de mise en relation pour le covoiturage local",
+    "solution": "Créer un service de covoiturage quotidien pour les trajets domicile-travail, avec un système de paiement sécurisé."
+   },
+   {
+    "titre": "Boutique en ligne de produits zéro déchet",
+    "solution": "Vendre des articles réutilisables (gourdes, sacs, emballages) avec des options de livraison neutre en carbone."
+   },
+   {
+    "titre": "Service de location de vêtements éco-responsables",
+    "solution": "Proposer un abonnement pour louer des vêtements durables et tendance, réduisant ainsi le gaspillage textile."
+   },
+   {
+    "titre": "Cours en ligne de cuisine anti-gaspillage",
+    "solution": "Offrir des formations vidéo pour apprendre à cuisiner avec des restes et des produits locaux de saison."
    },
    {
     "titre": "Plateforme de financement participatif pour projets verts",
-    "solution": "Mettre en relation des porteurs de projets écologiques avec des investisseurs via une plateforme de crowdfunding dédiée."
+    "solution": "Créer un site où des porteurs de projets environnementaux peuvent lever des fonds auprès du public."
    },
    {
-    "titre": "Service de compostage en ville",
-    "solution": "Proposer un service de collecte de déchets organiques et de compostage pour les urbains, avec livraison de compost."
+    "titre": "Service de compostage à domicile",
+    "solution": "Mettre en place un système de collecte des déchets organiques et de fourniture de composteurs, avec un suivi en ligne."
    },
    {
-    "titre": "Blog et newsletter sur l'alimentation durable",
-    "solution": "Monétiser un blog avec des recettes, des guides et des conseils pour une alimentation saine et respectueuse de la planète, via des abonnements et des partenariats."
+    "titre": "Boutique de semences et plants rares",
+    "solution": "Vendre en ligne des semences de variétés anciennes et locales, avec des conseils de culture adaptés au climat."
    },
    {
-    "titre": "Boutique en ligne de kits solaires DIY",
-    "solution": "Vendre des kits solaires prêts à installer pour les particuliers, avec tutoriels vidéo et support en ligne."
+    "titre": "Application de partage d'outils de jardinage",
+    "solution": "Permettre aux utilisateurs de louer ou d'échanger des outils de jardinage entre voisins via une app géolocalisée."
    },
    {
-    "titre": "Conseil en stratégie RSE pour startups",
-    "solution": "Aider les startups à intégrer des pratiques durables dans leur modèle économique dès le départ."
+    "titre": "Service de conseil en rénovation écologique",
+    "solution": "Proposer des consultations en ligne pour choisir des matériaux durables et des solutions d'isolation efficaces."
    },
    {
-    "titre": "Plateforme de location d'outils de jardinage",
-    "solution": "Créer un service de location d'outils de jardinage entre particuliers pour réduire la consommation et favoriser le partage."
+    "titre": "Plateforme de vente de paniers de légumes bio en circuit court",
+    "solution": "Mettre en relation des producteurs locaux et des consommateurs pour des livraisons hebdomadaires de produits frais."
    },
    {
-    "titre": "Application de gamification pour économiser l'énergie",
-    "solution": "Développer une app qui récompense les utilisateurs pour des comportements économes en énergie à la maison."
+    "titre": "Blog et newsletter sur les énergies renouvelables",
+    "solution": "Monétiser un site d'information et des recommandations de produits via des liens affiliés et des publicités ciblées."
    },
    {
-    "titre": "Service de livraison de repas à base de plantes",
-    "solution": "Proposer des repas végétariens ou véganes livrés à domicile, avec des ingrédients locaux et de saison."
+    "titre": "Service de calcul de bilan carbone pour entreprises",
+    "solution": "Offrir un outil en ligne et des rapports personnalisés pour aider les PME à mesurer et réduire leur impact."
    },
    {
-    "titre": "E-commerce de vêtements upcyclés",
-    "solution": "Vendre des vêtements transformés à partir de tissus recyclés, avec une histoire unique pour chaque pièce."
+    "titre": "Application de reconnaissance de plantes",
+    "solution": "Créer une app qui identifie les plantes sauvages comestibles et médicinales, avec des fiches et des recettes."
    },
    {
-    "titre": "Consulting en permaculture pour jardins urbains",
-    "solution": "Offrir des conseils en ligne pour concevoir des jardins urbains productifs selon les principes de la permaculture."
+    "titre": "Plateforme de troc de vêtements et objets",
+    "solution": "Organiser des événements virtuels et un système d'échange en ligne pour éviter l'achat de neuf."
    },
    {
-    "titre": "Plateforme de covoiturage pour trajets domicile-travail",
-    "solution": "Créer une plateforme reliant les employés d'une même entreprise pour partager leurs trajets quotidiens."
+    "titre": "Service de nettoyage écologique à domicile",
+    "solution": "Proposer des prestations de nettoyage utilisant des produits non toxiques et biodégradables, avec réservation en ligne."
    },
    {
-    "titre": "Formation en ligne sur la réparation d'objets",
-    "solution": "Proposer des cours pour apprendre à réparer des objets du quotidien (électroménager, vélos, etc.) afin de réduire les déchets."
+    "titre": "Cours en ligne de permaculture",
+    "solution": "Vendre des formations complètes pour concevoir et gérer un jardin en permaculture, avec des vidéos et des guides."
    },
    {
-    "titre": "Service de suivi de consommation d'eau pour les ménages",
-    "solution": "Développer un dispositif connecté et une application pour aider les foyers à suivre et réduire leur consommation d'eau."
+    "titre": "Plateforme de crowdfunding pour la reforestation",
+    "solution": "Permettre à des particuliers de financer la plantation d'arbres dans des zones dégradées, avec suivi GPS."
    },
    {
-    "titre": "Marketplace pour l'échange de biens d'occasion",
-    "solution": "Créer une plateforme locale d'échange gratuit ou de troc pour éviter l'achat de nouveaux produits."
+    "titre": "Service de location de vélos électriques longue durée",
+    "solution": "Offrir un abonnement mensuel pour louer un vélo électrique, avec maintenance et assurance incluses."
    },
    {
-    "titre": "Service de nettoyage écologique pour entreprises",
-    "solution": "Proposer des services de nettoyage utilisant des produits non toxiques et du matériel économe en eau."
+    "titre": "Boutique de cosmétiques naturels faits maison",
+    "solution": "Vendre des cosmétiques à base d'ingrédients locaux et bio, avec des tutoriels en ligne pour les fabriquer soi-même."
    },
    {
-    "titre": "Application de calcul d'empreinte écologique personnelle",
-    "solution": "Développer une app pour calculer l'empreinte écologique de l'utilisateur et suggérer des actions concrètes pour la réduire."
+    "titre": "Application de gestion des déchets pour municipalités",
+    "solution": "Fournir un outil numérique pour optimiser les tournées de collecte et sensibiliser les citoyens au tri."
    },
    {
-    "titre": "Production et vente de graines de plantes locales",
-    "solution": "Vendre en ligne des graines de plantes indigènes pour favoriser la biodiversité et les pollinisateurs."
-   },
-   {
-    "titre": "Service de gestion des déchets pour événements",
-    "solution": "Offrir des solutions de tri et de compostage pour des événements (mariages, festivals) afin de les rendre zéro déchet."
-   },
-   {
-    "titre": "Création de contenu éducatif pour enfants sur l'environnement",
-    "solution": "Produire des vidéos, livres et jeux en ligne pour enseigner aux enfants l'importance de la protection de la planète."
+    "titre": "Service de coaching en transition écologique",
+    "solution": "Proposer des accompagnements personnalisés en ligne pour aider les ménages à adopter un mode de vie plus durable."
    }
   ],
   "donnees-et-api": [
    {
     "titre": "API de vérification d'identité KYC",
-    "solution": "Fournir une API standardisée pour vérifier les documents d'identité et réaliser des contrôles AML automatisés."
+    "solution": "Fournir une API sécurisée qui valide les documents d'identité et effectue des checks de conformité pour les fintechs."
    },
    {
-    "titre": "Agrégateur de données immobilières",
-    "solution": "Collecter et normaliser les annonces immobilières de multiples sources pour les revendre aux agents immobiliers et investisseurs."
+    "titre": "Place de marché de datasets B2B",
+    "solution": "Créer un marketplace où les entreprises peuvent acheter et vendre des jeux de données sectoriels anonymisés et prêts à l'emploi."
    },
    {
-    "titre": "API de scoring de crédit alternatif",
-    "solution": "Analyser les comportements financiers non traditionnels pour fournir un score de risque à destination des fintechs."
+    "titre": "Agent IA de recherche de leads",
+    "solution": "Développer un agent autonome qui scrape LinkedIn et enrichit automatiquement les profils prospects pour les CRM."
    },
    {
-    "titre": "Place de marché de datasets synthétiques",
-    "solution": "Vendre des jeux de données générés artificiellement respectant le RGPD pour l'entraînement des modèles d'IA."
+    "titre": "API de sentiment analysis en temps réel",
+    "solution": "Proposer une API qui analyse le ton des conversations clients sur les réseaux sociaux pour les marques."
    },
    {
-    "titre": "API de traduction en temps réel",
-    "solution": "Offrir une API low-latency pour traduire les flux audio ou texte entre utilisateurs multilingues."
+    "titre": "Marketplace de prompts optimisés",
+    "solution": "Vendre des bibliothèques de prompts structurés et testés pour générer du contenu ou du code via LLMs."
    },
    {
-    "titre": "Données de sentiment de marché crypto",
-    "solution": "Scraper les réseaux sociaux et forums pour fournir des indicateurs de sentiment en temps réel aux traders algorithmiques."
-   },
-   {
-    "titre": "API de géolocalisation précise",
-    "solution": "Proposer des services de localisation haute précision basés sur le Wi-Fi et le Bluetooth pour les applications mobiles."
-   },
-   {
-    "titre": "Agent IA de nettoyage de données",
-    "solution": "Un service automatisé qui nettoie, déduplique et enrichit les bases de données clients désordonnées."
-   },
-   {
-    "titre": "API de reconnaissance faciale pour le retail",
-    "solution": "Permettre aux magasins physiques d'analyser l'affluence et le profil démographique via des caméras connectées."
-   },
-   {
-    "titre": "Marketplace d'agents de prospection B2B",
-    "solution": "Vendre des agents autonomes capables de qualifier et contacter des leads potentiels sur LinkedIn."
-   },
-   {
-    "titre": "API de vérification de domaine et email",
-    "solution": "Outil pour valider la légitimité des domaines et éviter les fraudes par hameçonnage (phishing)."
-   },
-   {
-    "titre": "Données météorologiques historiques et prévisions",
-    "solution": "Fournir des données météo granulaires pour optimiser la logistique, l'agriculture ou l'énergie renouvelable."
-   },
-   {
-    "titre": "API de modération de contenu IA",
-    "solution": "Scanner automatiquement les textes, images et vidéos pour détecter les contenus toxiques ou illégaux."
+    "titre": "API de normalisation d'adresses",
+    "solution": "Offrir un service de nettoyage et de standardisation d'adresses postales pour les e-commerces internationaux."
    },
    {
     "titre": "Agent de veille concurrentielle",
-    "solution": "Un bot qui surveille en continu les prix, produits et stratégies des concurrents d'un e-commerce."
+    "solution": "Un bot qui surveille les prix, les produits et les campagnes publicitaires des concurrents et alerte par email."
    },
    {
-    "titre": "Données de trafic web anonymisées",
-    "solution": "Vendre des insights sur les habitudes de navigation pour aider les annonceurs à cibler leurs audiences."
+    "titre": "Données de notation carbone des produits",
+    "solution": "Vendre une API fournissant l'empreinte carbone estimée de millions de produits pour les marketplaces écoresponsables."
    },
    {
-    "titre": "API de génération de factures intelligentes",
-    "solution": "Extraire et structurer les données des factures PDF ou images pour les logiciels de comptabilité."
+    "titre": "Générateur de fausses données de test",
+    "solution": "Créer un outil SaaS qui produit des datasets réalistes mais fictifs pour les phases de développement logiciel."
    },
    {
-    "titre": "Marketplace de scripts Python pour data science",
-    "solution": "Platforme où les data scientists vendent leurs notebooks et scripts réutilisables pour l'analyse de données."
+    "titre": "API de traduction spécialisée juridique",
+    "solution": "Proposer une API de traduction haute précision pour les contrats et documents légaux avec terminologie sectorielle."
    },
    {
-    "titre": "Agent de réservation de voyages personnalisé",
-    "solution": "Un assistant IA capable de chercher, comparer et réserver des vols et hôtels selon des contraintes complexes."
+    "titre": "Marketplace de scripts web scraping",
+    "solution": "Permettre aux développeurs de vendre et d'acheter des bots de collecte de données pour des sites spécifiques."
    },
    {
-    "titre": "Données démographiques par zone géographique",
-    "solution": "Fournir des couches de données sociodémographiques précises pour l'urbanisme et le marketing local."
+    "titre": "Agent de tri de tickets support",
+    "solution": "Un agent IA qui classe, priorise et propose des réponses pré-remplies pour les équipes de support client."
    },
    {
-    "titre": "API de transcription audio vers texte",
-    "solution": "Service haute fidélité pour transcrire réunions, podcasts et interviews avec identification des locuteurs."
+    "titre": "API de reconnaissance faciale pour accès",
+    "solution": "Fournir une API légère pour vérifier l'identité par selfie dans les applications mobiles de banking."
    },
    {
-    "titre": "Agent de gestion des avis clients",
-    "solution": "Automatiser la réponse aux avis Google Maps et Trustpilot tout en analysant les tendances de satisfaction."
+    "titre": "Données de tendances immobilières",
+    "solution": "Vendre des flux de données en temps réel sur les prix et la demande locative par quartier pour les investisseurs."
    },
    {
-    "titre": "Données de santé publique ouvertes",
-    "solution": "Aggréger et nettoyer les données sanitaires officielles pour les chercheurs et les assureurs."
+    "titre": "Connecteur API ERP personnalisé",
+    "solution": "Créer des ponts API sur mesure pour connecter des logiciels SaaS disparates entre eux sans codage lourd."
    },
    {
-    "titre": "API de calcul d'empreinte carbone",
-    "solution": "Estimer l'impact environnemental des transactions ou transports pour les entreprises soucieuses de leur RSE."
+    "titre": "Agent de rédaction SEO automatisé",
+    "solution": "Un agent qui génère et optimise automatiquement les articles de blog basés sur les mots-clés de niche."
    },
    {
-    "titre": "Marketplace de templates de bases de données",
-    "solution": "Vendre des structures SQL/NoSQL optimisées pour des secteurs spécifiques comme la finance ou la santé."
+    "titre": "Marketplace de modèles machine learning",
+    "solution": "Une plateforme pour héberger et vendre des modèles pré-entraînés (ex: détection de fraude) prêts à être intégrés."
    },
    {
-    "titre": "Agent de conformité réglementaire automatique",
-    "solution": "Surveiller les changements législatifs et adapter les processus internes des entreprises en conséquence."
+    "titre": "API de vérification de domaine expiré",
+    "solution": "Servir les domaines expirants de qualité pour les investisseurs en noms de domaine et les cybersquatters éthiques."
+   },
+   {
+    "titre": "Agent de gestion de réputation",
+    "solution": "Un bot qui répond automatiquement aux avis clients négatifs et remercie pour les positifs sur Google Maps."
+   },
+   {
+    "titre": "Données météo hyperlocales",
+    "solution": "Vendre des prévisions météorologiques précises au kilomètre carré pour l'agriculture de précision et la logistique."
+   },
+   {
+    "titre": "API de synthèse vocale personnalisable",
+    "solution": "Permettre aux entreprises de cloner leur propre voix pour leurs assistants vocaux et contenus audio."
+   },
+   {
+    "titre": "Marketplace de plugins Shopify/API",
+    "solution": "Vendre des extensions API simples pour ajouter des fonctionnalités spécifiques aux boutiques Shopify existantes."
+   },
+   {
+    "titre": "Agent de qualification de ventes",
+    "solution": "Un chatbot qui pose les questions clés de qualification avant de transférer le prospect chaud à un humain."
+   },
+   {
+    "titre": "API de détection de fraude aux paiements",
+    "solution": "Analyser les transactions en temps réel pour bloquer les cartes volées et les comportements suspects."
+   },
+   {
+    "titre": "Données démographiques ciblées",
+    "solution": "Vendre des segments de population précis basés sur les centres d'intérets digitaux pour le ciblage publicitaire."
    }
   ],
   "travail-et-carrieres": [
    {
-    "titre": "Consultant en reconversion de carrière",
-    "solution": "Accompagner les professionnels souhaitant changer de secteur via des bilans de compétences personnalisés."
+    "titre": "Cabinet de coaching carrière en ligne",
+    "solution": "Coaching individuel à distance pour chercheurs d'emploi et personnes en reconversion."
    },
    {
-    "titre": "Agence de rédaction de CV et lettres de motivation",
-    "solution": "Optimiser les candidatures pour les rendre percutantes et adaptées aux ATS (logiciels de recrutement)."
+    "titre": "Plateforme de rédaction de CV et lettres de motivation",
+    "solution": "Service en ligne de création de CV et lettres sur mesure par des rédacteurs professionnels."
    },
    {
-    "titre": "Plateforme de mise en relation de freelances",
-    "solution": "Créer un réseau ciblé pour connecter les talents avec des missions courtes."
+    "titre": "Formation en ligne sur la reconversion professionnelle",
+    "solution": "Cours en vidéo pour apprendre à se reconvertir vers un nouveau métier pas à pas."
    },
    {
-    "titre": "Coach en entretien d'embauche",
-    "solution": "Préparer les candidats aux entretiens avec des simulations et des stratégies de négociation."
+    "titre": "Job board spécialisé freelances",
+    "solution": "Site d'annonces dédié aux missions freelance dans les métiers du digital et des services."
    },
    {
-    "titre": "Créateur de contenu sur les nouveaux métiers",
-    "solution": "Éduquer le public sur les métiers émergents (IA, data, etc.) via des articles et vidéos."
+    "titre": "Simulateur de salaire et comparateur d'emplois",
+    "solution": "Outil en ligne qui compare les salaires et conditions de travail entre métiers et régions."
    },
    {
-    "titre": "Micro-agence de réseautage (Networking)",
-    "solution": "Organiser des événements virtuels ou physiques pour aider les chercheurs d'emploi à se connecter."
+    "titre": "Préparation aux entretiens d'embauche par visio",
+    "solution": "Sessions simulées d'entretien avec feedback enregistré pour candidats."
    },
    {
-    "titre": "Boutique de templates professionnels",
-    "solution": "Vendre des modèles prêts à l'emploi (CV, propositions commerciales, pitch decks)."
+    "titre": "Blog et newsletter sur les métiers d'avenir",
+    "solution": "Newsletter payante analysant les nouveaux métiers et compétences en demande."
    },
    {
-    "titre": "Cours en ligne de compétences techniques (Hard Skills)",
-    "solution": "Former les demandeurs d'emploi aux logiciels ou langages de programmation recherchés."
+    "titre": "Optimisation de profils LinkedIn",
+    "solution": "Service de réécriture et d'optimisation de profils LinkedIn pour boosting de visibilité."
    },
    {
-    "titre": "Service de mentorat inversé",
-    "solution": "Mettre en relation des seniors et des juniors pour échanger sur l'évolution du marché du travail."
+    "titre": "Plateforme de mentorat professionnel",
+    "solution": "Mise en relation entre mentors expérimentés et jeunes talents ou reconverts."
    },
    {
-    "titre": "Blog/Newsletter sur l'actualité RH",
-    "solution": "Informer régulièrement sur les tendances du recrutement et les évolutions du droit du travail."
+    "titre": "Tests deorientation professionnelle en ligne",
+    "solution": "Tests psychométriques et bilan de compétences digitalisés avec rapport détaillé."
    },
    {
-    "titre": "Atelier de développement de soft skills",
-    "solution": "Proposer des sessions d'apprentissage pour améliorer la communication, la résilience et le leadership."
+    "titre": "Bootcamp pour devenir freelance",
+    "solution": "Programme en ligne pour lancer son activité freelance : administratif, tarification, prospection."
    },
    {
-    "titre": "Agent de placement spécialisé dans l'international",
-    "solution": "Aider les talents à trouver des postes à l'étranger dans des secteurs de niche."
+    "titre": "CV vidéo et coaching de présence en ligne",
+    "solution": "Création de CV vidéo et entraînement à la caméra pour candidats."
    },
    {
-    "titre": "Outil d'analyse de marché de l'emploi",
-    "solution": "Développer un outil qui identifie les secteurs en croissance et les compétences demandées."
+    "titre": "Agence de personal branding pour indépendants",
+    "solution": "Service complet de branding personnel : site web, réseaux sociaux, positionnement."
    },
    {
-    "titre": "Agence de transition professionnelle",
-    "solution": "Aider les personnes en période de chômage à maximiser leurs droits et leurs démarches administratives."
+    "titre": "Communauté payante de reconversion tech",
+    "solution": "Communauté avec cours, offres d'emploi et événements pour se reconvertir dans la tech."
    },
    {
-    "titre": "Cours de recherche d'emploi digital",
-    "solution": "Enseigner comment optimiser son profil LinkedIn et naviguer sur les job boards spécialisés."
+    "titre": "Traduction de CV et candidatures internationales",
+    "solution": "Service d'adaptation de CV aux normes des marchés étrangers."
    },
    {
-    "titre": "Programme de ",
-    "solution": ""
+    "titre": "Marketplace de bilans de compétences financés",
+    "solution": "Plateforme reliant les salariés à des organismes certifiés pour bilan de compétences via CPF."
    },
    {
-    "titre": "Booster de profil LinkedIn",
-    "solution": "Optimiser les profils en ligne des cadres pour améliorer leur visibilité auprès des recruteurs."
+    "titre": "Podcast et produits dérivés sur les carrières",
+    "solution": "Podcast sponsorisé sur les carrières avec formation premium en Upsell."
    },
    {
-    "titre": "Consultant en marque personnelle (Personal Branding)",
-    "solution": "Aider les professionnels à se positionner comme experts dans leur domaine d'expertise."
+    "titre": "Assistant IA de candidature",
+    "solution": "Outil SaaS qui génère lettres de motivation et réponses aux offres grâce à l'IA."
    },
    {
-    "titre": "Plateforme de missions de micro-travail",
-    "solution": "Connecter les gens ayant du temps libre avec de petites tâches rémunérées en ligne."
+    "titre": "Formation aux compétences numériques pour reconvertis",
+    "solution": "Formations en ligne certifiantes pour apprendre les bases numériques recherchées par les recruteurs."
    },
    {
-    "titre": "E-book/Guide de la première embauche",
-    "solution": "Vendre des guides pratiques pour les jeunes diplômés naviguant sur le marché du travail."
+    "titre": "Plateforme de stage et alternance pour adultes",
+    "solution": "Site spécialisé dans les offres de stage et d'alternance pour personnes en reconversion."
    },
    {
-    "titre": "Service de coaching pour les freelances débutants",
-    "solution": "Conseiller les indépendants sur la tarification, la prospection et la gestion administrative."
+    "titre": "Coaching de négociation salariale",
+    "solution": "Accompagnement individuel pour négocier son salaire ou une augmentation."
    },
    {
-    "titre": "Audit de compétences pour reconversion",
-    "solution": "Évaluer les compétences transférables d'un ancien métier vers un nouveau secteur."
+    "titre": "Réseau social des indépendants",
+    "solution": "Communauté en ligne pour indépendants : entraide, collaborations et partage de missions."
    },
    {
-    "titre": "Agence de formation sur les outils IA pour le travail",
-    "solution": "Former les employés et chercheurs d'emploi à utiliser l'intelligence artificielle dans leur quotidien professionnel."
+    "titre": "Cours en ligne sur la légende de la gestion du temps et la productivité",
+    "solution": "Formation sur la gestion du temps et de l'activité pour freelances et salariés."
    },
    {
-    "titre": "Sondages et rapports sur la rétention des talents",
-    "solution": "Vendre des études de marché aux entreprises pour améliorer leur politique RH."
+    "titre": "Annuaire vérifié de recruteurs et chasseurs de têtes",
+    "solution": "Base de données payante de contacts recruteurs par secteur."
    },
    {
-    "titre": "Plateforme de bénévolat qualifié",
-    "solution": "Mettre en relation les professionnels en quête d'expérience avec des associations pour des missions gratuites."
-   },
-   {
-    "titre": "Conseil en négociation salariale",
-    "solution": "Former les candidats à négocier leur salaire et leurs conditions de travail avec succès."
+    "titre": "Service d'outplacement en ligne pour entreprises",
+    "solution": "Accompagnement digital des salariés licenciés proposé aux entreprises."
    }
   ]
  }

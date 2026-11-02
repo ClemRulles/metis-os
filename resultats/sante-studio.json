@@ -1,41 +1,41 @@
 {
  "date": "2026-11-02",
- "dureeSecondes": 1664,
- "coutUsd": 0.4541,
- "appelsModeles": 1671,
+ "dureeSecondes": 1628,
+ "coutUsd": 0.47,
+ "appelsModeles": 1697,
  "etapes": {
   "radar": {
-   "secondes": 355,
-   "coutCumuleUsd": 0.0321
+   "secondes": 341,
+   "coutCumuleUsd": 0.0311
   },
   "marche": {
-   "secondes": 8,
-   "coutCumuleUsd": 0.0321
+   "secondes": 5,
+   "coutCumuleUsd": 0.0311
   },
   "atlas": {
-   "secondes": 25,
-   "coutCumuleUsd": 0.0321
+   "secondes": 24,
+   "coutCumuleUsd": 0.0311
   },
   "failles": {
-   "secondes": 234,
-   "coutCumuleUsd": 0.125
+   "secondes": 195,
+   "coutCumuleUsd": 0.1253
   },
   "usine": {
-   "secondes": 865,
-   "coutCumuleUsd": 0.3713
+   "secondes": 933,
+   "coutCumuleUsd": 0.3877
   },
   "enquete": {
-   "secondes": 82,
-   "coutCumuleUsd": 0.4541
+   "secondes": 42,
+   "coutCumuleUsd": 0.47
   },
   "elan": {
-   "secondes": 95,
-   "coutCumuleUsd": 0.4541
+   "secondes": 87,
+   "coutCumuleUsd": 0.47
   }
  },
  "sources": {
   "hn": {
-   "n": 53
+   "n": 54
   },
   "hn_achat": {
    "n": 59
@@ -95,57 +95,57 @@
    "n": 14
   },
   "atlas": {
-   "vivantes": 26,
+   "vivantes": 24,
    "total": 36
   }
  },
  "cerveaux": {
-  "mercury": {
-   "ok": 205,
-   "echecs": 156,
-   "tauxEchec": 0.43,
-   "msMoyen": 8108,
-   "exempleErreur": "aucun fournisseur pour mercury (openrouter : HTTP 429 ; groq : clé absente)"
-  },
   "deepseek": {
-   "ok": 293,
-   "echecs": 1,
-   "tauxEchec": 0,
-   "msMoyen": 10254,
+   "ok": 355,
+   "echecs": 3,
+   "tauxEchec": 0.01,
+   "msMoyen": 8329,
    "exempleErreur": "réponse illisible (fin : stop) : {\"produits\": []}"
   },
   "qwen": {
-   "ok": 325,
-   "echecs": 0,
+   "ok": 306,
+   "echecs": 1,
    "tauxEchec": 0,
-   "msMoyen": 10592,
-   "exempleErreur": null
+   "msMoyen": 10991,
+   "exempleErreur": "réponse illisible (fin : stop) : []"
   },
   "mistral": {
-   "ok": 28,
+   "ok": 26,
    "echecs": 1,
-   "tauxEchec": 0.03,
-   "msMoyen": 27320,
-   "exempleErreur": "réponse illisible (fin : stop) : {\"produits\": []}"
+   "tauxEchec": 0.04,
+   "msMoyen": 13835,
+   "exempleErreur": "réponse illisible (fin : stop) : []"
+  },
+  "mercury": {
+   "ok": 182,
+   "echecs": 155,
+   "tauxEchec": 0.46,
+   "msMoyen": 9208,
+   "exempleErreur": "aucun fournisseur pour mercury (openrouter : HTTP 429 ; groq : clé absente)"
   },
   "glm": {
-   "ok": 339,
-   "echecs": 1,
+   "ok": 327,
+   "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 7634,
-   "exempleErreur": "réponse illisible (fin : stop) : {\"idees\": [{\"\": \"Le Moteur de Conformité de Dispositif (Device Compliance Engine) pour MedTech\", \"arene\": \"donnees-et-ap"
+   "msMoyen": 8009,
+   "exempleErreur": null
   }
  },
  "stats": {
-  "brut": 762,
-  "douleurs": 413,
-  "gisements": 1317,
+  "brut": 763,
+  "douleurs": 417,
+  "gisements": 1477,
   "gisementsMarche": 12,
-  "generees": 802,
-  "parasites": 3,
-  "idees": 795,
-  "notees": 643,
-  "nonConformes": 152,
+  "generees": 808,
+  "parasites": 5,
+  "idees": 800,
+  "notees": 645,
+  "nonConformes": 155,
   "finalistes": 32,
   "duels": 80,
   "enquetes": 15,
