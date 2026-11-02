@@ -4,7 +4,7 @@
   "nom": "Open-Meteo prévisions",
   "ok": true,
   "statut": 200,
-  "ms": 561,
+  "ms": 654,
   "taux_30_passages": 1,
   "echantillon": "{latitude: 48.853382, longitude: 2.355208, hourly_units: {time: \"iso8601\", temperature_2m: \"°C\", precipitation_probability: \"%\", uv_index: \"\"}, hourly: {time: [24 éléments : \"2026-11-02T00:00\"], temperature_2m: [24 éléments : 9], precipitation_probability: [24 éléments : 0], uv_index: [24 éléments : 0]}}"
  },
@@ -13,7 +13,7 @@
   "nom": "Open-Meteo qualité de l'air et pollens",
   "ok": true,
   "statut": 200,
-  "ms": 592,
+  "ms": 612,
   "taux_30_passages": 1,
   "echantillon": "{latitude: 48.800003, longitude: 2.3999996, hourly_units: {time: \"iso8601\", birch_pollen: \"grains/m³\", grass_pollen: \"grains/m³\", ragweed_pollen: \"grains/m³\", pm2_5: \"μg/m³\", ozone: \"μg/m³\"}, hourly: {time: [24 éléments : \"2026-11-02T00:00\"], birch_pollen: [24 éléments : 0], grass_pollen: [24 éléments : 0], ragweed_pollen: [24 éléments : 0], pm2_5: [24 éléments : 24.2], ozone: [24 éléments : 18]}}"
  },
@@ -22,7 +22,7 @@
   "nom": "Open-Meteo crues (GloFAS)",
   "ok": true,
   "statut": 200,
-  "ms": 616,
+  "ms": 623,
   "taux_30_passages": 1,
   "echantillon": "{latitude: 50.625, longitude: 5.6250153, daily_units: {time: \"iso8601\", river_discharge: \"m³/s\", river_discharge_max: \"m³/s\"}, daily: {time: [7 éléments : \"2026-11-02\"], river_discharge: [7 éléments : 0.09], river_discharge_max: [7 éléments : 0.09]}}"
  },
@@ -31,7 +31,7 @@
   "nom": "Open-Meteo marine",
   "ok": true,
   "statut": 200,
-  "ms": 618,
+  "ms": 628,
   "taux_30_passages": 1,
   "echantillon": "{latitude: 43.291664, longitude: 5.3750153, hourly_units: {time: \"iso8601\", wave_height: \"m\", sea_surface_temperature: \"°C\"}, hourly: {time: [24 éléments : \"2026-11-02T00:00\"], wave_height: [24 éléments : 0.62], sea_surface_temperature: [24 éléments : 20.3]}}"
  },
@@ -40,7 +40,7 @@
   "nom": "USGS séismes en temps réel",
   "ok": false,
   "statut": 403,
-  "ms": 209,
+  "ms": 47,
   "taux_30_passages": 0
  },
  {
@@ -48,7 +48,7 @@
   "nom": "NASA EONET événements naturels",
   "ok": false,
   "statut": 403,
-  "ms": 369,
+  "ms": 409,
   "taux_30_passages": 0
  },
  {
@@ -56,7 +56,7 @@
   "nom": "GBIF biodiversité",
   "ok": true,
   "statut": 200,
-  "ms": 757,
+  "ms": 763,
   "taux_30_passages": 1,
   "echantillon": "{limit: 2, endOfRecords: false, count: 1377176, results: [2 éléments : {key: 182368733, datasetCategory: [1 éléments : \"Gridded\"], installationKey: \"603b8e02-f762-11e1-a439-00145eb45e9a\", hostingOrganizationKey: \"6bcc0290-6e76-11db-bcd5-b8a03c50a862\", publishingCountry: \"FR\", protocol: \"DWC_ARCHIVE\", lastCrawled: \"2026-10-31T20:56:54.320+00:00\", …}]}"
  },
@@ -65,7 +65,7 @@
   "nom": "iNaturalist",
   "ok": true,
   "statut": 200,
-  "ms": 2715,
+  "ms": 447,
   "taux_30_passages": 1,
   "echantillon": "{total_results: 397823788, results: [2 éléments : {quality_grade: \"needs_id\", time_observed_at: \"2026-11-03T01:15:13+10:00\", taxon_geoprivacy: \"open\", annotations: [0 éléments], uuid: \"e2456073-7810-4a88-8fdd-c314c0b6a316\", observed_on_details: {date: …, day: …, month: …, year: …, hour: …, week: …}, id: 412419417, …}]}"
  },
@@ -74,15 +74,15 @@
   "nom": "Open Food Facts",
   "ok": false,
   "statut": 503,
-  "ms": 945,
-  "taux_30_passages": 0.67
+  "ms": 1062,
+  "taux_30_passages": 0.5
  },
  {
   "id": "rappelconso",
   "nom": "RappelConso (France)",
   "ok": true,
   "statut": 200,
-  "ms": 845,
+  "ms": 1042,
   "taux_30_passages": 1,
   "echantillon": "{total_count: 19162, results: [2 éléments : {date_publication: \"2026-11-02T12:59:49+00:00\", numero_fiche: \"2026-11-0006\", numero_version: 1, nature_juridique_rappel: \"volontaire (sans arrêté préfectoral)\", categorie_produit: \"bébés-enfants (hors alimentaire)\", sous_categorie_produit: \"articles pour enfants et puériculture\", marque_produit: \"aiviai\", …}]}"
  },
@@ -91,7 +91,7 @@
   "nom": "OpenAlex recherche mondiale",
   "ok": true,
   "statut": 200,
-  "ms": 774,
+  "ms": 942,
   "taux_30_passages": 1,
   "echantillon": "{results: [2 éléments : {id: \"https://openalex.org/W7163706671\", doi: \"https://doi.org/10.14288/1.0452609\", title: \"Lithium-tin binary alloy-based anodes for liquid and solid-s…\", display_name: \"Lithium-tin binary alloy-based anodes for liquid and solid-s…\", publication_year: 2027, publication_date: \"2027-01-01\", ids: {openalex: …, doi: …}, …}], group_by: [0 éléments]}"
  },
@@ -100,7 +100,7 @@
   "nom": "Europe PMC",
   "ok": true,
   "statut": 200,
-  "ms": 1505,
+  "ms": 3431,
   "taux_30_passages": 1,
   "echantillon": "{hitCount: 564258, resultList: {result: [2 éléments : {id: …, source: …, pmid: …, pmcid: …, fullTextIdList: …, doi: …, title: …, …}]}}"
  },
@@ -109,16 +109,16 @@
   "nom": "Crossref",
   "ok": true,
   "statut": 200,
-  "ms": 1688,
+  "ms": 1431,
   "taux_30_passages": 1,
-  "echantillon": "{message: {total-results: 844596, items: [2 éléments : {reference-count: …, publisher: …, issue: …, content-domain: …, short-container-title: …, published-print: …, DOI: …, …}], items-per-page: 2, query: {start-index: 0, search-terms: \"heat pump\"}}}"
+  "echantillon": "{message: {total-results: 844606, items: [2 éléments : {reference-count: …, publisher: …, issue: …, content-domain: …, short-container-title: …, published-print: …, DOI: …, …}], items-per-page: 2, query: {start-index: 0, search-terms: \"heat pump\"}}}"
  },
  {
   "id": "essais-cliniques",
   "nom": "ClinicalTrials.gov",
   "ok": false,
   "statut": 403,
-  "ms": 225,
+  "ms": 364,
   "taux_30_passages": 0
  },
  {
@@ -126,7 +126,7 @@
   "nom": "openFDA rappels",
   "ok": false,
   "statut": 403,
-  "ms": 275,
+  "ms": 147,
   "taux_30_passages": 0
  },
  {
@@ -134,7 +134,7 @@
   "nom": "Wikidata",
   "ok": true,
   "statut": 200,
-  "ms": 349,
+  "ms": 182,
   "taux_30_passages": 1,
   "echantillon": "{search: [2 éléments : {id: \"Q131313\", title: \"Q131313\", pageid: 133170, concepturi: \"http://www.wikidata.org/entity/Q131313\", repository: \"wikidata\", url: \"//www.wikidata.org/wiki/Q131313\", display: {label: …, description: …}, …}], search-continue: 2, success: 1}"
  },
@@ -143,7 +143,7 @@
   "nom": "OpenStreetMap (Overpass)",
   "ok": false,
   "statut": 502,
-  "ms": 957,
+  "ms": 686,
   "taux_30_passages": 0
  },
  {
@@ -151,25 +151,25 @@
   "nom": "Base Adresse Nationale (France)",
   "ok": true,
   "statut": 200,
-  "ms": 678,
+  "ms": 971,
   "taux_30_passages": 1,
   "echantillon": "{type: \"FeatureCollection\", features: [1 éléments : {type: \"Feature\", geometry: {type: …, coordinates: …}, properties: {label: …, score: …, housenumber: …, id: …, banId: …, name: …, postcode: …, …}}], query: \"8 bd du port\"}"
  },
  {
   "id": "gdelt",
   "nom": "GDELT actualité mondiale",
-  "ok": false,
-  "statut": null,
-  "ms": 10133,
-  "taux_30_passages": 0,
-  "erreur": "fetch failed"
+  "ok": true,
+  "statut": 200,
+  "ms": 11973,
+  "taux_30_passages": 0.25,
+  "echantillon": "{articles: [3 éléments : {url: \"https://tvseriesfinale.com/tv-show/heatwave-hulu-greenlights…\", url_mobile: \"https://tvseriesfinale.com/tv-show/heatwave-hulu-greenlights…\", title: \"Heatwave : Hulu Greenlights Limited Series from Anna Symon (…\", seendate: \"20260920T170000Z\", socialimage: \"\", domain: \"tvseriesfinale.com\", language: \"English\", …}]}"
  },
  {
   "id": "electricite",
   "nom": "Energy-Charts (Fraunhofer ISE)",
   "ok": true,
   "statut": 200,
-  "ms": 3207,
+  "ms": 2108,
   "taux_30_passages": 1,
   "echantillon": "{unix_seconds: [96 éléments : 1793574000], price: [96 éléments : 250.96], unit: \"EUR / MWh\", deprecated: false}"
  },
@@ -178,7 +178,7 @@
   "nom": "PVGIS (Commission européenne)",
   "ok": false,
   "statut": 200,
-  "ms": 1524,
+  "ms": 2385,
   "taux_30_passages": 0,
   "erreur": "réponse non JSON"
  },
@@ -187,7 +187,7 @@
   "nom": "Recherche d'entreprises (France)",
   "ok": true,
   "statut": 200,
-  "ms": 1042,
+  "ms": 2008,
   "taux_30_passages": 1,
   "echantillon": "{results: [2 éléments : {siren: \"478455793\", nom_complet: \"BOULANGERIES BG (B B G)\", nom_raison_sociale: \"BOULANGERIES BG\", sigle: \"B B G\", nombre_etablissements: 602, nombre_etablissements_ouverts: 580, siege: {a_opco: …, activite_principale: …, activite_principale_naf25: …, activite_principale_registre_metier: …, annee_tranche_effectif_salarie: …, adresse: …, caractere_employeur: …, …}, …}], total_results: 10000, …"
  },
@@ -196,7 +196,7 @@
   "nom": "BODACC (France)",
   "ok": true,
   "statut": 200,
-  "ms": 1465,
+  "ms": 2025,
   "taux_30_passages": 1,
   "echantillon": "{total_count: 51286038, results: [2 éléments : {id: \"A202602113590\", publicationavis: \"A\", parution: \"20260211\", dateparution: \"2026-11-02\", numeroannonce: 3590, typeavis: \"annonce\", typeavis_lib: \"Avis initial\", …}]}"
  },
@@ -205,7 +205,7 @@
   "nom": "OSV failles logicielles",
   "ok": true,
   "statut": 200,
-  "ms": 383,
+  "ms": 269,
   "taux_30_passages": 1,
   "echantillon": "{id: \"GHSA-jfh8-c2jp-5v3q\", summary: \"Remote code injection in Log4j\", details: \"# Summary\\n\\nLog4j versions prior to 2.16.0 are subject to a r…\", aliases: [1 éléments : \"CVE-2021-44228\"], modified: \"2025-10-22T19:37:02.616807Z\", published: \"2021-12-10T00:40:56Z\", database_specific: {github_reviewed: true, github_reviewed_at: \"2021-12-10T00:40:41Z\", nvd_published_at: \"2021-12-10T10:15:00Z\", cwe_ids: [4 éléments : \"C…"
  },
@@ -214,16 +214,16 @@
   "nom": "npm téléchargements",
   "ok": true,
   "statut": 200,
-  "ms": 124,
+  "ms": 107,
   "taux_30_passages": 1,
-  "echantillon": "{downloads: 242315626, end: \"2026-10-31\", package: \"react\"}"
+  "echantillon": "{downloads: 243715739, end: \"2026-11-01\", package: \"react\"}"
  },
  {
   "id": "hf-spaces",
   "nom": "Hugging Face (tendances)",
   "ok": true,
   "statut": 200,
-  "ms": 118,
+  "ms": 94,
   "taux_30_passages": 1,
   "echantillon": "[3 éléments : {id: \"nvidia/simready-central\", likes: 349, trendingScore: 172, private: false, sdk: \"docker\", tags: [2 éléments : \"docker\"], createdAt: \"2026-09-28T14:52:11.000Z\"}]"
  },
@@ -232,25 +232,25 @@
   "nom": "Frankfurter (taux BCE)",
   "ok": true,
   "statut": 200,
-  "ms": 443,
+  "ms": 515,
   "taux_30_passages": 1,
   "echantillon": "{amount: 1, base: \"EUR\", date: \"2026-11-02\", rates: {CHF: 0.9193, GBP: 0.8358, JPY: 177.1, USD: 1.1216}}"
  },
  {
   "id": "eurostat",
   "nom": "Eurostat",
-  "ok": false,
-  "statut": null,
-  "ms": 1870,
-  "taux_30_passages": 0.67,
-  "erreur": "fetch failed"
+  "ok": true,
+  "statut": 200,
+  "ms": 505,
+  "taux_30_passages": 0.75,
+  "echantillon": "{class: \"dataset\", label: \"HICP - monthly data (annual rate of change)\", source: \"ESTAT\", updated: \"2026-02-06T23:00:00+0100\", value: {0: 0.7}, id: [5 éléments : \"freq\"], size: [5 éléments : 1], dimension: {freq: {label: \"Time frequency\", category: {index: …, label: …}}, unit: {label: \"Unit of measure\", category: {index: …, label: …}}, coicop: {label: \"Classification of individual consumption by purpose (COICOP)\", c…"
  },
  {
   "id": "banque-mondiale",
   "nom": "Banque mondiale",
   "ok": true,
   "statut": 200,
-  "ms": 250,
+  "ms": 105,
   "taux_30_passages": 1,
   "echantillon": "[2 éléments : {pages: 66, total: 66, sourceid: \"2\", lastupdated: \"2026-10-08\"}]"
  },
@@ -259,16 +259,16 @@
   "nom": "data.gouv.fr",
   "ok": true,
   "statut": 200,
-  "ms": 640,
+  "ms": 693,
   "taux_30_passages": 1,
-  "echantillon": "{data: [2 éléments : {authorization_request_url: null, badges: [0 éléments], contact_points: [2 éléments : {contact_form: …, email: …, id: …, name: …, organization: …, owner: …, role: …}], created_at: \"2023-02-01T15:22:54+00:00\", deleted: null, description: \"Plus précisément, la radiance totale correspond à la puissan…\", description_short: null, …}], next_page: \"https://www.data.gouv.fr/api/1/datasets/?q=pollution&p…"
+  "echantillon": "{data: [2 éléments : {authorization_request_url: null, badges: [0 éléments], contact_points: [0 éléments], created_at: \"2024-08-13T11:36:54.840000+00:00\", deleted: null, description: \"Les flux de pollution domestique sont calculés dans le cadre…\", description_short: null, …}], next_page: \"https://www.data.gouv.fr/api/1/datasets/?q=pollution&page_si…\", page_size: 2, previous_page: null, total: 94}"
  },
  {
   "id": "openlibrary",
   "nom": "Open Library",
   "ok": true,
   "statut": 200,
-  "ms": 643,
+  "ms": 692,
   "taux_30_passages": 1,
   "echantillon": "{numFound: 407, num_found: 407, q: \"permaculture\", docs: [2 éléments : {author_key: [1 éléments : \"OL2920717A\"], author_name: [1 éléments : \"Bill Mollison\"], cover_height: 475, cover_i: 702270, cover_width: 334, ebook_access: \"printdisabled\", edition_count: 7, …}]}"
  },
@@ -277,7 +277,7 @@
   "nom": "Gutendex (Project Gutenberg)",
   "ok": false,
   "statut": 403,
-  "ms": 430,
+  "ms": 129,
   "taux_30_passages": 0
  },
  {
@@ -285,7 +285,7 @@
   "nom": "Openverse images libres",
   "ok": false,
   "statut": null,
-  "ms": 20001,
+  "ms": 20002,
   "taux_30_passages": 0,
   "erreur": "The operation was aborted due to timeout"
  },
@@ -294,7 +294,7 @@
   "nom": "CelesTrak orbites",
   "ok": true,
   "statut": 200,
-  "ms": 832,
+  "ms": 431,
   "taux_30_passages": 1,
   "echantillon": "[20 éléments : {OBJECT_NAME: \"ISS (ZARYA)\", OBJECT_ID: \"1998-067A\", EPOCH: \"2026-11-01T18:56:25.712736\", MEAN_MOTION: 15.49143202, ECCENTRICITY: 0.0007095, INCLINATION: 51.6332, RA_OF_ASC_NODE: 339.1679, …}]"
  },
@@ -303,16 +303,16 @@
   "nom": "OpenSky",
   "ok": true,
   "statut": 200,
-  "ms": 817,
+  "ms": 497,
   "taux_30_passages": 1,
-  "echantillon": "{time: 1793633210, states: [26 éléments : [17 éléments : \"39de54\"]]}"
+  "echantillon": "{time: 1793635108, states: [33 éléments : [17 éléments : \"39de59\"]]}"
  },
  {
   "id": "nasa-apod",
   "nom": "NASA images du jour",
   "ok": false,
   "statut": 403,
-  "ms": 227,
+  "ms": 116,
   "taux_30_passages": 0
  }
 ]

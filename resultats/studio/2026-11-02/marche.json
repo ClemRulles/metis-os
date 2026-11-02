@@ -1,9 +1,9 @@
 {
  "date": "2026-11-02",
  "croissance_depuis": null,
- "outils": 1012,
- "payants": 948,
- "paiement_agentique": 797,
+ "outils": 1013,
+ "payants": 949,
+ "paiement_agentique": 799,
  "acceleration": [
   {
    "id": "cIdqlEvw6afc1do1p",
@@ -934,25 +934,25 @@
   },
   {
    "categorie": "TRAVEL",
-   "outils": 48,
-   "users30": 64928,
-   "users_par_outil": 1353,
-   "prix_median": 0.0037,
+   "outils": 49,
+   "users30": 64929,
+   "users_par_outil": 1325,
+   "prix_median": 0.003,
    "note_mediane": 4.79
   },
   {
    "categorie": "VIDEOS",
    "outils": 109,
-   "users30": 136481,
+   "users30": 136474,
    "users_par_outil": 1252,
    "prix_median": 0.00299,
    "note_mediane": 4.88
   },
   {
    "categorie": "SOCIAL_MEDIA",
-   "outils": 441,
-   "users30": 546540,
-   "users_par_outil": 1239,
+   "outils": 439,
+   "users30": 546442,
+   "users_par_outil": 1245,
    "prix_median": 0.00299,
    "note_mediane": 4.74
   },
@@ -966,9 +966,9 @@
   },
   {
    "categorie": "LEAD_GENERATION",
-   "outils": 452,
-   "users30": 374448,
-   "users_par_outil": 828,
+   "outils": 450,
+   "users30": 374426,
+   "users_par_outil": 832,
    "prix_median": 0.00299,
    "note_mediane": 4.74
   },
@@ -982,25 +982,25 @@
   },
   {
    "categorie": "SEO_TOOLS",
-   "outils": 87,
-   "users30": 45142,
-   "users_par_outil": 519,
+   "outils": 88,
+   "users30": 45143,
+   "users_par_outil": 513,
    "prix_median": 0.003,
    "note_mediane": 4.7
   },
   {
    "categorie": "ECOMMERCE",
-   "outils": 82,
-   "users30": 40593,
-   "users_par_outil": 495,
-   "prix_median": 0.00399,
+   "outils": 84,
+   "users30": 40595,
+   "users_par_outil": 483,
+   "prix_median": 0.0039,
    "note_mediane": 4.73
   },
   {
    "categorie": "AUTOMATION",
-   "outils": 372,
-   "users30": 176996,
-   "users_par_outil": 476,
+   "outils": 375,
+   "users30": 176998,
+   "users_par_outil": 472,
    "prix_median": 0.003,
    "note_mediane": 4.84
   },
@@ -1022,18 +1022,18 @@
   },
   {
    "categorie": "DEVELOPER_TOOLS",
-   "outils": 177,
-   "users30": 65773,
-   "users_par_outil": 372,
+   "outils": 179,
+   "users30": 65775,
+   "users_par_outil": 367,
    "prix_median": 0.003,
    "note_mediane": 4.87
   },
   {
    "categorie": "MARKETING",
-   "outils": 17,
-   "users30": 4429,
-   "users_par_outil": 261,
-   "prix_median": 0.0018,
+   "outils": 18,
+   "users30": 4430,
+   "users_par_outil": 246,
+   "prix_median": 0.0018963,
    "note_mediane": 4.83
   },
   {
@@ -1046,9 +1046,9 @@
   },
   {
    "categorie": "REAL_ESTATE",
-   "outils": 51,
-   "users30": 9186,
-   "users_par_outil": 180,
+   "outils": 50,
+   "users30": 9185,
+   "users_par_outil": 184,
    "prix_median": 0.002,
    "note_mediane": 5
   },
@@ -1062,9 +1062,9 @@
   },
   {
    "categorie": "OTHER",
-   "outils": 42,
-   "users30": 5034,
-   "users_par_outil": 120,
+   "outils": 43,
+   "users30": 5035,
+   "users_par_outil": 117,
    "prix_median": 0.0025,
    "note_mediane": 4.88
   },
@@ -1078,8 +1078,8 @@
   },
   {
    "categorie": "BUSINESS",
-   "outils": 21,
-   "users30": 296,
+   "outils": 22,
+   "users30": 297,
    "users_par_outil": 14,
    "prix_median": 0.005,
    "note_mediane": 5
@@ -1103,21 +1103,21 @@
  ],
  "mcp": {
   "actifs_7_jours": 8000,
-  "heberges": 5500,
+  "heberges": 5493,
   "publies_7_jours": 7791,
   "recents": [
-   "Formhaus : Validate Formhaus form definitions and simulate multi-step paths against the real engine.",
-   "app.sallim/contract-compass : Korean public procurement law: rule-engine rulings, statutes search, live court precedents",
-   "app.sallim/korea-realty : Korean real estate: court auctions, 10M+ MOLIT records, subscription notice facts, loan/DS",
-   "Tavern Finder : Find tabletop events, venues, and games. RSVP, register, create events via personal token.",
-   "Assay MCP Server : Policy-enforcing MCP proxy with portable evidence output.",
-   "App Store Connect MCP : MCP server for App Store Connect: releases, TestFlight, reviews, reports. Read-only by def",
-   "AnimatedWebs : Animated website templates, cinematic video backgrounds, UI components and design systems.",
-   "Website Tech Stack Lookup : Domains in, tech stack out: 7,600+ technologies, versions, DNS/email providers. $0.003/sit",
-   "Fixty : CRM for mobile mechanics and small shops: customers, jobs, estimates, invoices, texts, pay",
-   "io.github.RohanMuppa/brightspace : D2L Brightspace MCP server: grades, due dates, assignments, announcements and files. Any s",
-   "ReversePort : Reverse engineer and port apps and games: Godot, Unity IL2CPP, .NET, binaries, with parity",
-   "Simplio3D - 3D CPQ and Product Configuration : Inspect, validate and safely edit 3D product configurators: options, pricing, materials an"
+   "Spacemail by NWD : Check, search, read and draft replies to Spacemail (Spaceship) emails, across several mail",
+   "PostSprout : Manage your blog ideas, article schedule, writing runs and draft approvals from your AI ap",
+   "io.github.BetaBots-LLC/callimachus : MCP server for Callimachus: local index and search of your AI coding-agent threads",
+   "Turbo Notify: WhatsApp for AI agents : Send and receive WhatsApp messages from your AI agent, on your own number, with Turbo Noti",
+   "Linkbreakers MCP : QR-driven customer-journey platform for tracked QR codes, short links, and analytics.",
+   "TypeBid 标探 : Search public tenders in China, inspect buyers, and estimate bid win probability.",
+   "esportsodds.gg : CS2 match data for AI assistants: matches, maps, vetoes, rounds, player stats, teams, rank",
+   "ResolveMCP-ext : Resolve MCP gaps: clip effects, Paste Attributes, frame export, photo albums, camera layou",
+   "Canton Venues : Live Canton Network DEX data: prices, best execution across venues, exit cost, premiums. N",
+   "Notes Vault : Indexed search, schema-checked writes and session hooks for a markdown notes vault",
+   "HomeShared : Find an Airbnb listing cheaper elsewhere, search vacation rentals, quote, and hand off to ",
+   "io.github.CloudCorpRecords/evalsnap : Snapshot diff for agent and tool outputs: changed cases, score regressions, pass/fail verd"
   ]
  }
 }

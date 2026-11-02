@@ -1,32 +1,32 @@
 [
  {
-  "titre": "API Sémantique GitHub Issues",
-  "solution": "Un endpoint API RapidAPI qui agrège, classe et indexe les tickets GitHub par popularité, ancienneté et sentiment communautaire, offrant des données structurées prêtes à l'emploi pour les scripts automatisés.",
-  "angle_libre": "Aucun concurrent identifié dans les résultats : le créneau d'une API clé-en-main qui score les issues GitHub (popularité, sentiment, blocages) pour consommation automatisée par agents est vacant — l'angle libre est la donnée structurée 'prête à scripter' (endpoint unique, pas un outil à installer), là où les existants sont des assistants intégrés à un IDE ou des plateformes de recherche internes.",
-  "objection": "La valeur repose uniquement sur l'agrégation de données publiques. Un LLM avancé ou un scraper sophistiqué pourrait reproduire une grande partie de cette fonctionnalité sans passer par une API dédiée, rend la barrière à l'entrée trop faible."
+  "titre": "Souscripteur Express",
+  "solution": "Un site libre-service où l'utilisateur décrit son abonnement ; nos agents identifient le canal de résiliation exact (page web, email type, formulaire), génèrent les documents nécessaires et envoient automatiquement les demandes de résiliation avec accusés de réception.",
+  "angle_libre": "Aucun concurrent ne fait de la résiliation assistée avec envoi automatique des demandes et accusés de réception : Origame centralise et change de fournisseur, SignalConso signale mais ne résilie pas pour l'utilisateur. Un service 'on fait la démarche à votre place, avec preuve d'envoi' reste un angle libre, à condition de prouver que les gens paieront alors que des alternatives gratuites existent.",
+  "objection": "Le canal principal (forums et groupes Facebook) est difficile à monétiser sans spam ou sans collecte de coordonnées, et le paiement par résiliation réussie crée une incitation à la tromperie si l'annulation échoue ou si l'utilisateur pouvait le faire seul gratuitement."
  },
  {
-  "titre": "Outil de test automatique de compatibilité des dépendances alternatives",
-  "solution": "Un agent IA qui analyse les dépendances d'un projet CRA, teste leur compatibilité avec plusieurs frameworks modernes, et produit un tableau comparatif avec les risques.",
-  "angle_libre": "Un rapport comparatif multi-frameworks (Vite, Next.js, Remix) avec scoring de risque par dépendance, généré automatiquement avant engagement de migration — les outils existants font des PR de migration (Copilot, Dependabot) mais pas d'évaluation comparative a priori.",
-  "objection": "La complexité de l'écosystème JavaScript rend le test de compatibilité universel extrêmement difficile. Un seul changement de version ou une interaction subtile entre deux dépendances peut invalider le test, menaçant la fiabilité du rapport."
+  "titre": "IR-Flash : Générateur de Data Rooms & Q&A pour Startups",
+  "solution": "Un SaaS libre-service qui analyse les slides deck et le modèle financier pour générer automatiquement une Data Room structurée et un jeu de réponses Q&A cohérent basé sur les données fournies.",
+  "angle_libre": "Aucun concurrent des résultats ne génère automatiquement la data room ET les réponses Q&A cohérentes à partir du deck et du modèle financier : Pageform structure et analyse l'engagement mais part des documents existants ; l'angle 'génération + cohérence des réponses' reste ouvert, à condition de prouver que les fondateurs veulent de l'automatisé plutôt que du sur-mesure.",
+  "objection": "Le risque principal réside dans la confiance et la qualité du contenu. Si l'IA génère des réponses ou des structures de Data Room qui semblent génériques ou contiennent des 'hallucinations' financières/légales, le fondateur perd immédiatement confiance, rendant le SaaS inutilisable pour un processus aussi critique que la levée de fonds. La distribution est également trop vague (communautés Slack/Twitter) sans canal d'acquisition structuré."
  },
  {
-  "titre": "LocalPermit Scout",
-  "solution": "Moteur de recherche sémantique sur les PLU (Plans Locaux d'Urbanisme) et arrêtés municipaux : posez une question naturelle (« Puis-je mettre une pergola de 10m² ? ») et obtenez la réponse exacte avec citation de l'article.",
-  "angle_libre": "Réponse naturelle avec citation exacte de l'article du PLU (article, zone, seuil) et alerte sur les secteurs protégés — aucun concurrent n'offre un moteur sémantique par question sur les PLU",
-  "objection": "Le risque principal réside dans l'interprétation juridique des documents. Les PLU sont souvent ambigus, contradictoires ou nécessitent une connaissance contextuelle (ex: zones protégées, servitudes) qu'un RAG simple ne peut garantir. Une réponse 'techniquement correcte' mais juridiquement incomplète expose l'utilisateur et le service à un risque de non-conformité coûteux."
+  "titre": "La Fenêtre Pêche",
+  "solution": "Pour chaque spot côtier de France, des milliers de pages générées automatiquement qui traduisent houle, température et météo en verdict simple : « fenêtre 6h-10h exploitable pour la pêche du bord », avec pages par port et par technique.",
+  "angle_libre": "Personne ne croise automatiquement houle, température de l'eau, marée et technique de pêche pour produire un verdict « fenêtre praticable » par spot et par technique, en pages SEO programm.",
+  "objection": "La défensibilité est faible : une fois les pages indexées, un concurrent ou un assistant IA gratuit peut reproduire le verdict à partir des mêmes APIs ouvertes, et l'abonnement alerte est trop facile à cloner."
  },
  {
-  "titre": "ReviewPulse Alerts : Veille Concurrentielle Automatisée",
-  "solution": "Service qui surveille les nouveautés des produits concurrents et alerte sur les sentiments négatifs récurrents avant le lancement.",
-  "angle_libre": "Aucun concurrent trouvé ne cible spécifiquement les marques indépendantes et artisans de produits physiques avec des alertes sur les sentiments négatifs récurrents avant un lancement, à un prix micro (29 €).",
-  "objection": "Le risque juridique et opérationnel lié au scraping massif de données de concurrentiels est la faille principale. De plus, le 'sentiment négatif' est souvent subjectif et nécessite une contextualisation fine pour être réellement exploitable par un créateur."
+  "titre": "Radar de salaires réels par métier et ville en France",
+  "solution": "Un site en SEO programmatique générant des milliers de pages « salaire de [métier] à [ville] en [mois] » calculées uniquement à partir des fourchettes affichées dans les offres collectées via des APIs officielles, avec graphiques partageables.",
+  "angle_libre": "Calculer les fourchettes uniquement à partir des salaires réellement affichés dans les offres (et non des moyennes INSEE ou des déclarations), avec fraîcheur mensuelle par ville — aucun concurrent trouvé ne le fait, mais c'est une différence de méthode difficile à percevoir pour l'utilisateur, et la directive européenne sur la transparence salariale (juin 2026) va pousser tous les acteurs à afficher des fourchettes.",
+  "objection": "La défensibilité est faible : un concurrent (ou un assistant IA gratuit) peut reproduire l'agrégation des fourchettes salariales à partir des mêmes API officielles, et le freemium ne crée pas de verrou fort (pas de données propriétaires, pas de réseau)."
  },
  {
-  "titre": "JobMatch IA",
-  "solution": "Un agent IA qui, à partir d'une requête, scrape les offres Indeed via l'API Apify, puis les classe automatiquement par pertinence, compétences requises, salaire estimé et localisation, en générant un rapport personnalisé envoyé par e-mail.",
-  "angle_libre": "La couche IA de filtrage et le rapport e-mail personnalisé pour le demandeur d'emploi final — tous les concurrents livrent des données brutes aux développeurs et recruteurs, aucun ne s'adresse au chercheur d'emploi en France avec un produit fini clé en main.",
-  "objection": "Le service est une amélioration d'un filtre existant (Indeed) et non une rupture. La valeur est fragile car elle dépend entièrement de la qualité du scraping et de la persistance de l'API Apify. De plus, la distribution organique sur les groupes Facebook est un canal à faible conversion et très saturé."
+  "titre": "CodeBruit — les stats publiques d'échec transformées en carte des pièges",
+  "solution": "Un site gratuit qui agrège et analyse les données ouvertes et les retours publics sur les échecs au code par thème, et classe publiquement les « 50 pièges qui coûtent le plus de points », avec un quiz gratuit centré uniquement dessus.",
+  "angle_libre": "Agrégation quantitative de données réelles d'échec (thèmes/fautes les plus éliminatoires) pour classer les pièges par coût en points, plutôt qu'une simple liste éditoriale de conseils comme le font les guides gratuits existants.",
+  "objection": "Le rapport personnalisé à 3,90€ repose sur un auto-diagnostic rapide, mais sans données fiables sur l'utilisateur (ses lacunes réelles), la valeur perçue est faible et le passage à l'achat incertain."
  }
 ]

@@ -1,36 +1,36 @@
 {
  "date": "2026-11-02",
- "dureeSecondes": 1722,
- "coutUsd": 0.4581,
- "appelsModeles": 1848,
+ "dureeSecondes": 1664,
+ "coutUsd": 0.4541,
+ "appelsModeles": 1671,
  "etapes": {
   "radar": {
-   "secondes": 342,
-   "coutCumuleUsd": 0.0305
+   "secondes": 355,
+   "coutCumuleUsd": 0.0321
   },
   "marche": {
-   "secondes": 6,
-   "coutCumuleUsd": 0.0305
+   "secondes": 8,
+   "coutCumuleUsd": 0.0321
   },
   "atlas": {
    "secondes": 25,
-   "coutCumuleUsd": 0.0305
+   "coutCumuleUsd": 0.0321
   },
   "failles": {
-   "secondes": 232,
-   "coutCumuleUsd": 0.1228
+   "secondes": 234,
+   "coutCumuleUsd": 0.125
   },
   "usine": {
-   "secondes": 993,
-   "coutCumuleUsd": 0.3752
+   "secondes": 865,
+   "coutCumuleUsd": 0.3713
   },
   "enquete": {
-   "secondes": 29,
-   "coutCumuleUsd": 0.4581
+   "secondes": 82,
+   "coutCumuleUsd": 0.4541
   },
   "elan": {
-   "secondes": 96,
-   "coutCumuleUsd": 0.4581
+   "secondes": 95,
+   "coutCumuleUsd": 0.4541
   }
  },
  "sources": {
@@ -57,7 +57,7 @@
    "n": 150
   },
   "apify": {
-   "n": 1012
+   "n": 1013
   },
   "mcp": {
    "n": 8000,
@@ -73,7 +73,7 @@
    "n": 50
   },
   "github_montants": {
-   "n": 40
+   "n": 33
   },
   "mastodon": {
    "n": 20
@@ -95,61 +95,61 @@
    "n": 14
   },
   "atlas": {
-   "vivantes": 24,
+   "vivantes": 26,
    "total": 36
   }
  },
  "cerveaux": {
-  "qwen": {
-   "ok": 354,
-   "echecs": 1,
-   "tauxEchec": 0,
-   "msMoyen": 9385,
-   "exempleErreur": "réponse illisible (fin : stop) : []"
-  },
-  "deepseek": {
-   "ok": 341,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 10135,
-   "exempleErreur": null
-  },
   "mercury": {
-   "ok": 119,
-   "echecs": 208,
-   "tauxEchec": 0.64,
-   "msMoyen": 11067,
+   "ok": 205,
+   "echecs": 156,
+   "tauxEchec": 0.43,
+   "msMoyen": 8108,
    "exempleErreur": "aucun fournisseur pour mercury (openrouter : HTTP 429 ; groq : clé absente)"
   },
-  "glm": {
-   "ok": 352,
-   "echecs": 4,
-   "tauxEchec": 0.01,
-   "msMoyen": 7374,
-   "exempleErreur": "réponse illisible (fin : stop) : {\"idees\": [2, 1, 4, 3, 5]}"
+  "deepseek": {
+   "ok": 293,
+   "echecs": 1,
+   "tauxEchec": 0,
+   "msMoyen": 10254,
+   "exempleErreur": "réponse illisible (fin : stop) : {\"produits\": []}"
+  },
+  "qwen": {
+   "ok": 325,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 10592,
+   "exempleErreur": null
   },
   "mistral": {
-   "ok": 23,
-   "echecs": 3,
-   "tauxEchec": 0.12,
-   "msMoyen": 31114,
-   "exempleErreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)"
+   "ok": 28,
+   "echecs": 1,
+   "tauxEchec": 0.03,
+   "msMoyen": 27320,
+   "exempleErreur": "réponse illisible (fin : stop) : {\"produits\": []}"
+  },
+  "glm": {
+   "ok": 339,
+   "echecs": 1,
+   "tauxEchec": 0,
+   "msMoyen": 7634,
+   "exempleErreur": "réponse illisible (fin : stop) : {\"idees\": [{\"\": \"Le Moteur de Conformité de Dispositif (Device Compliance Engine) pour MedTech\", \"arene\": \"donnees-et-ap"
   }
  },
  "stats": {
   "brut": 762,
-  "douleurs": 431,
-  "gisements": 1144,
+  "douleurs": 413,
+  "gisements": 1317,
   "gisementsMarche": 12,
-  "generees": 800,
+  "generees": 802,
   "parasites": 3,
-  "idees": 793,
-  "notees": 607,
-  "nonConformes": 186,
+  "idees": 795,
+  "notees": 643,
+  "nonConformes": 152,
   "finalistes": 32,
   "duels": 80,
   "enquetes": 15,
-  "prixLus": 2,
-  "elanMesure": 12
+  "prixLus": 3,
+  "elanMesure": 13
  }
 }
