@@ -10,6 +10,8 @@ import { collecterSignaux } from "../src/usine/signaux.js";
 import { lancerUsine } from "../src/usine/pipeline.js";
 import { enqueter, scoreFinal } from "../src/enquete/enquete.js";
 import { mesurerElanDes } from "../src/enquete/elan.js";
+import { collecterEmergents, detecterTransplants, collecterFailles, gisementsDesFailles, rapportFaillesMd } from "../src/failles/detecteurs.js";
+import { genererTemoins, banalite } from "../src/failles/temoin.js";
 import { sonderAtlas, sourcesUsine, historiqueSante, tauxReponse } from "../src/atlas/vivant.js";
 import { collecterMarcheAgents, analyserMarche, mettreAJourPanel, signauxMarche, gisementsDuMarche, rapprocher, compterMCP, rapportMarcheMd } from "../src/marche/agents.js";
 
@@ -67,10 +69,21 @@ const santeAtlas = historiqueSante(santeAtlasPrecedente, sondes, date);
 const atlas = { sources: sourcesUsine(sondes, atlasStatique.sources) };
 chrono("atlas", t0);
 
+// 3 bis. Failles calculées : ce qui marche à l'étranger sans équivalent ici, logiciels abandonnés, demandes
+// ignorées, demandes payées mal servies. Puis le témoin : ce qu'un assistant IA sortirait sans données.
+t0 = Date.now();
+const emergents = await collecterEmergents({ jetonX: process.env.X_BEARER_TOKEN ?? null, plafondX: Number(process.env.X_PLAFOND ?? 100), journal });
+const transplants = await detecterTransplants({ items: emergents.items, demandeur, cerveauxExtraction: config.cerveaux_extraction, cerveauxEnquete: config.cerveaux_enquete, moteurWeb: config.moteur_web, maxConcepts: config.volumes.transplants_verifies ?? 14, journal });
+const calculees = await collecterFailles({ jetonGitHub: process.env.GITHUB_TOKEN ?? null, analyseMarche: analyse, journal });
+const failles = [...transplants, ...calculees.failles];
+const gisementsFailles = gisementsDesFailles(failles);
+const temoins = await genererTemoins({ arenes: config.arenes, demandeur, cerveaux: config.cerveaux_jugement, journal });
+chrono("failles", t0);
+
 // 4. Usine.
 t0 = Date.now();
 const signaux = [...(await collecterSignaux()), ...signauxMarche(analyse)];
-const usine = await lancerUsine({ config, atlas, gisements, gisementsMarche, signaux, graines, dejaVues, demandeur, graine, journal });
+const usine = await lancerUsine({ config, atlas, gisements, gisementsMarche, gisementsFailles, temoins, signaux, graines, dejaVues, demandeur, graine, journal });
 chrono("usine", t0);
 
 // 5. Enquête, preuves du marché, élan et classement à preuves.
@@ -94,12 +107,15 @@ t0 = Date.now();
 if (config.enquete_elan) await mesurerElanDes(aEnqueter, { jetonGitHub: process.env.GITHUB_TOKEN ?? null });
 chrono("elan", t0);
 journal(`élan mesuré : ${aEnqueter.filter((i) => i.elan && !i.elan.faible).length}/${aEnqueter.length} idées`);
-for (const i of usine.classement) i.final = scoreFinal(i, config.score_final.poids);
+for (const i of usine.classement) {
+  i.banalite = banalite(i, temoins.tous);
+  i.final = scoreFinal(i, config.score_final.poids);
+}
 const opportunites = [...usine.classement].sort((a, b) => b.final.total - a.final.total);
 
 // 4. Sorties.
 const cout = routeur.cout();
-const sante = { date, dureeSecondes: Math.round((Date.now() - debut) / 1000), coutUsd: cout.usd, appelsModeles: cout.appels, etapes, sources: { ...etatSources, ...marche.etat, atlas: { vivantes: sondes.filter((x) => x.ok).length, total: sondes.length } }, cerveaux: demandeur.sante(), stats: { brut: items.length, douleurs: douleurs.length, gisements: gisements.length, gisementsMarche: gisementsMarche.length, ...usine.stats, enquetes: aEnqueter.filter((i) => i.enquete).length, prixLus: aEnqueter.filter((i) => i.enquete?.preuve_paiement_verifiee).length, elanMesure: aEnqueter.filter((i) => i.elan && !i.elan.faible).length } };
+const sante = { date, dureeSecondes: Math.round((Date.now() - debut) / 1000), coutUsd: cout.usd, appelsModeles: cout.appels, etapes, sources: { ...etatSources, ...marche.etat, ...emergents.etat, ...calculees.etat, transplants: { n: transplants.length }, atlas: { vivantes: sondes.filter((x) => x.ok).length, total: sondes.length } }, cerveaux: demandeur.sante(), stats: { brut: items.length, douleurs: douleurs.length, gisements: gisements.length, gisementsMarche: gisementsMarche.length, ...usine.stats, enquetes: aEnqueter.filter((i) => i.enquete).length, prixLus: aEnqueter.filter((i) => i.enquete?.preuve_paiement_verifiee).length, elanMesure: aEnqueter.filter((i) => i.elan && !i.elan.faible).length } };
 const dossierJour = `${dossierSortie}/studio/${date}`;
 await mkdir(dossierJour, { recursive: true });
 await mkdir(`${dossierSortie}/etat`, { recursive: true });
@@ -115,6 +131,10 @@ await writeFile(`${dossierSortie}/etat/deja_vues.json`, JSON.stringify([...oppor
 await writeFile(`${dossierSortie}/sante-studio.json`, JSON.stringify(sante, null, 1));
 await writeFile(`${dossierSortie}/etat/marche-agents.json`, JSON.stringify(panel));
 await writeFile(`${dossierSortie}/etat/atlas-sante.json`, JSON.stringify(santeAtlas));
+const mdFailles = rapportFaillesMd({ date, failles, emergents, etat: calculees.etat });
+await writeFile(`${dossierJour}/failles.json`, JSON.stringify({ failles, emergents: emergents.etat, temoins: temoins.parArene }, null, 1));
+await writeFile(`${dossierJour}/FAILLES.md`, mdFailles);
+await writeFile(`${dossierSortie}/FAILLES-DU-JOUR.md`, mdFailles);
 await writeFile(`${dossierJour}/atlas.json`, JSON.stringify(sondes.map(({ id, nom, ok, statut, ms, echantillon, erreur }) => ({ id, nom, ok, statut, ms, taux_30_passages: tauxReponse(santeAtlas, id), echantillon, erreur })), null, 1));
 await writeFile(`${dossierJour}/marche.json`, JSON.stringify(analyse, null, 1));
 const mdMarche = rapportMarcheMd(analyse);
@@ -127,7 +147,7 @@ const dossierMd = (i, k) => {
   const c = i.final.composantes;
   const lignes = [
     `## ${k + 1}. ${i.titre}`,
-    `**Score ${i.final.total} / 10** · douleur ${c.douleur_prouvee.toFixed(1)} · paiement ${c.paiement_prouve} · espace ${c.espace_libre.toFixed(1)} · élan ${c.elan.toFixed(1)} · critique ${c.critique.toFixed(1)} · tournoi ${c.tournoi.toFixed(1)} · risque ${c.faible_risque} — ${i.arene}, ${i.origine === "ancree" ? "née d'une douleur réelle" : i.origine === "marche" ? `née du marché des agents (${i.lentille})` : `visionnaire (${i.lentille})`}`,
+    `**Score ${i.final.total} / 10** · douleur ${c.douleur_prouvee.toFixed(1)} · paiement ${c.paiement_prouve} · espace ${c.espace_libre.toFixed(1)} · élan ${c.elan.toFixed(1)} · critique ${c.critique.toFixed(1)} · tournoi ${c.tournoi.toFixed(1)} · risque ${c.faible_risque} — ${i.arene}, ${i.origine === "ancree" ? "née d'une douleur réelle" : i.origine === "marche" ? `née du marché des agents (${i.lentille})` : i.origine === "faille" ? `née d'une faille calculée (${i.lentille})` : `visionnaire (${i.lentille})`}`,
     "",
     `- **Problème :** ${i.probleme}`,
     `- **Pour qui :** ${i.pour_qui}`,
@@ -138,10 +158,15 @@ const dossierMd = (i, k) => {
     `- **Premier test :** ${i.premier_test}`,
   ];
   lignes.push(`- **Preuve de paiement :** ${i.final.paiement}`);
+  if (i.banalite) lignes.push(`- **Originalité mesurée :** ${i.banalite.originalite}/10${i.banalite.similarite >= 0.3 ? ` — proche de l'idée réflexe « ${i.banalite.proche} »` : ""}`);
   for (const m of (i.marche_agents ?? []).slice(0, 3)) lignes.push(`  - Marché des agents : ${lien(m.url, m.titre)} — ${m.users30} utilisateurs/30 j, ${m.payant ? `${m.prix} $ par ${m.unite ?? "unité"}` : "gratuit"}`);
   if (i.mcp) lignes.push(`  - Serveurs MCP déjà publiés sur ce besoin : ${i.mcp.n}${i.mcp.exemples?.length ? ` (${i.mcp.exemples.join(", ")})` : ""}`);
   if (i.elan) lignes.push(`- **Élan :** ${i.elan.faible ? "pas assez de signal" : `×${i.elan.rapport} sur 90 jours`} — ${(i.elan.mesures ?? []).map((m) => `« ${m.mot} » HN ${m.hn?.recent ?? "?"} contre ${m.hn?.avant ?? "?"}${m.github ? `, GitHub ${m.github.recent ?? "?"} contre ${m.github.avant ?? "?"}` : ""}`).join(" ; ")}`);
-  if (i.gisement?.marche) {
+  if (i.gisement?.faille) {
+    lignes.push(`- **Faille :** ${i.gisement.nom}`);
+    const g = gisementsFailles.find((x) => x.id === i.gisement.id);
+    for (const ex of (g?.exemples ?? []).slice(0, 3)) lignes.push(`  - ${lien(ex.url, ex.source)} — ${String(ex.citation).slice(0, 160)}`);
+  } else if (i.gisement?.marche) {
     lignes.push(`- **Preuve de terrain :** ${i.gisement.nom} — outil payé par ${i.gisement.n} utilisateurs en 30 jours`);
   } else if (i.gisement) {
     const g = gisements.find((x) => x.id === i.gisement.id);
@@ -163,9 +188,9 @@ const top = opportunites.slice(0, config.volumes.top_publie);
 const md = [
   `# Opportunités du ${date}`,
   "",
-  `${items.length} textes réels lus → ${douleurs.length} douleurs → ${gisements.length} gisements, plus ${gisementsMarche.length} gisements du marché des agents (${analyse.payants} outils payants observés). ${usine.stats.idees} idées générées, ${usine.stats.notees} critiquées, ${usine.stats.duels} duels, ${sante.stats.enquetes} enquêtes web. Coût : ${cout.usd.toFixed(3)} $ en ${cout.appels} appels, ${Math.round(sante.dureeSecondes / 60)} min.`,
+  `${items.length} textes réels lus → ${douleurs.length} douleurs → ${gisements.length} gisements, plus ${gisementsMarche.length} gisements du marché des agents (${analyse.payants} outils payants observés) et ${gisementsFailles.length} failles calculées (${transplants.length} transplants vérifiés). ${usine.stats.idees} idées générées, ${usine.stats.notees} critiquées, ${usine.stats.duels} duels, ${sante.stats.enquetes} enquêtes web. Coût : ${cout.usd.toFixed(3)} $ en ${cout.appels} appels, ${Math.round(sante.dureeSecondes / 60)} min.`,
   "",
-  "Classement fondé sur les preuves (douleur réelle, prix lu sur la page ou paiement observé sur le marché, espace libre, élan sur 90 jours, risque) ; l'avis des IA pèse environ 30 %.",
+  "Classement fondé sur les preuves (douleur ou faille mesurée, prix lu sur la page ou paiement observé, espace libre, originalité mesurée contre le réflexe d'un assistant IA, élan sur 90 jours, risque) ; l'avis des IA pèse 18 %.",
   "",
   ...top.slice(0, 5).map(dossierMd),
   "## Suivantes",

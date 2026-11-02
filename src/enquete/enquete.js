@@ -157,13 +157,15 @@ export function scoreFinal(idee, poids) {
   const e = idee.enquete;
   const preuvesWeb = e ? (e.preuves_demande ?? []).filter((p) => p.verifie).length : 0;
   const f = idee.gisement?.force ?? 0;
-  const douleurTerrain = idee.gisement ? borne((10 * f) / (f + 3)) : 0; // force 3 → 5, 8 → 7,3, 13 → 8,1 : ne sature plus
+  // Une faille calculée porte déjà sa force sur 10 ; un gisement de plaintes, un nombre de mentions.
+  const douleurTerrain = idee.gisement?.faille ? borne(f) : idee.gisement ? borne((10 * f) / (f + 3)) : 0; // force 3 → 5, 8 → 7,3, 13 → 8,1
   const paiement = preuvePaiement(idee);
   const composantes = {
     douleur_prouvee: borne(Math.max(douleurTerrain, Math.min(7, 2 * preuvesWeb))),
     paiement_prouve: paiement.note,
     espace_libre: !e ? 3 : borne(Math.min(Number(e.nouveaute) || 0, Math.max(0, ...(e.concurrents ?? []).filter((c) => c.verifie).map((c) => Number(c.ressemblance) || 0)) >= 9 ? 3 : 10)),
     elan: borne(idee.elan?.note ?? 5), // 5 = neutre quand l'élan n'a pas pu être mesuré
+    originalite_mesuree: borne(idee.banalite?.originalite ?? 5), // contre le témoin « réflexe d'assistant IA »
     critique: borne(idee.score ?? 0),
     tournoi: borne(((idee.elo ?? 1500) - 1420) / 16),
     faible_risque: ({ faible: 10, moyen: 5, eleve: 0 })[e?.risque_juridique ?? idee.critique?.risque_juridique] ?? 5,

@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "note": "Usine v3, ancrée dans le réel et dans l'argent. Tout est réglable ici sans toucher au code. 1er nov. au soir : marché des agents (Apify Store, registre MCP) en source de gisements payés, preuve de paiement stricte (prix lu sur la page), élan mesuré (Hacker News, GitHub), mercury-3 ajouté (8× plus rapide à qualité égale selon l'éclaireur). 2 nov. : mimo retiré (17 % d'échecs par délai dépassé), remplacé par mercury.",
+  "version": 4,
+  "note": "Usine v3, ancrée dans le réel et dans l'argent. Tout est réglable ici sans toucher au code. 1er nov. au soir : marché des agents (Apify Store, registre MCP) en source de gisements payés, preuve de paiement stricte (prix lu sur la page), élan mesuré (Hacker News, GitHub), mercury-3 ajouté (8× plus rapide à qualité égale selon l'éclaireur). 2 nov. : mimo retiré (17 % d'échecs par délai dépassé), remplacé par mercury. 2 nov. après-midi : détecteurs de failles (transplants depuis l'étranger, logiciels abandonnés, demandes ignorées, demande payée mal servie), témoin « réflexe d'assistant IA » à ne pas refaire et originalité mesurée ; part des plaintes App Store réduite.",
   "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
   "cerveaux_generation": [
     "deepseek",
@@ -27,16 +27,17 @@
   "moteur_web": "parallel",
   "plafond_cout_usd": 0.9,
   "volumes": {
-    "generations": 120,
+    "generations": 96,
     "idees_par_generation": 5,
-    "part_ancree": 0.7,
+    "part_ancree": 0.55,
     "finalistes_tournoi": 32,
     "rondes_tournoi": 5,
     "max_finalistes_par_arene": 5,
     "max_finalistes_par_gisement": 2,
     "enquetes": 15,
     "top_publie": 10,
-    "generations_marche": 18
+    "generations_marche": 18,
+    "generations_failles": 48
   },
   "arenes": {
     "grand-public": "Particuliers : vie quotidienne, argent, logement, mobilité, consommation.",
@@ -109,6 +110,13 @@
     "monter-d-un-etage": "Des développeurs et des agents paient déjà cet outil brut. Monte d'un étage : quel produit fini, pour quel public précis (particuliers, créateurs, petits vendeurs, associations), se construit au-dessus de ce besoin et se vend en libre-service, sans appel ?",
     "agent-client": "Les clients de cet outil sont de plus en plus des agents IA. Conçois l'outil ou l'API qu'un agent choisirait sans hésiter sur une place de marché (fiable, documenté, payé à l'usage, résultats vérifiables), sur un besoin voisin encore mal servi."
   },
+  "lentilles_failles": {
+    "transplant-adapte": "Ce produit a de la traction à l'étranger et n'a pas (ou presque pas) d'équivalent en Europe francophone. Ne le copie pas tel quel : trouve ce qui l'a fait marcher là-bas, puis la version qui marchera ici (langue, règles européennes, habitudes, canaux, prix). Dis précisément ce qui change et pourquoi personne ne l'a encore fait ici.",
+    "transplant-croise": "Ce produit marche à l'étranger. Croise-le avec une donnée, une règle ou une infrastructure européenne qu'il n'a pas là-bas (données publiques ouvertes, obligations européennes, langues, paiements locaux) pour obtenir quelque chose de meilleur que l'original, qu'il ne peut pas copier facilement.",
+    "reprendre-l-abandon": "Ce logiciel est massivement utilisé et plus personne ne l'entretient. Des milliers d'utilisateurs vont devoir migrer, sécuriser ou remplacer. Quel produit en libre-service (migration automatique, version maintenue, alternative moderne, surveillance) vendre à ces utilisateurs, sans conseil sur mesure ?",
+    "faire-l-ignore": "Des centaines de personnes réclament cette fonction depuis des années et l'éditeur ne la fait pas. Construis-la à côté : extension, complément, outil séparé, service. Dis qui paiera et où on les trouve (la page de la demande elle-même est un canal).",
+    "mieux-que-le-paye": "Des centaines de personnes paient déjà cet outil et en sont mal servies (note basse, échecs). Construis ce qui sert le même résultat nettement mieux, en libre-service, sans aspirer de site qui l'interdit."
+  },
   "axes": {
     "valeur_societale": {
       "poids": 0.2,
@@ -140,15 +148,16 @@
     }
   },
   "score_final": {
-    "note": "Le classement final repose sur des preuves (douleur, paiement lu sur la page ou observé sur le marché, espace libre, élan, risque). L'avis des IA (critique et tournoi) pèse environ 30 %.",
+    "note": "Classement à preuves : douleur ou faille mesurée, paiement observé, espace libre, originalité mesurée contre le témoin « réflexe d'assistant IA », élan, risque. L'avis des IA (critique et tournoi) pèse 18 %.",
     "poids": {
       "douleur_prouvee": 0.2,
-      "paiement_prouve": 0.2,
-      "espace_libre": 0.15,
+      "paiement_prouve": 0.18,
+      "espace_libre": 0.14,
+      "originalite_mesuree": 0.14,
       "elan": 0.08,
-      "critique": 0.2,
-      "tournoi": 0.08,
-      "faible_risque": 0.09
+      "critique": 0.13,
+      "tournoi": 0.05,
+      "faible_risque": 0.08
     }
   },
   "contraintes": [
