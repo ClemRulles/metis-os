@@ -8,6 +8,14 @@
 <itunes:author>Métis</itunes:author>
 <itunes:explicit>false</itunes:explicit>
 <item>
+<title>5. Métis, le matin — Les modèles qui réfléchissent</title>
+<description>Ce matin, la machine a lu 446 textes et produit 663 idées pour 0.352 dollar. La leçon porte sur les modèles qui raisonnent : ce qu'ils font dans l'ombre, pourquoi certains refusent de couper cette réflexion, et combien ça coûte. Question du jour : Dans ton usine, accepterais-tu qu'un modèle réfléchisse longtemps en cachette pour gagner un point de qualité, si tu ne peux jamais lire son raisonnement ? Où tracerais-tu la ligne ?</description>
+<pubDate>Mon, 02 Nov 2026 05:30:00 GMT</pubDate>
+<guid isPermaLink="false">metis-matin-5</guid>
+<enclosure url="https://github.com/ClemRulles/metis-os/releases/download/podcast-005/metis-matin-005.mp3" length="3575613" type="audio/mpeg"/>
+<itunes:duration>596</itunes:duration>
+</item>
+<item>
 <title>4. Métis, le matin — Température et Créativité</title>
 <description>Aujourd'hui, nous décortiquons le concept de température pour comprendre comment équilibrer la créativité et la fiabilité dans nos modèles d'IA. Métis vous présente l'opportunité BugAlert, un outil de surveillance des avis qui répond à un besoin critique du marché des développeurs indépendants. Question du jour : Si tu devais choisir entre une idée brillante mais risquée ou une idée sûre mais peu originale, quelle règle stratégique appliquerais-tu en premier pour protéger la santé de ta machine ?</description>
 <pubDate>Mon, 02 Nov 2026 05:30:00 GMT</pubDate>

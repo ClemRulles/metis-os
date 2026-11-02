@@ -54,5 +54,19 @@
   "auteur_script": "glm",
   "mots": 1269,
   "cout_usd": 0.0007
+ },
+ {
+  "numero": 5,
+  "date": "2026-11-02",
+  "titre": "Métis, le matin — Les modèles qui réfléchissent",
+  "resume": "Ce matin, la machine a lu 446 textes et produit 663 idées pour 0.352 dollar. La leçon porte sur les modèles qui raisonnent : ce qu'ils font dans l'ombre, pourquoi certains refusent de couper cette réflexion, et combien ça coûte.",
+  "question_du_jour": "Dans ton usine, accepterais-tu qu'un modèle réfléchisse longtemps en cachette pour gagner un point de qualité, si tu ne peux jamais lire son raisonnement ? Où tracerais-tu la ligne ?",
+  "lecon": "Les modèles qui réfléchissent",
+  "duree": 596,
+  "taille": 3575613,
+  "audio": "https://github.com/ClemRulles/metis-os/releases/download/podcast-005/metis-matin-005.mp3",
+  "auteur_script": "glm",
+  "mots": 1709,
+  "cout_usd": 0.0016
  }
 ]
