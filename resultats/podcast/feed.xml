@@ -8,6 +8,14 @@
 <itunes:author>Métis</itunes:author>
 <itunes:explicit>false</itunes:explicit>
 <item>
+<title>9. Métis, le matin : De la prédiction à l'action, l'ère des Agents</title>
+<description>Aujourd'hui, nous plongeons au cœur des agents : ces intelligences artificielles qui ne se contentent plus de parler, mais qui agissent réellement dans le monde numérique. Nous explorons la différence fondamentale entre un modèle qui répond et un agent qui résout, en analysant comment notre studio enchaîne les étapes de l'enquête à l'usine. Une opportunité émerge dans la standardisation des données marché. Question du jour : Si votre machine pouvait posséder une mémoire parfaite et utiliser n'importe quel outil externe, quelle serait la première tâche complexe que vous lui confieriez ?</description>
+<pubDate>Mon, 02 Nov 2026 05:30:00 GMT</pubDate>
+<guid isPermaLink="false">metis-matin-9</guid>
+<enclosure url="https://github.com/ClemRulles/metis-os/releases/download/podcast-009/metis-matin-009.mp3" length="841485" type="audio/mpeg"/>
+<itunes:duration>140</itunes:duration>
+</item>
+<item>
 <title>8. Métis, le matin : Donner des yeux à une machine</title>
 <description>Hier, la machine a lu 763 textes réels, produit 645 idées notées, pour 0,47 dollar et 27 minutes de travail. La leçon du jour : comment une IA voit le web grâce à la recherche externe, ce que coûte une vraie enquête, et pourquoi la citation change tout. Question du jour : Quand une machine vous cite une source trouvée sur le web, quelle est votre première réaction : cliquer pour vérifier, faire confiance parce que la citation existe, ou reposer la question autrement ?</description>
 <pubDate>Mon, 02 Nov 2026 05:30:00 GMT</pubDate>

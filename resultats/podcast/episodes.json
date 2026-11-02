@@ -110,5 +110,19 @@
   "auteur_script": "glm",
   "mots": 1657,
   "cout_usd": 0.0009
+ },
+ {
+  "numero": 9,
+  "date": "2026-11-02",
+  "titre": "Métis, le matin : De la prédiction à l'action, l'ère des Agents",
+  "resume": "Aujourd'hui, nous plongeons au cœur des agents : ces intelligences artificielles qui ne se contentent plus de parler, mais qui agissent réellement dans le monde numérique. Nous explorons la différence fondamentale entre un modèle qui répond et un agent qui résout, en analysant comment notre studio enchaîne les étapes de l'enquête à l'usine. Une opportunité émerge dans la standardisation des données marché.",
+  "question_du_jour": "Si votre machine pouvait posséder une mémoire parfaite et utiliser n'importe quel outil externe, quelle serait la première tâche complexe que vous lui confieriez ?",
+  "lecon": "Les agents : une IA qui agit",
+  "duree": 140,
+  "taille": 841485,
+  "audio": "https://github.com/ClemRulles/metis-os/releases/download/podcast-009/metis-matin-009.mp3",
+  "auteur_script": "glm",
+  "mots": 359,
+  "cout_usd": 0.0005
  }
 ]
