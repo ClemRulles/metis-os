@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Santé environnementale à Paris</title>
+<style>
+:root{--bg:#0f172a;--card:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--accent:#38bdf8;--green:#4ade80;--orange:#fb923c;--red:#f87171;--border:#334155}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:1rem;max-width:720px;margin:0 auto}
+h1{font-size:1.4rem;margin-bottom:.5rem;color:var(--accent)}
+h2{font-size:1.1rem;margin-bottom:.75rem;color:var(--text)}
+.date{color:var(--muted);font-size:.85rem;margin-bottom:1.5rem}
+.carte{background:var(--card);border:1px solid var(--border);border-radius:.75rem;padding:1rem 1.25rem;margin-bottom:1rem}
+.grille-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:540px){.grille-2{grid-template-columns:1fr}}
+p{margin-bottom:.4rem;font-size:.95rem}
+.seuil{color:var(--muted);font-size:.8rem}
+.badge{display:inline-block;padding:.1rem .4rem;border-radius:.3rem;font-size:.75rem;font-weight:600}
+.badge-rouge{background:var(--red);color:#000}
+.barres{display:flex;align-items:flex-end;gap:2px;height:80px;padding:0 .25rem}
+.bar-slot{flex:1;display:flex;flex-direction:column;align-items:center;height:100%}
+.bar{width:100%;background:var(--accent);border-radius:2px 2px 0 0;min-height:2px;transition:height .3s}
+.bar-label{font-size:.6rem;color:var(--muted);margin-top:2px}
+.legende{font-size:.75rem;color:var(--muted);text-align:center;margin-top:.25rem}
+.jauge-row{display:flex;align-items:center;gap:.5rem;margin-bottom:.4rem;font-size:.85rem}
+.jauge-label{width:5.5rem;flex-shrink:0}
+.jauge-track{flex:1;height:.5rem;background:var(--border);border-radius:.25rem;overflow:hidden}
+.jauge-fill{height:100%;border-radius:.25rem;transition:width .3s}
+.jauge-vert{background:var(--green)}
+.jauge-orange{background:var(--orange)}
+.jauge-rouge{background:var(--red)}
+.jauge-val{width:6rem;text-align:right;font-size:.8rem;color:var(--muted)}
+.alerte{padding:.75rem 1rem;border-radius:.5rem;margin-top:.75rem;font-size:.9rem}
+.alerte-faible{background:#14532d33;border:1px solid var(--green)}
+.alerte-modéré{background:#78350f33;border:1px solid var(--orange)}
+.alerte-élevé{background:#7f1d1d33;border:1px solid var(--red)}
+.score{font-size:2rem;font-weight:700;color:var(--accent)}
+.vide{color:var(--muted);font-style:italic}
+.sources{font-size:.85rem;color:var(--muted)}
+.sources li{margin-bottom:.25rem}
+.mention{font-size:.8rem;color:var(--muted);margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<h1>Santé environnementale à Paris aujourd'hui</h1>
+<p class="date">Données du 2026-11-02</p>
+
+<div class="carte">
+    <h2>Météo – Paris</h2>
+    <div class="grille-2">
+      <div>
+        <p><strong>Température :</strong> min 8,6 °C / max 12,2 °C / moy 9,9 °C</p>
+        <p><strong>Indice UV :</strong> max 0,9 / moy 0,2 </p>
+        <p><strong>Précipitations max :</strong> 53 %</p>
+      </div>
+      <div class="graphique">
+        <div class="barres"><div class="bar-slot"><div class="bar" style="height:11.1%" title="9 °C"></div><span class="bar-label">0</span></div><div class="bar-slot"><div class="bar" style="height:13.9%" title="9,1 °C"></div><span class="bar-label">1</span></div><div class="bar-slot"><div class="bar" style="height:13.9%" title="9,1 °C"></div><span class="bar-label">2</span></div><div class="bar-slot"><div class="bar" style="height:8.3%" title="8,9 °C"></div><span class="bar-label">3</span></div><div class="bar-slot"><div class="bar" style="height:5.6%" title="8,8 °C"></div><span class="bar-label">4</span></div><div class="bar-slot"><div class="bar" style="height:5.6%" title="8,8 °C"></div><span class="bar-label">5</span></div><div class="bar-slot"><div class="bar" style="height:5.6%" title="8,8 °C"></div><span class="bar-label">6</span></div><div class="bar-slot"><div class="bar" style="height:4.0%" title="8,6 °C"></div><span class="bar-label">7</span></div><div class="bar-slot"><div class="bar" style="height:8.3%" title="8,9 °C"></div><span class="bar-label">8</span></div><div class="bar-slot"><div class="bar" style="height:25.0%" title="9,5 °C"></div><span class="bar-label">9</span></div><div class="bar-slot"><div class="bar" style="height:52.8%" title="10,5 °C"></div><span class="bar-label">10</span></div><div class="bar-slot"><div class="bar" style="height:83.3%" title="11,6 °C"></div><span class="bar-label">11</span></div><div class="bar-slot"><div class="bar" style="height:100.0%" title="12,2 °C"></div><span class="bar-label">12</span></div><div class="bar-slot"><div class="bar" style="height:91.7%" title="11,9 °C"></div><span class="bar-label">13</span></div><div class="bar-slot"><div class="bar" style="height:72.2%" title="11,2 °C"></div><span class="bar-label">14</span></div><div class="bar-slot"><div class="bar" style="height:69.4%" title="11,1 °C"></div><span class="bar-label">15</span></div><div class="bar-slot"><div class="bar" style="height:66.7%" title="11 °C"></div><span class="bar-label">16</span></div><div class="bar-slot"><div class="bar" style="height:63.9%" title="10,9 °C"></div><span class="bar-label">17</span></div><div class="bar-slot"><div class="bar" style="height:52.8%" title="10,5 °C"></div><span class="bar-label">18</span></div><div class="bar-slot"><div class="bar" style="height:50.0%" title="10,4 °C"></div><span class="bar-label">19</span></div><div class="bar-slot"><div class="bar" style="height:41.7%" title="10,1 °C"></div><span class="bar-label">20</span></div><div class="bar-slot"><div class="bar" style="height:27.8%" title="9,6 °C"></div><span class="bar-label">21</span></div><div class="bar-slot"><div class="bar" style="height:19.4%" title="9,3 °C"></div><span class="bar-label">22</span></div><div class="bar-slot"><div class="bar" style="height:8.3%" title="8,9 °C"></div><span class="bar-label">23</span></div></div>
+        <p class="legende">Température horaire (°C)</p>
+      </div>
+    </div>
+  </div>
+
+<div class="carte">
+        <h2>Qualité de l'air</h2>
+        <p class="vide">Données de qualité de l'air non disponibles pour cette démonstration.</p>
+      </div>
+
+<div class="carte">
+  <h2>Alerte globale</h2>
+  <p>Score : <span class="score">15</span>/100</p>
+  <div class="alerte alerte-faible">Aucune alerte majeure détectée.</div>
+</div>
+
+<div class="carte sources">
+  <h2>Sources</h2>
+  <ul>
+    <li>Open-Meteo prévisions — licence : CC BY 4.0</li>
+  </ul>
+</div>
+
+<p class="mention">Démonstration : produit en préparation.</p>
+</body>
+</html>

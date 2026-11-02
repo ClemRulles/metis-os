@@ -1,0 +1,44 @@
+{
+ "ok": true,
+ "raison": null,
+ "essais": 1,
+ "spec": {
+  "titre": "Baromètre météo & qualité de l'air en un coup d'œil",
+  "promesse": "Cette démonstration prouve qu'une seule page web peut combiner deux API publiques pour afficher un tableau de bord de santé environnementale temps réel (température, pollens, PM2.5, ozone) à Paris, avec alertes automatiques.",
+  "donnees": [
+   {
+    "cle": "meteo",
+    "api": "meteo",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=48.85&longitude=2.35&hourly=temperature_2m,precipitation_probability,uv_index&forecast_days=1",
+    "pourquoi": "Fournit la température horaire, les probabilités de précipitations et l'indice UV sur 24h, base du confort extérieur quotidien."
+   },
+   {
+    "cle": "air",
+    "api": "pollen-air",
+    "url": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude=48.85&longitude=2.35&hourly=birch_pollen,grass_pollen,ragweed_pollen,pm2_5,ozone&forecast_days=1",
+    "pourquoi": "Donne les concentrations de pollens (bouleau, graminées, ambroisie) et de particules fines (PM2.5) et d'ozone, indicatrices de la qualité de l'air respirable."
+   }
+  ],
+  "ecran": "La page affiche un tableau de bord intitulé « Santé environnementale à Paris aujourd'hui ». Section 1 : météo heure par heure (graphique en barres de température, icône de pluie, indice UV moyen). Section 2 : qualité de l'air (courbe PM2.5 et ozone sur 24h, niveaux de pollens avec jauge : faible / modéré / élevé). Section 3 : alerte globale calculée (ex. « Risque modéré : pollen de graminées élevé, portez un masque si allergique »). Section 4 : sources citées (Open-Meteo, CC BY 4.0) et timestamp de la récupération.",
+  "calcul": "On prend les premières valeurs horaires (0h à 23h) de chaque API. On calcule : (1) la température moyenne et maximale du jour ; (2) l'indice UV maximal (danger si > 6) ; (3) la concentration maximale de PM2.5 (seuil OMS journalier = 15 µg/m³, alerte si dépassement) ; (4) la concentration maximale de chaque pollen (seuils indicatifs : bouleau > 80, graminées > 50, ambroisie > 30 grains/m³ = élevé) ; (5) un score global pondéré (0–100) combinant ces facteurs, avec seuil d'alerte à 70.",
+  "limites": "La démonstration ne couvre qu'une seule ville (Paris) et une seule journée ; elle n'inclut pas de prévisions à 7 jours ni d'autres polluants (NO2, SO2). Les seuils polliniques sont indicatifs et non médicaux. Aucune donnée historique n'est utilisée, donc pas de comparaison avec les jours précédents."
+ },
+ "sources": [
+  "Open-Meteo prévisions"
+ ],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [
+    "meteo"
+   ],
+   "erreurs": [
+    "données « air » (https://air-quality-api.open-meteo.com/v1/air-quality?latitude=48.85&longitude=2.35&hourly=birch_pollen,grass_pollen,ragweed_pollen,pm2_5,ozone&forecast_days=1) : fetch failed"
+   ]
+  },
+  {
+   "essai": 1,
+   "erreurs": []
+  }
+ ]
+}

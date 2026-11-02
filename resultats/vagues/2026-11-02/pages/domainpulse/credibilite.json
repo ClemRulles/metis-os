@@ -1,8 +1,7 @@
 {
  "ok": false,
  "bloquants": [
-  "mentions-editeur",
-  "api-branchee"
+  "mentions-editeur"
  ],
  "controles": [
   {
@@ -21,13 +20,13 @@
    "id": "confidentialite",
    "ok": true,
    "bloquant": true,
-   "detail": "Notice de confidentialité : finalité, base légale, durée, droit de suppression (RGPD)."
+   "detail": "Notice : aucune donnée personnelle collectée."
   },
   {
    "id": "consentement-explicite",
    "ok": true,
    "bloquant": true,
-   "detail": "Case de consentement non précochée et obligatoire."
+   "detail": "Mode clic : aucun champ de donnée personnelle."
   },
   {
    "id": "prix-affiche",
@@ -55,7 +54,7 @@
   },
   {
    "id": "api-branchee",
-   "ok": false,
+   "ok": true,
    "bloquant": true,
    "detail": "Liste d'attente branchée (sinon les inscriptions sont perdues)."
   },

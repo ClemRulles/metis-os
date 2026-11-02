@@ -1,90 +1,89 @@
 {
  "date": "2026-11-02",
  "dateStudio": "2026-11-02",
- "deploiement": "aucune page mise en ligne : éditeur absent (nom, adresse, contact dans config/lancement.json : obligatoire pour une page qui recueille des e-mails) ; liste d'attente non branchée (secrets Cloudflare absents du dépôt). Les pages sont écrites et attendent.",
+ "deploiement": "aucune page mise en ligne : éditeur absent (nom, adresse, contact dans config/lancement.json : mentions légales obligatoires). Les pages sont écrites et attendent.",
  "pret": false,
  "demos": [
   {
-   "slug": "santeo",
-   "ok": false,
-   "essais": null,
-   "raison": "aucune API de l'atlas ne sert ce produit (Aucune des API publiques listées ne fournit de métriques SEO (autorité de domaine, trafic estimé, backlinks, trafic IA). Les données disponibles concernent la météo, la qualité de l'air, les données financières, les publications scientifiques ou les entreprises françaises, mais aucune ne permet de calculer un score de santé SEO. Construire une démonstration avec ces données serait hors sujet et trompeur par rapport à la promesse du produit.)"
+   "slug": "domainpulse",
+   "ok": true,
+   "essais": 1,
+   "raison": null
   }
  ],
  "cout": {
-  "usd": 0.0016,
-  "appels": 7
+  "usd": 0.0018,
+  "appels": 9
  },
  "sante": {
-  "mercury": {
-   "ok": 1,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 3752,
-   "exempleErreur": null
-  },
-  "deepseek": {
-   "ok": 2,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 5447,
-   "exempleErreur": null
-  },
   "qwen": {
    "ok": 3,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 1474,
+   "msMoyen": 5652,
    "exempleErreur": null
   },
   "glm": {
+   "ok": 2,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 6903,
+   "exempleErreur": null
+  },
+  "deepseek": {
    "ok": 1,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 5147,
+   "msMoyen": 4473,
+   "exempleErreur": null
+  },
+  "mercury": {
+   "ok": 2,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 2565,
    "exempleErreur": null
   }
  },
  "choisis": [
   {
-   "slug": "santeo",
+   "slug": "domainpulse",
    "titre": "API « santé SEO d'un domaine » en un seul appel, garanti à jour",
    "score_studio": 7.28,
-   "note_plan": 5.4,
-   "elo": 1508,
+   "note_plan": 5.8,
+   "elo": 1516,
    "plan": {
-    "promesse": "L'état de santé SEO d'un domaine en un seul appel API, fiable et à jour, sans jamais déboguer un scraper.",
-    "public_precis": "Développeurs et agences SEO en marque blanche qui intègrent des données d'autorité, de trafic et de backlinks dans leurs pipelines, ainsi que les agents IA automatisés qui ont besoin d'un endpoint MCP propre.",
-    "canal_principal": "Place de marché Apify Store + threads de plaintes sur Hacker News et r/SEO.",
+    "promesse": "Obtenez un score unique de santé SEO (autorité, trafic, part IA) via une API REST et MCP en un seul appel, sans débogage.",
+    "public_precis": "Développeurs et agences SEO cherchant une alternative stable aux scrapers fragiles sur Apify et les communautés techniques.",
+    "canal_principal": "Apify Store (listing d'actors) et réponses ciblées sur Hacker News / r/SEO.",
     "premiers_visiteurs": [
-     "Publier deux actors sur l'Apify Store (analyse de domaine + top sites) avec une description claire du score composite et un schéma JSON versionné en exemple, et un prix affiché de 0,02 € par appel.",
-     "Chercher dans r/SEO et Hacker News les threads existants où des utilisateurs se plaignent du scraper noté 3/6, et répondre avec une proposition neutre : « Nous avons un endpoint qui renvoie ça en un appel, sans scraping fragile — testez la page de test. »",
-     "Créer une courte page de test (hébergée gratuitement, ex. Vercel) qui dit clairement que le service est en préparation, affiche l'exemple de réponse JSON, le prix, et un bouton « M'avertir quand c'est prêt » collectant uniquement un e-mail (base légale consentement).",
-     "Ajouter le lien de la page de test dans la description des actors Apify et dans les signatures de posts sur les forums, sans spam : un seul message utile par thread pertinent.",
-     "Poster une annonce sobre dans le Discord ou Slack des communautés de développeurs SEO (si public et autorisé) avec le même lien et l'explication du score composite."
+     "Publier un actor minimal sur Apify Store avec une description claire du schéma JSON versionné et du prix à l'appel.",
+     "Identifier 10 threads récents sur HN et r/SEO signalant des problèmes de scraping ou demandant des données fiables.",
+     "Publier des réponses utiles et non-spammatiques dans ces threads, partageant uniquement le lien de la page de test si pertinent au contexte.",
+     "Partager le lien de la page de test dans les communautés de développeurs IA/MCP où l'intégration d'agents est discutée.",
+     "Suivre les métriques de trafic et les conversions sur la page de test pendant 14 jours."
     ],
-    "part_automatisable": "Les agents peuvent rédiger les descriptions des actors, générer les réponses types aux threads de plaintes, détecter les threads pertinents via l'API de Reddit/HN (officielles), créer la page de test à partir d'un template, et suivre les clics via un tracker simple. Ils peuvent aussi préparer les e-mails de relance pour les inscrits.",
-    "action_humaine": "Valider le texte final des deux actors et de la page de test (environ 15 minutes), et approuver les réponses aux threads avant publication (environ 10 minutes par jour).",
+    "part_automatisable": "Les agents gèrent la rédaction des réponses de communauté (sous validation humaine), le monitoring des threads cibles, et l'analyse des métriques de trafic et de conversion de la page de test.",
+    "action_humaine": "Valider et publier les 10-15 réponses de communauté et vérifier le listing Apify (environ 30 minutes au total sur 14 jours).",
     "offre": "precommande",
-    "prix": "0,02 € par appel, packs de 10 000 appels à 120 €/mois",
-    "metrique": "Nombre de visiteurs uniques qualifiés sur la page de test, et nombre d'e-mails de précommande collectés.",
-    "seuil_succes": "Au moins 100 visiteurs uniques qualifiés en 14 jours et au moins 20 e-mails de précommande, ou 3 demandes fermes de test via le formulaire.",
+    "prix": "0 € (accès anticipé gratuit aux 50 premiers utilisateurs pour feedback, puis 0,02 €/appel ou 120 €/mois pour 10 000 appels)",
+    "metrique": "Nombre de signatures à la liste d'attente et de précommandes de packs payants sur la page de test.",
+    "seuil_succes": "50 précommandes payantes ou 100 signatures qualifiées avec engagement technique en 14 jours.",
     "budget_eur": 0,
-    "risque_principal": "Les utilisateurs potentiels ne voient pas la valeur du score composite « santé domaine » par rapport aux API existantes (Ahrefs, Semrush) et préfèrent rester sur des outils connus, malgré la fragilité du scraper.",
-    "parade": "Mettre en avant dans la page de test une comparaison honnête : un seul appel, schéma JSON stable, endpoint MCP pour agents IA, et un prix transparent de 0,02 €/appel — tout en précisant que les données sources sont ouvertes/API officielles, et proposer un exemple de réponse réel pour démontrer la valeur immédiate."
+    "risque_principal": "Faible trafic organique sur les forums et saturation des réponses, rendant difficile l'atteinte des 100-250 visiteurs qualifiés sans budget publicitaire.",
+    "parade": "Si le trafic est insuffisant après 7 jours, pivoter vers une démonstration technique publique sur GitHub avec un endpoint de test gratuit limité à 1 appel par IP, et partager le lien dans les newsletters de niche SEO/dev."
    },
    "critique": {
-    "trafic_realiste": 3,
+    "trafic_realiste": 4,
     "clarte_offre": 6,
-    "vitesse": 5,
+    "vitesse": 7,
     "cout": 7,
-    "honnetete": 6,
-    "echec_probable": "Personne n'arrive sur la page de test. Poster une fois « utilement » dans des threads Reddit/HN existants ne génère presque aucun trafic, et les acteurs Apify mettent des semaines à gagner en visibilité organique sur la marketplace. Le seuil de 100 visiteurs/14 jours repose entièrement sur des réponses à des threads que personne ne relit après 48h. Pendant ce temps, l'offre elle-même est fragile : le « score composite » est dérivable de données ouvertes, la promesse « garanti à jour » est invérifiable tant qu'il n'y a pas d'API live, et les 20 e-mails de précommande ne viendront jamais — un développeur qui voit une page « bientôt disponible » avec un JSON d'exemple (probablement fabriqué) repart sans laisser d'email. Au bout de 14 jours : ~20 visiteurs, 0-3 emails, projet enterré.",
-    "correction": "Remplacer la page d'attente par un produit utilisable immédiatement : un endpoint réel en accès libre (100 appels gratuits, sans carte) que les devs peuvent tester en 2 minutes depuis une doc interactive — c'est le seul levier de conversion pour un public technique. Côté trafic, arrêter de compter sur les threads existants : publier le score « trafic IA » comme donnée publique originale (ex. « top 100 des sites qui gagnent le plus de trafic venant de ChatGPT » sur HN/show Reddit, analyse datée, méthode transparente) — ce billet EST le produit démo et attire des milliers de lecteurs qualifiés d'un coup. Expliciter ce que recouvre concrètement « trafic IA » (sources, méthode, marges d'erreur) sinon la promesse « garanti à jour » bascule dans le marketing vague et détruit la confiance du seul public qui vérifie tout. Enfin, s'assumer comme précommande avec un prix de lancement visible, pas une liste d'attente anonyme."
+    "honnetete": 5,
+    "echec_probable": "Le trafic ne vient pas : les réponses postées dans des threads HN/r/SEO sans dire lesquels précisément ni avec quel angle produisent quelques dizaines de visites, et l'Apify Store n'apporte du trafic qu'aux actors déjà référencés/réussis — le plan table sur 100-250 visiteurs qualifiés en 14 jours avec ~30 minutes d'effort humain, ratio irréaliste. Résultat : 5-10 signatures de liste d'attente, 0 précommande payante, seuil raté. Aggravant : la promesse « données fiables, schéma versionné » repose probablement sur le même scraping fragile que le concurrent noté 3/6 — la première réponse HN qui teste l'API et trouve des incohérences tue la crédibilité.",
+    "correction": "1) Trafic : viser les places de marché comme canal principal réel — publier l'actor Apify avec un plan gratuit (100 appels/mois) ET un actor « tueur » directement positionné comme remplacement du scraper mal noté, avec Comparer sa doc, son SLA et son schéma dans la description ; compléter par un endpoint de démo live (curl une ligne, réponse JSON affichée) sur la landing — les devs convertissent sur le try-it, pas sur des posts. 2) Cibler les threads en les listant nommément avant lancement (recherche des 10 threads exacts, datés, avec accroche de réponse rédigée), sinon ce point du plan est du vent. 3) Honnêteté : publier la méthodologie du score et les sources de données ; si les données viennent d'un scraping tier, le dire — « schéma versionné et testé » doit être démontrable (contrat de test public, changelog, historique d'uptime) dès le jour 1, sinon c'est la promesse du concurrent noté 3/6 avec un meilleur marketing. 4) Abaisser le seuil : 10 utilisateurs actifs gratuits qui intègrent l'API en 14 jours est un vrai signal ; 50 précommandes payantes sans trafic prouvé ne l'est pas."
    },
    "credibilite": [
-    "mentions-editeur",
-    "api-branchee"
+    "mentions-editeur"
    ],
    "en_ligne": false
   }

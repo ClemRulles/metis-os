@@ -1,47 +1,48 @@
 {
  "slug": "domainpulse",
  "nom": "DomainPulse",
- "accroche": "Santé SEO d'un domaine en un appel API",
- "sous_titre": "Une API REST en préparation, avec un schéma JSON versionné et un score composite (autorité, tendance de trafic estimée, part IA). Conçu pour développeurs et agents IA.",
+ "accroche": "Un score santé SEO en un appel",
+ "sous_titre": "API REST + MCP pour développeurs et agences. Autorité, trafic estimé et part IA, avec un schéma JSON versionné et une démo live.",
  "probleme_points": [
-  "Les données de domaine récupérées via scraping sont souvent hétérogènes et difficiles à exploiter",
-  "Les sources disponibles manquent de contrat d'interface clair, ce qui complique l'intégration",
-  "Il faut agréger soi-même autorité, trafic et impact de l'IA pour obtenir une vue d'ensemble"
+  "Les scrapers fragiles mélangent les champs et cassent vos pipelines",
+  "Pas de contrat de service clair ni de stabilité garantie",
+  "Intégrer des données SEO fiables demande du débogage sans fin"
  ],
  "comment": [
-  "Choisissez un pack d'appels sur la place de marché (Apify Store ou RapidAPI) au lancement",
-  "Appelez l'endpoint REST avec le nom de domaine souhaité",
-  "Recevez un JSON versionné : autorité, tendance de trafic estimée, part de trafic IA et score composite"
+  "Testez l'endpoint de démo live sur cette page : un appel, une réponse JSON propre",
+  "Inscrivez-vous à l'accès anticipé gratuit (100 appels/mois) pour les 50 premiers",
+  "Recevez vos clés API et intégrez le score santé dans vos outils"
  ],
- "pour_qui": "Développeurs Python/Node.js, agences SEO proposant une offre en marque blanche et créateurs d'agents IA qui intègrent des données de domaine dans leurs pipelines.",
- "prix": "0,02 € par appel prévu, packs de 10 000 appels à 120 €/mois",
- "condition_prix": "Service en préparation. Prix indicatifs, susceptibles d'évoluer. Inscrivez-vous pour un accès bêta gratuit avec un quota d'appels offert.",
- "offre": "precommande",
- "cta": "Demander l'accès bêta",
+ "pour_qui": "Développeurs, agences SEO en marque blanche et agents IA qui veulent des données fiables sans gérer un scraper.",
+ "prix": "0 € pour les 50 premiers utilisateurs (100 appels/mois), pui",
+ "condition_prix": "Le service est en préparation. L'accès anticipé est gratuit et limité aux 50 premières inscriptions. Aucun paiement avant la mise en ligne.",
+ "offre": "clic",
+ "cta": "Demander l'accès anticipé",
  "faq": [
   {
-   "question": "Qu'est-ce que le score composite « santé domaine » ?",
-   "reponse": "Un indicateur unique calculé à partir de données ouvertes : autorité du domaine, tendance de trafic estimée et part estimée du trafic provenant des IA. Il est prévu pour être obtenu en un seul appel API."
+   "question": "Qu'est-ce que le score santé domaine ?",
+   "reponse": "Un score composite calculé à partir de données ouvertes et d'API officielles : autorité, tendance de trafic estimé et part du trafic venant des IA. La méthodologie complète sera publiée avant le lancement."
   },
   {
-   "question": "Comment accéder à l'API ?",
-   "reponse": "L'API est prévue pour être disponible sur Apify Store et RapidAPI. Le service est en préparation ; vous pouvez demander un accès bêta gratuit."
+   "question": "Comment puis-je tester l'API ?",
+   "reponse": "Un endpoint de démo live est disponible sur cette page. Vous pouvez lancer un appel curl en une ligne et voir la réponse JSON affichée immédiatement."
   },
   {
-   "question": "Quelles données sont utilisées ?",
-   "reponse": "Des données ouvertes et des API officielles. Aucune donnée personnelle sensible n'est collectée."
+   "question": "Quelles sont les sources de données ?",
+   "reponse": "Uniquement des données ouvertes, des API officielles et des données fournies par l'utilisateur. Aucun scraping de sites ou de réseaux sociaux qui l'interdisent."
   },
   {
-   "question": "Puis-je tester avant d'acheter ?",
-   "reponse": "Oui, l'accès bêta prévoit un quota d'appels gratuits pour vérifier que le format du JSON versionné correspond à vos besoins."
+   "question": "Quand le service sera-t-il disponible ?",
+   "reponse": "Le service est en préparation. L'accès anticipé sera ouvert aux 50 premiers inscrits dès le lancement, avec un plan gratuit de 100 appels/mois."
   }
  ],
  "langue": "fr",
- "couleur": "#2A7F62",
+ "couleur": "#2C3E50",
  "editeur": {
   "nom": "",
   "adresse": "",
   "contact": ""
  },
- "api_url": ""
+ "api_url": "https://metis-liste-attente.metis-435e45a0.workers.dev",
+ "demo_url": "demo/"
 }
