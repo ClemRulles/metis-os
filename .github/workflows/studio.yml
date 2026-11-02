@@ -47,15 +47,15 @@ jobs:
         run: |
           mkdir -p /tmp/etat
           git fetch origin resultats || true
-          for f in gisements graines deja_vues marche-agents atlas-sante; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
+          for f in gisements graines deja_vues marche-agents atlas-sante x-semaine transplants; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
           ls -la /tmp/etat
       - name: Radar, usine, enquête
         if: steps.garde.outputs.fait != '1'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }} # facultatif : lecture payante de X, plafonnée par X_PLAFOND
-          X_PLAFOND: "100"
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }} # facultatif : lecture payante de X, une fois par semaine
+          X_PLAFOND: "400" # une collecte par semaine : 400 messages, environ 2 $
           GITHUB_TOKEN: ${{ github.token }} # recherche GitHub de l'élan (30 requêtes par minute au lieu de 10)
         run: node scripts/lancer-studio.js /tmp/etat sortie
       - name: Dépôt des résultats

@@ -98,7 +98,14 @@ export async function lireX({ fetchImpl, jeton, requetes, maxParRequete = 25, pl
 
 export const REQUETES_X = ['"just launched" (app OR tool OR startup)', '"we hit" (MRR OR "paying customers")', '"I built" "in a weekend"', '"first $1k" OR "first 1000 users"'];
 
-export async function collecterEmergents({ fetchImpl = globalThis.fetch, maintenant = Date.now(), jetonX = null, plafondX = 100, journal = () => {} } = {}) {
+// X coûte à la lecture : une seule collecte par semaine (le lundi par défaut, ou si la mémoire a plus de 7 jours),
+// réutilisée chaque jour de la semaine. Les autres sources, gratuites, tournent chaque jour à plein régime.
+export function doitLireX(memoire, maintenant, jourX = 1) {
+  const age = memoire?.date ? (maintenant - Date.parse(memoire.date)) / JOUR : Infinity;
+  return age >= 7 || (new Date(maintenant).getUTCDay() === jourX && age >= 1);
+}
+
+export async function collecterEmergents({ fetchImpl = globalThis.fetch, maintenant = Date.now(), jetonX = null, plafondX = 400, memoireX = null, jourX = 1, journal = () => {} } = {}) {
   const items = [];
   const etat = {};
   const essayer = async (nom, f) => {
@@ -122,17 +129,20 @@ export async function collecterEmergents({ fetchImpl = globalThis.fetch, mainten
   await essayer("product_hunt", async () => lireProductHunt(await lire(fetchImpl, "https://www.producthunt.com/feed", { texte: true })));
   await essayer("github_montants", async () => lireGitHubMontants(await lire(fetchImpl, `https://api.github.com/search/repositories?q=${encodeURIComponent(`created:>${iso(maintenant - 30 * JOUR)} stars:>300`)}&sort=stars&order=desc&per_page=40`)));
   await essayer("mastodon", async () => lireMastodonLiens(await lire(fetchImpl, "https://mastodon.social/api/v1/trends/links?limit=20")));
-  if (jetonX) {
+  let memoire = memoireX;
+  if (jetonX && doitLireX(memoireX, maintenant, jourX)) {
     try {
       const { sorties, lus } = await lireX({ fetchImpl, jeton: jetonX, requetes: REQUETES_X, plafond: plafondX });
-      items.push(...sorties);
-      etat.x = { n: sorties.length, lus, cout_estime_usd: +(lus * 0.005).toFixed(3) };
+      memoire = { date: new Date(maintenant).toISOString(), items: sorties, lus };
+      etat.x = { n: sorties.length, lus, cout_estime_usd: +(lus * 0.005).toFixed(3), mode: "collecte de la semaine" };
     } catch (e) {
       etat.x = { n: 0, erreur: String(e.message ?? e).slice(0, 100) };
     }
-  } else etat.x = { n: 0, note: "inactif (pas de X_BEARER_TOKEN)" };
+  } else if (memoireX?.items?.length) etat.x = { n: memoireX.items.length, lus: 0, mode: `mémoire du ${memoireX.date.slice(0, 10)}` };
+  else etat.x = { n: 0, note: jetonX ? "rien en mémoire" : "inactif (pas de X_BEARER_TOKEN)" };
+  if (memoire?.items?.length) items.push(...memoire.items);
   journal(`émergents : ${items.length} (${JSON.stringify(etat)})`);
-  return { items, etat };
+  return { items, etat, memoireX: memoire };
 }
 
 // Concepts : un modèle regroupe les émergents en concepts produit, avec leurs mots-clés anglais et français.
@@ -188,8 +198,11 @@ export function tractionEtrangere(item) {
   return 4;
 }
 
-export async function detecterTransplants({ items, demandeur, cerveauxExtraction, cerveauxEnquete, moteurWeb = "parallel", maxConcepts = 14, journal = () => {} }) {
-  if (!items.length) return [];
+// La présence en Europe francophone d'un produit change lentement : vérifiée une fois, gardée 14 jours.
+// Les vérifications web déjà payées sont réutilisées, ce qui permet d'en vérifier davantage chaque jour.
+export async function detecterTransplants({ items, demandeur, cerveauxExtraction, cerveauxEnquete, moteurWeb = "parallel", maxConcepts = 14, cache = {}, maintenant = Date.now(), journal = () => {} }) {
+  const memo = Object.fromEntries(Object.entries(cache ?? {}).filter(([, v]) => v?.date && maintenant - Date.parse(v.date) < 14 * JOUR));
+  if (!items.length) return Object.assign([], { cache: memo });
   const lots = [];
   for (let k = 0; k < items.length; k += 15) lots.push(items.slice(k, k + 15));
   const produits = (
@@ -200,9 +213,13 @@ export async function detecterTransplants({ items, demandeur, cerveauxExtraction
     })
   ).flat();
   // Les plus fortes tractions d'abord, un concept par produit.
-  const choisis = produits.sort((a, b) => b.traction - a.traction).slice(0, maxConcepts);
-  journal(`transplants : ${produits.length} produits étrangers, ${choisis.length} vérifiés en Europe francophone`);
-  await pool(choisis, 5, async (c) => {
+  const tries = produits.sort((a, b) => b.traction - a.traction);
+  const enMemoire = tries.filter((c) => memo[c.url]);
+  for (const c of enMemoire) c.presence = memo[c.url].presence;
+  const nouveaux = tries.filter((c) => !memo[c.url]).slice(0, maxConcepts);
+  const choisis = [...enMemoire, ...nouveaux];
+  journal(`transplants : ${produits.length} produits étrangers, ${nouveaux.length} vérifiés aujourd'hui, ${enMemoire.length} repris de la mémoire`);
+  await pool(nouveaux, 5, async (c) => {
     const { valeur, citations } = await demandeur.demander(cerveauxEnquete, messagesPresence(c), {
       temperature: 0.1,
       maxTokens: 1800,
@@ -217,8 +234,9 @@ export async function detecterTransplants({ items, demandeur, cerveauxExtraction
     const connus = new Set((citations ?? []).map((x) => hote(x.url)).filter(Boolean));
     const verifies = (valeur.equivalents_fr ?? []).filter((e) => connus.has(hote(e.url)) && (Number(e.proximite) || 0) >= 6);
     c.presence = { conclusion: valeur.conclusion, raison: valeur.raison ?? null, equivalents: verifies.slice(0, 4), mondiaux: (valeur.acteurs_mondiaux_en_francais ?? []).filter((e) => connus.has(hote(e.url))).slice(0, 3) };
+    memo[c.url] = { date: new Date(maintenant).toISOString(), presence: c.presence };
   });
-  return choisis
+  const resultat = choisis
     .filter((c) => c.presence)
     .map((c) => {
       const vide = c.presence.equivalents.length === 0 ? 1 : c.presence.equivalents.length === 1 ? 0.55 : 0.2;
@@ -232,9 +250,11 @@ export async function detecterTransplants({ items, demandeur, cerveauxExtraction
         preuves: [{ texte: `${c.titre} — ${c.description}`.slice(0, 300), url: c.url, source: c.source }, ...c.presence.equivalents.map((e) => ({ texte: `Équivalent francophone : ${e.nom}`, url: e.url, source: "recherche web" }))],
         mots_en: c.mots_en ?? [],
         public: c.public ?? null,
+        acheteur: c.acheteur ?? null,
       };
     })
     .sort((a, b) => b.force - a.force);
+  return Object.assign(resultat, { cache: memo });
 }
 
 // ---------- 2. Logiciels populaires abandonnés ----------

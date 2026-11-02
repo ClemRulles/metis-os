@@ -33,6 +33,8 @@ const graines = await lire(`${dossierEtat}/graines.json`, []);
 const dejaVues = await lire(`${dossierEtat}/deja_vues.json`, []);
 const panelPrecedent = await lire(`${dossierEtat}/marche-agents.json`, {});
 const santeAtlasPrecedente = await lire(`${dossierEtat}/atlas-sante.json`, {});
+const memoireX = await lire(`${dossierEtat}/x-semaine.json`, null);
+const cacheTransplants = await lire(`${dossierEtat}/transplants.json`, {});
 console.log(`État précédent : ${historique.length} gisements, ${graines.length} graines, ${dejaVues.length} idées déjà vues.`);
 
 const fournisseurs = FOURNISSEURS_PAR_DEFAUT.map((f) => ({ ...f, tokensParJour: 20_000_000 })); // le plafond en dollars fait foi
@@ -72,8 +74,8 @@ chrono("atlas", t0);
 // 3 bis. Failles calculées : ce qui marche à l'étranger sans équivalent ici, logiciels abandonnés, demandes
 // ignorées, demandes payées mal servies. Puis le témoin : ce qu'un assistant IA sortirait sans données.
 t0 = Date.now();
-const emergents = await collecterEmergents({ jetonX: process.env.X_BEARER_TOKEN ?? null, plafondX: Number(process.env.X_PLAFOND ?? 100), journal });
-const transplants = await detecterTransplants({ items: emergents.items, demandeur, cerveauxExtraction: config.cerveaux_extraction, cerveauxEnquete: config.cerveaux_enquete, moteurWeb: config.moteur_web, maxConcepts: config.volumes.transplants_verifies ?? 14, journal });
+const emergents = await collecterEmergents({ jetonX: process.env.X_BEARER_TOKEN ?? null, plafondX: Number(process.env.X_PLAFOND ?? 400), memoireX, journal });
+const transplants = await detecterTransplants({ items: emergents.items, demandeur, cerveauxExtraction: config.cerveaux_extraction, cerveauxEnquete: config.cerveaux_enquete, moteurWeb: config.moteur_web, maxConcepts: config.volumes.transplants_verifies ?? 14, cache: cacheTransplants, journal });
 const calculees = await collecterFailles({ jetonGitHub: process.env.GITHUB_TOKEN ?? null, analyseMarche: analyse, journal });
 const failles = [...transplants, ...calculees.failles];
 const gisementsFailles = gisementsDesFailles(failles);
@@ -131,6 +133,8 @@ await writeFile(`${dossierSortie}/etat/deja_vues.json`, JSON.stringify([...oppor
 await writeFile(`${dossierSortie}/sante-studio.json`, JSON.stringify(sante, null, 1));
 await writeFile(`${dossierSortie}/etat/marche-agents.json`, JSON.stringify(panel));
 await writeFile(`${dossierSortie}/etat/atlas-sante.json`, JSON.stringify(santeAtlas));
+if (emergents.memoireX) await writeFile(`${dossierSortie}/etat/x-semaine.json`, JSON.stringify(emergents.memoireX));
+await writeFile(`${dossierSortie}/etat/transplants.json`, JSON.stringify(transplants.cache ?? {}));
 const mdFailles = rapportFaillesMd({ date, failles, emergents, etat: calculees.etat });
 await writeFile(`${dossierJour}/failles.json`, JSON.stringify({ failles, emergents: emergents.etat, temoins: temoins.parArene }, null, 1));
 await writeFile(`${dossierJour}/FAILLES.md`, mdFailles);

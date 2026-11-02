@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { lireYC, lireShowHN, lireProductHunt, lireGitHubMontants, lireMastodonLiens, tractionEtrangere, detecterTransplants, lireAbandonnes, lireDemandesIgnorees, faillesMarche, gisementsDesFailles, rapportFaillesMd, lireX } from "../src/failles/detecteurs.js";
+import { doitLireX, collecterEmergents, lireYC, lireShowHN, lireProductHunt, lireGitHubMontants, lireMastodonLiens, tractionEtrangere, detecterTransplants, lireAbandonnes, lireDemandesIgnorees, faillesMarche, gisementsDesFailles, rapportFaillesMd, lireX } from "../src/failles/detecteurs.js";
 import { jetons, similarite, banalite, genererTemoins } from "../src/failles/temoin.js";
 import { messagesGenerationVisionnaire, messagesGenerationAncree } from "../src/usine/pipeline.js";
 import { scoreFinal, preuvePaiement } from "../src/enquete/enquete.js";
@@ -90,4 +90,31 @@ test("témoin : mesure de banalité et consigne « ne pas refaire »", async () 
   assert.match(mv[1].content, /deja_propose_par_n_importe_quelle_IA[\s\S]*Coach IA/);
   const ma = messagesGenerationAncree({ config: { ...config, lentilles_ancrees: config.lentilles_failles }, lentille: "faire-l-ignore", gisement: { nom: "Faille", n: 70, description: "d", exemples: [] }, n: 3, temoins: t.tous });
   assert.match(ma[0].content, /Des centaines de personnes réclament/);
+});
+
+test("X une fois par semaine, mémoire réutilisée ; transplants vérifiés gardés 14 jours", async () => {
+  const lundi = Date.parse("2026-11-02T12:00:00Z");
+  const mardi = Date.parse("2026-11-03T12:00:00Z");
+  assert.equal(doitLireX(null, mardi), true);
+  assert.equal(doitLireX({ date: "2026-11-02T12:00:00Z" }, mardi), false);
+  assert.equal(doitLireX({ date: "2026-10-26T12:00:00Z" }, lundi), true);
+  let appelsX = 0;
+  const fetchImpl = async (u) => {
+    if (u.includes("api.x.com")) appelsX += 1;
+    return { ok: true, json: async () => ({ data: [{ id: "1", text: "just launched", public_metrics: { like_count: 50 } }], batches: {}, hits: [], items: [] }), text: async () => "" };
+  };
+  const e = await collecterEmergents({ fetchImpl, maintenant: mardi, jetonX: "j", memoireX: { date: "2026-11-02T12:00:00Z", items: [{ source: "X", titre: "gardé", description: "", url: "u", metrique: { valeur: 9 } }] } });
+  assert.equal(appelsX, 0, "pas de lecture payante le mardi");
+  assert.ok(e.items.some((i) => i.titre === "gardé"));
+  let recherches = 0;
+  const demandeur = { demander: async (p, m, { lire }) => {
+    if (m[0].content.includes("analyste")) return { valeur: lire(JSON.stringify({ produits: [{ n: 0, concept: "C", commercial: true, transposable: true }] })) };
+    recherches += 1;
+    return { valeur: lire('{"conclusion": "absent", "equivalents_fr": []}'), citations: [] };
+  } };
+  const items = [{ source: "Product Hunt", titre: "P", description: "", url: "https://p.com", metrique: { valeur: 1 } }];
+  const t1 = await detecterTransplants({ items, demandeur, cerveauxExtraction: ["x"], cerveauxEnquete: ["y"], maintenant: lundi });
+  const t2 = await detecterTransplants({ items, demandeur, cerveauxExtraction: ["x"], cerveauxEnquete: ["y"], cache: t1.cache, maintenant: mardi });
+  assert.equal(recherches, 1, "la vérification web n'est pas repayée");
+  assert.equal(t2.length, 1);
 });
