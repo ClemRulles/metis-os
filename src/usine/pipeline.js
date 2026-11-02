@@ -145,7 +145,28 @@ export const horsTheme = (idee, exclus = []) => exclus.length > 0 && new RegExp(
 
 const normaliserTitre = (t) => String(t).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
 
-export async function lancerUsine({ config, atlas, gisements = [], gisementsMarche = [], gisementsFailles = [], temoins = { parArene: {} }, signaux = [], graines = [], dejaVues = [], demandeur, graine = Date.now(), parallelisme = 12, journal = () => {} }) {
+// Amélioration à chaque round : les lentilles dont les idées finissent haut reçoivent plus de générations
+// le lendemain (au moins une part plancher pour chacune, pour continuer à explorer).
+export function repartirLentilles(lentilles, notes = {}, n, plancher = 0.5) {
+  if (!lentilles.length) return [];
+  const moy = Object.values(notes).filter(Number.isFinite);
+  const ref = moy.length ? moy.reduce((a, b) => a + b, 0) / moy.length : 0;
+  const poids = lentilles.map((l) => Math.max(plancher, 1 + 1.5 * ((notes[l] ?? ref) - ref)));
+  const total = poids.reduce((a, b) => a + b, 0);
+  const sortie = [];
+  let reste = 0;
+  lentilles.forEach((l, k) => {
+    const exact = (n * poids[k]) / total + reste;
+    const entier = Math.floor(exact);
+    reste = exact - entier;
+    for (let j = 0; j < entier; j++) sortie.push(l);
+  });
+  while (sortie.length < n) sortie.push(lentilles[sortie.length % lentilles.length]);
+  // Entrelacé pour que les arènes tournent aussi.
+  return sortie.map((l, k) => [l, (k * 7919) % sortie.length]).sort((a, b) => a[1] - b[1]).map((x) => x[0]);
+}
+
+export async function lancerUsine({ notesLentilles = {}, config, atlas, gisements = [], gisementsMarche = [], gisementsFailles = [], temoins = { parArene: {} }, signaux = [], graines = [], dejaVues = [], demandeur, graine = Date.now(), parallelisme = 12, journal = () => {} }) {
   const alea = rngDe(graine);
   const v = config.volumes;
   const arenes = Object.keys(config.arenes);
@@ -168,9 +189,10 @@ export async function lancerUsine({ config, atlas, gisements = [], gisementsMarc
   // Les lentilles qui partent des API reçoivent des API vivantes, avec ce qu'elles ont réellement renvoyé ce matin.
   const vivantes = atlas.sources.filter((s) => s.vivante);
   const LENTILLES_API = new Set(["collision-api", "api-vivante"]);
+  const ordreV = repartirLentilles(lentillesV, notesLentilles, Math.max(0, v.generations - nAncrees));
   const plans = Array.from({ length: v.generations }, (_, k) => {
     if (k < nAncrees) return { type: "ancree", lentille: lentillesA[k % lentillesA.length], gisement: tirerGisement(), cerveau: choisir(alea, config.cerveaux_generation) };
-    const lentille = lentillesV[k % lentillesV.length];
+    const lentille = ordreV[k - nAncrees] ?? lentillesV[k % lentillesV.length];
     return {
       type: "visionnaire",
       lentille,

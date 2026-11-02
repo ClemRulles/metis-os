@@ -61,7 +61,7 @@ test("vague : plans, tournoi, sélection diverse, pages relues, porte de crédib
     arene: k <= 3 ? "apprendre" : `arene-${k}`,
     probleme: "p",
     solution: k === 7 ? "Un site qui croise les offres Indeed aspirées par scraping" : "s",
-    final: { total: 8 - k / 10, paiement: "x" },
+    final: { total: 8 - k / 10, paiement: "x", composantes: { paiement_prouve: 8, originalite_mesuree: 7 } },
     enquete: { verdict: k === 6 ? "abandonner" : "creuser", risque_juridique: "faible" },
     critique: { conforme: true },
   }));
@@ -79,4 +79,12 @@ test("vague : plans, tournoi, sélection diverse, pages relues, porte de crédib
     assert.match(p.fiche.accroche, /relue/);
   }
   assert.match(rapportVagueMd({ date: "2026-11-01", vague: v, deploiement: "test" }), /Vague de lancement du 2026-11-01/);
+});
+
+test("seuil : sous le seuil, pas de vague et aucun appel", async () => {
+  let appels = 0;
+  const v = await lancerVague({ opportunites: [{ titre: "Faible", final: { total: 7.5, composantes: { paiement_prouve: 4, originalite_mesuree: 8 } }, enquete: {}, critique: {} }], config, lancement: {}, demandeur: { demander: async () => (appels++, { valeur: null }) } });
+  assert.equal(v.candidats, 0);
+  assert.equal(appels, 0);
+  assert.match(rapportVagueMd({ date: "d", vague: v, deploiement: "x" }), /Aucune opportunité n'atteint le seuil/);
 });

@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { extraireJSON, extraireListe, objetsComplets, creerDemandeur } from "../src/commun/outils.js";
-import { scorePondere, elo, lancerUsine, messagesGenerationVisionnaire, selectionDiverse, estPropre } from "../src/usine/pipeline.js";
+import { repartirLentilles, scorePondere, elo, lancerUsine, messagesGenerationVisionnaire, selectionDiverse, estPropre } from "../src/usine/pipeline.js";
 import { lireArxiv } from "../src/usine/signaux.js";
 import { lireHN, lireAvisAppStore, lireTopAppStore, lireStackExchange, lireLemmy, PHRASES_ACHAT } from "../src/radar/sources.js";
 import { extraireDouleurs, regrouper, forceGisement, messagesExtraction } from "../src/radar/douleurs.js";
@@ -246,4 +246,12 @@ test("chaîne complète simulée : radar → gisements → usine → enquête", 
   await enqueter({ finalistes: r.classement.slice(0, 3), demandeur, config: petit });
   assert.ok(r.classement[0].enquete.concurrents[0].verifie);
   assert.ok(demandeur.stats.appels > 0 && demandeur.stats.echecs === 0);
+});
+
+test("méthodes : les lentilles qui réussissent reçoivent plus d'essais, chacune garde sa chance", () => {
+  const r = repartirLentilles(["a", "b", "c"], { a: 7.5, b: 6, c: 5.5 }, 30);
+  const n = (l) => r.filter((x) => x === l).length;
+  assert.equal(r.length, 30);
+  assert.ok(n("a") > n("b") && n("b") >= n("c") && n("c") >= 3, JSON.stringify([n("a"), n("b"), n("c")]));
+  assert.equal(repartirLentilles(["a", "b"], {}, 4).filter((x) => x === "a").length, 2);
 });

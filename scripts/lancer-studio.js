@@ -31,6 +31,7 @@ const atlasVivant = await lire("config/atlas-vivant.json", { apis: [] });
 const historique = await lire(`${dossierEtat}/gisements.json`, []);
 const graines = await lire(`${dossierEtat}/graines.json`, []);
 const dejaVues = await lire(`${dossierEtat}/deja_vues.json`, []);
+const notesLentilles = await lire(`${dossierEtat}/lentilles.json`, {});
 const enTete = await lire(`${dossierEtat}/gisements_en_tete.json`, {}); // gisement -> nombre de passages où il était dans le top 10
 const panelPrecedent = await lire(`${dossierEtat}/marche-agents.json`, {});
 const santeAtlasPrecedente = await lire(`${dossierEtat}/atlas-sante.json`, {});
@@ -86,7 +87,7 @@ chrono("failles", t0);
 // 4. Usine.
 t0 = Date.now();
 const signaux = [...(await collecterSignaux()), ...signauxMarche(analyse)];
-const usine = await lancerUsine({ config, atlas, gisements, gisementsMarche, gisementsFailles, temoins, signaux, graines, dejaVues, demandeur, graine, journal });
+const usine = await lancerUsine({ notesLentilles, config, atlas, gisements, gisementsMarche, gisementsFailles, temoins, signaux, graines, dejaVues, demandeur, graine, journal });
 chrono("usine", t0);
 
 // 5. Enquête, preuves du marché, élan et classement à preuves.
@@ -133,6 +134,14 @@ await writeFile(
 );
 for (const i of opportunites.slice(0, 10)) if (i.gisement?.id) enTete[i.gisement.id] = (enTete[i.gisement.id] ?? 0) + 1;
 await writeFile(`${dossierSortie}/etat/gisements_en_tete.json`, JSON.stringify(enTete));
+// Mémoire des méthodes : moyenne glissante du score final par lentille (70 % passé, 30 % aujourd'hui).
+const parLentille = {};
+for (const i of opportunites) (parLentille[i.lentille] ??= []).push(i.final.total);
+for (const [l, xs] of Object.entries(parLentille)) {
+  const m = xs.reduce((a, b) => a + b, 0) / xs.length;
+  notesLentilles[l] = Number.isFinite(notesLentilles[l]) ? +(0.7 * notesLentilles[l] + 0.3 * m).toFixed(3) : +m.toFixed(3);
+}
+await writeFile(`${dossierSortie}/etat/lentilles.json`, JSON.stringify(notesLentilles));
 await writeFile(`${dossierSortie}/etat/deja_vues.json`, JSON.stringify([...opportunites.slice(0, 20).map((i) => i.titre), ...dejaVues].slice(0, 300), null, 1));
 await writeFile(`${dossierSortie}/sante-studio.json`, JSON.stringify(sante, null, 1));
 await writeFile(`${dossierSortie}/etat/marche-agents.json`, JSON.stringify(panel));
@@ -203,6 +212,9 @@ const md = [
   ...top.slice(0, 5).map(dossierMd),
   "## Suivantes",
   ...top.slice(5).map((i, k) => `${k + 6}. **${i.titre}** (${i.final.total}) — ${i.probleme}`),
+  "",
+  "## Méthodes qui marchent (moyenne glissante, elles reçoivent plus d'essais demain)",
+  ...Object.entries(notesLentilles).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([l, n]) => `- ${l} : ${n}`),
   "",
   "## Gisements les plus forts",
   ...gisements.slice(0, 12).map((g) => `- **${g.nom}** — ${g.n} mentions (${g.n_jour} aujourd'hui), ${Object.keys(g.sources).length} sources, force ${g.force}`),

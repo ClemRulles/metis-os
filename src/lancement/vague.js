@@ -164,10 +164,14 @@ export async function lancerVague({ opportunites, config, lancement, demandeur, 
   const exclus = (i) => (config.themes_exclus ?? []).some((t) => `${i.titre} ${i.probleme} ${i.pour_qui} ${i.solution}`.toLowerCase().includes(t.toLowerCase()));
 
   // Candidats : les meilleures opportunités qui tiennent (pas d'abandon, pas de risque juridique élevé, pas déjà testées).
+  // Seuil : seules les idées assez fortes méritent un test (score, paiement observé, originalité mesurée).
+  const seuil = { score: 6.8, paiement: 6, originalite: 5, ...(lancement.seuil ?? {}) };
+  const auSeuil = (i) => i.final.total >= seuil.score && (i.final.composantes?.paiement_prouve ?? 0) >= seuil.paiement && (i.final.composantes?.originalite_mesuree ?? 5) >= seuil.originalite;
   const candidats = opportunites
-    .filter((i) => i.final && i.enquete?.verdict !== "abandonner" && (i.enquete?.risque_juridique ?? i.critique?.risque_juridique) !== "eleve" && i.critique?.conforme !== false && !aspire(i) && !exclus(i) && !deja.has(String(i.titre).toLowerCase()))
+    .filter((i) => i.final && auSeuil(i) && i.enquete?.verdict !== "abandonner" && (i.enquete?.risque_juridique ?? i.critique?.risque_juridique) !== "eleve" && i.critique?.conforme !== false && !aspire(i) && !exclus(i) && !deja.has(String(i.titre).toLowerCase()))
     .slice(0, lancement.candidats ?? 12);
-  journal(`vague : ${candidats.length} candidats`);
+  journal(`vague : ${candidats.length} candidats au-dessus du seuil (score ${seuil.score}, paiement ${seuil.paiement}, originalité ${seuil.originalite})`);
+  if (!candidats.length) return { candidats: 0, plans: 0, classement: [], choisis: [], prets: [], seuil };
 
   // Round 2 : deux plans par idée, par deux cerveaux différents, puis l'avocat du diable.
   const demandes = candidats.flatMap((idee) => {
@@ -244,14 +248,14 @@ export async function lancerVague({ opportunites, config, lancement, demandeur, 
   });
   const prets = choisis.filter((p) => p.fiche && p.contenuOk);
   journal(`vague : ${choisis.length} sélectionnés, ${prets.length} pages au contenu crédible`);
-  return { candidats: candidats.length, plans: plans.length, classement, choisis, prets };
+  return { candidats: candidats.length, plans: plans.length, classement, choisis, prets, seuil };
 }
 
 export function rapportVagueMd({ date, vague, deploiement }) {
   const lignes = [
     `# Vague de lancement du ${date}`,
     "",
-    `${vague.candidats} opportunités candidates → ${vague.plans} plans de lancement critiqués → tournoi → ${vague.choisis.length} sélectionnés → ${vague.prets.length} pages qui franchissent la porte de crédibilité (contenu).`,
+    vague.candidats === 0 ? `Aucune opportunité n'atteint le seuil (score ${vague.seuil?.score}, paiement ${vague.seuil?.paiement}, originalité ${vague.seuil?.originalite}) : pas de vague aujourd'hui, aucun coût.` : `${vague.candidats} opportunités au-dessus du seuil → ${vague.plans} plans de lancement critiqués → tournoi → ${vague.choisis.length} sélectionnés → ${vague.prets.length} pages qui franchissent la porte de crédibilité (contenu).`,
     "",
     `**Mise en ligne :** ${deploiement}`,
     "",
