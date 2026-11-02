@@ -7,6 +7,7 @@
   "rondes": 3,
   "max_par_arene": 2,
   "demos_par_vague": 3,
+  "offre_par_defaut": "clic",
   "seuil": { "score": 6.8, "paiement": 6, "originalite": 5 },
   "budget_vague_eur": 0,
   "minutes_humaines_par_test": 0,

@@ -10,7 +10,9 @@ if (!rep.ok) {
   process.exit(1);
 }
 const s = await rep.json();
+// Une inscription ou un clic « je veux ce service » comptent tous deux comme un signal d'intérêt.
 const inscrits = new Map(s.inscriptions.map((x) => [x.experience, x.inscriptions]));
+for (const c of s.clics ?? []) inscrits.set(c.experience, (inscrits.get(c.experience) ?? 0) + c.clics);
 const verdicts = s.visites.map((v) => {
   const n = inscrits.get(v.experience) ?? 0;
   return { experience: v.experience, visiteurs: v.visites, inscriptions: n, taux: +(n / Math.max(1, v.visites)).toFixed(4), verdict: verdict(v.visites, n), seuils: seuils(v.visites), sources: s.sources.filter((x) => x.experience === v.experience) };

@@ -17,5 +17,13 @@ CREATE TABLE IF NOT EXISTS inscriptions (
   cree TEXT NOT NULL DEFAULT (datetime('now')),
   UNIQUE (experience, email)
 );
+-- Mode « clic » : on compte l'intérêt sans aucune donnée personnelle (ni e-mail, ni adresse IP).
+CREATE TABLE IF NOT EXISTS clics (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  experience TEXT NOT NULL,
+  source TEXT,
+  pays TEXT,
+  cree TEXT NOT NULL DEFAULT (datetime('now'))
+);
 CREATE INDEX IF NOT EXISTS idx_visites_exp ON visites (experience, jour);
 CREATE INDEX IF NOT EXISTS idx_inscriptions_exp ON inscriptions (experience);

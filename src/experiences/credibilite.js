@@ -22,8 +22,9 @@ export function verifierCredibilite(html, fiche) {
 
   ajouter("statut-honnete", /en préparation/i.test(visible), "La page dit clairement que le service n'existe pas encore.");
   ajouter("mentions-editeur", rempli(editeur.nom) && rempli(editeur.adresse) && rempli(editeur.contact), "Éditeur identifié : nom, adresse géographique, contact (Code de droit économique, livre XII).");
-  ajouter("confidentialite", /id="confidentialite"/.test(html) && /consentement/i.test(visible) && /supprimer/i.test(visible), "Notice de confidentialité : finalité, base légale, durée, droit de suppression (RGPD).");
-  ajouter("consentement-explicite", /type="checkbox"[^>]*required/.test(html), "Case de consentement non précochée et obligatoire.");
+  const clic = fiche?.offre === "clic";
+  ajouter("confidentialite", /id="confidentialite"/.test(html) && (clic ? /aucune/i.test(visible) : /consentement/i.test(visible) && /supprimer/i.test(visible)), clic ? "Notice : aucune donnée personnelle collectée." : "Notice de confidentialité : finalité, base légale, durée, droit de suppression (RGPD).");
+  ajouter("consentement-explicite", clic ? !/type="email"/.test(html) : /type="checkbox"[^>]*required/.test(html), clic ? "Mode clic : aucun champ de donnée personnelle." : "Case de consentement non précochée et obligatoire.");
   ajouter("prix-affiche", rempli(fiche?.prix), "Le prix prévu est affiché.");
   ajouter("precommande-remboursable", fiche?.offre !== "precommande" || /remboursable/i.test(visible), "Une précommande est explicitement remboursable.");
   ajouter("noindex-test", /noindex/.test(html) || fiche?.indexer === true, "Page de test non indexée par défaut.", false);

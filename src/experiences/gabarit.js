@@ -9,7 +9,24 @@ const esc = (t) =>
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
 
+function blocAction(f, precommande, clic) {
+  if (clic)
+    return `<div class="carte" id="inscription">
+<button type="button" id="b">${esc(f.cta ?? "Je veux ce service")}</button>
+<p class="mentions" id="msg">Un clic suffit : nous comptons l'intérêt, sans vous demander aucune donnée.</p>
+</div>`;
+  return `<div class="carte" id="inscription">
+<form id="f">
+<input type="email" name="email" required placeholder="votre@adresse.email" autocomplete="email" aria-label="Adresse e-mail">
+<button type="submit">${esc(f.cta ?? (precommande ? "Je précommande" : "Prévenez-moi au lancement"))}</button>
+<label class="mentions" style="flex-basis:100%"><input type="checkbox" name="accord" required> J'accepte d'être contacté(e) par e-mail au sujet de ${esc(f.nom)}. Désinscription en un clic, à tout moment.</label>
+</form>
+<p class="mentions" id="msg">${precommande ? `Aucun paiement aujourd'hui : vous serez prévenu(e) avant tout prélèvement, et la précommande reste remboursable sans condition.` : "Un seul e-mail au lancement, puis seulement si vous le souhaitez."}</p>
+</div>`;
+}
+
 export function rendrePage(f) {
+  const clic = f.offre === "clic"; // aucune donnée personnelle : on compte seulement l'intérêt
   const li = (xs) => (xs ?? []).map((x) => `<li>${esc(x)}</li>`).join("");
   const etapes = (f.comment ?? []).map((x, k) => `<li><span class="n">${k + 1}</span><p>${esc(x)}</p></li>`).join("");
   const faq = (f.faq ?? []).map((q) => `<details><summary>${esc(q.question)}</summary><p>${esc(q.reponse)}</p></details>`).join("");
@@ -42,17 +59,10 @@ footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;font-size:13px;color
 </head>
 <body>
 <main>
-<span class="etat">${precommande ? "En préparation · précommande remboursable" : "En préparation · liste d'attente"}</span>
+<span class="etat">${precommande ? "En préparation · précommande remboursable" : clic ? "En préparation" : "En préparation · liste d'attente"}</span>
 <h1>${esc(f.accroche)}</h1>
 <p class="sous">${esc(f.sous_titre)}</p>
-<div class="carte" id="inscription">
-<form id="f">
-<input type="email" name="email" required placeholder="votre@adresse.email" autocomplete="email" aria-label="Adresse e-mail">
-<button type="submit">${esc(f.cta ?? (precommande ? "Je précommande" : "Prévenez-moi au lancement"))}</button>
-<label class="mentions" style="flex-basis:100%"><input type="checkbox" name="accord" required> J'accepte d'être contacté(e) par e-mail au sujet de ${esc(f.nom)}. Désinscription en un clic, à tout moment.</label>
-</form>
-<p class="mentions" id="msg">${precommande ? `Aucun paiement aujourd'hui : vous serez prévenu(e) avant tout prélèvement, et la précommande reste remboursable sans condition.` : "Un seul e-mail au lancement, puis seulement si vous le souhaitez."}</p>
-</div>
+${blocAction(f, precommande, clic)}
 ${f.demo_url ? `<p class="mentions"><a href="${esc(f.demo_url)}">Voir un aperçu construit avec des données réelles</a> (démonstration, le service complet est en préparation).</p>` : ""}
 <h2>Le problème</h2>
 <ul class="pts">${li(f.probleme_points)}</ul>
@@ -68,13 +78,19 @@ ${faq ? `<h2>Questions</h2>${faq}` : ""}
 <footer>
 <p><strong>${esc(f.nom)}</strong> est un projet en préparation. Ce site présente un service qui n'est pas encore disponible ; il sert à mesurer l'intérêt avant de le construire.</p>
 <p id="mentions-legales"><strong>Éditeur :</strong> ${esc(f.editeur?.nom)} — ${esc(f.editeur?.adresse)}${f.editeur?.bce ? ` — numéro d'entreprise ${esc(f.editeur.bce)}` : ""} — contact : <a href="mailto:${esc(f.editeur?.contact)}">${esc(f.editeur?.contact)}</a>. Hébergement : Cloudflare, Inc.</p>
-<p id="confidentialite"><strong>Données personnelles :</strong> votre adresse e-mail sert uniquement à vous informer du lancement de ${esc(f.nom)} (base légale : votre consentement). Elle est conservée au plus 12 mois, jamais vendue ni partagée. Vous pouvez la faire supprimer en écrivant à ${esc(f.editeur?.contact)}. Aucun cookie publicitaire ; la page compte ses visites de façon anonyme.</p>
+${clic ? `<p id="confidentialite"><strong>Données personnelles :</strong> aucune. Cette page ne demande ni e-mail ni compte ; elle compte de façon anonyme les visites et les clics (sans cookie ni adresse IP conservée).</p>` : `<p id="confidentialite"><strong>Données personnelles :</strong> votre adresse e-mail sert uniquement à vous informer du lancement de ${esc(f.nom)} (base légale : votre consentement). Elle est conservée au plus 12 mois, jamais vendue ni partagée. Vous pouvez la faire supprimer en écrivant à ${esc(f.editeur?.contact)}. Aucun cookie publicitaire ; la page compte ses visites de façon anonyme.</p>`}
 </footer>
 <script>
 (function(){
   var API=${JSON.stringify(f.api_url ?? "")}, X=${JSON.stringify(f.slug)};
   var q=new URLSearchParams(location.search), src=q.get("utm_source")||document.referrer.split("/")[2]||"direct";
   try{ if(API) navigator.sendBeacon(API+"/visite", JSON.stringify({experience:X, source:src})); }catch(e){}
+  var b=document.getElementById("b");
+  if(b){ b.addEventListener("click", function(){
+    try{ if(API) fetch(API+"/clic",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({experience:X,source:src})}); }catch(e){}
+    document.getElementById("msg").innerHTML='<span class="ok">Merci, c\\'est compté.</span> Le service est en préparation.';
+    b.disabled=true;
+  }); return; }
   document.getElementById("f").addEventListener("submit", function(ev){
     ev.preventDefault();
     var d=new FormData(ev.target), m=document.getElementById("msg");

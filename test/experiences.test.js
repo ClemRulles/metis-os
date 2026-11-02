@@ -33,3 +33,13 @@ test("porte de crédibilité : bloque les faux avis, la fausse urgence, l'offre 
   assert.equal(r.ok, false);
   for (const id of ["mentions-editeur", "api-branchee", "interdit-étoiles", "interdit-compteur", "interdit-fausse", "interdit-offre"]) assert.ok(r.bloquants.includes(id), id);
 });
+
+test("mode clic : aucune donnée personnelle, porte franchie", () => {
+  const f = { ...fiche, offre: "clic" };
+  const html = rendrePage(f);
+  assert.doesNotMatch(html, /type="email"/);
+  assert.match(html, /\/clic/);
+  assert.match(html, /Données personnelles :<\/strong> aucune/);
+  const r = verifierCredibilite(html, f);
+  assert.equal(r.ok, true, JSON.stringify(r.bloquants));
+});

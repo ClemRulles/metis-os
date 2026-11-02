@@ -122,7 +122,7 @@ export function messagesRelecture({ fiche, bloquants }) {
 const texte = (x, n = 400) => (typeof x === "string" ? x.trim().slice(0, n) : "");
 const liste = (x, n, m = 240) => (Array.isArray(x) ? x.map((y) => texte(y, m)).filter(Boolean).slice(0, n) : []);
 
-export function normaliserFiche(brute, { slug, editeur, apiUrl }) {
+export function normaliserFiche(brute, { slug, editeur, apiUrl, offreParDefaut = null }) {
   const f = brute ?? {};
   return {
     slug,
@@ -134,7 +134,7 @@ export function normaliserFiche(brute, { slug, editeur, apiUrl }) {
     pour_qui: texte(f.pour_qui, 260),
     prix: texte(f.prix, 60),
     condition_prix: texte(f.condition_prix, 200) || undefined,
-    offre: f.offre === "precommande" ? "precommande" : "liste",
+    offre: offreParDefaut === "clic" ? "clic" : f.offre === "precommande" ? "precommande" : "liste",
     cta: texte(f.cta, 40) || undefined,
     faq: (Array.isArray(f.faq) ? f.faq : []).filter((q) => q && q.question && q.reponse).slice(0, 5).map((q) => ({ question: texte(q.question, 140), reponse: texte(q.reponse, 400) })),
     langue: /^[a-z]{2}$/.test(f.langue ?? "") ? f.langue : "fr",
@@ -233,12 +233,12 @@ export async function lancerVague({ opportunites, config, lancement, demandeur, 
     const { valeur, cerveau: auteur } = await demandeur.demander([choisir(alea, cerveaux)], messagesFiche({ config, ...p }), { temperature: 0.6, maxTokens: 3000, autres: cerveaux, lire: (t) => { const j = extraireJSON(t); return j && j.accroche && j.nom ? j : null; } });
     if (!valeur) return;
     p.slug = slugifier(valeur.nom, slugs);
-    let fiche = normaliserFiche(valeur, { slug: p.slug, editeur, apiUrl: lancement.api_url });
+    let fiche = normaliserFiche(valeur, { slug: p.slug, editeur, apiUrl: lancement.api_url, offreParDefaut: lancement.offre_par_defaut });
     let rapport = verifierCredibilite(rendrePage(fiche), fiche);
     const relecteurs = cerveaux.filter((c) => c !== auteur);
     const { valeur: revue } = await demandeur.demander([choisir(alea, relecteurs)], messagesRelecture({ fiche: { ...fiche, editeur: undefined, api_url: undefined }, bloquants: bloquantsDeContenu(rapport) }), { temperature: 0.3, maxTokens: 3000, autres: relecteurs, lire: (t) => { const j = extraireJSON(t); return j && j.accroche ? j : null; } });
     if (revue) {
-      const f2 = normaliserFiche(revue, { slug: p.slug, editeur, apiUrl: lancement.api_url });
+      const f2 = normaliserFiche(revue, { slug: p.slug, editeur, apiUrl: lancement.api_url, offreParDefaut: lancement.offre_par_defaut });
       const r2 = verifierCredibilite(rendrePage(f2), f2);
       if (bloquantsDeContenu(r2).length <= bloquantsDeContenu(rapport).length) [fiche, rapport] = [f2, r2];
     }

@@ -24,12 +24,20 @@ export default {
       await env.DB.prepare("INSERT OR IGNORE INTO inscriptions (experience, email, source, pays, accord) VALUES (?, ?, ?, ?, 1)").bind(d.experience, d.email.trim().toLowerCase(), String(d.source ?? "").slice(0, 80), pays).run();
       return json({ ok: true });
     }
+    if (req.method === "POST" && url.pathname === "/clic") {
+      if (ROBOT.test(req.headers.get("user-agent") ?? "")) return json({ ok: true });
+      const d = await req.json().catch(() => ({}));
+      if (!EXP.test(d.experience ?? "")) return json({ erreur: "experience" }, 400);
+      await env.DB.prepare("INSERT INTO clics (experience, source, pays) VALUES (?, ?, ?)").bind(d.experience, String(d.source ?? "").slice(0, 80), pays).run();
+      return json({ ok: true });
+    }
     if (req.method === "GET" && url.pathname === "/stats") {
       if (!env.STATS_TOKEN || req.headers.get("authorization") !== `Bearer ${env.STATS_TOKEN}`) return json({ erreur: "acces" }, 401);
       const v = await env.DB.prepare("SELECT experience, COUNT(*) AS visites FROM visites GROUP BY experience").all();
       const i = await env.DB.prepare("SELECT experience, COUNT(*) AS inscriptions FROM inscriptions GROUP BY experience").all();
       const s = await env.DB.prepare("SELECT experience, source, COUNT(*) AS n FROM visites GROUP BY experience, source").all();
-      return json({ visites: v.results, inscriptions: i.results, sources: s.results });
+      const c = await env.DB.prepare("SELECT experience, COUNT(*) AS clics FROM clics GROUP BY experience").all();
+      return json({ visites: v.results, inscriptions: i.results, clics: c.results, sources: s.results });
     }
     return json({ erreur: "introuvable" }, 404);
   },
