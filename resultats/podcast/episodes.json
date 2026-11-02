@@ -96,5 +96,19 @@
   "auteur_script": "glm",
   "mots": 1303,
   "cout_usd": 0.0014
+ },
+ {
+  "numero": 8,
+  "date": "2026-11-02",
+  "titre": "Métis, le matin : Donner des yeux à une machine",
+  "resume": "Hier, la machine a lu 763 textes réels, produit 645 idées notées, pour 0,47 dollar et 27 minutes de travail. La leçon du jour : comment une IA voit le web grâce à la recherche externe, ce que coûte une vraie enquête, et pourquoi la citation change tout.",
+  "question_du_jour": "Quand une machine vous cite une source trouvée sur le web, quelle est votre première réaction : cliquer pour vérifier, faire confiance parce que la citation existe, ou reposer la question autrement ?",
+  "lecon": "Donner des yeux à une IA : la recherche web",
+  "duree": 610,
+  "taille": 3658125,
+  "audio": "https://github.com/ClemRulles/metis-os/releases/download/podcast-008/metis-matin-008.mp3",
+  "auteur_script": "glm",
+  "mots": 1657,
+  "cout_usd": 0.0009
  }
 ]
