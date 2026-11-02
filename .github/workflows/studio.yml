@@ -10,9 +10,6 @@ on:
     # qui ne font rien si le passage du jour existe déjà.
     - cron: "17 5 * * *"
     - cron: "29 9 * * *"
-  push:
-    branches: [main]
-    paths: [".github/workflows/studio.yml", "config/usine.json", "config/atlas-api.json", "src/usine/**", "src/radar/**", "src/enquete/**", "src/marche/**", "src/atlas/**", "src/failles/**", "config/atlas-vivant.json", "src/commun/**", "scripts/lancer-studio.js"]
 
 permissions:
   contents: write

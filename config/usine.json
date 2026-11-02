@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "note": "Usine v3, ancrée dans le réel et dans l'argent. Tout est réglable ici sans toucher au code. 1er nov. au soir : marché des agents (Apify Store, registre MCP) en source de gisements payés, preuve de paiement stricte (prix lu sur la page), élan mesuré (Hacker News, GitHub), mercury-3 ajouté (8× plus rapide à qualité égale selon l'éclaireur). 2 nov. : mimo retiré (17 % d'échecs par délai dépassé), remplacé par mercury. 2 nov. après-midi : détecteurs de failles (transplants depuis l'étranger, logiciels abandonnés, demandes ignorées, demande payée mal servie), témoin « réflexe d'assistant IA » à ne pas refaire et originalité mesurée ; part des plaintes App Store réduite.",
+  "note": "Usine v3, ancrée dans le réel et dans l'argent. Tout est réglable ici sans toucher au code. 1er nov. au soir : marché des agents (Apify Store, registre MCP) en source de gisements payés, preuve de paiement stricte (prix lu sur la page), élan mesuré (Hacker News, GitHub), mercury-3 ajouté (8× plus rapide à qualité égale selon l'éclaireur). 2 nov. : mimo retiré (17 % d'échecs par délai dépassé), remplacé par mercury. 2 nov. après-midi : détecteurs de failles (transplants depuis l'étranger, logiciels abandonnés, demandes ignorées, demande payée mal servie), témoin « réflexe d'assistant IA » à ne pas refaire et originalité mesurée ; part des plaintes App Store réduite. 2 nov. soir : volumes divisés par deux environ et plafond à 0,30 $ par passage (budget de 10 $).",
   "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
   "cerveaux_generation": [
     "deepseek",
@@ -25,19 +25,20 @@
     "minimax"
   ],
   "moteur_web": "parallel",
-  "plafond_cout_usd": 0.9,
+  "plafond_cout_usd": 0.3,
   "volumes": {
-    "generations": 96,
+    "generations": 60,
     "idees_par_generation": 5,
     "part_ancree": 0.55,
-    "finalistes_tournoi": 32,
-    "rondes_tournoi": 5,
+    "finalistes_tournoi": 24,
+    "rondes_tournoi": 4,
     "max_finalistes_par_arene": 5,
     "max_finalistes_par_gisement": 2,
-    "enquetes": 15,
+    "enquetes": 10,
     "top_publie": 10,
-    "generations_marche": 18,
-    "generations_failles": 48
+    "generations_marche": 10,
+    "generations_failles": 30,
+    "transplants_verifies": 8
   },
   "arenes": {
     "grand-public": "Particuliers : vie quotidienne, argent, logement, mobilité, consommation.",
