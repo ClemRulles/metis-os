@@ -1,32 +1,36 @@
 {
  "date": "2026-11-02",
- "dureeSecondes": 1216,
- "coutUsd": 0.352,
- "appelsModeles": 943,
+ "dureeSecondes": 1722,
+ "coutUsd": 0.4581,
+ "appelsModeles": 1848,
  "etapes": {
   "radar": {
-   "secondes": 219,
-   "coutCumuleUsd": 0.0231
+   "secondes": 342,
+   "coutCumuleUsd": 0.0305
   },
   "marche": {
-   "secondes": 5,
-   "coutCumuleUsd": 0.0231
+   "secondes": 6,
+   "coutCumuleUsd": 0.0305
   },
   "atlas": {
-   "secondes": 24,
-   "coutCumuleUsd": 0.0231
+   "secondes": 25,
+   "coutCumuleUsd": 0.0305
+  },
+  "failles": {
+   "secondes": 232,
+   "coutCumuleUsd": 0.1228
   },
   "usine": {
-   "secondes": 854,
-   "coutCumuleUsd": 0.2656
+   "secondes": 993,
+   "coutCumuleUsd": 0.3752
   },
   "enquete": {
-   "secondes": 25,
-   "coutCumuleUsd": 0.352
+   "secondes": 29,
+   "coutCumuleUsd": 0.4581
   },
   "elan": {
-   "secondes": 90,
-   "coutCumuleUsd": 0.352
+   "secondes": 96,
+   "coutCumuleUsd": 0.4581
   }
  },
  "sources": {
@@ -37,7 +41,7 @@
    "n": 59
   },
   "appstore": {
-   "n": 5,
+   "n": 1546,
    "categories": [
     "Shopping",
     "Utilitaires",
@@ -59,69 +63,93 @@
    "n": 8000,
    "complet": false
   },
+  "yc": {
+   "n": 429
+  },
+  "show_hn": {
+   "n": 60
+  },
+  "product_hunt": {
+   "n": 50
+  },
+  "github_montants": {
+   "n": 40
+  },
+  "mastodon": {
+   "n": 20
+  },
+  "x": {
+   "n": 0,
+   "note": "inactif (pas de X_BEARER_TOKEN)"
+  },
+  "abandonnes": {
+   "n": 23
+  },
+  "demandes_ignorees": {
+   "n": 43
+  },
+  "demande_payee": {
+   "n": 10
+  },
+  "transplants": {
+   "n": 14
+  },
   "atlas": {
-   "vivantes": 26,
+   "vivantes": 24,
    "total": 36
   }
  },
  "cerveaux": {
   "qwen": {
-   "ok": 234,
+   "ok": 354,
+   "echecs": 1,
+   "tauxEchec": 0,
+   "msMoyen": 9385,
+   "exempleErreur": "réponse illisible (fin : stop) : []"
+  },
+  "deepseek": {
+   "ok": 341,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 8439,
+   "msMoyen": 10135,
    "exempleErreur": null
   },
   "mercury": {
-   "ok": 33,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 5317,
-   "exempleErreur": null
-  },
-  "deepseek": {
-   "ok": 245,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 7231,
-   "exempleErreur": null
-  },
-  "mistral": {
-   "ok": 6,
-   "echecs": 1,
-   "tauxEchec": 0.14,
-   "msMoyen": 15661,
-   "exempleErreur": "réponse illisible (fin : stop) : []"
-  },
-  "mimo": {
-   "ok": 185,
-   "echecs": 37,
-   "tauxEchec": 0.17,
-   "msMoyen": 15906,
-   "exempleErreur": "aucun fournisseur pour mimo (openrouter : The operation was aborted due to timeout ; groq : clé absente)"
+   "ok": 119,
+   "echecs": 208,
+   "tauxEchec": 0.64,
+   "msMoyen": 11067,
+   "exempleErreur": "aucun fournisseur pour mercury (openrouter : HTTP 429 ; groq : clé absente)"
   },
   "glm": {
-   "ok": 236,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 5294,
-   "exempleErreur": null
+   "ok": 352,
+   "echecs": 4,
+   "tauxEchec": 0.01,
+   "msMoyen": 7374,
+   "exempleErreur": "réponse illisible (fin : stop) : {\"idees\": [2, 1, 4, 3, 5]}"
+  },
+  "mistral": {
+   "ok": 23,
+   "echecs": 3,
+   "tauxEchec": 0.12,
+   "msMoyen": 31114,
+   "exempleErreur": "aucun fournisseur pour mistral (openrouter : HTTP 429 ; groq : clé absente)"
   }
  },
  "stats": {
-  "brut": 446,
-  "douleurs": 183,
-  "gisements": 916,
+  "brut": 762,
+  "douleurs": 431,
+  "gisements": 1144,
   "gisementsMarche": 12,
-  "generees": 686,
-  "parasites": 12,
-  "idees": 663,
-  "notees": 523,
-  "nonConformes": 140,
+  "generees": 800,
+  "parasites": 3,
+  "idees": 793,
+  "notees": 607,
+  "nonConformes": 186,
   "finalistes": 32,
   "duels": 80,
   "enquetes": 15,
-  "prixLus": 3,
-  "elanMesure": 13
+  "prixLus": 2,
+  "elanMesure": 12
  }
 }

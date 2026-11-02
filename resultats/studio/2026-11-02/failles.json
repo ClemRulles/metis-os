@@ -1,0 +1,3117 @@
+{
+ "failles": [
+  {
+   "type": "transplant",
+   "titre": "Base de données et moteur de recherche de livres mentionnés sur Hacker News, générée et maintenue par IA.",
+   "resume": "Traction à l'étranger (Show HN : points HN 1713) ; en Europe francophone : absent.",
+   "force": 10,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "points HN",
+     "valeur": 1713,
+     "commentaires": 281
+    }
+   },
+   "preuves": [
+    {
+     "texte": "HackerBooks – HackerTube, but for books mentioned on HN — Saw Karpathy's HackerTube and wanted the same thing for books. So I had Claude build one (Opus 5.5). It's ~16.5k books that at least two different HN commenters brought up, from 2007 till now. Each book links back to the comments that mention",
+     "url": "https://hackerbooks.org",
+     "source": "Show HN"
+    }
+   ],
+   "mots_en": [
+    "HN book database",
+    "curated reading list"
+   ],
+   "public": "Lecteurs curieux et chercheurs suivant les tendances littéraires sur les communautés tech."
+  },
+  {
+   "type": "transplant",
+   "titre": "Un outil génératif qui crée des illustrations isométriques interactives et détaillées de machines réelles à partir de descriptions.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 24027) ; en Europe francophone : absent.",
+   "force": 10,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 24027
+    }
+   },
+   "preuves": [
+    {
+     "texte": "wheresryan22/anatomy — An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
+     "url": "https://github.com/wheresryan22/anatomy",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "isometric illustration",
+    "SVG generator"
+   ],
+   "public": "Designer technique, développeur frontend, créateur de contenu éducatif"
+  },
+  {
+   "type": "transplant",
+   "titre": "Un tableur open-source compatible avec le format Excel, développé en Rust pour la robustesse.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 7015) ; en Europe francophone : absent.",
+   "force": 10,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 7015
+    }
+   },
+   "preuves": [
+    {
+     "texte": "storytold/gridcraft — GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft.",
+     "url": "https://github.com/storytold/gridcraft",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "open source spreadsheet",
+    "rust excel clone"
+   ],
+   "public": "Comptables, analystes de données, utilisateurs de bureautique"
+  },
+  {
+   "type": "transplant",
+   "titre": "Jeu de simulation urbaine centré sur la gestion complexe des permis et de la bureaucratie administrative.",
+   "resume": "Traction à l'étranger (Show HN : points HN 941) ; en Europe francophone : absent.",
+   "force": 8,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "points HN",
+     "valeur": 941,
+     "commentaires": 428
+    }
+   },
+   "preuves": [
+    {
+     "texte": "SimCity, but with Permits — ",
+     "url": "https://permit.petercai.com/",
+     "source": "Show HN"
+    }
+   ],
+   "mots_en": [
+    "city building game permits",
+    "urban simulation strategy"
+   ],
+   "public": "Amateurs de jeux de stratégie et de simulation de gestion urbaine."
+  },
+  {
+   "type": "transplant",
+   "titre": "Outil humoristique créant des polices de caractères déformées en abusant des fonctionnalités OpenType dans le navigateur.",
+   "resume": "Traction à l'étranger (Show HN : points HN 862) ; en Europe francophone : absent.",
+   "force": 8,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "points HN",
+     "valeur": 862,
+     "commentaires": 126
+    }
+   },
+   "preuves": [
+    {
+     "texte": "Make cursed fonts like Times New Bastard — A joke tool that abuses OpenType's ligature feature to mix fonts. It works pretty fast on client-side by loading Python in WASM.",
+     "url": "https://bastardica.mitpit.com",
+     "source": "Show HN"
+    }
+   ],
+   "mots_en": [
+    "cursed font generator",
+    "OpenType ligature tool"
+   ],
+   "public": "Designer graphiques, développeurs web et amateurs de design expérimental."
+  },
+  {
+   "type": "transplant",
+   "titre": "Une alternative open-source au traitement de texte Microsoft Word, développée en Rust pour la performance et la sécurité.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 17015) ; en Europe francophone : absent.",
+   "force": 8,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 17015
+    }
+   },
+   "preuves": [
+    {
+     "texte": "storytold/wordcraft — An open-source, clean-room reimplementation of Microsoft Word in pure Rust",
+     "url": "https://github.com/storytold/wordcraft",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "open source word processor",
+    "rust text editor"
+   ],
+   "public": "Utilisateurs soucieux de la confidentialité, entreprises cherchant à éviter les éditeurs propriétaires"
+  },
+  {
+   "type": "transplant",
+   "titre": "Une application CAD paramétrique 3D open-source capable de fonctionner sur bureau, web et via automatisation MCP.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 13088) ; en Europe francophone : absent.",
+   "force": 8,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 13088
+    }
+   },
+   "preuves": [
+    {
+     "texte": "tangency-labs/solidcraft — SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+     "url": "https://github.com/tangency-labs/solidcraft",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "parametric 3d cad",
+    "open source cad software"
+   ],
+   "public": "Ingénieurs, designers industriels, makers"
+  },
+  {
+   "type": "transplant",
+   "titre": "Un lanceur Android TV open-source style tvOS, conçu pour être propre, sans publicité et préinstallable sur les téléviseurs chinois.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 8979) ; en Europe francophone : embryonnaire.",
+   "force": 8,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 8979
+    }
+   },
+   "preuves": [
+    {
+     "texte": "pengchujin/aerial-tv — 给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.",
+     "url": "https://github.com/pengchujin/aerial-tv",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "android tv launcher",
+    "tvos style interface"
+   ],
+   "public": "Utilisateurs de Smart TV sous Android souhaitant une expérience épurée"
+  },
+  {
+   "type": "transplant",
+   "titre": "Une application de CAO et de dessin assisté par ordinateur open-source inspirée d'AutoCAD, écrite en Rust.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 7461) ; en Europe francophone : absent.",
+   "force": 8,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 7461
+    }
+   },
+   "preuves": [
+    {
+     "texte": "storytold/cadcraft — CADCraft: computer-aided design and drafting — an open-source, clean-room AutoCAD-style app in pure Rust",
+     "url": "https://github.com/storytold/cadcraft",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "open source autocad",
+    "rust cad drafting"
+   ],
+   "public": "Dessinateurs industriels, architectes, ingénieurs"
+  },
+  {
+   "type": "transplant",
+   "titre": "Un outil de création d'animations artistiques avec 35 styles et 9 syntaxes de narration, piloté par code.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 5982) ; en Europe francophone : absent.",
+   "force": 8,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 5982
+    }
+   },
+   "preuves": [
+    {
+     "texte": "alchaincyf/huashu-art-motion — 艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+     "url": "https://github.com/alchaincyf/huashu-art-motion",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "art animation",
+    "code animation"
+   ],
+   "public": "Artistes et développeurs créatifs"
+  },
+  {
+   "type": "transplant",
+   "titre": "Un écran d'accueil rapide et sans publicité pour les téléviseurs Google TV, LG webOS et Samsung Tizen, avec annulation en un clic.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 5723) ; en Europe francophone : absent.",
+   "force": 7.94,
+   "chiffres": {
+    "traction": 9.92,
+    "equivalents_fr": 0,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 5723
+    }
+   },
+   "preuves": [
+    {
+     "texte": "simbasjungles/free-my-tv — A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
+     "url": "https://github.com/simbasjungles/free-my-tv",
+     "source": "GitHub (nouveau, en forte hausse)"
+    }
+   ],
+   "mots_en": [
+    "TV launcher",
+    "ad-free home screen"
+   ],
+   "public": "Propriétaires de smart TV"
+  },
+  {
+   "type": "transplant",
+   "titre": "Un outil qui désencombre les téléviseurs Android ou Google TV via Wi-Fi et offre un accueil style Apple TV",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 49989) ; en Europe francophone : present (CleanYourTV (version française)).",
+   "force": 4.4,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 1,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 49989
+    }
+   },
+   "preuves": [
+    {
+     "texte": "Gathin23/cleanyourtv — Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+     "url": "https://github.com/Gathin23/cleanyourtv",
+     "source": "GitHub (nouveau, en forte hausse)"
+    },
+    {
+     "texte": "Équivalent francophone : CleanYourTV (version française)",
+     "url": "https://cleanyourtv.ai/fr/",
+     "source": "recherche web"
+    }
+   ],
+   "mots_en": [
+    "Android TV debloat",
+    "Apple TV style home"
+   ],
+   "public": "Propriétaires de Android TV ou Google TV souhaitant une interface plus propre"
+  },
+  {
+   "type": "transplant",
+   "titre": "Un utilitaire logiciel débloquant les performances tensorielles des cartes graphiques NVIDIA GeForce série 20/30/40 pour l'inférence IA.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 14378) ; en Europe francophone : embryonnaire (NV UEFI Unlocker (physicsdolphin)).",
+   "force": 4.4,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 1,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 14378
+    }
+   },
+   "preuves": [
+    {
+     "texte": "Zagitta/gpu-unlock — Your GeForce runs AI at half speed. This fixes it for 20/30/40 series cards. Up to 2× FP16 / BF16 / TF32 tensor throughput",
+     "url": "https://github.com/Zagitta/gpu-unlock",
+     "source": "GitHub (nouveau, en forte hausse)"
+    },
+    {
+     "texte": "Équivalent francophone : NV UEFI Unlocker (physicsdolphin)",
+     "url": "https://github.com/physicsdolphin/nv-uefi-unlocker",
+     "source": "recherche web"
+    }
+   ],
+   "mots_en": [
+    "gpu unlock ai",
+    "nvidia inference boost"
+   ],
+   "public": "Développeurs IA, chercheurs utilisant du matériel grand public"
+  },
+  {
+   "type": "transplant",
+   "titre": "Un moteur de recherche local qui indexe le contenu des fichiers (photos, PDF, documents, vidéos, code) sur votre ordinateur, sans cloud.",
+   "resume": "Traction à l'étranger (GitHub (nouveau, en forte hausse) : étoiles en moins de 30 jours 6117) ; en Europe francophone : present (DigUp (open source, requêtes en langage naturel, fonctionne en français via EmbeddingGemma)).",
+   "force": 4.4,
+   "chiffres": {
+    "traction": 10,
+    "equivalents_fr": 1,
+    "metrique": {
+     "type": "étoiles en moins de 30 jours",
+     "valeur": 6117
+    }
+   },
+   "preuves": [
+    {
+     "texte": "ARahim3/DigUp — Search your computer by what's in your files: photos, PDFs, documents, recordings, videos and code. On-device on Mac, Windows and Linux, built on Google DeepMind's EmbeddingGemma 2.",
+     "url": "https://github.com/ARahim3/DigUp",
+     "source": "GitHub (nouveau, en forte hausse)"
+    },
+    {
+     "texte": "Équivalent francophone : DigUp (open source, requêtes en langage naturel, fonctionne en français via EmbeddingGemma)",
+     "url": "https://github.com/ARahim3/DigUp",
+     "source": "recherche web"
+    }
+   ],
+   "mots_en": [
+    "local file search",
+    "on-device search"
+   ],
+   "public": "Utilisateurs de Mac, Windows et Linux cherchant des fichiers par contenu"
+  },
+  {
+   "type": "abandonne",
+   "titre": "react/create-react-app : Set up a modern web app by running one command.",
+   "resume": "103239 étoiles, aucune mise à jour depuis 21 mois, 2409 demandes ouvertes (JavaScript).",
+   "force": 6.93,
+   "chiffres": {
+    "etoiles": 103239,
+    "mois_sans_maj": 21,
+    "issues_ouvertes": 2409,
+    "langage": "JavaScript"
+   },
+   "preuves": [
+    {
+     "texte": "Set up a modern web app by running one command.",
+     "url": "https://github.com/react/create-react-app",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "build-tools",
+    "react",
+    "zero-configuration"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "nvbn/thefuck : Magnificent app which corrects your previous console command.",
+   "resume": "97938 étoiles, aucune mise à jour depuis 28 mois, 468 demandes ouvertes (Python).",
+   "force": 7.12,
+   "chiffres": {
+    "etoiles": 97938,
+    "mois_sans_maj": 28,
+    "issues_ouvertes": 468,
+    "langage": "Python"
+   },
+   "preuves": [
+    {
+     "texte": "Magnificent app which corrects your previous console command.",
+     "url": "https://github.com/nvbn/thefuck",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "python",
+    "shell"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "PanJiaChen/vue-element-admin : :tada: A magical vue admin https://panjiachen.github.io/vue-element-admin",
+   "resume": "90127 étoiles, aucune mise à jour depuis 25 mois, 1401 demandes ouvertes (Vue).",
+   "force": 7.2,
+   "chiffres": {
+    "etoiles": 90127,
+    "mois_sans_maj": 25,
+    "issues_ouvertes": 1401,
+    "langage": "Vue"
+   },
+   "preuves": [
+    {
+     "texte": ":tada: A magical vue admin https://panjiachen.github.io/vue-element-admin",
+     "url": "https://github.com/PanJiaChen/vue-element-admin",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "admin",
+    "admin-dashboard",
+    "admin-template"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "animate-css/animate.css : 🍿 A cross-browser library of CSS animations. As easy to use as an easy thing.",
+   "resume": "82946 étoiles, aucune mise à jour depuis 28 mois, 89 demandes ouvertes (CSS).",
+   "force": 6.6,
+   "chiffres": {
+    "etoiles": 82946,
+    "mois_sans_maj": 28,
+    "issues_ouvertes": 89,
+    "langage": "CSS"
+   },
+   "preuves": [
+    {
+     "texte": "🍿 A cross-browser library of CSS animations. As easy to use as an easy thing.",
+     "url": "https://github.com/animate-css/animate.css",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "animation",
+    "css",
+    "css-animations"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "nomic-ai/gpt4all : GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
+   "resume": "77346 étoiles, aucune mise à jour depuis 17 mois, 776 demandes ouvertes (C++).",
+   "force": 6.2,
+   "chiffres": {
+    "etoiles": 77346,
+    "mois_sans_maj": 17,
+    "issues_ouvertes": 776,
+    "langage": "C++"
+   },
+   "preuves": [
+    {
+     "texte": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
+     "url": "https://github.com/nomic-ai/gpt4all",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "ai-chat",
+    "llm-inference"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "twitter/the-algorithm : Source code for the X Recommendation Algorithm",
+   "resume": "73993 étoiles, aucune mise à jour depuis 14 mois, 524 demandes ouvertes (Scala).",
+   "force": 5.77,
+   "chiffres": {
+    "etoiles": 73993,
+    "mois_sans_maj": 14,
+    "issues_ouvertes": 524,
+    "langage": "Scala"
+   },
+   "preuves": [
+    {
+     "texte": "Source code for the X Recommendation Algorithm",
+     "url": "https://github.com/twitter/the-algorithm",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "CompVis/stable-diffusion : A latent text-to-image diffusion model",
+   "resume": "73570 étoiles, aucune mise à jour depuis 29 mois, 620 demandes ouvertes (Jupyter Notebook).",
+   "force": 6.9,
+   "chiffres": {
+    "etoiles": 73570,
+    "mois_sans_maj": 29,
+    "issues_ouvertes": 620,
+    "langage": "Jupyter Notebook"
+   },
+   "preuves": [
+    {
+     "texte": "A latent text-to-image diffusion model",
+     "url": "https://github.com/CompVis/stable-diffusion",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "kelseyhightower/nocode : The best way to write secure and reliable applications. Write nothing; deploy nowhere.",
+   "resume": "66002 étoiles, aucune mise à jour depuis 27 mois, 4726 demandes ouvertes (Dockerfile).",
+   "force": 6.9,
+   "chiffres": {
+    "etoiles": 66002,
+    "mois_sans_maj": 27,
+    "issues_ouvertes": 4726,
+    "langage": "Dockerfile"
+   },
+   "preuves": [
+    {
+     "texte": "The best way to write secure and reliable applications. Write nothing; deploy nowhere.",
+     "url": "https://github.com/kelseyhightower/nocode",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "resume/resume.github.com : Resumes generated using the GitHub informations",
+   "resume": "62907 étoiles, aucune mise à jour depuis 45 mois, 78 demandes ouvertes (JavaScript).",
+   "force": 6.31,
+   "chiffres": {
+    "etoiles": 62907,
+    "mois_sans_maj": 45,
+    "issues_ouvertes": 78,
+    "langage": "JavaScript"
+   },
+   "preuves": [
+    {
+     "texte": "Resumes generated using the GitHub informations",
+     "url": "https://github.com/resume/resume.github.com",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "adam-p/markdown-here : Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown and render it before sending.",
+   "resume": "60262 étoiles, aucune mise à jour depuis 15 mois, 319 demandes ouvertes (JavaScript).",
+   "force": 5.57,
+   "chiffres": {
+    "etoiles": 60262,
+    "mois_sans_maj": 15,
+    "issues_ouvertes": 319,
+    "langage": "JavaScript"
+   },
+   "preuves": [
+    {
+     "texte": "Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown and render it before sending.",
+     "url": "https://github.com/adam-p/markdown-here",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "FiloSottile/mkcert : A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+   "resume": "59819 étoiles, aucune mise à jour depuis 27 mois, 178 demandes ouvertes (Go).",
+   "force": 6.44,
+   "chiffres": {
+    "etoiles": 59819,
+    "mois_sans_maj": 27,
+    "issues_ouvertes": 178,
+    "langage": "Go"
+   },
+   "preuves": [
+    {
+     "texte": "A simple zero-config tool to make locally trusted development certificates with any names you'd like.",
+     "url": "https://github.com/FiloSottile/mkcert",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "certificates",
+    "chrome",
+    "firefox"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "meta-llama/llama : Inference code for Llama models",
+   "resume": "59631 étoiles, aucune mise à jour depuis 21 mois, 538 demandes ouvertes (Python).",
+   "force": 6.27,
+   "chiffres": {
+    "etoiles": 59631,
+    "mois_sans_maj": 21,
+    "issues_ouvertes": 538,
+    "langage": "Python"
+   },
+   "preuves": [
+    {
+     "texte": "Inference code for Llama models",
+     "url": "https://github.com/meta-llama/llama",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "shadowsocks/shadowsocks-windows : A C# port of shadowsocks",
+   "resume": "59500 étoiles, aucune mise à jour depuis 22 mois, 201 demandes ouvertes (C#).",
+   "force": 6.16,
+   "chiffres": {
+    "etoiles": 59500,
+    "mois_sans_maj": 22,
+    "issues_ouvertes": 201,
+    "langage": "C#"
+   },
+   "preuves": [
+    {
+     "texte": "A C# port of shadowsocks",
+     "url": "https://github.com/shadowsocks/shadowsocks-windows",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "c-sharp",
+    "proxy",
+    "shadowsocks"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "Lordog/dive-into-llms : 《动手学大模型Dive into LLMs》系列编程实践教程",
+   "resume": "58844 étoiles, aucune mise à jour depuis 13 mois, 18 demandes ouvertes (Jupyter Notebook).",
+   "force": 4.73,
+   "chiffres": {
+    "etoiles": 58844,
+    "mois_sans_maj": 13,
+    "issues_ouvertes": 18,
+    "langage": "Jupyter Notebook"
+   },
+   "preuves": [
+    {
+     "texte": "《动手学大模型Dive into LLMs》系列编程实践教程",
+     "url": "https://github.com/Lordog/dive-into-llms",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "ElemeFE/element : A Vue.js 2.0 UI Toolkit for Web",
+   "resume": "53994 étoiles, aucune mise à jour depuis 27 mois, 2968 demandes ouvertes (Vue).",
+   "force": 6.71,
+   "chiffres": {
+    "etoiles": 53994,
+    "mois_sans_maj": 27,
+    "issues_ouvertes": 2968,
+    "langage": "Vue"
+   },
+   "preuves": [
+    {
+     "texte": "A Vue.js 2.0 UI Toolkit for Web",
+     "url": "https://github.com/ElemeFE/element",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "components",
+    "element-ui",
+    "javascript"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "necolas/normalize.css : A modern alternative to CSS resets",
+   "resume": "53488 étoiles, aucune mise à jour depuis 29 mois, 84 demandes ouvertes (CSS).",
+   "force": 6.17,
+   "chiffres": {
+    "etoiles": 53488,
+    "mois_sans_maj": 29,
+    "issues_ouvertes": 84,
+    "langage": "CSS"
+   },
+   "preuves": [
+    {
+     "texte": "A modern alternative to CSS resets",
+     "url": "https://github.com/necolas/normalize.css",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "css",
+    "css-reset",
+    "normalize-css"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "xai-org/grok-1 : Grok open release",
+   "resume": "52224 étoiles, aucune mise à jour depuis 26 mois, 126 demandes ouvertes (Python).",
+   "force": 6.23,
+   "chiffres": {
+    "etoiles": 52224,
+    "mois_sans_maj": 26,
+    "issues_ouvertes": 126,
+    "langage": "Python"
+   },
+   "preuves": [
+    {
+     "texte": "Grok open release",
+     "url": "https://github.com/xai-org/grok-1",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "Semantic-Org/Semantic-UI : Semantic is a UI component framework based around useful principles from natural language.",
+   "resume": "51004 étoiles, aucune mise à jour depuis 23 mois, 1071 demandes ouvertes (JavaScript).",
+   "force": 6.46,
+   "chiffres": {
+    "etoiles": 51004,
+    "mois_sans_maj": 23,
+    "issues_ouvertes": 1071,
+    "langage": "JavaScript"
+   },
+   "preuves": [
+    {
+     "texte": "Semantic is a UI component framework based around useful principles from natural language.",
+     "url": "https://github.com/Semantic-Org/Semantic-UI",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "button",
+    "css-framework",
+    "dropdown"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "NARKOZ/hacker-scripts : Based on a true story",
+   "resume": "49860 étoiles, aucune mise à jour depuis 37 mois, 72 demandes ouvertes (JavaScript).",
+   "force": 6.07,
+   "chiffres": {
+    "etoiles": 49860,
+    "mois_sans_maj": 37,
+    "issues_ouvertes": 72,
+    "langage": "JavaScript"
+   },
+   "preuves": [
+    {
+     "texte": "Based on a true story",
+     "url": "https://github.com/NARKOZ/hacker-scripts",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "abandonne",
+   "titre": "algorithm-visualizer/algorithm-visualizer : :fireworks:Interactive Online Platform that Visualizes Algorithms from Code",
+   "resume": "49382 étoiles, aucune mise à jour depuis 29 mois, 81 demandes ouvertes (JavaScript).",
+   "force": 6.08,
+   "chiffres": {
+    "etoiles": 49382,
+    "mois_sans_maj": 29,
+    "issues_ouvertes": 81,
+    "langage": "JavaScript"
+   },
+   "preuves": [
+    {
+     "texte": ":fireworks:Interactive Online Platform that Visualizes Algorithms from Code",
+     "url": "https://github.com/algorithm-visualizer/algorithm-visualizer",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "algorithm",
+    "animation",
+    "data-structure"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "slab/quill : Quill is a modern WYSIWYG editor built for compatibility and extensibility",
+   "resume": "47374 étoiles, aucune mise à jour depuis 16 mois, 664 demandes ouvertes (TypeScript).",
+   "force": 5.6,
+   "chiffres": {
+    "etoiles": 47374,
+    "mois_sans_maj": 16,
+    "issues_ouvertes": 664,
+    "langage": "TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "Quill is a modern WYSIWYG editor built for compatibility and extensibility",
+     "url": "https://github.com/slab/quill",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "editor",
+    "quill",
+    "rich-text-editor"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "bailicangdu/vue2-elm : Large single page application with 45 pages built on vue2 + vuex. 基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用",
+   "resume": "40965 étoiles, aucune mise à jour depuis 19 mois, 2 demandes ouvertes (Vue).",
+   "force": 4.59,
+   "chiffres": {
+    "etoiles": 40965,
+    "mois_sans_maj": 19,
+    "issues_ouvertes": 2,
+    "langage": "Vue"
+   },
+   "preuves": [
+    {
+     "texte": "Large single page application with 45 pages built on vue2 + vuex. 基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用",
+     "url": "https://github.com/bailicangdu/vue2-elm",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": [
+    "es2015",
+    "flex",
+    "sass"
+   ]
+  },
+  {
+   "type": "abandonne",
+   "titre": "zai-org/ChatGLM-6B : ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型",
+   "resume": "40886 étoiles, aucune mise à jour depuis 29 mois, 610 demandes ouvertes (Python).",
+   "force": 6.34,
+   "chiffres": {
+    "etoiles": 40886,
+    "mois_sans_maj": 29,
+    "issues_ouvertes": 610,
+    "langage": "Python"
+   },
+   "preuves": [
+    {
+     "texte": "ChatGLM-6B: An Open Bilingual Dialogue Language Model | 开源双语对话语言模型",
+     "url": "https://github.com/zai-org/ChatGLM-6B",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Allow to change the font size and font of the workbench",
+   "resume": "3797 votes, 604 commentaires, ouverte depuis 133 mois, toujours pas faite.",
+   "force": 8,
+   "chiffres": {
+    "votes": 3797,
+    "commentaires": 604,
+    "mois_ouverte": 133,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "At the moment, we can only change the font size / font of the editor. If we want to change the font size, we need to use a roundabout method of \"zooming in / out\". It would be nice if this could be adjusted through the preferences.",
+     "url": "https://github.com/microsoft/vscode/issues/519",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "desktop/desktop : GitHub Desktop for Linux?",
+   "resume": "3146 votes, 346 commentaires, ouverte depuis 115 mois, toujours pas faite.",
+   "force": 7.66,
+   "chiffres": {
+    "votes": 3146,
+    "commentaires": 346,
+    "mois_ouverte": 115,
+    "depot": "desktop/desktop"
+   },
+   "preuves": [
+    {
+     "texte": "Updating this issue with response from @billygriffin from the GitHub Desktop team (updated early 2021): We have no immediate plans to support an official Linux version, but we continue to evaluate it alongside our other priorities and we know it's important to many people out there. I also know \"may",
+     "url": "https://github.com/desktop/desktop/issues/1525",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "request/request : Request’s Past, Present and Future",
+   "resume": "3065 votes, 437 commentaires, ouverte depuis 92 mois, toujours pas faite.",
+   "force": 7.69,
+   "chiffres": {
+    "votes": 3065,
+    "commentaires": 437,
+    "mois_ouverte": 92,
+    "depot": "request/request"
+   },
+   "preuves": [
+    {
+     "texte": "Before I go into the details and reasoning I’ll get straight to the point. **The most valuable thing `request` can do for the JavaScript ecosystem is to go into maintenance mode and stop considering new features or major releases.** Apologies in advance to the other committers on `request` that have",
+     "url": "https://github.com/request/request/issues/3142",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "amd/RyzenAI-SW : Linux?",
+   "resume": "2299 votes, 1133 commentaires, ouverte depuis 42 mois, toujours pas faite.",
+   "force": 6.79,
+   "chiffres": {
+    "votes": 2299,
+    "commentaires": 1133,
+    "mois_ouverte": 42,
+    "depot": "amd/RyzenAI-SW"
+   },
+   "preuves": [
+    {
+     "texte": "https://www.phoronix.com/news/AMD-Ryzen-AI-Open-Source-Demo AMD Has Open-Source Ryzen AI Demo Code - But Only For Windows",
+     "url": "https://github.com/amd/RyzenAI-SW/issues/2",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "zloirock/core-js : So, what's next?",
+   "resume": "2163 votes, 754 commentaires, ouverte depuis 45 mois, toujours pas faite.",
+   "force": 6.79,
+   "chiffres": {
+    "votes": 2163,
+    "commentaires": 754,
+    "mois_ouverte": 45,
+    "depot": "zloirock/core-js"
+   },
+   "preuves": [
+    {
+     "texte": "https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md Politics = ban.",
+     "url": "https://github.com/zloirock/core-js/issues/1179",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Allow customization of mouse shortcuts",
+   "resume": "1933 votes, 453 commentaires, ouverte depuis 130 mois, toujours pas faite.",
+   "force": 7.17,
+   "chiffres": {
+    "votes": 1933,
+    "commentaires": 453,
+    "mois_ouverte": 130,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "Some users would like to be able to customize not just pure keyboard shortcuts but also mouse + modifier ones. These are currently hard coded, for example alt +click to add a selection. See https://github.com/Microsoft/vscode/issues/3091 for some more context.",
+     "url": "https://github.com/microsoft/vscode/issues/3130",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/TypeScript : @ts-ignore for the block scope and imports",
+   "resume": "1827 votes, 214 commentaires, ouverte depuis 110 mois, toujours pas faite.",
+   "force": 6.95,
+   "chiffres": {
+    "votes": 1827,
+    "commentaires": 214,
+    "mois_ouverte": 110,
+    "depot": "microsoft/TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "currently @ts-ignore only mutes the errors from the line immediately below it would be great to have the same for 1. the whole next block 2. also for all imports ### use case: refactoring: commenting out a piece of code to see what would break without it, yet avoiding to deal with the errors in the ",
+     "url": "https://github.com/microsoft/TypeScript/issues/19573",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "metabase/metabase : Feature: Join across multiple databases",
+   "resume": "1797 votes, 50 commentaires, ouverte depuis 120 mois, toujours pas faite.",
+   "force": 6.62,
+   "chiffres": {
+    "votes": 1797,
+    "commentaires": 50,
+    "mois_ouverte": 120,
+    "depot": "metabase/metabase"
+   },
+   "preuves": [
+    {
+     "texte": "For example, if I have an e-commerce system in one database, and an accounting system in another database (not necessarily using the same driver), I'd like to be able to build queries to join the data using the email address or order number as the key. :arrow_down: Please click the :+1: reaction ins",
+     "url": "https://github.com/metabase/metabase/issues/3953",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "dart-lang/language : Add data classes",
+   "resume": "1555 votes, 391 commentaires, ouverte depuis 110 mois, toujours pas faite.",
+   "force": 6.9,
+   "chiffres": {
+    "votes": 1555,
+    "commentaires": 391,
+    "mois_ouverte": 110,
+    "depot": "dart-lang/language"
+   },
+   "preuves": [
+    {
+     "texte": "Immutable data are used heavily for web applications today, commonly with Elm-like (redux, ngrx, ...) architectures. Most common thing web developer is doing with data is creating a copy of it with some fields changed, usually propagated to the root of state tree. JavaScript has spread operator for ",
+     "url": "https://github.com/dart-lang/language/issues/314",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "boto/botocore : Support asyncio",
+   "resume": "1545 votes, 112 commentaires, ouverte depuis 143 mois, toujours pas faite.",
+   "force": 6.62,
+   "chiffres": {
+    "votes": 1545,
+    "commentaires": 112,
+    "mois_ouverte": 143,
+    "depot": "boto/botocore"
+   },
+   "preuves": [
+    {
+     "texte": "This is a tracking issue for the feature request of supporting asyncio in botocore, originally asked about here: https://github.com/boto/botocore/issues/452 There's no definitive timeline on this feature, but feel free to +1 (thumbs up 👍) this issue if this is something you'd like to see. Also, if ",
+     "url": "https://github.com/boto/botocore/issues/458",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "hashicorp/terraform : feature request: inverse targeting / exclude",
+   "resume": "1540 votes, 167 commentaires, ouverte depuis 139 mois, toujours pas faite.",
+   "force": 6.7,
+   "chiffres": {
+    "votes": 1540,
+    "commentaires": 167,
+    "mois_ouverte": 139,
+    "depot": "hashicorp/terraform"
+   },
+   "preuves": [
+    {
+     "texte": "Is there anything that can be done such that db_instance - RDS formed by the terraform files can be saved if we destroy the whole state?",
+     "url": "https://github.com/hashicorp/terraform/issues/2253",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Feature Request: Show all errors and warnings in project for all JavaScript and TypeScript files, not just opened ones",
+   "resume": "1510 votes, 210 commentaires, ouverte depuis 122 mois, toujours pas faite.",
+   "force": 6.73,
+   "chiffres": {
+    "votes": 1510,
+    "commentaires": 210,
+    "mois_ouverte": 122,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "I am using VS Code on a project at work that has hundreds of files and many layers of nested sub-directories. I frequently make changes that break many files, such as changing the call signature of a commonly used method. Since the project is entirely typescript, it is useful to be able to open the ",
+     "url": "https://github.com/microsoft/vscode/issues/13953",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "ValveSoftware/steam-for-linux : [Feature Request]Need the client to support wayland(not through xwayland)",
+   "resume": "1469 votes, 259 commentaires, ouverte depuis 116 mois, toujours pas faite.",
+   "force": 6.74,
+   "chiffres": {
+    "votes": 1469,
+    "commentaires": 259,
+    "mois_ouverte": 116,
+    "depot": "ValveSoftware/steam-for-linux"
+   },
+   "preuves": [
+    {
+     "texte": "This is feature request This will greatly help users with multi-gpu setups like optimus / SLI and developrs to move forward with wayland adoption",
+     "url": "https://github.com/ValveSoftware/steam-for-linux/issues/4924",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "actions/runner : Please support something like \"allow-failure\" for a given job",
+   "resume": "1467 votes, 188 commentaires, ouverte depuis 80 mois, toujours pas faite.",
+   "force": 6.67,
+   "chiffres": {
+    "votes": 1467,
+    "commentaires": 188,
+    "mois_ouverte": 80,
+    "depot": "actions/runner"
+   },
+   "preuves": [
+    {
+     "texte": "Edit from @vanZeben: > As this is a GitHub Actions platform feature request, discussion for this feature has been moved to https://github.com/orgs/community/discussions/15452, please go and put your support behind that community discussion instead of this issue. --- We use github actions in our \"sna",
+     "url": "https://github.com/actions/runner/issues/2347",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "hashicorp/terraform : A method to override configuration and meta arguments within a module",
+   "resume": "1409 votes, 86 commentaires, ouverte depuis 71 mois, toujours pas faite.",
+   "force": 6.46,
+   "chiffres": {
+    "votes": 1409,
+    "commentaires": 86,
+    "mois_ouverte": 71,
+    "depot": "hashicorp/terraform"
+   },
+   "preuves": [
+    {
+     "texte": "### Current Terraform Version ``` Terraform v0.14.3 ``` ### Use-cases Terraform currently only allows the `lifecycle` meta-argument to be used within the declaration of a resource. It would be really useful if users were able to specify lifecycle blocks in modules that can then be applicable to some",
+     "url": "https://github.com/hashicorp/terraform/issues/27360",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/TypeScript : import ConstJson from './config.json' as const;",
+   "resume": "1396 votes, 115 commentaires, ouverte depuis 90 mois, toujours pas faite.",
+   "force": 6.51,
+   "chiffres": {
+    "votes": 1396,
+    "commentaires": 115,
+    "mois_ouverte": 90,
+    "depot": "microsoft/TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "## Suggestion The ability to get const types from a JSON configuration file. If the json is: ```json { \"appLocales\": [\"FR\",\"BE\"] } ``` I want to import the JSON and get a `{appLocales: \"FR\" | \"BE\"}` type instead of `string` As [suggested here](https://github.com/microsoft/TypeScript/issues/32063#iss",
+     "url": "https://github.com/microsoft/TypeScript/issues/32063",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : VIM mode like sublime",
+   "resume": "1370 votes, 26 commentaires, ouverte depuis 70 mois, toujours pas faite.",
+   "force": 6.17,
+   "chiffres": {
+    "votes": 1370,
+    "commentaires": 26,
+    "mois_ouverte": 70,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "Issue Type: Feature Request Please add a VIM mode like sublime! I've tried many extentions and they don't behave like what im used to with sublime. VS Code version: Code 1.52.1 (ea3859d4ba2f3e577a159bc91e3074c5d85c0523, 2020-12-16T16:34:46.910Z) OS version: Windows_NT x64 10.0.19041",
+     "url": "https://github.com/microsoft/vscode/issues/114851",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Add ability to extend from other settings files",
+   "resume": "1369 votes, 161 commentaires, ouverte depuis 121 mois, toujours pas faite.",
+   "force": 6.56,
+   "chiffres": {
+    "votes": 1369,
+    "commentaires": 161,
+    "mois_ouverte": 121,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "Inspired by TSLint's ability to [extend](https://palantir.github.io/tslint/2016/03/31/sharable-configurations-rules.html) configuration files, it would be nice if `.vscode/settings.json` could behave the same way. So if I have some global settings set up: `~/example-repo/.vscode/my-company-settings.",
+     "url": "https://github.com/microsoft/vscode/issues/15909",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Visual Studio Code for ipad",
+   "resume": "1347 votes, 285 commentaires, ouverte depuis 93 mois, toujours pas faite.",
+   "force": 6.66,
+   "chiffres": {
+    "votes": 1347,
+    "commentaires": 285,
+    "mois_ouverte": 93,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "can use the Visual Studio Code on a ipad",
+     "url": "https://github.com/microsoft/vscode/issues/70764",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/TypeScript : Exact Types",
+   "resume": "1293 votes, 312 commentaires, ouverte depuis 120 mois, toujours pas faite.",
+   "force": 6.64,
+   "chiffres": {
+    "votes": 1293,
+    "commentaires": 312,
+    "mois_ouverte": 120,
+    "depot": "microsoft/TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "This is a proposal to enable a syntax for exact types. A similar feature can be seen in Flow (https://flowtype.org/docs/objects.html#exact-object-types), but I would like to propose it as a feature used for type literals and not interfaces. The specific syntax I'd propose using is the pipe (which al",
+     "url": "https://github.com/microsoft/TypeScript/issues/12936",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "flutter/flutter : Code Push / Hot Update / out of band updates",
+   "resume": "1241 votes, 290 commentaires, ouverte depuis 107 mois, toujours pas faite.",
+   "force": 6.58,
+   "chiffres": {
+    "votes": 1241,
+    "commentaires": 290,
+    "mois_ouverte": 107,
+    "depot": "flutter/flutter"
+   },
+   "preuves": [
+    {
+     "texte": "_This is currently not on Flutter's roadmap, for reasons discussed in these comments: https://github.com/flutter/flutter/issues/14330#issuecomment-1279484739, https://github.com/flutter/flutter/issues/14330#issuecomment-485565194_ _Code push for Flutter is available as a third-party product from sho",
+     "url": "https://github.com/flutter/flutter/issues/14330",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "warpdotdev/warp : Make Warp work with Local Language Models (like Ollama models)",
+   "resume": "1234 votes, 145 commentaires, ouverte depuis 33 mois, toujours pas faite.",
+   "force": 5.29,
+   "chiffres": {
+    "votes": 1234,
+    "commentaires": 145,
+    "mois_ouverte": 33,
+    "depot": "warpdotdev/warp"
+   },
+   "preuves": [
+    {
+     "texte": "### Discord username (optional) _No response_ ### Describe the solution you'd like? Due to safety concerns, many users are getting paranoid about Warp's forced login and online AI assistance. Since terminals are used to access critical data on local machines and servers, adding the ability to use lo",
+     "url": "https://github.com/warpdotdev/warp/issues/4339",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Macro recording",
+   "resume": "1228 votes, 280 commentaires, ouverte depuis 129 mois, toujours pas faite.",
+   "force": 6.56,
+   "chiffres": {
+    "votes": 1228,
+    "commentaires": 280,
+    "mois_ouverte": 129,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "It would be nice to be able to record a sequence of inputs and then reproduce it as in Notepad++ or Vim.",
+     "url": "https://github.com/microsoft/vscode/issues/4490",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/TypeScript : Allow \"Compiler Plugins\"",
+   "resume": "1221 votes, 46 commentaires, ouverte depuis 114 mois, toujours pas faite.",
+   "force": 6.16,
+   "chiffres": {
+    "votes": 1221,
+    "commentaires": 46,
+    "mois_ouverte": 114,
+    "depot": "microsoft/TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "From wiki: > TypeScript Language Service Plugins (\"plugins\") are for changing the editing experience only TypeScript plugins are very limited. Plugins should be able to: * Apply Transformers * Provide type definitions * Override module resolver (`LanguageServiceHost#resolveModuleNames`) * Emit code ",
+     "url": "https://github.com/microsoft/TypeScript/issues/16607",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "metabase/metabase : Driver: ElasticSearch",
+   "resume": "1219 votes, 82 commentaires, ouverte depuis 134 mois, toujours pas faite.",
+   "force": 6.28,
+   "chiffres": {
+    "votes": 1219,
+    "commentaires": 82,
+    "mois_ouverte": 134,
+    "depot": "metabase/metabase"
+   },
+   "preuves": [
+    {
+     "texte": ":arrow_down: Please click the :+1: reaction instead of leaving a `+1` or `update?` comment",
+     "url": "https://github.com/metabase/metabase/issues/1300",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "hashicorp/terraform : Using variables in terraform backend config block",
+   "resume": "1201 votes, 315 commentaires, ouverte depuis 117 mois, toujours pas faite.",
+   "force": 6.56,
+   "chiffres": {
+    "votes": 1201,
+    "commentaires": 315,
+    "mois_ouverte": 117,
+    "depot": "hashicorp/terraform"
+   },
+   "preuves": [
+    {
+     "texte": "### Terraform Version v0.9.0 ### Affected Resource(s) terraform backend config ### Terraform Configuration Files ```hcl variable \"azure_subscription_id\" { type = \"string\" default = \"74732435-e81f-4a43-bf68-ced435436edf\" } variable \"azure_tenant_id\" { type = \"string\" default = \"74732435-e81f-4a43-bf6",
+     "url": "https://github.com/hashicorp/terraform/issues/13022",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "anthropics/claude-code : Bring Back Buddy — A Consolidated Plea from the Community",
+   "resume": "1195 votes, 283 commentaires, ouverte depuis 7 mois, toujours pas faite.",
+   "force": 4.32,
+   "chiffres": {
+    "votes": 1195,
+    "commentaires": 283,
+    "mois_ouverte": 7,
+    "depot": "anthropics/claude-code"
+   },
+   "preuves": [
+    {
+     "texte": "## The Situation On April 9, `/buddy` vanished from Claude Code v2.1.97. No changelog mention. No farewell. One day we had a companion — the next, `Unknown skill: buddy`. Thousands of developers opened their terminals that morning to find an empty status line where their buddy once lived. Some of us",
+     "url": "https://github.com/anthropics/claude-code/issues/45596",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/WSL : WSL 2 should automatically release disk space back to the host OS",
+   "resume": "1192 votes, 380 commentaires, ouverte depuis 85 mois, toujours pas faite.",
+   "force": 6.59,
+   "chiffres": {
+    "votes": 1192,
+    "commentaires": 380,
+    "mois_ouverte": 85,
+    "depot": "microsoft/WSL"
+   },
+   "preuves": [
+    {
+     "texte": "**Is your feature request related to a problem? Please describe.** I occasionally have workloads that consume large amounts of disk space for temporary use in `/tmp`. For example, transcoding large video files or processing large datasets exported from a database. Since WSL2 stores its filesystem on",
+     "url": "https://github.com/microsoft/WSL/issues/4699",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/TypeScript : Request: Class Decorator Mutation",
+   "resume": "1156 votes, 290 commentaires, ouverte depuis 135 mois, toujours pas faite.",
+   "force": 6.5,
+   "chiffres": {
+    "votes": 1156,
+    "commentaires": 290,
+    "mois_ouverte": 135,
+    "depot": "microsoft/TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "If we can get this to type check properly, we would have perfect support for boilerplate-free mixins: ``` typescript declare function Blah (target: T): T & {foo: number} @Blah class Foo { bar() { return this.foo; // Property 'foo' does not exist on type 'Foo' } } new Foo().foo; // Property 'foo' doe",
+     "url": "https://github.com/microsoft/TypeScript/issues/4881",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "isaacs/github : Contribution graph can be harmful to contributors",
+   "resume": "1157 votes, 202 commentaires, ouverte depuis 129 mois, toujours pas faite.",
+   "force": 6.42,
+   "chiffres": {
+    "votes": 1157,
+    "commentaires": 202,
+    "mois_ouverte": 129,
+    "depot": "isaacs/github"
+   },
+   "preuves": [
+    {
+     "texte": "A common well-being issue in open-source communities is the tendency of people to over-commit. Many contributors care deeply, at the risk of saying yes too often harming their well-being. Open-source communities are especially at risk, because many contributors work next to a full-time job. The cont",
+     "url": "https://github.com/isaacs/github/issues/627",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Allow to scope settings by platform",
+   "resume": "1152 votes, 187 commentaires, ouverte depuis 128 mois, toujours pas faite.",
+   "force": 6.4,
+   "chiffres": {
+    "votes": 1152,
+    "commentaires": 187,
+    "mois_ouverte": 128,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "Hi I develop on 3 different platform. When synchronizing settings, snippets and so on, i often must change path, adjust font-size, etc... So, it could be great if we had a per platform settings set (Windows, Mac, Unix)",
+     "url": "https://github.com/microsoft/vscode/issues/5595",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "hashicorp/terraform : Instantiating Multiple Providers with a loop",
+   "resume": "1122 votes, 128 commentaires, ouverte depuis 95 mois, toujours pas faite.",
+   "force": 6.29,
+   "chiffres": {
+    "votes": 1122,
+    "commentaires": 128,
+    "mois_ouverte": 95,
+    "depot": "hashicorp/terraform"
+   },
+   "preuves": [
+    {
+     "texte": "### Current Terraform Version ``` Terraform v0.11.11 ``` ### Use-cases In my current situation, I am using the AWS provider so I will scope this feature request to that specific provider, although this may extend to other providers as well. I am attempting to create resources in multiple AWS account",
+     "url": "https://github.com/hashicorp/terraform/issues/19932",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "actions/runner : Support \"multi-choice\" input type for manual workflows",
+   "resume": "1094 votes, 378 commentaires, ouverte depuis 51 mois, toujours pas faite.",
+   "force": 6.12,
+   "chiffres": {
+    "votes": 1094,
+    "commentaires": 378,
+    "mois_ouverte": 51,
+    "depot": "actions/runner"
+   },
+   "preuves": [
+    {
+     "texte": "**Describe the enhancement** Current set of input types doesn't cover some use-cases for manual workflows We use a single gh-action as an entrypoint of deploying packages from our monorepo, and sometimes we need to manually deploy several packages simultaneously. Up until now we just went with a set",
+     "url": "https://github.com/actions/runner/issues/2076",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "prisma/orm : Support DynamoDB",
+   "resume": "1059 votes, 53 commentaires, ouverte depuis 82 mois, toujours pas faite.",
+   "force": 6.03,
+   "chiffres": {
+    "votes": 1059,
+    "commentaires": 53,
+    "mois_ouverte": 82,
+    "depot": "prisma/orm"
+   },
+   "preuves": [
+    {
+     "texte": "This feature requests serves as a central place to discuss development and progress for the DynamoDB connector. Please leave a 👍 and/or a comment in this issue if you'd like to see support for DynamoDB soon.",
+     "url": "https://github.com/prisma/orm/issues/1676",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : Allow diagnostics messages to have markdown (or formatted text) content",
+   "resume": "1052 votes, 64 commentaires, ouverte depuis 101 mois, toujours pas faite.",
+   "force": 6.06,
+   "chiffres": {
+    "votes": 1052,
+    "commentaires": 64,
+    "mois_ouverte": 101,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "**Feature request** Allow diagnostics to display formatted content. The specific request was to show part of a diagnostic message in bold. A few potential options: - Allow diagnostics to use markdown content - Allow diagnostics to use formatted text - Add an \"important span\" to diagnostic messages t",
+     "url": "https://github.com/microsoft/vscode/issues/54272",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "golang/go : proposal: spec: add sum types / discriminated unions",
+   "resume": "1044 votes, 436 commentaires, ouverte depuis 118 mois, toujours pas faite.",
+   "force": 6.47,
+   "chiffres": {
+    "votes": 1044,
+    "commentaires": 436,
+    "mois_ouverte": 118,
+    "depot": "golang/go"
+   },
+   "preuves": [
+    {
+     "texte": "This is a proposal for sum types, also known as discriminated unions. Sum types in Go should essentially act like interfaces, except that: - they are value types, like structs - the types contained in them are fixed at compile-time Sum types can be matched with a switch statement. The compiler check",
+     "url": "https://github.com/golang/go/issues/19412",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/vscode : [Feature] Local Workspace settings",
+   "resume": "1044 votes, 204 commentaires, ouverte depuis 108 mois, toujours pas faite.",
+   "force": 6.3,
+   "chiffres": {
+    "votes": 1044,
+    "commentaires": 204,
+    "mois_ouverte": 108,
+    "depot": "microsoft/vscode"
+   },
+   "preuves": [
+    {
+     "texte": "I would like to be able to configure settings that are specific to my user and to a particular workspace. So, 'local' workspace settings? So there would be three locations for settings (for a single-folder workspace): * user settings * `${workspaceRoot}/.vscode/settings.json` * `${workspaceRoot}/.vs",
+     "url": "https://github.com/microsoft/vscode/issues/40233",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "alacritty/alacritty : Support for ligatures",
+   "resume": "1031 votes, 142 commentaires, ouverte depuis 120 mois, toujours pas faite.",
+   "force": 6.21,
+   "chiffres": {
+    "votes": 1031,
+    "commentaires": 142,
+    "mois_ouverte": 120,
+    "depot": "alacritty/alacritty"
+   },
+   "preuves": [
+    {
+     "texte": "I would love to see the support for ligatures (an example of their use might be found in https://github.com/tonsky/FiraCode). Please note that i have almost no idea how do they work under the hood, and so i don't know how hard is it to implement support for them, I'm just throwing an idea here. Anyh",
+     "url": "https://github.com/alacritty/alacritty/issues/50",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/TypeScript : Allow classes to be parametric in other parametric classes",
+   "resume": "1018 votes, 189 commentaires, ouverte depuis 146 mois, toujours pas faite.",
+   "force": 6.26,
+   "chiffres": {
+    "votes": 1018,
+    "commentaires": 189,
+    "mois_ouverte": 146,
+    "depot": "microsoft/TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "This is a proposal for allowing generics as type parameters. It's currently possible to write specific examples of monads, but in order to write the interface that all monads satisfy, I propose writing ``` javascript interface Monad > { map (f: (a: A) => B): T => T ; lift (a: A): T ; join (tta: T >)",
+     "url": "https://github.com/microsoft/TypeScript/issues/1213",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "dart-lang/language : Static Metaprogramming",
+   "resume": "1010 votes, 600 commentaires, ouverte depuis 69 mois, toujours pas faite.",
+   "force": 6.5,
+   "chiffres": {
+    "votes": 1010,
+    "commentaires": 600,
+    "mois_ouverte": 69,
+    "depot": "dart-lang/language"
+   },
+   "preuves": [
+    {
+     "texte": "**Metaprogramming** refers to code that operates on other code as if it were data. It can take code in as parameters, reflect over it, inspect it, create it, modify it, and return it. ***Static* metaprogramming** means doing that work at compile-time, and typically modifying or adding to the program",
+     "url": "https://github.com/dart-lang/language/issues/1482",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "microsoft/TypeScript : Allow tsconfig.json when input files are specified",
+   "resume": "1005 votes, 58 commentaires, ouverte depuis 99 mois, toujours pas faite.",
+   "force": 5.99,
+   "chiffres": {
+    "votes": 1005,
+    "commentaires": 58,
+    "mois_ouverte": 99,
+    "depot": "microsoft/TypeScript"
+   },
+   "preuves": [
+    {
+     "texte": "I don't know why the `tsconfig.json` is ignored even when the `--project` or `-p` option is specified. In my opinion, the right implementation should be: + If no `--project` or `-p` option: Ignore tsconfig.json + Otherwise: Use the configuration file specified. All the options used in the command li",
+     "url": "https://github.com/microsoft/TypeScript/issues/27379",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "desktop/desktop : Feature: Options > Git > manage multiple accounts",
+   "resume": "992 votes, 460 commentaires, ouverte depuis 108 mois, toujours pas faite.",
+   "force": 6.42,
+   "chiffres": {
+    "votes": 992,
+    "commentaires": 460,
+    "mois_ouverte": 108,
+    "depot": "desktop/desktop"
+   },
+   "preuves": [
+    {
+     "texte": "It would be great to be able to manage multiple git credentials in the options. Additionally it'd be nice to set an git credential override for each repository. Otherwise when a user works with personal and work related accounts they always have to change between the accounts.",
+     "url": "https://github.com/desktop/desktop/issues/3707",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_ignoree",
+   "titre": "anthropics/claude-code : [FEATURE] Add the ability to manage multiple Claude accounts within the Claude Desktop app with easy switching between profiles.",
+   "resume": "987 votes, 229 commentaires, ouverte depuis 10 mois, toujours pas faite.",
+   "force": 4.18,
+   "chiffres": {
+    "votes": 987,
+    "commentaires": 229,
+    "mois_ouverte": 10,
+    "depot": "anthropics/claude-code"
+   },
+   "preuves": [
+    {
+     "texte": "### Preflight Checklist - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple features) ### Problem Statement Claude Desktop curren",
+     "url": "https://github.com/anthropics/claude-code/issues/18435",
+     "source": "GitHub"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Amazon Product Scraper : Use this Amazon scraper to collect data based on URL and country from the Amazon website. Extract product information without using the Amaz",
+   "resume": "4155 utilisateurs payants sur 30 jours, note 4.16 sur 58 avis, 0 % d'échecs.",
+   "force": 7.38,
+   "chiffres": {
+    "utilisateurs_30j": 4155,
+    "note": 4.16,
+    "avis": 58,
+    "echecs": 0.0032,
+    "prix": 0.005,
+    "unite": "Result"
+   },
+   "preuves": [
+    {
+     "texte": "Use this Amazon scraper to collect data based on URL and country from the Amazon website. Extract product information without using the Amazon API, including reviews, prices, descriptions, and Amazon Standard Identification Numbers (ASINs). Download data in various structured formats.",
+     "url": "https://apify.com/junglee/amazon-crawler",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Google Trends Scraper : Scrape data from Google Trends by search terms or URLs. Specify locations, define time ranges, select categories to get interest by subregio",
+   "resume": "3025 utilisateurs payants sur 30 jours, note 3.68 sur 32 avis, 21 % d'échecs.",
+   "force": 10,
+   "chiffres": {
+    "utilisateurs_30j": 3025,
+    "note": 3.68,
+    "avis": 32,
+    "echecs": 0.2056,
+    "prix": 0.003,
+    "unite": "Result"
+   },
+   "preuves": [
+    {
+     "texte": "Scrape data from Google Trends by search terms or URLs. Specify locations, define time ranges, select categories to get interest by subregion and over time, related queries and topics, and more. Export scraped data, run the scraper via API, schedule and monitor runs, or integrate with other tools.",
+     "url": "https://apify.com/apify/google-trends-scraper",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Amazon Reviews Scraper : Amazon scraper to extract reviews from Amazon products. Scrape and download detailed reviews without using the Amazon API, including rating ",
+   "resume": "2491 utilisateurs payants sur 30 jours, note 4.07 sur 45 avis, 2 % d'échecs.",
+   "force": 7.48,
+   "chiffres": {
+    "utilisateurs_30j": 2491,
+    "note": 4.07,
+    "avis": 45,
+    "echecs": 0.0214,
+    "prix": 0.006,
+    "unite": "Review"
+   },
+   "preuves": [
+    {
+     "texte": "Amazon scraper to extract reviews from Amazon products. Scrape and download detailed reviews without using the Amazon API, including rating score, review description, reactions and images. Download your data as HTML table, JSON, CSV, Excel, XML.",
+     "url": "https://apify.com/junglee/amazon-reviews-scraper",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Indeed Scraper : Scrape jobs posted on Indeed. Get detailed information from this job portal about saved and sponsored jobs. Specify the search based on loca",
+   "resume": "2050 utilisateurs payants sur 30 jours, note 3.01 sur 66 avis, 0 % d'échecs.",
+   "force": 9.01,
+   "chiffres": {
+    "utilisateurs_30j": 2050,
+    "note": 3.01,
+    "avis": 66,
+    "echecs": 0.0005,
+    "prix": 0.006,
+    "unite": "Job listing"
+   },
+   "preuves": [
+    {
+     "texte": "Scrape jobs posted on Indeed. Get detailed information from this job portal about saved and sponsored jobs. Specify the search based on location with the output attributes position, location, and description.",
+     "url": "https://apify.com/misceres/indeed-scraper",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Amazon Reviews Scraper : [UPDATED] Scrape Amazon reviews per product! Filter by stars, keywords, media & verified purchases. Extract global reviews (20+ regions). Ex",
+   "resume": "618 utilisateurs payants sur 30 jours, note 3.39 sur 31 avis, 0 % d'échecs.",
+   "force": 7.2,
+   "chiffres": {
+    "utilisateurs_30j": 618,
+    "note": 3.39,
+    "avis": 31,
+    "echecs": 0,
+    "prix": 0.001,
+    "unite": "Review"
+   },
+   "preuves": [
+    {
+     "texte": "[UPDATED] Scrape Amazon reviews per product! Filter by stars, keywords, media & verified purchases. Extract global reviews (20+ regions). Export JSON/CSV. Perfect for market research & SEO.",
+     "url": "https://apify.com/web_wanderer/amazon-reviews-extractor",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Google Images Scraper : Scrape image details from images.google.com. Add your query and number of images and extract image details such as image URL, image source, ",
+   "resume": "553 utilisateurs payants sur 30 jours, note 4.48 sur 15 avis, 6 % d'échecs.",
+   "force": 6.64,
+   "chiffres": {
+    "utilisateurs_30j": 553,
+    "note": 4.48,
+    "avis": 15,
+    "echecs": 0.0577,
+    "prix": 0.0035,
+    "unite": "Scraped image"
+   },
+   "preuves": [
+    {
+     "texte": "Scrape image details from images.google.com. Add your query and number of images and extract image details such as image URL, image source, description, image dimensions, thumbnail, and more. Export scraped data, run the scraper via API, schedule and monitor runs, or integrate with other tools.",
+     "url": "https://apify.com/hooli/google-images-scraper",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Semrush Full API SEO Scraper - Traffic, Authority, Backlinks : All-in-one Semrush & Moz scraper — no login required. Domain authority, traffic analytics, backlinks, AI traffic (ChatGPT/Gemini/Claude), co",
+   "resume": "483 utilisateurs payants sur 30 jours, note 3 sur 6 avis, 0 % d'échecs.",
+   "force": 7.81,
+   "chiffres": {
+    "utilisateurs_30j": 483,
+    "note": 3,
+    "avis": 6,
+    "echecs": 0.002,
+    "prix": 0.015,
+    "unite": "result"
+   },
+   "preuves": [
+    {
+     "texte": "All-in-one Semrush & Moz scraper — no login required. Domain authority, traffic analytics, backlinks, AI traffic (ChatGPT/Gemini/Claude), competitors, top 100 trending websites. 80+ fields per domain, 10 parallel workers, unique IP per request. Two modes: Domain Analysis & Top Websites Ranking.",
+     "url": "https://apify.com/pro100chok/semrush-scraper",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Amazon Scraper : Gets you product data from Amazon. Unofficial API. Scrapes and downloads product information without using the Amazon API, including reviews",
+   "resume": "455 utilisateurs payants sur 30 jours, note 4.67 sur 46 avis, 8 % d'échecs.",
+   "force": 6.88,
+   "chiffres": {
+    "utilisateurs_30j": 455,
+    "note": 4.67,
+    "avis": 46,
+    "echecs": 0.078,
+    "prix": 0.012,
+    "unite": "result"
+   },
+   "preuves": [
+    {
+     "texte": "Gets you product data from Amazon. Unofficial API. Scrapes and downloads product information without using the Amazon API, including reviews, prices, descriptions, and ASIN.",
+     "url": "https://apify.com/junglee/free-amazon-product-scraper",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Google Search Scraper ($0.15 per 1000 results) : $0.15 per 1000 results 💸 Fast & Low Cost Google Search scraper that returns clean, structured SERP data. Get position, title, URL and snipp",
+   "resume": "404 utilisateurs payants sur 30 jours, note 4.09 sur 6 avis, 0 % d'échecs.",
+   "force": 5.44,
+   "chiffres": {
+    "utilisateurs_30j": 404,
+    "note": 4.09,
+    "avis": 6,
+    "echecs": 0.0002,
+    "prix": 0.0003,
+    "unite": "Result"
+   },
+   "preuves": [
+    {
+     "texte": "$0.15 per 1000 results 💸 Fast & Low Cost Google Search scraper that returns clean, structured SERP data. Get position, title, URL and snippet. Control region, language and domain, with built-in Apify proxy support for reliable, geo-accurate results.",
+     "url": "https://apify.com/igolaizola/google-search-scraper-ppe",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  },
+  {
+   "type": "demande_payee_mal_servie",
+   "titre": "Amazon Reviews Scraper with Advanced Filters : Extract Amazon reviews from any ASIN or URL across 16 Amazon marketplaces: rating, title, text, date, country, photos, videos, verified badg",
+   "resume": "367 utilisateurs payants sur 30 jours, note 3.93 sur 53 avis, 0 % d'échecs.",
+   "force": 5.75,
+   "chiffres": {
+    "utilisateurs_30j": 367,
+    "note": 3.93,
+    "avis": 53,
+    "echecs": 0.0039,
+    "prix": 0.006,
+    "unite": "result"
+   },
+   "preuves": [
+    {
+     "texte": "Extract Amazon reviews from any ASIN or URL across 16 Amazon marketplaces: rating, title, text, date, country, photos, videos, verified badge and helpful votes, plus Amazon's AI “Customers say” summary. Filter by stars, verified purchase, media, keywords and date.",
+     "url": "https://apify.com/delicious_zebu/amazon-reviews-scraper-with-advanced-filters",
+     "source": "Apify Store"
+    }
+   ],
+   "mots_en": []
+  }
+ ],
+ "emergents": {
+  "yc": {
+   "n": 429
+  },
+  "show_hn": {
+   "n": 60
+  },
+  "product_hunt": {
+   "n": 50
+  },
+  "github_montants": {
+   "n": 40
+  },
+  "mastodon": {
+   "n": 20
+  },
+  "x": {
+   "n": 0,
+   "note": "inactif (pas de X_BEARER_TOKEN)"
+  }
+ },
+ "temoins": {
+  "grand-public": [
+   {
+    "titre": "Comparateur de crédits en ligne",
+    "solution": "Aider les particuliers à trouver le meilleur taux de prêt immobilier ou consommation."
+   },
+   {
+    "titre": "Coach budgétaire digital",
+    "solution": "Proposer un outil de suivi des dépenses et des conseils personnalisés pour économiser."
+   },
+   {
+    "titre": "Plateforme de colocation",
+    "solution": "Mettre en relation propriétaires et locataires pour des colocations vérifiées."
+   },
+   {
+    "titre": "Service de déménagement clé en main",
+    "solution": "Organiser et coordonner déménageurs, cartons et assurance."
+   },
+   {
+    "titre": "Location de voiture entre particuliers",
+    "solution": "Permettre aux propriétaires de louer leur véhicule à d'autres."
+   },
+   {
+    "titre": "Covoiturage longue distance",
+    "solution": "Connecter conducteurs et passagers pour des trajets économiques."
+   },
+   {
+    "titre": "Aide aux déclarations fiscales",
+    "solution": "Assister les particuliers dans leurs démarches en ligne."
+   },
+   {
+    "titre": "Comparateur d'assurances",
+    "solution": "Comparer les offres auto, habitation, santé en quelques clics."
+   },
+   {
+    "titre": "Marketplace de services domestiques",
+    "solution": "Mettre en relation clients et prestataires (ménage, jardinage, bricolage)."
+   },
+   {
+    "titre": "Abonnement pour courses récurrentes",
+    "solution": "Livrer chaque mois des produits d'épicerie ou d'hygiène à prix réduit."
+   },
+   {
+    "titre": "Application de gestion de budget familial",
+    "solution": "Suivre les revenus et dépenses avec alertes et objectifs."
+   },
+   {
+    "titre": "Plateforme de revente de vêtements d'occasion",
+    "solution": "Faciliter l'achat et la vente de mode de seconde main."
+   },
+   {
+    "titre": "Service de réparation d'électroménager",
+    "solution": "Proposer un devis en ligne et envoyer un technicien."
+   },
+   {
+    "titre": "Comparateur d'énergie",
+    "solution": "Aider à choisir le fournisseur d'électricité ou gaz le moins cher."
+   },
+   {
+    "titre": "Application de suivi de consommation d'eau/électricité",
+    "solution": "Analyser les factures et suggérer des économies."
+   },
+   {
+    "titre": "Plateforme de cours en ligne pour adultes",
+    "solution": "Proposer des formations en finance, bricolage ou cuisine."
+   },
+   {
+    "titre": "Service de livraison de repas healthy",
+    "solution": "Préparer et livrer des plats équilibrés à domicile."
+   },
+   {
+    "titre": "Outil de simulation de prêt immobilier",
+    "solution": "Calculer mensualités et capacité d'emprunt en ligne."
+   },
+   {
+    "titre": "Réseau d'entraide de voisinage",
+    "solution": "Connecter voisins pour prêts d'objets ou services gratuits."
+   },
+   {
+    "titre": "Application de cashback sur achats",
+    "solution": "Rembourser un pourcentage des dépenses chez des partenaires."
+   },
+   {
+    "titre": "Service de garde d'enfants à la demande",
+    "solution": "Mettre en relation parents et baby-sitters vérifiés."
+   },
+   {
+    "titre": "Comparateur de mutuelles santé",
+    "solution": "Trouver la meilleure couverture pour son budget."
+   },
+   {
+    "titre": "Plateforme de vente de meubles d'occasion",
+    "solution": "Acheter et vendre des meubles avec livraison possible."
+   },
+   {
+    "titre": "Application de planification de repas",
+    "solution": "Générer des menus de la semaine avec liste de courses."
+   },
+   {
+    "titre": "Service de coaching en investissement",
+    "solution": "Conseiller en ligne pour débuter en bourse ou immobilier."
+   }
+  ],
+  "familles-et-aines": [
+   {
+    "titre": "Plateforme de mise en relation pour aidants familiaux",
+    "solution": "Un service qui connecte les familles cherchant un soutien temporaire ou régulier avec des aidants qualifiés et vérifiés."
+   },
+   {
+    "titre": "Abonnement mensuel de box bien-être senior",
+    "solution": "Livraison régulière de produits adaptés aux personnes âgées (compléments, outils d'aide à la mobilité, jeux cognitifs)."
+   },
+   {
+    "titre": "Coaching parental en ligne spécialisé",
+    "solution": "Des sessions vidéo individuelles pour aider les parents à gérer le stress, la discipline ou les troubles du sommeil de leurs enfants."
+   },
+   {
+    "titre": "Application de gestion des rendez-vous médicaux familiaux",
+    "solution": "Un outil centralisé pour organiser et rappeler les consultations, vaccinations et traitements pour toute la famille."
+   },
+   {
+    "titre": "Marketplace de services numériques pour seniors",
+    "solution": "Une plateforme proposant des tutoriels et de l'assistance technique pour apprendre à utiliser smartphones et ordinateurs."
+   },
+   {
+    "titre": "Création de contenu éducatif pour l'enfance",
+    "solution": "Vente de cours en ligne, d'e-books ou d'activités imprimables axées sur le développement cognitif et émotionnel des enfants."
+   },
+   {
+    "titre": "Service de transcription et archivage d'histoires de vie",
+    "solution": "Interviewer les aînés pour enregistrer et transcrire leurs souvenirs afin de créer des livres de mémoire pour leurs descendants."
+   },
+   {
+    "titre": "Consultation nutritionnelle familiale à distance",
+    "solution": "Plans alimentaires personnalisés par un diététicien tenant compte des besoins spécifiques des enfants et des adultes âgés."
+   },
+   {
+    "titre": "Location d'équipements médicaux à domicile",
+    "solution": "Plateforme de location courte durée pour lits médicalisés, fauteuils roulants ou déambulateurs livrés directement au domicile."
+   },
+   {
+    "titre": "Communauté privée de parents partageant une même problématique",
+    "solution": "Groupes fermés modérés par des experts pour les parents d'enfants atteints de troubles spécifiques (TDAH, autisme, etc.)."
+   },
+   {
+    "titre": "Assistance administrative pour les dossiers d'aide sociale",
+    "solution": "Service en ligne pour aider les familles et les seniors à constituer et déposer leurs demandes d'allocation ou de prise en charge."
+   },
+   {
+    "titre": "Formation à la prévention de la chute pour seniors",
+    "solution": "Cours vidéo et programmes d'exercices adaptés pour améliorer l'équilibre et réduire les risques de chutes à domicile."
+   },
+   {
+    "titre": "Plateforme de garde d'enfants à la demande (Uber de la baby-sitting)",
+    "solution": "Application permettant de trouver rapidement une baby-sitter certifiée disponible dans le quartier immédiat."
+   },
+   {
+    "titre": "Design d'intérieur adapté pour le vieillissement à domicile",
+    "solution": "Conseils et plans de rénovation en ligne pour rendre une maison plus sûre et accessible aux personnes à mobilité réduite."
+   },
+   {
+    "titre": "Service de conciergerie numérique pour aidants éloignés",
+    "solution": "Coordination des visites, courses et soins pour les proches âgés dont les enfants habitent loin."
+   },
+   {
+    "titre": "Botique d'objets Montessori et pédagogiques",
+    "solution": "E-commerce spécialisé vendant du matériel éducatif de qualité pour stimuler l'apprentissage autonome des enfants."
+   },
+   {
+    "titre": "Méditation guidée pour le stress parental",
+    "solution": "Abonnement à une bibliothèque audio de séances de relaxation conçues spécifiquement pour les parents débordés."
+   },
+   {
+    "titre": "Agenda familial partagé synchronisé",
+    "solution": "SaaS (Software as a Service) facilitant la coordination des emplois du temps, des repas et des tâches ménagères entre membres de la famille."
+   },
+   {
+    "titre": "Ateliers en ligne de cuisine saine pour enfants",
+    "solution": "Cours interactifs où les enfants apprennent à cuisiner des plats équilibrés tout en s'amusant, suivis d'une livraison d'ingrédients."
+   },
+   {
+    "titre": "Audit de sécurité domestique pour seniors",
+    "solution": "Inspection à distance ou physique des logements pour identifier les dangers potentiels et proposer des solutions d'aménagement."
+   },
+   {
+    "titre": "Service de rédaction de lettres et emails pour isolés",
+    "solution": "Aide à la communication écrite pour les personnes âgées souhaitant rester en contact avec leur famille mais ayant des difficultés technologiques."
+   },
+   {
+    "titre": "Plateforme de mentorat intergénérationnel",
+    "solution": "Mettre en relation des jeunes étudiants et des seniors pour du soutien scolaire ou du partage de savoir-faire manuel."
+   },
+   {
+    "titre": "Gestionnaire de budget familial automatisé",
+    "solution": "Outil en ligne qui aide les parents à suivre les dépenses liées aux enfants (scolarité, activités) et à planifier les économies."
+   },
+   {
+    "titre": "Conciergerie médicale pour les familles expatriées",
+    "solution": "Assistance pour trouver des pédiatres, dentistes et spécialistes adaptés au système de santé local lors d'un déménagement."
+   },
+   {
+    "titre": "Création de livres personnalisés pour enfants",
+    "solution": "Service imprimeur permettant de créer des histoires où l'enfant est le héros, avec ses propres traits et préférences."
+   }
+  ],
+  "apprendre": [
+   {
+    "titre": "Plateforme de cours de langues en visio",
+    "solution": "Mettre en relation des apprenants avec des professeurs natifs pour des leçons individuelles en visioconférence."
+   },
+   {
+    "titre": "Application de vocabulaire quotidien",
+    "solution": "Envoyer chaque jour des mots et exercices personnalisés pour progresser en langue en 10 minutes par jour."
+   },
+   {
+    "titre": "Formation en ligne au développement web",
+    "solution": "Proposer un parcours vidéo complet pour devenir développeur web autonome, du HTML aux projets réels."
+   },
+   {
+    "titre": "Coaching scolaire en ligne",
+    "solution": "Accompagner des élèves de collège et lycée avec des sessions de tutorat hebdomadaires adaptées à leur niveau."
+   },
+   {
+    "titre": "Plateforme de préparation aux examens",
+    "solution": "Offrir des annales corrigées, quiz et plans de révision pour le bac, le TOEIC ou le concours."
+   },
+   {
+    "titre": "Académie de français pour étrangers",
+    "solution": "Enseigner le français aux non-francophones via des cours en ligne et des podcasts pédagogiques."
+   },
+   {
+    "titre": "Newsletter éducative payante",
+    "solution": "Envoyer chaque semaine une leçon complète sur un sujet (langue, coding, finance) aux abonnés."
+   },
+   {
+    "titre": "Marketplace de créateurs de cours",
+    "solution": "Permettre à des experts de vendre leurs formations vidéo sur une plateforme avec paiement intégré."
+   },
+   {
+    "titre": "Ateliers d'écriture créative en ligne",
+    "solution": "Animer des ateliers live en petits groupes pour améliorer ses techniques d'écriture et recevoir des retours."
+   },
+   {
+    "titre": "Apprentissage par l'IA",
+    "solution": "Proposer un tuteur virtuel qui s'adapte au niveau et au rythme de chaque apprenant en temps réel."
+   },
+   {
+    "titre": "Podcast éducatif monétisé",
+    "solution": "Produire des épisodes pédagogiques quotidiens financés par abonnement et sponsors."
+   },
+   {
+    "titre": "Plateforme deShadowing pour langues",
+    "solution": "Permettre de répéter et comparer sa prononciation avec celle de locuteurs natifs grâce à l'analyse audio."
+   },
+   {
+    "titre": "Formation à la gestion de projet",
+    "solution": "Enseigner les méthodes agile et Scrum via des modules courts et un accompagnement certifiant."
+   },
+   {
+    "titre": "Communauté d'apprentissage par abonnement",
+    "solution": "Créer un groupe privé avec défis hebdomadaires, lives de questions-réponses et entraide entre membres."
+   },
+   {
+    "titre": "Préparation aux études à l'étranger",
+    "solution": "Accompagner les étudiants dans leurs candidatures, CV en anglais et tests de langue."
+   },
+   {
+    "titre": "Cours de préparation aux entretiens d'embauche",
+    "solution": "Simuler des entretiens avec retour détaillé pour aider les candidats à décrocher un poste."
+   },
+   {
+    "titre": "Formation à la productivité étudiante",
+    "solution": "Enseigner les techniques de prise de notes, mémorisation et gestion du temps aux lycéens et étudiants."
+   },
+   {
+    "titre": "Plateforme d'échange linguistique",
+    "solution": "Mettre en relation des personnes souhaitant pratiquer mutuellement leur langue respective."
+   },
+   {
+    "titre": "Ebook et kits de révision téléchargeables",
+    "solution": "Vendre des fiches de révision synthétiques et imprimables pour chaque matière clé."
+   },
+   {
+    "titre": "Cours de rédaction académique en ligne",
+    "solution": "Apprendre aux étudiants à structurer dissertations, mémoires et thèses efficacement."
+   },
+   {
+    "titre": "Formation aux réseaux sociaux pour débutants",
+    "solution": "Apprendre aux débutants à créer du contenu et développer leur audience sur Instagram, TikTok et YouTube."
+   },
+   {
+    "titre": "Clubs de lecture virtuels éducatifs",
+    "solution": "Animer des clubs de lecture en anglais ou en français avec débats guidés et enrichissement du vocabulaire."
+   },
+   {
+    "titre": "Plateforme de micro-formation quotidienne",
+    "solution": "Proposer des leçons de 5 minutes par jour sur des sujets variés avec suivi de progression."
+   },
+   {
+    "titre": "Simulation de concours en ligne",
+    "solution": "Reproduire les conditions réelles des concours (QCM chronométré, oral) avec correction détaillée par des experts."
+   },
+   {
+    "titre": "École en ligne pour autodidactes",
+    "solution": "Fournir des parcours structurés pour apprendre seul un métier ou une compétence, avec mentors accessibles."
+   }
+  ],
+  "createurs": [
+   {
+    "titre": "Plateforme de coachings pour créateurs",
+    "solution": "Mettre en relation des créateurs confirmés avec des débutants pour des sessions de mentorat vidéo payantes."
+   },
+   {
+    "titre": "Site de templates pour créateurs de contenu",
+    "solution": "Vendre des templates de miniatures, formats vidéo et posts réseaux sociaux prêts à personnaliser."
+   },
+   {
+    "titre": "Marketplace pour artisans francophones",
+    "solution": "Créer une boutique en ligne spécialisée pour vendre des créations artisanales faites main auprès d'un public francophone."
+   },
+   {
+    "titre": "Outil de planification de contenu",
+    "solution": "Développer un outil SaaS de programmation et d'analyse des publications sur les réseaux sociaux pour créateurs."
+   },
+   {
+    "titre": "Service de montage vidéo à l'abonnement",
+    "solution": "Proposer un abonnement mensuel de montage vidéo pour les créateurs YouTube et TikTok."
+   },
+   {
+    "titre": "Formation en ligne sur la monétisation",
+    "solution": "Créer des cours en ligne enseignant aux artistes comment monétiser leur contenu et diversifier leurs revenus."
+   },
+   {
+    "titre": "Agence de gestion de réseaux sociaux pour artistes",
+    "solution": "Gérer les réseaux sociaux d'artistes et musiciens en échange d'un forfait mensuel."
+   },
+   {
+    "titre": "Marketplace de samples et loops musicaux",
+    "solution": "Créer une plateforme où musiciens et beatmakers vendent leurs samples, loops et instrumentaux."
+   },
+   {
+    "titre": "Newsletter payante pour créateurs",
+    "solution": "Aider les créateurs à lancer et monétiser une newsletter payante avec une plateforme dédiée."
+   },
+   {
+    "titre": "Site de vente de prints d'art",
+    "solution": "Imprimer et vendre en ligne les œuvres d'artistes sous forme de tirages d'art et posters à la demande."
+   },
+   {
+    "titre": "Plateforme de communautés payantes",
+    "solution": "Offrir un outil permettant aux créateurs de lancer leur propre communauté privée par abonnement."
+   },
+   {
+    "titre": "Service de rédaction de sous-titres et traductions",
+    "solution": "Sous-titrer et traduire automatiquement les vidéos de créateurs pour toucher un public international."
+   },
+   {
+    "titre": "Boutique de kits créatifs DIY",
+    "solution": "Vendre en ligne des kits de créations manuelles prêts à l'emploi pour amateurs de DIY."
+   },
+   {
+    "titre": "Annuaire de marques pour partenariats d'influenceurs",
+    "solution": "Mettre en relation créateurs de contenu et marques souhaitant sponsoriser du contenu."
+   },
+   {
+    "titre": "Outil d'analyse de tendances pour créateurs",
+    "solution": "Proposer un outil qui identifie les sujets et formats tendance dans chaque niche pour guider la création de contenu."
+   },
+   {
+    "titre": "Service de régie publicitaire pour podcasts",
+    "solution": "Vendre des espaces publicitaires aux annonceurs au nom des podcasts de créateurs indépendants."
+   },
+   {
+    "titre": "Plateforme de vente de fichiers numériques",
+    "solution": "Permettre aux créateurs de vendre ebooks, presets, musiques et plans en ligne sans compétences techniques."
+   },
+   {
+    "titre": "Site de gestion administrative pour créateurs indépendants",
+    "solution": "Automatiser facturation, comptabilité et déclarations fiscales des créateurs indépendants."
+   },
+   {
+    "titre": "Marketplace de commissions d'artistes",
+    "solution": "Connecter des clients souhaitant des œuvres sur mesure avec des artistes illustrateurs."
+   },
+   {
+    "titre": "Plateforme de streaming pour musiciens indépendants",
+    "solution": "Distribuer et promouvoir la musique d'artistes indépendants avec une rémunération plus juste que les plateformes classiques."
+   },
+   {
+    "titre": "Service de création de sites portfolios",
+    "solution": "Créer des sites portfolios clés en main pour photographes, illustrateurs et artisans."
+   },
+   {
+    "titre": "Communauté d'entraide entre créateurs",
+    "solution": "Proposer un abonnement donnant accès à une communauté privée, des challenges et des ressources pour créateurs."
+   },
+   {
+    "titre": "Outil d'IA pour retouche photo d'artistes",
+    "solution": "Développer un outil d'IA qui accélère la retouche et le post-traitement des photographes."
+   },
+   {
+    "titre": "Vente de formations en gestion de carrière d'artiste",
+    "solution": "Vendre des programmes en ligne pour aider les musiciens et artistes à gérer leur carrière et leurs droits d'auteur."
+   },
+   {
+    "titre": "Dropshipping de matériel créatif personnalisé",
+    "solution": "Vendre en ligne du matériel de création personnalisable (toiles, carnets, vêtements à personnaliser) pour créateurs."
+   }
+  ],
+  "petits-vendeurs": [
+   {
+    "titre": "Boutique de vêtements vintage",
+    "solution": "Acheter des vêtements d'occasion en gros et les revendre sur des plateformes comme Vinted ou Etsy."
+   },
+   {
+    "titre": "Bijoux faits main",
+    "solution": "Créer des bijoux personnalisés avec des perles et fils, et les vendre sur Etsy ou Instagram."
+   },
+   {
+    "titre": "Bougies artisanales",
+    "solution": "Fabriquer des bougies parfumées avec des moules uniques et les vendre sur une boutique Shopify."
+   },
+   {
+    "titre": "Savons naturels",
+    "solution": "Produire des savons à base d'huiles essentielles et les commercialiser sur Amazon Handmade."
+   },
+   {
+    "titre": "Accessoires pour animaux",
+    "solution": "Coudre des colliers ou harnais personnalisés pour chiens et chats, et les vendre sur Etsy."
+   },
+   {
+    "titre": "Produits zéro déchet",
+    "solution": "Vendre des sacs en tissu, pailles réutilisables ou bee wraps sur une boutique en ligne."
+   },
+   {
+    "titre": "Artisanat en bois",
+    "solution": "Créer des objets décoratifs ou utilitaires en bois (planches, cadres) et les vendre sur eBay."
+   },
+   {
+    "titre": "Cosmétiques bio",
+    "solution": "Formuler des crèmes ou baumes à lèvres naturels et les vendre sur une plateforme comme Big Cartel."
+   },
+   {
+    "titre": "Produits pour bébés",
+    "solution": "Vendre des vêtements ou jouets en coton bio sur un site dédié."
+   },
+   {
+    "titre": "Cuisine maison",
+    "solution": "Préparer des confitures, biscuits ou sauces et les vendre sur Etsy ou un site local."
+   },
+   {
+    "titre": "Décoration murale",
+    "solution": "Imprimer des affiches ou tableaux personnalisés et les vendre sur Redbubble."
+   },
+   {
+    "titre": "Vêtements personnalisés",
+    "solution": "Utiliser un service d'impression à la demande pour créer des t-shirts ou sweats avec slogans."
+   },
+   {
+    "titre": "Produits pour le sport",
+    "solution": "Vendre des bouteilles isothermes ou tapis de yoga sur Amazon."
+   },
+   {
+    "titre": "Jeux et puzzles",
+    "solution": "Concevoir des jeux de société ou puzzles éducatifs et les vendre sur Shopify."
+   },
+   {
+    "titre": "Fournitures pour artistes",
+    "solution": "Vendre des carnets de croquis ou pinceaux sur Etsy."
+   },
+   {
+    "titre": "Produits pour la maison",
+    "solution": "Vendre des coussins ou plaids faits main sur un site comme Zazzle."
+   },
+   {
+    "titre": "Accessoires tech",
+    "solution": "Vendre des coques de téléphone personnalisées sur Redbubble."
+   },
+   {
+    "titre": "Produits de bien-être",
+    "solution": "Vendre des huiles essentielles ou diffuseurs sur Amazon Handmade."
+   },
+   {
+    "titre": "Vêtements de seconde main",
+    "solution": "Acheter des lots de vêtements d'occasion et les revendre sur Vinted."
+   },
+   {
+    "titre": "Produits pour fêtes",
+    "solution": "Vendre des décorations ou accessoires pour anniversaires sur Etsy."
+   },
+   {
+    "titre": "Art et illustrations",
+    "solution": "Vendre des impressions numériques ou originaux sur Society6."
+   },
+   {
+    "titre": "Produits pour le jardin",
+    "solution": "Vendre des graines ou outils de jardinage sur eBay."
+   },
+   {
+    "titre": "Accessoires de voyage",
+    "solution": "Vendre des sacs de voyage ou étuis à passeport sur Amazon."
+   },
+   {
+    "titre": "Produits pour la cuisine",
+    "solution": "Vendre des ustensiles ou épices rares sur Etsy."
+   },
+   {
+    "titre": "Cadeaux personnalisés",
+    "solution": "Vendre des tasses ou carnets avec noms sur un site comme Printful."
+   }
+  ],
+  "local-et-territoire": [
+   {
+    "titre": "Annuaire local premium",
+    "solution": "Créer un site web référencant les artisans et commerces locaux avec des abonnements pour les entreprises souhaitant apparaître en tête de liste."
+   },
+   {
+    "titre": "Agenda culturel communautaire",
+    "solution": "Développer une application mobile ou un blog qui centralise tous les événements gratuits et payants d'une ville spécifique."
+   },
+   {
+    "titre": "Plateforme de covoiturage intra-urbain",
+    "solution": "Lancer un service de covoiturage dédié aux trajets quotidiens (travail, courses) au sein d'un même quartier ou arrondissement."
+   },
+   {
+    "titre": "Service de conciergerie de proximité",
+    "solution": "Proposer des services d'aide à domicile ponctuelle (courses, petits bricolages, garde d'animaux) via une plateforme digitale locale."
+   },
+   {
+    "titre": "Marketplace de produits fermiers",
+    "solution": "Mettre en relation directe les agriculteurs des environs avec les habitants pour la vente de paniers de légumes frais sans intermédiaire."
+   },
+   {
+    "titre": "Gestionnaire d'événements associatifs",
+    "solution": "Offrir un service clé en main pour la création, la promotion et la billetterie des événements organisés par les associations locales."
+   },
+   {
+    "titre": "Blog d'actualités municipales",
+    "solution": "Rédiger et monétiser un blog dédié aux actualités, décisions politiques et débats de la commune grâce à la publicité locale."
+   },
+   {
+    "titre": "Ateliers de compétences entre voisins",
+    "solution": "Créer une plateforme permettant aux habitants de proposer ou suivre des ateliers échangistes (cuisine, bricolage, langues) dans leur quartier."
+   },
+   {
+    "titre": "Guide touristique alternatif",
+    "solution": "Vendre des guides numériques audio-visuels créés par les habitants mettant en valeur l'histoire et les secrets cachés de leur ville."
+   },
+   {
+    "titre": "Service de nettoyage écologique",
+    "solution": "Lancer une entreprise de nettoyage de jardins publics ou privés utilisant uniquement des produits bio, basée sur un modèle d'abonnement local."
+   },
+   {
+    "titre": "Co-working de quartier",
+    "solution": "Transformer un local commercial inutilisé en espace de travail partagé accessible aux télétravailleurs du secteur, avec réservation en ligne."
+   },
+   {
+    "titre": "Plateforme de don d'objets",
+    "solution": "Moderer un groupe Facebook ou un site web dédié à la redistribution gratuite d'objements entre particuliers d'une même commune."
+   },
+   {
+    "titre": "Agence de communication territoriale",
+    "solution": "Accompagner les mairies et offices de tourisme dans leur stratégie de communication digitale et leurs réseaux sociaux."
+   },
+   {
+    "titre": "Location d'équipements festifs",
+    "solution": "Gérer une plateforme de location en ligne de matériel pour fêtes locales (chapiteaux, sonorisation, vaisselle) avec livraison sur place."
+   },
+   {
+    "titre": "Service de traduction pour nouveaux arrivants",
+    "solution": "Proposer des services d'aide administrative et linguistique aux immigrés recién llegados pour faciliter leur intégration locale."
+   },
+   {
+    "titre": "Application de suivi des déchets",
+    "solution": "Développer une app informant précisément des horaires de collecte et des points de tri spécifiques à chaque rue de la commune."
+   },
+   {
+    "titre": "Courtier en assurance locale",
+    "solution": "Conseiller les habitants et petites entreprises sur leurs besoins en assurance (habitation, auto, responsabilité civile) avec des tarifs négociés localement."
+   },
+   {
+    "titre": "Formation numérique pour seniors",
+    "solution": "Organiser des cours en ligne ou en présentiel pour apprendre aux personnes âgées à utiliser les outils numériques essentiels au quotidien."
+   },
+   {
+    "titre": "Plateforme de feedback municipal",
+    "solution": "Créer un outil digital permettant aux citoyens de signaler des problèmes (nids-de-poule, éclairage défectueux) directement à la mairie."
+   },
+   {
+    "titre": "Vente de plantes locales en ligne",
+    "solution": "Proposer la vente et la livraison de plantes indigènes adaptées au climat régional, avec conseils de plantation inclus."
+   },
+   {
+    "titre": "Organisation de randonnées guidées",
+    "solution": "Structurer et vendre des balades thématiques (nature, histoire, gastronomie) organisées par des passionnés locaux."
+   },
+   {
+    "titre": "Service de gestion de copropriété",
+    "solution": "Offrir une solution digitale simplifiée pour la gestion des charges, des votes et de la communication au sein des copropriétés locales."
+   },
+   {
+    "titre": "Marketplace de services entre entreprises locales",
+    "solution": "Permettre aux PME et TPE de la région de s'échanger des services (comptabilité, juridique, IT) à tarif préférentiel."
+   },
+   {
+    "titre": "Newsletter hebdomadaire locale",
+    "solution": "Rédiger une newsletter résumant la vie locale, les offres d'emploi et les bons plans, financée par des sponsors commerciaux locaux."
+   },
+   {
+    "titre": "Plateforme de réservation de salles polyvalentes",
+    "solution": "Centraliser la disponibilité et la réservation des salles municipales et associatives pour les réunions, fêtes et ateliers."
+   }
+  ],
+  "culture-et-loisirs": [
+   {
+    "titre": "Boutique de guides touristiques numériques",
+    "solution": "Vendre des guides PDF ou applications de visites de villes et régions avec itinéraires originaux."
+   },
+   {
+    "titre": "Plateforme de réservation d'activités locales",
+    "solution": "Mettre en relation touristes et guides locaux pour des expériences authentiques."
+   },
+   {
+    "titre": "Site de vente de jeux de société indépendants",
+    "solution": "Proposer une boutique en ligne spécialisée dans les jeux de société de créateurs indépendants."
+   },
+   {
+    "titre": "Abonnement de box de puzzles et jeux",
+    "solution": "Envoyer chaque mois une box avec puzzle, jeux de cartes et petits cadeaux ludiques."
+   },
+   {
+    "titre": "Cours de sport en ligne par visioconférence",
+    "solution": "Proposer des séances de coaching sportif personnalisées à distance avec des coachs certifiés."
+   },
+   {
+    "titre": "Blog monétisé sur le trekking et la randonnée",
+    "solution": "Créer un blog avec guides, cartes et tests de matériel, monétisé par affiliation et partenariats."
+   },
+   {
+    "titre": "Plateforme de cours de musique en ligne",
+    "solution": "Connecter élèves et professeurs de musique pour des leçons en visio et des tutoriels vidéo."
+   },
+   {
+    "titre": "Vente d'objets de collection en ligne",
+    "solution": "Créer une marketplace spécialisée pour les collectionneurs (cartes, vinyles, pièces)."
+   },
+   {
+    "titre": "Agence de voyages en ligne sur mesure",
+    "solution": "Concevoir des itinéraires de voyage personnalisés et réservables entièrement en ligne."
+   },
+   {
+    "titre": "Visites virtuelles de monuments historiques",
+    "solution": "Proposer des visites immersives en 3D de sites patrimoniaux avec commentaires audio."
+   },
+   {
+    "titre": "Chaîne de podcasts et vidéos sur l'histoire",
+    "solution": "Produire du contenu historique de qualité monétisé par abonnement et sponsors."
+   },
+   {
+    "titre": "Site de location de matériel de sport entre particuliers",
+    "solution": "Permettre de louer skis, vélos, planches et équipements auprès de particuliers."
+   },
+   {
+    "titre": "Application de suivi d'entraînement personnalisé",
+    "solution": "Offrir des programmes sportifs adaptés avec suivi de progression et coaching automatisé."
+   },
+   {
+    "titre": "Boutique d'articles pour passions créatives",
+    "solution": "Vendre en ligne matériel et kits pour la photographie, le modelisme, le tricot ou le dessin."
+   },
+   {
+    "titre": "Plateforme d'escape games en ligne",
+    "solution": "Créer des escape games digitaux jouables en équipe à distance, pour particuliers et entreprises."
+   },
+   {
+    "titre": "Organisation de quiz et soirées jeux en ligne",
+    "solution": "Animer des tournois de quiz virtuels avec billetterie et lots à gagner."
+   },
+   {
+    "titre": "Site de camping-car et van life",
+    "solution": "Créer un portail avec guides d'itinéraires, spot de location de vans et boutique d'accessoires."
+   },
+   {
+    "titre": "Formations en ligne sur la photographie de voyage",
+    "solution": "Vendre des formations vidéo pour apprendre à photographier ses voyages comme un pro."
+   },
+   {
+    "titre": "Marketplace d'artisanat patrimonial régional",
+    "solution": "Vendre en ligne des objets artisanaux traditionnels de différentes régions de France."
+   },
+   {
+    "titre": "Service d'organisation de séjours sportifs",
+    "solution": "Réserver en ligne des stages et retraites sportives (yoga, surf, trail) en France et à l'étranger."
+   },
+   {
+    "titre": "Application de chasse au trésor urbaine",
+    "solution": "Proposer des parcours de découverte des villes en jeu via smartphone pour familles et groupes."
+   },
+   {
+    "titre": "Vente de plans et fiches de voyage téléchargeables",
+    "solution": "Vendre des itinéraires détaillés, road-trips et city trips prêts à l'emploi sous forme numérique."
+   },
+   {
+    "titre": "Communauté d'abonnement pour passionnés de lecture",
+    "solution": "Proposer un club de lecture en ligne avec box de livres, forums et rencontres d'auteurs."
+   },
+   {
+    "titre": "Plateforme de streaming de concerts et spectacles",
+    "solution": "Diffuser en ligne des concerts, pièces de théâtre et spectacles avec billetterie virtuelle."
+   },
+   {
+    "titre": "Site de préhension d'événements locaux culturels",
+    "solution": "Référencer et vendre des billets pour concerts, expositions et festivals locaux avec agenda personnalisé."
+   }
+  ],
+  "sante-bien-etre": [
+   {
+    "titre": "Application de suivi du sommeil",
+    "solution": "Une app qui analyse les habitudes de sommeil et propose des routines personnalisées pour mieux dormir."
+   },
+   {
+    "titre": "Boutique e-commerce de produits de relaxation",
+    "solution": "Vente en ligne de diffuseurs, huiles essentielles et accessoires de détente."
+   },
+   {
+    "titre": "Plateforme de cours de yoga en ligne",
+    "solution": "Abonnement à des vidéos de yoga pour tous niveaux accessibles à domicile."
+   },
+   {
+    "titre": "Blog et newsletter sur le bien-être",
+    "solution": "Contenu monétisé par la publicité et l'affiliation sur le sommeil, la forme et la prévention."
+   },
+   {
+    "titre": "Programme de coaching en hygiène de vie",
+    "solution": "Accompagnement en ligne pour améliorer sommeil, alimentation et activité physique au quotidien."
+   },
+   {
+    "titre": "Boutique de compléments alimentaires généralistes",
+    "solution": "Vente en ligne de vitamines et compléments grand public avec conseils d'usage généraux."
+   },
+   {
+    "titre": "Application de méditation guidée",
+    "solution": "Méditations audio par abonnement pour réduire le stress et améliorer la concentration."
+   },
+   {
+    "titre": "Chaîne YouTube bien-être et routine matinale",
+    "solution": "Vidéos de routines santé monétisées par pubs, sponsoring et produits dérivés."
+   },
+   {
+    "titre": "Marketplace de cours de fitness en ligne",
+    "solution": "Plateforme mettant en relation coachs certifiés et particuliers pour des séances à distance."
+   },
+   {
+    "titre": "Vente de vêtements de sport et loungewear",
+    "solution": "E-commerce spécialisé dans les tenues confortables pour le sport et la maison."
+   },
+   {
+    "titre": "Application de suivi d'hydratation et d'habitudes",
+    "solution": "App de suivi d'habitudes saines avec rappels et statistiques motivantes."
+   },
+   {
+    "titre": "Box mensuelle bien-être",
+    "solution": "Abonnement mensuel avec produits de soin, tisanes et accessoires de détente."
+   },
+   {
+    "titre": "Formation en ligne sur la gestion du stress",
+    "solution": "Cours vidéo sur les techniques de respiration et d'organisation pour mieux gérer le quotidien."
+   },
+   {
+    "titre": "Site d'articles et guides sur le sommeil",
+    "solution": "Site de contenu informatif sur le sommeil monétisé par l'affiliation de produits de literie."
+   },
+   {
+    "titre": "Plateforme de téléconsultation bien-être",
+    "solution": "Mise en relation avec des professionnels du bien-être (sophrologues, naturopathes) pour des séances en ligne."
+   },
+   {
+    "titre": "Boutique de bougies et parfums d'intérieur naturels",
+    "solution": "E-commerce artisanal de produits pour créer une atmosphère relaxante."
+   },
+   {
+    "titre": "Application d'exercices au bureau",
+    "solution": "App proposant des micro-exercices et étirements pour les personnes sédentaires."
+   },
+   {
+    "titre": "Communauté et abonnement fitness pour femmes",
+    "solution": "Programmes d'entraînement et communauté en ligne dédiés au public féminin."
+   },
+   {
+    "titre": "Vente de matelas et oreillers ergonomiques",
+    "solution": "E-commerce spécialisé dans le confort de sommeil avec guides d'achat comparatifs."
+   },
+   {
+    "titre": "Podcast santé et bien-être",
+    "solution": "Podcast sponsorisé avec épisodes sur le sommeil, la forme et la prévention."
+   },
+   {
+    "titre": "Application de suivi nutritionnel",
+    "solution": "App de journal alimentaire et de recettes équilibrées sans visée médicale."
+   },
+   {
+    "titre": "E-shop de tisanes et infusions premium",
+    "solution": "Vente en ligne de mélanges de plantes pour la détente et le sommeil."
+   },
+   {
+    "titre": "Plateforme de challenges sportifs en ligne",
+    "solution": "Défis de pas, de sport ou de bien-être avec classements et récompenses par abonnement."
+   },
+   {
+    "titre": "Formation en ligne sur la posture et l'ergonomie",
+    "solution": "Cours pour améliorer sa posture au travail et aménager son espace de travail."
+   },
+   {
+    "titre": "Comparateur d'applications et produits bien-être",
+    "solution": "Site d'avis et de comparatifs monétisé par l'affiliation sur les produits de bien-être."
+   }
+  ],
+  "planete": [
+   {
+    "titre": "Conseil en bilan carbone pour PME",
+    "solution": "Aider les petites entreprises à mesurer et réduire leur empreinte carbone avec des outils simples et des plans d'action."
+   },
+   {
+    "titre": "Marketplace de produits zéro déchet",
+    "solution": "Vendre en ligne des produits réutilisables et sans emballage, avec livraison en vrac et consignes."
+   },
+   {
+    "titre": "Abonnement de paniers de légumes locaux",
+    "solution": "Proposer un service d'abonnement hebdomadaire de paniers de légumes bio provenant de fermes locales."
+   },
+   {
+    "titre": "Formation en ligne sur l'énergie solaire domestique",
+    "solution": "Créer des cours vidéo pour apprendre aux particuliers à installer et optimiser leurs panneaux solaires."
+   },
+   {
+    "titre": "Audit énergétique à distance pour logements",
+    "solution": "Analyser les factures et les données du logement pour recommander des économies d'énergie sans visite."
+   },
+   {
+    "titre": "Application de suivi de biodiversité pour jardins",
+    "solution": "Développer une app qui permet aux utilisateurs d'identifier les espèces et de suivre la faune/flore locale."
+   },
+   {
+    "titre": "Service de compostage urbain collecté",
+    "solution": "Collecter les déchets organiques des particuliers et les transformer en compost, livré ensuite aux jardins."
+   },
+   {
+    "titre": "Boutique en ligne de graines et plants anciens",
+    "solution": "Vendre des graines de variétés anciennes et rares, avec des guides de culture et des conseils."
+   },
+   {
+    "titre": "Plateforme de covoiturage pour trajets domicile-travail",
+    "solution": "Mettre en relation les employés d'une même zone pour partager leurs trajets et réduire les émissions."
+   },
+   {
+    "titre": "Consulting en économie circulaire pour restaurants",
+    "solution": "Aider les restaurants à réduire le gaspillage alimentaire et à réutiliser les déchets."
+   },
+   {
+    "titre": "Vente de kits de réparation pour objets du quotidien",
+    "solution": "Proposer des kits pour réparer vêtements, électroménager et meubles, avec tutoriels vidéo."
+   },
+   {
+    "titre": "Service de location de vélos cargo pour particuliers",
+    "solution": "Louer des vélos cargo à la journée ou au mois pour remplacer les livraisons en voiture."
+   },
+   {
+    "titre": "Blog et newsletter sur l'alimentation durable",
+    "solution": "Monétiser un blog avec des recettes, des guides d'achat et des partenariats avec des marques éthiques."
+   },
+   {
+    "titre": "Outil en ligne de calcul d'empreinte eau",
+    "solution": "Fournir un outil gratuit pour estimer la consommation d'eau des produits et proposer des alternatives."
+   },
+   {
+    "titre": "Service de plantation d'arbres en entreprise",
+    "solution": "Vendre aux entreprises des programmes de plantation d'arbres locaux avec suivi et rapports."
+   },
+   {
+    "titre": "Cours de cuisine anti-gaspillage en ligne",
+    "solution": "Enseigner des techniques pour cuisiner avec les restes et les épluchures, en direct ou en replay."
+   },
+   {
+    "titre": "Plateforme de troc de vêtements entre particuliers",
+    "solution": "Créer un site de troc de vêtements avec échange de points et livraison."
+   },
+   {
+    "titre": "Vente de produits d'hygiène solides et naturels",
+    "solution": "Commercialiser shampooings, savons et dentifrices solides, avec un abonnement mensuel."
+   },
+   {
+    "titre": "Service de rénovation énergétique clé en main (en ligne)",
+    "solution": "Coordonner à distance les artisans et les aides financières pour les travaux d'isolation."
+   },
+   {
+    "titre": "Application de gamification pour réduire sa consommation",
+    "solution": "Proposer une app qui récompense les utilisateurs pour leurs gestes écolos (points, défis, récompenses)."
+   },
+   {
+    "titre": "Vente de kits de jardinage urbain pour balcons",
+    "solution": "Vendre des kits complets (bacs, terre, graines) pour cultiver légumes et herbes sur un balcon."
+   },
+   {
+    "titre": "Service de reboisement en ligne pour particuliers",
+    "solution": "Permettre aux particuliers de financer la plantation d'arbres et de suivre leur croissance via des photos."
+   },
+   {
+    "titre": "Consulting en stratégie RSE pour e-commerces",
+    "solution": "Aider les boutiques en ligne à intégrer des pratiques durables dans leur chaîne logistique."
+   },
+   {
+    "titre": "Plateforme de financement participatif pour projets climatiques",
+    "solution": "Mettre en relation des porteurs de projets verts avec des investisseurs particuliers."
+   },
+   {
+    "titre": "Service de livraison de repas à base de protéines végétales",
+    "solution": "Proposer des repas préparés avec des alternatives à la viande, livrés à domicile."
+   }
+  ],
+  "donnees-et-api": [
+   {
+    "titre": "API de scraping de prix concurrents",
+    "solution": "Fournir une API qui nettoie et structure les données de prix des produits e-commerce en temps réel pour les entreprises de retail."
+   },
+   {
+    "titre": "Vente de datasets d'entraînement IA",
+    "solution": "Collecter et annoter des jeux de données spécialisés (médical, juridique, financier) pour entraîner des modèles LLM sectoriels."
+   },
+   {
+    "titre": "API de vérification d'identité KYC",
+    "solution": "Proposer un service API simple pour valider l'identité des utilisateurs via reconnaissance faciale et documents officiels."
+   },
+   {
+    "titre": "Place de marché d'agents autonomes",
+    "solution": "Créer une plateforme où les développeurs peuvent acheter, vendre et déployer des agents IA automatisés pour des tâches spécifiques."
+   },
+   {
+    "titre": "API de géocodage et d'analyse spatiale",
+    "solution": "Offrir des endpoints pour transformer des adresses en coordonnées précises et enrichir ces données avec des infos démographiques."
+   },
+   {
+    "titre": "Agrégateur de news financières en temps réel",
+    "solution": "Fournir une API qui compile et analyse les nouvelles boursières et économiques pour les algorithmes de trading haute fréquence."
+   },
+   {
+    "titre": "Service de transcription et d'extraction de données audio",
+    "solution": "Une API qui transcrit des appels clients ou des réunions et en extrait automatiquement les points d'action et les sentiments."
+   },
+   {
+    "titre": "API de notation de crédit alternative",
+    "solution": "Utiliser des données non traditionnelles (historique de paiement des utilitaires, comportement numérique) pour scorer la solvabilité."
+   },
+   {
+    "titre": "Marketplace de scripts Python data science",
+    "solution": "Permettre aux data scientists de vendre leurs notebooks et scripts pré-entraînés pour le traitement de données spécifiques."
+   },
+   {
+    "titre": "API de détection de fraude par image",
+    "solution": "Analyser les images de chèques ou de factures pour détecter les falsifications avant le remboursement."
+   },
+   {
+    "titre": "Données de trafic web anonymisées",
+    "solution": "Vendre des agrégats de données sur le comportement des navigateurs pour aider les annonceurs à optimiser leurs cibles."
+   },
+   {
+    "titre": "API d'enrichissement de profils LinkedIn",
+    "solution": "Fournir des données professionnelles vérifiées et mises à jour quotidiennement pour les CRM et outils de prospection."
+   },
+   {
+    "titre": "Générateur de fausses données de test (Mock Data)",
+    "solution": "Un outil SaaS/API qui génère des volumes massifs de données réalistes mais fictives pour tester des applications sans risque RGPD."
+   },
+   {
+    "titre": "API de traduction technique spécialisée",
+    "solution": "Offrir une traduction de haute précision pour le code, la documentation technique ou le contenu médical via des modèles fine-tunés."
+   },
+   {
+    "titre": "Place de marché de micro-services IoT",
+    "solution": "Connecter les capteurs IoT aux développeurs qui ont besoin de flux de données physiques pour créer des applications smart home/industry."
+   },
+   {
+    "titre": "API de sentiment analysis sur les réseaux sociaux",
+    "solution": "Analyser en temps réel les mentions de marques sur Twitter/X et Reddit pour mesurer la réputation en direct."
+   },
+   {
+    "titre": "Données immobilières historiques et prédictives",
+    "solution": "Vendre des accès API aux valeurs foncières passées et aux tendances de marché locales pour les investisseurs."
+   },
+   {
+    "titre": "Agent IA de gestion de emails entrants",
+    "solution": "Vendre un agent autonome capable de trier, répondre et classifier les emails professionnels en fonction de règles définies."
+   },
+   {
+    "titre": "API de conformité réglementaire automatique",
+    "solution": "Scanner les contrats et documents pour identifier les clauses non conformes aux nouvelles régulations (GDPR, DMA, etc.)."
+   },
+   {
+    "titre": "Base de données de codes promo actifs",
+    "solution": "Maintenir et vendre un accès API à une liste constamment mise à jour de coupons de réduction fonctionnels pour les comparateurs."
+   },
+   {
+    "titre": "Service de nettoyage et normalisation de bases de données",
+    "solution": "Proposer une API qui reçoit des CSV bruts et retourne des données nettoyées, dupliquées supprimées et formats standardisés."
+   },
+   {
+    "titre": "Marketplace de modèles de machine learning",
+    "solution": "Héberger et vendre des modèles prêts à l'emploi (détection d'objets, prédiction de churn) accessibles via API REST."
+   },
+   {
+    "titre": "API de calcul d'empreinte carbone",
+    "solution": "Estimer l'impact environnemental des transactions ou transports grâce à des facteurs d'émission mis à jour régulièrement."
+   },
+   {
+    "titre": "Données météo hyper-locales pour l'agriculture",
+    "solution": "Fournir des prévisions météorologiques au niveau parcelle pour optimiser l'irrigation et les traitements phytosanitaires."
+   },
+   {
+    "titre": "Agent IA de recherche de talents automatisé",
+    "solution": "Vendre un agent qui scanne les CVs et les profils GitHub pour proposer les meilleurs candidats correspondant à une stack technique."
+   }
+  ],
+  "travail-et-carrieres": [
+   {
+    "titre": "Coaching de carrière en ligne",
+    "solution": "Proposer des sessions individuelles pour aider les clients à définir leur trajectoire professionnelle et leurs objectifs."
+   },
+   {
+    "titre": "Création de CV et lettres de motivation automatisée",
+    "solution": "Vendre des modèles premium et des outils d'IA pour optimiser les candidatures."
+   },
+   {
+    "titre": "Formation aux soft skills pour l'emploi",
+    "solution": "Lancer des mini-cours vidéo sur la communication, la gestion du stress ou la négociation de salaire."
+   },
+   {
+    "titre": "Agence de personal branding pour freelances",
+    "solution": "Aider les professionnels à construire et maintenir leur image de marque sur LinkedIn et les réseaux sociaux."
+   },
+   {
+    "titre": "Plateforme de mise en relation de mentors",
+    "solution": "Créer une base de données où les seniors peuvent conseiller les jeunes professionnels contre une petite rémunération."
+   },
+   {
+    "titre": "Audit de profil LinkedIn",
+    "solution": "Offrir un service d'analyse approfondie du profil pour maximiser sa visibilité auprès des recruteurs."
+   },
+   {
+    "titre": "Micro-consulting pour reconversion",
+    "solution": "Proposer des sessions courtes et ciblées pour valider la faisabilité d'un nouveau métier."
+   },
+   {
+    "titre": "Blog et newsletter sur les métiers émergents",
+    "solution": "Monétiser le trafic par l'affiliation vers des formations ou des outils spécifiques aux nouvelles carrières."
+   },
+   {
+    "titre": "Création de portfolio numérique",
+    "solution": "Offrir des ateliers et des templates pour que les créatifs présentent leur travail de manière professionnelle."
+   },
+   {
+    "titre": "Service de simulation d'entretien",
+    "solution": "Animer des sessions d'entretien simulées en direct via visioconférence avec feedback immédiat."
+   },
+   {
+    "titre": "Marketplace de compétences spécifiques",
+    "solution": "Mettre en relation des entreprises avec des indépendants pour des missions très courtes et pointues."
+   },
+   {
+    "titre": "Cours de maîtrise des outils IA pour le travail",
+    "solution": "Enseigner aux professionnels comment utiliser ChatGPT, Midjourney ou d'autres outils pour améliorer leur productivité."
+   },
+   {
+    "titre": "Conseil en transition vers le télétravail",
+    "solution": "Aider les employés à négocier des arrangements de travail à distance avec leurs employeurs actuels."
+   },
+   {
+    "titre": "Booster de profil pour jeunes diplômés",
+    "solution": "Proposer des packs de services (CV, lettre, simulation) spécifiquement adaptés aux jeunes sortant de l'école."
+   },
+   {
+    "titre": "E-book sur les stratégies de recherche d'emploi",
+    "solution": "Vendre un guide numérique complet décrivant les meilleures méthodes de candidature passives et actives."
+   },
+   {
+    "titre": "Agence de sourcing pour PME",
+    "solution": "Aider les petites entreprises à trouver des talents en rédigeant des offres d'emploi percutantes et en ciblant les bonnes plateformes."
+   },
+   {
+    "titre": "Ateliers de ",
+    "solution": ""
+   },
+   {
+    "titre": "Valorisation des compétences cachées",
+    "solution": "Aider les personnes en situation de chômage long à identifier et formuler leurs compétences transférables."
+   },
+   {
+    "titre": "Plateforme de micro-missions",
+    "solution": "Mettre en place un système où les gens peuvent gagner de petits revenus sur des tâches en ligne simples."
+   },
+   {
+    "titre": "Coaching pour freelancing débutant",
+    "solution": "Guider les nouveaux indépendants dans la structuration de leur activité, leur tarification et la prospection."
+   },
+   {
+    "titre": "Création de modules de formation spécifiques",
+    "solution": "Développer des cours en ligne sur des compétences très demandées (ex: data entry avancé, gestion de projet agile)."
+   },
+   {
+    "titre": "Service d'aide à la négociation salariale",
+    "solution": "Conseiller les candidats sur les meilleures stratégies pour demander une augmentation ou un meilleur salaire."
+   },
+   {
+    "titre": "Booster de réseaux professionnels thématiques",
+    "solution": "Créer des groupes privés payants axés sur des industries spécifiques (ex: Tech, Santé) pour le networking."
+   },
+   {
+    "titre": "Audit de l'écosystème freelance",
+    "solution": "Analyser les contrats et les structures juridiques pour les travailleurs indépendants afin d'optimiser leur situation."
+   }
+  ]
+ }
+}

@@ -1,32 +1,32 @@
 [
  {
-  "titre": "BugAlert",
-  "solution": "Un agent surveille en continu les avis récents de l'App Store et du Play Store d'une app, détecte les signaux de bugs récurrents, les regroupe par sévérité et envoie un rapport quotidien priorisé directement au développeur.",
-  "angle_libre": "Heednest couvre déjà la surveillance d'avis + GitHub (etannonce l'extension Play Store) : l'angle restant est la spécialisation 'abonnés payants en colère' — score de risque de churn/désabonnement par bug, alertes temps réel (< 24h) plutôt que digest quotidien, et focus petits studios vendant en abonnement.",
-  "objection": "Le risque majeur réside dans le 'bruit' des avis : l'agent doit impérativement distinguer un bug technique reproductible d'une insatisfaction utilisateur ou d'un problème lié à la configuration de l'appareil. Si le taux de faux positifs est élevé, le développeur ignorera le rapport (fatigue d'alerte)."
+  "titre": "API Sémantique GitHub Issues",
+  "solution": "Un endpoint API RapidAPI qui agrège, classe et indexe les tickets GitHub par popularité, ancienneté et sentiment communautaire, offrant des données structurées prêtes à l'emploi pour les scripts automatisés.",
+  "angle_libre": "Aucun concurrent identifié dans les résultats : le créneau d'une API clé-en-main qui score les issues GitHub (popularité, sentiment, blocages) pour consommation automatisée par agents est vacant — l'angle libre est la donnée structurée 'prête à scripter' (endpoint unique, pas un outil à installer), là où les existants sont des assistants intégrés à un IDE ou des plateformes de recherche internes.",
+  "objection": "La valeur repose uniquement sur l'agrégation de données publiques. Un LLM avancé ou un scraper sophistiqué pourrait reproduire une grande partie de cette fonctionnalité sans passer par une API dédiée, rend la barrière à l'entrée trop faible."
  },
  {
-  "titre": "Le Relais de Voix : la mémoire parlée des aînés, livrée en abonnement familial",
-  "solution": "Un agent IA appelle ou guide l'aîné par téléphone ou via une box simple, pose les bonnes questions de biographie orale, transcrit, indexe et livre chaque mois un épisode audio monté et partageable à la famille.",
-  "angle_libre": "Aucun concurrent trouvé ne fait d'appels téléphoniques sortants automatiques à l'aîné avec livraison mensuelle d'un épisode audio monté et partageable : tous reposent sur l'initiative de la famille ou d'une app à installer.",
-  "objection": "La promesse d'un épisode monté chaque mois repose sur la coopération d'un aîné souvent réticent ou fatigué ; sans engagement garanti de sa part, le service peut livrer des épisodes vides ou médiocres, et l'abonné se désengage vite."
+  "titre": "Outil de test automatique de compatibilité des dépendances alternatives",
+  "solution": "Un agent IA qui analyse les dépendances d'un projet CRA, teste leur compatibilité avec plusieurs frameworks modernes, et produit un tableau comparatif avec les risques.",
+  "angle_libre": "Un rapport comparatif multi-frameworks (Vite, Next.js, Remix) avec scoring de risque par dépendance, généré automatiquement avant engagement de migration — les outils existants font des PR de migration (Copilot, Dependabot) mais pas d'évaluation comparative a priori.",
+  "objection": "La complexité de l'écosystème JavaScript rend le test de compatibilité universel extrêmement difficile. Un seul changement de version ou une interaction subtile entre deux dépendances peut invalider le test, menaçant la fiabilité du rapport."
  },
  {
-  "titre": "Resili.io : L'API de Résiliation pour Développeurs",
-  "solution": "Une API REST qui prend un nom de service et un ID utilisateur (ou un screenshot) et retourne le lien exact de résiliation, la date de prochain prélèvement et la procédure requise.",
-  "angle_libre": "Aucun acteur ne normalise la résiliation en API inter-services (lien de résiliation + prochaine date de prélèvement + procédure) pour les apps financières et agents IA ; OIB ne couvre que l'assurance en B2B2C, pas la résiliation multi-verticale.",
-  "objection": "La dépendance aux données de scraping et à la maintenance manuelle des procédures de résiliation est le point de rupture. Les entreprises changent leurs conditions générales et leurs interfaces sans préavis, rendant l'API fragile et sujette à des erreurs critiques si elle n'est pas mise à jour en temps réel."
+  "titre": "LocalPermit Scout",
+  "solution": "Moteur de recherche sémantique sur les PLU (Plans Locaux d'Urbanisme) et arrêtés municipaux : posez une question naturelle (« Puis-je mettre une pergola de 10m² ? ») et obtenez la réponse exacte avec citation de l'article.",
+  "angle_libre": "Réponse naturelle avec citation exacte de l'article du PLU (article, zone, seuil) et alerte sur les secteurs protégés — aucun concurrent n'offre un moteur sémantique par question sur les PLU",
+  "objection": "Le risque principal réside dans l'interprétation juridique des documents. Les PLU sont souvent ambigus, contradictoires ou nécessitent une connaissance contextuelle (ex: zones protégées, servitudes) qu'un RAG simple ne peut garantir. Une réponse 'techniquement correcte' mais juridiquement incomplète expose l'utilisateur et le service à un risque de non-conformité coûteux."
  },
  {
-  "titre": "Dialectomètre : choisissez votre dialecte, on construit le programme",
-  "solution": "Un générateur de programmes d'apprentissage paramétrable : l'utilisateur choisit son dialecte cible, son niveau et son objectif, et l'IA construit un parcours complet (vocabulaire, grammaire, audio) à partir de sources ouvertes et de corpus spécifiques.",
-  "angle_libre": "Aucun acteur ne propose de packs complets par dialecte (tunisien, algérien, marocain) avec audio et grammaire : la lacune est documentée côté recherche comme côté apps grand public. Attention toutefois : créer du contenu de qualité par dialecte est coûteux, et des acteurs (TalkInArabic, Mango Languages hors résultats fournis) existent probablement — à vérifier manuellement.",
-  "objection": "La défensibilité est faible : un assistant IA gratuit (ex. ChatGPT) peut déjà générer des leçons de dialecte sur demande, ce qui rend difficile de justifier un paiement récurrent ou même unitaire pour un pack."
+  "titre": "ReviewPulse Alerts : Veille Concurrentielle Automatisée",
+  "solution": "Service qui surveille les nouveautés des produits concurrents et alerte sur les sentiments négatifs récurrents avant le lancement.",
+  "angle_libre": "Aucun concurrent trouvé ne cible spécifiquement les marques indépendantes et artisans de produits physiques avec des alertes sur les sentiments négatifs récurrents avant un lancement, à un prix micro (29 €).",
+  "objection": "Le risque juridique et opérationnel lié au scraping massif de données de concurrentiels est la faille principale. De plus, le 'sentiment négatif' est souvent subjectif et nécessite une contextualisation fine pour être réellement exploitable par un créateur."
  },
  {
-  "titre": "KidScore",
-  "solution": "Un annuaire vérifié d'applis pour enfants où des agents analysent les avis, extraient les mentions de pubs, d'achats piégeux et de contenus inadaptés, et produisent une fiche parent simple : « nombre de pubs signalées, pression d'achat, alternatives propres ».",
-  "angle_libre": "Aucun concurrent des résultats ne fait d'analyse des avis pour quantifier pubs et pression d'achat in-app : un annuaire type « label propre » indépendant des magasins d'applis est un angle libre, à condition de valider la demande hors contrôle parental.",
-  "objection": "La défendabilité est faible : un assistant IA gratuit peut demain analyser les mêmes avis et produire des fiches équivalentes, rendant l'abonnement difficile à justifier."
+  "titre": "JobMatch IA",
+  "solution": "Un agent IA qui, à partir d'une requête, scrape les offres Indeed via l'API Apify, puis les classe automatiquement par pertinence, compétences requises, salaire estimé et localisation, en générant un rapport personnalisé envoyé par e-mail.",
+  "angle_libre": "La couche IA de filtrage et le rapport e-mail personnalisé pour le demandeur d'emploi final — tous les concurrents livrent des données brutes aux développeurs et recruteurs, aucun ne s'adresse au chercheur d'emploi en France avec un produit fini clé en main.",
+  "objection": "Le service est une amélioration d'un filtre existant (Indeed) et non une rupture. La valeur est fragile car elle dépend entièrement de la qualité du scraping et de la persistance de l'API Apify. De plus, la distribution organique sur les groupes Facebook est un canal à faible conversion et très saturé."
  }
 ]
