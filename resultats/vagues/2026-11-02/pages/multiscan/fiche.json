@@ -1,0 +1,43 @@
+{
+ "slug": "multiscan",
+ "nom": "MultiScan",
+ "accroche": "Testez votre parcours d'achat mobile et PC.",
+ "sous_titre": "Outil en préparation pour identifier les ruptures de panier entre appareils. Téléchargez votre rapport gratuit ci-dessous.",
+ "probleme_points": [
+  "Panier vide ou session perdue en passant du mobile à l'ordinateur.",
+  "Impossible de détecter techniquement où le client abandonne.",
+  "Perte de ventes silencieuse sans outil de diagnostic simple."
+ ],
+ "comment": [
+  "Entrez l'URL de votre page produit ou panier.",
+  "Lancez le scan gratuit (simulation multi-appareils).",
+  "Recevez instantanément un rapport PDF des anomalies détectées."
+ ],
+ "pour_qui": "Indépendants et micro-vendeurs sur Shopify, Etsy ou Gumroad souhaitant sécuriser leur expérience d'achat multi-écrans.",
+ "prix": "14,90 € / mois par boutique (pré-commande : 9,90 € / mois pe",
+ "condition_prix": "Offre réservée aux 50 premiers inscrits. Service en cours de développement final avant lancement public.",
+ "offre": "precommande",
+ "cta": "Télécharger mon scan gratuit",
+ "faq": [
+  {
+   "question": "Pourquoi est-ce gratuit maintenant ?",
+   "reponse": "C'est une phase de test. Je collecte des données pour affiner l'outil avant son lancement payant. Votre feedback m'aide à corriger les faux positifs."
+  },
+  {
+   "question": "Est-ce que vous accédez à mes données sensibles ?",
+   "reponse": "Non. L'outil simule la navigation depuis l'extérieur. Aucune donnée bancaire ni compte personnel n'est collecté. Seul le comportement de navigation publique est analysé."
+  },
+  {
+   "question": "Quand l'outil sera-t-il disponible en version complète ?",
+   "reponse": "Le service complet avec monitoring continu sera lancé après validation des résultats de cette phase de test. La pré-commande garantit votre tarif réduit dès l'ouverture."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

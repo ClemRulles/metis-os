@@ -1,0 +1,51 @@
+{
+ "slug": "resili-io",
+ "nom": "Resili.io",
+ "accroche": "L'API qui trouve votre lien de résiliation",
+ "sous_titre": "Entrez le nom d'un service, obtenez le lien de résiliation, la date du prochain prélèvement et la procédure à suivre. Service en préparation : rejoignez la liste de précommande pour être informé du lancement.",
+ "probleme_points": [
+  "Chercher comment résilier un service demande du temps : fouiller les CGU, trouver le bon lien, comprendre la marche à suivre.",
+  "Les applications financières et agrégateurs de budget souhaitent proposer la résiliation à leurs utilisateurs, mais il n'existe pas de standard technique pour cela.",
+  "Les conditions générales et les interfaces des services évoluent sans préavis, ce qui rend les liens et procédures rapidement obsolètes."
+ ],
+ "comment": [
+  "Appelez l'API avec le nom du service (ex : Netflix) et l'identifiant utilisateur",
+  "Recevez en réponse le lien de résiliation, la date du prochain prélèvement et la procédure requise",
+  "Intégrez cette information dans votre application ou agent IA"
+ ],
+ "pour_qui": "Développeurs d'applications financières, agrégateurs de budget et créateurs d'agents IA qui souhaitent proposer la résiliation à leurs utilisateurs sans développer cette fonctionnalité eux-mêmes.",
+ "prix": "29 euros/mois",
+ "condition_prix": "500 requêtes par mois incluses, résiliable à tout moment",
+ "offre": "precommande",
+ "cta": "Rejoindre la liste de précommande",
+ "faq": [
+  {
+   "question": "Le service existe-t-il déjà ?",
+   "reponse": "Non, Resili.io est en préparation. Cette page de test sert à évaluer l'intérêt avant de construire l'API."
+  },
+  {
+   "question": "Comment l'API trouvera-t-elle les liens de résiliation ?",
+   "reponse": "Le projet prévoit de combiner des données publiques, des procédures vérifiées manuellement et un suivi des changements de CGU pour maintenir les informations à jour."
+  },
+  {
+   "question": "Que se passe-t-il si une procédure change ?",
+   "reponse": "Un système de surveillance est prévu pour détecter les changements et signaler quand une information est potentiellement obsolète, afin que vous puissiez la vérifier."
+  },
+  {
+   "question": "Quand le service sera-t-il disponible ?",
+   "reponse": "L'API est en cours de construction. Les personnes inscrites à la précommande seront informées en priorité du lancement."
+  },
+  {
+   "question": "Y a-t-il un engagement ?",
+   "reponse": "Non, la précommande n'engage à rien. Vous ne seriez débité qu'au lancement effectif du service."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2563eb",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

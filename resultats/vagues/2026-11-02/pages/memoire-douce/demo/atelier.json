@@ -1,0 +1,11 @@
+{
+ "ok": false,
+ "raison": "aucune API de l'atlas ne sert ce produit (Aucune des API listées (météo, pollens, crues, marine, biodiversité, rappels conso, recherche scientifique, wikidata, adresses, électricité, entreprises, BODACC, failles logicielles, npm, HuggingFace, devises, Eurostat, banque mondiale, data.gouv, Open Library, satellites, avions) ne permet de démontrer le cœur du produit « Relais de Voix » : un agent IA qui appelle un aîné, enregistre sa voix, transcrit et livre un épisode audio familial. Ces API ne fournissent ni données d'appels téléphoniques, ni transcription, ni audio, ni généalogie/mémoire orale. Une démonstration forçant une corrélation (ex: météo pour choisir le moment d'appel) serait hors sujet et ne prouverait rien de la valeur promise.)",
+ "essais": null,
+ "spec": {
+  "pertinent": false,
+  "raison": "Aucune des API listées (météo, pollens, crues, marine, biodiversité, rappels conso, recherche scientifique, wikidata, adresses, électricité, entreprises, BODACC, failles logicielles, npm, HuggingFace, devises, Eurostat, banque mondiale, data.gouv, Open Library, satellites, avions) ne permet de démontrer le cœur du produit « Relais de Voix » : un agent IA qui appelle un aîné, enregistre sa voix, transcrit et livre un épisode audio familial. Ces API ne fournissent ni données d'appels téléphoniques, ni transcription, ni audio, ni généalogie/mémoire orale. Une démonstration forçant une corrélation (ex: météo pour choisir le moment d'appel) serait hors sujet et ne prouverait rien de la valeur promise."
+ },
+ "sources": [],
+ "trace": []
+}

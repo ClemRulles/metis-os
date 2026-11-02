@@ -1,0 +1,52 @@
+{
+ "slug": "lettrelisible",
+ "nom": "LettreLisible",
+ "accroche": "Générez votre lettre de réclamation en quelques minutes",
+ "sous_titre": "Vous avez un litige de consommation simple (colis cassé, remboursement refusé, rétractation) et ne savez pas quoi écrire ? Répondez à 5 questions pour obtenir un modèle structuré, prêt à être envoyé par recommandé ou e-mail. Le service est actuellement en phas",
+ "probleme_points": [
+  "Les consommateurs ignorent souvent l'existence de droits concrets tels que le délai de rétractation, la non-conformité du produit ou la perte de colis.",
+  "Même informés, il est difficile de formuler une demande précise et d'inclure les mentions nécessaires pour qu'elle soit prise au sérieux.",
+  "Les modèles gratuits disponibles en ligne sont souvent génériques, incomplets ou inadaptés à la situation spécifique."
+ ],
+ "comment": [
+  "Répondez à 5 questions simples concernant votre litige (type de problème, pays de l'UE, contexte).",
+  "L'outil assemble un document standardisé conforme aux règles européennes de consommation, personnalisé selon vos réponses.",
+  "Vous recevez un fichier PDF contenant les coordonnées du vendeur, vos demandes et les délais légaux, prêt à être envoyé."
+ ],
+ "pour_qui": "Les consommateurs européens confrontés à un litige simple (livraison, achat en ligne, rétractation) souhaitant rédiger une lettre claire et structurée sans consulter de textes de loi complexes.",
+ "prix": "4,99 € par lettre générée",
+ "condition_prix": "Paiement unique lors de la génération du document, sans abonnement. La précommande permet d'accéder à la version finale dès sa mise en ligne.",
+ "offre": "precommande",
+ "cta": "Rejoindre la liste d'attente",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, il est en cours de développement. Vous pouvez rejoindre la liste d'attente pour être notifié de sa mise en ligne."
+  },
+  {
+   "question": "Est-ce un conseil juridique ?",
+   "reponse": "Non. Le document généré est un modèle basé sur vos réponses. Il ne constitue pas une consultation juridique personnalisée. Pour un litige complexe, consultez un avocat ou une association de consommateurs."
+  },
+  {
+   "question": "Dans quels pays le service fonctionne-t-il ?",
+   "reponse": "La première version couvrira les litiges de consommation courants dans plusieurs grands pays de l'Union européenne, en s'appuyant sur les directives européennes de protection du consommateur."
+  },
+  {
+   "question": "Combien ça coûtera ?",
+   "reponse": "4,99 € par lettre générée, en paiement unique. Aucun abonnement ni engagement requis."
+  },
+  {
+   "question": "Que se passe-t-il si le vendeur refuse ?",
+   "reponse": "Aucun document ne garantit un résultat favorable. La lettre formalise votre démarche et expose vos droits, mais l'issue dépend de chaque situation individuelle."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C5F7C",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": "",
+ "demo_url": "demo/"
+}

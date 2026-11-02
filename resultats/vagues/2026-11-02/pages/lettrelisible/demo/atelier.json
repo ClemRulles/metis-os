@@ -1,0 +1,48 @@
+{
+ "ok": true,
+ "raison": null,
+ "essais": 1,
+ "spec": {
+  "titre": "DisputeDoc Generator - Démo",
+  "promesse": "Générez votre lettre de réclamation officielle en 2 minutes, prête à être envoyée.",
+  "donnees": [
+   {
+    "cle": "rappelconso",
+    "api": "rappelconso",
+    "url": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records?limit=5&order_by=date_publication%20desc",
+    "pourquoi": "Identifier les produits rappelés récents pour alerter l'utilisateur et lui fournir un motif de réclamation."
+   },
+   {
+    "cle": "adresse-fr",
+    "api": "adresse-fr",
+    "url": "https://api-adresse.data.gouv.fr/search/?q=8%20bd%20du%20port&limit=1",
+    "pourquoi": "Valider et normaliser l'adresse de l'utilisateur pour le PDF."
+   },
+   {
+    "cle": "entreprises-fr",
+    "api": "entreprises-fr",
+    "url": "https://recherche-entreprises.api.gouv.fr/search?q=boulangerie&per_page=2",
+    "pourquoi": "Rechercher l'entreprise concernée par la réclamation (exemple : boulangerie)."
+   }
+  ],
+  "ecran": "Section 1 : Titre 'DisputeDoc Generator' et promesse. Section 2 : Formulaire simple (5 questions) : 'Quel produit ?', 'Quel problème ?', 'Adresse postale', 'Email', 'Entreprise concernée'. Section 3 : Résultat en temps réel : affichage des derniers rappels de produits (liste avec date, marque, catégorie) pour inspirer l'utilisateur. Section 4 : Aperçu de la lettre générée (texte formaté) avec bouton 'Télécharger PDF'. Section 5 : Sources et licences (RappelConso, Base Adresse Nationale, Recherche d'entreprises).",
+  "calcul": "L'utilisateur remplit le formulaire. Les données de rappel conso sont affichées pour l'informer. L'adresse saisie est validée via l'API adresse-fr. Le nom de l'entreprise est recherché via entreprises-fr. Le texte de la lettre est construit en combinant les réponses de l'utilisateur et les données validées (adresse normalisée, entreprise trouvée). Le PDF est généré côté client (bibliothèque jsPDF).",
+  "limites": "Ne gère pas l'envoi réel du courrier. Les données de rappel conso sont limitées aux 5 derniers rappels. La recherche d'entreprise est basée sur un nom saisi, pas sur un SIRET. Pas de personnalisation avancée du texte juridique."
+ },
+ "sources": [
+  "RappelConso (France)"
+ ],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [
+    "rappelconso"
+   ],
+   "erreurs": []
+  },
+  {
+   "essai": 1,
+   "erreurs": []
+  }
+ ]
+}

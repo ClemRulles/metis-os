@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LettreLisible — Générez votre lettre de réclamation en quelques minutes</title>
+<meta name="description" content="Vous avez un litige de consommation simple (colis cassé, remboursement refusé, rétractation) et ne savez pas quoi écrire ? Répondez à 5 questions pour obtenir un modèle structuré, prêt à être envoyé par recommandé ou e-mail. Le service est actuellement en phas">
+<meta name="robots" content="noindex">
+<style>
+:root{--fond:#fbfaf7;--texte:#1d1d1b;--doux:#5b5b57;--accent:#2C5F7C;--carte:#fff;--trait:#e6e3dc}
+@media (prefers-color-scheme:dark){:root{--fond:#141513;--texte:#ecebe6;--doux:#a7a69f;--carte:#1d1e1b;--trait:#33342f}}
+*{box-sizing:border-box}body{margin:0;background:var(--fond);color:var(--texte);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+.etat{display:inline-block;font-size:13px;padding:4px 10px;border:1px solid var(--trait);border-radius:99px;color:var(--doux)}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.1;margin:18px 0 12px}h2{font-size:22px;margin:44px 0 12px}
+.sous{font-size:19px;color:var(--doux);margin:0 0 24px}
+.carte{background:var(--carte);border:1px solid var(--trait);border-radius:14px;padding:20px}
+form{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}input[type=email]{flex:1 1 240px;padding:13px 14px;border-radius:10px;border:1px solid var(--trait);background:var(--fond);color:var(--texte);font:inherit}
+button{padding:13px 18px;border:0;border-radius:10px;background:var(--accent);color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.mentions{font-size:13px;color:var(--doux);margin-top:10px}.ok{color:var(--accent);font-weight:600}
+ul.pts{padding-left:20px}ol.etapes{list-style:none;padding:0;display:grid;gap:12px}ol.etapes li{display:flex;gap:12px;align-items:flex-start}
+.n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700}ol.etapes p{margin:2px 0}
+.prix{font-size:28px;font-weight:700}details{border-top:1px solid var(--trait);padding:12px 0}summary{cursor:pointer;font-weight:600}
+footer{max-width:760px;margin:0 auto;padding:24px 16px 48px;font-size:13px;color:var(--doux);border-top:1px solid var(--trait)}footer a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+<span class="etat">En préparation · précommande remboursable</span>
+<h1>Générez votre lettre de réclamation en quelques minutes</h1>
+<p class="sous">Vous avez un litige de consommation simple (colis cassé, remboursement refusé, rétractation) et ne savez pas quoi écrire ? Répondez à 5 questions pour obtenir un modèle structuré, prêt à être envoyé par recommandé ou e-mail. Le service est actuellement en phas</p>
+<div class="carte" id="inscription">
+<form id="f">
+<input type="email" name="email" required placeholder="votre@adresse.email" autocomplete="email" aria-label="Adresse e-mail">
+<button type="submit">Rejoindre la liste d'attente</button>
+<label class="mentions" style="flex-basis:100%"><input type="checkbox" name="accord" required> J'accepte d'être contacté(e) par e-mail au sujet de LettreLisible. Désinscription en un clic, à tout moment.</label>
+</form>
+<p class="mentions" id="msg">Aucun paiement aujourd'hui : vous serez prévenu(e) avant tout prélèvement, et la précommande reste remboursable sans condition.</p>
+</div>
+<p class="mentions"><a href="demo/">Voir un aperçu construit avec des données réelles</a> (démonstration, le service complet est en préparation).</p>
+<h2>Le problème</h2>
+<ul class="pts"><li>Les consommateurs ignorent souvent l'existence de droits concrets tels que le délai de rétractation, la non-conformité du produit ou la perte de colis.</li><li>Même informés, il est difficile de formuler une demande précise et d'inclure les mentions nécessaires pour qu'elle soit prise au sérieux.</li><li>Les modèles gratuits disponibles en ligne sont souvent génériques, incomplets ou inadaptés à la situation spécifique.</li></ul>
+<h2>Comment ça marche</h2>
+<ol class="etapes"><li><span class="n">1</span><p>Répondez à 5 questions simples concernant votre litige (type de problème, pays de l'UE, contexte).</p></li><li><span class="n">2</span><p>L'outil assemble un document standardisé conforme aux règles européennes de consommation, personnalisé selon vos réponses.</p></li><li><span class="n">3</span><p>Vous recevez un fichier PDF contenant les coordonnées du vendeur, vos demandes et les délais légaux, prêt à être envoyé.</p></li></ol>
+<h2>Pour qui</h2>
+<p>Les consommateurs européens confrontés à un litige simple (livraison, achat en ligne, rétractation) souhaitant rédiger une lettre claire et structurée sans consulter de textes de loi complexes.</p>
+<h2>Prix prévu</h2>
+<p class="prix">4,99 € par lettre générée</p>
+<p class="mentions">Paiement unique lors de la génération du document, sans abonnement. La précommande permet d'accéder à la version finale dès sa mise en ligne.</p>
+<h2>Questions</h2><details><summary>Le service est-il déjà disponible ?</summary><p>Non, il est en cours de développement. Vous pouvez rejoindre la liste d'attente pour être notifié de sa mise en ligne.</p></details><details><summary>Est-ce un conseil juridique ?</summary><p>Non. Le document généré est un modèle basé sur vos réponses. Il ne constitue pas une consultation juridique personnalisée. Pour un litige complexe, consultez un avocat ou une association de consommateurs.</p></details><details><summary>Dans quels pays le service fonctionne-t-il ?</summary><p>La première version couvrira les litiges de consommation courants dans plusieurs grands pays de l'Union européenne, en s'appuyant sur les directives européennes de protection du consommateur.</p></details><details><summary>Combien ça coûtera ?</summary><p>4,99 € par lettre générée, en paiement unique. Aucun abonnement ni engagement requis.</p></details><details><summary>Que se passe-t-il si le vendeur refuse ?</summary><p>Aucun document ne garantit un résultat favorable. La lettre formalise votre démarche et expose vos droits, mais l'issue dépend de chaque situation individuelle.</p></details>
+</main>
+<footer>
+<p><strong>LettreLisible</strong> est un projet en préparation. Ce site présente un service qui n'est pas encore disponible ; il sert à mesurer l'intérêt avant de le construire.</p>
+<p id="mentions-legales"><strong>Éditeur :</strong>  —  — contact : <a href="mailto:"></a>. Hébergement : Cloudflare, Inc.</p>
+<p id="confidentialite"><strong>Données personnelles :</strong> votre adresse e-mail sert uniquement à vous informer du lancement de LettreLisible (base légale : votre consentement). Elle est conservée au plus 12 mois, jamais vendue ni partagée. Vous pouvez la faire supprimer en écrivant à . Aucun cookie publicitaire ; la page compte ses visites de façon anonyme.</p>
+</footer>
+<script>
+(function(){
+  var API="", X="lettrelisible";
+  var q=new URLSearchParams(location.search), src=q.get("utm_source")||document.referrer.split("/")[2]||"direct";
+  try{ if(API) navigator.sendBeacon(API+"/visite", JSON.stringify({experience:X, source:src})); }catch(e){}
+  document.getElementById("f").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var d=new FormData(ev.target), m=document.getElementById("msg");
+    fetch(API+"/inscription",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({experience:X,email:d.get("email"),accord:!!d.get("accord"),source:src})})
+      .then(function(r){ if(!r.ok) throw 0; m.innerHTML='<span class="ok">Merci, c\'est noté.</span> Vous recevrez un seul e-mail au lancement.'; ev.target.reset(); })
+      .catch(function(){ m.textContent="L'inscription n'a pas fonctionné. Réessayez dans un instant."; });
+  });
+})();
+</script>
+</body>
+</html>

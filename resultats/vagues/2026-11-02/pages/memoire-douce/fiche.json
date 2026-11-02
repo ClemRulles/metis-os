@@ -1,0 +1,47 @@
+{
+ "slug": "memoire-douce",
+ "nom": "Mémoire Douce",
+ "accroche": "La voix de vos grands-parents, gardée pour toujours",
+ "sous_titre": "Un service en préparation : nous appelons vos aînés, recueillons leurs histoires et livrons chaque mois un épisode audio monté, prêt à partager en famille.",
+ "probleme_points": [
+  "Les histoires et la voix de vos parents ou grands-parents existent surtout dans votre mémoire, pas dans un enregistrement.",
+  "Personne n'a le temps ni la méthode pour appeler et enregistrer régulièrement.",
+  "Les rares enregistrements finissent dispersés entre téléphones et ordinateurs, puis perdus."
+ ],
+ "comment": [
+  "Vous précommandez l'offre cadeau ou vous rejoignez la liste d'attente.",
+  "Nous préparons avec vous un kit de lancement : questionnaire illustré et invitations à raconter des histoires précises, pour donner envie à l'aîné de parler.",
+  "Nous appelons ou guidons l'aîné, montons l'épisode (manuellement au lancement) et vous livrons le premier épisode sous deux semaines."
+ ],
+ "pour_qui": "Les enfants et petits-enfants (40-60 ans) qui veulent préserver la voix et les souvenirs d'un parent ou grand-parent vieillissant, sans avoir à organiser les enregistrements eux-mêmes.",
+ "prix": "49 euros pour 3 mois (offre cadeau, précommande)",
+ "condition_prix": "Précommande payée seulement après validation de votre place ; premier épisode livré sous 2 semaines après le premier échange réussi avec l'aîné.",
+ "offre": "precommande",
+ "cta": "Précommander l'offre cadeau",
+ "faq": [
+  {
+   "question": "Le service existe-t-il déjà ?",
+   "reponse": "Non, il est en préparation. Vous précommandez une place parmi les premiers foyers accompagnés manuellement ; rien n'est prélevé sans engagement clair."
+  },
+  {
+   "question": "Et si mon parent ou grand-parent ne veut pas parler ?",
+   "reponse": "Le kit de lancement (questionnaire illustré, invitations à raconter une histoire précise) est conçu pour l'engager en douceur. Et si un appel ne se fait pas, nous montons un épisode à partir des archives familiales que vous nous fournissez (photos, lettres, enregistrements), pour que vous receviez quand même votre épisode du mois."
+  },
+  {
+   "question": "Comment se passe le paiement et le contact ?",
+   "reponse": "Tout se fait par e-mail et via la page de précommande — aucun appel commercial de notre part envers vous. Seuls les appels vers l'aîné sont réalisés, avec son accord préalable."
+  },
+  {
+   "question": "Que deviennent les enregistrements ?",
+   "reponse": "Ils appartiennent à votre famille. Vous recevez chaque épisode en fichier audio partageable, avec la transcription. Les données sont utilisées uniquement pour produire vos épisodes et ne sont ni revendues ni partagées."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#4A5D6E",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

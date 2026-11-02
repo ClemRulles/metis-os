@@ -1,0 +1,43 @@
+{
+ "slug": "lecturacible",
+ "nom": "LecturaCible",
+ "accroche": "Des histoires adaptées à votre niveau de langue, pour progresser en lisant.",
+ "sous_titre": "Nous sélectionnons des œuvres du domaine public et les analysons pour vous proposer des parcours de lecture progressifs, alignés sur votre niveau en langue cible.",
+ "probleme_points": [
+  "Il est difficile de trouver des livres dont le vocabulaire et la structure correspondent précisément à votre niveau CECRL.",
+  "Les textes trop simples ou trop complexes peuvent freiner la motivation et la compréhension.",
+  "Sans parcours structuré, il est compliqué de transformer la lecture en une progression régulière en langue étrangère."
+ ],
+ "comment": [
+  "Choisissez votre langue cible et votre niveau actuel (A1, A2, B1, etc.).",
+  "Accédez à votre parcours personnalisé : histoires courtes annotées et quiz de compréhension générés par IA.",
+  "Suivez votre progression et passez au niveau supérieur avec des défis adaptés."
+ ],
+ "pour_qui": "Apprenants autodidactes de langues (espagnol, néerlandais, portugais) qui souhaitent améliorer leur vocabulaire et leur compréhension en lisant des fictions adaptées.",
+ "prix": "4,99 € par mois",
+ "condition_prix": "Accès au parcours de lecture illimité après la période de précommande. Paiement mensuel.",
+ "offre": "precommande",
+ "cta": "Être notifié du lancement",
+ "faq": [
+  {
+   "question": "Ce service est-il complet dès maintenant ?",
+   "reponse": "Non, LecturaCible est en préparation. Inscrivez-vous pour être le premier à recevoir le service dès le lancement officiel."
+  },
+  {
+   "question": "Quels types de livres sont utilisés ?",
+   "reponse": "Nous utilisons uniquement des œuvres libres de droits, analysées par notre outil pour garantir leur adéquation avec le niveau de lecture ciblé."
+  },
+  {
+   "question": "Comment le niveau est-il déterminé ?",
+   "reponse": "Notre analyse IA évalue la complexité syntaxique et le niveau de fréquence des mots dans le texte pour le caler sur les référentiels internationaux (CECRL)."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2c3e50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

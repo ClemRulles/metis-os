@@ -1,0 +1,47 @@
+{
+ "slug": "refundguard",
+ "nom": "RefundGuard",
+ "accroche": "Votre dossier de remboursement, prêt à envoyer",
+ "sous_titre": "RefundGuard transforme vos preuves (captures, reçus, dates) en une lettre de réclamation structurée pour Apple ou Google. En préparation : testez la génération gratuite du PDF.",
+ "probleme_points": [
+  "Un remboursement refusé ou ignoré, sans interlocuteur direct chez Apple ou Google",
+  "L'effort nécessaire semble parfois supérieur au montant, notamment pour un petit achat ou un abonnement résilié",
+  "Une simple demande via le bouton « Rembourser » peut être insuffisante : une lettre claire et argumentée manque souvent"
+ ],
+ "comment": [
+  "Déposez vos preuves : capture d'écran, reçu, dates, nom de l'application",
+  "Choisissez la plateforme (Apple ou Google) et laissez RefundGuard structurer la lettre de réclamation",
+  "Téléchargez le PDF et envoyez-le vous-même via le canal officiel de la plateforme"
+ ],
+ "pour_qui": "Les particuliers qui ont payé une application qui ne fonctionne pas, un abonnement résilié non honoré ou un prélèvement en double, et qui souhaitent un dossier structuré sans devoir le préparer seuls.",
+ "prix": "0 € pour l'outil de génération du PDF ; option « traitement ",
+ "condition_prix": "L'option payante n'est facturée que si un remboursement est effectivement obtenu ; l'outil de rédaction reste gratuit",
+ "offre": "liste",
+ "cta": "Générer mon dossier gratuitement",
+ "faq": [
+  {
+   "question": "RefundGuard envoie-t-il la réclamation à ma place ?",
+   "reponse": "Dans la version test, non : vous générez le PDF et vous l'envoyez vous-même via le canal officiel de la plateforme. Le service « traitement complet » (envoi et suivi par notre équipe) est en préparation."
+  },
+  {
+   "question": "Le remboursement est-il garanti ?",
+   "reponse": "Non. RefundGuard produit un dossier structuré et argumenté ; la décision finale appartient à Apple, Google ou à l'éditeur. Aucun résultat n'est promis."
+  },
+  {
+   "question": "Quelles données dois-je fournir ?",
+   "reponse": "Uniquement des éléments liés à votre achat : capture d'écran, reçu, dates, nom de l'application. Aucune donnée sensible n'est collectée sans votre accord explicite."
+  },
+  {
+   "question": "Le service existe-t-il déjà ?",
+   "reponse": "Non, RefundGuard est en préparation. Cette page est un test : nous cherchons à vérifier si l'outil de génération de dossier répond à un besoin réel avant de lancer le service complet."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#1F6FEB",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

@@ -1,0 +1,11 @@
+{
+ "ok": false,
+ "raison": "aucune API de l'atlas ne sert ce produit (Aucune des APIs listées ne fournit de données sur les pratiques de facturation d'abonnements, les politiques de remboursement Apple/Google, les droits des consommateurs ou les litiges bancaires : ce sont des météo, biodiversité, recherche scientifique, entreprises, etc. Le cœur de la valeur (courrier de réclamation calibré selon les règles des stores et des banques) ne peut être démontré honnêtement avec ces sources.)",
+ "essais": null,
+ "spec": {
+  "pertinent": false,
+  "raison": "Aucune des APIs listées ne fournit de données sur les pratiques de facturation d'abonnements, les politiques de remboursement Apple/Google, les droits des consommateurs ou les litiges bancaires : ce sont des météo, biodiversité, recherche scientifique, entreprises, etc. Le cœur de la valeur (courrier de réclamation calibré selon les règles des stores et des banques) ne peut être démontré honnêtement avec ces sources."
+ },
+ "sources": [],
+ "trace": []
+}

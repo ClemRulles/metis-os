@@ -1,0 +1,43 @@
+{
+ "slug": "bugalert",
+ "nom": "BugAlert",
+ "accroche": "Préparez-vous à repérer les bugs qui font fuir vos abonnés payants",
+ "sous_titre": "Un outil en développement pour repérer les signaux de churn dans les avis App Store et Play Store. Rejoignez la liste d'attente.",
+ "probleme_points": [
+  "Les avis négatifs liés à des bugs techniques peuvent pousser vos abonnés à résilier.",
+  "Lire chaque avis manuellement pour identifier les problèmes récurrents prend du temps.",
+  "Un taux élevé de faux positifs peut rendre les alertes difficiles à trier."
+ ],
+ "comment": [
+  "Entrez votre e-mail pour recevoir une notification à la mise en ligne.",
+  "Accédez à l'outil pendant la période bêta avec une place prioritaire.",
+  "Bénéficiez du tarif fondateur si vous rejoignez la précommande avant le lancement."
+ ],
+ "pour_qui": "Développeurs indépendants et petits studios (1-5 personnes) créant des applications mobiles vendues par abonnement, sans équipe QA dédiée.",
+ "prix": "29€/mois après lancement",
+ "condition_prix": "15€/mois pour les précommandes effectuées avant le lancement officiel. Remboursement intégral si le service ne correspond pas aux critères annoncés.",
+ "offre": "precommande",
+ "cta": "Je veux être notifié et bénéficier du ta",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, BugAlert est actuellement en phase de préparation. Cette page sert à recueillir les intérêts des premiers utilisateurs et à tester le concept."
+  },
+  {
+   "question": "Comment gérez-vous les faux positifs ?",
+   "reponse": "Notre algorithme vise à distinguer les bugs reproductibles des simples insatisfactions. Nous afficherons un score de confiance pour chaque alerte afin de limiter la fatigue d'information."
+  },
+  {
+   "question": "Quelles données sont collectées ?",
+   "reponse": "Nous analysons uniquement les avis publics disponibles sur les stores officiels (App Store, Play Store). Aucune donnée personnelle sensible n'est collectée via notre outil d'analyse."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

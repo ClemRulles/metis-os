@@ -1,0 +1,51 @@
+{
+ "slug": "rembourseapp",
+ "nom": "RembourseApp",
+ "accroche": "Prépare ton dossier de réclamation contre un prélèvement abusif d'abonnement d'app",
+ "sous_titre": "RembourseApp t'aide à constituer un dossier de réclamation contre un abonnement d'app prélevé à tort : courrier prêt à envoyer, montant remboursable calculé, calendrier de relances. Service en préparation — précommande ouverte.",
+ "probleme_points": [
+  "Une app te prélève après une résiliation ou par erreur, et le support ne répond pas",
+  "Les guichets gratuits (Apple, ta banque) exigent de connaître la procédure et ne couvrent que leur propre écosystème",
+  "Sans courrier adapté, beaucoup abandonnent des dizaines d'euros par an"
+ ],
+ "comment": [
+  "Tu entres le nom de l'app, le montant prélevé et ton problème (double prélèvement, résiliation ignorée…)",
+  "L'outil calcule le montant remboursable selon les règles des stores et le droit européen de rétractation, puis génère ton courrier de réclamation",
+  "Tu suis les délais et les relances grâce au calendrier fourni dans ton dossier"
+ ],
+ "pour_qui": "Particuliers qui se font prélever à tort par un abonnement d'app (fitness, jeux, méditation…) et n'obtiennent pas de réponse du support.",
+ "prix": "Précommande à 4,90 € le dossier complet (calculateur + courr",
+ "condition_prix": "Le service est en préparation : tu précommandes maintenant et tu recevras ton dossier dès la mise en ligne. Aucun montant de remboursement n'est garanti — le résultat dépend de l'app, du store et de t",
+ "offre": "precommande",
+ "cta": "Précommander mon dossier à 4,90 €",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, RembourseApp est en préparation. Ta précommande finance le développement et tu recevras ton dossier dès le lancement."
+  },
+  {
+   "question": "Est-ce que je suis assuré d'être remboursé ?",
+   "reponse": "Non. RembourseApp te fournit un dossier calibré et un calendrier de relances, mais le résultat dépend de l'app, du store et de ta banque."
+  },
+  {
+   "question": "C'est quoi la différence avec un modèle de lettre gratuit ?",
+   "reponse": "Un modèle gratuit ne calcule pas le montant remboursable selon les règles Apple, Google et le droit européen, et n'organise pas les délais et relances pour toi."
+  },
+  {
+   "question": "Mes données sont-elles en sécurité ?",
+   "reponse": "Tu fournis toi-même les informations de ton dossier. Aucune donnée sensible n'est collectée sans base légale, et rien n'est partagé avec des tiers."
+  },
+  {
+   "question": "Comment me faire rembourser si je ne veux pas payer ?",
+   "reponse": "Les guichets gratuits existent : reportaproblem.apple.com pour Apple, ou le blocage de prélèvement SEPA via ta banque. RembourseApp s'adresse à ceux qui veulent un dossier complet et un suivi structuré."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#1F5F5B",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}
