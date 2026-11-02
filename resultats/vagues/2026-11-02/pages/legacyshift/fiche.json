@@ -1,0 +1,51 @@
+{
+ "slug": "legacyshift",
+ "nom": "LegacyShift",
+ "accroche": "Vos dépendances npm sont-elles abandonnées ?",
+ "sous_titre": "Collez votre package.json ou votre repo GitHub : en quelques secondes, obtenez un score de risque d'abandon et des alternatives de migration. Service en préparation, précommande ouverte.",
+ "probleme_points": [
+  "Certains packages npm sont encore utilisés dans de nombreux builds, sans que l'on sache toujours lesquels sont abandonnés.",
+  "Il peut arriver de découvrir qu'une dépendance est abandonnée au moment d'une faille de sécurité, ce qui laisse peu de temps pour réagir.",
+  "Les outils existants se concentrent souvent sur le code, sans analyser l'activité réelle des mainteneurs."
+ ],
+ "comment": [
+  "Collez votre package.json ou le lien de votre repo GitHub.",
+  "Nos agents IA analysent l'activité réelle des mainteneurs : issues ouvertes sans réponse, derniers commits, votes sur des demandes jamais traitées.",
+  "Recevez un score de risque d'abandon et des alternatives de migration suggérées."
+ ],
+ "pour_qui": "Équipes techniques et mainteneurs de projets open source qui gèrent du code hérité et veulent savoir quels packages sont abandonnés avant une faille de sécurité.",
+ "prix": "29 €/mois pour 10 000 appels d'analyse (0,004 € par appel)",
+ "condition_prix": "Précommande à prix réduit : 29 €/mois au lieu de 49 €/mois après lancement, sans aucun paiement avant le lancement. Vous recevrez un e-mail quand le service sera prêt.",
+ "offre": "precommande",
+ "cta": "Précommander à 29 €/mois",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, le service est en préparation. Cette page est un test pour valider l'intérêt. Vous pouvez vous préinscrire gratuitement, et vous serez prévenu par e-mail au lancement. Aucun paiement n'est demandé avant."
+  },
+  {
+   "question": "Comment le score de risque est-il calculé ?",
+   "reponse": "Nos agents IA analysent des données publiques (GitHub, npm) : issues ouvertes sans réponse, délais de réponse, derniers commits, et signaux faibles comme un dépôt archivé silencieusement. Le score reflète l'activité réelle des mainteneurs."
+  },
+  {
+   "question": "Quelles données sont collectées ?",
+   "reponse": "Uniquement le package.json ou le repo GitHub que vous fournissez. Nous ne collectons aucune donnée personnelle sensible, et nous n'aspirons pas de sites qui l'interdisent. Nous utilisons des données ouvertes et des API officielles."
+  },
+  {
+   "question": "Puis-je essayer avant de payer ?",
+   "reponse": "Au lancement, une démo gratuite en ligne sera disponible pour analyser un package.json. La précommande actuelle ne demande aucun paiement avant le lancement."
+  },
+  {
+   "question": "Pourquoi une précommande ?",
+   "reponse": "Pour financer le développement et mesurer l'intérêt. Vous ne payez rien maintenant : vous recevrez un e-mail au lancement, et vous pourrez alors décider de souscrire."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

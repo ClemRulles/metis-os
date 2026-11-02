@@ -1,0 +1,66 @@
+{
+ "ok": true,
+ "raison": null,
+ "essais": 2,
+ "spec": {
+  "titre": "Radar de trafic IA par domaine — qui reçoit les clients de ChatGPT ?",
+  "promesse": "Cette démonstration prouve que les données publiques actuelles ne permettent pas de mesurer les recommandations des IA génératives, et affiche honnêtement le besoin de données additionnelles.",
+  "donnees": [
+   {
+    "cle": "tendance_trafic_web",
+    "api": "openalex",
+    "url": "https://api.openalex.org/works?search=chatgpt%20traffic%20recommendation&per_page=1&sort=publication_date:desc",
+    "pourquoi": "Permet de vérifier si des études récentes sur le trafic généré par les IA existent déjà."
+   },
+   {
+    "cle": "tendance_moteur_recherche",
+    "api": "crossref",
+    "url": "https://api.crossref.org/works?query=ai%20recommendation%20ecommerce%20traffic&rows=1&sort=published&order=desc",
+    "pourquoi": "Vérifie la littérature scientifique sur les recommandations IA dans l'e-commerce pour appuyer le problème."
+   },
+   {
+    "cle": "interet_public",
+    "api": "wikidata",
+    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&search=chatgpt%20recommendation&language=fr&format=json&limit=2",
+    "pourquoi": "Confirme qu'il existe des entités Wikidata sur le sujet, ce qui atteste d'un intérêt documenté."
+   },
+   {
+    "cle": "tendance_recherche_web",
+    "api": "openlibrary",
+    "url": "https://openlibrary.org/search.json?q=ai%20recommendation%20ecommerce&limit=2",
+    "pourquoi": "Montre que des ouvrages documentent l'impact des IA sur le trafic e-commerce."
+   }
+  ],
+  "ecran": "La page affiche (1) une bannière explicative du produit, (2) un encart 'État de l'art' listant les études et sources trouvées via OpenAlex, Crossref, Wikidata et Open Library, avec leurs dates de publication, (3) une section 'Honnêteté des données' qui explique clairement qu'aucune API publique ne fournit les recommandations réelles de ChatGPT, et (4) un aperçu de ce que le tableau de bord complet offrirait lorsque ces données seront disponibles.",
+  "calcul": "Les quatre appels compilent la littérature existante sur les recommandations IA et le trafic web : OpenAlex et Crossref renvoient les publications scientifiques récentes (triées par date décroissante), Wikidata confirme l'existence d'entités documentées, et Open Library recense les ouvrages de référence. La page agrège ces résultats pour démontrer que le sujet est réel et documenté, mais qu'il manque encore une source publique mesurant les recommandations réelles.",
+  "limites": "Cette démonstration ne peut pas encore calculer le classement réel de concurrents recommandés par ChatGPT : aucune API publique ne donne accès aux réponses des modèles de langage. Elle ne fournit donc que la preuve de l'importance du sujet, pas la mesure du phénomène. Le produit final nécessitera des données propriétaires ou un accès API spécifique."
+ },
+ "sources": [
+  "OpenAlex recherche mondiale",
+  "Crossref",
+  "Wikidata",
+  "Open Library"
+ ],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [
+    "tendance_trafic_web",
+    "tendance_moteur_recherche",
+    "interet_public",
+    "tendance_recherche_web"
+   ],
+   "erreurs": []
+  },
+  {
+   "essai": 1,
+   "erreurs": [
+    "Erreur à l'exécution : ReferenceError: online is not defined\n    at construire (file:///tmp/atelier-MK4pJ3/demo.mjs:50:24)\n    at Socket.<anonymous> (file:///tmp/atelier-MK4pJ3/harnais.mjs:5:24)\n    at Socket.emit (node:events:531:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"
+   ]
+  },
+  {
+   "essai": 2,
+   "erreurs": []
+  }
+ ]
+}

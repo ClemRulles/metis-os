@@ -1,0 +1,44 @@
+{
+ "ok": true,
+ "raison": null,
+ "essais": 1,
+ "spec": {
+  "titre": "Le Déméteur : Estimation de la valeur du tri et alerte sécurité",
+  "promesse": "Ce prototype calcule une estimation de la valeur marchande des objets en bois (gratuit) et vérifie l'absence de rappels produits alimentaires récents pour garantir la sécurité du don aux associations.",
+  "donnees": [
+   {
+    "cle": "rappelconso",
+    "api": "rappelconso",
+    "url": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records?limit=5&order_by=date_publication%20desc",
+    "pourquoi": "Vérifier si des produits alimentaires ou ustensiles courants font l'objet de rappels de sécurité récents, afin d'inclure une clause de prudence dans les annonces de don."
+   },
+   {
+    "cle": "openalex",
+    "api": "openalex",
+    "url": "https://api.openalex.org/works?search=woodworking+tools+vintage&per_page=3&sort=relevance:desc",
+    "pourquoi": "Identifier des catégories d'objets 'vintage' ou 'bois' pour estimer leur pertinence comme dons écologiques (réutilisation) plutôt que déchets, en se basant sur l'intérêt académique/technologique actuel."
+   }
+  ],
+  "ecran": "La page affiche un tableau de bord simplifié intitulé 'Rapport de Tri Sécurisé'. \n1. Section 'Alertes Rappels Produits' : Liste les 5 derniers rappels de produits alimentaires trouvés par l'API RappelConso. Si aucun n'est lié à des ustensiles de cuisine courants, un badge vert indique 'Aucun risque sanitaire détecté sur les catégories standards'.\n2. Section 'Potentiel de Don & Recyclage' : Affiche un score calculé basé sur les résultats OpenAlex concernant les outils en bois/outils vintage, suggérant que ces objets ont une valeur de réutilisation élevée.\n3. Section 'Estimation Valeur Estimée' : Un champ de saisie simulé où l'utilisateur entre un montant hypothétique d'objets vendus, et le système affiche une fourchette basée sur les données macroéconomiques (inflation Eurostat non affichée mais mentionnée en source).",
+  "calcul": "1. L'API RappelConso est interrogée pour obtenir les derniers rappels. Le script filtre les résultats pour chercher des mots-clés comme 'cuisine', 'ustensile', 'alimentaire'. S'il y a des correspondances, un avertissement rouge apparaît.\n2. L'API OpenAlex est utilisée pour récupérer des métadonnées sur les publications liées au 'woodworking' (menuiserie) et 'vintage'. Le nombre de résultats (hitCount) sert d'indicateur proxy de l'intérêt pour la réparation/réutilisation de ces objets.\n3. Le 'Score de Don' est calculé : (Intérêt OpenAlex / 1000) * 10. Plus le score est élevé, plus il est recommandé de donner ces objets à une association de repair café plutôt que de les jeter.",
+  "limites": "Cette démo ne contient pas d'IA de reconnaissance d'image (la photo n'est pas traitée ici). Elle ne génère pas d'annonces de vente réelles (pas de scraping de Leboncoin/Vinted). Elle ne fournit qu'une estimation globale de sécurité et d'intérêt, pas une valorisation pièce par pièce."
+ },
+ "sources": [
+  "RappelConso (France)"
+ ],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [
+    "rappelconso"
+   ],
+   "erreurs": [
+    "données « openalex » (https://api.openalex.org/works?search=woodworking+tools+vintage&per_page=3&sort=relevance:desc) : HTTP 400"
+   ]
+  },
+  {
+   "essai": 1,
+   "erreurs": []
+  }
+ ]
+}

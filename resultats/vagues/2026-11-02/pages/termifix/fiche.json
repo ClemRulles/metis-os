@@ -1,0 +1,47 @@
+{
+ "slug": "termifix",
+ "nom": "TermiFix",
+ "accroche": "Comprenez et corrigez vos erreurs de terminal",
+ "sous_titre": "Une base de données d'erreurs de terminal, expliquées simplement, avec un simulateur pour tester les correctifs sans risque. En préparation, accessible à tous.",
+ "probleme_points": [
+  "Les messages d'erreur sont peu clairs et peuvent être déroutants pour les débutants.",
+  "Les solutions trouvées en ligne sont souvent incomplètes ou trop techniques.",
+  "On peut hésiter à tester des commandes par peur d'endommager son système."
+ ],
+ "comment": [
+  "Tapez ou collez votre message d'erreur dans la barre de recherche.",
+  "Consultez la fiche d'erreur : explication claire, causes fréquentes, correctifs pas à pas.",
+  "Testez les correctifs en toute sécurité dans le simulateur de terminal intégré."
+ ],
+ "pour_qui": "Étudiants en informatique, autodidactes et développeurs débutants qui apprennent le terminal sur macOS, Linux ou Windows (WSL).",
+ "prix": "5 € (précommande unique)",
+ "condition_prix": "Prix de lancement pour les premiers inscrits. Sans engagement, remboursement possible si le service ne vous convient pas.",
+ "offre": "precommande",
+ "cta": "Précommander pour 5 €",
+ "faq": [
+  {
+   "question": "Quand le service sera-t-il disponible ?",
+   "reponse": "Le service est en préparation. En précommandant, vous soutenez le développement et recevrez un accès prioritaire dès le lancement."
+  },
+  {
+   "question": "Que comprend la précommande ?",
+   "reponse": "Un accès complet à la base de données d'erreurs, aux explications détaillées, aux vidéos courtes et au simulateur de terminal, sans limite de consultation."
+  },
+  {
+   "question": "Puis-je être remboursé ?",
+   "reponse": "Oui, vous pouvez demander un remboursement à tout moment avant le lancement, et jusqu'à 30 jours après, si le service ne correspond pas à vos attentes."
+  },
+  {
+   "question": "Le simulateur est-il dangereux ?",
+   "reponse": "Non, le simulateur reproduit un environnement de terminal virtuel. Vous pouvez tester des commandes en toute sécurité, sans risque pour votre système."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

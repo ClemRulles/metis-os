@@ -1,0 +1,48 @@
+{
+ "slug": "rescuv",
+ "nom": "Rescuv",
+ "accroche": "Accéder au matériel avant la mise au rebut",
+ "sous_titre": "Un flux quotidien d'annonces BODACC filtrées par secteur et localisation pour racheter machines et mobilier. Le service est en préparation : découvrez une démo gratuite dès aujourd'hui.",
+ "probleme_points": [
+  "Le BODACC publie chaque jour des liquidations judiciaires, mais ces données ne sont pas systématiquement exploitées pour le réemploi",
+  "Des équipements réutilisables sont souvent détruits car les acheteurs potentiels n'en ont pas connaissance à temps",
+  "Les outils de veille existants ciblent principalement les repreneurs d'entreprise ou les clients, et non les acheteurs de matériel professionnel"
+ ],
+ "comment": [
+  "Consultez la démo gratuite : 5 annonces BODACC réelles et récentes, filtrées par secteur et localisation, accompagnées de photos et de prix estimatifs",
+  "Inscrivez votre adresse e-mail pour recevoir l'alerte quotidienne complète dès le lancement du service",
+  "Postulez pour un compte bêta gratuit de 30 jours, en échange d'un retour d'expérience écrit"
+ ],
+ "pour_qui": "Ressourceries, reconditionneurs, artisans du BTP et de la restauration, ainsi que les acheteurs de lots de mobilier ou de stock issus de liquidations.",
+ "prix": "15 €/mois",
+ "condition_prix": "Précommande sans paiement immédiat ; facturation uniquement au lancement, après une période d'essai gratuit de 7 jours.",
+ "offre": "precommande",
+ "cta": "Voir la démo et précommander",
+ "faq": [
+  {
+   "question": "Le service existe-t-il déjà ?",
+   "reponse": "Non, il est actuellement en développement. Vous pouvez consulter une démo avec des exemples d'annonces et vous préinscrire pour être informé du lancement."
+  },
+  {
+   "question": "D'où viennent les annonces ?",
+   "reponse": "Uniquement des données ouvertes du BODACC. Aucune collecte de profils personnels ni de coordonnées individuelles n'est effectuée. Les annonces sont filtrées par code d'activité et localisation."
+  },
+  {
+   "question": "Que contient l'abonnement ?",
+   "reponse": "Une alerte e-mail quotidienne listant les annonces BODACC filtrées par secteur et localisation, classées selon leur potentiel de réemploi. Un essai gratuit de 7 jours sera disponible au lancement."
+  },
+  {
+   "question": "Puis-je annuler ?",
+   "reponse": "Oui, l'abonnement est sans engagement et résiliable à tout moment. Aucun paiement n'est requis avant le lancement effectif du service."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2E6B4F",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": "",
+ "demo_url": "demo/"
+}

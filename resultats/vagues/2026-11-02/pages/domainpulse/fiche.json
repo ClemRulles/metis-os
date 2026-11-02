@@ -1,0 +1,47 @@
+{
+ "slug": "domainpulse",
+ "nom": "DomainPulse",
+ "accroche": "Santé SEO d'un domaine en un appel API",
+ "sous_titre": "Une API REST en préparation, avec un schéma JSON versionné et un score composite (autorité, tendance de trafic estimée, part IA). Conçu pour développeurs et agents IA.",
+ "probleme_points": [
+  "Les données de domaine récupérées via scraping sont souvent hétérogènes et difficiles à exploiter",
+  "Les sources disponibles manquent de contrat d'interface clair, ce qui complique l'intégration",
+  "Il faut agréger soi-même autorité, trafic et impact de l'IA pour obtenir une vue d'ensemble"
+ ],
+ "comment": [
+  "Choisissez un pack d'appels sur la place de marché (Apify Store ou RapidAPI) au lancement",
+  "Appelez l'endpoint REST avec le nom de domaine souhaité",
+  "Recevez un JSON versionné : autorité, tendance de trafic estimée, part de trafic IA et score composite"
+ ],
+ "pour_qui": "Développeurs Python/Node.js, agences SEO proposant une offre en marque blanche et créateurs d'agents IA qui intègrent des données de domaine dans leurs pipelines.",
+ "prix": "0,02 € par appel prévu, packs de 10 000 appels à 120 €/mois",
+ "condition_prix": "Service en préparation. Prix indicatifs, susceptibles d'évoluer. Inscrivez-vous pour un accès bêta gratuit avec un quota d'appels offert.",
+ "offre": "precommande",
+ "cta": "Demander l'accès bêta",
+ "faq": [
+  {
+   "question": "Qu'est-ce que le score composite « santé domaine » ?",
+   "reponse": "Un indicateur unique calculé à partir de données ouvertes : autorité du domaine, tendance de trafic estimée et part estimée du trafic provenant des IA. Il est prévu pour être obtenu en un seul appel API."
+  },
+  {
+   "question": "Comment accéder à l'API ?",
+   "reponse": "L'API est prévue pour être disponible sur Apify Store et RapidAPI. Le service est en préparation ; vous pouvez demander un accès bêta gratuit."
+  },
+  {
+   "question": "Quelles données sont utilisées ?",
+   "reponse": "Des données ouvertes et des API officielles. Aucune donnée personnelle sensible n'est collectée."
+  },
+  {
+   "question": "Puis-je tester avant d'acheter ?",
+   "reponse": "Oui, l'accès bêta prévoit un quota d'appels gratuits pour vérifier que le format du JSON versionné correspond à vos besoins."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2A7F62",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

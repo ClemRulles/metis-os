@@ -1,0 +1,47 @@
+{
+ "slug": "subventionflash",
+ "nom": "SubventionFlash",
+ "accroche": "Les subventions locales, plus faciles à trouver",
+ "sous_titre": "Un moteur de recherche qui recense les appels à projets de votre région, département et ville. Gagnez du temps : repérez les financements qui correspondent à votre association en quelques minutes.",
+ "probleme_points": [
+  "Vous passez du temps à chercher des subventions sans savoir si elles s'appliquent à votre commune",
+  "Vous pouvez manquer des appels à projets locaux, faute de temps ou d'outil adapté",
+  "Les informations sont dispersées entre les sites municipaux, départementaux et régionaux"
+ ],
+ "comment": [
+  "Entrez votre ville et votre secteur d'activité dans le moteur",
+  "Parcourez la liste des appels à projets filtrés, mise à jour automatiquement",
+  "Activez une alerte email pour être prévenu quand une nouvelle subvention correspond à votre profil"
+ ],
+ "pour_qui": "Bénévoles associatifs, présidents d'APAE, gestionnaires de fondations locales",
+ "prix": "15 € par mois",
+ "condition_prix": "Paiement mensuel, sans engagement. Le service est en préparation : vous précommandez pour 15 € et vous serez informé dès le lancement.",
+ "offre": "precommande",
+ "cta": "Précommander pour 15 €",
+ "faq": [
+  {
+   "question": "Comment ça marche ?",
+   "reponse": "Vous entrez votre ville et votre secteur. Notre moteur agrège les appels à projets des collectivités locales, départements et régions, et vous affiche ceux qui correspondent. Vous pouvez aussi recevoir une alerte email quand un nouveau financement est publié."
+  },
+  {
+   "question": "Est-ce que les données sont fiables ?",
+   "reponse": "Nous nous appuyons sur des sources publiques officielles. Comme le service est en préparation, les données sont en cours de consolidation. Si vous voyez une erreur, vous pouvez la signaler directement pour nous aider à améliorer l'outil."
+  },
+  {
+   "question": "Quand le service sera-t-il disponible ?",
+   "reponse": "Nous travaillons à finaliser l'agrégateur. La précommande vous donne un accès prioritaire dès le lancement, prévu dans les prochaines semaines."
+  },
+  {
+   "question": "Puis-je annuler ma précommande ?",
+   "reponse": "Oui, vous pouvez demander un remboursement à tout moment avant le lancement. Il suffit de nous écrire par email."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2E86AB",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

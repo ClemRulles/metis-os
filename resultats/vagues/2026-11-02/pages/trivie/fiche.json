@@ -1,0 +1,48 @@
+{
+ "slug": "trivie",
+ "nom": "TriVie",
+ "accroche": "Aide au tri d'un logement après un décès",
+ "sous_titre": "Un outil en développement qui scanne vos objets, propose des fourchettes de prix et génère des brouillons d'annonces pour faciliter le tri.",
+ "probleme_points": [
+  "Le tri manuel prend beaucoup de temps sans méthode structurée",
+  "Il est difficile de distinguer les objets à vendre, donner ou jeter",
+  "La rédaction manuelle des annonces est chronophage"
+ ],
+ "comment": [
+  "Scannez les pièces avec votre smartphone",
+  "Recevez une proposition de plan de tri incluant des estimations et des références comparables",
+  "Validez les suggestions et exportez les textes d'annonces prêts à l'emploi"
+ ],
+ "pour_qui": "Enfants adultes gérant la succession d'un parent âgé en France.",
+ "prix": "89 € par logement, nombre d'objets illimité",
+ "condition_prix": "Paiement échelonné : 19 € pour obtenir le plan complet, puis 70 € uniquement si vous validez les estimations et générez les annonces.",
+ "offre": "precommande",
+ "cta": "Rejoindre la liste d'attente",
+ "faq": [
+  {
+   "question": "Le service est-il déjà disponible ?",
+   "reponse": "Non, il est en cours de développement. Vous pouvez rejoindre la liste d'attente et serez informé du lancement."
+  },
+  {
+   "question": "Comment sont établies les estimations ?",
+   "reponse": "L'outil croise les photos fournies avec des données de ventes récentes (Leboncoin, eBay). Les prix sont indiqués sous forme de fourchettes accompagnées de liens vers des articles similaires."
+  },
+  {
+   "question": "Que se passe-t-il si je ne valide pas les estimations ?",
+   "reponse": "Vous ne réglez que les 19 € du plan initial. Les 70 € restants ne sont facturés qu'en cas de validation et de génération effective des annonces."
+  },
+  {
+   "question": "Quels types d'objets sont pris en charge ?",
+   "reponse": "Les premières catégories couvertes sont les meubles de marque, la vaisselle et les livres anciens, où la fiabilité de l'estimation est optimale."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#4A6B5A",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": "",
+ "demo_url": "demo/"
+}

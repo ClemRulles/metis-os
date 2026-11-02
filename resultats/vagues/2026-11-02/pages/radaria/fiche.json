@@ -1,0 +1,52 @@
+{
+ "slug": "radaria",
+ "nom": "RadarIA",
+ "accroche": "Les IA recommandent-elles vos concurrents ?",
+ "sous_titre": "Chaque semaine, découvrez si les IA comme ChatGPT citent vos produits ou ceux de vos concurrents, et identifiez des actions pour progresser. Service en préparation.",
+ "probleme_points": [
+  "Vous ne savez pas si ChatGPT et d'autres IA citent vos produits ou ceux de vos concurrents.",
+  "Votre trafic organique baisse et vous n'avez pas encore d'outil pour analyser votre visibilité dans les réponses IA.",
+  "Les outils existants sont souvent chers, complexes et pensés pour les grands comptes."
+ ],
+ "comment": [
+  "Entrez votre domaine et 5 concurrents (environ 2 minutes).",
+  "Recevez chaque semaine un rapport e-mail : votre visibilité IA, les écarts avec vos concurrents, les sources citées.",
+  "Suivez un conseil actionnable et vérifiable pour améliorer votre présence dans les réponses IA."
+ ],
+ "pour_qui": "Boutiques en ligne, créateurs de produits numériques et indépendants qui dépendent du trafic organique.",
+ "prix": "19 € par mois par domaine suivi",
+ "condition_prix": "Pendant la phase test, jusqu'à 50 inscrits reçoivent des rapports réels gratuitement. Aucun paiement n'est demandé avant la livraison des rapports.",
+ "offre": "precommande",
+ "cta": "Rejoindre la liste d'attente",
+ "faq": [
+  {
+   "question": "Le service existe-t-il déjà ?",
+   "reponse": "Non, il est en préparation. Nous recrutons jusqu'à 50 testeurs qui recevront des rapports réels et gratuits, afin d'améliorer l'outil avant le lancement."
+  },
+  {
+   "question": "Quelles données utilisez-vous ?",
+   "reponse": "Uniquement des données ouvertes, des API officielles et les informations que vous fournissez (votre domaine et vos concurrents). Nous ne collectons pas de profils ni de coordonnées de tiers."
+  },
+  {
+   "question": "Que contient le rapport ?",
+   "reponse": "Une synthèse hebdomadaire de votre visibilité dans les réponses IA, comparée à vos 5 concurrents, avec les sources citées et les écarts observés. Chaque rapport inclut un conseil actionnable et vérifiable."
+  },
+  {
+   "question": "Combien ça coûte ?",
+   "reponse": "19 € par mois par domaine suivi. Pendant la phase test, jusqu'à 50 inscrits ne paient rien et reçoivent des rapports réels. Vous ne serez facturé qu'après livraison des rapports, et uniquement si vous choisissez de continuer."
+  },
+  {
+   "question": "Mes données sont-elles en sécurité ?",
+   "reponse": "Nous ne demandons aucune donnée personnelle sensible. Nous utilisons uniquement les informations que vous fournissez et des sources publiques accessibles légalement."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": "",
+ "demo_url": "demo/"
+}

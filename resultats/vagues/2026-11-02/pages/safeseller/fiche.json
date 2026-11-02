@@ -1,0 +1,43 @@
+{
+ "slug": "safeseller",
+ "nom": "SafeSeller",
+ "accroche": "Identifiez vos points de vigilance avant une suspension.",
+ "sous_titre": "Outil en préparation pour les petits vendeurs multi-plateformes. Importez vos exports autorisés et visualisez les points de vigilance détectés dans vos pratiques de vente.",
+ "probleme_points": [
+  "Suspensions parfois difficiles à comprendre quand les motifs ne sont pas détaillés.",
+  "Règles nombreuses et évolutives sur Vinted, Leboncoin, eBay ou Etsy.",
+  "Difficulté à repérer soi-même les pratiques à risque (délais, descriptions) avant un incident."
+ ],
+ "comment": [
+  "Exportez le fichier autorisé depuis votre boutique (CSV/Excel).",
+  "Importez-le dans notre outil en cours de développement.",
+  "Consultez un niveau de risque indicatif par plateforme et une liste de vérifications basée sur les règles publiées par les plateformes."
+ ],
+ "pour_qui": "Vendeurs occasionnels et petits commerçants qui vendent sur plusieurs plateformes et souhaitent mieux comprendre les règles qui s'appliquent à eux.",
+ "prix": "12 € pour un rapport complet / 5 €/mois pour la surveillance",
+ "condition_prix": "Paiement unique ou abonnement mensuel, sans engagement de durée. Tarifs indicatifs susceptibles d'évoluer avant le lancement officiel.",
+ "offre": "liste",
+ "cta": "Être informé du lancement",
+ "faq": [
+  {
+   "question": "Est-ce que SafeSeller existe déjà ?",
+   "reponse": "Non, le service est en phase de préparation. L'inscription permet seulement d'être informé du lancement, sans promesse de résultat ni d'accès immédiat."
+  },
+  {
+   "question": "Mes données sont-elles en sécurité ?",
+   "reponse": "Les fichiers importés sont traités automatiquement puis supprimés après génération du rapport. Aucune donnée personnelle sensible n'est conservée. Le détail du traitement sera précisé avant le lancement."
+  },
+  {
+   "question": "Pourquoi ce positionnement de prix ?",
+   "reponse": "Le modèle envisagé est un service en libre-service, sans intervention humaine personnalisée. Le prix couvrirait l'accès à l'outil et aux mises à jour des règles publiques des plateformes."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2C3E50",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

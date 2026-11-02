@@ -1,0 +1,44 @@
+{
+ "ok": true,
+ "raison": null,
+ "essais": 1,
+ "spec": {
+  "titre": "Bodacc Vert — Le Radar des Opportunités Circulaires",
+  "promesse": "Démontrer comment filtrer et prioriser les annonces de liquidation judiciaire du BODACC pour identifier des opportunités de réemploi industriel.",
+  "donnees": [
+   {
+    "cle": "bodacc_liquidations",
+    "api": "bodacc",
+    "url": "https://bodacc-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/annonces-commerciales/records?limit=5&order_by=dateparution%20desc&refine=typeavis_lib:Procédure collective&refine=nature_avis:Liquidation judiciaire",
+    "pourquoi": "Récupérer les dernières procédures de liquidation judiciaire (le cœur du problème : fin de vie d'entreprises) pour identifier le matériel disponible."
+   },
+   {
+    "cle": "rappels_produits",
+    "api": "rappelconso",
+    "url": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/rappelconso-v2-gtin-espaces/records?limit=3&order_by=date_publication%20desc&refine=categorie_produit:alimentation",
+    "pourquoi": "Ajouter une couche de contexte sur la sécurité des produits (rappels alimentaires) pour montrer que Bodacc Vert peut aussi servir à éviter l'achat de stocks contaminés ou dangereux lors de rachats de fonds de commerce."
+   }
+  ],
+  "ecran": "Une interface épurée en deux parties : 'Alerte Liquidations' et 'Contexte Marché'. \n\n1. Header : Titre 'Bodacc Vert', sous-titre 'Radar des Opportunités Circulaires'.\n2. Section Principale : Une liste de cartes horizontales. Chaque carte représente une entreprise en liquidation judiciaire récente. \n   - Affiche : Nom de l'entreprise, Ville, Date de parution, Type de procédure.\n   - Indicateur visuel : Un badge 'Potentiel Réemploi Élevé' si le secteur d'activité suggère du matériel valorisable (ex: Restauration, Industrie).\n3. Section Secondaire : 'Veille Sanitaire & Qualité'. Une petite liste montrant les derniers rappels de produits alimentaires. \n   - Message contextuel : 'Attention aux risques liés aux rachats de stocks suite à ces rappels.'\n4. Footer : Sources (BODACC DataDila, RappelConso) avec mentions de licences ouvertes.",
+  "calcul": "Le script JavaScript fetch les données du BODACC. Il filtre côté client (ou via l'API selon les paramètres) les annonces de type 'Liquidation judiciaire'. Pour chaque résultat, il extrait le nom de la société, la ville et la date. Il applique une logique simple : si le secteur d'activité contient 'Restauration', 'Hôtellerie' ou 'Industrie', il marque l'opportunité comme 'Haute Priorité' car ces secteurs génèrent du matériel réemployable (cuisine, machines). Les données de RappelConso sont affichées séparément pour alerter sur les risques sanitaires potentiels dans les stocks achetés.",
+  "limites": "La démo ne couvre que les dernières 5 liquidations judiciaires publiées. Elle ne permet pas encore de géolocaliser précisément les biens ni d'estimer leur valeur marchande. L'accès au BODACC complet nécessite un abonnement payant ; cette démo utilise l'API publique gratuite qui a des limites de taux."
+ },
+ "sources": [
+  "RappelConso (France)"
+ ],
+ "trace": [
+  {
+   "etape": "donnees",
+   "recuperees": [
+    "rappels_produits"
+   ],
+   "erreurs": [
+    "données « bodacc_liquidations » (https://bodacc-datadila.opendatasoft.com/api/explore/v2.1/catalog/datasets/annonces-commerciales/records?limit=5&order_by=dateparution%20desc&refine=typeavis_lib:Procédure collective&refine=nature_avis:Liquidation judiciaire) : HTTP 400"
+   ]
+  },
+  {
+   "essai": 1,
+   "erreurs": []
+  }
+ ]
+}
