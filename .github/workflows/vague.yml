@@ -88,7 +88,10 @@ jobs:
         if: always() && env.FAIT != '1'
         run: |
           [ -d sortie ] || exit 0
+          # L'adresse de la liste d'attente est gardée dès que le Worker est déployé (les verdicts en ont besoin).
+          if [ -n "$API_URL" ] && [ ! -f sortie/etat/infra.json ]; then mkdir -p sortie/etat; printf '{"liste_attente_url": "%s"}\n' "$API_URL" > sortie/etat/infra.json; fi
           cp -r sortie /tmp/sortie
+          git reset -q --hard # wrangler.toml a été complété pendant le déploiement : on le remet avant de changer de branche
           git config user.name "metis-os"
           git config user.email "noreply@github.com"
           git checkout -B resultats origin/resultats
