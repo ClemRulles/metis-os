@@ -60,17 +60,19 @@ jobs:
           [ -n "$id" ] || { echo "Base D1 introuvable"; exit 1; }
           sed -i "s/A_RENSEIGNER/$id/" wrangler.toml
           npx --yes wrangler@3 d1 execute metis-experiences --remote --file=schema.sql
-          set -o pipefail
-          npx --yes wrangler@3 deploy | tee /tmp/deploy.txt
-          # Un compte neuf n'a pas encore de sous-domaine workers.dev : on en réserve un, puis on y publie le Worker.
+          # Un compte neuf n'a pas de sous-domaine workers.dev : on le réserve AVANT de déployer (sinon wrangler échoue).
           API="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers"
           H="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
-          sub=$(curl -s -H "$H" "$API/subdomain" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(JSON.parse(s).result?.subdomain||"")}catch{}})')
+          lire_sub() { curl -s -H "$H" "$API/subdomain" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(JSON.parse(s).result?.subdomain||"")}catch{}})'; }
+          sub=$(lire_sub)
           if [ -z "$sub" ]; then
-            sub="metis-$(printf '%s' "$CLOUDFLARE_ACCOUNT_ID" | cut -c1-8)"
-            curl -s -X PUT -H "$H" -H "content-type: application/json" "$API/subdomain" -d "{\"subdomain\":\"$sub\"}" | head -c 300; echo
+            curl -s -X PUT -H "$H" -H "content-type: application/json" "$API/subdomain" -d "{\"subdomain\":\"metis-$(printf '%s' "$CLOUDFLARE_ACCOUNT_ID" | cut -c1-8)\"}" | head -c 400; echo
+            sub=$(lire_sub)
           fi
-          curl -s -X POST -H "$H" -H "content-type: application/json" "$API/scripts/metis-liste-attente/subdomain" -d '{"enabled":true}' | head -c 200; echo
+          echo "Sous-domaine workers.dev : ${sub:-aucun}"
+          npx --yes wrangler@3 deploy 2>&1 | tee /tmp/deploy.txt || true
+          curl -s -X POST -H "$H" -H "content-type: application/json" "$API/scripts/metis-liste-attente/subdomain" -d '{"enabled":true}' | head -c 300; echo
+          [ -n "$sub" ] || { echo "Aucun sous-domaine workers.dev : à réserver une fois dans le tableau de bord (Workers & Pages)."; exit 1; }
           url="https://metis-liste-attente.$sub.workers.dev"
           echo "Liste d'attente : $url"
           echo "API_URL=$url" >> "$GITHUB_ENV"
