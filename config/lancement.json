@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "Vagues de lancement automatiques (décision du dirigeant, 1er nov. 2026 : aucune confirmation par page). Une page ne part en ligne que si elle franchit toute la porte de crédibilité, éditeur compris. Mettre auto à false arrête toute mise en ligne. Modifier ce fichier relance une vague sur le dernier passage du studio (et vérifie l’infrastructure Cloudflare).",
+  "note": "Vagues de lancement automatiques (décision du dirigeant, 1er nov. 2026 : aucune confirmation par page). Une page ne part en ligne que si elle franchit toute la porte de crédibilité, éditeur compris. Mettre auto à false arrête toute mise en ligne. Modifier ce fichier relance une vague sur le dernier passage du studio (et vérifie l’infrastructure Cloudflare : base, Worker, sous-domaine).",
   "auto": true,
   "taille_vague": 3,
   "candidats": 12,

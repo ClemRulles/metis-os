@@ -60,12 +60,19 @@ jobs:
           [ -n "$id" ] || { echo "Base D1 introuvable"; exit 1; }
           sed -i "s/A_RENSEIGNER/$id/" wrangler.toml
           npx --yes wrangler@3 d1 execute metis-experiences --remote --file=schema.sql
+          set -o pipefail
           npx --yes wrangler@3 deploy | tee /tmp/deploy.txt
-          # Jeton de lecture des statistiques : le secret STATS_TOKEN s'il existe, sinon dérivé du jeton Cloudflare
-          # (même calcul dans le workflow « Verdicts »), pour ne demander aucune étape de plus.
-          st="${{ secrets.STATS_TOKEN }}"; [ -n "$st" ] || st=$(printf '%s' "$CLOUDFLARE_API_TOKEN-metis-stats" | sha256sum | cut -c1-48)
-          echo "$st" | npx --yes wrangler@3 secret put STATS_TOKEN
-          url=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' /tmp/deploy.txt | head -1)
+          # Un compte neuf n'a pas encore de sous-domaine workers.dev : on en réserve un, puis on y publie le Worker.
+          API="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers"
+          H="Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          sub=$(curl -s -H "$H" "$API/subdomain" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(JSON.parse(s).result?.subdomain||"")}catch{}})')
+          if [ -z "$sub" ]; then
+            sub="metis-$(printf '%s' "$CLOUDFLARE_ACCOUNT_ID" | cut -c1-8)"
+            curl -s -X PUT -H "$H" -H "content-type: application/json" "$API/subdomain" -d "{\"subdomain\":\"$sub\"}" | head -c 300; echo
+          fi
+          curl -s -X POST -H "$H" -H "content-type: application/json" "$API/scripts/metis-liste-attente/subdomain" -d '{"enabled":true}' | head -c 200; echo
+          url="https://metis-liste-attente.$sub.workers.dev"
+          echo "Liste d'attente : $url"
           echo "API_URL=$url" >> "$GITHUB_ENV"
       - name: Vague de lancement
         if: env.FAIT != '1'

@@ -46,8 +46,8 @@ const editeurComplet = ["nom", "adresse", "contact"].every((k) => String(lanceme
 const enLigne = vague.prets.filter((p) => p.credibilite.ok);
 const raisons = [];
 if (!lancement.auto) raisons.push("mise en ligne automatique coupée (config/lancement.json, auto: false)");
-if (!editeurComplet) raisons.push("éditeur absent (nom, adresse, contact dans config/lancement.json : obligatoire pour une page qui recueille des e-mails)");
-if (!lancement.api_url) raisons.push("liste d'attente non branchée (secrets Cloudflare absents du dépôt)");
+if (!editeurComplet) raisons.push("éditeur absent (nom, adresse, contact dans config/lancement.json : mentions légales obligatoires)");
+if (!lancement.api_url) raisons.push("liste d'attente non branchée (déploiement Cloudflare à vérifier)");
 const pret = lancement.auto && enLigne.length > 0;
 const deploiement = pret ? `${enLigne.length} pages prêtes, mises en ligne par le workflow.` : `aucune page mise en ligne : ${raisons.join(" ; ") || "aucune page n'a franchi la porte"}. Les pages sont écrites et attendent.`;
 
