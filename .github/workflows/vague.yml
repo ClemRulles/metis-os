@@ -26,12 +26,20 @@ jobs:
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v4
+      - name: Vague du jour déjà faite ?
+        run: |
+          git fetch origin resultats || true
+          if [ "${{ github.event_name }}" = "workflow_run" ] && [ "${{ github.event.workflow_run.event }}" = "schedule" ] && git ls-tree --name-only origin/resultats "resultats/vagues/$(date -u +%F)/" 2>/dev/null | grep -q VAGUE.md; then
+            echo "Vague du jour déjà faite."; echo "FAIT=1" >> "$GITHUB_ENV"
+          fi
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
       - name: Tests
+        if: env.FAIT != '1'
         run: npm test
       - name: Opportunités du dernier studio et mémoire des tests
+        if: env.FAIT != '1'
         run: |
           mkdir -p /tmp/etat
           git fetch origin resultats
@@ -41,7 +49,7 @@ jobs:
           git show origin/resultats:resultats/etat/lances.json > /tmp/etat/lances.json 2>/dev/null || rm -f /tmp/etat/lances.json
           echo "Studio lu : $dernier"
       - name: Liste d'attente (seulement si Cloudflare est branché)
-        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
+        if: env.FAIT != '1' && env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
         working-directory: infra/liste-attente
         run: |
           npx --yes wrangler@3 d1 create metis-experiences --location weur 2>/dev/null || true
@@ -54,12 +62,13 @@ jobs:
           url=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' /tmp/deploy.txt | head -1)
           echo "API_URL=$url" >> "$GITHUB_ENV"
       - name: Vague de lancement
+        if: env.FAIT != '1'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node scripts/lancer-vague.js /tmp/opportunites.json /tmp/etat sortie
       - name: Mise en ligne des pages qui ont franchi la porte
-        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
+        if: env.FAIT != '1' && env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
         run: |
           dossier=$(cat sortie/etat/vague-prete.txt 2>/dev/null || true)
           [ -n "$dossier" ] && [ -d "$dossier/site" ] || { echo "Rien à mettre en ligne."; exit 0; }
@@ -70,7 +79,7 @@ jobs:
           { echo ""; echo "## En ligne"; for d in "$dossier"/site/*/; do s=$(basename "$d"); echo "- $base/$s/"; done; } | tee -a "$dossier/VAGUE.md" >> sortie/VAGUE-DU-JOUR.md
           printf '{"liste_attente_url": "%s", "pages": "%s"}\n' "$API_URL" "$base" > sortie/etat/infra.json
       - name: Dépôt des résultats
-        if: always()
+        if: always() && env.FAIT != '1'
         run: |
           [ -d sortie ] || exit 0
           cp -r sortie /tmp/sortie

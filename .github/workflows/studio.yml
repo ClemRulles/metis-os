@@ -6,9 +6,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "43 3 * * *" # vers 4 h 43 heure de Bruxelles, prêt pour le point de contrôle de 6 h 39
+    # Les minuteries de GitHub sont « au mieux » : le 2 nov., celle de 3 h 43 n'a pas sonné. Filets de secours,
+    # qui ne font rien si le passage du jour existe déjà.
+    - cron: "17 5 * * *"
+    - cron: "29 9 * * *"
   push:
     branches: [main]
-    paths: ["config/usine.json", "config/atlas-api.json", "src/usine/**", "src/radar/**", "src/enquete/**", "src/marche/**", "src/atlas/**", "config/atlas-vivant.json", "src/commun/**", "scripts/lancer-studio.js"]
+    paths: [".github/workflows/studio.yml", "config/usine.json", "config/atlas-api.json", "src/usine/**", "src/radar/**", "src/enquete/**", "src/marche/**", "src/atlas/**", "config/atlas-vivant.json", "src/commun/**", "scripts/lancer-studio.js"]
 
 permissions:
   contents: write
@@ -23,25 +27,37 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+      - name: Passage du jour déjà fait ?
+        id: garde
+        run: |
+          git fetch origin resultats || true
+          jour=$(date -u +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && git ls-tree --name-only origin/resultats "resultats/studio/$jour/" 2>/dev/null | grep -q opportunites.json; then
+            echo "Le passage du $jour existe déjà : rien à faire."; echo "fait=1" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-node@v4
+        if: steps.garde.outputs.fait != '1'
         with:
           node-version: "22"
       - name: Tests
+        if: steps.garde.outputs.fait != '1'
         run: npm test
       - name: Mémoire du studio
+        if: steps.garde.outputs.fait != '1'
         run: |
           mkdir -p /tmp/etat
           git fetch origin resultats || true
           for f in gisements graines deja_vues marche-agents atlas-sante; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
           ls -la /tmp/etat
       - name: Radar, usine, enquête
+        if: steps.garde.outputs.fait != '1'
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GITHUB_TOKEN: ${{ github.token }} # recherche GitHub de l'élan (30 requêtes par minute au lieu de 10)
         run: node scripts/lancer-studio.js /tmp/etat sortie
       - name: Dépôt des résultats
-        if: always()
+        if: always() && steps.garde.outputs.fait != '1'
         run: |
           [ -d sortie ] || exit 0
           cp -r sortie /tmp/sortie
