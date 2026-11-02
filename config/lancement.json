@@ -1,16 +1,27 @@
 {
   "version": 1,
-  "note": "Vagues de lancement automatiques (décision du dirigeant, 1er nov. 2026 : aucune confirmation par page). Une page ne part en ligne que si elle franchit toute la porte de crédibilité, éditeur compris. Mettre auto à false arrête toute mise en ligne. Modifier ce fichier relance une vague sur le dernier passage du studio (et vérifie l’infrastructure Cloudflare : base, sous-domaine, Worker).",
-  "auto": true,
+  "note": "Vagues de lancement. La machine PROPOSE chaque jour les pages qui passent la barre « waw » (seuil chiffré + pré-mortem) ; rien n'est publié tant que le slug n'est pas dans « approuvees » (validation du dirigeant), que l'éditeur n'est pas rempli et que la porte de crédibilité n'est pas franchie. Modifier ce fichier relance une vague sur le dernier passage du studio.",
   "taille_vague": 3,
   "candidats": 12,
   "rondes": 3,
   "max_par_arene": 2,
   "demos_par_vague": 3,
   "offre_par_defaut": "clic",
-  "seuil": { "score": 6.8, "paiement": 6, "originalite": 5 },
+  "seuil": {
+    "score": 7.2,
+    "paiement": 7,
+    "originalite": 6.5,
+    "espace": 6,
+    "defensibilite": 6,
+    "waw": 7
+  },
   "budget_vague_eur": 0,
   "minutes_humaines_par_test": 0,
-  "editeur": { "nom": "", "adresse": "", "contact": "" },
-  "api_url": ""
+  "editeur": {
+    "nom": "",
+    "adresse": "",
+    "contact": ""
+  },
+  "api_url": "",
+  "approuvees": []
 }

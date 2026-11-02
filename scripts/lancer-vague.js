@@ -7,6 +7,7 @@ import { creerRouteur, FOURNISSEURS_PAR_DEFAUT } from "../src/router.js";
 import { creerDemandeur, rngDe } from "../src/commun/outils.js";
 import { lancerVague, rapportVagueMd } from "../src/lancement/vague.js";
 import { rendrePage } from "../src/experiences/gabarit.js";
+import { verifierCredibilite } from "../src/experiences/credibilite.js";
 import { sonderAtlas } from "../src/atlas/vivant.js";
 import { atelierVague } from "../src/atelier/atelier.js";
 
@@ -42,14 +43,34 @@ for (const d of demos.filter((x) => x.ok)) {
   const p = vague.choisis.find((x) => x.slug === d.slug);
   if (p?.fiche) p.fiche.demo_url = "demo/";
 }
+// Approbation : la vague PROPOSE (pages mémorisées dans etat/propositions.json) ; seules les pages dont le slug
+// figure dans config/lancement.json « approuvees » sont publiées, avec l'éditeur et la liste d'attente injectés,
+// et seulement si elles franchissent alors la porte de crédibilité complète.
+const propositions = await lire(`${dossierEtat}/propositions.json`, {});
+for (const p of vague.prets) {
+  const d = demos.find((x) => x.slug === p.slug && x.ok);
+  propositions[p.slug] = { date, titre: p.idee.titre, nom: p.fiche.nom, score: p.idee.final?.total, waw: p.premortem?.note_waw ?? null, fiche: p.fiche, demo_html: d?.html ?? null };
+}
 const editeurComplet = ["nom", "adresse", "contact"].every((k) => String(lancement.editeur?.[k] ?? "").trim());
-const enLigne = vague.prets.filter((p) => p.credibilite.ok);
+const dejaEnLigne = new Set(lances.map((l) => l.slug));
+const aPublier = [];
+const refus = [];
+for (const slug of lancement.approuvees ?? []) {
+  const prop = propositions[slug];
+  if (!prop) { refus.push(`${slug} : proposition introuvable`); continue; }
+  if (dejaEnLigne.has(slug)) continue;
+  const fiche = { ...prop.fiche, editeur: lancement.editeur ?? {}, api_url: lancement.api_url ?? "" };
+  const rapport = verifierCredibilite(rendrePage(fiche), fiche);
+  if (rapport.ok) aPublier.push({ slug, fiche, demo_html: prop.demo_html, titre: prop.titre });
+  else refus.push(`${slug} : porte fermée (${rapport.bloquants.join(", ")})`);
+}
 const raisons = [];
-if (!lancement.auto) raisons.push("mise en ligne automatique coupée (config/lancement.json, auto: false)");
+if (!(lancement.approuvees ?? []).length) raisons.push("aucune page approuvée (ajouter son slug dans config/lancement.json, « approuvees »)");
 if (!editeurComplet) raisons.push("éditeur absent (nom, adresse, contact dans config/lancement.json : mentions légales obligatoires)");
 if (!lancement.api_url) raisons.push("liste d'attente non branchée (déploiement Cloudflare à vérifier)");
-const pret = lancement.auto && enLigne.length > 0;
-const deploiement = pret ? `${enLigne.length} pages prêtes, mises en ligne par le workflow.` : `aucune page mise en ligne : ${raisons.join(" ; ") || "aucune page n'a franchi la porte"}. Les pages sont écrites et attendent.`;
+raisons.push(...refus);
+const pret = aPublier.length > 0;
+const deploiement = pret ? `${aPublier.length} page(s) approuvée(s) mise(s) en ligne : ${aPublier.map((x) => x.slug).join(", ")}.` : `aucune page mise en ligne : ${raisons.join(" ; ")}. Les pages proposées attendent l'approbation.`;
 
 const dossier = `${sortie}/vagues/${date}`;
 await mkdir(`${dossier}/site`, { recursive: true });
@@ -69,18 +90,18 @@ for (const p of vague.choisis.filter((x) => x.fiche)) {
     }
   }
 }
+await writeFile(`${sortie}/etat/propositions.json`, JSON.stringify(propositions));
 if (pret) {
-  for (const p of enLigne) {
+  for (const p of aPublier) {
     await mkdir(`${dossier}/site/${p.slug}`, { recursive: true });
     await writeFile(`${dossier}/site/${p.slug}/index.html`, rendrePage(p.fiche));
-    const d = demos.find((x) => x.slug === p.slug && x.ok);
-    if (d) {
+    if (p.demo_html) {
       await mkdir(`${dossier}/site/${p.slug}/demo`, { recursive: true });
-      await writeFile(`${dossier}/site/${p.slug}/demo/index.html`, d.html);
+      await writeFile(`${dossier}/site/${p.slug}/demo/index.html`, p.demo_html);
     }
   }
   await writeFile(`${dossier}/site/index.html`, "<!doctype html><meta charset=utf-8><meta name=robots content=noindex><title>Tests</title><p>Pages de test en préparation.</p>");
-  await writeFile(`${sortie}/etat/lances.json`, JSON.stringify([...lances, ...enLigne.map((p) => ({ slug: p.slug, titre: p.idee.titre, nom: p.fiche.nom, date }))], null, 1));
+  await writeFile(`${sortie}/etat/lances.json`, JSON.stringify([...lances, ...aPublier.map((p) => ({ slug: p.slug, titre: p.titre, nom: p.fiche.nom, date }))], null, 1));
 }
 const mdDemos = ["", "## Atelier : démonstrations construites avec des données réelles", ...demos.map((d) => `- **${d.titre}** : ${d.ok ? `construite en ${d.essais} essai(s) avec ${d.sources.join(", ")} — ${d.spec?.promesse ?? ""} (pages/${d.slug}/demo/)` : `non construite — ${d.raison}`}`)].join("\n");
 const md = rapportVagueMd({ date, vague, deploiement }) + mdDemos;
@@ -88,7 +109,7 @@ await writeFile(`${dossier}/VAGUE.md`, md);
 await writeFile(`${sortie}/VAGUE-DU-JOUR.md`, md);
 await writeFile(
   `${dossier}/vague.json`,
-  JSON.stringify({ date, dateStudio, deploiement, pret, demos: demos.map((d) => ({ slug: d.slug, ok: d.ok, essais: d.essais ?? null, raison: d.raison ?? null })), cout: routeur.cout(), sante: demandeur.sante(), choisis: vague.choisis.map((p) => ({ slug: p.slug ?? null, titre: p.idee.titre, score_studio: p.idee.final?.total, note_plan: p.notePlan, elo: Math.round(p.elo), plan: p.plan, critique: p.critique, credibilite: p.credibilite?.bloquants ?? null, en_ligne: pret && enLigne.includes(p) })) }, null, 1)
+  JSON.stringify({ date, dateStudio, deploiement, pret, demos: demos.map((d) => ({ slug: d.slug, ok: d.ok, essais: d.essais ?? null, raison: d.raison ?? null })), cout: routeur.cout(), sante: demandeur.sante(), choisis: vague.choisis.map((p) => ({ slug: p.slug ?? null, titre: p.idee.titre, score_studio: p.idee.final?.total, note_plan: p.notePlan, elo: Math.round(p.elo), plan: p.plan, critique: p.critique, credibilite: p.credibilite?.bloquants ?? null, en_ligne: aPublier.some((x) => x.slug === p.slug), premortem: p.premortem ?? null })) }, null, 1)
 );
 await writeFile(`${sortie}/etat/vague-prete.txt`, pret ? dossier : "");
 console.log(md);

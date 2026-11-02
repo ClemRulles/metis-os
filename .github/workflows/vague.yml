@@ -49,7 +49,7 @@ jobs:
           dernier=$(git ls-tree --name-only origin/resultats resultats/studio/ | sort | tail -1)
           [ -n "$dernier" ] || { echo "Aucun passage du studio."; exit 1; }
           git show "origin/resultats:$dernier/opportunites.json" > /tmp/opportunites.json
-          git show origin/resultats:resultats/etat/lances.json > /tmp/etat/lances.json 2>/dev/null || rm -f /tmp/etat/lances.json
+          for f in lances propositions; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
           echo "Studio lu : $dernier"
       - name: Liste d'attente (seulement si Cloudflare est branché)
         if: env.FAIT != '1' && env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''

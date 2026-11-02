@@ -43,6 +43,7 @@ function demandeurFactice() {
       let rep;
       if (sys.includes("fondateur en série")) rep = { promesse: `Promesse ${user.slice(20, 40)}`, public_precis: "p", canal_principal: "c", premiers_visiteurs: ["a", "b"], offre: "liste", prix: "5 €", metrique: "inscriptions", seuil_succes: "3 %", budget_eur: 0, part_automatisable: "tout", action_humaine: "rien" };
       else if (sys.includes("avocat du diable")) rep = { trafic_realiste: user.includes("Idée 1") ? 9 : 5, clarte_offre: 7, vitesse: 7, cout: 8, honnetete: 9, echec_probable: "e", correction: "c" };
+      else if (sys.includes("associé le plus exigeant")) rep = { embarrassant: user.includes("Idée 2"), raisons: ["r"], note_waw: user.includes("Idée 4") ? 5 : 8, ce_qui_rend_waw: "x" };
       else if (sys.includes("arbitres")) rep = { gagnant: user.indexOf("Idée 1") > -1 && user.indexOf("Idée 1") < user.indexOf("<B>") ? "A" : "B" };
       else if (sys.includes("écris la page de test")) rep = { nom: user.includes("Idée 3") ? "Aviz Pro" : `Nom ${user.match(/Idée \d/)?.[0]}`, accroche: "Une accroche claire", sous_titre: user.includes("Idée 3") ? "Déjà 10 000 avis clients satisfaits" : "Un sous-titre", probleme_points: ["a", "b", "c"], comment: ["1", "2", "3"], pour_qui: "Les gens", prix: "5 € par mois", offre: "liste", faq: [{ question: "Quand ?", reponse: "Bientôt" }] };
       else if (sys.includes("Tu relis")) {
@@ -72,6 +73,8 @@ test("vague : plans, tournoi, sélection diverse, pages relues, porte de crédib
   assert.ok(v.choisis.length <= 4);
   assert.ok(v.choisis.filter((p) => p.idee.arene === "apprendre").length <= 2, "deux par arène au plus");
   assert.equal(v.classement[0].idee.titre, "Idée 1", "le meilleur plan gagne le tournoi");
+  assert.ok(!v.choisis.some((p) => p.idee.titre === "Idée 2"), "pré-mortem embarrassant : écartée");
+  assert.ok(!v.choisis.some((p) => p.idee.titre === "Idée 4"), "pas assez « waw » : écartée");
   const faux = v.choisis.find((p) => p.idee.titre === "Idée 3");
   if (faux) assert.equal(faux.contenuOk, false, "une page avec de faux avis ne part jamais");
   for (const p of v.prets) {
@@ -86,5 +89,5 @@ test("seuil : sous le seuil, pas de vague et aucun appel", async () => {
   const v = await lancerVague({ opportunites: [{ titre: "Faible", final: { total: 7.5, composantes: { paiement_prouve: 4, originalite_mesuree: 8 } }, enquete: {}, critique: {} }], config, lancement: {}, demandeur: { demander: async () => (appels++, { valeur: null }) } });
   assert.equal(v.candidats, 0);
   assert.equal(appels, 0);
-  assert.match(rapportVagueMd({ date: "d", vague: v, deploiement: "x" }), /Aucune opportunité n'atteint le seuil/);
+  assert.match(rapportVagueMd({ date: "d", vague: v, deploiement: "x" }), /Aucune opportunité n'atteint la barre/);
 });
