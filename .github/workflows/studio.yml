@@ -47,7 +47,7 @@ jobs:
         run: |
           mkdir -p /tmp/etat
           git fetch origin resultats || true
-          for f in gisements graines deja_vues marche-agents atlas-sante x-semaine transplants; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
+          for f in gisements graines deja_vues marche-agents atlas-sante x-semaine transplants gisements_en_tete; do git show "origin/resultats:resultats/etat/$f.json" > "/tmp/etat/$f.json" 2>/dev/null || rm -f "/tmp/etat/$f.json"; done
           ls -la /tmp/etat
       - name: Radar, usine, enquête
         if: steps.garde.outputs.fait != '1'

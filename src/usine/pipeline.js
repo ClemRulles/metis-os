@@ -186,7 +186,14 @@ export async function lancerUsine({ config, atlas, gisements = [], gisementsMarc
   for (let k = 0; k < nMarche; k++) plans.push({ type: "marche", lentille: lentillesM[k % lentillesM.length], gisement: gisementsMarche[k % gisementsMarche.length], cerveau: choisir(alea, config.cerveaux_generation) });
   // Failles calculées : traction à l'étranger sans équivalent ici, logiciels abandonnés, demandes ignorées.
   const nFailles = gisementsFailles.length && lentillesF.length ? v.generations_failles ?? 0 : 0;
-  for (let k = 0; k < nFailles; k++) plans.push({ type: "faille", lentille: lentillesF[k % lentillesF.length], gisement: gisementsFailles[k % gisementsFailles.length], cerveau: choisir(alea, config.cerveaux_generation) });
+  // Chaque type de faille a ses lentilles : un transplant s'adapte ou se croise, un abandon se reprend, etc.
+  const LENTILLES_PAR_TYPE = { transplant: ["transplant-adapte", "transplant-croise"], abandonne: ["reprendre-l-abandon"], demande_ignoree: ["faire-l-ignore"], demande_payee_mal_servie: ["mieux-que-le-paye"] };
+  for (let k = 0; k < nFailles; k++) {
+    const g = gisementsFailles[k % gisementsFailles.length];
+    const possibles = (LENTILLES_PAR_TYPE[g.faille?.type] ?? lentillesF).filter((l) => lentillesF.includes(l));
+    const lentille = possibles.length ? possibles[Math.floor(k / gisementsFailles.length) % possibles.length] : lentillesF[k % lentillesF.length];
+    plans.push({ type: "faille", lentille, gisement: g, cerveau: choisir(alea, config.cerveaux_generation) });
+  }
   journal(`génération : ${plans.length} appels (${nAncrees} ancrés dans des douleurs réelles, ${nMarche} dans le marché des agents, ${nFailles} dans des failles calculées)`);
   const lots = await pool(plans, parallelisme, async (p) => {
     const messages =

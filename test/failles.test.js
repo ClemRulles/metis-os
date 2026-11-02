@@ -118,3 +118,14 @@ test("X une fois par semaine, mémoire réutilisée ; transplants vérifiés gar
   assert.equal(recherches, 1, "la vérification web n'est pas repayée");
   assert.equal(t2.length, 1);
 });
+
+test("itération 4 : ressemblance exige trois mots, fatigue des gisements, lentille selon la faille", async () => {
+  assert.equal(similarite(jetons("données publiques ouvertes santé"), jetons("cartes des données publiques ouvertes du code")), 0);
+  const base = { score: 7, elo: 1500, gisement: { id: "g1", force: 5 }, enquete: { concurrents: [], preuves_demande: [], offres_payantes: [], nouveaute: 8, risque_juridique: "faible", verdict: "creuser" } };
+  assert.ok(scoreFinal({ ...base, fatigue: 3 }, config.score_final.poids).total < scoreFinal(base, config.score_final.poids).total);
+  const { lancerUsine } = await import("../src/usine/pipeline.js");
+  const vues = [];
+  const demandeur = { demander: async (p, m, { lire }) => { vues.push(m[0].content); return { valeur: null, cerveau: null }; } };
+  await lancerUsine({ config: { ...config, volumes: { ...config.volumes, generations: 0, generations_marche: 0, generations_failles: 4 } }, atlas: { sources: [] }, gisementsFailles: [{ id: "f1", nom: "F", n: 1, force: 5, description: "d", exemples: [], faille: { type: "abandonne" } }], demandeur, graine: 1 });
+  assert.ok(vues.every((v) => v.includes("plus personne ne l'entretient")), "un abandon reçoit la lentille « reprendre l'abandon »");
+});

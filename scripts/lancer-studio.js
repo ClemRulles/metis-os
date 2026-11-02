@@ -31,6 +31,7 @@ const atlasVivant = await lire("config/atlas-vivant.json", { apis: [] });
 const historique = await lire(`${dossierEtat}/gisements.json`, []);
 const graines = await lire(`${dossierEtat}/graines.json`, []);
 const dejaVues = await lire(`${dossierEtat}/deja_vues.json`, []);
+const enTete = await lire(`${dossierEtat}/gisements_en_tete.json`, {}); // gisement -> nombre de passages où il était dans le top 10
 const panelPrecedent = await lire(`${dossierEtat}/marche-agents.json`, {});
 const santeAtlasPrecedente = await lire(`${dossierEtat}/atlas-sante.json`, {});
 const memoireX = await lire(`${dossierEtat}/x-semaine.json`, null);
@@ -111,6 +112,7 @@ chrono("elan", t0);
 journal(`élan mesuré : ${aEnqueter.filter((i) => i.elan && !i.elan.faible).length}/${aEnqueter.length} idées`);
 for (const i of usine.classement) {
   i.banalite = banalite(i, temoins.tous);
+  i.fatigue = i.gisement?.id ? enTete[i.gisement.id] ?? 0 : 0;
   i.final = scoreFinal(i, config.score_final.poids);
 }
 const opportunites = [...usine.classement].sort((a, b) => b.final.total - a.final.total);
@@ -129,6 +131,8 @@ await writeFile(
   `${dossierSortie}/etat/graines.json`,
   JSON.stringify(opportunites.slice(0, 5).map((i) => ({ titre: i.titre, solution: i.solution, angle_libre: i.enquete?.angle_libre ?? null, objection: i.critique?.objection ?? null })), null, 1)
 );
+for (const i of opportunites.slice(0, 10)) if (i.gisement?.id) enTete[i.gisement.id] = (enTete[i.gisement.id] ?? 0) + 1;
+await writeFile(`${dossierSortie}/etat/gisements_en_tete.json`, JSON.stringify(enTete));
 await writeFile(`${dossierSortie}/etat/deja_vues.json`, JSON.stringify([...opportunites.slice(0, 20).map((i) => i.titre), ...dejaVues].slice(0, 300), null, 1));
 await writeFile(`${dossierSortie}/sante-studio.json`, JSON.stringify(sante, null, 1));
 await writeFile(`${dossierSortie}/etat/marche-agents.json`, JSON.stringify(panel));

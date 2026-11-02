@@ -11,7 +11,7 @@ export function messagesTemoin(arene, description, n = 25) {
   ];
 }
 
-const VIDES = new Set("les des une un le la de du et en pour par avec sans sur dans aux au qui que leur leurs vos votre son ses plus tout tous pas est sont the and for with your from that this into app application plateforme platform outil tool service site web ligne online ia ai intelligence artificielle agent agents client clients utilisateurs users".split(" "));
+const VIDES = new Set("les des une un le la de du et en pour par avec sans sur dans aux au qui que leur leurs vos votre son ses plus tout tous pas est sont the and for with your from that this into app application plateforme platform outil tool service site web ligne online ia ai intelligence artificielle agent agents client clients utilisateurs users donnee donne publique publiqu ouverte ouvert gratuit personnalise personnalis automatique automatiqu intelligent simple rapide nouveau nouvelle nouvell".split(" "));
 export function jetons(t) {
   return new Set(
     String(t ?? "")
@@ -29,6 +29,8 @@ export function similarite(a, b) {
   let commun = 0;
   for (const m of a) if (b.has(m)) commun += 1;
   // Recouvrement rapporté au plus petit des deux : une idée courte entièrement contenue dans une autre est banale.
+  // Moins de trois mots en commun ne suffit pas à parler de ressemblance (« données publiques ouvertes »).
+  if (commun < 3) return 0;
   return commun / Math.min(a.size, b.size);
 }
 

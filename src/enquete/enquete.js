@@ -181,6 +181,7 @@ export function scoreFinal(idee, poids) {
     somme += w;
   }
   // L'enquêteur qui conclut « abandonner » après avoir vu le marché pèse sur le classement.
-  const malus = e?.verdict === "abandonner" ? 0.85 : 1;
+  // Fatigue : un gisement déjà en tête les jours précédents laisse la place au neuf (5 % par apparition, 25 % au plus).
+  const malus = (e?.verdict === "abandonner" ? 0.85 : 1) * (1 - Math.min(0.25, 0.05 * (idee.fatigue ?? 0)));
   return { total: +((total / somme) * malus).toFixed(2), composantes, paiement: paiement.raison, verdict_enquete: e?.verdict ?? null };
 }
