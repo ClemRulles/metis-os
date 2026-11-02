@@ -15,6 +15,8 @@ test("émergents : lecture des cinq sources", () => {
   const ph = lireProductHunt('<feed><entry><link rel="alternate" href="https://www.producthunt.com/products/hera"/><title>Hera</title><content type="html">&lt;p&gt;AI Canvas&lt;/p&gt;</content></entry></feed>');
   assert.deepEqual([ph[0].titre, ph[0].description], ["Hera", "AI Canvas"]);
   assert.equal(lireGitHubMontants({ items: [{ full_name: "a/b", html_url: "u", stargazers_count: 900 }] })[0].metrique.valeur, 900);
+  assert.equal(lireGitHubMontants({ items: [{ full_name: "s/gridcraft", stargazers_count: 7000 }, { full_name: "s/wordcraft", stargazers_count: 17000 }, { full_name: "o/x", stargazers_count: 900 }] }).length, 1, "étoiles achetées écartées");
+  assert.ok(tractionEtrangere({ source: "Y Combinator Fall 2026", metrique: {} }) > tractionEtrangere({ source: "GitHub (nouveau, en forte hausse)", metrique: { valeur: 50000 } }));
   assert.equal(lireMastodonLiens([{ url: "u", title: "t", history: [{ uses: "3" }, { uses: "4" }] }])[0].metrique.valeur, 7);
   assert.ok(tractionEtrangere({ source: "Show HN", metrique: { valeur: 900 } }) > tractionEtrangere({ source: "Show HN", metrique: { valeur: 90 } }));
 });
@@ -34,7 +36,7 @@ test("transplant : la traction compte seulement s'il n'y a rien ici, et les lien
   ];
   const demandeur = {
     demander: async (pref, messages, { lire }) => {
-      if (messages[0].content.includes("analyste")) return { valeur: lire(JSON.stringify({ produits: [{ n: 0, concept: "A pour tous", mots_en: ["a"], mots_fr: ["a"], transposable: true }, { n: 1, concept: "B pour tous", transposable: true }] })), cerveau: "x" };
+      if (messages[0].content.includes("analyste")) return { valeur: lire(JSON.stringify({ produits: [{ n: 0, concept: "A pour tous", mots_en: ["a"], mots_fr: ["a"], transposable: true }, { n: 1, concept: "B pour tous", transposable: true }, { n: 0, concept: "Lib gratuite", commercial: false }] })), cerveau: "x" };
       const b = messages[1].content.includes("B pour tous");
       return { valeur: lire(JSON.stringify({ conclusion: b ? "present" : "absent", equivalents_fr: b ? [{ nom: "B-fr", url: "https://www.b.fr/x", proximite: 9 }, { nom: "Inventé", url: "https://faux.fr", proximite: 9 }] : [] })), cerveau: "y", citations: [{ url: "https://b.fr/" }] };
     },

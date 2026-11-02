@@ -168,7 +168,8 @@ export function scoreFinal(idee, poids) {
     originalite_mesuree: borne(idee.banalite?.originalite ?? 5), // contre le témoin « réflexe d'assistant IA »
     critique: borne(idee.score ?? 0),
     tournoi: borne(((idee.elo ?? 1500) - 1420) / 16),
-    faible_risque: ({ faible: 10, moyen: 5, eleve: 0 })[e?.risque_juridique ?? idee.critique?.risque_juridique] ?? 5,
+    // Une idée qui repose sur l'aspiration d'un site tiers est un risque juridique élevé, quoi qu'en dise l'enquête.
+    faible_risque: /scrap|aspir|crawl/i.test(`${idee.solution ?? ""} ${idee.premier_test ?? ""}`) ? 0 : ({ faible: 10, moyen: 5, eleve: 0 })[e?.risque_juridique ?? idee.critique?.risque_juridique] ?? 5,
   };
   // Outil pour agents déjà couvert par des dizaines de serveurs MCP : l'espace n'est pas libre.
   const nMCP = idee.mcp?.n === "100+" ? 100 : Number(idee.mcp?.n) || 0;
