@@ -1,32 +1,32 @@
 [
  {
-  "titre": "Le Contrôleur de Compatibilité API",
-  "solution": "Un agent IA qui surveille 24h/24 les changements de structure (schema) et les temps de réponse des APIs critiques, alertant avant que le bug n'arrive chez l'utilisateur final.",
-  "angle_libre": "Personne ne combine encore surveillance continue du schéma + latence avec une alerte prédictive orientée devs indés à prix fixe bas (19 €/mois pour 5 APIs) : les concurrents font soit du uptime/diagnostic (Canary Ops, PulseAPI), soit du diff ponctuel à l'usage (x402), soit de la réparation de code (agents), mais pas de rapport prédictif « avant que le bug n'arrive chez l'utilisateur » packagé pour un public non-enterprise.",
-  "objection": "Le marché des outils de monitoring est saturé. Le défi est de prouver la valeur critique (le 'pain') de l'alerte de changement de schéma avant que le développeur ne soit exposé à un bug réel, ce qui rend la conversion du test gratuit difficile."
+  "titre": "BugAlert",
+  "solution": "Un agent surveille en continu les avis récents de l'App Store et du Play Store d'une app, détecte les signaux de bugs récurrents, les regroupe par sévérité et envoie un rapport quotidien priorisé directement au développeur.",
+  "angle_libre": "Heednest couvre déjà la surveillance d'avis + GitHub (etannonce l'extension Play Store) : l'angle restant est la spécialisation 'abonnés payants en colère' — score de risque de churn/désabonnement par bug, alertes temps réel (< 24h) plutôt que digest quotidien, et focus petits studios vendant en abonnement.",
+  "objection": "Le risque majeur réside dans le 'bruit' des avis : l'agent doit impérativement distinguer un bug technique reproductible d'une insatisfaction utilisateur ou d'un problème lié à la configuration de l'appareil. Si le taux de faux positifs est élevé, le développeur ignorera le rapport (fatigue d'alerte)."
  },
  {
-  "titre": "APIPrixFinal",
-  "solution": "Une API qui renvoie le prix final toutes frais inclus (service, livraison, taxes) pour un produit et une destination donnés, agrégé depuis des dizaines de sources.",
-  "angle_libre": "Aucun acteur trouvé n'expose une API développeur qui renvoie le prix final toutes frais inclus (livraison, taxes, frais de service) pour un produit et une destination donnés : les outils existants font de la veille tarifaire B2B pour marchands, pas de l'agrégation 'landed cost' orientée apps de comparaison.",
-  "objection": "Le modèle repose entièrement sur le scraping de données de prix et de frais, ce qui contrevient très probablement aux Conditions Générales de Vente (CGV) de la majorité des marchands e-commerce. Ce risque juridique est majeur et peut entraîner le blocage des sources de données et des poursuites."
+  "titre": "Le Relais de Voix : la mémoire parlée des aînés, livrée en abonnement familial",
+  "solution": "Un agent IA appelle ou guide l'aîné par téléphone ou via une box simple, pose les bonnes questions de biographie orale, transcrit, indexe et livre chaque mois un épisode audio monté et partageable à la famille.",
+  "angle_libre": "Aucun concurrent trouvé ne fait d'appels téléphoniques sortants automatiques à l'aîné avec livraison mensuelle d'un épisode audio monté et partageable : tous reposent sur l'initiative de la famille ou d'une app à installer.",
+  "objection": "La promesse d'un épisode monté chaque mois repose sur la coopération d'un aîné souvent réticent ou fatigué ; sans engagement garanti de sa part, le service peut livrer des épisodes vides ou médiocres, et l'abonné se désengage vite."
  },
  {
-  "titre": "Preuve avant mise à jour",
-  "solution": "Un outil en libre-service qui, avant chaque publication, fait tester automatiquement la nouvelle version par des scénarios d'usage réels générés par les agents (parcours client, temps de chargement, flux critique) et produit un rapport « prêt ou pas » avec simulation du coût d'une mise à jour bloquante.",
-  "angle_libre": "Les résultats de recherche fournis ne contiennent rien sur ce besoin (CRM, bornes de commande, Shopify, témoignages clients, Slack) : impossible de vérifier la concurrence ni la demande. Un angle possible serait la simulation chiffrée du coût d'une mise à jour bloquante, mais elle reste non validée par les sources.",
-  "objection": "La défensibilité est faible : un outil open source ou un agent IA gratuit pourrait rapidement reproduire la même fonctionnalité, et les créateurs pourraient préférer une solution gratuite."
+  "titre": "Resili.io : L'API de Résiliation pour Développeurs",
+  "solution": "Une API REST qui prend un nom de service et un ID utilisateur (ou un screenshot) et retourne le lien exact de résiliation, la date de prochain prélèvement et la procédure requise.",
+  "angle_libre": "Aucun acteur ne normalise la résiliation en API inter-services (lien de résiliation + prochaine date de prélèvement + procédure) pour les apps financières et agents IA ; OIB ne couvre que l'assurance en B2B2C, pas la résiliation multi-verticale.",
+  "objection": "La dépendance aux données de scraping et à la maintenance manuelle des procédures de résiliation est le point de rupture. Les entreprises changent leurs conditions générales et leurs interfaces sans préavis, rendant l'API fragile et sujette à des erreurs critiques si elle n'est pas mise à jour en temps réel."
  },
  {
-  "titre": "Alt-Text Forge",
-  "solution": "Une API qui prend un lot d'URLs d'images et retourne un alt-text conforme aux normes WCAG, multilingue, avec niveau de détail paramétrable et contrôle qualité automatique par un second agent vérificateur.",
-  "angle_libre": "Une API générique (hors WordPress) avec contrôle qualité par second agent vérificateur, niveau de détail paramétrable et sortie multilingue normalisée pour pipelines d'agents IA et scrapers — les concurrents trouvés sont des plugins WordPress intégrés à la médiathèque, pas des API batch.",
-  "objection": "La défensibilité est faible : un modèle de vision multimodal (ex. GPT-4o) peut générer un alt-text acceptable gratuitement ou à coût marginal, et des API concurrentes (AWS, Google) proposent déjà la description d'image. Sans données propriétaires ou réseau de confiance, l'offre est facilement copiée."
+  "titre": "Dialectomètre : choisissez votre dialecte, on construit le programme",
+  "solution": "Un générateur de programmes d'apprentissage paramétrable : l'utilisateur choisit son dialecte cible, son niveau et son objectif, et l'IA construit un parcours complet (vocabulaire, grammaire, audio) à partir de sources ouvertes et de corpus spécifiques.",
+  "angle_libre": "Aucun acteur ne propose de packs complets par dialecte (tunisien, algérien, marocain) avec audio et grammaire : la lacune est documentée côté recherche comme côté apps grand public. Attention toutefois : créer du contenu de qualité par dialecte est coûteux, et des acteurs (TalkInArabic, Mango Languages hors résultats fournis) existent probablement — à vérifier manuellement.",
+  "objection": "La défensibilité est faible : un assistant IA gratuit (ex. ChatGPT) peut déjà générer des leçons de dialecte sur demande, ce qui rend difficile de justifier un paiement récurrent ou même unitaire pour un pack."
  },
  {
-  "titre": "PreuveEnMain : terminal de preuve de livraison payé à la pièce chez les commerçants locaux",
-  "solution": "Une borne QR posée en caisse où le client signe numériquement et photographie sa réception, archivée automatiquement et consultable en cas de litige ou de contestation.",
-  "angle_libre": "Un ePOD payé à la pièce et ultra-simple (borne QR en caisse) pour le livreur-commerçant local, alors que les solutions existantes visent les flottes et TMS B2B, pas l'épicerie du quartier.",
-  "objection": "Le modèle est trop réactif et repose sur une adoption volontaire (le client doit accepter de signer numériquement). La friction d'ajouter une étape matérielle (la borne) au processus de livraison est un frein majeur à l'adoption par les petits commerçants."
+  "titre": "KidScore",
+  "solution": "Un annuaire vérifié d'applis pour enfants où des agents analysent les avis, extraient les mentions de pubs, d'achats piégeux et de contenus inadaptés, et produisent une fiche parent simple : « nombre de pubs signalées, pression d'achat, alternatives propres ».",
+  "angle_libre": "Aucun concurrent des résultats ne fait d'analyse des avis pour quantifier pubs et pression d'achat in-app : un annuaire type « label propre » indépendant des magasins d'applis est un angle libre, à condition de valider la demande hors contrôle parental.",
+  "objection": "La défendabilité est faible : un assistant IA gratuit peut demain analyser les mêmes avis et produire des fiches équivalentes, rendant l'abonnement difficile à justifier."
  }
 ]

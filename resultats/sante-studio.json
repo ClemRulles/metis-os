@@ -1,32 +1,32 @@
 {
- "date": "2026-11-01",
- "dureeSecondes": 1235,
- "coutUsd": 0.3619,
- "appelsModeles": 977,
+ "date": "2026-11-02",
+ "dureeSecondes": 1216,
+ "coutUsd": 0.352,
+ "appelsModeles": 943,
  "etapes": {
   "radar": {
-   "secondes": 346,
-   "coutCumuleUsd": 0.0385
+   "secondes": 219,
+   "coutCumuleUsd": 0.0231
   },
   "marche": {
-   "secondes": 8,
-   "coutCumuleUsd": 0.0385
+   "secondes": 5,
+   "coutCumuleUsd": 0.0231
   },
   "atlas": {
    "secondes": 24,
-   "coutCumuleUsd": 0.0385
+   "coutCumuleUsd": 0.0231
   },
   "usine": {
-   "secondes": 746,
-   "coutCumuleUsd": 0.2764
+   "secondes": 854,
+   "coutCumuleUsd": 0.2656
   },
   "enquete": {
-   "secondes": 24,
-   "coutCumuleUsd": 0.3619
+   "secondes": 25,
+   "coutCumuleUsd": 0.352
   },
   "elan": {
-   "secondes": 88,
-   "coutCumuleUsd": 0.3619
+   "secondes": 90,
+   "coutCumuleUsd": 0.352
   }
  },
  "sources": {
@@ -37,13 +37,13 @@
    "n": 59
   },
   "appstore": {
-   "n": 1219,
+   "n": 5,
    "categories": [
-    "Divertissement",
-    "Éducation",
-    "Livres",
-    "Médecine",
-    "Cuisine et boissons"
+    "Shopping",
+    "Utilitaires",
+    "Voyages",
+    "Productivité",
+    "Navigation"
    ]
   },
   "stackexchange": {
@@ -53,7 +53,7 @@
    "n": 150
   },
   "apify": {
-   "n": 1023
+   "n": 1012
   },
   "mcp": {
    "n": 8000,
@@ -65,63 +65,63 @@
   }
  },
  "cerveaux": {
-  "mercury": {
-   "ok": 41,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 5247,
-   "exempleErreur": null
-  },
-  "mimo": {
-   "ok": 239,
-   "echecs": 0,
-   "tauxEchec": 0,
-   "msMoyen": 9705,
-   "exempleErreur": null
-  },
   "qwen": {
-   "ok": 216,
+   "ok": 234,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 9460,
+   "msMoyen": 8439,
+   "exempleErreur": null
+  },
+  "mercury": {
+   "ok": 33,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 5317,
    "exempleErreur": null
   },
   "deepseek": {
-   "ok": 241,
-   "echecs": 2,
-   "tauxEchec": 0.01,
-   "msMoyen": 10564,
-   "exempleErreur": "aucun fournisseur pour deepseek (openrouter : réponse vide (fin : length) ; groq : clé absente)"
+   "ok": 245,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 7231,
+   "exempleErreur": null
   },
   "mistral": {
-   "ok": 12,
+   "ok": 6,
    "echecs": 1,
-   "tauxEchec": 0.08,
-   "msMoyen": 12681,
+   "tauxEchec": 0.14,
+   "msMoyen": 15661,
    "exempleErreur": "réponse illisible (fin : stop) : []"
   },
+  "mimo": {
+   "ok": 185,
+   "echecs": 37,
+   "tauxEchec": 0.17,
+   "msMoyen": 15906,
+   "exempleErreur": "aucun fournisseur pour mimo (openrouter : The operation was aborted due to timeout ; groq : clé absente)"
+  },
   "glm": {
-   "ok": 217,
-   "echecs": 7,
-   "tauxEchec": 0.03,
-   "msMoyen": 6352,
-   "exempleErreur": "réponse illisible (fin : stop) : {\"} }$্ট। ेேகཟンемаяান্ত্টा , здо วา ォ<unused2130>ाની,емаяníkaးा้น ঁ1।วา}! $,    \": 1, \"},ッシемая.्याемаяวา।ा}وري\": \"}وري\""
+   "ok": 236,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 5294,
+   "exempleErreur": null
   }
  },
  "stats": {
-  "brut": 762,
-  "douleurs": 457,
-  "gisements": 787,
+  "brut": 446,
+  "douleurs": 183,
+  "gisements": 916,
   "gisementsMarche": 12,
-  "generees": 670,
-  "parasites": 6,
-  "idees": 658,
-  "notees": 518,
+  "generees": 686,
+  "parasites": 12,
+  "idees": 663,
+  "notees": 523,
   "nonConformes": 140,
   "finalistes": 32,
   "duels": 80,
   "enquetes": 15,
-  "prixLus": 2,
+  "prixLus": 3,
   "elanMesure": 13
  }
 }

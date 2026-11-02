@@ -1,6 +1,6 @@
-# Marché des agents — 2026-11-01
+# Marché des agents — 2026-11-02
 
-1023 outils lus sur Apify Store, dont 955 payants et 816 ouverts au paiement par des agents. Registre MCP : 8000 serveurs publiés ou mis à jour en 7 jours (5529 hébergés), dont 7795 nouveaux.
+1012 outils lus sur Apify Store, dont 944 payants et 807 ouverts au paiement par des agents. Registre MCP : 8000 serveurs publiés ou mis à jour en 7 jours (5526 hébergés), dont 7791 nouveaux.
 Premier relevé du panel : la croissance réelle sera mesurée à partir de J+6 ; en attendant, le classement utilise la part des utilisateurs du mois actifs cette semaine.
 
 ⚠ = outil sur des données personnelles ou des réseaux sociaux : montré pour lire le marché, exclu de l'usine.
@@ -46,31 +46,31 @@ Premier relevé du panel : la croissance réelle sera mesurée à partir de J+6 
 
 ## Demande par outil, par catégorie
 - OPEN_SOURCE : 16 outils, 2685 utilisateurs par outil, prix médian 0.01 $, note médiane 4.71
-- TRAVEL : 45 outils, 1438 utilisateurs par outil, prix médian 0.004 $, note médiane 4.79
-- VIDEOS : 108 outils, 1255 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.88
-- AI : 85 outils, 1244 utilisateurs par outil, prix médian 0.004 $, note médiane 4.73
-- SOCIAL_MEDIA : 446 outils, 1218 utilisateurs par outil, prix médian 0.0029 $, note médiane 4.74
-- LEAD_GENERATION : 472 outils, 790 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.75
-- JOBS : 98 outils, 598 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.63
-- SEO_TOOLS : 87 outils, 517 utilisateurs par outil, prix médian 0.0035 $, note médiane 4.7
-- AUTOMATION : 375 outils, 469 utilisateurs par outil, prix médian 0.003 $, note médiane 4.84
-- ECOMMERCE : 86 outils, 468 utilisateurs par outil, prix médian 0.00399 $, note médiane 4.79
-- NEWS : 37 outils, 437 utilisateurs par outil, prix médian 0.0028 $, note médiane 4.9
-- AGENTS : 39 outils, 375 utilisateurs par outil, prix médian 0.0035 $, note médiane 4.84
-- DEVELOPER_TOOLS : 179 outils, 365 utilisateurs par outil, prix médian 0.0033 $, note médiane 4.87
-- MARKETING : 15 outils, 292 utilisateurs par outil, prix médian 0.001 $, note médiane 4.83
-- INTEGRATIONS : 26 outils, 213 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.89
+- TRAVEL : 44 outils, 1471 utilisateurs par outil, prix médian 0.004 $, note médiane 4.79
+- AI : 80 outils, 1321 utilisateurs par outil, prix médian 0.004 $, note médiane 4.73
+- VIDEOS : 105 outils, 1291 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.88
+- SOCIAL_MEDIA : 437 outils, 1243 utilisateurs par outil, prix médian 0.00299 $, note médiane 4.74
+- LEAD_GENERATION : 451 outils, 827 utilisateurs par outil, prix médian 0.003 $, note médiane 4.75
+- JOBS : 95 outils, 617 utilisateurs par outil, prix médian 0.003 $, note médiane 4.63
+- SEO_TOOLS : 78 outils, 577 utilisateurs par outil, prix médian 0.0035 $, note médiane 4.7
+- AUTOMATION : 369 outils, 476 utilisateurs par outil, prix médian 0.003 $, note médiane 4.84
+- ECOMMERCE : 87 outils, 463 utilisateurs par outil, prix médian 0.00399 $, note médiane 4.79
+- NEWS : 40 outils, 405 utilisateurs par outil, prix médian 0.002 $, note médiane 4.9
+- DEVELOPER_TOOLS : 175 outils, 374 utilisateurs par outil, prix médian 0.0037 $, note médiane 4.87
+- AGENTS : 41 outils, 357 utilisateurs par outil, prix médian 0.0029 $, note médiane 4.84
+- MARKETING : 15 outils, 292 utilisateurs par outil, prix médian 0.0015 $, note médiane 4.83
+- INTEGRATIONS : 30 outils, 185 utilisateurs par outil, prix médian 0.0025 $, note médiane 4.89
 
 ## Nouveaux serveurs MCP
-- Reel Estate MCP : Turn real-estate listing photos into property videos from your AI assistant.
-- cuttingfloor : Hosted video editing for AI agents: cut, caption, mix and export real video. Sign in with 
-- CardBreakCalculator : Sports card break odds, checklists and sales-backed card values. Pro or Breaker plan.
-- PayperWork : Index of PayperWork's pay-per-call services for agents over x402: lists and describes them
-- PayperAnswer : Pay-per-call chat on GPT-6.1, Claude, Gemini and Grok over x402. No API key; a failed call
-- PayperDrop : Temporary key-value drops and hand-off channels between agents, paid per call over x402. R
-- goblingains : Conditioning workouts from a coached library: suggest, vary or invent one for your kit and
-- Myndock Observatory : Read Myndock service metadata, aggregate origin activity, and agent message delivery stati
-- io.github.CloudCorpRecords/greenlight : Pre-flight checks for open-source contributions: is this GitHub issue actually landable?
-- Flisk : Run your whole app on your computer with one command: build, start, check and fix a local 
-- io.github.CloudCorpRecords/dashmetrics : Grafana dashboards, datasources, Prometheus, Loki, and alerts from your MCP client.
-- dev.mcphost/mcphost : Hosted MCP runtime where your agent publishes its own tools by tool call and keeps working
+- Seoulstart : Jobs for foreigners in Korea and median rent, jeonse and home prices from MOLIT data.
+- Turnbook : Local long-term memory shared by all your AI agents, kept word for word on your own PC.
+- MetricBridge Apple Health : Ask your agent about your own Apple Health data: 194 metrics, 22 tools, local, 0 deps.
+- io.github.EricSeokgon/egovframe-scaffold-mcp : eGovFrame (전자정부 표준프레임워크) projects: templates, components, CRUD, build, 5.x migration, depe
+- Agent Knowledge Network : Share firsthand API integration findings: client compatibility, failures and safe recovery
+- gosidian : Self-hosted Obsidian-compatible markdown vault with a web UI and a 71-tool MCP server for 
+- The Landing Company of Madison Park : Seattle engineering consultancy: services, guides, FAQs, and requests for a free 30-minute
+- io.github.CloudCorpRecords/procureport : Korean public procurement: bids, awards, contracts, statistics, products and mall search.
+- Chatroost — unofficial Telegram MCP server : Unofficial Telegram MCP server — read, search, reply and react in your own Telegram accoun
+- CloudGPU MCP : Rent a per-minute GPU from your MCP client, run a job, download results, shut it down.
+- MajlisDesk: WhatsApp shared inbox : Read and answer your team's WhatsApp and email inbox from Claude or ChatGPT. OAuth sign-in
+- Alura : Etsy research and shop tools for AI: products, shops, keywords, trends, your listings and 
