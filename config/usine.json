@@ -1,24 +1,22 @@
 {
   "version": 3,
-  "note": "Usine v3, ancrée dans le réel et dans l'argent. Tout est réglable ici sans toucher au code. 1er nov. au soir : marché des agents (Apify Store, registre MCP) en source de gisements payés, preuve de paiement stricte (prix lu sur la page), élan mesuré (Hacker News, GitHub), mercury-3 ajouté (8× plus rapide à qualité égale selon l'éclaireur).",
+  "note": "Usine v3, ancrée dans le réel et dans l'argent. Tout est réglable ici sans toucher au code. 1er nov. au soir : marché des agents (Apify Store, registre MCP) en source de gisements payés, preuve de paiement stricte (prix lu sur la page), élan mesuré (Hacker News, GitHub), mercury-3 ajouté (8× plus rapide à qualité égale selon l'éclaireur). 2 nov. : mimo retiré (17 % d'échecs par délai dépassé), remplacé par mercury.",
   "mission": "Trouver des idées qui créent une valeur réelle pour la société, que seule une organisation d'agents IA dirigée avec culot peut livrer, et qui peuvent encaisser leurs premiers euros vite, sans appel téléphonique.",
   "cerveaux_generation": [
     "deepseek",
     "qwen",
     "glm",
-    "mimo",
     "mercury"
   ],
   "cerveaux_jugement": [
     "deepseek",
     "qwen",
     "glm",
-    "mimo"
+    "mercury"
   ],
   "cerveaux_extraction": [
     "qwen",
     "deepseek",
-    "mimo",
     "mistral",
     "mercury"
   ],
