@@ -19,6 +19,7 @@ jobs:
     timeout-minutes: 10
     env:
       STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,7 +29,9 @@ jobs:
         run: |
           git fetch origin resultats
           url=$(git show origin/resultats:resultats/etat/infra.json 2>/dev/null | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(JSON.parse(s).liste_attente_url||"")}catch{}})')
-          [ -n "$url" ] && [ -n "$STATS_TOKEN" ] || { echo "Aucun test en ligne ou STATS_TOKEN absent."; exit 0; }
+          [ -n "$STATS_TOKEN" ] || STATS_TOKEN=$(printf '%s' "$CLOUDFLARE_API_TOKEN-metis-stats" | sha256sum | cut -c1-48)
+          [ -n "$url" ] && [ -n "$CLOUDFLARE_API_TOKEN$STATS_TOKEN" ] || { echo "Aucun test en ligne."; exit 0; }
+          export STATS_TOKEN
           mkdir -p sortie/experiences
           LISTE_ATTENTE_URL="$url" node scripts/verdict-experiences.js sortie/experiences/verdicts.json
       - name: Dépôt des résultats

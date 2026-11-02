@@ -58,7 +58,10 @@ jobs:
           sed -i "s/A_RENSEIGNER/$id/" wrangler.toml
           npx --yes wrangler@3 d1 execute metis-experiences --remote --file=schema.sql
           npx --yes wrangler@3 deploy | tee /tmp/deploy.txt
-          if [ -n "${{ secrets.STATS_TOKEN }}" ]; then echo "${{ secrets.STATS_TOKEN }}" | npx --yes wrangler@3 secret put STATS_TOKEN; fi
+          # Jeton de lecture des statistiques : le secret STATS_TOKEN s'il existe, sinon dérivé du jeton Cloudflare
+          # (même calcul dans le workflow « Verdicts »), pour ne demander aucune étape de plus.
+          st="${{ secrets.STATS_TOKEN }}"; [ -n "$st" ] || st=$(printf '%s' "$CLOUDFLARE_API_TOKEN-metis-stats" | sha256sum | cut -c1-48)
+          echo "$st" | npx --yes wrangler@3 secret put STATS_TOKEN
           url=$(grep -oE 'https://[a-z0-9.-]+\.workers\.dev' /tmp/deploy.txt | head -1)
           echo "API_URL=$url" >> "$GITHUB_ENV"
       - name: Vague de lancement
