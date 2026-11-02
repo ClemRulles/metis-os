@@ -39,7 +39,7 @@ const memoireX = await lire(`${dossierEtat}/x-semaine.json`, null);
 const cacheTransplants = await lire(`${dossierEtat}/transplants.json`, {});
 console.log(`État précédent : ${historique.length} gisements, ${graines.length} graines, ${dejaVues.length} idées déjà vues.`);
 
-const fournisseurs = FOURNISSEURS_PAR_DEFAUT.map((f) => ({ ...f, tokensParJour: 20_000_000 })); // le plafond en dollars fait foi
+const fournisseurs = FOURNISSEURS_PAR_DEFAUT.map((f) => ({ ...f, tokensParJour: f.id === "groq" ? f.tokensParJour : 20_000_000 })); // le plafond en dollars fait foi
 const routeur = creerRouteur({ fournisseurs, delaiRequeteMs: 150_000, pauseCoupeCircuitMs: 2 * 60 * 1000, plafondCoutUsd: config.plafond_cout_usd });
 const graine = Number(process.env.GITHUB_RUN_ID ?? Date.now()) % 2147483647;
 const demandeur = creerDemandeur({ routeur, alea: rngDe(graine + 1), secours: config.cerveaux_jugement });

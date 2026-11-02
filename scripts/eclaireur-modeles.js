@@ -12,7 +12,8 @@ const [sortie = "sortie"] = process.argv.slice(2);
 const config = JSON.parse(await readFile("config/usine.json", "utf8"));
 const atlas = JSON.parse(await readFile("config/atlas-api.json", "utf8"));
 const date = new Date().toISOString().slice(0, 10);
-const enPlace = FOURNISSEURS_PAR_DEFAUT[0].modeles;
+const OPENROUTER = FOURNISSEURS_PAR_DEFAUT.find((f) => f.id === "openrouter");
+const enPlace = OPENROUTER.modeles;
 
 const catalogue = (await (await fetch("https://openrouter.ai/api/v1/models")).json()).data;
 const prix = (m, k) => Number(m.pricing?.[k] ?? Infinity) * 1e6; // dollars par million de jetons
@@ -28,7 +29,7 @@ const modeles = { ...Object.fromEntries(Object.entries(enPlace).filter(([, id]) 
 for (const m of recents) modeles[`candidat:${m.id}`] = m.id;
 const obligatoires = Object.entries(modeles).filter(([, id]) => catalogue.find((m) => m.id === id)?.reasoning?.mandatory).map(([k]) => k);
 const routeur = creerRouteur({
-  fournisseurs: [{ ...FOURNISSEURS_PAR_DEFAUT[0], modeles, tokensParJour: 5_000_000, reflexionObligatoire: [...new Set([...(FOURNISSEURS_PAR_DEFAUT[0].reflexionObligatoire ?? []), ...obligatoires])] }],
+  fournisseurs: [{ ...OPENROUTER, modeles, tokensParJour: 5_000_000, reflexionObligatoire: [...new Set([...(OPENROUTER.reflexionObligatoire ?? []), ...obligatoires])] }],
   delaiRequeteMs: 120_000,
   plafondCoutUsd: 0.3,
 });

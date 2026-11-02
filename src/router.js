@@ -4,6 +4,23 @@
 
 export const FOURNISSEURS_PAR_DEFAUT = [
   {
+    id: "groq",
+    url: "https://api.groq.com/openai/v1/chat/completions",
+    cle: "GROQ_API_KEY",
+    // Gratuit (sans carte) : environ 30 requêtes par minute, 1 000 par jour et 200 000 jetons par jour PAR MODÈLE.
+    // Placé en premier : tant que son quota gratuit tient, les appels ne coûtent rien ; au-delà (429 ou
+    // budget atteint), le routeur passe à OpenRouter.
+    tokensParJour: 600_000,
+    requetesParMinute: 28,
+    modeles: {
+      llama: "llama-3.3-70b-versatile",
+      qwen: "qwen/qwen3.8-27b",
+      gptoss: "openai/gpt-oss-120b",
+    },
+    // Ces modèles « réfléchissent » : on masque la réflexion pour ne recevoir que la réponse.
+    parametres: { qwen: { reasoning_format: "hidden" }, gptoss: { include_reasoning: false, reasoning_effort: "low" } },
+  },
+  {
     id: "openrouter",
     url: "https://openrouter.ai/api/v1/chat/completions",
     cle: "OPENROUTER_API_KEY",
@@ -27,18 +44,6 @@ export const FOURNISSEURS_PAR_DEFAUT = [
       // Éclaireur du 1er nov. : note 8,9/9 sur nos épreuves, 7 s contre 56 s pour deepseek (0,10 $ / 0,35 $ par million).
       mercury: "inception/mercury-3",
       nemotronsuper: "nvidia/nemotron-3.5-super-vl",
-    },
-  },
-  {
-    id: "groq",
-    url: "https://api.groq.com/openai/v1/chat/completions",
-    cle: "GROQ_API_KEY",
-    tokensParJour: 200_000,
-    requetesParMinute: 30,
-    modeles: {
-      llama: "llama-3.3-70b-versatile",
-      qwen: "qwen/qwen3-32b",
-      kimi: "moonshotai/kimi-k2-instruct",
     },
   },
 ];
@@ -157,7 +162,10 @@ export function creerRouteur({
           corps.reasoning = raisonnement === "none" && !obligatoire ? { effort: "none" } : json ? { effort: "low", exclude: true } : { effort: "low" };
           if (json) corps.response_format = { type: "json_object" };
           if (web) corps.plugins = [{ id: "web", engine: web.engine ?? "parallel", max_results: web.max_results ?? 5 }];
-        } else if (json) corps.response_format = { type: "json_object" };
+        } else {
+          Object.assign(corps, f.parametres?.[cerveau] ?? {});
+          if (json) corps.response_format = { type: "json_object" };
+        }
         const envoyer = (b) =>
           fetchImpl(f.url, {
             signal: typeof AbortSignal !== "undefined" && AbortSignal.timeout ? AbortSignal.timeout(delaiRequeteMs) : undefined,

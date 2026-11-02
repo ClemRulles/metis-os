@@ -26,7 +26,7 @@ const date = new Date().toISOString().slice(0, 10);
 const lances = await lire(`${dossierEtat}/lances.json`, []);
 lancement.slugs_pris = lances.map((l) => l.slug);
 
-const routeur = creerRouteur({ fournisseurs: FOURNISSEURS_PAR_DEFAUT.map((f) => ({ ...f, tokensParJour: 5_000_000 })), delaiRequeteMs: 120_000, plafondCoutUsd: lancement.plafond_cout_usd ?? 0.3 });
+const routeur = creerRouteur({ fournisseurs: FOURNISSEURS_PAR_DEFAUT.map((f) => ({ ...f, tokensParJour: f.id === "groq" ? f.tokensParJour : 5_000_000 })), delaiRequeteMs: 120_000, plafondCoutUsd: lancement.plafond_cout_usd ?? 0.3 });
 const graine = Number(process.env.GITHUB_RUN_ID ?? Date.now()) % 2147483647;
 const demandeur = creerDemandeur({ routeur, alea: rngDe(graine + 7), secours: config.cerveaux_jugement });
 const debut = Date.now();
