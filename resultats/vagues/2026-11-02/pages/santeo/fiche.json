@@ -1,0 +1,51 @@
+{
+ "slug": "santeo",
+ "nom": "Santeo",
+ "accroche": "La santé SEO d'un domaine, en un seul appel",
+ "sous_titre": "Une API REST et un endpoint MCP qui renvoient autorité, trafic estimé, backlinks et part de trafic venant des IA dans un schéma JSON versionné. Service en préparation : la page décrit ce qui arrive, pas ce qui existe déjà.",
+ "probleme_points": [
+  "Les scrapeurs du marché mélangent les champs et changent de format sans prévenir : chaque mise à jour casse votre pipeline.",
+  "Pour un même domaine, il faut croiser plusieurs sources et recoller les morceaux à la main avant d'obtenir un chiffre utilisable.",
+  "Personne ne documente clairement ce que recouvre le « trafic IA » : sources, méthode, marges d'erreur. Résultat : impossible de faire confiance au chiffre."
+ ],
+ "comment": [
+  "Vous appelez un endpoint unique avec un domaine : la réponse arrive en JSON versionné, avec un schéma publié et testé à chaque release.",
+  "Vous recevez un score composite « santé domaine » (autorité, tendance de trafic, part de trafic venant des IA) et les champs détaillés, chacun avec sa source et sa date.",
+  "Vous branchez le même endpoint sur un agent via MCP, ou vous consommez le score dans votre outil : cache transparent, pas de scraping à déboguer de votre côté."
+ ],
+ "pour_qui": "Développeurs, agences SEO en marque blanche et agents IA automatisés qui intègrent des données de domaine dans leurs pipelines et veulent un contrat de sortie stable plutôt qu'un scrapeur fragile.",
+ "prix": "0,02 € par appel ; pack de 10 000 appels à 120 €/mois",
+ "condition_prix": "Tarif de lancement affiché pendant la préparation, susceptible d'évoluer avant l'ouverture. Aucun paiement n'est encaissé aujourd'hui : la précommande réserve le tarif et sera confirmée par e-mail.",
+ "offre": "clic",
+ "cta": "Réserver le tarif de lancement",
+ "faq": [
+  {
+   "question": "Le service est-il disponible maintenant ?",
+   "reponse": "Non. Santeo est en préparation. Cette page décrit le produit prévu, le schéma JSON envisagé et le tarif de lancement. En laissant votre e-mail, vous êtes prévenu de l'ouverture ; aucun paiement n'est demandé aujourd'hui."
+  },
+  {
+   "question": "Que recouvre exactement le « trafic IA » ?",
+   "reponse": "Ce sera un indicateur de la part du trafic d'un domaine attribuée à des visites issues de réponses de modèles, construit à partir de données ouvertes et d'API officielles. La méthode, les sources et les marges d'erreur seront publiées noir sur blanc avec chaque version du score. Tant que ce n'est pas documenté, nous ne l'affichons pas comme une certitude."
+  },
+  {
+   "question": "D'où viennent les données ?",
+   "reponse": "Uniquement de données ouvertes, d'API officielles ou de données que vous fournissez. Pas d'aspiration de sites ou de réseaux qui l'interdisent, pas de collecte de profils ou de coordonnées de personnes."
+  },
+  {
+   "question": "Pourquoi un score composite plutôt que des champs bruts ?",
+   "reponse": "Les champs bruts restent disponibles dans la réponse. Le score sert à obtenir un signal unique et comparable en un appel, utile pour trier ou surveiller un portefeuille de domaines. Le détail du calcul sera publié et versionné."
+  },
+  {
+   "question": "Comment serai-je facturé ?",
+   "reponse": "À l'appel, à 0,02 €, ou via un pack de 10 000 appels à 120 €/mois. Le tarif de lancement affiché ici sera celui appliqué aux personnes qui l'ont réservé, sauf changement annoncé avant l'ouverture."
+  }
+ ],
+ "langue": "fr",
+ "couleur": "#2F6F5E",
+ "editeur": {
+  "nom": "",
+  "adresse": "",
+  "contact": ""
+ },
+ "api_url": ""
+}

@@ -1,0 +1,11 @@
+{
+ "ok": false,
+ "raison": "aucune API de l'atlas ne sert ce produit (Aucune des API publiques listées ne fournit de métriques SEO (autorité de domaine, trafic estimé, backlinks, trafic IA). Les données disponibles concernent la météo, la qualité de l'air, les données financières, les publications scientifiques ou les entreprises françaises, mais aucune ne permet de calculer un score de santé SEO. Construire une démonstration avec ces données serait hors sujet et trompeur par rapport à la promesse du produit.)",
+ "essais": null,
+ "spec": {
+  "pertinent": false,
+  "raison": "Aucune des API publiques listées ne fournit de métriques SEO (autorité de domaine, trafic estimé, backlinks, trafic IA). Les données disponibles concernent la météo, la qualité de l'air, les données financières, les publications scientifiques ou les entreprises françaises, mais aucune ne permet de calculer un score de santé SEO. Construire une démonstration avec ces données serait hors sujet et trompeur par rapport à la promesse du produit."
+ },
+ "sources": [],
+ "trace": []
+}

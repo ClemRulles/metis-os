@@ -5,384 +5,82 @@
  "pret": false,
  "demos": [
   {
-   "slug": "rescuv",
-   "ok": true,
-   "essais": 1,
-   "raison": null
-  },
-  {
-   "slug": "trivie",
-   "ok": true,
-   "essais": 1,
-   "raison": null
-  },
-  {
-   "slug": "radaria",
-   "ok": true,
-   "essais": 2,
-   "raison": null
+   "slug": "santeo",
+   "ok": false,
+   "essais": null,
+   "raison": "aucune API de l'atlas ne sert ce produit (Aucune des API publiques listées ne fournit de métriques SEO (autorité de domaine, trafic estimé, backlinks, trafic IA). Les données disponibles concernent la météo, la qualité de l'air, les données financières, les publications scientifiques ou les entreprises françaises, mais aucune ne permet de calculer un score de santé SEO. Construire une démonstration avec ces données serait hors sujet et trompeur par rapport à la promesse du produit.)"
   }
  ],
  "cout": {
-  "usd": 0.0214,
-  "appels": 99
+  "usd": 0.0016,
+  "appels": 7
  },
  "sante": {
-  "deepseek": {
-   "ok": 18,
-   "echecs": 1,
-   "tauxEchec": 0.05,
-   "msMoyen": 14318,
-   "exempleErreur": "aucun fournisseur pour deepseek (openrouter : réponse vide (fin : length) ; groq : clé absente)"
-  },
-  "qwen": {
-   "ok": 27,
+  "mercury": {
+   "ok": 1,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 7060,
+   "msMoyen": 3752,
+   "exempleErreur": null
+  },
+  "deepseek": {
+   "ok": 2,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 5447,
+   "exempleErreur": null
+  },
+  "qwen": {
+   "ok": 3,
+   "echecs": 0,
+   "tauxEchec": 0,
+   "msMoyen": 1474,
    "exempleErreur": null
   },
   "glm": {
-   "ok": 26,
+   "ok": 1,
    "echecs": 0,
    "tauxEchec": 0,
-   "msMoyen": 4938,
+   "msMoyen": 5147,
    "exempleErreur": null
-  },
-  "mercury": {
-   "ok": 18,
-   "echecs": 1,
-   "tauxEchec": 0.05,
-   "msMoyen": 4770,
-   "exempleErreur": "aucun fournisseur pour mercury (openrouter : HTTP 429 ; groq : clé absente)"
   }
  },
  "choisis": [
   {
-   "slug": "trivie",
-   "titre": "Le Déméteur : l'agent qui débarasse la maison d'un aîné avant la vente",
-   "score_studio": 6.89,
-   "note_plan": 6.4,
-   "elo": 1574,
-   "plan": {
-    "promesse": "Obtenez en 24h le plan exact de tri, les estimations de revente et les annonces pré-remplies pour vider la maison d'un parent.",
-    "public_precis": "Enfants adultes (35-60 ans) gérant le désaménageement ou le décès d'un parent âgé en France, présents dans les groupes Facebook 'Aidants' et forums spécialisés.",
-    "canal_principal": "Groupes Facebook thématiques (ex: Aidants Mag, Groupes d'entraide parents âgés) et Reddit r/declutter ou r/France via des posts éducatifs.",
-    "premiers_visiteurs": [
-     "Identifier 10 groupes Facebook actifs sur l'aide aux aînés et le déménagement.",
-     "Publier un post narratif : 'J'ai aidé ma mère à vider son appartement. Voici la méthode gratuite que j'ai utilisée pour ne pas jeter 500€ d'objets utiles.'",
-     "Inclure un lien vers une Landing Page claire indiquant 'Outil en préparation - Rejoignez la liste d'attente / Précommandez'.",
-     "Partager ce même angle sur 3 subreddits pertinents avec un ton humble et technique, sans vente agressive."
-    ],
-    "part_automatisable": "L'agent surveille les mentions et commentaires sur les posts sociaux, répond systématiquement par le lien de la page de test. L'agent génère les visuels du post (capture d'écran floutée d'un exemple de plan de tri).",
-    "action_humaine": "Rédiger le post initial authentique (15 min), vérifier que la page respecte la règle 'en préparation' (5 min). Total : 20 minutes.",
-    "offre": "precommande",
-    "prix": "89 €",
-    "metrique": "Nombre de clics uniques vers la landing page provenant des liens sociaux.",
-    "seuil_succes": "100 visiteurs qualifiés (clics directs depuis les posts communautaires) en 14 jours.",
-    "budget_eur": 0,
-    "risque_principal": "Le besoin perçu est physique (vider la maison), pas numérique ; risque de faible conversion si l'utilisateur veut un débarrasseur, pas un logiciel.",
-    "parade": "Positionner clairement l'outil comme le 'cerveau' qui économise 20h de travail et maximise le revenu avant l'intervention physique, en ciblant ceux qui veulent gérer eux-mêmes le tri intelligent."
-   },
-   "critique": {
-    "trafic_realiste": 4,
-    "clarte_offre": 6,
-    "vitesse": 7,
-    "cout": 10,
-    "honnetete": 5,
-    "echec_probable": "Le plan échoue parce que les posts Facebook dans 10 groupes 'actifs' non précisés ne génèrent pas 100 clics qualifiés en 14 jours : les groupes Aidants sont saturés de posts promotionnels, l'angle gratuit attire des curieux mais pas des acheteurs à 89 €, et le produit est en précommande sans preuve de valeur visible — les visiteurs se disent que c'est un service fantôme et ne convertissent pas. De plus, la promesse d'estimation photo fiable n'est pas tenable, menant à des remboursements et une réputation négative rapide.",
-    "correction": "Au lieu de poster dans des groupes génériques, établir des partenariats directs avec 5 notaires, 3 services d'aide aux aidants (ex: plateformes départementales) et 2 réseaux de conseillers funéraires qui référencent la page en échange d'une commission de 15% sur chaque vente. Développer avant toute précommande un prototype fonctionnel qui traite 20 photos réelles (meubles de marque, vaisselle, livres) avec fourchettes de prix étayées par des comparables Leboncoin, et lancer une offre d'essai gratuite sur 10 logements pilotes (via le bouche-à-oreille de ces partenaires) pour collecter des témoignages et des annonces réelles à afficher comme preuve. Remplacer la précommande par un paiement en deux temps : 19 € pour le diagnostic visuel complet (problème résolu en 24h), puis 70 € seulement si l'utilisateur valide les estimations et génère les annonces — cela aligne le coût sur la valeur perçue et réduit le risque de déception."
-   },
-   "credibilite": [
-    "mentions-editeur",
-    "api-branchee"
-   ],
-   "en_ligne": false
-  },
-  {
-   "slug": "safeseller",
-   "titre": "Second-Chance Score : simulateur de risque de suspension par plateforme",
-   "score_studio": 5.89,
-   "note_plan": 6.4,
-   "elo": 1544,
-   "plan": {
-    "promesse": "Sachez avant la suspension si votre compte vendeur est en danger, sur toutes vos plateformes à la fois.",
-    "public_precis": "Petits vendeurs et commerçants multi-plateformes (Vinted, Leboncoin, Etsy, Amazon, eBay) qui ont déjà eu un compte suspendu ou qui vendent régulièrement sans connaître les règles.",
-    "canal_principal": "SEO programmatique via des centaines de pages générées par plateforme et motif de suspension.",
-    "premiers_visiteurs": [
-     "Créer 50 pages SEO d'atterrissage par plateforme et motif (ex. « compte Vinted suspendu que faire », « compte eBay bloqué délai ») avec le simulateur en appel à l'action.",
-     "Publier ces pages sur un sous-domaine du site principal et les soumettre à Google Search Console pour indexation rapide.",
-     "Partager le lien du simulateur dans 5 communautés de vendeurs (subreddits r/vinted, r/eBaySellerAdvice, groupes Facebook de vendeurs Vinted/Leboncoin) avec un message neutre expliquant le test gratuit.",
-     "Écrire 3 articles de blog courts liés aux pages SEO (ex. « Les 7 motifs de suspension les plus fréquents sur Vinted ») avec lien vers le simulateur.",
-     "Ajouter le simulateur à un annuaire d'outils gratuits pour vendeurs en ligne (ex. Product Hunt, AlternativeTo) avec description honnête de test en préparation."
-    ],
-    "part_automatisable": "Les agents génèrent les 50 pages SEO, les 3 articles, les soumissions à Google Search Console, les publications dans les communautés (si autorisées par les règles de chaque communauté) et le suivi des positions.",
-    "action_humaine": "Valider le texte des pages et des messages communautaires (30 minutes), créer le compte Google Search Console, et répondre aux premiers retours d'utilisateurs (15 minutes par jour).",
-    "offre": "precommande",
-    "prix": 12,
-    "metrique": "Nombre de visiteurs uniques qualifiés (ayant cliqué sur le simulateur) et nombre d'inscriptions à la précommande.",
-    "seuil_succes": "50 inscriptions à la précommande ou 100 visiteurs qualifiés sur le simulateur en 14 jours.",
-    "budget_eur": 0,
-    "risque_principal": "Les pages SEO ne se positionnent pas assez vite en 14 jours, générant trop peu de trafic organique.",
-    "parade": "Compenser avec des publications manuelles dans les communautés ciblées et un post sur Product Hunt le jour 1, en plus du SEO."
-   },
-   "critique": {
-    "trafic_realiste": 3,
-    "clarte_offre": 9,
-    "vitesse": 4,
-    "cout": 8,
-    "honnetete": 8,
-    "echec_probable": "Le plan repose sur une croissance organique (SEO et partage communautaire) trop lente pour atteindre l'objectif de 100 visiteurs qualifiés en 14 jours avec un budget de zéro. Les mots-clés de douleur ('compte suspendu') sont très compétitifs, et l'indexation de 50 pages spécifiques prend du temps, rendant l'objectif de 14 jours irréaliste.",
-    "correction": "Abandonner la stratégie purement organique pour un lancement payant et hyper-ciblé. Utiliser les 12€ de prix pour financer des publicités ultra-ciblées (Facebook/Instagram Ads) sur des audiences de 'petits commerçants' ou 'vendeurs en ligne' en ciblant les problèmes (ex: 'suspension Vinted'). Compléter cela par un partenariat direct avec 3-5 influenceurs ou consultants spécialisés dans le e-commerce/vente en ligne pour qu'ils recommandent le simulateur à leur audience."
-   },
-   "credibilite": [
-    "mentions-editeur",
-    "api-branchee",
-    "interdit-apparence"
-   ],
-   "en_ligne": false
-  },
-  {
-   "slug": "radaria",
-   "titre": "Radar de trafic IA par domaine : « qui reçoit les clients de ChatGPT ? »",
-   "score_studio": 6.18,
-   "note_plan": 6,
-   "elo": 1537,
-   "plan": {
-    "promesse": "Découvrez chaque semaine si ChatGPT recommande vos concurrents à votre place, et ce qu'il faut faire pour inverser la tendance.",
-    "public_precis": "Vendeurs Etsy et Gumroad, créateurs de produits numériques, indépendants actifs sur Indie Hackers, r/ecommerce et r/Etsy qui dépendent du trafic organique et veulent savoir si les IA les citent ou les ignorent.",
-    "canal_principal": "Communautés (Indie Hackers, Reddit r/ecommerce, r/Etsy, r/Gumroad, serveurs Discord de créateurs)",
-    "premiers_visiteurs": [
-     "Rédiger un post honnête sur Indie Hackers : « Je construis un radar qui montre si ChatGPT recommande vos concurrents — je cherche 50 premiers testeurs, accès gratuit pendant le lancement » et le publier un mardi matin (heure US).",
-     "Répondre aux fils existants sur r/ecommerce et r/Etsy où les gens se plaignent de la baisse de trafic organique, en mentionnant l'outil en préparation et en proposant un rapport gratuit pour leur domaine.",
-     "Publier un message dans 3 serveurs Discord de créateurs (ex. : communautés Gumroad, produits numériques) avec une démo courte et un lien vers la page de test.",
-     "Envoyer un e-mail personnalisé à 20 créateurs actifs repérés via leurs publications publiques (sans collecte de profils), leur proposant un rapport gratuit en échange de leur retour.",
-     "Créer une page de test claire avec formulaire d'inscription, mention « service en préparation », et un exemple de rapport fictif mais réaliste pour montrer la valeur."
-    ],
-    "part_automatisable": "Les agents peuvent rédiger les posts et réponses, planifier les publications, surveiller les fils Reddit et Discord pour les mots-clés « trafic IA », « ChatGPT recommande », « visibilité IA », envoyer les e-mails de suivi, et générer les rapports d'exemple. Ils peuvent aussi préparer les 20 e-mails personnalisés à partir des publications publiques des créateurs.",
-    "action_humaine": "Valider et publier les messages sur les comptes personnels (10-15 minutes par publication), et répondre aux premiers commentaires pour établir la confiance. Le reste est automatisable.",
-    "offre": "precommande",
-    "prix": "19 € par mois par domaine suivi, mais pendant le test : inscription gratuite pour les 50 premiers testeurs, précommande à 19 €/mois pour les suivants",
-    "metrique": "Nombre de visiteurs qualifiés sur la page de test (inscriptions avec domaine + e-mail), et taux de conversion des visiteurs en précommandes ou inscriptions testeurs.",
-    "seuil_succes": "100 inscriptions de testeurs ou précommandes sur 14 jours, dont au moins 30 avec un domaine réel saisi, pour valider la demande.",
-    "budget_eur": 0,
-    "risque_principal": "La précision des données de citation IA est instable et difficile à vérifier, ce qui peut nuire à la confiance dès les premiers rapports ; de plus, des outils gratuits comme Similarweb pourraient couvrir ce besoin avant nous.",
-    "parade": "Ne promettre que des tendances hebdomadaires et des écarts relatifs (pas des chiffres absolus), montrer un exemple de rapport avec des données réalistes mais clairement étiquetées comme démo, et ajouter une section « plan d'action » avec des suggestions de contenu et backlinks pour apporter de la valeur même si les données sont imparfaites."
-   },
-   "critique": {
-    "trafic_realiste": 5,
-    "clarte_offre": 6,
-    "vitesse": 6,
-    "cout": 8,
-    "honnetete": 5,
-    "echec_probable": "Le trafic s'effondre après le premier élan : les posts Indie Hackers/Reddit génèrent un pic de curiosité puis plus rien, car les vendeurs Etsy/Gumroad ne sont pas en attente de ce problème précis (ils voient le trafic IA comme une mode, pas une douleur urgente à 19 €/mois). Ensuite les 50 rapports gratuits arrivent avec des données de citation IA imprécises et invérifiables : les testeurs ne comprennent pas les chiffres, ne perçoivent pas de valeur actionnable, et zéro conversion en précommande. Résultat : 100 inscriptions atteintes en partie via la gratuité, mais bien moins de 30 domaines réels + paiements, et le seuil échoue.",
-    "correction": "Trois changements : (1) Tuer la précommande pendant la phase test — ne vendre qu'après avoir livré des rapports réels aux 50 testeurs et mesuré combien paieraient spontanément. (2) Transformer chaque rapport gratuit en démo sincère mais réelle (pas de données fictives mal étiquetées, qui détruisent la confiance si un utilisateur reconnaît son domaine avec des chiffres fabriqués) et y inclure 1 conseil actionnable concret et vérifiable, pas juste des 'tendances'. (3) Élargir le canal : les vendeurs Etsy sont inaccessibles via Indie Hackers ; cibler directement les niche-picks de boutiques Shopify/WooCommerce actives (cold email sectorisé par niche, ex. bijoux, print-on-demand) où la dépendance au trafic organique est mesurable, et viser un seuil réaliste : 30 domaines réels + 10 précommandes payantes en 30 jours, pas 100 inscriptions gratuites en 14 jours."
-   },
-   "credibilite": [
-    "mentions-editeur",
-    "api-branchee"
-   ],
-   "en_ligne": false
-  },
-  {
-   "slug": "domainpulse",
+   "slug": "santeo",
    "titre": "API « santé SEO d'un domaine » en un seul appel, garanti à jour",
    "score_studio": 7.28,
-   "note_plan": 5.8,
-   "elo": 1533,
+   "note_plan": 5.4,
+   "elo": 1508,
    "plan": {
-    "promesse": "Le score de santé SEO de votre domaine, en un seul appel API fiable.",
-    "public_precis": "Développeurs Python/Node.js, Architectures d'agents IA, Agences SEO en marque blanche qui intègrent des données de domaine dans des pipelines automatisés.",
-    "canal_principal": "Hacker News et Subreddits techniques (r/SEO, r/developers)",
+    "promesse": "L'état de santé SEO d'un domaine en un seul appel API, fiable et à jour, sans jamais déboguer un scraper.",
+    "public_precis": "Développeurs et agences SEO en marque blanche qui intègrent des données d'autorité, de trafic et de backlinks dans leurs pipelines, ainsi que les agents IA automatisés qui ont besoin d'un endpoint MCP propre.",
+    "canal_principal": "Place de marché Apify Store + threads de plaintes sur Hacker News et r/SEO.",
     "premiers_visiteurs": [
-     "Identifier 5 threads actifs sur Hacker News et r/SEO où les utilisateurs se plaignent de la fragilité des scrapers existants (mots-clés: 'scraper fragile', 'API SEO instable', 'fields mélangés').",
-     "Poster un message ciblé dans ces threads : 'J'ai développé une approche pour un score composite fiable (Autorité + Trafic IA + Tendance) en JSON versionné. Service en pré-alpha. Intéressé par l'accès bêta ? [Lien Page de Test].'",
-     "Automatiser le suivi des commentaires sur ces 5 threads pour rediriger toutes les questions vers la page de pré-inscription.",
-     "Créer une publication de type 'Build in Public' sur un canal public de développeurs (ex: Twitter/X) en partageant la complexité du problème résolu, avec un lien vers la page de test."
+     "Publier deux actors sur l'Apify Store (analyse de domaine + top sites) avec une description claire du score composite et un schéma JSON versionné en exemple, et un prix affiché de 0,02 € par appel.",
+     "Chercher dans r/SEO et Hacker News les threads existants où des utilisateurs se plaignent du scraper noté 3/6, et répondre avec une proposition neutre : « Nous avons un endpoint qui renvoie ça en un appel, sans scraping fragile — testez la page de test. »",
+     "Créer une courte page de test (hébergée gratuitement, ex. Vercel) qui dit clairement que le service est en préparation, affiche l'exemple de réponse JSON, le prix, et un bouton « M'avertir quand c'est prêt » collectant uniquement un e-mail (base légale consentement).",
+     "Ajouter le lien de la page de test dans la description des actors Apify et dans les signatures de posts sur les forums, sans spam : un seul message utile par thread pertinent.",
+     "Poster une annonce sobre dans le Discord ou Slack des communautés de développeurs SEO (si public et autorisé) avec le même lien et l'explication du score composite."
     ],
-    "part_automatisable": "Postage initial et suivi des threads ciblés ; redirection automatique des leads vers le formulaire de pré-inscription ; alertes automatiques sur les mentions du nom de l'API dans les communautés.",
-    "action_humaine": "Répondre aux 5 premiers commentaires qualifiés (maximum 2 minutes par réponse) pour valider l'intérêt et maintenir une présence humaine crédible.",
+    "part_automatisable": "Les agents peuvent rédiger les descriptions des actors, générer les réponses types aux threads de plaintes, détecter les threads pertinents via l'API de Reddit/HN (officielles), créer la page de test à partir d'un template, et suivre les clics via un tracker simple. Ils peuvent aussi préparer les e-mails de relance pour les inscrits.",
+    "action_humaine": "Valider le texte final des deux actors et de la page de test (environ 15 minutes), et approuver les réponses aux threads avant publication (environ 10 minutes par jour).",
     "offre": "precommande",
-    "prix": "0,00 € (Accès Bêta Gratuit pour les 100 premiers utilisateurs)",
-    "metrique": "Nombre d'inscriptions uniques à la page de pré-test.",
-    "seuil_succes": "100 inscriptions qualifiées en 14 jours.",
+    "prix": "0,02 € par appel, packs de 10 000 appels à 120 €/mois",
+    "metrique": "Nombre de visiteurs uniques qualifiés sur la page de test, et nombre d'e-mails de précommande collectés.",
+    "seuil_succes": "Au moins 100 visiteurs uniques qualifiés en 14 jours et au moins 20 e-mails de précommande, ou 3 demandes fermes de test via le formulaire.",
     "budget_eur": 0,
-    "risque_principal": "La crédibilité technique face aux solutions propriétaires établies (Ahref/Semrush).",
-    "parade": "La page de test doit clairement indiquer : 'Service en préparation : Rejoignez la file d'attente pour l'accès Bêta et testez notre score composite.' Les réponses doivent se concentrer sur la résolution du problème de fiabilité, non sur la vente immédiate."
+    "risque_principal": "Les utilisateurs potentiels ne voient pas la valeur du score composite « santé domaine » par rapport aux API existantes (Ahrefs, Semrush) et préfèrent rester sur des outils connus, malgré la fragilité du scraper.",
+    "parade": "Mettre en avant dans la page de test une comparaison honnête : un seul appel, schéma JSON stable, endpoint MCP pour agents IA, et un prix transparent de 0,02 €/appel — tout en précisant que les données sources sont ouvertes/API officielles, et proposer un exemple de réponse réel pour démontrer la valeur immédiate."
    },
    "critique": {
     "trafic_realiste": 3,
     "clarte_offre": 6,
     "vitesse": 5,
-    "cout": 8,
-    "honnetete": 7,
-    "echec_probable": "Le plan repose sur des posts dans 5 threads HN/Reddit sans preuve qu'ils existent ou que les plaintes y sont actives ; même si les posts passent, le produit est en pré-alpha sans démo ni données réelles, donc les développeurs ne s'inscriront pas massivement (100 inscriptions en 14 jours est irréaliste), et le message 'J'ai développé une approche' sans preuve technique sera perçu comme du spam, surtout face à des API établies avec des essais gratuits.",
-    "correction": "Remplacer le post générique par une démo interactive réelle (ex: un endpoint public qui renvoie le score pour 3 domaines connus avec un vrai JSON versionné) et cibler des canaux où les développeurs cherchent activement des alternatives (ex: commentaires sous les avis négatifs du scraper Apify existant, ou un article technique comparant les schémas de données). Offrir un accès bêta avec 100 appels gratuits immédiatement utilisables, et viser 20 inscriptions qualifiées en 30 jours comme seuil réaliste."
-   },
-   "credibilite": [
-    "mentions-editeur",
-    "api-branchee"
-   ],
-   "en_ligne": false
-  },
-  {
-   "slug": "termifix",
-   "titre": "FuckMuseum : base de données interactive des erreurs de terminal et de leurs solutions",
-   "score_studio": 6.64,
-   "note_plan": 7.2,
-   "elo": 1525,
-   "plan": {
-    "promesse": "Trouvez la solution à n'importe quelle erreur de terminal en 30 secondes, avec une explication claire et un simulateur pour tester.",
-    "public_precis": "Étudiants en informatique, autodidactes et développeurs débutants qui utilisent le terminal sur macOS, Linux ou Windows (WSL) et qui cherchent des solutions rapides et pédagogiques.",
-    "canal_principal": "Contenu court (TikTok, YouTube Shorts) + communautés Reddit (r/learnprogramming, r/commandline) et Discord de développeurs débutants.",
-    "premiers_visiteurs": [
-     "Publier 10 vidéos TikTok/Shorts montrant 3 erreurs courantes (ex: 'command not found', 'permission denied', 'syntax error') avec correctif visuel, lien en bio vers le site.",
-     "Partager le site dans les commentaires de posts Reddit où des débutants posent des questions sur des erreurs de terminal (sans spam, en répondant avec la solution et le lien).",
-     "Créer un post sur r/learnprogramming présentant la ressource comme 'base de données d'erreurs de terminal avec simulateur' et inviter aux retours.",
-     "Contacter 3 serveurs Discord d'étudiants en informatique (via des amis ou en rejoignant) pour partager la ressource dans le canal approprié."
-    ],
-    "part_automatisable": "Les agents peuvent générer les vidéos (montage automatique), rédiger les posts Reddit, identifier les discussions pertinentes via l'API Reddit, et programmer les publications sur les réseaux sociaux.",
-    "action_humaine": "30 minutes pour valider le contenu des vidéos et les messages avant publication, et pour répondre aux premiers commentaires.",
-    "offre": "precommande",
-    "prix": 5,
-    "metrique": "Nombre de visiteurs uniques sur la page de test, taux de clics sur le bouton de précommande, nombre de précommandes.",
-    "seuil_succes": "50 visiteurs qualifiés et au moins 5 précommandes (soit 25 €) pour valider la demande.",
-    "budget_eur": 0,
-    "risque_principal": "Les solutions générées par IA sont trop génériques et l'utilisateur ne voit pas de différence avec une recherche Google, ce qui limite l'engagement et la conversion.",
-    "parade": "Mettre en avant le simulateur de terminal interactif et le 'profil d'erreur' qui explique le prérequis manquant, et collecter les erreurs réelles des utilisateurs pour enrichir la base avec des cas concrets."
-   },
-   "critique": {
-    "trafic_realiste": 5,
-    "clarte_offre": 9,
-    "vitesse": 3,
-    "cout": 10,
-    "honnetete": 9,
-    "echec_probable": "Le trafic organique généré par TikTok et Reddit sera trop lent et trop faible pour atteindre le seuil de succès. Plus grave, si les premières erreurs présentées sont trop communes ou si les solutions IA sont trop génériques, les utilisateurs percevront le site comme une simple 'recherche améliorée' et ne verront aucune raison de s'engager ou de précommander.",
-    "correction": "Arrêter de compter uniquement sur le contenu court passif. Mener une campagne de 'validation par douleur' : Identifier 3-5 communautés de développeurs très actives (ex: serveurs Discord spécialisés, newsletters tech) et offrir une fonctionnalité ultra-spécifique et gratuite (ex: 'L'erreur de la semaine') en échange d'un retour direct. L'objectif n'est pas le trafic, mais de forcer l'interaction avec le simulateur de terminal pour prouver la valeur ajoutée unique avant de demander une précommande."
-   },
-   "credibilite": [
-    "mentions-editeur",
-    "api-branchee"
-   ],
-   "en_ligne": false
-  },
-  {
-   "slug": "subventionflash",
-   "titre": "SubventionHunter : Les financements cachés des associations locales",
-   "score_studio": 5.88,
-   "note_plan": 5.4,
-   "elo": 1524,
-   "plan": {
-    "promesse": "Trouvez les subventions locales cachées pour votre association en 2 minutes",
-    "public_precis": "Bénévoles associatifs et présidents d'associations locales (APAE, fondations) qui cherchent des financements publics spécifiques à leur ville ou secteur, inscrits aux newsletters des réseaux d'aide à la gestion associative (REGI, etc.)",
-    "canal_principal": "Newsletter partenaire des réseaux associatifs locaux",
-    "premiers_visiteurs": [
-     "Identifier 5 à 10 réseaux associatifs locaux (REGI, fédérations départementales, centres de ressources) qui publient des newsletters et accepter un petit encart gratuit ou un lien en échange d'un contenu utile",
-     "Rédiger un message de 3 phrases : 'Nous testons un moteur de recherche gratuit qui liste les subventions de votre ville/secteur en temps réel. Cliquez pour voir si la vôtre est dedans.' avec un lien vers la page de test",
-     "Publier le message dans les newsletters identifiées, en ciblant les éditions locales ou départementales les plus actives",
-     "Poster une annonce sur les groupes Facebook publics des associations locales (type 'Associations de [ville]') avec le même message et le lien, sans spam, une seule fois par groupe",
-     "Contacter 2 à 3 animateurs de réseaux associatifs locaux par e-mail pour leur demander de partager le lien dans leur prochaine newsletter, en proposant un retour d'expérience sur l'outil"
-    ],
-    "part_automatisable": "Les agents peuvent rédiger les messages, préparer les listes de réseaux, générer les e-mails de contact, et suivre les clics sur la page de test de manière autonome. Ils peuvent aussi identifier les groupes Facebook publics et rédiger les annonces.",
-    "action_humaine": "Le dirigeant doit valider le message final (5 minutes), choisir les 5-10 réseaux à contacter (10 minutes), et approuver les e-mails envoyés aux animateurs (5 minutes). Total : 20 minutes.",
-    "offre": "precommande",
-    "prix": 15,
-    "metrique": "Nombre de visiteurs uniques qualifiés sur la page de test (personnes venant des newsletters/groupes associatifs) et nombre d'inscriptions à la précommande à 15 euros",
-    "seuil_succes": "100 visiteurs qualifiés et au moins 20 inscriptions à la précommande (soit 300 euros encaissés) en 14 jours",
-    "budget_eur": 0,
-    "risque_principal": "Dépendance aux sources publiques : si un site de collectivité change de format, l'outil peut afficher des données fausses ou obsolètes, brisant la confiance d'une audience très sensible à la fiabilité",
-    "parade": "Sur la page de test, afficher clairement que le service est en préparation et que les données sont en cours de consolidation ; ne promettre aucune exhaustivité ; ajouter un bouton 'Signaler une erreur' pour impliquer les visiteurs et détecter les problèmes tôt"
-   },
-   "critique": {
-    "trafic_realiste": 2,
-    "clarte_offre": 4,
-    "vitesse": 6,
-    "cout": 8,
-    "honnetete": 7,
-    "echec_probable": "Le plan repose sur une hypothèse de trafic irréaliste (poster dans des groupes Facebook sans ciblage précis ni contenu à haute valeur ajoutée immédiate génère un taux de clic nul ou négatif). De plus, l'offre est floue : vendre une 'précommande' pour un outil dont la fiabilité est explicitement mise en doute par le risque principal (données potentiellement fausses) crée une dissonance cognitive chez les utilisateurs. Les bénévoles associatifs sont frileux face aux outils non testés ; sans preuve d'utilité immédiate (ex: trouver UNE subvention spécifique aujourd'hui), ils ne payeront pas 15€ pour un moteur de recherche incertain.",
-    "correction": "Remplacer la stratégie de spam passif par une approche 'Lead Magnet' hyper-ciblée : identifier 3 appels à projets réels et spécifiques à une ville cible, et envoyer un email personnalisé aux présidents d'associations concernées avec le lien direct vers CE résultat unique ('J'ai trouvé cette subvention pour vous'). Tester la conversion sur cet utilisateur unique. Si le taux de clic/inscription dépasse 20%, étendre. Sinon, pivoter vers un service de veille humaine premium avant de développer l'agrégateur automatisé fragile."
-   },
-   "credibilite": [
-    "mentions-editeur",
-    "api-branchee"
-   ],
-   "en_ligne": false
-  },
-  {
-   "slug": "rescuv",
-   "titre": "Bodacc Vert — Le Radar des Opportunités Circulaires",
-   "score_studio": 6.85,
-   "note_plan": 5.2,
-   "elo": 1521,
-   "plan": {
-    "promesse": "Ne laissez plus le matériel réemployable finir à la ferraille : recevez chaque jour les annonces BODACC filtrées par secteur et localisation pour sauver et racheter avant destruction.",
-    "public_precis": "Responsables d'approvisionnement dans les ressourceries, reconditionneurs de machines industrielles, artisans du BTP et de la restauration cherchant du matériel d'occasion professionnel, et acheteurs de lots de mobilier ou de stock issus de liquidations.",
-    "canal_principal": "Communautés en ligne spécialisées dans le réemploi et l'occasion professionnelle (groupes LinkedIn, forums, listes de diffusion, Slack/WhatsApp de filières).",
-    "premiers_visiteurs": [
-     "Publier un message dans 5 groupes LinkedIn dédiés au réemploi (ex: 'Réseau des Ressourceries', 'Économie circulaire – Acteurs', 'Acheteurs d'occasion industrielle') avec un lien vers la page de test et un titre accrocheur sur le gaspillage de matériel.",
-     "Envoyer un e-mail personnalisé aux 10 plus grosses ressourceries françaises (coordonnées publiques) pour leur proposer un accès gratuit à l'alerte en échange de leur retour d'expérience.",
-     "Poster dans 3 forums ou Slack communautaires (ex: 'Low-Tech Lab', 'Communaute du réemploi', 'Les Acteurs de la Transition') un message court décrivant le problème et la solution, avec lien vers la page.",
-     "Contacter 5 reconditionneurs de machines-outils ou de matériel de restauration via leur formulaire de contact ou e-mail public, en leur demandant s'ils sont intéressés par un test gratuit.",
-     "Partager le lien dans une newsletter existante sur l'économie circulaire (si accès possible) ou dans un commentaire pertinent sur un article de blog traitant du gaspillage industriel."
-    ],
-    "part_automatisable": "Les agents peuvent préparer les listes de contacts (groupes, forums, e-mails publics), rédiger les messages types, programmer les envois d'e-mails via un service comme SendGrid, et planifier les publications sur les plateformes autorisées (LinkedIn, forums).",
-    "action_humaine": "Le dirigeant doit personnaliser les 10 e-mails aux ressourceries (5 minutes) et valider les messages types avant publication (5 minutes). Total : 10 minutes.",
-    "offre": "precommande",
-    "prix": "15 €/mois",
-    "metrique": "Nombre de visiteurs uniques sur la page de test et nombre d'inscriptions à la précommande (adresse e-mail + acceptation du prix).",
-    "seuil_succes": "Au moins 50 visiteurs qualifiés et 5 inscriptions à la précommande (avec intention d'achat confirmée) en 14 jours.",
-    "budget_eur": 0,
-    "risque_principal": "Le filtre BODACC est facile à copier et la proposition de valeur peut sembler trop technique pour le public cible, qui n'a pas l'habitude de ce type d'alerte.",
-    "parade": "Mettre en avant un cas concret dès la page de test (ex: 'Hier, une boulangerie a liquidé son four à 500 € – vous l'auriez su grâce à l'alerte') et proposer un essai gratuit de 7 jours sans engagement pour réduire la friction."
-   },
-   "critique": {
-    "trafic_realiste": 3,
-    "clarte_offre": 5,
-    "vitesse": 4,
-    "cout": 8,
+    "cout": 7,
     "honnetete": 6,
-    "echec_probable": "Le plan échoue parce que les 5 groupes LinkedIn et 3 forums cités sont génériques ou inexistants, et que les posts dans ces espaces (souvent modérés, saturés ou à audience faible) ne génèrent pas 50 visiteurs qualifiés en 14 jours ; les 10 e-mails aux ressourceries restent des contacts froids qui répondent rarement sans preuve de valeur, et la page de test sans offre concrète (juste une précommande à 15 €/mois pour un service non fonctionnel) ne convertit pas.",
-    "correction": "Remplacer le canal 'communautés' par un canal direct et vérifiable : identifier 20 liquidations BODACC réelles et récentes dans des secteurs à fort potentiel de réemploi, préparer une démo gratuite qui montre 5 annonces filtrées concrètes (avec photos et prix estimés) dès la page d'accueil, et cibler individuellement 15 acheteurs de matériel industriel d'occasion (via LinkedIn en recherche ciblée ou annuaire) avec un e-mail personnalisé contenant une annonce pertinente pour eux et une invitation à un essai de 30 jours gratuit pour 10 comptes bêta, en échange d'un retour écrit ; mesurer le taux de clic sur les alertes avant de lancer l'abonnement."
-   },
-   "credibilite": [
-    "mentions-editeur",
-    "api-branchee"
-   ],
-   "en_ligne": false
-  },
-  {
-   "slug": "legacyshift",
-   "titre": "LegacyShift : détecteur de dépendances open source mortes",
-   "score_studio": 6.53,
-   "note_plan": 5.2,
-   "elo": 1488,
-   "plan": {
-    "promesse": "Détectez en 10 secondes si vos dépendances npm sont mortes, avec alternatives de migration.",
-    "public_precis": "Équipes techniques et mainteneurs open source qui gèrent du code hérité et veulent savoir quels packages sont abandonnés avant une faille de sécurité.",
-    "canal_principal": "Place de marché API (RapidAPI et Apify Store) + discussions GitHub ciblées sur les packages abandonnés.",
-    "premiers_visiteurs": [
-     "Publier la page de test sur RapidAPI avec une description claire et un lien vers la page d'attente, en annonçant l'API payante à venir.",
-     "Poster un message dans les issues GitHub de packages morts connus (ex. request) et dans les discussions de dépendances, avec un lien vers la page de test.",
-     "Créer une entrée sur Apify Store avec une démo gratuite du score (sans paiement) pour attirer les développeurs d'outils d'audit."
-    ],
-    "part_automatisable": "Un agent publie automatiquement les annonces sur RapidAPI, Apify Store et les issues GitHub (rédaction et envoi), et met à jour la page de test avec les compteurs de visiteurs. Un autre agent surveille les discussions et répond aux questions simples.",
-    "action_humaine": "Valider les messages avant publication (30 minutes) et vérifier les premiers retours sur la page (15 minutes par jour).",
-    "offre": "precommande",
-    "prix": "29",
-    "metrique": "Nombre de visiteurs qualifiés sur la page de test et nombre d'inscriptions à la précommande (email).",
-    "seuil_succes": "50 inscriptions à la précommande ou 150 visiteurs qualifiés en 14 jours.",
-    "budget_eur": 0,
-    "risque_principal": "Faible défensibilité : un assistant IA gratuit peut déjà analyser un package.json, et les données sont publiques, donc les visiteurs peuvent ne pas voir la valeur ajoutée de l'API payante.",
-    "parade": "Mettre en avant la surveillance continue (webhook) et l'historique de tickets résolues vs abandonnées comme données propriétaires, et proposer une précommande à prix réduit pour créer un engagement initial."
-   },
-   "critique": {
-    "trafic_realiste": 3,
-    "clarte_offre": 5,
-    "vitesse": 6,
-    "cout": 8,
-    "honnetete": 4,
-    "echec_probable": "Le plan repose sur des actions de publication dans des issues GitHub et sur des places de marché API, mais sans stratégie concrète pour générer du trafic qualifié. Les développeurs ne cherchent pas activement ce type d'outil sur RapidAPI ou Apify Store, et poster dans des issues de packages morts peut être perçu comme du spam, entraînant des suppressions et une mauvaise réputation. De plus, l'offre de précommande à 29€/mois sans preuve de valeur ajoutée par rapport à des outils gratuits ou à une simple requête à un LLM ne convaincra pas les visiteurs, qui ne s'inscriront pas en nombre suffisant (50 inscriptions en 14 jours est irréaliste).",
-    "correction": "Pour améliorer le trafic, il faut cibler des canaux où les développeurs cherchent activement des solutions : créer un outil gratuit en ligne (page web) qui analyse un package.json et donne un score de risque, puis le distribuer via des articles de blog techniques, des démonstrations vidéo, et des partenariats avec des outils d'audit existants (comme Dependabot ou Snyk) pour intégration. Proposer un essai gratuit de l'API avec un quota limité, et mettre en avant des cas concrets de failles évitées grâce à la surveillance continue. Pour la précommande, offrir un accès anticipé à un tarif réduit avec des fonctionnalités exclusives (alertes en temps réel, historique détaillé) pour créer un engagement initial."
+    "echec_probable": "Personne n'arrive sur la page de test. Poster une fois « utilement » dans des threads Reddit/HN existants ne génère presque aucun trafic, et les acteurs Apify mettent des semaines à gagner en visibilité organique sur la marketplace. Le seuil de 100 visiteurs/14 jours repose entièrement sur des réponses à des threads que personne ne relit après 48h. Pendant ce temps, l'offre elle-même est fragile : le « score composite » est dérivable de données ouvertes, la promesse « garanti à jour » est invérifiable tant qu'il n'y a pas d'API live, et les 20 e-mails de précommande ne viendront jamais — un développeur qui voit une page « bientôt disponible » avec un JSON d'exemple (probablement fabriqué) repart sans laisser d'email. Au bout de 14 jours : ~20 visiteurs, 0-3 emails, projet enterré.",
+    "correction": "Remplacer la page d'attente par un produit utilisable immédiatement : un endpoint réel en accès libre (100 appels gratuits, sans carte) que les devs peuvent tester en 2 minutes depuis une doc interactive — c'est le seul levier de conversion pour un public technique. Côté trafic, arrêter de compter sur les threads existants : publier le score « trafic IA » comme donnée publique originale (ex. « top 100 des sites qui gagnent le plus de trafic venant de ChatGPT » sur HN/show Reddit, analyse datée, méthode transparente) — ce billet EST le produit démo et attire des milliers de lecteurs qualifiés d'un coup. Expliciter ce que recouvre concrètement « trafic IA » (sources, méthode, marges d'erreur) sinon la promesse « garanti à jour » bascule dans le marketing vague et détruit la confiance du seul public qui vérifie tout. Enfin, s'assumer comme précommande avec un prix de lancement visible, pas une liste d'attente anonyme."
    },
    "credibilite": [
     "mentions-editeur",
